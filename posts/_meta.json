@@ -8,6 +8,13 @@
       "excerpt": "> “Em 2018, 85 % dos projetos React já haviam adotado Hooks.” – State of React Survey 2023"
     },
     {
+      "slug": "2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript",
+      "title": "Prisma ORM: como modelar banco de dados com TypeScript",
+      "date": "2026-08-18",
+      "category": "tutorial",
+      "excerpt": "> “Se a única forma que você conhece de conversar com o banco de dados é gritar SQL, está na hora de aprender a falar a língua dele.”"
+    },
+    {
       "slug": "2026-08-17-css-grid-e-flexbox-quando-usar-cada-um",
       "title": "CSS Grid e Flexbox: quando usar cada um",
       "date": "2026-08-17",
