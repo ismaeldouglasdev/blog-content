@@ -1,6 +1,13 @@
 {
   "posts": [
     {
+      "slug": "2026-08-18-react-hooks-avancados-useeffect,-useref-e-custom-hooks-que-v",
+      "title": "React Hooks avançados: useEffect, useRef e custom hooks que você precisa conhecer",
+      "date": "2026-08-18",
+      "category": "tutorial",
+      "excerpt": "> “Em 2018, 85 % dos projetos React já haviam adotado Hooks.” – State of React Survey 2023"
+    },
+    {
       "slug": "2026-08-17-css-grid-e-flexbox-quando-usar-cada-um",
       "title": "CSS Grid e Flexbox: quando usar cada um",
       "date": "2026-08-17",
