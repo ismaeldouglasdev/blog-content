@@ -1,0 +1,59 @@
+name: Validate Posts
+
+on:
+  pull_request:
+    paths:
+      - 'posts/**'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate _meta.json
+        run: |
+          python3 -c "
+          import json, sys
+          with open('posts/_meta.json') as f:
+              data = json.load(f)
+          posts = data.get('posts', [])
+          slugs = set()
+          errors = []
+          for i, p in enumerate(posts):
+              for field in ['slug', 'title', 'date', 'category']:
+                  if field not in p:
+                      errors.append(f'Post {i}: missing {field}')
+              if p.get('slug') in slugs:
+                  errors.append(f'Duplicate slug: {p.get(\"slug\")}')
+              slugs.add(p.get('slug'))
+              if not p.get('date', '').match(r'^\d{4}-\d{2}-\d{2}$'):
+                  errors.append(f'{p.get(\"slug\")}: invalid date format')
+          if errors:
+              for e in errors: print(f'ERROR: {e}')
+              sys.exit(1)
+          print(f'OK: {len(posts)} posts validated')
+          "
+
+      - name: Check markdown files exist
+        run: |
+          python3 -c "
+          import json, os, sys
+          with open('posts/_meta.json') as f:
+              data = json.load(f)
+          missing = []
+          for p in data.get('posts', []):
+              path = f'posts/{p[\"slug\"]}.md'
+              if not os.path.exists(path):
+                  missing.append(path)
+          if missing:
+              for m in missing: print(f'MISSING: {m}')
+              sys.exit(1)
+          print(f'All {len(data[\"posts\"])} markdown files present')
+          "
+
+      - name: Lint markdown
+        uses: avto-dev/markdown-lint@v1
+        with:
+          args: './posts/*.md'
+        continue-on-error: true
