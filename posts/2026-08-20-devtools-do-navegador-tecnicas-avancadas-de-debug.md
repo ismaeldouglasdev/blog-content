@@ -249,3 +249,11 @@ A jornada de debug não termina quando o bug desaparece; ela continua com a impl
 
 - Use o **Performance Profiler** para capturar cenários reais; procure por “long tasks” e otimize loops com `requestAnimationFrame` ou `setTimeout`.
 - Capture **Memory Snapshots** antes e depois de reproduzir o fluxo problemático;
+
+## Fontes
+- [MDN Web Docs: Using the Performance API](https://developer.mozilla.org/en-US/docs/Web/API/Performance_API)
+- [Google Developers: Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools)
+- [MDN Web Docs: Memory Management](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Memory_Management)
+- [Google Developers: Optimize Performance](https://developers.google.com/web/fundamentals/performance)
+- [MDN Web Docs: Debugging JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Debugging)
+- [Web.dev: Understanding the Network Panel](https://web.dev/network-panel/)
