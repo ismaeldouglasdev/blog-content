@@ -3,7 +3,7 @@
     {
       "slug": "2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug",
       "title": "DevTools do navegador: tecnicas avancadas de debug",
-      "title_en": "DevTools do navegador: tecnicas avancadas de debug",
+      "title_en": "Browser DevTools: Advanced Debugging Techniques",
       "date": "2026-08-20",
       "category": "article",
       "tags": [
@@ -12,14 +12,14 @@
         "browser"
       ],
       "excerpt": "Já ficou horas encurralado por um bug que desaparece assim que você tenta inspecionar? A sensação de estar jogando gato e rato com o navegador é mais comum do que parece, e a maior",
-      "excerpt_en": "---\ntitle: \"Browser DevTools: Advanced Debugging Techniques\"\ndate: \"2026-08-20\"\ncategory: \"article\"\ntags: [\"devtools\", \"debug\", \"browser\"]\nexcerpt: \"Have you ever spent hours trapp",
+      "excerpt_en": "Have you ever spent hours trapped by a bug that disappears as soon as you try to inspect it? The feeling of playing cat and mouse with the browser is more common than it seems, and",
       "lang": "pt",
       "translation_slug": "2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug-en"
     },
     {
       "slug": "2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug-en",
-      "title": "DevTools do navegador: tecnicas avancadas de debug",
-      "title_en": "DevTools do navegador: tecnicas avancadas de debug",
+      "title": "Browser DevTools: Advanced Debugging Techniques",
+      "title_en": "Browser DevTools: Advanced Debugging Techniques",
       "date": "2026-08-20",
       "category": "article",
       "tags": [
@@ -27,8 +27,8 @@
         "debug",
         "browser"
       ],
-      "excerpt": "---\ntitle: \"Browser DevTools: Advanced Debugging Techniques\"\ndate: \"2026-08-20\"\ncategory: \"article\"\ntags: [\"devtools\", \"debug\", \"browser\"]\nexcerpt: \"Have you ever spent hours trapp",
-      "excerpt_en": "---\ntitle: \"Browser DevTools: Advanced Debugging Techniques\"\ndate: \"2026-08-20\"\ncategory: \"article\"\ntags: [\"devtools\", \"debug\", \"browser\"]\nexcerpt: \"Have you ever spent hours trapp",
+      "excerpt": "Have you ever spent hours trapped by a bug that disappears as soon as you try to inspect it? The feeling of playing cat and mouse with the browser is more common than it seems, and",
+      "excerpt_en": "Have you ever spent hours trapped by a bug that disappears as soon as you try to inspect it? The feeling of playing cat and mouse with the browser is more common than it seems, and",
       "lang": "en",
       "translation_slug": "2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug",
       "translation_of": "2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug"
