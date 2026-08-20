@@ -3,7 +3,7 @@
     {
       "slug": "2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug",
       "title": "DevTools do navegador: tecnicas avancadas de debug",
-      "title_en": null,
+      "title_en": "DevTools do navegador: tecnicas avancadas de debug",
       "date": "2026-08-20",
       "category": "article",
       "tags": [
@@ -12,9 +12,26 @@
         "browser"
       ],
       "excerpt": "Já ficou horas encurralado por um bug que desaparece assim que você tenta inspecionar? A sensação de estar jogando gato e rato com o navegador é mais comum do que parece, e a maior",
-      "excerpt_en": null,
+      "excerpt_en": "---\ntitle: \"Browser DevTools: Advanced Debugging Techniques\"\ndate: \"2026-08-20\"\ncategory: \"article\"\ntags: [\"devtools\", \"debug\", \"browser\"]\nexcerpt: \"Have you ever spent hours trapp",
       "lang": "pt",
-      "translation_slug": null
+      "translation_slug": "2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug-en"
+    },
+    {
+      "slug": "2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug-en",
+      "title": "DevTools do navegador: tecnicas avancadas de debug",
+      "title_en": "DevTools do navegador: tecnicas avancadas de debug",
+      "date": "2026-08-20",
+      "category": "article",
+      "tags": [
+        "devtools",
+        "debug",
+        "browser"
+      ],
+      "excerpt": "---\ntitle: \"Browser DevTools: Advanced Debugging Techniques\"\ndate: \"2026-08-20\"\ncategory: \"article\"\ntags: [\"devtools\", \"debug\", \"browser\"]\nexcerpt: \"Have you ever spent hours trapp",
+      "excerpt_en": "---\ntitle: \"Browser DevTools: Advanced Debugging Techniques\"\ndate: \"2026-08-20\"\ncategory: \"article\"\ntags: [\"devtools\", \"debug\", \"browser\"]\nexcerpt: \"Have you ever spent hours trapp",
+      "lang": "en",
+      "translation_slug": "2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug",
+      "translation_of": "2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug"
     },
     {
       "slug": "2026-08-18-react-hooks-avancados-useeffect,-useref-e-custom-hooks-que-v",
