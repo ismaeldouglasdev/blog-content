@@ -61,3 +61,11 @@ Aqui está o CSS necessário para fazer isso funcionar:
 
 .navegacao a {
   color: white
+
+## Fontes
+
+- [MDN: CSS Grid Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout)
+- [MDN: Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
+- [CSS-Tricks: A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+- [CSS-Tricks: A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [Web.dev: Learn CSS Grid](https://web.dev/learn/css/grid/)
