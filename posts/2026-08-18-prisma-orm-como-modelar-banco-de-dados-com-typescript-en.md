@@ -460,3 +460,10 @@ When modeling a SaaS, a clear schema – with enums, well‑defined relations, a
 - **Document enums and relations** in the team README; it prevents “surprises” when new developers join the project.
 
 With these practices, you’ll be ready to take your SaaS to the next level, getting the most out of the Prisma ORM and TypeScript’s type system. Happy coding!
+
+## Sources
+- [Prisma Documentation](https://www.prisma.io/docs/)
+- [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html)
+- [MDN: SQL Injection](https://developer.mozilla.org/en-US/docs/Glossary/SQL_injection)
+- [Zod Documentation](https://zod.dev/)
+- [Redis Documentation](https://redis.io/documentation)
