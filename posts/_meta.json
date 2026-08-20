@@ -5,21 +5,30 @@
       "title": "React Hooks avançados: useEffect, useRef e custom hooks que você precisa conhecer",
       "date": "2026-08-18",
       "category": "tutorial",
-      "excerpt": "> “Em 2018, 85 % dos projetos React já haviam adotado Hooks.” – State of React Survey 2023"
+      "excerpt": "> “Em 2018, 85 % dos projetos React já haviam adotado Hooks.” – State of React Survey 2023",
+      "title_en": "Advanced React Hooks: Essential useEffect, useRef, and Custom Hooks",
+      "excerpt_en": "By 2018, 85% of React projects had already adopted Hooks.",
+      "translation_slug": "2026-08-18-react-hooks-avancados-useeffect,-useref-e-custom-hooks-que-v-en"
     },
     {
       "slug": "2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript",
       "title": "Prisma ORM: como modelar banco de dados com TypeScript",
       "date": "2026-08-18",
       "category": "tutorial",
-      "excerpt": "> “Se a única forma que você conhece de conversar com o banco de dados é gritar SQL, está na hora de aprender a falar a língua dele.”"
+      "excerpt": "> “Se a única forma que você conhece de conversar com o banco de dados é gritar SQL, está na hora de aprender a falar a língua dele.”",
+      "title_en": "Prisma ORM: Modeling Databases with TypeScript",
+      "excerpt_en": "If the only way you know how to talk to the database is by shouting SQL, it's time to learn its language.",
+      "translation_slug": "2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript-en"
     },
     {
       "slug": "2026-08-17-css-grid-e-flexbox-quando-usar-cada-um",
       "title": "CSS Grid e Flexbox: quando usar cada um",
       "date": "2026-08-17",
       "category": "tutorial",
-      "excerpt": "# CSS Grid vs. Flexbox: Quando Usar Cada Um no Desenvolvimento Web"
+      "excerpt": "# CSS Grid vs. Flexbox: Quando Usar Cada Um no Desenvolvimento Web",
+      "title_en": "CSS Grid vs Flexbox: When to Use Each One",
+      "excerpt_en": "CSS Grid vs. Flexbox: When to Use Each in Web Development",
+      "translation_slug": "2026-08-17-css-grid-e-flexbox-quando-usar-cada-um-en"
     }
   ]
 }
