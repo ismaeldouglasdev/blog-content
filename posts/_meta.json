@@ -1,6 +1,22 @@
 {
   "posts": [
     {
+      "slug": "2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug",
+      "title": "DevTools do navegador: tecnicas avancadas de debug",
+      "title_en": null,
+      "date": "2026-08-20",
+      "category": "article",
+      "tags": [
+        "devtools",
+        "debug",
+        "browser"
+      ],
+      "excerpt": "Já ficou horas encurralado por um bug que desaparece assim que você tenta inspecionar? A sensação de estar jogando gato e rato com o navegador é mais comum do que parece, e a maior",
+      "excerpt_en": null,
+      "lang": "pt",
+      "translation_slug": null
+    },
+    {
       "slug": "2026-08-18-react-hooks-avancados-useeffect,-useref-e-custom-hooks-que-v",
       "title": "React Hooks avançados: useEffect, useRef e custom hooks que você precisa conhecer",
       "date": "2026-08-18",
