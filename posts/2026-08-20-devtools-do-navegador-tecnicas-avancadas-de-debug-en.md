@@ -138,3 +138,10 @@ In the Waterfall, `sendBeacon` appears as “(pending)” and does not block ren
 
 Another point that often goes unnoticed is **caching**. In the Network panel, enable the "Disable cache" option only when testing code changes. In practice, I keep caching enabled in most sessions to observe %
 
+## Sources
+
+- [MDN Web Docs: Using the Performance API](https://developer.mozilla.org/en-US/docs/Web/API/Performance_API)
+- [Chrome DevTools Documentation](https://developer.chrome.com/docs/devtools/)
+- [MDN Web Docs: Memory Management](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Memory_Management)
+- [Web.dev: Optimize Website Performance](https://web.dev/performance/)
+- [JavaScript.info: Debugging in Chrome](https://javascript.info/debugging-chrome)
