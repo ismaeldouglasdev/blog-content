@@ -400,3 +400,10 @@ export function useDebouncedCallback<T extends unknown[]>(
 | **Custom Hook que não limpa recursos** | Bibliotecas externas (ex.: `Chart.js`, `WebSocket`) permanecem ativas após desmontar. | Sempre retorne uma função de limpeza no `useEffect` interno do hook. |
 | **Serialização de objetos complexos nas dependências** | `useEffect([obj])` sempre cria novo efeito, pois `obj` tem referência diferente a cada render. | Use `useMemo(() => obj, [obj.prop1, obj.prop2])` ou transforme o objeto em string (`JSON.stringify`) se for pequeno e estável. |
 | **Excesso de abstração** | Criar hooks para tudo pode gerar camadas desnecess
+
+## Fontes
+
+- [MDN: Hooks Reference](https://developer.mozilla.org/en-US/docs/React/Hooks)
+- [React Docs: useEffect](https://react.dev/reference/react/useEffect)
+- [React Docs: useRef](https://react.dev/reference/react/useRef)
+- [Kent C. Dodds: Custom Hooks](https://kentcdodds.com/blog/how-to-use-react-hooks-effectively)
