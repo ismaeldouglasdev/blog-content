@@ -1,5 +1,6 @@
 ---
-title: "CSS Grid vs Flexbox: When to Use Each One"
+---
+title: "CSS Grid vs. Flexbox: When to Use Each One"
 date: "2026-08-17"
 category: "tutorial"
 tags: []
@@ -64,3 +65,10 @@ Here's the CSS needed to make this work:
 .navegacao a {
   color: white
 ```
+
+## Sources
+- [MDN: CSS Flexible Box Layout (Flexbox)](https://developer.mozilla.org/en-US/docs/Web/CSS/flex)
+- [MDN: CSS Grid Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout)
+- [CSS-Tricks: A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [CSS-Tricks: A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+- [Smashing Magazine: CSS Grid vs Flexbox](https://www.smashingmagazine.com/2020/05/css-grid-vs-flexbox/)
