@@ -14,7 +14,7 @@ translation_of: "2026-08-17-css-grid-e-flexbox-quando-usar-cada-um"
 
 For decades, website layout relied on limited tools, such as the `float` property and absolute positioning. These techniques, although powerful, required complex hacks and often resulted in difficult-to-maintain code. With the advent of modern CSS, front-end development has become much more elegant. Two of the main highlights of this revolution are **CSS Flexbox** and **CSS Grid**.
 
-Many beginner developers â and even experienced ones â often wonder: "Which one should I use?" The short answer is: both are great, but they serve different purposes. To master responsive design, it's essential to understand the philosophy behind each.
+Many beginner developers — and even experienced ones — often wonder: "Which one should I use?" The short answer is: both are great, but they serve different purposes. To master responsive design, it's essential to understand the philosophy behind each.
 
 In this article, we'll explore how Flexbox and Grid work, their main characteristics, and, most importantly, a practical guide on when to apply each technology in your next project.
 
@@ -29,7 +29,7 @@ This distinction is not just theoretical; it defines the type of problem that ea
 
 ## Flexbox: The King of Alignment
 
-Flexbox was designed to solve problems of *alignment* and *space distribution*. It's ideal when you want items within a container to be flexible â i.e., change size to occupy the available space â or when you need to perfectly center items.
+Flexbox was designed to solve problems of *alignment* and *space distribution*. It's ideal when you want items within a container to be flexible — i.e., change size to occupy the available space — or when you need to perfectly center items.
 
 ### When to Use Flexbox?
 
@@ -43,7 +43,7 @@ Imagine you want to create a horizontal menu where items stretch to fill the wid
 
 ```html
 <nav class="navegacao">
-  <a href="#inicio">InÃ­cio</a>
+  <a href="#inicio">Início</a>
   <a href="#produtos">Produtos</a>
   <a href="#sobre">Sobre</a>
   <a href="#contato">Contato</a>
