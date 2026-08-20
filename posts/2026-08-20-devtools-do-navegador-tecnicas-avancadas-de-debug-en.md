@@ -1,9 +1,10 @@
 ---
+---
 title: "Browser DevTools: Advanced Debugging Techniques"
 date: "2026-08-20"
 category: "article"
 tags: ["devtools", "debug", "browser"]
-excerpt: "Have you ever spent hours trapped by a bug that disappears as soon as you try to inspect it? The feeling of playing cat and mouse with the browser is more common than it seems, and most of the time the issue isn't the code itself but rather how we analyze it. When I started using DevTools as a 'notebook' instead of just a simple inspection panel, my productivity skyrocketed and my frustration decreased drastically. In this article, I share the advanced techniques that helped me turn hours of bug hunting into minutes of precise diagnosis. Prepare your coffee, open Chrome (or Firefox; Edge has almost the same functionalities), and let's zoom in on the layers that really matter."
+excerpt: "Have you ever spent hours trapped by a bug that disappears as soon as you try to inspect it? The feeling of playing cat and mouse with the browser is more common than it seems, and most of the time the issue isn't the code itself but rather how we analyze it. When I started using DevTools as a "notebook" instead of just a simple inspection panel, my productivity skyrocketed and my frustration decreased drastically. In this article, I share the advanced techniques that helped me turn hours of bug hunting into minutes of precise diagnosis. Prepare your coffee, open Chrome (or Firefox; Edge has almost the same functionalities), and let's zoom in on the layers that really matter."
 lang: "en"
 ---
 
@@ -135,117 +136,5 @@ async function sendTelemetryFetch(data) {
 
 In the Waterfall, `sendBeacon` appears as “(pending)” and does not block rendering. When I tested the same flow without `keepalive`, the browser kept the connection open until the user closed the tab, which caused a visible "blocking" in the "Waiting" column.
 
-Another point that often goes unnoticed is **caching**. In the Network panel, enable the "Disable cache" option only when testing code changes. In practice, I keep caching enabled in most sessions to observe the real user behavior. If a request is always returning 200 OK instead of 304 Not Modified, it may indicate that the `Cache-Control` header is misconfigured.
+Another point that often goes unnoticed is **caching**. In the Network panel, enable the "Disable cache" option only when testing code changes. In practice, I keep caching enabled in most sessions to observe %
 
-**Practical tip:** double-click on a line in the waterfall to open the request details. The "Headers" panel shows the time spent on DNS, TLS handshake, and download. If TLS is taking too long, consider using HTTP/2 or enabling **OCSP stapling** on your server.
-
-## Advanced CSS Inspection
-
-Many developers believe that the **Elements** panel solves everything when the layout is wrong. In practice, advanced CSS inspection goes far beyond changing colors and margins on the fly. The **Computed** feature shows the final value of each property, while **Coverage** indicates which rules are never applied.
-
-A trick I used recently was to force style recalculation to find out why an element wasn't receiving the expected color. In the console, just type:
-
-```js
-getComputedStyle(document.querySelector('.button')).color
-```
-
-If the returned value is different from what appears in the "Styles" panel, it means that a more specific rule is being applied at another level of the tree.
-
-Additionally, the **CSS Overview** (available in Chrome 111+) generates a visual summary of colors, fonts, and media queries used on the page. When analyzing a legacy project, I identified that over 30% of the rules were duplicated or never used. Removing these lines reduced the CSS size by 45 KB and improved the **First Contentful Paint** by 120 ms.
-
-To debug animations, the **Animations** panel allows you to pause, speed up, or slow down the timeline. A situation I faced was a CSS animation that entered an infinite loop due to an error in `animation-iteration-count`. By pausing the animation and inspecting the value of `animation-name`, it became clear that the name was misspelled in one of the SCSS files.
-
-**Practical tip:** use the shortcut `Ctrl+Shift+P` and search for "Show Coverage". After starting the recording, reload the page. The files marked in red are those that contain dead code. Remove or refactor those sections to gain performance and reduce download time.
-
-## Console Tricks
-
-The console is not just for printing error messages. It has a set of APIs that can make debugging almost playful. Here are some of my favorites:
-
-- **`console.table`**: displays arrays or objects as tables, making it easier to visualize structured data.
-
-```js
-const users = [
-  { id: 1, name: 'Ana', active: true },
-  { id: 2, name: 'Bruno', active: false },
-  { id: 3, name: 'Carla', active: true },
-];
-console.table(users);
-```
-
-- **`console.group` / `console.groupEnd`**: groups related messages, keeping the log clean.
-
-```js
-console.group('Login flow');
-console.log('Validating token...');
-console.log('Fetching profile...');
-console.groupEnd();
-```
-
-- **`monitorEvents`**: logs all events triggered on an element. Ideal for discovering why a click doesn't reach the handler.
-
-```js
-const button = document.querySelector('.button');
-monitorEvents(button, 'click');
-```
-
-- **`$0`, `$1`, …**: reference the last selected elements in the Elements panel. This saves time when testing quick changes.
-
-```js
-// Select an element in Elements and then:
-$0.style.border = '2px solid red';
-```
-
-- **`debug`**: turns a function into an automatic breakpoint. Whenever the function is called, DevTools pauses before executing.
-
-```js
-function calculate(a, b) {
-  return a + b;
-}
-debug(calculate);
-// Now, any call to calculate() will open the debugger.
-```
-
-In practice, I often combine `console.table` with `performance.now()` to measure the time variation between different iterations of an algorithm:
-
-```js
-const start = performance.now();
-const results = processData(largeArray);
-const end = performance.now();
-console.table(results.slice(0, 5));
-console.log(`Total time: ${ (end - start).toFixed(2) } ms`);
-```
-
-These features help transform a "messy" console into an interactive diagnostic panel.
-
-## Remote Debugging
-
-Debugging only on desktop is comfortable, but most problems arise on real devices. Chrome offers **Remote Debugging** for Android, iOS (via Safari), and even for Node.js. The first thing I did was enable developer mode on Android, connect the USB cable, and open `chrome://inspect`. The page lists all devices and open tabs, allowing you to inspect as if it were local.
-
-For Node, the command `node --inspect-brk app.js` opens a WebSocket port that Chrome can connect to. In the console, I use the `inspector` module to dynamically enable the debugger in production (only in testing environments, of course):
-
-```js
-if (process.env.DEBUG_REMOTE) {
-  const inspector = require('inspector');
-  inspector.open(9229, '0.0.0.0', true);
-  console.log('Remote debugger active on port 9229');
-}
-```
-
-With the connection established, the **Sources** panel allows you to set breakpoints in TypeScript files that haven't been transpiled yet, thanks to the source map. A situation I encountered was an `undefined` error that only appeared on an old Android device. When I connected the device, I noticed that the minified code was generating an incorrect `sourceURL`. Fixing the `sourceMappingURL` path resolved the issue without needing to reproduce the bug in an emulator.
-
-Another valuable tool is **Network throttling** on remote devices. In the Network panel, choose "Fast 3G" or "Slow 4G" and observe how the application behaves. In practice, I discovered that a 150 KB script load was almost invisible on 3G but caused a layout shift that compromised the user experience.
-
-**Practical tip:** when using remote debugging on iOS, open Safari on macOS, go to “Develop > [device name] > [page]”. The Safari console has similar features to Chrome, but the "Resources" panel shows the memory usage of the native application, which can be crucial for detecting leaks in WebViews.
-
-## Conclusion
-
-Mastering DevTools goes far beyond just opening the panel and changing colors. Each feature – from the profiler to remote debugging – offers a different lens to see what really happens behind the interface. In practice, I realized that most critical problems can be summarized into three categories: **CPU time**, **memory usage**, and **network cost**. When you have a clear view of how these three pillars behave, it becomes much easier to prioritize optimizations and avoid unnecessary refactoring.
-
-The debugging journey doesn't end when the bug disappears; it continues with the implementation of preventive guards, such as allocation limits, automated performance tests, and network monitoring in production. DevTools are the toolbox that allows us to validate these strategies in real-time.
-
----
-
-### Practical Takeaways
-
-- Use the **Performance Profiler** to capture real scenarios; look for “long tasks” and optimize loops with `requestAnimationFrame` or `setTimeout`.
-- Capture **Memory Snapshots** before and after reproducing the problematic flow;
