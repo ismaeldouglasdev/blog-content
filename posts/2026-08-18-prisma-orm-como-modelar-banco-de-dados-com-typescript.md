@@ -457,4 +457,12 @@ Ao modelar um SaaS, a clareza do schema – com enums, relações bem definidas 
 - **Teste migrations em staging** antes de rodar `prisma migrate deploy` em produção.
 - **Documente enums e relações** no README da equipe; isso evita “surpresas” quando novos devs entram no projeto.
 
-Com essas práticas, você estará pronto para levar seu SaaS ao próximo nível, tirando o máximo proveito do Prisma ORM e da tipagem do TypeScript. Boa codificação! 
+Com essas práticas, você estará pronto para levar seu SaaS ao próximo nível, tirando o máximo proveito do Prisma ORM e da tipagem do TypeScript. Boa codificação!  
+
+## Fontes
+- [Prisma Docs](https://www.prisma.io/docs)
+- [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html)
+- [Understanding SQL Injection](https://owasp.org/www-community/attacks/SQL_Injection)
+- [Zod Documentation](https://zod.dev/)
+- [PostgreSQL Documentation](https://www.postgresql.org/docs/)
+- [Redis Documentation](https://redis.io/documentation)
