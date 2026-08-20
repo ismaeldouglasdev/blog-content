@@ -10,17 +10,17 @@ translation_of: "2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescrip
 
 ## Introduction: ORM vs raw query
 
-> âIf the only way you know how to talk to the database is to shout **SQL**, itâs time to learn its language.â  
+> “If the only way you know how to talk to the database is to shout **SQL**, it’s time to learn its language.”  
 
-The sentence may sound clichÃ©, but it captures the reality of modern application developers. While raw queries give you total control, they also bring **cognitive load**, risk of *SQL injection*, and painful maintenance. An **ORM** (ObjectâRelational Mapping) abstracts the persistence layer, letting you work with typed objects, versioned migrations, and, best of all, **autocomplete** and **validation** in your editor.
+The sentence may sound cliché, but it captures the reality of modern application developers. While raw queries give you total control, they also bring **cognitive load**, risk of *SQL injection*, and painful maintenance. An **ORM** (Object‑Relational Mapping) abstracts the persistence layer, letting you work with typed objects, versioned migrations, and, best of all, **autocomplete** and **validation** in your editor.
 
-**Prisma** has been gaining traction in the TypeScript ecosystem by combining the productivity of an ORM with the performance of optimized queries. In this article weâll walk through the entire lifecycle of a data model â from schema definition to query optimization â using a **projectâmanagement SaaS** example. If you already use Node.js/TypeScript, youâll see that Prisma can be the âsafety netâ your stack was missing.
+**Prisma** has been gaining traction in the TypeScript ecosystem by combining the productivity of an ORM with the performance of optimized queries. In this article we’ll walk through the entire lifecycle of a data model – from schema definition to query optimization – using a **project‑management SaaS** example. If you already use Node.js/TypeScript, you’ll see that Prisma can be the “safety net” your stack was missing.
 
 ---
 
 ## Modeling the schema of a SaaS
 
-Letâs start by defining what our SaaS needs:
+Let’s start by defining what our SaaS needs:
 
 | Entity            | Description                                          |
 |-------------------|------------------------------------------------------|
@@ -144,15 +144,15 @@ enum TaskStatus {
 
 **Practical tips**
 
-* **UUID as PK** â avoids collisions in distributed environments and simplifies replication.  
-* **Enums** â bring type safety to status and role fields, eliminating *magic strings*.  
-* **Indexes** â Prisma lets you declare indexes directly in the schema (`@@index`). They are created in migrations, saving you manual tuning time.
+* **UUID as PK** – avoids collisions in distributed environments and simplifies replication.  
+* **Enums** – bring type safety to status and role fields, eliminating *magic strings*.  
+* **Indexes** – Prisma lets you declare indexes directly in the schema (`@@index`). They are created in migrations, saving you manual tuning time.
 
 ---
 
 ## Relationships (1:1, 1:N, N:M)
 
-### 1:1 â User â Organization (owner)
+### 1:1 – User ↔ Organization (owner)
 
 ```prisma
 model Organization {
@@ -161,9 +161,9 @@ model Organization {
 }
 ```
 
-`ownerId` is unique per organization, guaranteeing that **only one** user is the owner. In Prisma, a 1:1 relation is declared using `@relation` and the foreignâkey field.
+`ownerId` is unique per organization, guaranteeing that **only one** user is the owner. In Prisma, a 1:1 relation is declared using `@relation` and the foreign‑key field.
 
-### 1:N â Organization â Users (members)
+### 1:N – Organization → Users (members)
 
 ```prisma
 model Organization {
@@ -182,9 +182,9 @@ model User {
 
 The optional (`?`) field allows a user to belong to no organization yet (e.g., during onboarding).
 
-### N:M â User â Project (collaborators)
+### N:M – User ↔ Project (collaborators)
 
-Although the example above doesnât need a direct N:M, if you want to allow **multiple users to collaborate on multiple projects**, just create an automatic join table:
+Although the example above doesn’t need a direct N:M, if you want to allow **multiple users to collaborate on multiple projects**, just create an automatic join table:
 
 ```prisma
 model Project {
@@ -221,7 +221,7 @@ npx prisma migrate dev --name init
 
 The command:
 
-* Creates the database (if it doesnât exist yet);  
+* Creates the database (if it doesn’t exist yet);  
 * Runs the migration;  
 * Updates the Prisma client (`@prisma/client`).
 
@@ -235,7 +235,7 @@ The command:
 | **View history** | `npx prisma migrate status` | Audit pending migrations |
 
 #### Golden rule: **Never edit migrations manually**  
-If you need to change something thatâs already been applied in production, create **a new migration**. Prisma keeps a history in `prisma/migrations/` that works like a *git* for your database.
+If you need to change something that’s already been applied in production, create **a new migration**. Prisma keeps a history in `prisma/migrations/` that works like a *git* for your database.
 
 ---
 
@@ -269,7 +269,7 @@ async function getProjectWithTasks(projectId: string) {
 
 *`include`* fetches the whole relation; *`select`* lets you pick only the fields you actually need, shrinking the **payload**.
 
-### 2. Cursorâbased pagination
+### 2. Cursor‑based pagination
 
 ```ts
 async function listTasks(projectId: string, cursor?: string, take = 10) {
@@ -284,7 +284,7 @@ async function listTasks(projectId: string, cursor?: string, take = 10) {
 }
 ```
 
-Cursorâbased pagination avoids the infamous *offset* problem on large tables, keeping results consistent even when rows are inserted or removed between requests.
+Cursor‑based pagination avoids the infamous *offset* problem on large tables, keeping results consistent even when rows are inserted or removed between requests.
 
 ### 3. Atomic operations with `transaction`
 
@@ -303,7 +303,7 @@ async function moveTaskToProject(taskId: string, newProjectId: string) {
 }
 ```
 
-Transactions guarantee **ACID** across multiple operations â essential when you need to update more than one table at once (e.g., moving a task and updating the projectâs timestamp).
+Transactions guarantee **ACID** across multiple operations – essential when you need to update more than one table at once (e.g., moving a task and updating the project’s timestamp).
 
 ### 4. Upserts (insert or update)
 
@@ -329,7 +329,7 @@ Great for **idempotency** in webhook endpoints or import processes.
 
 ### Automatic typing
 
-When you generate the client (`npx prisma generate`), TypeScript gets **100â¯% accurate types**. For example:
+When you generate the client (`npx prisma generate`), TypeScript gets **100 % accurate types**. For example:
 
 ```ts
 // The compiler warns if you try to assign a number to email!
@@ -344,7 +344,7 @@ prisma.user.create({
 
 ### Zod + Prisma: input validation
 
-Although Prisma validates the schema at the database level, itâs good practice to validate **before** the data reaches Prisma. A popular pattern is to combine **Zod** with the types generated by Prisma:
+Although Prisma validates the schema at the database level, it’s good practice to validate **before** the data reaches Prisma. A popular pattern is to combine **Zod** with the types generated by Prisma:
 
 ```ts
 import { z } from 'zod';
@@ -376,7 +376,7 @@ async function createUser(input: CreateUserInput) {
 **Benefits**
 
 * Validation errors are thrown **before** opening a DB connection.  
-* More userâfriendly error messages for the client.  
+* More user‑friendly error messages for the client.  
 * Keeps the domain layer clean and typed.
 
 ---
@@ -385,9 +385,9 @@ async function createUser(input: CreateUserInput) {
 
 ### 1. Use `@@index` and `@unique` strategically
 
-* **Frequently searched fields** â `email`, `domain`, `organizationId + name`.  
-* **Combined filters** â `projectId + status` for task listings.  
-* **Ordering** â indexes that support `ORDER BY` avoid *filesort*.
+* **Frequently searched fields** – `email`, `domain`, `organizationId + name`.  
+* **Combined filters** – `projectId + status` for task listings.  
+* **Ordering** – indexes that support `ORDER BY` avoid *filesort*.
 
 ### 2. Avoid the **N+1 problem** with `include`
 
@@ -399,14 +399,14 @@ const projects = await prisma.project.findMany({
 });
 ```
 
-### 3. `select` vs `include` â when to use which?
+### 3. `select` vs `include` – when to use which?
 
 * **`select`**: when you only need a few fields from the relation (e.g., a list of user names).  
 * **`include`**: when you need the full relation or advanced filters inside it.
 
-### 4. Readâthrough caching
+### 4. Read‑through caching
 
-For highâtraffic endpoints (e.g., a metrics dashboard), pair Prisma with **Redis**:
+For high‑traffic endpoints (e.g., a metrics dashboard), pair Prisma with **Redis**:
 
 ```ts
 async function getTaskStats(projectId: string) {
@@ -420,7 +420,7 @@ async function getTaskStats(projectId: string) {
     _count: true,
   });
 
-  await redis.set(cacheKey, JSON.stringify(stats), 'EX', 60); // 1â¯min TTL
+  await redis.set(cacheKey, JSON.stringify(stats), 'EX', 60); // 1 min TTL
   return stats;
 }
 ```
@@ -439,9 +439,9 @@ Logging query durations helps spot bottlenecks before they surface in production
 
 ## Conclusion
 
-Prisma is not just an SQL *wrapper*; itâs a **dataâmodeling framework** that brings strong typing, automatic migrations, and a fluent API for advanced queries. When used correctly, it cuts development time, improves security, and still delivers performance comparable to wellâwritten raw SQL.
+Prisma is not just an SQL *wrapper*; it’s a **data‑modeling framework** that brings strong typing, automatic migrations, and a fluent API for advanced queries. When used correctly, it cuts development time, improves security, and still delivers performance comparable to well‑written raw SQL.
 
-When modeling a SaaS, a clear schema â with enums, wellâdefined relations, and indexes â pays dividends throughout the applicationâs lifecycle. Pair that with solid validation practices (Zod), atomic transactions, and query monitoring, and youâll have a robust foundation ready to scale without surprises.
+When modeling a SaaS, a clear schema – with enums, well‑defined relations, and indexes – pays dividends throughout the application’s lifecycle. Pair that with solid validation practices (Zod), atomic transactions, and query monitoring, and you’ll have a robust foundation ready to scale without surprises.
 
 > **Prisma + TypeScript = fewer bugs, higher productivity, and code that truly talks to the database.**  
 
@@ -454,9 +454,9 @@ When modeling a SaaS, a clear schema â with enums, wellâdefined relati
 - **Use `select`/`include` wisely** to avoid huge payloads or the N+1 problem.  
 - **Transactions (`$transaction`)** are indispensable for operations touching multiple tables.  
 - **Validate before persisting**: combine Zod (or Yup) with the types Prisma generates.  
-- **Read caching**: Redisâ¯+â¯Prisma = fast dashboards without overloading the DB.  
+- **Read caching**: Redis + Prisma = fast dashboards without overloading the DB.  
 - **Monitor queries**: `prisma.$on('query')` helps you catch slow queries early in development.  
 - **Test migrations in staging** before running `prisma migrate deploy` in production.  
-- **Document enums and relations** in the team README; it prevents âsurprisesâ when new developers join the project.
+- **Document enums and relations** in the team README; it prevents “surprises” when new developers join the project.
 
-With these practices, youâll be ready to take your SaaS to the next level, getting the most out of the Prisma ORM and TypeScriptâs type system. Happy coding!
+With these practices, you’ll be ready to take your SaaS to the next level, getting the most out of the Prisma ORM and TypeScript’s type system. Happy coding!
