@@ -1,6 +1,22 @@
 {
   "posts": [
     {
+      "slug": "2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria",
+      "title": "A historia do TypeScript: de acidente a padrao da industria",
+      "title_en": null,
+      "date": "2026-08-22",
+      "category": "curiosidade",
+      "tags": [
+        "typescript",
+        "historia",
+        "javascript"
+      ],
+      "excerpt": "Introdução\nEu me lembro como se fosse ontem quando ouvi falar pela primeira vez sobre o TypeScript. Era 2012 e eu estava trabalhando em um projeto de JavaScript que estava cresc",
+      "excerpt_en": null,
+      "lang": "pt",
+      "translation_slug": null
+    },
+    {
       "slug": "2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug",
       "title": "DevTools do navegador: tecnicas avancadas de debug",
       "title_en": "Browser DevTools: Advanced Debugging Techniques",
