@@ -3,12 +3,12 @@ title: "React Hooks avançados: useEffect, useRef e custom hooks que você preci
 date: "2026-08-18"
 category: "tutorial"
 tags: ["react", "hooks", "javascript", "frontend"]
-excerpt: "> “Em 2018, 85 % dos projetos React já haviam adotado Hooks.” – State of React Survey 2023"
+excerpt: "Desde a versão 16.8 do React, os Hooks se tornaram o padrão da comunidade. Domine useEffect, useRef e custom hooks com exemplos de produção."
 ---
 
 ## Introdução: Por que os Hooks mudaram o React? 
 
-> **“Em 2018, 85 % dos projetos React já haviam adotado Hooks.”** – State of React Survey 2023  
+Desde que chegaram ao React na versão 16.8, no início de 2019, os Hooks se tornaram o padrão de facto da comunidade — praticamente toda biblioteca e tutorial moderno parte deles hoje.
 
 Se você começou a programar em React antes da versão 16.8, provavelmente ainda tem na memória a saga dos *class components*: `componentDidMount`, `componentWillUnmount`, `this.setState`, e a eterna luta contra o *binding* de métodos. Foi um período de produtividade limitada e, convenhamos, de código verboso.
 

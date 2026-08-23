@@ -2,10 +2,10 @@
 title: "Advanced React Hooks: Essential useEffect, useRef, and Custom Hooks"
 date: "2026-08-18"
 category: "tutorial"
-tags: []
-excerpt: "By 2018, 85% of React projects had already adopted Hooks."
+tags: ["react", "hooks", "javascript", "frontend"]
+excerpt: "Since React 16.8, Hooks have become the community standard. Master useEffect, useRef, and custom hooks with production-ready examples."
 lang: "en"
-translation_of: "2026-08-18-react-hooks-avancados-useeffect,-useref-e-custom-hooks-que-v"
+translation_of: "2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks"
 ---
 
 

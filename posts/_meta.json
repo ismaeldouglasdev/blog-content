@@ -12,7 +12,7 @@
         "seguranca",
         "node"
       ],
-      "excerpt": "Quando um aplicativo web começa a receber mais de alguns poucos usuários, a abordagem de sessão baseada em cookie simplesmente não escala. Lembro-me da primeira vez que meu MVP est",
+      "excerpt": "Quando um aplicativo web começa a receber mais de alguns poucos usuários, a abordagem de sessão baseada em cookie simplesmente não escala. Lembro-me da primeira vez que meu",
       "excerpt_en": null,
       "lang": "pt",
       "translation_slug": null
@@ -28,7 +28,7 @@
         "historia",
         "javascript"
       ],
-      "excerpt": "Introdução\nEu me lembro como se fosse ontem quando ouvi falar pela primeira vez sobre o TypeScript. Era 2012 e eu estava trabalhando em um projeto de JavaScript que estava cresc",
+      "excerpt": "Eu me lembro como se fosse ontem quando ouvi falar pela primeira vez sobre o TypeScript. Era 2012 e eu estava trabalhando em um projeto de JavaScript que estava cresc",
       "excerpt_en": null,
       "lang": "pt",
       "translation_slug": null
@@ -44,8 +44,8 @@
         "debug",
         "browser"
       ],
-      "excerpt": "Já ficou horas encurralado por um bug que desaparece assim que você tenta inspecionar? A sensação de estar jogando gato e rato com o navegador é mais comum do que parece, e a maior",
-      "excerpt_en": "Have you ever spent hours trapped by a bug that disappears as soon as you try to inspect it? The feeling of playing cat and mouse with the browser is more common than it seems, and",
+      "excerpt": "Já ficou horas encurralado por um bug que desaparece assim que você tenta inspecionar? A sensação de estar jogando gato e rato com o navegador é mais comum do que parece, e a",
+      "excerpt_en": "Have you ever spent hours trapped by a bug that disappears as soon as you try to inspect it? The feeling of playing cat and mouse with the browser is more common than it seems",
       "lang": "pt",
       "translation_slug": "2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug-en"
     },
@@ -60,50 +60,88 @@
         "debug",
         "browser"
       ],
-      "excerpt": "Have you ever spent hours trapped by a bug that disappears as soon as you try to inspect it? The feeling of playing cat and mouse with the browser is more common than it seems, and",
-      "excerpt_en": "Have you ever spent hours trapped by a bug that disappears as soon as you try to inspect it? The feeling of playing cat and mouse with the browser is more common than it seems, and",
+      "excerpt": "Have you ever spent hours trapped by a bug that disappears as soon as you try to inspect it? The feeling of playing cat and mouse with the browser is more common than it",
+      "excerpt_en": "Have you ever spent hours trapped by a bug that disappears as soon as you try to inspect it? The feeling of playing cat and mouse with the browser is more common than it seems",
       "lang": "en",
       "translation_slug": "2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug",
       "translation_of": "2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug"
     },
     {
-      "slug": "2026-08-18-react-hooks-avancados-useeffect,-useref-e-custom-hooks-que-v",
+      "slug": "2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks",
       "title": "React Hooks avançados: useEffect, useRef e custom hooks que você precisa conhecer",
       "date": "2026-08-18",
       "category": "tutorial",
-      "excerpt": "> “Em 2018, 85 % dos projetos React já haviam adotado Hooks.” – State of React Survey 2023",
+      "excerpt": "“Em 2018, 85 % dos projetos React já haviam adotado Hooks.” – State of React Survey 2023",
       "title_en": "Advanced React Hooks: Essential useEffect, useRef, and Custom Hooks",
       "excerpt_en": "By 2018, 85% of React projects had already adopted Hooks.",
-      "translation_slug": "2026-08-18-react-hooks-avancados-useeffect,-useref-e-custom-hooks-que-v-en",
+      "translation_slug": "2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks-en",
       "tags": [
         "react",
         "hooks",
         "useeffect",
         "useref"
-      ]
+      ],
+      "lang": "pt"
     },
     {
       "slug": "2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript",
       "title": "Prisma ORM: como modelar banco de dados com TypeScript",
       "date": "2026-08-18",
       "category": "tutorial",
-      "excerpt": "> “Se a única forma que você conhece de conversar com o banco de dados é gritar SQL, está na hora de aprender a falar a língua dele.”",
+      "excerpt": "“Se a única forma que você conhece de conversar com o banco de dados é gritar SQL, está na hora de aprender a falar a língua dele.”",
       "title_en": "Prisma ORM: Modeling Databases with TypeScript",
-      "excerpt_en": "If the only way you know how to talk to the database is by shouting SQL, it's time to learn its language.",
+      "excerpt_en": "If the only way you know how to talk to the database is by shouting SQL, its time to learn its language.",
       "translation_slug": "2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript-en",
       "tags": [
         "prisma",
         "orm",
         "typescript",
         "banco-de-dados"
-      ]
+      ],
+      "lang": "pt"
+    },
+    {
+      "slug": "2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks-en",
+      "title": "Advanced React Hooks: Essential useEffect, useRef, and Custom Hooks",
+      "title_en": "Advanced React Hooks: Essential useEffect, useRef, and Custom Hooks",
+      "date": "2026-08-18",
+      "category": "tutorial",
+      "tags": [
+        "react",
+        "hooks",
+        "useeffect",
+        "useref"
+      ],
+      "excerpt": "Since React 16.8, Hooks have become the community standard. Master useEffect, useRef, and custom hooks with production-ready examples.",
+      "excerpt_en": "Since React 16.8, Hooks have become the community standard. Master useEffect, useRef, and custom hooks with production-ready examples.",
+      "lang": "en",
+      "translation_slug": "2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks",
+      "translation_of": "2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks"
+    },
+    {
+      "slug": "2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript-en",
+      "title": "Prisma ORM: Modeling Databases with TypeScript",
+      "title_en": "Prisma ORM: Modeling Databases with TypeScript",
+      "date": "2026-08-18",
+      "category": "tutorial",
+      "tags": [
+        "prisma",
+        "orm",
+        "typescript",
+        "banco-de-dados"
+      ],
+      "excerpt": "If the only way you know how to talk to the database is by shouting SQL, it's time to learn its language.",
+      "excerpt_en": "If the only way you know how to talk to the database is by shouting SQL, it's time to learn its language.",
+      "lang": "en",
+      "translation_slug": "2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript",
+      "translation_of": "2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript"
     },
     {
       "slug": "2026-08-17-css-grid-e-flexbox-quando-usar-cada-um",
       "title": "CSS Grid e Flexbox: quando usar cada um",
       "date": "2026-08-17",
       "category": "tutorial",
-      "excerpt": "# CSS Grid vs. Flexbox: Quando Usar Cada Um no Desenvolvimento Web",
+      "excerpt": "CSS Grid vs. Flexbox: Quando Usar Cada Um no Desenvolvimento Web",
       "title_en": "CSS Grid vs Flexbox: When to Use Each One",
       "excerpt_en": "CSS Grid vs. Flexbox: When to Use Each in Web Development",
       "translation_slug": "2026-08-17-css-grid-e-flexbox-quando-usar-cada-um-en",
@@ -112,7 +150,26 @@
         "grid",
         "flexbox",
         "layout"
-      ]
+      ],
+      "lang": "pt"
+    },
+    {
+      "slug": "2026-08-17-css-grid-e-flexbox-quando-usar-cada-um-en",
+      "title": "CSS Grid vs. Flexbox: When to Use Each One",
+      "title_en": "CSS Grid vs. Flexbox: When to Use Each One",
+      "date": "2026-08-17",
+      "category": "tutorial",
+      "tags": [
+        "css",
+        "grid",
+        "flexbox",
+        "layout"
+      ],
+      "excerpt": "CSS Grid vs. Flexbox: When to Use Each in Web Development",
+      "excerpt_en": "CSS Grid vs. Flexbox: When to Use Each in Web Development",
+      "lang": "en",
+      "translation_slug": "2026-08-17-css-grid-e-flexbox-quando-usar-cada-um",
+      "translation_of": "2026-08-17-css-grid-e-flexbox-quando-usar-cada-um"
     }
   ]
 }

@@ -9,7 +9,7 @@ lang: "pt"
 
 ## Introdução
 
-Já ficou horas encurralado por um bug que desaparece assim que você tenta inspecionar? A sensação de estar jogando gato e rato com o navegador é mais comum do que parece, e a maioria das vezes a culpa não é do código em si e sim da forma como o analisamos. Quando eu comecei a usar as DevTools como um “caderno de anotações” ao invés de um simples painel de inspeção, a produtividade disparou e a frustração diminuiu drasticamente. Neste texto eu compartilho as técnicas avançadas que me ajudaram a transformar horas de caça ao erro em minutos de diagnóstico preciso. Prepare o café, abra o Chrome (ou o Firefox, o Edge tem quase as mesmas funcionalidades) e vamos colocar a lupa nas camadas que realmente importam.
+Já ficou horas encurralado por um bug que desaparece assim que você tenta inspecionar? A sensação de estar jogando gato e rato com o navegador é mais comum do que parece, e a maioria das vezes a culpa não é do código em si e sim da forma como o analisamos. Tratar as DevTools como um “caderno de anotações” ao invés de um simples painel de inspeção muda completamente o jogo: a produtividade dispara e a frustração diminui drasticamente. Neste texto eu compartilho as técnicas avançadas que me ajudaram a transformar horas de caça ao erro em minutos de diagnóstico preciso. Prepare o café, abra o Chrome (ou o Firefox, o Edge tem quase as mesmas funcionalidades) e vamos colocar a lupa nas camadas que realmente importam.
 
 ## Performance Profiler
 

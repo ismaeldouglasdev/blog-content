@@ -3,13 +3,13 @@ title: "A historia do TypeScript: de acidente a padrao da industria"
 date: "2026-08-22"
 category: "curiosidade"
 tags: ["typescript", "historia", "javascript"]
-excerpt: "Introdução
-Eu me lembro como se fosse ontem quando ouvi falar pela primeira vez sobre o TypeScript. Era 2012 e eu estava trabalhando em um projeto de JavaScript que estava cresc"
+excerpt: "Em 2012, a Microsoft anunciou o TypeScript para resolver a crise de manutenibilidade do JavaScript grande. Esta é a história do projeto experimental que virou padrão da indústria."
 lang: "pt"
 ---
 
 ## Introdução
-Eu me lembro como se fosse ontem quando ouvi falar pela primeira vez sobre o TypeScript. Era 2012 e eu estava trabalhando em um projeto de JavaScript que estava crescendo rapidamente. A complexidade do código estava se tornando um problema e eu estava procurando por uma solução para tornar o meu código mais manutenível e escalável. Foi então que eu descobri o TypeScript, uma linguagem que prometia trazer a segurança e a manutenibilidade do código estático para o mundo do JavaScript. Na minha experiência, o TypeScript foi um divisor de águas no desenvolvimento de software e, nesse artigo, eu vou contar a história de como ele passou de um projeto experimental para se tornar um padrão da indústria.
+
+Em outubro de 2012, a Microsoft fez um anúncio que mudaria o rumo do desenvolvimento JavaScript: o TypeScript. Na época, equipes que mantinham aplicações JavaScript grandes enfrentavam um problema cada vez mais evidente — código que crescia rápido e se tornava impossível de manter sem tipagem estática. O TypeScript surgiu exatamente para atacar essa dor, prometendo trazer a segurança e a manutenibilidade da tipagem estática sem abandonar o ecossistema JavaScript. Mais de uma década depois, ele se tornou o padrão de facto da indústria. Esta é a história de como um projeto experimental interno virou a base de praticamente todo framework moderno.
 
 ## 2012: TypeScript nasceu
 O TypeScript foi criado pela Microsoft em 2012, com o objetivo de fornecer uma linguagem que fosse compatível com o JavaScript, mas com a adição de tipagem estática. A ideia era permitir que os desenvolvedores escrevessem código mais seguro e manutenível, sem sacrificar a flexibilidade e a dinâmica do JavaScript. O TypeScript foi lançado como um projeto de código aberto e rapidamente ganhou atenção da comunidade de desenvolvedores.

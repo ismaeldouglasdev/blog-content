@@ -1,9 +1,9 @@
 ---
----
+
 title: "CSS Grid vs. Flexbox: When to Use Each One"
 date: "2026-08-17"
 category: "tutorial"
-tags: []
+tags: ["css", "grid", "layout"]
 excerpt: "CSS Grid vs. Flexbox: When to Use Each in Web Development"
 lang: "en"
 translation_of: "2026-08-17-css-grid-e-flexbox-quando-usar-cada-um"

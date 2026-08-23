@@ -3,13 +3,13 @@ title: "Autenticacao JWT completa: login, refresh token e protecao de rotas"
 date: "2026-08-23"
 category: "tutorial"
 tags: ["jwt", "autenticacao", "seguranca", "node"]
-excerpt: "Quando um aplicativo web começa a receber mais de alguns poucos usuários, a abordagem de sessão baseada em cookie simplesmente não escala. Lembro-me da primeira vez que meu MVP est"
+excerpt: "Sessões em cookie não escalam quando o tráfego cresce: latência do banco dispara e a experiência do usuário sofre. Guia completo de JWT: login, refresh token e proteção de rotas."
 lang: "pt"
 ---
 
 ## Introdução: JWT vs Sessões
 
-Quando um aplicativo web começa a receber mais de alguns poucos usuários, a abordagem de sessão baseada em cookie simplesmente não escala. Lembro-me da primeira vez que meu MVP estagnou após um pequeno aumento de tráfego; a sessão do lado do servidor estava se tornando um gargalo, e a latência do banco de dados disparou. A solução foi adotar tokens JWT. Em vez de armazenar um ID de sessão em um banco de dados e verificar isso a cada solicitação, podemos assinar dados e verificá-los em qualquer lugar.
+Quando um aplicativo web começa a receber mais de alguns poucos usuários, a abordagem de sessão baseada em cookie simplesmente não escala. É o cenário clássico de quem opera qualquer aplicação que cresce: o tráfego aumenta, a sessão armazenada no lado do servidor vira gargalo, a latência do banco dispara e a resposta natural é migrar para tokens JWT. Em vez de armazenar um ID de sessão em um banco de dados e verificar isso a cada solicitação, podemos assinar dados e verificá-los em qualquer lugar.
 
 JWT se tornou o padrão para APIs modernas, principalmente porque funciona bem com microsserviços e clientes móveis. No entanto, a praticidade vem com responsabilidades. Uma implementação descuidada pode transformar um sistema aparentemente seguro em um alvo fácil para atacantes. Este artigo percorre o ciclo de vida completo de autenticação: desde o primeiro login até a renovação de credenciais e a proteção das rotas. Vou compartilhar soluções que usei em produção, armadilhas que eu já passei por ter que consertar e dicas práticas que funcionam na vida real. Nada é teórico aqui; cada trecho de código foi testado e funciona.
 

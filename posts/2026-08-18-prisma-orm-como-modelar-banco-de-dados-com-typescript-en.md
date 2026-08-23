@@ -2,7 +2,7 @@
 title: "Prisma ORM: Modeling Databases with TypeScript"
 date: "2026-08-18"
 category: "tutorial"
-tags: []
+tags: ["prisma", "orm", "banco-de-dados", "typescript"]
 excerpt: "If the only way you know how to talk to the database is by shouting SQL, it's time to learn its language."
 lang: "en"
 translation_of: "2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript"
