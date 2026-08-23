@@ -1,6 +1,23 @@
 {
   "posts": [
     {
+      "slug": "2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de-",
+      "title": "Autenticacao JWT completa: login, refresh token e protecao de rotas",
+      "title_en": null,
+      "date": "2026-08-23",
+      "category": "tutorial",
+      "tags": [
+        "jwt",
+        "autenticacao",
+        "seguranca",
+        "node"
+      ],
+      "excerpt": "Quando um aplicativo web começa a receber mais de alguns poucos usuários, a abordagem de sessão baseada em cookie simplesmente não escala. Lembro-me da primeira vez que meu MVP est",
+      "excerpt_en": null,
+      "lang": "pt",
+      "translation_slug": null
+    },
+    {
       "slug": "2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria",
       "title": "A historia do TypeScript: de acidente a padrao da industria",
       "title_en": null,
