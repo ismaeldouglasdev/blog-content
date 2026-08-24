@@ -38,7 +38,7 @@
     {
       "slug": "2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de",
       "title": "Autenticacao JWT completa: login, refresh token e protecao de rotas",
-      "title_en": null,
+      "title_en": "Full JWT Authentication: Login, Refresh Tokens, and Route Protection",
       "date": "2026-08-23",
       "category": "tutorial",
       "tags": [
@@ -48,14 +48,32 @@
         "node"
       ],
       "excerpt": "Sessões em cookie não escalam quando o tráfego cresce: latência do banco dispara e a experiência do usuário sofre. Guia completo de JWT: login, refresh token e proteção de rotas.",
-      "excerpt_en": null,
+      "excerpt_en": "When a web application starts getting more than a few users, the cookie‑based session approach simply doesnt scale. Its the classic scenario for anyone running an application",
       "lang": "pt",
-      "translation_slug": null
+      "translation_slug": "2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de-en"
+    },
+    {
+      "slug": "2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de-en",
+      "title": "Full JWT Authentication: Login, Refresh Tokens, and Route Protection",
+      "title_en": "Full JWT Authentication: Login, Refresh Tokens, and Route Protection",
+      "date": "2026-08-23",
+      "category": "tutorial",
+      "tags": [
+        "jwt",
+        "autenticacao",
+        "seguranca",
+        "node"
+      ],
+      "excerpt": "When a web application starts getting more than a few users, the cookie‑based session approach simply doesnt scale. Its the classic scenario for anyone running an application",
+      "excerpt_en": "When a web application starts getting more than a few users, the cookie‑based session approach simply doesnt scale. Its the classic scenario for anyone running an application",
+      "lang": "en",
+      "translation_slug": "2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de",
+      "translation_of": "2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de"
     },
     {
       "slug": "2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria",
       "title": "A historia do TypeScript: de acidente a padrao da industria",
-      "title_en": null,
+      "title_en": "The History of TypeScript: From Accident to Industry Standard",
       "date": "2026-08-22",
       "category": "curiosidade",
       "tags": [
@@ -64,9 +82,26 @@
         "javascript"
       ],
       "excerpt": "Em 2012, a Microsoft anunciou o TypeScript para resolver a crise de manutenibilidade do JavaScript grande. Esta é a história do projeto experimental que virou padrão da indústria.",
-      "excerpt_en": null,
+      "excerpt_en": "In October 2012, Microsoft announced TypeScript, reshaping JavaScript development. At the time, teams maintaining large JavaScript.",
       "lang": "pt",
-      "translation_slug": null
+      "translation_slug": "2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria-en"
+    },
+    {
+      "slug": "2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria-en",
+      "title": "The History of TypeScript: From Accident to Industry Standard",
+      "title_en": "The History of TypeScript: From Accident to Industry Standard",
+      "date": "2026-08-22",
+      "category": "curiosidade",
+      "tags": [
+        "typescript",
+        "historia",
+        "javascript"
+      ],
+      "excerpt": "In October 2012, Microsoft announced TypeScript, reshaping JavaScript development. At the time, teams maintaining large JavaScript.",
+      "excerpt_en": "In October 2012, Microsoft announced TypeScript, reshaping JavaScript development. At the time, teams maintaining large JavaScript.",
+      "lang": "en",
+      "translation_slug": "2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria",
+      "translation_of": "2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria"
     },
     {
       "slug": "2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug",
