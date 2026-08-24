@@ -1,6 +1,23 @@
 {
   "posts": [
     {
+      "slug": "2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas",
+      "title": "Serverless no AWS Lambda: funcoes, APIs e automacoes baratas",
+      "title_en": null,
+      "date": "2026-08-24",
+      "category": "tutorial",
+      "tags": [
+        "serverless",
+        "aws",
+        "lambda",
+        "cloud"
+      ],
+      "excerpt": "Por que servidores “invisíveis” podem ser a resposta para pequenos negócios",
+      "excerpt_en": null,
+      "lang": "pt",
+      "translation_slug": null
+    },
+    {
       "slug": "2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de",
       "title": "Autenticacao JWT completa: login, refresh token e protecao de rotas",
       "title_en": null,
