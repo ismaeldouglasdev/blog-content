@@ -3,7 +3,7 @@
     {
       "slug": "2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas",
       "title": "Serverless no AWS Lambda: funcoes, APIs e automacoes baratas",
-      "title_en": null,
+      "title_en": "Serverless on AWS Lambda: Affordable Functions, APIs, and Automation",
       "date": "2026-08-24",
       "category": "tutorial",
       "tags": [
@@ -13,9 +13,27 @@
         "cloud"
       ],
       "excerpt": "Por que servidores “invisíveis” podem ser a resposta para pequenos negócios",
-      "excerpt_en": null,
+      "excerpt_en": "Why “invisible” servers could be the solution for small businesses",
       "lang": "pt",
-      "translation_slug": null
+      "translation_slug": "2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas-en"
+    },
+    {
+      "slug": "2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas-en",
+      "title": "Serverless on AWS Lambda: Affordable Functions, APIs, and Automation",
+      "title_en": "Serverless on AWS Lambda: Affordable Functions, APIs, and Automation",
+      "date": "2026-08-24",
+      "category": "tutorial",
+      "tags": [
+        "serverless",
+        "aws",
+        "lambda",
+        "cloud"
+      ],
+      "excerpt": "Why “invisible” servers could be the solution for small businesses",
+      "excerpt_en": "Why “invisible” servers could be the solution for small businesses",
+      "lang": "en",
+      "translation_slug": "2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas",
+      "translation_of": "2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas"
     },
     {
       "slug": "2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de",
