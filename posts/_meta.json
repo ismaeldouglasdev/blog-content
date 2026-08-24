@@ -12,7 +12,7 @@
         "seguranca",
         "node"
       ],
-      "excerpt": "Quando um aplicativo web começa a receber mais de alguns poucos usuários, a abordagem de sessão baseada em cookie simplesmente não escala. Lembro-me da primeira vez que meu",
+      "excerpt": "Sessões em cookie não escalam quando o tráfego cresce: latência do banco dispara e a experiência do usuário sofre. Guia completo de JWT: login, refresh token e proteção de rotas.",
       "excerpt_en": null,
       "lang": "pt",
       "translation_slug": null
@@ -28,7 +28,7 @@
         "historia",
         "javascript"
       ],
-      "excerpt": "Eu me lembro como se fosse ontem quando ouvi falar pela primeira vez sobre o TypeScript. Era 2012 e eu estava trabalhando em um projeto de JavaScript que estava cresc",
+      "excerpt": "Em 2012, a Microsoft anunciou o TypeScript para resolver a crise de manutenibilidade do JavaScript grande. Esta é a história do projeto experimental que virou padrão da indústria.",
       "excerpt_en": null,
       "lang": "pt",
       "translation_slug": null
@@ -71,7 +71,7 @@
       "title": "React Hooks avançados: useEffect, useRef e custom hooks que você precisa conhecer",
       "date": "2026-08-18",
       "category": "tutorial",
-      "excerpt": "“Em 2018, 85 % dos projetos React já haviam adotado Hooks.” – State of React Survey 2023",
+      "excerpt": "Desde a versão 16.8 do React, os Hooks se tornaram o padrão da comunidade. Domine useEffect, useRef e custom hooks com exemplos de produção.",
       "title_en": "Advanced React Hooks: Essential useEffect, useRef, and Custom Hooks",
       "excerpt_en": "By 2018, 85% of React projects had already adopted Hooks.",
       "translation_slug": "2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks-en",
