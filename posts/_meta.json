@@ -1,6 +1,23 @@
 {
   "posts": [
     {
+      "slug": "2026-08-25-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um",
+      "title": "Banco de dados relacional vs NoSQL: quando usar cada um",
+      "title_en": null,
+      "date": "2026-08-25",
+      "category": "article",
+      "tags": [
+        "database",
+        "sql",
+        "nosql",
+        "mongodb"
+      ],
+      "excerpt": "Escolher o banco de dados errado no inicio de um projeto garante refatoracoes dolorosas no futuro. A discussao entre bancos relacionais (SQL) e nao-relacionais (NoSQL)",
+      "excerpt_en": null,
+      "lang": "pt",
+      "translation_slug": null
+    },
+    {
       "slug": "2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas",
       "title": "Serverless no AWS Lambda: funcoes, APIs e automacoes baratas",
       "title_en": "Serverless on AWS Lambda: Affordable Functions, APIs, and Automation",
