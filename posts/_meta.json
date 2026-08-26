@@ -1,6 +1,41 @@
 {
   "posts": [
     {
+      "slug": "2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash",
+      "title": "Automacao de tarefas com cron, systemd e scripts Bash",
+      "title_en": "Automating Tasks with Cron, Systemd, and Bash Scripts",
+      "date": "2026-08-26",
+      "category": "tutorial",
+      "tags": [
+        "linux",
+        "automacao",
+        "bash",
+        "systemd"
+      ],
+      "excerpt": "Introdução Quando migrei 10k produtos entre sistemas na Loja Quase Tudo, percebi a importância da automação de tarefas para manter a eficiência e reduzir erros humanos. A",
+      "excerpt_en": "Migrating 10k products made me realize the importance of automating tasks for efficiency and reducing errors",
+      "lang": "pt",
+      "translation_slug": "2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash-en"
+    },
+    {
+      "slug": "2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash-en",
+      "title": "Automating Tasks with Cron, Systemd, and Bash Scripts",
+      "title_en": "Automating Tasks with Cron, Systemd, and Bash Scripts",
+      "date": "2026-08-26",
+      "category": "tutorial",
+      "tags": [
+        "linux",
+        "automacao",
+        "bash",
+        "systemd"
+      ],
+      "excerpt": "Migrating 10k products made me realize the importance of automating tasks for efficiency and reducing errors",
+      "excerpt_en": "Migrating 10k products made me realize the importance of automating tasks for efficiency and reducing errors",
+      "lang": "en",
+      "translation_slug": "2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash",
+      "translation_of": "2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash"
+    },
+    {
       "slug": "2026-08-25-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um",
       "title": "Banco de dados relacional vs NoSQL: quando usar cada um",
       "title_en": null,
