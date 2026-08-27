@@ -1,6 +1,41 @@
 {
   "posts": [
     {
+      "slug": "2026-08-27-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas",
+      "title": "Serverless no AWS Lambda: funcoes, APIs e automacoes baratas",
+      "title_en": "Serverless with AWS Lambda: Low-Cost Functions, APIs, and Automation",
+      "date": "2026-08-27",
+      "category": "tutorial",
+      "tags": [
+        "serverless",
+        "aws",
+        "lambda",
+        "cloud"
+      ],
+      "excerpt": "Introdução: Serverless e Quando Vale a Pena Quando se fala em desenvolvimento de software, uma das principais preocupações é a infraestrutura necessária para rodar as",
+      "excerpt_en": "Introduction: Serverless and When It’s Worth It. In software development, one of the biggest",
+      "lang": "pt",
+      "translation_slug": "2026-08-27-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas-en"
+    },
+    {
+      "slug": "2026-08-27-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas-en",
+      "title": "Serverless with AWS Lambda: Low-Cost Functions, APIs, and Automation",
+      "title_en": "Serverless with AWS Lambda: Low-Cost Functions, APIs, and Automation",
+      "date": "2026-08-27",
+      "category": "tutorial",
+      "tags": [
+        "serverless",
+        "aws",
+        "lambda",
+        "cloud"
+      ],
+      "excerpt": "Introduction: Serverless and When It’s Worth It. In software development, one of the biggest",
+      "excerpt_en": "Introduction: Serverless and When It’s Worth It. In software development, one of the biggest",
+      "lang": "en",
+      "translation_slug": "2026-08-27-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas",
+      "translation_of": "2026-08-27-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas"
+    },
+    {
       "slug": "2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash",
       "title": "Automacao de tarefas com cron, systemd e scripts Bash",
       "title_en": "Automating Tasks with Cron, Systemd, and Bash Scripts",
