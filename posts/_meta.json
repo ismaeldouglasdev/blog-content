@@ -1,6 +1,39 @@
 {
   "posts": [
     {
+      "slug": "2026-08-28-react-server-components-quando-e-como-usar-no-next-js",
+      "title": "React Server Components: quando e como usar no Next.js",
+      "title_en": "React Server Components: when and how to use them in Next.js",
+      "date": "2026-08-28",
+      "category": "tutorial",
+      "tags": [
+        "react",
+        "server-components",
+        "nextjs"
+      ],
+      "excerpt": "O ecossistema frontend passou anos focado em rodar tudo no navegador do cliente, mas a arquitetura moderna de frameworks como o Next.js mudou o jogo ao trazer o servidor de",
+      "excerpt_en": "The frontend ecosystem spent years focused on running everything in the clients browser, but the modern architecture of frameworks like Next.js has changed the game by",
+      "lang": "pt",
+      "translation_slug": "2026-08-28-react-server-components-quando-e-como-usar-no-next-js-en"
+    },
+    {
+      "slug": "2026-08-28-react-server-components-quando-e-como-usar-no-next-js-en",
+      "title": "React Server Components: when and how to use them in Next.js",
+      "title_en": "React Server Components: when and how to use them in Next.js",
+      "date": "2026-08-28",
+      "category": "tutorial",
+      "tags": [
+        "react",
+        "server-components",
+        "nextjs"
+      ],
+      "excerpt": "The frontend ecosystem spent years focused on running everything in the clients browser, but the modern architecture of frameworks like Next.js has changed the game by",
+      "excerpt_en": "The frontend ecosystem spent years focused on running everything in the clients browser, but the modern architecture of frameworks like Next.js has changed the game by",
+      "lang": "en",
+      "translation_slug": "2026-08-28-react-server-components-quando-e-como-usar-no-next-js",
+      "translation_of": "2026-08-28-react-server-components-quando-e-como-usar-no-next-js"
+    },
+    {
       "slug": "2026-08-27-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas",
       "title": "Serverless no AWS Lambda: funcoes, APIs e automacoes baratas",
       "title_en": "Serverless with AWS Lambda: Low-Cost Functions, APIs, and Automation",
