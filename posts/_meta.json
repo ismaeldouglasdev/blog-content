@@ -1,6 +1,39 @@
 {
   "posts": [
     {
+      "slug": "2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em",
+      "title": "TypeScript: tipos avancados que transformam seu codigo em producao",
+      "title_en": "TypeScript: Advanced Types to Take Your Code to Production",
+      "date": "2026-08-29",
+      "category": "tutorial",
+      "tags": [
+        "typescript",
+        "javascript",
+        "tipagem"
+      ],
+      "excerpt": "Tipos Avançados do TypeScript que Evitam Bugs em Produção",
+      "excerpt_en": "Tipos Avançados do TypeScript que Evitam Erros em Produção",
+      "lang": "pt",
+      "translation_slug": "2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em-en"
+    },
+    {
+      "slug": "2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em-en",
+      "title": "TypeScript: Advanced Types to Take Your Code to Production",
+      "title_en": "TypeScript: Advanced Types to Take Your Code to Production",
+      "date": "2026-08-29",
+      "category": "tutorial",
+      "tags": [
+        "typescript",
+        "javascript",
+        "tipagem"
+      ],
+      "excerpt": "Tipos Avançados do TypeScript que Evitam Erros em Produção",
+      "excerpt_en": "Tipos Avançados do TypeScript que Evitam Erros em Produção",
+      "lang": "en",
+      "translation_slug": "2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em",
+      "translation_of": "2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em"
+    },
+    {
       "slug": "2026-08-28-react-server-components-quando-e-como-usar-no-next-js",
       "title": "React Server Components: quando e como usar no Next.js",
       "title_en": "React Server Components: when and how to use them in Next.js",
