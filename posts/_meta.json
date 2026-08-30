@@ -1,6 +1,41 @@
 {
   "posts": [
     {
+      "slug": "2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco",
+      "title": "O fim do npm: por que bun e deno estao ganhando espaco",
+      "title_en": "The End of npm: Why Bun and Deno are Gaining Ground",
+      "date": "2026-08-30",
+      "category": "curiosidade",
+      "tags": [
+        "npm",
+        "bun",
+        "deno",
+        "javascript"
+      ],
+      "excerpt": "Introdução Quando se trata de gerenciar dependências em projetos JavaScript, o npm é o gigante da indústria. Com mais de 1,5 milhão de pacotes disponíveis, é o maior",
+      "excerpt_en": "npm is the industry giant for managing JavaScript dependencies",
+      "lang": "pt",
+      "translation_slug": "2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco-en"
+    },
+    {
+      "slug": "2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco-en",
+      "title": "The End of npm: Why Bun and Deno are Gaining Ground",
+      "title_en": "The End of npm: Why Bun and Deno are Gaining Ground",
+      "date": "2026-08-30",
+      "category": "curiosidade",
+      "tags": [
+        "npm",
+        "bun",
+        "deno",
+        "javascript"
+      ],
+      "excerpt": "npm is the industry giant for managing JavaScript dependencies",
+      "excerpt_en": "npm is the industry giant for managing JavaScript dependencies",
+      "lang": "en",
+      "translation_slug": "2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco",
+      "translation_of": "2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco"
+    },
+    {
       "slug": "2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em",
       "title": "TypeScript: tipos avancados que transformam seu codigo em producao",
       "title_en": "TypeScript: Advanced Types to Take Your Code to Production",
