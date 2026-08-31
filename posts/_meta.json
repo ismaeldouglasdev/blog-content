@@ -1,6 +1,41 @@
 {
   "posts": [
     {
+      "slug": "2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um",
+      "title": "Banco de dados relacional vs NoSQL: quando usar cada um",
+      "title_en": "Relational Database vs NoSQL: When to Use Each",
+      "date": "2026-08-31",
+      "category": "article",
+      "tags": [
+        "database",
+        "sql",
+        "nosql",
+        "mongodb"
+      ],
+      "excerpt": "Banco de dados relacional vs NoSQL: quando usar cada um",
+      "excerpt_en": "Relational vs. NoSQL databases: when to use each one.",
+      "lang": "pt",
+      "translation_slug": "2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um-en"
+    },
+    {
+      "slug": "2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um-en",
+      "title": "Relational Database vs NoSQL: When to Use Each",
+      "title_en": "Relational Database vs NoSQL: When to Use Each",
+      "date": "2026-08-31",
+      "category": "article",
+      "tags": [
+        "database",
+        "sql",
+        "nosql",
+        "mongodb"
+      ],
+      "excerpt": "Relational vs. NoSQL databases: when to use each one.",
+      "excerpt_en": "Relational vs. NoSQL databases: when to use each one.",
+      "lang": "en",
+      "translation_slug": "2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um",
+      "translation_of": "2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um"
+    },
+    {
       "slug": "2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco",
       "title": "O fim do npm: por que bun e deno estao ganhando espaco",
       "title_en": "The End of npm: Why Bun and Deno are Gaining Ground",
