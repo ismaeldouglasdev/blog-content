@@ -1,6 +1,39 @@
 {
   "posts": [
     {
+      "slug": "2026-09-01-testing-library-testes-de-react-que-refletem-o-uso-real",
+      "title": "Testing Library: testes de React que refletem o uso real",
+      "title_en": "Testing Library: React tests that reflect real‑world usage",
+      "date": "2026-09-01",
+      "category": "tutorial",
+      "tags": [
+        "testing-library",
+        "react",
+        "testes"
+      ],
+      "excerpt": "Você já viu um teste verde no CI e, na hora de abrir a aplicação, o botão que deveria estar habilitado continua desabilitado? Essa desconexão entre o que o teste verifica e o",
+      "excerpt_en": "Have you ever seen a green test in CI, only to open the application and find that the button that should be enabled is still disabled? That disconnect between what the test",
+      "lang": "pt",
+      "translation_slug": "2026-09-01-testing-library-testes-de-react-que-refletem-o-uso-real-en"
+    },
+    {
+      "slug": "2026-09-01-testing-library-testes-de-react-que-refletem-o-uso-real-en",
+      "title": "Testing Library: React tests that reflect real‑world usage",
+      "title_en": "Testing Library: React tests that reflect real‑world usage",
+      "date": "2026-09-01",
+      "category": "tutorial",
+      "tags": [
+        "testing-library",
+        "react",
+        "testes"
+      ],
+      "excerpt": "Have you ever seen a green test in CI, only to open the application and find that the button that should be enabled is still disabled? That disconnect between what the test",
+      "excerpt_en": "Have you ever seen a green test in CI, only to open the application and find that the button that should be enabled is still disabled? That disconnect between what the test",
+      "lang": "en",
+      "translation_slug": "2026-09-01-testing-library-testes-de-react-que-refletem-o-uso-real",
+      "translation_of": "2026-09-01-testing-library-testes-de-react-que-refletem-o-uso-real"
+    },
+    {
       "slug": "2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um",
       "title": "Banco de dados relacional vs NoSQL: quando usar cada um",
       "title_en": "Relational Database vs NoSQL: When to Use Each",
