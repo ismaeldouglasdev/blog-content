@@ -1,5 +1,5 @@
 ---
-title: "TypeScript: tipos avancados que transformam seu codigo em producao"
+title: "TypeScript: tipos avançados que transformam seu código em produção"
 date: "2026-08-29"
 category: "tutorial"
 tags: ["typescript", "javascript", "tipagem"]
@@ -37,7 +37,7 @@ O TypeScript oferece uma série de Utility Types que permitem manipular tipos ex
 
 Essas ferramentas traduzem tipos complexos em definições limpas, facilitando a leitura do código por outras pessoas e permitindo que mudanças no modelo de dados sejam propagadas automaticamente através do sistema.
 
-### Tipos Condicionais e Inferencia
+### Tipos Condicionais e Inferência
 
 Tipos condicionais permitem que o TypeScript verifique a forma de um tipo e retorne um tipo diferente baseado nessa verificação. A sintaxe `T extends U ? X : Y` pode parecer intimidadora à primeira vista, mas sua aplicação é poderosa.
 

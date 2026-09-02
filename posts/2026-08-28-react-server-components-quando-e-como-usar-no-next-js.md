@@ -132,7 +132,7 @@ Como grande parte do trabalho de renderização e análise de sintaxe ocorre no 
 
 Manter o ecossistema limpo, evitando o uso desnecessário de 'use client', garante que o pacote final entregue ao cliente contenha apenas o estritamente necessário para a interação.
 
-## Conclusao
+## Conclusão
 
 O modelo de Server Components no Next.js exige uma mudança de mentalidade na forma de projetar aplicações web. Separar o que é estático do que é interativo deixa o código mais limpo, melhora o desempenho geral e simplifica o fluxo de dados.
 

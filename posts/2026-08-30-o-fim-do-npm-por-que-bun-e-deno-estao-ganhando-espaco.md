@@ -1,5 +1,5 @@
 ---
-title: "O fim do npm: por que bun e deno estao ganhando espaco"
+title: "O fim do npm: por que bun e deno estão ganhando espaço"
 date: "2026-08-30"
 category: "curiosidade"
 tags: ["npm", "bun", "deno", "javascript"]

@@ -1,8 +1,8 @@
 ---
-title: "Autenticacao JWT completa: login, refresh token e protecao de rotas"
+title: "Autenticação JWT completa: login, refresh token e proteção de rotas"
 date: "2026-08-23"
 category: "tutorial"
-tags: ["jwt", "autenticacao", "seguranca", "node"]
+tags: ["jwt", "autenticação", "segurança", "node"]
 excerpt: "Sessões em cookie não escalam quando o tráfego cresce: latência do banco dispara e a experiência do usuário sofre. Guia completo de JWT: login, refresh token e proteção de rotas."
 lang: "pt"
 ---

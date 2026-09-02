@@ -70,7 +70,7 @@
     },
     {
       "slug": "2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco",
-      "title": "O fim do npm: por que bun e deno estao ganhando espaco",
+      "title": "O fim do npm: por que bun e deno estão ganhando espaço",
       "title_en": "The End of npm: Why Bun and Deno are Gaining Ground",
       "date": "2026-08-30",
       "category": "curiosidade",
@@ -105,7 +105,7 @@
     },
     {
       "slug": "2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em",
-      "title": "TypeScript: tipos avancados que transformam seu codigo em producao",
+      "title": "TypeScript: tipos avançados que transformam seu código em produção",
       "title_en": "TypeScript: Advanced Types to Take Your Code to Production",
       "date": "2026-08-29",
       "category": "tutorial",
@@ -171,7 +171,7 @@
     },
     {
       "slug": "2026-08-27-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas",
-      "title": "Serverless no AWS Lambda: funcoes, APIs e automacoes baratas",
+      "title": "Serverless no AWS Lambda: funções, APIs e automações baratas",
       "title_en": "Serverless with AWS Lambda: Low-Cost Functions, APIs, and Automation",
       "date": "2026-08-27",
       "category": "tutorial",
@@ -251,14 +251,14 @@
         "nosql",
         "mongodb"
       ],
-      "excerpt": "Escolher o banco de dados errado no inicio de um projeto garante refatoracoes dolorosas no futuro. A discussao entre bancos relacionais (SQL) e nao-relacionais (NoSQL)",
+      "excerpt": "Escolher o banco de dados errado no início de um projeto garante refatorações dolorosas no futuro. A discussão entre bancos relacionais (SQL) e não-relacionais (NoSQL)",
       "excerpt_en": null,
       "lang": "pt",
       "translation_slug": null
     },
     {
       "slug": "2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas",
-      "title": "Serverless no AWS Lambda: funcoes, APIs e automacoes baratas",
+      "title": "Serverless no AWS Lambda: funções, APIs e automações baratas",
       "title_en": "Serverless on AWS Lambda: Affordable Functions, APIs, and Automation",
       "date": "2026-08-24",
       "category": "tutorial",
@@ -293,7 +293,7 @@
     },
     {
       "slug": "2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de",
-      "title": "Autenticacao JWT completa: login, refresh token e protecao de rotas",
+      "title": "Autenticação JWT completa: login, refresh token e proteção de rotas",
       "title_en": "Full JWT Authentication: Login, Refresh Tokens, and Route Protection",
       "date": "2026-08-23",
       "category": "tutorial",
@@ -328,7 +328,7 @@
     },
     {
       "slug": "2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria",
-      "title": "A historia do TypeScript: de acidente a padrao da industria",
+      "title": "A história do TypeScript: de acidente a padrão da industria",
       "title_en": "The History of TypeScript: From Accident to Industry Standard",
       "date": "2026-08-22",
       "category": "curiosidade",
@@ -361,7 +361,7 @@
     },
     {
       "slug": "2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug",
-      "title": "DevTools do navegador: tecnicas avancadas de debug",
+      "title": "DevTools do navegador: técnicas avançadas de debug",
       "title_en": "Browser DevTools: Advanced Debugging Techniques",
       "date": "2026-08-20",
       "category": "article",

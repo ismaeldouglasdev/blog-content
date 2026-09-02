@@ -1,5 +1,5 @@
 ---
-title: "Serverless no AWS Lambda: funcoes, APIs e automacoes baratas"
+title: "Serverless no AWS Lambda: funções, APIs e automações baratas"
 date: "2026-08-27"
 category: "tutorial"
 tags: ["serverless", "aws", "lambda", "cloud"]

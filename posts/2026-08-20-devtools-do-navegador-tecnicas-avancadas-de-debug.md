@@ -1,5 +1,5 @@
 ---
-title: "DevTools do navegador: tecnicas avancadas de debug"
+title: "DevTools do navegador: técnicas avançadas de debug"
 date: "2026-08-20"
 category: "article"
 tags: ["devtools", "debug", "browser"]
@@ -151,7 +151,7 @@ getComputedStyle(document.querySelector('.botao')).color
 
 Se o valor retornado for diferente do que aparece no painel “Styles”, significa que há uma regra mais específica sendo aplicada em outro nível da árvore.
 
-Além disso, o **CSS Overview** (disponível no Chrome 111+) gera um resumo visual de cores, fontes e media queries usadas na página. Ao analisar um projeto legado, eu identifiquei que mais de 30 % das regras eram duplicadas ou nunca eram usadas. Remover essas linhas reduziu o tamanho do CSS em 45 KB e melhorou o **First Contentful Paint** em 120 ms.
+Além disso, o **CSS Overview** (disponível no Chrome 111+) gera um resumo visual de cores, fontes e média queries usadas na página. Ao analisar um projeto legado, eu identifiquei que mais de 30 % das regras eram duplicadas ou nunca eram usadas. Remover essas linhas reduziu o tamanho do CSS em 45 KB e melhorou o **First Contentful Paint** em 120 ms.
 
 Para depurar animações, o painel **Animations** permite pausar, acelerar ou desacelerar a timeline. Uma situação que eu já enfrentei foi uma animação CSS que entrava em loop infinito devido a um erro de `animation-iteration-count`. Ao pausar a animação e inspecionar o valor de `animation-name`, ficou claro que o nome estava escrito errado em um dos arquivos SCSS.
 

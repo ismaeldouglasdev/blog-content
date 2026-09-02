@@ -1,8 +1,8 @@
 ---
-title: "A historia do TypeScript: de acidente a padrao da industria"
+title: "A história do TypeScript: de acidente a padrão da industria"
 date: "2026-08-22"
 category: "curiosidade"
-tags: ["typescript", "historia", "javascript"]
+tags: ["typescript", "história", "javascript"]
 excerpt: "Em 2012, a Microsoft anunciou o TypeScript para resolver a crise de manutenibilidade do JavaScript grande. Esta é a história do projeto experimental que virou padrão da indústria."
 lang: "pt"
 ---
