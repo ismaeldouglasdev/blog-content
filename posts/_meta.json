@@ -1,6 +1,39 @@
 {
   "posts": [
     {
+      "slug": "2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js",
+      "title": "Redis na pratica: cache, rate limiting e filas em Node.js",
+      "title_en": "Redis in Practice: Caching, Rate Limiting & Queues in Node.js",
+      "date": "2026-09-03",
+      "category": "tutorial",
+      "tags": [
+        "redis",
+        "cache",
+        "backend"
+      ],
+      "excerpt": "Redis na prática: cache, rate limiting e filas em Node.js",
+      "excerpt_en": "Redis in practice: caching, rate limiting and queues in Node.js",
+      "lang": "pt",
+      "translation_slug": "2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js-en"
+    },
+    {
+      "slug": "2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js-en",
+      "title": "Redis in Practice: Caching, Rate Limiting & Queues in Node.js",
+      "title_en": "Redis in Practice: Caching, Rate Limiting & Queues in Node.js",
+      "date": "2026-09-03",
+      "category": "tutorial",
+      "tags": [
+        "redis",
+        "cache",
+        "backend"
+      ],
+      "excerpt": "Redis in practice: caching, rate limiting and queues in Node.js",
+      "excerpt_en": "Redis in practice: caching, rate limiting and queues in Node.js",
+      "lang": "en",
+      "translation_slug": "2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js",
+      "translation_of": "2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js"
+    },
+    {
       "slug": "2026-09-01-testing-library-testes-de-react-que-refletem-o-uso-real",
       "title": "Testing Library: testes de React que refletem o uso real",
       "title_en": "Testing Library: React tests that reflect real‑world usage",
