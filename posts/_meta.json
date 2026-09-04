@@ -1,6 +1,39 @@
 {
   "posts": [
     {
+      "slug": "2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real",
+      "title": "Principios SOLID explicados com exemplos de codigo real",
+      "title_en": "SOLID Principles Explained with Real Code Examples",
+      "date": "2026-09-04",
+      "category": "article",
+      "tags": [
+        "solid",
+        "arquitetura",
+        "boas-praticas"
+      ],
+      "excerpt": "Imagine que um cliente da sua loja de varejo, que usa OSPOS como ponto de venda, solicita uma integração que sincroniza estoque com o Mercado Livre em tempo real. Você",
+      "excerpt_en": "Picture a retail store customer using OSPOS who asks for real‑time inventory sync with Mercado Livre. You deliver.",
+      "lang": "pt",
+      "translation_slug": "2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real-en"
+    },
+    {
+      "slug": "2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real-en",
+      "title": "SOLID Principles Explained with Real Code Examples",
+      "title_en": "SOLID Principles Explained with Real Code Examples",
+      "date": "2026-09-04",
+      "category": "article",
+      "tags": [
+        "solid",
+        "arquitetura",
+        "boas-praticas"
+      ],
+      "excerpt": "Picture a retail store customer using OSPOS who asks for real‑time inventory sync with Mercado Livre. You deliver.",
+      "excerpt_en": "Picture a retail store customer using OSPOS who asks for real‑time inventory sync with Mercado Livre. You deliver.",
+      "lang": "en",
+      "translation_slug": "2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real",
+      "translation_of": "2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real"
+    },
+    {
       "slug": "2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js",
       "title": "Redis na pratica: cache, rate limiting e filas em Node.js",
       "title_en": "Redis in Practice: Caching, Rate Limiting & Queues in Node.js",
