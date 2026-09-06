@@ -1,6 +1,41 @@
 {
   "posts": [
     {
+      "slug": "2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa",
+      "title": "Por que Rust nao vai substituir Go (e vice-versa)",
+      "title_en": "Why Rust Won't Replace Go (and Vice Versa)",
+      "date": "2026-09-06",
+      "category": "curiosidade",
+      "tags": [
+        "rust",
+        "go",
+        "linguagens",
+        "opiniao"
+      ],
+      "excerpt": "Introdução A escolha da linguagem de programação certa para um projeto é uma decisão crucial que pode afetar significativamente o sucesso e a manutenção do software. Com o",
+      "excerpt_en": "Choosing the right programming language is crucial for a projects success and maintenance.",
+      "lang": "pt",
+      "translation_slug": "2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa-en"
+    },
+    {
+      "slug": "2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa-en",
+      "title": "Why Rust Won't Replace Go (and Vice Versa)",
+      "title_en": "Why Rust Won't Replace Go (and Vice Versa)",
+      "date": "2026-09-06",
+      "category": "curiosidade",
+      "tags": [
+        "rust",
+        "go",
+        "linguagens",
+        "opiniao"
+      ],
+      "excerpt": "Choosing the right programming language is crucial for a projects success and maintenance.",
+      "excerpt_en": "Choosing the right programming language is crucial for a projects success and maintenance.",
+      "lang": "en",
+      "translation_slug": "2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa",
+      "translation_of": "2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa"
+    },
+    {
       "slug": "2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real",
       "title": "Principios SOLID explicados com exemplos de codigo real",
       "title_en": "SOLID Principles Explained with Real Code Examples",
