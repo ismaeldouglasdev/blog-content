@@ -1,6 +1,39 @@
 {
   "posts": [
     {
+      "slug": "2026-09-07-postgresql-e-o-renascimento-dos-bancos-sql-relacionais",
+      "title": "PostgreSQL e o renascimento dos bancos SQL relacionais",
+      "title_en": "PostgreSQL and the Resurgence of Relational SQL Databases",
+      "date": "2026-09-07",
+      "category": "curiosidade",
+      "tags": [
+        "postgresql",
+        "database",
+        "tendencias"
+      ],
+      "excerpt": "Introdução A era dos bancos de dados NoSQL, que prometiam flexibilidade e escalabilidade, parecia ter conquistado o coração dos desenvolvedores. No entanto, nos últimos anos",
+      "excerpt_en": "NoSQL databases, promising flexibility and scalability, won developers hearts, but recently",
+      "lang": "pt",
+      "translation_slug": "2026-09-07-postgresql-e-o-renascimento-dos-bancos-sql-relacionais-en"
+    },
+    {
+      "slug": "2026-09-07-postgresql-e-o-renascimento-dos-bancos-sql-relacionais-en",
+      "title": "PostgreSQL and the Resurgence of Relational SQL Databases",
+      "title_en": "PostgreSQL and the Resurgence of Relational SQL Databases",
+      "date": "2026-09-07",
+      "category": "curiosidade",
+      "tags": [
+        "postgresql",
+        "database",
+        "tendencias"
+      ],
+      "excerpt": "NoSQL databases, promising flexibility and scalability, won developers hearts, but recently",
+      "excerpt_en": "NoSQL databases, promising flexibility and scalability, won developers hearts, but recently",
+      "lang": "en",
+      "translation_slug": "2026-09-07-postgresql-e-o-renascimento-dos-bancos-sql-relacionais",
+      "translation_of": "2026-09-07-postgresql-e-o-renascimento-dos-bancos-sql-relacionais"
+    },
+    {
       "slug": "2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa",
       "title": "Por que Rust nao vai substituir Go (e vice-versa)",
       "title_en": "Why Rust Won't Replace Go (and Vice Versa)",
