@@ -1,5 +1,5 @@
 ---
-title: "Por que Rust nao vai substituir Go (e vice-versa)"
+title: "Por que Rust não vai substituir Go (e vice-versa)"
 date: "2026-09-06"
 category: "curiosidade"
 tags: ["rust", "go", "linguagens", "opiniao"]

@@ -1,5 +1,5 @@
 ---
-title: "Redis na pratica: cache, rate limiting e filas em Node.js"
+title: "Redis na prática: cache, rate limiting e filas em Node.js"
 date: "2026-09-03"
 category: "tutorial"
 tags: ["redis", "cache", "backend"]

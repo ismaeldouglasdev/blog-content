@@ -1,5 +1,5 @@
 ---
-title: "Programacao quantum em 2026: pratica real ou ainda e ciencia?"
+title: "Programação quântica em 2026: prática real ou ainda é ciência?"
 date: "2026-09-08"
 category: "curiosidade"
 tags: ["quantum", "computacao", "futuro"]
