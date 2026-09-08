@@ -14,7 +14,7 @@ jobs:
       - name: Validate _meta.json
         run: |
           python3 -c "
-          import json, sys
+          import json, re, sys
           with open('posts/_meta.json') as f:
               data = json.load(f)
           posts = data.get('posts', [])
@@ -27,7 +27,7 @@ jobs:
               if p.get('slug') in slugs:
                   errors.append(f'Duplicate slug: {p.get(\"slug\")}')
               slugs.add(p.get('slug'))
-              if not p.get('date', '').match(r'^\d{4}-\d{2}-\d{2}$'):
+              if not p.get('date', '') or not re.match(r'^\d{4}-\d{2}-\d{2}$', p.get('date', '')):
                   errors.append(f'{p.get(\"slug\")}: invalid date format')
           if errors:
               for e in errors: print(f'ERROR: {e}')
