@@ -1,6 +1,39 @@
 {
   "posts": [
     {
+      "slug": "2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia",
+      "title": "Programacao quantum em 2026: pratica real ou ainda e ciencia?",
+      "title_en": "Quantum Programming in 2026: Reality or Still Science?",
+      "date": "2026-09-08",
+      "category": "curiosidade",
+      "tags": [
+        "quantum",
+        "computacao",
+        "futuro"
+      ],
+      "excerpt": "Introdução A programação quântica é um campo que tem gerado grande interesse nos últimos anos, com muitos especialistas e empresas investindo tempo e recursos para",
+      "excerpt_en": "Quantum programming has generated significant interest recently",
+      "lang": "pt",
+      "translation_slug": "2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia-en"
+    },
+    {
+      "slug": "2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia-en",
+      "title": "Quantum Programming in 2026: Reality or Still Science?",
+      "title_en": "Quantum Programming in 2026: Reality or Still Science?",
+      "date": "2026-09-08",
+      "category": "curiosidade",
+      "tags": [
+        "quantum",
+        "computacao",
+        "futuro"
+      ],
+      "excerpt": "Quantum programming has generated significant interest recently",
+      "excerpt_en": "Quantum programming has generated significant interest recently",
+      "lang": "en",
+      "translation_slug": "2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia",
+      "translation_of": "2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia"
+    },
+    {
       "slug": "2026-09-07-postgresql-e-o-renascimento-dos-bancos-sql-relacionais",
       "title": "PostgreSQL e o renascimento dos bancos SQL relacionais",
       "title_en": "PostgreSQL and the Resurgence of Relational SQL Databases",
