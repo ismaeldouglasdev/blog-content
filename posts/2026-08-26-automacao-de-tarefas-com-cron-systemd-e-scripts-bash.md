@@ -1,5 +1,5 @@
 ---
-title: "Automacao de tarefas com cron, systemd e scripts Bash"
+title: "Automação de tarefas com cron, systemd e scripts Bash"
 date: "2026-08-26"
 category: "tutorial"
 tags: ["linux", "automacao", "bash", "systemd"]

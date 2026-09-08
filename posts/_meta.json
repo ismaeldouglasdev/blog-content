@@ -2,7 +2,7 @@
   "posts": [
     {
       "slug": "2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia",
-      "title": "Programacao quantum em 2026: pratica real ou ainda e ciencia?",
+      "title": "Programação quântica em 2026: prática real ou ainda é ciência?",
       "title_en": "Quantum Programming in 2026: Reality or Still Science?",
       "date": "2026-09-08",
       "category": "curiosidade",
@@ -68,7 +68,7 @@
     },
     {
       "slug": "2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa",
-      "title": "Por que Rust nao vai substituir Go (e vice-versa)",
+      "title": "Por que Rust não vai substituir Go (e vice-versa)",
       "title_en": "Why Rust Won't Replace Go (and Vice Versa)",
       "date": "2026-09-06",
       "category": "curiosidade",
@@ -103,7 +103,7 @@
     },
     {
       "slug": "2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real",
-      "title": "Principios SOLID explicados com exemplos de codigo real",
+      "title": "Princípios SOLID explicados com exemplos de código real",
       "title_en": "SOLID Principles Explained with Real Code Examples",
       "date": "2026-09-04",
       "category": "article",
@@ -136,7 +136,7 @@
     },
     {
       "slug": "2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js",
-      "title": "Redis na pratica: cache, rate limiting e filas em Node.js",
+      "title": "Redis na prática: cache, rate limiting e filas em Node.js",
       "title_en": "Redis in Practice: Caching, Rate Limiting & Queues in Node.js",
       "date": "2026-09-03",
       "category": "tutorial",
@@ -373,7 +373,7 @@
     },
     {
       "slug": "2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash",
-      "title": "Automacao de tarefas com cron, systemd e scripts Bash",
+      "title": "Automação de tarefas com cron, systemd e scripts Bash",
       "title_en": "Automating Tasks with Cron, Systemd, and Bash Scripts",
       "date": "2026-08-26",
       "category": "tutorial",
@@ -495,7 +495,7 @@
     },
     {
       "slug": "2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria",
-      "title": "A história do TypeScript: de acidente a padrão da industria",
+      "title": "A história do TypeScript: de acidente a padrão da indústria",
       "title_en": "The History of TypeScript: From Accident to Industry Standard",
       "date": "2026-08-22",
       "category": "curiosidade",

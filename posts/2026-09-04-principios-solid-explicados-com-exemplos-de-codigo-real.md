@@ -1,5 +1,5 @@
 ---
-title: "Principios SOLID explicados com exemplos de codigo real"
+title: "Princípios SOLID explicados com exemplos de código real"
 date: "2026-09-04"
 category: "article"
 tags: ["solid", "arquitetura", "boas-praticas"]

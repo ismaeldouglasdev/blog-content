@@ -1,5 +1,5 @@
 ---
-title: "A história do TypeScript: de acidente a padrão da industria"
+title: "A história do TypeScript: de acidente a padrão da indústria"
 date: "2026-08-22"
 category: "curiosidade"
 tags: ["typescript", "história", "javascript"]
