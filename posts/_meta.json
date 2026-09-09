@@ -14,7 +14,8 @@
       "excerpt": "Introdução A programação quântica é um campo que tem gerado grande interesse nos últimos anos, com muitos especialistas e empresas investindo tempo e recursos para",
       "excerpt_en": "Quantum programming has generated significant interest recently",
       "lang": "pt",
-      "translation_slug": "2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia-en"
+      "translation_slug": "2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia-en",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia.svg"
     },
     {
       "slug": "2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia-en",
@@ -31,7 +32,8 @@
       "excerpt_en": "Quantum programming has generated significant interest recently",
       "lang": "en",
       "translation_slug": "2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia",
-      "translation_of": "2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia"
+      "translation_of": "2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia.svg"
     },
     {
       "slug": "2026-09-07-postgresql-e-o-renascimento-dos-bancos-sql-relacionais",
@@ -47,7 +49,8 @@
       "excerpt": "Introdução A era dos bancos de dados NoSQL, que prometiam flexibilidade e escalabilidade, parecia ter conquistado o coração dos desenvolvedores. No entanto, nos últimos anos",
       "excerpt_en": "NoSQL databases, promising flexibility and scalability, won developers hearts, but recently",
       "lang": "pt",
-      "translation_slug": "2026-09-07-postgresql-e-o-renascimento-dos-bancos-sql-relacionais-en"
+      "translation_slug": "2026-09-07-postgresql-e-o-renascimento-dos-bancos-sql-relacionais-en",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-07-postgresql-e-o-renascimento-dos-bancos-sql-relacionais.svg"
     },
     {
       "slug": "2026-09-07-postgresql-e-o-renascimento-dos-bancos-sql-relacionais-en",
@@ -64,7 +67,8 @@
       "excerpt_en": "NoSQL databases, promising flexibility and scalability, won developers hearts, but recently",
       "lang": "en",
       "translation_slug": "2026-09-07-postgresql-e-o-renascimento-dos-bancos-sql-relacionais",
-      "translation_of": "2026-09-07-postgresql-e-o-renascimento-dos-bancos-sql-relacionais"
+      "translation_of": "2026-09-07-postgresql-e-o-renascimento-dos-bancos-sql-relacionais",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-07-postgresql-e-o-renascimento-dos-bancos-sql-relacionais.svg"
     },
     {
       "slug": "2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa",
@@ -81,7 +85,8 @@
       "excerpt": "Introdução A escolha da linguagem de programação certa para um projeto é uma decisão crucial que pode afetar significativamente o sucesso e a manutenção do software. Com o",
       "excerpt_en": "Choosing the right programming language is crucial for a projects success and maintenance.",
       "lang": "pt",
-      "translation_slug": "2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa-en"
+      "translation_slug": "2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa-en",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa.svg"
     },
     {
       "slug": "2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa-en",
@@ -99,7 +104,8 @@
       "excerpt_en": "Choosing the right programming language is crucial for a projects success and maintenance.",
       "lang": "en",
       "translation_slug": "2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa",
-      "translation_of": "2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa"
+      "translation_of": "2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa.svg"
     },
     {
       "slug": "2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real",
@@ -115,7 +121,8 @@
       "excerpt": "Imagine que um cliente da sua loja de varejo, que usa OSPOS como ponto de venda, solicita uma integração que sincroniza estoque com o Mercado Livre em tempo real. Você",
       "excerpt_en": "Picture a retail store customer using OSPOS who asks for real‑time inventory sync with Mercado Livre. You deliver.",
       "lang": "pt",
-      "translation_slug": "2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real-en"
+      "translation_slug": "2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real-en",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real.svg"
     },
     {
       "slug": "2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real-en",
@@ -132,7 +139,8 @@
       "excerpt_en": "Picture a retail store customer using OSPOS who asks for real‑time inventory sync with Mercado Livre. You deliver.",
       "lang": "en",
       "translation_slug": "2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real",
-      "translation_of": "2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real"
+      "translation_of": "2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real.svg"
     },
     {
       "slug": "2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js",
@@ -148,7 +156,8 @@
       "excerpt": "Redis na prática: cache, rate limiting e filas em Node.js",
       "excerpt_en": "Redis in practice: caching, rate limiting and queues in Node.js",
       "lang": "pt",
-      "translation_slug": "2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js-en"
+      "translation_slug": "2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js-en",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js.svg"
     },
     {
       "slug": "2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js-en",
@@ -165,7 +174,8 @@
       "excerpt_en": "Redis in practice: caching, rate limiting and queues in Node.js",
       "lang": "en",
       "translation_slug": "2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js",
-      "translation_of": "2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js"
+      "translation_of": "2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js.svg"
     },
     {
       "slug": "2026-09-01-testing-library-testes-de-react-que-refletem-o-uso-real",
@@ -181,7 +191,8 @@
       "excerpt": "Você já viu um teste verde no CI e, na hora de abrir a aplicação, o botão que deveria estar habilitado continua desabilitado? Essa desconexão entre o que o teste verifica e o",
       "excerpt_en": "Have you ever seen a green test in CI, only to open the application and find that the button that should be enabled is still disabled? That disconnect between what the test",
       "lang": "pt",
-      "translation_slug": "2026-09-01-testing-library-testes-de-react-que-refletem-o-uso-real-en"
+      "translation_slug": "2026-09-01-testing-library-testes-de-react-que-refletem-o-uso-real-en",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-01-testing-library-testes-de-react-que-refletem-o-uso-real.svg"
     },
     {
       "slug": "2026-09-01-testing-library-testes-de-react-que-refletem-o-uso-real-en",
@@ -198,7 +209,8 @@
       "excerpt_en": "Have you ever seen a green test in CI, only to open the application and find that the button that should be enabled is still disabled? That disconnect between what the test",
       "lang": "en",
       "translation_slug": "2026-09-01-testing-library-testes-de-react-que-refletem-o-uso-real",
-      "translation_of": "2026-09-01-testing-library-testes-de-react-que-refletem-o-uso-real"
+      "translation_of": "2026-09-01-testing-library-testes-de-react-que-refletem-o-uso-real",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-01-testing-library-testes-de-react-que-refletem-o-uso-real.svg"
     },
     {
       "slug": "2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um",
@@ -215,7 +227,8 @@
       "excerpt": "Banco de dados relacional vs NoSQL: quando usar cada um",
       "excerpt_en": "Relational vs. NoSQL databases: when to use each one.",
       "lang": "pt",
-      "translation_slug": "2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um-en"
+      "translation_slug": "2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um-en",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um.svg"
     },
     {
       "slug": "2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um-en",
@@ -233,7 +246,8 @@
       "excerpt_en": "Relational vs. NoSQL databases: when to use each one.",
       "lang": "en",
       "translation_slug": "2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um",
-      "translation_of": "2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um"
+      "translation_of": "2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um.svg"
     },
     {
       "slug": "2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco",
@@ -250,7 +264,8 @@
       "excerpt": "Introdução Quando se trata de gerenciar dependências em projetos JavaScript, o npm é o gigante da indústria. Com mais de 1,5 milhão de pacotes disponíveis, é o maior",
       "excerpt_en": "npm is the industry giant for managing JavaScript dependencies",
       "lang": "pt",
-      "translation_slug": "2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco-en"
+      "translation_slug": "2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco-en",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco.svg"
     },
     {
       "slug": "2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco-en",
@@ -268,7 +283,8 @@
       "excerpt_en": "npm is the industry giant for managing JavaScript dependencies",
       "lang": "en",
       "translation_slug": "2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco",
-      "translation_of": "2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco"
+      "translation_of": "2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco.svg"
     },
     {
       "slug": "2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em",
@@ -284,7 +300,8 @@
       "excerpt": "Tipos Avançados do TypeScript que Evitam Bugs em Produção",
       "excerpt_en": "Tipos Avançados do TypeScript que Evitam Erros em Produção",
       "lang": "pt",
-      "translation_slug": "2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em-en"
+      "translation_slug": "2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em-en",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em.svg"
     },
     {
       "slug": "2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em-en",
@@ -301,7 +318,8 @@
       "excerpt_en": "Tipos Avançados do TypeScript que Evitam Erros em Produção",
       "lang": "en",
       "translation_slug": "2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em",
-      "translation_of": "2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em"
+      "translation_of": "2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em.svg"
     },
     {
       "slug": "2026-08-28-react-server-components-quando-e-como-usar-no-next-js",
@@ -317,7 +335,8 @@
       "excerpt": "O ecossistema frontend passou anos focado em rodar tudo no navegador do cliente, mas a arquitetura moderna de frameworks como o Next.js mudou o jogo ao trazer o servidor de",
       "excerpt_en": "The frontend ecosystem spent years focused on running everything in the clients browser, but the modern architecture of frameworks like Next.js has changed the game by",
       "lang": "pt",
-      "translation_slug": "2026-08-28-react-server-components-quando-e-como-usar-no-next-js-en"
+      "translation_slug": "2026-08-28-react-server-components-quando-e-como-usar-no-next-js-en",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-28-react-server-components-quando-e-como-usar-no-next-js.svg"
     },
     {
       "slug": "2026-08-28-react-server-components-quando-e-como-usar-no-next-js-en",
@@ -334,7 +353,8 @@
       "excerpt_en": "The frontend ecosystem spent years focused on running everything in the clients browser, but the modern architecture of frameworks like Next.js has changed the game by",
       "lang": "en",
       "translation_slug": "2026-08-28-react-server-components-quando-e-como-usar-no-next-js",
-      "translation_of": "2026-08-28-react-server-components-quando-e-como-usar-no-next-js"
+      "translation_of": "2026-08-28-react-server-components-quando-e-como-usar-no-next-js",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-28-react-server-components-quando-e-como-usar-no-next-js.svg"
     },
     {
       "slug": "2026-08-27-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas",
@@ -351,7 +371,8 @@
       "excerpt": "Introdução: Serverless e Quando Vale a Pena Quando se fala em desenvolvimento de software, uma das principais preocupações é a infraestrutura necessária para rodar as",
       "excerpt_en": "Introduction: Serverless and When It’s Worth It. In software development, one of the biggest",
       "lang": "pt",
-      "translation_slug": "2026-08-27-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas-en"
+      "translation_slug": "2026-08-27-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas-en",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-27-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas.svg"
     },
     {
       "slug": "2026-08-27-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas-en",
@@ -369,7 +390,8 @@
       "excerpt_en": "Introduction: Serverless and When It’s Worth It. In software development, one of the biggest",
       "lang": "en",
       "translation_slug": "2026-08-27-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas",
-      "translation_of": "2026-08-27-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas"
+      "translation_of": "2026-08-27-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-27-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas.svg"
     },
     {
       "slug": "2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash",
@@ -386,7 +408,8 @@
       "excerpt": "Introdução Quando migrei 10k produtos entre sistemas na Loja Quase Tudo, percebi a importância da automação de tarefas para manter a eficiência e reduzir erros humanos. A",
       "excerpt_en": "Migrating 10k products made me realize the importance of automating tasks for efficiency and reducing errors",
       "lang": "pt",
-      "translation_slug": "2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash-en"
+      "translation_slug": "2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash-en",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash.svg"
     },
     {
       "slug": "2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash-en",
@@ -404,7 +427,8 @@
       "excerpt_en": "Migrating 10k products made me realize the importance of automating tasks for efficiency and reducing errors",
       "lang": "en",
       "translation_slug": "2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash",
-      "translation_of": "2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash"
+      "translation_of": "2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash.svg"
     },
     {
       "slug": "2026-08-25-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um",
@@ -421,7 +445,8 @@
       "excerpt": "Escolher o banco de dados errado no início de um projeto garante refatorações dolorosas no futuro. A discussão entre bancos relacionais (SQL) e não-relacionais (NoSQL)",
       "excerpt_en": null,
       "lang": "pt",
-      "translation_slug": null
+      "translation_slug": null,
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-25-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um.svg"
     },
     {
       "slug": "2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas",
@@ -438,7 +463,8 @@
       "excerpt": "Por que servidores “invisíveis” podem ser a resposta para pequenos negócios",
       "excerpt_en": "Why “invisible” servers could be the solution for small businesses",
       "lang": "pt",
-      "translation_slug": "2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas-en"
+      "translation_slug": "2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas-en",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas.svg"
     },
     {
       "slug": "2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas-en",
@@ -456,7 +482,8 @@
       "excerpt_en": "Why “invisible” servers could be the solution for small businesses",
       "lang": "en",
       "translation_slug": "2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas",
-      "translation_of": "2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas"
+      "translation_of": "2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas.svg"
     },
     {
       "slug": "2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de",
@@ -473,7 +500,8 @@
       "excerpt": "Sessões em cookie não escalam quando o tráfego cresce: latência do banco dispara e a experiência do usuário sofre. Guia completo de JWT: login, refresh token e proteção de rotas.",
       "excerpt_en": "When a web application starts getting more than a few users, the cookie‑based session approach simply doesnt scale. Its the classic scenario for anyone running an application",
       "lang": "pt",
-      "translation_slug": "2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de-en"
+      "translation_slug": "2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de-en",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de.svg"
     },
     {
       "slug": "2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de-en",
@@ -491,7 +519,8 @@
       "excerpt_en": "When a web application starts getting more than a few users, the cookie‑based session approach simply doesnt scale. Its the classic scenario for anyone running an application",
       "lang": "en",
       "translation_slug": "2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de",
-      "translation_of": "2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de"
+      "translation_of": "2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de.svg"
     },
     {
       "slug": "2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria",
@@ -507,7 +536,8 @@
       "excerpt": "Em 2012, a Microsoft anunciou o TypeScript para resolver a crise de manutenibilidade do JavaScript grande. Esta é a história do projeto experimental que virou padrão da indústria.",
       "excerpt_en": "In October 2012, Microsoft announced TypeScript, reshaping JavaScript development. At the time, teams maintaining large JavaScript.",
       "lang": "pt",
-      "translation_slug": "2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria-en"
+      "translation_slug": "2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria-en",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria.svg"
     },
     {
       "slug": "2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria-en",
@@ -524,7 +554,8 @@
       "excerpt_en": "In October 2012, Microsoft announced TypeScript, reshaping JavaScript development. At the time, teams maintaining large JavaScript.",
       "lang": "en",
       "translation_slug": "2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria",
-      "translation_of": "2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria"
+      "translation_of": "2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria.svg"
     },
     {
       "slug": "2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug",
@@ -540,7 +571,8 @@
       "excerpt": "Já ficou horas encurralado por um bug que desaparece assim que você tenta inspecionar? A sensação de estar jogando gato e rato com o navegador é mais comum do que parece, e a",
       "excerpt_en": "Have you ever spent hours trapped by a bug that disappears as soon as you try to inspect it? The feeling of playing cat and mouse with the browser is more common than it seems",
       "lang": "pt",
-      "translation_slug": "2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug-en"
+      "translation_slug": "2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug-en",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug.svg"
     },
     {
       "slug": "2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug-en",
@@ -557,7 +589,8 @@
       "excerpt_en": "Have you ever spent hours trapped by a bug that disappears as soon as you try to inspect it? The feeling of playing cat and mouse with the browser is more common than it seems",
       "lang": "en",
       "translation_slug": "2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug",
-      "translation_of": "2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug"
+      "translation_of": "2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug.svg"
     },
     {
       "slug": "2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks",
@@ -574,7 +607,8 @@
         "useeffect",
         "useref"
       ],
-      "lang": "pt"
+      "lang": "pt",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks.svg"
     },
     {
       "slug": "2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript",
@@ -591,7 +625,8 @@
         "typescript",
         "banco-de-dados"
       ],
-      "lang": "pt"
+      "lang": "pt",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript.svg"
     },
     {
       "slug": "2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks-en",
@@ -609,7 +644,8 @@
       "excerpt_en": "Since React 16.8, Hooks have become the community standard. Master useEffect, useRef, and custom hooks with production-ready examples.",
       "lang": "en",
       "translation_slug": "2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks",
-      "translation_of": "2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks"
+      "translation_of": "2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks.svg"
     },
     {
       "slug": "2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript-en",
@@ -627,7 +663,8 @@
       "excerpt_en": "If the only way you know how to talk to the database is by shouting SQL, it's time to learn its language.",
       "lang": "en",
       "translation_slug": "2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript",
-      "translation_of": "2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript"
+      "translation_of": "2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript.svg"
     },
     {
       "slug": "2026-08-17-css-grid-e-flexbox-quando-usar-cada-um",
@@ -644,7 +681,8 @@
         "flexbox",
         "layout"
       ],
-      "lang": "pt"
+      "lang": "pt",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-17-css-grid-e-flexbox-quando-usar-cada-um.svg"
     },
     {
       "slug": "2026-08-17-css-grid-e-flexbox-quando-usar-cada-um-en",
@@ -662,7 +700,8 @@
       "excerpt_en": "CSS Grid vs. Flexbox: When to Use Each in Web Development",
       "lang": "en",
       "translation_slug": "2026-08-17-css-grid-e-flexbox-quando-usar-cada-um",
-      "translation_of": "2026-08-17-css-grid-e-flexbox-quando-usar-cada-um"
+      "translation_of": "2026-08-17-css-grid-e-flexbox-quando-usar-cada-um",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-17-css-grid-e-flexbox-quando-usar-cada-um.svg"
     }
   ]
 }
