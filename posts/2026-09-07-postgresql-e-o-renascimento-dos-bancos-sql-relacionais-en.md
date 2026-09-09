@@ -11,6 +11,15 @@ translation_of: "2026-09-07-postgresql-e-o-renascimento-dos-bancos-sql-relaciona
 ## Introdução
 The era of NoSQL databases, which promised flexibility and scalability, seemed to have won the hearts of developers. However, in recent years, we have witnessed a resurgence of relational SQL databases, led by solutions like PostgreSQL. But what drove this return? Here, I will show the reasons behind this movement and how PostgreSQL has stood out as one of the top options for data storage.
 
+
+<figure>
+  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-07-postgresql-e-o-renascimento-dos-bancos-sql-relacionais.jpg" alt="The elephant, PostgreSQL's mascot, the relational database that came back." loading="lazy" />
+  <figcaption>
+    The elephant, PostgreSQL's mascot, the relational database that came back. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3APostgresql_elephant.svg">Postgresql elephant.svg</a> por Daniel Lundin —
+    <a href="https://opensource.org/license/bsd-3-clause">BSD</a> · via Wikimedia Commons
+  </figcaption>
+</figure>
+
 ## The NoSQL Era (2010-2018)
 In the early 2010s, NoSQL databases began to gain popularity. They promised to be more flexible and scalable than traditional databases, and many developers adopted them to handle large volumes of data. However, over time, problems began to emerge. The lack of standardization and the complexity of NoSQL databases made it difficult to ensure data consistency and integrity. Additionally, the lack of support for transactions and the difficulty in performing complex queries made NoSQL databases less appealing to many developers.
 

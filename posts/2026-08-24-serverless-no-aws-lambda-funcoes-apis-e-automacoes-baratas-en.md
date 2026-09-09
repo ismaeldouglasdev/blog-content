@@ -18,6 +18,15 @@ These situations are more common than we imagine, especially in retail environme
 
 Below, I’ll show how to build functions, APIs, and triggers in a practical and cost‑effective way, using the resources I already master in my integration projects between OSPOS and marketplaces, and in the automation pipelines I’ve developed for clients.
 
+
+<figure>
+  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas.jpg" alt="Wikimedia Foundation servers: the infrastructure behind on-demand services." loading="lazy" />
+  <figcaption>
+    Wikimedia Foundation servers: the infrastructure behind on-demand services. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AWikimedia_Foundation_Servers-8055_08.jpg">Wikimedia Foundation Servers-8055 08.jpg</a> por Victorgrigas —
+    <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> · via Wikimedia Commons
+  </figcaption>
+</figure>
+
 ## 1. Basic Lambda: Python and Node.js in practice  
 
 The first thing we need to understand is that a **Lambda** is simply a snippet of code that AWS runs in response to an event. There is no server to provision, nor a virtual machine to monitor. Just upload the code (or point to a repository) and set the permissions.

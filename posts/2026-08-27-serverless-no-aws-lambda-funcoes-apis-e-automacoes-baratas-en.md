@@ -13,6 +13,15 @@ translation_of: "2026-08-27-serverless-no-aws-lambda-funcoes-apis-e-automacoes-b
 ## Introduction: Serverless and When It’s Worth It
 When it comes to software development, one of the biggest challenges is the infrastructure needed to run applications. Servers, maintenance, and scalability can all be difficult to manage, especially for smaller projects or startups. That’s where serverless comes in—a concept that lets developers build and deploy applications without worrying about the underlying infrastructure. Here, I’ll show you how AWS Lambda, one of Amazon Web Services’ (AWS) leading serverless services, can be used to create functions, APIs, and automations efficiently and affordably.
 
+
+<figure>
+  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-27-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas.jpg" alt="Wikimedia Foundation servers: the infrastructure behind on-demand services." loading="lazy" />
+  <figcaption>
+    Wikimedia Foundation servers: the infrastructure behind on-demand services. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AWikimedia_Foundation_Servers-8055_08.jpg">Wikimedia Foundation Servers-8055 08.jpg</a> por Victorgrigas —
+    <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> · via Wikimedia Commons
+  </figcaption>
+</figure>
+
 ## Basic Lambda with Python/Node
 To get started with AWS Lambda, it's important to understand how to create a simple function. Lambda supports several programming languages, including Python and Node.js, which are
 

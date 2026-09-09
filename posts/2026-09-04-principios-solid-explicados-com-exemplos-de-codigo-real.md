@@ -15,6 +15,15 @@ aqui eu explico como os cinco princípios SOLID podem impedir que um código evo
 
 ---
 
+
+<figure>
+  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real.jpg" alt="Programação em um laptop: o ambiente onde os princípios SOLID são aplicados." loading="lazy" />
+  <figcaption>
+    Programação em um laptop: o ambiente onde os princípios SOLID são aplicados. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ALaptop_coding_programs_%28Unsplash%29.jpg">Laptop coding programs (Unsplash).jpg</a> por Tirza van Dijk —
+    <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a> · via Wikimedia Commons
+  </figcaption>
+</figure>
+
 ## Single Responsibility Principle (SRP)
 
 **Regra básica:** uma classe ou módulo deve ter apenas um motivo para mudar.

@@ -14,6 +14,15 @@ translation_of: "2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-ind
 
 In October 2012, Microsoft made an announcement that would change the direction of JavaScript development: **TypeScript**. At the time, teams maintaining large JavaScript applications were facing an increasingly obvious problem — code that grew quickly and became impossible to maintain without static typing. TypeScript was created precisely to address that pain, promising to bring the safety and maintainability of static typing without abandoning the JavaScript ecosystem. More than a decade later, it has become the de‑facto industry standard. This is the story of how an internal experimental project became the foundation of virtually every modern framework.
 
+
+<figure>
+  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria.jpg" alt="The TypeScript logo, created by Microsoft." loading="lazy" />
+  <figcaption>
+    The TypeScript logo, created by Microsoft. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ATypeScript_Logo.svg">TypeScript Logo.svg</a> por Microsoft —
+    <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a> · via Wikimedia Commons
+  </figcaption>
+</figure>
+
 ## 2012: TypeScript was born
 
 TypeScript was created by Microsoft in 2012 with the goal of providing a language that is compatible with JavaScript but adds static typing. The idea was to enable developers to write code that is safer and more maintainable without sacrificing JavaScript’s flexibility and dynamism. TypeScript was released as an open‑source project and quickly attracted attention from the developer community.

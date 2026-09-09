@@ -27,6 +27,15 @@ In this article, we’ll dive into the details that make a difference in the day
 
 ---
 
+
+<figure>
+  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks.jpg" alt="The React logo, the open source JavaScript library that popularized Hooks." loading="lazy" />
+  <figcaption>
+    The React logo, the open source JavaScript library that popularized Hooks. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AReact-icon.svg">React-icon.svg</a> por Facebook —
+    <a href="https://en.wikipedia.org/wiki/Public_domain">Public domain</a> · via Wikimedia Commons
+  </figcaption>
+</figure>
+
 ## useEffect with cleanup and dependencies
 
 ### What does `useEffect` actually do?

@@ -14,6 +14,15 @@ Imagine a customer of your retail store, who uses OSPOS as a point of sale, requ
 
 Here I explain how the five SOLID principles can prevent code from evolving into an uncontrollable monolith. Each principle is accompanied by a practical example written in the languages I use daily—TypeScript for the front‑end and Python for back‑end services. In the end, I show how to apply all of them together in a real case that arose when migrating over 10 k products from the Quase Tudo store to an omnichannel service.
 
+
+<figure>
+  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real.jpg" alt="Coding on a laptop: the environment where SOLID principles are applied." loading="lazy" />
+  <figcaption>
+    Coding on a laptop: the environment where SOLID principles are applied. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ALaptop_coding_programs_%28Unsplash%29.jpg">Laptop coding programs (Unsplash).jpg</a> por Tirza van Dijk —
+    <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a> · via Wikimedia Commons
+  </figcaption>
+</figure>
+
 ## Single Responsibility Principle (SRP)
 
 **Basic rule:** a class or module should have only one reason to change.

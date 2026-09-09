@@ -12,6 +12,15 @@ translation_of: "2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espac
 ## Introduction
 When it comes to managing dependencies in JavaScript projects, npm is the industry giant. With over 1.5 million packages available, it is the largest open-source repository in the world. However, over time, npm has been facing chronic issues that affect the speed, security, and stability of projects. Here, I will outline the problems with npm and how two new players, Bun and Deno, are gaining traction in the market.
 
+
+<figure>
+  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco.jpg" alt="The npm logo, the world's largest package registry." loading="lazy" />
+  <figcaption>
+    The npm logo, the world's largest package registry. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ANpm-logo.svg">Npm-logo.svg</a> por Boboss74 —
+    <a href="https://en.wikipedia.org/wiki/Public_domain">Public domain</a> · via Wikimedia Commons
+  </figcaption>
+</figure>
+
 ## The npm and its problems
 The npm is a package manager that allows developers to install and manage dependencies in their projects. However, over time, npm has faced issues with speed, security, and stability. One of the main problems is the speed of package installation. As the number of available packages increases, installing dependencies can take a long time, which affects developer productivity.
 
@@ -35,6 +44,15 @@ bun install react
 This will install the react package and its dependencies.
 
 ---
+
+
+<figure>
+  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco-deno.jpg" alt="The Deno logo, a JavaScript/TypeScript runtime secure by default." loading="lazy" />
+  <figcaption>
+    The Deno logo, a JavaScript/TypeScript runtime secure by default. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ADeno.svg">Deno.svg</a> por Kevin Qian —
+    <a href="https://opensource.org/license/mit">MIT</a> · via Wikimedia Commons
+  </figcaption>
+</figure>
 
 ## Deno: security by default
 Deno is another new player in the package manager market. Deno is a JavaScript runtime that was created to be more secure than npm. Deno has a security-by-default policy, which means that packages are installed with limited permissions.

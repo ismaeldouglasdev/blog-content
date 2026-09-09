@@ -15,6 +15,15 @@ Muitos iniciantes em TypeScript aprendem a sintaxe: declarar uma variável, usar
 
 aqui, vou explorar como utilizar recursos avançados do TypeScript para criar interfaces de código mais robustas, reduzir bugs em tempo de execução e facilitar a manutenção de sistemas sob medida, como o ecossistema que estou construindo para meus produtos SaaS e contribuições open source.
 
+
+<figure>
+  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em.jpg" alt="O logo do TypeScript: tipagem estática que evita bugs em produção." loading="lazy" />
+  <figcaption>
+    O logo do TypeScript: tipagem estática que evita bugs em produção. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ATypescript.svg">Typescript.svg</a> por TypeScript —
+    <a href="https://en.wikipedia.org/wiki/Public_domain">Public domain</a> · via Wikimedia Commons
+  </figcaption>
+</figure>
+
 ### Generics com Restrices
 
 O grande poder do TypeScript reside na capacidade de reutilizar lógica com tipos variáveis. Isso é feito através de Generics, mas nem sempre funcionam bem com qualquer tipo. É aqui que entram as Restrices.

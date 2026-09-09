@@ -10,6 +10,15 @@ lang: "pt"
 ## Introdução: Serverless e Quando Vale a Pena
 Quando se fala em desenvolvimento de software, uma das principais preocupações é a infraestrutura necessária para rodar as aplicações. Servidores, manutenção, escalabilidade - tudo isso pode ser um desafio, especialmente para projetos menores ou startups. É aqui que entra o conceito de serverless, uma abordagem que permite aos desenvolvedores criar e implantar aplicações sem se preocupar com a infraestrutura subjacente. aqui, vou mostrar como o AWS Lambda, um dos principais serviços serverless da Amazon Web Services (AWS), pode ser utilizado para criar funções, APIs e automações de forma eficiente e barata.
 
+
+<figure>
+  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-27-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas.jpg" alt="Servidores da Wikimedia Foundation: a infraestrutura por trás de serviços sob demanda." loading="lazy" />
+  <figcaption>
+    Servidores da Wikimedia Foundation: a infraestrutura por trás de serviços sob demanda. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AWikimedia_Foundation_Servers-8055_08.jpg">Wikimedia Foundation Servers-8055 08.jpg</a> por Victorgrigas —
+    <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> · via Wikimedia Commons
+  </figcaption>
+</figure>
+
 ## Lambda Básico com Python/Node
 Para começar a usar o AWS Lambda, é importante entender como criar uma função simples. O Lambda suporta várias linguagens de programação, incluindo Python e Node.js, que são duas das mais populares. Com o Python, por exemplo, você pode criar uma função que responde a um evento simples, como uma requisição HTTP. Já com o Node.js, a criação de funções assíncronas é ainda mais direta, graças à sua natureza não bloqueante.
 

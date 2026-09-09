@@ -11,6 +11,15 @@ lang: "pt"
 
 Já ficou horas encurralado por um bug que desaparece assim que você tenta inspecionar? A sensação de estar jogando gato e rato com o navegador é mais comum do que parece, e a maioria das vezes a culpa não é do código em si e sim da forma como o analisamos. Tratar as DevTools como um “caderno de anotações” ao invés de um simples painel de inspeção muda completamente o jogo: a produtividade dispara e a frustração diminui drasticamente. Neste texto eu compartilho as técnicas avançadas que me ajudaram a transformar horas de caça ao erro em minutos de diagnóstico preciso. Prepare o café, abra o Chrome (ou o Firefox, o Edge tem quase as mesmas funcionalidades) e vamos colocar a lupa nas camadas que realmente importam.
 
+
+<figure>
+  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug.jpg" alt="DevTools do navegador Blisk: painéis abertos para iPhone 12 e iPad Pro 11." loading="lazy" />
+  <figcaption>
+    DevTools do navegador Blisk: painéis abertos para iPhone 12 e iPad Pro 11. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AWikipedia-blisk-devtools-iphone-12-and-ipad-pro-11-2021.png">Wikipedia-blisk-devtools-iphone-12-and-ipad-pro-11-2021.png</a> por And85rew —
+    <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · via Wikimedia Commons
+  </figcaption>
+</figure>
+
 ## Performance Profiler
 
 A primeira coisa que costuma chamar atenção quando a aplicação começa a engasgar é o tempo de resposta. O painel **Performance** (ou **Profiler** nos navegadores que ainda mantêm o nome antigo) permite gravar a execução da página e analisar cada quadro, cada chamada de função e cada evento de layout. Na prática, eu costumo seguir três passos:

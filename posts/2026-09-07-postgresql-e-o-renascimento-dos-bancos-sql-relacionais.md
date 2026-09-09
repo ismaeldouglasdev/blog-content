@@ -10,6 +10,15 @@ lang: "pt"
 ## Introdução
 A era dos bancos de dados NoSQL, que prometiam flexibilidade e escalabilidade, parecia ter conquistado o coração dos desenvolvedores. No entanto, nos últimos anos, temos assistido a um renascimento dos bancos de dados SQL relacionais, liderado por soluções como o PostgreSQL. Mas o que levou a esse retorno? aqui, vou mostrar as razões por trás desse movimento e como o PostgreSQL se destacou como uma das principais opções para armazenamento de dados.
 
+
+<figure>
+  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-07-postgresql-e-o-renascimento-dos-bancos-sql-relacionais.jpg" alt="O elefante, mascote do PostgreSQL, banco relacional que voltou ao centro." loading="lazy" />
+  <figcaption>
+    O elefante, mascote do PostgreSQL, banco relacional que voltou ao centro. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3APostgresql_elephant.svg">Postgresql elephant.svg</a> por Daniel Lundin —
+    <a href="https://opensource.org/license/bsd-3-clause">BSD</a> · via Wikimedia Commons
+  </figcaption>
+</figure>
+
 ## A era NoSQL (2010-2018)
 No início dos anos 2010, os bancos de dados NoSQL começaram a ganhar popularidade. Eles prometiam ser mais flexíveis e escaláveis do que os bancos de dados tradicionais, e muitos desenvolvedores os adotaram para lidar com grandes volumes de dados. No entanto, com o tempo, começaram a surgir problemas. A falta de padronização e a complexidade dos bancos de dados NoSQL tornaram difícil garantir a consistência e a integridade dos dados. Além disso, a falta de suporte a transações e a dificuldade em realizar consultas complexas tornaram os bancos de dados NoSQL menos atraentes para muitos desenvolvedores.
 

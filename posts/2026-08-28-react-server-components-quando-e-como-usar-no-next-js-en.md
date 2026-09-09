@@ -14,6 +14,15 @@ The frontend ecosystem spent years focused on running everything in the client's
 
 When I started building my own projects and structuring interfaces with React, the division between what runs on the server and what runs on the client seemed like a secondary implementation detail. In practice, understanding this boundary determines whether your application will load instantly or stutter on more modest mobile devices.
 
+
+<figure>
+  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-28-react-server-components-quando-e-como-usar-no-next-js.jpg" alt="The React logo: components that run on both server and client." loading="lazy" />
+  <figcaption>
+    The React logo: components that run on both server and client. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AReact.svg">React.svg</a> por ReactJS —
+    <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · via Wikimedia Commons
+  </figcaption>
+</figure>
+
 ## Server vs Client Components
 
 The basic premise of React Server Components, or RSC, is that the code executed on the server never reaches the end user's browser. This means that heavy database dependencies, sensitive business logic, and direct API calls can live on the server without inflating the JavaScript bundle sent to the client.

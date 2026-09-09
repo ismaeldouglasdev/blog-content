@@ -12,6 +12,15 @@ lang: "en"
 
 Have you ever spent hours trapped by a bug that disappears as soon as you try to inspect it? The feeling of playing cat and mouse with the browser is more common than it seems, and most of the time the issue isn't the code itself but rather how we analyze it. When I started using DevTools as a "notebook" instead of just a simple inspection panel, my productivity skyrocketed and my frustration decreased drastically. In this article, I share the advanced techniques that helped me turn hours of bug hunting into minutes of precise diagnosis. Prepare your coffee, open Chrome (or Firefox; Edge has almost the same functionalities), and let's zoom in on the layers that really matter.
 
+
+<figure>
+  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug.jpg" alt="Blisk browser DevTools: panels opened for iPhone 12 and iPad Pro 11." loading="lazy" />
+  <figcaption>
+    Blisk browser DevTools: panels opened for iPhone 12 and iPad Pro 11. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AWikipedia-blisk-devtools-iphone-12-and-ipad-pro-11-2021.png">Wikipedia-blisk-devtools-iphone-12-and-ipad-pro-11-2021.png</a> por And85rew —
+    <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · via Wikimedia Commons
+  </figcaption>
+</figure>
+
 ## Performance Profiler
 
 The first thing that usually catches attention when the application starts to stutter is the response time. The **Performance** panel (or **Profiler** in browsers that still use the old name) allows you to record the execution of the page and analyze each frame, each function call, and each layout event. In practice, I usually follow three steps:

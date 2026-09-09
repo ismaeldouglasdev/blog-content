@@ -16,6 +16,15 @@ Many TypeScript beginners learn the syntax: declaring a variable, using basic in
 
 Here, I'll explore how to use advanced TypeScript features to create more robust code interfaces, reduce runtime bugs, and make maintenance easier for custom systems, like the ecosystem I'm building for my SaaS products and open source contributions.
 
+
+<figure>
+  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em.jpg" alt="The TypeScript logo: static typing that prevents bugs in production." loading="lazy" />
+  <figcaption>
+    The TypeScript logo: static typing that prevents bugs in production. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ATypescript.svg">Typescript.svg</a> por TypeScript —
+    <a href="https://en.wikipedia.org/wiki/Public_domain">Public domain</a> · via Wikimedia Commons
+  </figcaption>
+</figure>
+
 ### Generics with Constraints
 
 TypeScript's great power lies in its ability to reuse logic with variable types. This is done through Generics, but they don't always work well with any type. This is where Constraints come in.

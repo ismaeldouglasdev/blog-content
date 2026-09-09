@@ -15,6 +15,15 @@ A decisão entre SQL e NoSQL não é sobre qual tecnologia é superior, mas sobr
 
 ---
 
+
+<figure>
+  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-25-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um.jpg" alt="Data center: a infraestrutura por trás da escalabilidade dos bancos relacionais." loading="lazy" />
+  <figcaption>
+    Data center: a infraestrutura por trás da escalabilidade dos bancos relacionais. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AData_Center_Fish_Eye_View_%28noirlab-racks-155%29.jpg">Data Center Fish Eye View (noirlab-racks-155).jpg</a> por International Gemini Observatory/NOIRLab/NSF/AURA/Manuel Paredes —
+    <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · via Wikimedia Commons
+  </figcaption>
+</figure>
+
 ## SQL: O PostgreSQL como Padrão da Industria
 
 Bancos de dados relacionais existem ha mais de quatro décadas e se baseiam na álgebra relacional. Os dados são estruturados em tabelas compostas por linhas e colunas, com tipos de dados estritamente definidos e esquemas (schemas) rígidos impostos no momento da gravação (*schema-on-write*).

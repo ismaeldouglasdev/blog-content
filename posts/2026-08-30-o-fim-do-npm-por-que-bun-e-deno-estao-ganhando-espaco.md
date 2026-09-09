@@ -10,6 +10,15 @@ lang: "pt"
 ## Introdução
 Quando se trata de gerenciar dependências em projetos JavaScript, o npm é o gigante da indústria. Com mais de 1,5 milhão de pacotes disponíveis, é o maior repositório de código aberto do mundo. No entanto, com o tempo, o npm tem enfrentado problemas crônicos que afetam a velocidade, a segurança e a estabilidade dos projetos. aqui, vou mostrar os problemas do npm e como dois novos players, Bun e Deno, estão ganhando espaço no mercado.
 
+
+<figure>
+  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco.jpg" alt="O logo do npm, o maior registro de pacotes do mundo." loading="lazy" />
+  <figcaption>
+    O logo do npm, o maior registro de pacotes do mundo. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ANpm-logo.svg">Npm-logo.svg</a> por Boboss74 —
+    <a href="https://en.wikipedia.org/wiki/Public_domain">Public domain</a> · via Wikimedia Commons
+  </figcaption>
+</figure>
+
 ## O npm e seus problemas
 O npm é um gerenciador de pacotes que permite que os desenvolvedores instalem e gerenciem dependências em seus projetos. No entanto, com o tempo, o npm tem enfrentado problemas de velocidade, segurança e estabilidade. Um dos principais problemas é a velocidade de instalação de pacotes. Com o aumento do número de pacotes disponíveis, a instalação de dependências pode levar muito tempo, o que afeta a produtividade dos desenvolvedores.
 
@@ -28,6 +37,15 @@ Um exemplo de como usar Bun é o seguinte:
 bun install react
 ```
 Isso instalará o pacote react e suas dependências.
+
+
+<figure>
+  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco-deno.jpg" alt="O logo do Deno, runtime de JavaScript/TypeScript seguro por padrão." loading="lazy" />
+  <figcaption>
+    O logo do Deno, runtime de JavaScript/TypeScript seguro por padrão. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ADeno.svg">Deno.svg</a> por Kevin Qian —
+    <a href="https://opensource.org/license/mit">MIT</a> · via Wikimedia Commons
+  </figcaption>
+</figure>
 
 ## Deno: segurança por padrão
 Deno é outro novo player no mercado de gerenciadores de pacotes. Deno é um runtime de JavaScript que foi criado para ser mais seguro que o npm. Deno tem uma política de segurança por padrão, o que significa que os pacotes são instalados com permissões limitadas.

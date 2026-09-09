@@ -11,6 +11,15 @@ O ecossistema frontend passou anos focado em rodar tudo no navegador do cliente,
 
 Quando comecei a construir meus próprios projetos e a estruturar interfaces com React, a divisão entre o que roda no servidor e o que roda no cliente parecia um detalhe de implementação secundário. Na prática, entender essa fronteira define se sua aplicação vai carregar instantaneamente ou se vai engasgar em dispositivos móveis mais modestos.
 
+
+<figure>
+  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-28-react-server-components-quando-e-como-usar-no-next-js.jpg" alt="O logo do React: componentes que rodam tanto no servidor quanto no cliente." loading="lazy" />
+  <figcaption>
+    O logo do React: componentes que rodam tanto no servidor quanto no cliente. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AReact.svg">React.svg</a> por ReactJS —
+    <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · via Wikimedia Commons
+  </figcaption>
+</figure>
+
 ## Server vs Client Components
 
 A premissa básica dos React Server Components, ou RSC, é que o código executado no servidor nunca chega ao navegador do usuário final. Isso significa que dependências pesadas de banco de dados, lógica de negócio sensível e chamadas diretas a APIs podem viver no servidor sem inflar o pacote JavaScript enviado ao cliente.
