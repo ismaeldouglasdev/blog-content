@@ -61,3 +61,8 @@ In summary, the resurgence of PostgreSQL is due to the combination of features s
 - **Image:** [Postgresql elephant.svg](https://commons.wikimedia.org/wiki/File%3APostgresql_elephant.svg)
 - **Author:** Daniel Lundin
 - **License:** [BSD](https://en.wikipedia.org/wiki/BSD_licenses) · via Wikimedia Commons
+
+## 📸 Crédito da imagem de capa
+- **Imagem:** [Postgres Query.jpg](https://commons.wikimedia.org/wiki/File%3APostgres_Query.jpg)
+- **Autor(a):** Chiffre01
+- **Licença:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) · via Wikimedia Commons

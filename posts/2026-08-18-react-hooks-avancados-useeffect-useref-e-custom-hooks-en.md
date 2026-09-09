@@ -423,3 +423,8 @@ export function useDebouncedCallback<T extends unknown[]>(
 - **Image:** [React-icon.svg](https://commons.wikimedia.org/wiki/File%3AReact-icon.svg)
 - **Author:** Facebook
 - **License:** [Public domain](https://en.wikipedia.org/wiki/Public_domain) · via Wikimedia Commons
+
+## 📸 Crédito da imagem de capa
+- **Imagem:** [Programming.jpg](https://commons.wikimedia.org/wiki/File%3AProgramming.jpg)
+- **Autor(a):** Lorenzo Cafaro
+- **Licença:** [CC0](https://creativecommons.org/publicdomain/zero/1.0/) · via Wikimedia Commons

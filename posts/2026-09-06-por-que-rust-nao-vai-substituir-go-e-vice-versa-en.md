@@ -63,3 +63,8 @@ Practical takeaways:
 - **Image:** [Go gopher bumper.png](https://commons.wikimedia.org/wiki/File%3AGo_gopher_bumper.png)
 - **Author:** Renee French
 - **License:** [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) · via Wikimedia Commons
+
+## 📸 Crédito da imagem de capa
+- **Imagem:** [RustCodeOnScreen.jpg](https://commons.wikimedia.org/wiki/File%3ARustCodeOnScreen.jpg)
+- **Autor(a):** Slashme
+- **Licença:** [CC0](https://creativecommons.org/publicdomain/zero/1.0/) · via Wikimedia Commons

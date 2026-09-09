@@ -93,12 +93,12 @@
       "translation_slug": "2026-09-07-postgresql-e-o-renascimento-dos-bancos-sql-relacionais-en",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-07-postgresql-e-o-renascimento-dos-bancos-sql-relacionais.jpg",
       "cover_credit": {
-        "file": "File:Postgresql elephant.svg",
-        "artist": "Daniel Lundin",
-        "license": "BSD",
-        "license_url": "https://en.wikipedia.org/wiki/BSD_licenses",
-        "page": "https://commons.wikimedia.org/wiki/File%3APostgresql_elephant.svg",
-        "author": "Daniel Lundin"
+        "file": "File:Postgres Query.jpg",
+        "artist": "Chiffre01",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3APostgres_Query.jpg",
+        "author": "Chiffre01"
       }
     },
     {
@@ -119,12 +119,12 @@
       "translation_of": "2026-09-07-postgresql-e-o-renascimento-dos-bancos-sql-relacionais",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-07-postgresql-e-o-renascimento-dos-bancos-sql-relacionais.jpg",
       "cover_credit": {
-        "file": "File:Postgresql elephant.svg",
-        "artist": "Daniel Lundin",
-        "license": "BSD",
-        "license_url": "https://en.wikipedia.org/wiki/BSD_licenses",
-        "page": "https://commons.wikimedia.org/wiki/File%3APostgresql_elephant.svg",
-        "author": "Daniel Lundin"
+        "file": "File:Postgres Query.jpg",
+        "artist": "Chiffre01",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3APostgres_Query.jpg",
+        "author": "Chiffre01"
       }
     },
     {
@@ -145,12 +145,12 @@
       "translation_slug": "2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa-en",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa.jpg",
       "cover_credit": {
-        "file": "File:Go gopher bumper.png",
-        "artist": "Renee French",
-        "license": "CC BY 3.0",
-        "license_url": "https://creativecommons.org/licenses/by/3.0/",
-        "page": "https://commons.wikimedia.org/wiki/File%3AGo_gopher_bumper.png",
-        "author": "Renee French"
+        "file": "File:RustCodeOnScreen.jpg",
+        "artist": "Slashme",
+        "license": "CC0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3ARustCodeOnScreen.jpg",
+        "author": "Slashme"
       }
     },
     {
@@ -172,12 +172,12 @@
       "translation_of": "2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa.jpg",
       "cover_credit": {
-        "file": "File:Go gopher bumper.png",
-        "artist": "Renee French",
-        "license": "CC BY 3.0",
-        "license_url": "https://creativecommons.org/licenses/by/3.0/",
-        "page": "https://commons.wikimedia.org/wiki/File%3AGo_gopher_bumper.png",
-        "author": "Renee French"
+        "file": "File:RustCodeOnScreen.jpg",
+        "artist": "Slashme",
+        "license": "CC0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3ARustCodeOnScreen.jpg",
+        "author": "Slashme"
       }
     },
     {
@@ -299,12 +299,12 @@
       "translation_slug": "2026-09-01-testing-library-testes-de-react-que-refletem-o-uso-real-en",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-01-testing-library-testes-de-react-que-refletem-o-uso-real.jpg",
       "cover_credit": {
-        "file": "File:Illustration of Open Box and Closed Box Testing disciplines.png",
-        "artist": "J-at-ywalters-dot-net",
-        "license": "CC BY-SA 4.0",
-        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "page": "https://commons.wikimedia.org/wiki/File%3AIllustration_of_Open_Box_and_Closed_Box_Testing_disciplines.png",
-        "author": "J-at-ywalters-dot-net"
+        "file": "File:First Computer Bug, 1947.jpg",
+        "artist": "Courtesy of the Naval Surface Warfare Center, Dahlgren, VA., 1988.",
+        "license": "Public domain",
+        "license_url": "https://en.wikipedia.org/wiki/Public_domain",
+        "page": "https://commons.wikimedia.org/wiki/File%3AFirst_Computer_Bug%2C_1947.jpg",
+        "author": "Courtesy of the Naval Surface Warfare Center, Dahlgren, VA., 1988."
       }
     },
     {
@@ -325,12 +325,12 @@
       "translation_of": "2026-09-01-testing-library-testes-de-react-que-refletem-o-uso-real",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-01-testing-library-testes-de-react-que-refletem-o-uso-real.jpg",
       "cover_credit": {
-        "file": "File:Illustration of Open Box and Closed Box Testing disciplines.png",
-        "artist": "J-at-ywalters-dot-net",
-        "license": "CC BY-SA 4.0",
-        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "page": "https://commons.wikimedia.org/wiki/File%3AIllustration_of_Open_Box_and_Closed_Box_Testing_disciplines.png",
-        "author": "J-at-ywalters-dot-net"
+        "file": "File:First Computer Bug, 1947.jpg",
+        "artist": "Courtesy of the Naval Surface Warfare Center, Dahlgren, VA., 1988.",
+        "license": "Public domain",
+        "license_url": "https://en.wikipedia.org/wiki/Public_domain",
+        "page": "https://commons.wikimedia.org/wiki/File%3AFirst_Computer_Bug%2C_1947.jpg",
+        "author": "Courtesy of the Naval Surface Warfare Center, Dahlgren, VA., 1988."
       }
     },
     {
@@ -507,12 +507,12 @@
       "translation_slug": "2026-08-28-react-server-components-quando-e-como-usar-no-next-js-en",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-28-react-server-components-quando-e-como-usar-no-next-js.jpg",
       "cover_credit": {
-        "file": "File:React.svg",
-        "artist": "ReactJS",
-        "license": "CC BY-SA 4.0",
-        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "page": "https://commons.wikimedia.org/wiki/File%3AReact.svg",
-        "author": "ReactJS"
+        "file": "File:BalticServers data center.jpg",
+        "artist": "BalticServers.com",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3ABalticServers_data_center.jpg",
+        "author": "BalticServers.com"
       }
     },
     {
@@ -533,12 +533,12 @@
       "translation_of": "2026-08-28-react-server-components-quando-e-como-usar-no-next-js",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-28-react-server-components-quando-e-como-usar-no-next-js.jpg",
       "cover_credit": {
-        "file": "File:React.svg",
-        "artist": "ReactJS",
-        "license": "CC BY-SA 4.0",
-        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "page": "https://commons.wikimedia.org/wiki/File%3AReact.svg",
-        "author": "ReactJS"
+        "file": "File:BalticServers data center.jpg",
+        "artist": "BalticServers.com",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3ABalticServers_data_center.jpg",
+        "author": "BalticServers.com"
       }
     },
     {
@@ -899,12 +899,12 @@
       "lang": "pt",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks.jpg",
       "cover_credit": {
-        "file": "File:React-icon.svg",
-        "artist": "Facebook",
-        "license": "Public domain",
-        "license_url": "https://en.wikipedia.org/wiki/Public_domain",
-        "page": "https://commons.wikimedia.org/wiki/File%3AReact-icon.svg",
-        "author": "Facebook"
+        "file": "File:Programming.jpg",
+        "artist": "Lorenzo Cafaro",
+        "license": "CC0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3AProgramming.jpg",
+        "author": "Lorenzo Cafaro"
       }
     },
     {
@@ -952,12 +952,12 @@
       "translation_of": "2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks.jpg",
       "cover_credit": {
-        "file": "File:React-icon.svg",
-        "artist": "Facebook",
-        "license": "Public domain",
-        "license_url": "https://en.wikipedia.org/wiki/Public_domain",
-        "page": "https://commons.wikimedia.org/wiki/File%3AReact-icon.svg",
-        "author": "Facebook"
+        "file": "File:Programming.jpg",
+        "artist": "Lorenzo Cafaro",
+        "license": "CC0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3AProgramming.jpg",
+        "author": "Lorenzo Cafaro"
       }
     },
     {

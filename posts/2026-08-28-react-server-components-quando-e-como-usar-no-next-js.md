@@ -156,6 +156,6 @@ O modelo de Server Components no Next.js exige uma mudança de mentalidade na fo
 - [React Documentation: Server Components](https://react.dev/reference/react/components)
 - [Next.js Documentation: Server Actions and Mutations](https://nextjs.org/docs/app/building-your-application/data-fetching/server-actions-and-mutations)
 ## 📸 Crédito da imagem de capa
-- **Imagem:** [React.svg](https://commons.wikimedia.org/wiki/File%3AReact.svg)
-- **Autor(a):** ReactJS
-- **Licença:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) · via Wikimedia Commons
+- **Imagem:** [BalticServers data center.jpg](https://commons.wikimedia.org/wiki/File%3ABalticServers_data_center.jpg)
+- **Autor(a):** BalticServers.com
+- **Licença:** [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) · via Wikimedia Commons

@@ -162,3 +162,8 @@ The Server Components model in Next.js requires a mindset shift in how we design
 - **Image:** [React.svg](https://commons.wikimedia.org/wiki/File%3AReact.svg)
 - **Author:** ReactJS
 - **License:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) · via Wikimedia Commons
+
+## 📸 Crédito da imagem de capa
+- **Imagem:** [BalticServers data center.jpg](https://commons.wikimedia.org/wiki/File%3ABalticServers_data_center.jpg)
+- **Autor(a):** BalticServers.com
+- **Licença:** [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) · via Wikimedia Commons

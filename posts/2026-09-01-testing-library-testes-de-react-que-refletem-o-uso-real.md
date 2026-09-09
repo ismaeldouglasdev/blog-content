@@ -161,6 +161,6 @@ Se você ainda utiliza seletores frágeis ou `setTimeout`s para esperar por elem
 - [Jest – Cobertura de código](https://jestjs.io/docs/configuration#collectcoverage-boolean)  
 - [React Docs – Acessibilidade com JSX](https://react.dev/reference/react-dom/components/common)  
 ## 📸 Crédito da imagem de capa
-- **Imagem:** [Illustration of Open Box and Closed Box Testing disciplines.png](https://commons.wikimedia.org/wiki/File%3AIllustration_of_Open_Box_and_Closed_Box_Testing_disciplines.png)
-- **Autor(a):** J-at-ywalters-dot-net
-- **Licença:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) · via Wikimedia Commons
+- **Imagem:** [First Computer Bug, 1947.jpg](https://commons.wikimedia.org/wiki/File%3AFirst_Computer_Bug%2C_1947.jpg)
+- **Autor(a):** Courtesy of the Naval Surface Warfare Center, Dahlgren, VA., 1988.
+- **Licença:** [Public domain](https://en.wikipedia.org/wiki/Public_domain) · via Wikimedia Commons

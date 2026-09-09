@@ -165,3 +165,8 @@ If you still use fragile selectors or `setTimeout`s to wait for elements, it’s
 - **Image:** [Illustration of Open Box and Closed Box Testing disciplines.png](https://commons.wikimedia.org/wiki/File%3AIllustration_of_Open_Box_and_Closed_Box_Testing_disciplines.png)
 - **Author:** J-at-ywalters-dot-net
 - **License:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) · via Wikimedia Commons
+
+## 📸 Crédito da imagem de capa
+- **Imagem:** [First Computer Bug, 1947.jpg](https://commons.wikimedia.org/wiki/File%3AFirst_Computer_Bug%2C_1947.jpg)
+- **Autor(a):** Courtesy of the Naval Surface Warfare Center, Dahlgren, VA., 1988.
+- **Licença:** [Public domain](https://en.wikipedia.org/wiki/Public_domain) · via Wikimedia Commons
