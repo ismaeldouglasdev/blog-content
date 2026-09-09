@@ -99,7 +99,21 @@
         "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
         "page": "https://commons.wikimedia.org/wiki/File%3APostgres_Query.jpg",
         "author": "Chiffre01"
-      }
+      },
+      "faqs": [
+        {
+          "q": "O PostgreSQL é realmente mais lento que bancos NoSQL?",
+          "a": "Para leituras simples, o PostgreSQL pode ser ligeiramente mais lento que soluções NoSQL otimizadas para cache, mas para consultas complexas, integridade e transações ele costuma ser mais eficiente. A diferença depende muito do caso de uso e da modelagem."
+        },
+        {
+          "q": "Quando devo escolher PostgreSQL em vez de MongoDB?",
+          "a": "Prefira PostgreSQL quando você precisa de joins, transações ACID, integridade referencial ou consultas complexas. MongoDB brilha em esquemas flexíveis e escala horizontal natural, mas o PostgreSQL moderno também oferece colunas JSONB, full-text search e extensões."
+        },
+        {
+          "q": "O que é o JSONB do PostgreSQL?",
+          "a": "É um tipo de coluna que armazena JSON binário, permitindo consultar e indexar campos de documentos semi-estruturados sem abandonar o poder relacional — o melhor dos dois mundos."
+        }
+      ]
     },
     {
       "slug": "2026-09-07-postgresql-e-o-renascimento-dos-bancos-sql-relacionais-en",
@@ -125,7 +139,21 @@
         "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
         "page": "https://commons.wikimedia.org/wiki/File%3APostgres_Query.jpg",
         "author": "Chiffre01"
-      }
+      },
+      "faqs": [
+        {
+          "q": "Is PostgreSQL really slower than NoSQL databases?",
+          "a": "For simple reads, PostgreSQL can be slightly slower than NoSQL solutions optimized for caching, but for complex queries, integrity, and transactions it is often more efficient. It depends heavily on the use case and modeling."
+        },
+        {
+          "q": "When should I choose PostgreSQL over MongoDB?",
+          "a": "Prefer PostgreSQL when you need joins, ACID transactions, referential integrity, or complex queries. MongoDB shines with flexible schemas and natural horizontal scaling, but modern PostgreSQL also offers JSONB columns, full-text search, and extensions."
+        },
+        {
+          "q": "What is PostgreSQL JSONB?",
+          "a": "It is a binary JSON column type that lets you query and index semi-structured document fields without giving up relational power — the best of both worlds."
+        }
+      ]
     },
     {
       "slug": "2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa",
@@ -151,7 +179,21 @@
         "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
         "page": "https://commons.wikimedia.org/wiki/File%3ARustCodeOnScreen.jpg",
         "author": "Slashme"
-      }
+      },
+      "faqs": [
+        {
+          "q": "Rust vai substituir Go?",
+          "a": "Provavelmente não. Rust e Go resolvem problemas diferentes: Rust prioriza controle de baixo nível e segurança de memória sem garbage collector, enquanto Go prioriza simplicidade, produtividade e concorrência fácil."
+        },
+        {
+          "q": "Quando escolher Go em vez de Rust?",
+          "a": "Escolha Go para serviços web, CLIs e ferramentas de infraestrutura onde produtividade e simplicidade importam mais que performance extrema. Escolha Rust para sistemas, embarcados, e partes críticas de performance."
+        },
+        {
+          "q": "Qual tem ecossistema melhor?",
+          "a": "Ambos têm ecossistemas maduros. Go tem ótimo suporte nativo para rede e HTTP. Rust tem um sistema de tipos e ferramentas (Cargo, clippy) excepcionais, com forte presença em WASM e sistemas."
+        }
+      ]
     },
     {
       "slug": "2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa-en",
@@ -178,7 +220,21 @@
         "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
         "page": "https://commons.wikimedia.org/wiki/File%3ARustCodeOnScreen.jpg",
         "author": "Slashme"
-      }
+      },
+      "faqs": [
+        {
+          "q": "Will Rust replace Go?",
+          "a": "Probably not. Rust and Go solve different problems: Rust prioritizes low-level control and memory safety without a garbage collector, while Go prioritizes simplicity, productivity, and easy concurrency."
+        },
+        {
+          "q": "When should I choose Go over Rust?",
+          "a": "Choose Go for web services, CLIs, and infrastructure tooling where productivity and simplicity matter more than extreme performance. Choose Rust for systems programming, embedded, and performance-critical paths."
+        },
+        {
+          "q": "Which has a better ecosystem?",
+          "a": "Both have mature ecosystems. Go has great native support for networking and HTTP. Rust has an exceptional type system and tooling (Cargo, clippy), with a strong presence in WASM and systems."
+        }
+      ]
     },
     {
       "slug": "2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real",
@@ -254,7 +310,21 @@
         "license_url": "https://creativecommons.org/licenses/by/2.0/",
         "page": "https://commons.wikimedia.org/wiki/File%3ACache_Memory-jurvetson.jpg",
         "author": "Steve Jurvetson from Menlo Park, USA"
-      }
+      },
+      "faqs": [
+        {
+          "q": "Redis serve apenas como cache?",
+          "a": "Não. Além de cache, o Redis é usado para rate limiting (através de INCR + TTL), filas, pub/sub, sessões distribuídas, contadores e leaderboards, graças às suas estruturas de dados ricas."
+        },
+        {
+          "q": "Qual a diferença entre cache e fila no Redis?",
+          "a": "Cache armazena resultados para leituras futuras com TTL e pode ser descartado. Fila usa listas (LPUSH/BRPOP) para trabalho assíncrono com garantia de processamento por consumidores."
+        },
+        {
+          "q": "O Redis é persistente?",
+          "a": "Sim, por padrão ele salva snapshots (RDB) e pode usar append-only file (AOF) para durabilidade, embora seja frequentemente usado como cache volátil onde a perda é aceitável."
+        }
+      ]
     },
     {
       "slug": "2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js-en",
@@ -280,7 +350,21 @@
         "license_url": "https://creativecommons.org/licenses/by/2.0/",
         "page": "https://commons.wikimedia.org/wiki/File%3ACache_Memory-jurvetson.jpg",
         "author": "Steve Jurvetson from Menlo Park, USA"
-      }
+      },
+      "faqs": [
+        {
+          "q": "Is Redis only for caching?",
+          "a": "No. Beyond caching, Redis is used for rate limiting (via INCR + TTL), queues, pub/sub, distributed sessions, counters, and leaderboards thanks to its rich data structures."
+        },
+        {
+          "q": "What is the difference between a cache and a queue in Redis?",
+          "a": "A cache stores results for future reads with a TTL and can be discarded. A queue uses lists (LPUSH/BRPOP) for async work with guaranteed processing by consumers."
+        },
+        {
+          "q": "Is Redis persistent?",
+          "a": "Yes, it saves snapshots (RDB) by default and can use an append-only file (AOF) for durability, although it is often used as a volatile cache where data loss is acceptable."
+        }
+      ]
     },
     {
       "slug": "2026-09-01-testing-library-testes-de-react-que-refletem-o-uso-real",
