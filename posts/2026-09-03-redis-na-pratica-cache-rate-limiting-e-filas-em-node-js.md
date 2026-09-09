@@ -414,3 +414,7 @@ A combinação de Docker, o cliente oficial `redis` e bibliotecas como BullMQ of
 - [Node‑Redis (redis) v4 – API Reference](https://github.com/redis/node-redis)  
 - [Rate limiting with Redis and Lua – blog post by Upstash](https://upstash.com/blog/redis-rate-limiting)  
 - [Express Rate Limit – npm package (conceptual comparison)](https://www.npmjs.com/package/express-rate-limit)  
+## 📸 Crédito da imagem de capa
+- **Imagem:** [Cache Memory-jurvetson.jpg](https://commons.wikimedia.org/wiki/File%3ACache_Memory-jurvetson.jpg)
+- **Autor(a):** Steve Jurvetson from Menlo Park, USA
+- **Licença:** [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) · via Wikimedia Commons

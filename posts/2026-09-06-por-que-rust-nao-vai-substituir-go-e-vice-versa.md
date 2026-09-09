@@ -46,3 +46,7 @@ Takeaways práticos:
 - [Go by Example](https://gobyexample.com/)
 - [The Rust Programming Language](https://doc.rust-lang.org/book/)
 - [Go vs Rust: Which is Better for Your Next Project?](https://www.freecodecamp.org/news/go-vs-rust-which-is-better-for-your-next-project/)
+## 📸 Crédito da imagem de capa
+- **Imagem:** [Go gopher bumper.png](https://commons.wikimedia.org/wiki/File%3AGo_gopher_bumper.png)
+- **Autor(a):** Renee French
+- **Licença:** [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) · via Wikimedia Commons

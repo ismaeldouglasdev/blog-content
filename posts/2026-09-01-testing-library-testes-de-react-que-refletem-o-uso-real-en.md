@@ -152,3 +152,7 @@ If you still use fragile selectors or `setTimeout`s to wait for elements, it’s
 - [MSW – Mock Service Worker](https://mswjs.io/)  
 - [Jest – Code coverage](https://jestjs.io/docs/configuration#collectcoverage-boolean)  
 - [React Docs – Accessibility with JSX](https://react.dev/reference/react-dom/components/common)
+## 📸 Cover image credit
+- **Image:** [Illustration of Open Box and Closed Box Testing disciplines.png](https://commons.wikimedia.org/wiki/File%3AIllustration_of_Open_Box_and_Closed_Box_Testing_disciplines.png)
+- **Author:** J-at-ywalters-dot-net
+- **License:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) · via Wikimedia Commons

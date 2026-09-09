@@ -72,3 +72,7 @@ Here's the CSS needed to make this work:
 - [CSS-Tricks: A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 - [CSS-Tricks: A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 - [Smashing Magazine: CSS Grid vs Flexbox](https://www.smashingmagazine.com/2020/05/css-grid-vs-flexbox/)
+## 📸 Cover image credit
+- **Image:** [Responsive design - Commons Android app.jpg](https://commons.wikimedia.org/wiki/File%3AResponsive_design_-_Commons_Android_app.jpg)
+- **Author:** User:tfinc
+- **License:** [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) · via Wikimedia Commons

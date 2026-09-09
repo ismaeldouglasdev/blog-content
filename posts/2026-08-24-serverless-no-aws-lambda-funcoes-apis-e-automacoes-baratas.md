@@ -311,3 +311,7 @@ Se você ainda tem dúvidas sobre a viabilidade, experimente criar uma função 
 - [AWS CDK – Biblioteca de alto nível para infraestrutura](https://docs.aws.amazon.com/cdk/v2/guide/home.html)  
 - [Pricing – AWS Lambda](https://aws.amazon.com/lambda/pricing/)  
 - [AWS Blog – Reducing cold start latency](https://aws.amazon.com/blogs/compute/reducing-cold-start-latency/)
+## 📸 Crédito da imagem de capa
+- **Imagem:** [Wikimedia Foundation Servers-8055 08.jpg](https://commons.wikimedia.org/wiki/File%3AWikimedia_Foundation_Servers-8055_08.jpg)
+- **Autor(a):** Victorgrigas
+- **Licença:** [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) · via Wikimedia Commons

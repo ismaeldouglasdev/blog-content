@@ -69,3 +69,7 @@ A common scenario is a call that returns a user or a list of users. Instead of c
 Think of a function that searches for users. It can fail (returning an error object) or succeed (returning an array). By typing this correctly, the developer consuming this API knows that if the response isn't an error, they can iterate over the list without checking whether it's null or undefined.
 
 This pattern is fundamental for robust APIs. It eliminates the need for excessive `try/catch` blocks for data validation and ensures that data coming from the network is structured according to the contract. In commercial projects, such as the POS system and integrations I manage, this precision prevents financial losses or interface failures.
+## 📸 Cover image credit
+- **Image:** [Programming code.jpg](https://commons.wikimedia.org/wiki/File%3AProgramming_code.jpg)
+- **Author:** Martin Vorel
+- **License:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) · via Wikimedia Commons

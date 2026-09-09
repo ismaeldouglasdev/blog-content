@@ -43,3 +43,7 @@ resumindo, o renascimento do PostgreSQL se deve à combinação de recursos como
 - [pgvector GitHub Repository](https://github.com/pgvector/pgvector)
 - [PostGIS GitHub Repository](https://github.com/postgis/postgis)
 - [pg_cron GitHub Repository](https://github.com/citusdata/pg_cron)
+## 📸 Crédito da imagem de capa
+- **Imagem:** [Postgresql elephant.svg](https://commons.wikimedia.org/wiki/File%3APostgresql_elephant.svg)
+- **Autor(a):** Daniel Lundin
+- **Licença:** [BSD](https://en.wikipedia.org/wiki/BSD_licenses) · via Wikimedia Commons

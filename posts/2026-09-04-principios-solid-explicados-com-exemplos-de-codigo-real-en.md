@@ -330,3 +330,7 @@ By following these steps, you reduce the risk of “code that works today but br
 - [Python abc – Abstract Base Classes](https://docs.python.org/3/library/abc.html)
 - [OSPOS GitHub Repository](https://github.com/opensourcepos/opensourcepos)
 - [Engram – GitHub Organization](https://github.com/engram-security)
+## 📸 Cover image credit
+- **Image:** [Laptop coding programs (Unsplash).jpg](https://commons.wikimedia.org/wiki/File%3ALaptop_coding_programs_%28Unsplash%29.jpg)
+- **Author:** Tirza van Dijk tirzavandijk
+- **License:** [CC0](https://creativecommons.org/publicdomain/zero/1.0/) · via Wikimedia Commons

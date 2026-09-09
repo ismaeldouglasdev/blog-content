@@ -75,3 +75,7 @@ resumindo, o TypeScript é uma linguagem que passou de um projeto experimental p
 - [Angular Docs: TypeScript](https://angular.io/guide/typescript-configuration)
 - [React Docs: TypeScript](https://react.dev/reference/react/types)
 - [Vue.js Docs: TypeScript](https://vuejs.org/v2/guide/typescript.html)
+## 📸 Crédito da imagem de capa
+- **Imagem:** [Code on computer monitor (Unsplash).jpg](https://commons.wikimedia.org/wiki/File%3ACode_on_computer_monitor_%28Unsplash%29.jpg)
+- **Autor(a):** Markus Spiske markusspiske
+- **Licença:** [CC0](https://creativecommons.org/publicdomain/zero/1.0/) · via Wikimedia Commons

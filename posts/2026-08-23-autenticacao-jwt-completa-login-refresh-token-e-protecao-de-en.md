@@ -332,3 +332,7 @@ A 24‑hour access token increases the risk of misuse. Keep the access token sho
 ### 5. Storing Secrets in Source Code
 
 Keep `JWT
+## 📸 Cover image credit
+- **Image:** [DOM Security Lock and Key.JPG](https://commons.wikimedia.org/wiki/File%3ADOM_Security_Lock_and_Key.JPG)
+- **Author:** ItalianLocksmith
+- **License:** [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) · via Wikimedia Commons

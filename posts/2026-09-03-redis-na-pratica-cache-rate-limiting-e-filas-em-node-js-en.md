@@ -399,3 +399,7 @@ The combination of Docker, the official `redis` client, and libraries such as Bu
 - [Node‑Redis (redis) v4 – API Reference](https://github.com/redis/node-redis)  
 - [Rate limiting with Redis and Lua – blog post by Upstash](https://upstash.com/blog/redis-rate-limiting)  
 - [Express Rate Limit – npm package (conceptual comparison)](https://www.npmjs.com/package/express-rate-limit)
+## 📸 Cover image credit
+- **Image:** [Cache Memory-jurvetson.jpg](https://commons.wikimedia.org/wiki/File%3ACache_Memory-jurvetson.jpg)
+- **Author:** Steve Jurvetson from Menlo Park, USA
+- **License:** [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) · via Wikimedia Commons

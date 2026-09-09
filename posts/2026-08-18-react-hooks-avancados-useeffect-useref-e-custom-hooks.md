@@ -407,3 +407,8 @@ export function useDebouncedCallback<T extends unknown[]>(
 - [React Docs: useEffect](https://react.dev/reference/react/useEffect)
 - [React Docs: useRef](https://react.dev/reference/react/useRef)
 - [Kent C. Dodds: Custom Hooks](https://kentcdodds.com/blog/how-to-use-react-hooks-effectively)
+
+## 📸 Crédito da imagem de capa
+- **Imagem:** [React-icon.svg](https://commons.wikimedia.org/wiki/File%3AReact-icon.svg)
+- **Autor(a):** Facebook
+- **Licença:** [Public domain](https://en.wikipedia.org/wiki/Public_domain) · via Wikimedia Commons

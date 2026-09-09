@@ -467,3 +467,7 @@ With these practices, you’ll be ready to take your SaaS to the next level, get
 - [MDN: SQL Injection](https://developer.mozilla.org/en-US/docs/Glossary/SQL_injection)
 - [Zod Documentation](https://zod.dev/)
 - [Redis Documentation](https://redis.io/documentation)
+## 📸 Cover image credit
+- **Image:** [MediaWiki 1.10 database schema.png](https://commons.wikimedia.org/wiki/File%3AMediaWiki_1.10_database_schema.png)
+- **Author:** Nick Jenkins, but also containing information from other MediaWiki devs + contributors to MediaWiki.org
+- **License:** [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) · via Wikimedia Commons

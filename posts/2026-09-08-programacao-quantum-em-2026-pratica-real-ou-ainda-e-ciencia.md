@@ -44,3 +44,7 @@ A programação quântica é um campo em constante evolução, com muitas empres
 - [IBM Quantum](https://quantumexperience.ng.bluemix.net/)
 - [Google Quantum AI Lab](https://ai.google/research/quantum-ai-lab)
 - [IonQ](https://ionq.com/)
+## 📸 Crédito da imagem de capa
+- **Imagem:** [A Wafer of the Latest D-Wave Quantum Computers (39188583425).jpg](https://commons.wikimedia.org/wiki/File%3AA_Wafer_of_the_Latest_D-Wave_Quantum_Computers_%2839188583425%29.jpg)
+- **Autor(a):** Steve Jurvetson from Menlo Park, USA
+- **Licença:** [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) · via Wikimedia Commons

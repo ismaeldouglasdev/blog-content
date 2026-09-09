@@ -57,3 +57,7 @@ Takeaways práticos:
 - [Documentação oficial do pnpm](https://pnpm.js.org/)
 - [Documentação oficial do Bun](https://bun.sh/)
 - [Documentação oficial do Deno](https://deno.land/)
+## 📸 Crédito da imagem de capa
+- **Imagem:** [VS Code Screenshot.png](https://commons.wikimedia.org/wiki/File%3AVS_Code_Screenshot.png)
+- **Autor(a):** Cycling2
+- **Licença:** [CC0](https://creativecommons.org/publicdomain/zero/1.0/) · via Wikimedia Commons

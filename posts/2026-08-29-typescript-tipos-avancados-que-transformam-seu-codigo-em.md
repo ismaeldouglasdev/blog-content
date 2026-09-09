@@ -66,3 +66,7 @@ Um cenário comum é uma chamada que retorna um usuário ou uma lista de usuári
 Pense numa função que busca usuários. Ela pode falhar (Retorna um objeto de erro) ou ter sucesso (Retorna um array). Ao tipar isso corretamente, o desenvolvedor que consome essa API sabe que, se a resposta não for um erro, ele poderá iterar sobre a lista sem verificar se é null ou undefined.
 
 Este padrão é fundamental para APIs robustas. Ele elimina a necessidade de `try/catch` excessivos para validação de dados e garante que os dados vindos da rede estejam estruturados conforme o contrato. Em projetos comerciais, como o PDV e integrações que gerencio, essa precisão evita perdas financeiras ou falhas na interface
+## 📸 Crédito da imagem de capa
+- **Imagem:** [Programming code.jpg](https://commons.wikimedia.org/wiki/File%3AProgramming_code.jpg)
+- **Autor(a):** Martin Vorel
+- **Licença:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) · via Wikimedia Commons

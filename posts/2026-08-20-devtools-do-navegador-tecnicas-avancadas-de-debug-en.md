@@ -145,3 +145,7 @@ Another point that often goes unnoticed is **caching**. In the Network panel, en
 - [MDN Web Docs: Memory Management](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Memory_Management)
 - [Web.dev: Optimize Website Performance](https://web.dev/performance/)
 - [JavaScript.info: Debugging in Chrome](https://javascript.info/debugging-chrome)
+## 📸 Cover image credit
+- **Image:** [Wikipedia-blisk-devtools-iphone-12-and-ipad-pro-11-2021.png](https://commons.wikimedia.org/wiki/File%3AWikipedia-blisk-devtools-iphone-12-and-ipad-pro-11-2021.png)
+- **Author:** And85rew
+- **License:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) · via Wikimedia Commons

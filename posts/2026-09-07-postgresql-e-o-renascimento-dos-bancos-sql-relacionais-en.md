@@ -48,3 +48,7 @@ In summary, the resurgence of PostgreSQL is due to the combination of features s
 - [pgvector GitHub Repository](https://github.com/pgvector/pgvector)
 - [PostGIS GitHub Repository](https://github.com/postgis/postgis)
 - [pg_cron GitHub Repository](https://github.com/citusdata/pg_cron)
+## 📸 Cover image credit
+- **Image:** [Postgresql elephant.svg](https://commons.wikimedia.org/wiki/File%3APostgresql_elephant.svg)
+- **Author:** Daniel Lundin
+- **License:** [BSD](https://en.wikipedia.org/wiki/BSD_licenses) · via Wikimedia Commons

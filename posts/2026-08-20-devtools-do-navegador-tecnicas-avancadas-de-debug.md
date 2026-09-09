@@ -257,3 +257,7 @@ A jornada de debug não termina quando o bug desaparece; ela continua com a impl
 - [Google Developers: Optimize Performance](https://developers.google.com/web/fundamentals/performance)
 - [MDN Web Docs: Debugging JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Debugging)
 - [Web.dev: Understanding the Network Panel](https://web.dev/network-panel/)
+## 📸 Crédito da imagem de capa
+- **Imagem:** [Wikipedia-blisk-devtools-iphone-12-and-ipad-pro-11-2021.png](https://commons.wikimedia.org/wiki/File%3AWikipedia-blisk-devtools-iphone-12-and-ipad-pro-11-2021.png)
+- **Autor(a):** And85rew
+- **Licença:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) · via Wikimedia Commons

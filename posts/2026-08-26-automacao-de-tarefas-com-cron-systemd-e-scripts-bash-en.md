@@ -81,3 +81,7 @@ Practical takeaways:
 *   [GitHub repository for the Engram project](https://github.com/engram/engram)
 *   [Article on automating tasks in Linux](https://linuxconfig.org/linux-cron-jobs)
 *   [Official Bash documentation](https://www.gnu.org/software/bash/manual/bash.html)
+## 📸 Cover image credit
+- **Image:** [Linux-Mint-8-LXDE terminals info.png](https://commons.wikimedia.org/wiki/File%3ALinux-Mint-8-LXDE_terminals_info.png)
+- **Author:** VARGUX
+- **License:** [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) · via Wikimedia Commons

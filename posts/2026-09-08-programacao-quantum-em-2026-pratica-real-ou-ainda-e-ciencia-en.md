@@ -45,3 +45,7 @@ Quantum programming is a constantly evolving field, with many companies and expe
 - [IBM Quantum](https://quantumexperience.ng.bluemix.net/)
 - [Google Quantum AI Lab](https://ai.google/research/quantum-ai-lab)
 - [IonQ](https://ionq.com/)
+## 📸 Cover image credit
+- **Image:** [A Wafer of the Latest D-Wave Quantum Computers (39188583425).jpg](https://commons.wikimedia.org/wiki/File%3AA_Wafer_of_the_Latest_D-Wave_Quantum_Computers_%2839188583425%29.jpg)
+- **Author:** Steve Jurvetson from Menlo Park, USA
+- **License:** [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) · via Wikimedia Commons

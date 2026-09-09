@@ -69,3 +69,7 @@ Aqui está o CSS necessário para fazer isso funcionar:
 - [CSS-Tricks: A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 - [CSS-Tricks: A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 - [Web.dev: Learn CSS Grid](https://web.dev/learn/css/grid/)
+## 📸 Crédito da imagem de capa
+- **Imagem:** [Responsive design - Commons Android app.jpg](https://commons.wikimedia.org/wiki/File%3AResponsive_design_-_Commons_Android_app.jpg)
+- **Autor(a):** User:tfinc
+- **Licença:** [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) · via Wikimedia Commons

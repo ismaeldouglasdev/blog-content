@@ -466,3 +466,7 @@ Com essas práticas, você estará pronto para levar seu SaaS ao próximo nível
 - [Zod Documentation](https://zod.dev/)
 - [PostgreSQL Documentation](https://www.postgresql.org/docs/)
 - [Redis Documentation](https://redis.io/documentation)
+## 📸 Crédito da imagem de capa
+- **Imagem:** [MediaWiki 1.10 database schema.png](https://commons.wikimedia.org/wiki/File%3AMediaWiki_1.10_database_schema.png)
+- **Autor(a):** Nick Jenkins, but also containing information from other MediaWiki devs + contributors to MediaWiki.org
+- **Licença:** [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) · via Wikimedia Commons

@@ -15,7 +15,15 @@
       "excerpt_en": "Quantum programming has generated significant interest recently",
       "lang": "pt",
       "translation_slug": "2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia-en",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia.svg"
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia.jpg",
+      "cover_credit": {
+        "file": "File:A Wafer of the Latest D-Wave Quantum Computers (39188583425).jpg",
+        "artist": "Steve Jurvetson from Menlo Park, USA",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3AA_Wafer_of_the_Latest_D-Wave_Quantum_Computers_%2839188583425%29.jpg",
+        "author": "Steve Jurvetson from Menlo Park, USA"
+      }
     },
     {
       "slug": "2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia-en",
@@ -33,7 +41,15 @@
       "lang": "en",
       "translation_slug": "2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia",
       "translation_of": "2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia.svg"
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia.jpg",
+      "cover_credit": {
+        "file": "File:A Wafer of the Latest D-Wave Quantum Computers (39188583425).jpg",
+        "artist": "Steve Jurvetson from Menlo Park, USA",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3AA_Wafer_of_the_Latest_D-Wave_Quantum_Computers_%2839188583425%29.jpg",
+        "author": "Steve Jurvetson from Menlo Park, USA"
+      }
     },
     {
       "slug": "2026-09-07-postgresql-e-o-renascimento-dos-bancos-sql-relacionais",
@@ -50,7 +66,15 @@
       "excerpt_en": "NoSQL databases, promising flexibility and scalability, won developers hearts, but recently",
       "lang": "pt",
       "translation_slug": "2026-09-07-postgresql-e-o-renascimento-dos-bancos-sql-relacionais-en",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-07-postgresql-e-o-renascimento-dos-bancos-sql-relacionais.svg"
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-07-postgresql-e-o-renascimento-dos-bancos-sql-relacionais.jpg",
+      "cover_credit": {
+        "file": "File:Postgresql elephant.svg",
+        "artist": "Daniel Lundin",
+        "license": "BSD",
+        "license_url": "https://en.wikipedia.org/wiki/BSD_licenses",
+        "page": "https://commons.wikimedia.org/wiki/File%3APostgresql_elephant.svg",
+        "author": "Daniel Lundin"
+      }
     },
     {
       "slug": "2026-09-07-postgresql-e-o-renascimento-dos-bancos-sql-relacionais-en",
@@ -68,7 +92,15 @@
       "lang": "en",
       "translation_slug": "2026-09-07-postgresql-e-o-renascimento-dos-bancos-sql-relacionais",
       "translation_of": "2026-09-07-postgresql-e-o-renascimento-dos-bancos-sql-relacionais",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-07-postgresql-e-o-renascimento-dos-bancos-sql-relacionais.svg"
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-07-postgresql-e-o-renascimento-dos-bancos-sql-relacionais.jpg",
+      "cover_credit": {
+        "file": "File:Postgresql elephant.svg",
+        "artist": "Daniel Lundin",
+        "license": "BSD",
+        "license_url": "https://en.wikipedia.org/wiki/BSD_licenses",
+        "page": "https://commons.wikimedia.org/wiki/File%3APostgresql_elephant.svg",
+        "author": "Daniel Lundin"
+      }
     },
     {
       "slug": "2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa",
@@ -86,7 +118,15 @@
       "excerpt_en": "Choosing the right programming language is crucial for a projects success and maintenance.",
       "lang": "pt",
       "translation_slug": "2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa-en",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa.svg"
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa.jpg",
+      "cover_credit": {
+        "file": "File:Go gopher bumper.png",
+        "artist": "Renee French",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3AGo_gopher_bumper.png",
+        "author": "Renee French"
+      }
     },
     {
       "slug": "2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa-en",
@@ -105,7 +145,15 @@
       "lang": "en",
       "translation_slug": "2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa",
       "translation_of": "2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa.svg"
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa.jpg",
+      "cover_credit": {
+        "file": "File:Go gopher bumper.png",
+        "artist": "Renee French",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3AGo_gopher_bumper.png",
+        "author": "Renee French"
+      }
     },
     {
       "slug": "2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real",
@@ -122,7 +170,15 @@
       "excerpt_en": "Picture a retail store customer using OSPOS who asks for real‑time inventory sync with Mercado Livre. You deliver.",
       "lang": "pt",
       "translation_slug": "2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real-en",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real.svg"
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real.jpg",
+      "cover_credit": {
+        "file": "File:Laptop coding programs (Unsplash).jpg",
+        "artist": "Tirza van Dijk tirzavandijk",
+        "license": "CC0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3ALaptop_coding_programs_%28Unsplash%29.jpg",
+        "author": "Tirza van Dijk tirzavandijk"
+      }
     },
     {
       "slug": "2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real-en",
@@ -140,7 +196,15 @@
       "lang": "en",
       "translation_slug": "2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real",
       "translation_of": "2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real.svg"
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real.jpg",
+      "cover_credit": {
+        "file": "File:Laptop coding programs (Unsplash).jpg",
+        "artist": "Tirza van Dijk tirzavandijk",
+        "license": "CC0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3ALaptop_coding_programs_%28Unsplash%29.jpg",
+        "author": "Tirza van Dijk tirzavandijk"
+      }
     },
     {
       "slug": "2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js",
@@ -157,7 +221,15 @@
       "excerpt_en": "Redis in practice: caching, rate limiting and queues in Node.js",
       "lang": "pt",
       "translation_slug": "2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js-en",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js.svg"
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js.jpg",
+      "cover_credit": {
+        "file": "File:Cache Memory-jurvetson.jpg",
+        "artist": "Steve Jurvetson from Menlo Park, USA",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3ACache_Memory-jurvetson.jpg",
+        "author": "Steve Jurvetson from Menlo Park, USA"
+      }
     },
     {
       "slug": "2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js-en",
@@ -175,7 +247,15 @@
       "lang": "en",
       "translation_slug": "2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js",
       "translation_of": "2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js.svg"
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js.jpg",
+      "cover_credit": {
+        "file": "File:Cache Memory-jurvetson.jpg",
+        "artist": "Steve Jurvetson from Menlo Park, USA",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3ACache_Memory-jurvetson.jpg",
+        "author": "Steve Jurvetson from Menlo Park, USA"
+      }
     },
     {
       "slug": "2026-09-01-testing-library-testes-de-react-que-refletem-o-uso-real",
@@ -192,7 +272,15 @@
       "excerpt_en": "Have you ever seen a green test in CI, only to open the application and find that the button that should be enabled is still disabled? That disconnect between what the test",
       "lang": "pt",
       "translation_slug": "2026-09-01-testing-library-testes-de-react-que-refletem-o-uso-real-en",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-01-testing-library-testes-de-react-que-refletem-o-uso-real.svg"
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-01-testing-library-testes-de-react-que-refletem-o-uso-real.jpg",
+      "cover_credit": {
+        "file": "File:Illustration of Open Box and Closed Box Testing disciplines.png",
+        "artist": "J-at-ywalters-dot-net",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3AIllustration_of_Open_Box_and_Closed_Box_Testing_disciplines.png",
+        "author": "J-at-ywalters-dot-net"
+      }
     },
     {
       "slug": "2026-09-01-testing-library-testes-de-react-que-refletem-o-uso-real-en",
@@ -210,7 +298,15 @@
       "lang": "en",
       "translation_slug": "2026-09-01-testing-library-testes-de-react-que-refletem-o-uso-real",
       "translation_of": "2026-09-01-testing-library-testes-de-react-que-refletem-o-uso-real",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-01-testing-library-testes-de-react-que-refletem-o-uso-real.svg"
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-01-testing-library-testes-de-react-que-refletem-o-uso-real.jpg",
+      "cover_credit": {
+        "file": "File:Illustration of Open Box and Closed Box Testing disciplines.png",
+        "artist": "J-at-ywalters-dot-net",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3AIllustration_of_Open_Box_and_Closed_Box_Testing_disciplines.png",
+        "author": "J-at-ywalters-dot-net"
+      }
     },
     {
       "slug": "2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um",
@@ -228,7 +324,15 @@
       "excerpt_en": "Relational vs. NoSQL databases: when to use each one.",
       "lang": "pt",
       "translation_slug": "2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um-en",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um.svg"
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um.jpg",
+      "cover_credit": {
+        "file": "File:Cable racks at grid computing center, Fermilab with blue lights.jpg",
+        "artist": "ENERGY.GOV",
+        "license": "Public domain",
+        "license_url": "https://en.wikipedia.org/wiki/Public_domain",
+        "page": "https://commons.wikimedia.org/wiki/File%3ACable_racks_at_grid_computing_center%2C_Fermilab_with_blue_lights.jpg",
+        "author": "ENERGY.GOV"
+      }
     },
     {
       "slug": "2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um-en",
@@ -247,7 +351,15 @@
       "lang": "en",
       "translation_slug": "2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um",
       "translation_of": "2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um.svg"
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um.jpg",
+      "cover_credit": {
+        "file": "File:Cable racks at grid computing center, Fermilab with blue lights.jpg",
+        "artist": "ENERGY.GOV",
+        "license": "Public domain",
+        "license_url": "https://en.wikipedia.org/wiki/Public_domain",
+        "page": "https://commons.wikimedia.org/wiki/File%3ACable_racks_at_grid_computing_center%2C_Fermilab_with_blue_lights.jpg",
+        "author": "ENERGY.GOV"
+      }
     },
     {
       "slug": "2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco",
@@ -265,7 +377,15 @@
       "excerpt_en": "npm is the industry giant for managing JavaScript dependencies",
       "lang": "pt",
       "translation_slug": "2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco-en",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco.svg"
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco.jpg",
+      "cover_credit": {
+        "file": "File:VS Code Screenshot.png",
+        "artist": "Cycling2",
+        "license": "CC0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3AVS_Code_Screenshot.png",
+        "author": "Cycling2"
+      }
     },
     {
       "slug": "2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco-en",
@@ -284,7 +404,15 @@
       "lang": "en",
       "translation_slug": "2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco",
       "translation_of": "2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco.svg"
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco.jpg",
+      "cover_credit": {
+        "file": "File:VS Code Screenshot.png",
+        "artist": "Cycling2",
+        "license": "CC0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3AVS_Code_Screenshot.png",
+        "author": "Cycling2"
+      }
     },
     {
       "slug": "2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em",
@@ -301,7 +429,15 @@
       "excerpt_en": "Tipos Avançados do TypeScript que Evitam Erros em Produção",
       "lang": "pt",
       "translation_slug": "2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em-en",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em.svg"
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em.jpg",
+      "cover_credit": {
+        "file": "File:Programming code.jpg",
+        "artist": "Martin Vorel",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3AProgramming_code.jpg",
+        "author": "Martin Vorel"
+      }
     },
     {
       "slug": "2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em-en",
@@ -319,7 +455,15 @@
       "lang": "en",
       "translation_slug": "2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em",
       "translation_of": "2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em.svg"
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em.jpg",
+      "cover_credit": {
+        "file": "File:Programming code.jpg",
+        "artist": "Martin Vorel",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3AProgramming_code.jpg",
+        "author": "Martin Vorel"
+      }
     },
     {
       "slug": "2026-08-28-react-server-components-quando-e-como-usar-no-next-js",
@@ -336,7 +480,15 @@
       "excerpt_en": "The frontend ecosystem spent years focused on running everything in the clients browser, but the modern architecture of frameworks like Next.js has changed the game by",
       "lang": "pt",
       "translation_slug": "2026-08-28-react-server-components-quando-e-como-usar-no-next-js-en",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-28-react-server-components-quando-e-como-usar-no-next-js.svg"
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-28-react-server-components-quando-e-como-usar-no-next-js.jpg",
+      "cover_credit": {
+        "file": "File:React.svg",
+        "artist": "ReactJS",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3AReact.svg",
+        "author": "ReactJS"
+      }
     },
     {
       "slug": "2026-08-28-react-server-components-quando-e-como-usar-no-next-js-en",
@@ -354,7 +506,15 @@
       "lang": "en",
       "translation_slug": "2026-08-28-react-server-components-quando-e-como-usar-no-next-js",
       "translation_of": "2026-08-28-react-server-components-quando-e-como-usar-no-next-js",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-28-react-server-components-quando-e-como-usar-no-next-js.svg"
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-28-react-server-components-quando-e-como-usar-no-next-js.jpg",
+      "cover_credit": {
+        "file": "File:React.svg",
+        "artist": "ReactJS",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3AReact.svg",
+        "author": "ReactJS"
+      }
     },
     {
       "slug": "2026-08-27-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas",
@@ -372,7 +532,15 @@
       "excerpt_en": "Introduction: Serverless and When It’s Worth It. In software development, one of the biggest",
       "lang": "pt",
       "translation_slug": "2026-08-27-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas-en",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-27-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas.svg"
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-27-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas.jpg",
+      "cover_credit": {
+        "file": "File:Wikimedia Foundation Servers-8055 08.jpg",
+        "artist": "Victorgrigas",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3AWikimedia_Foundation_Servers-8055_08.jpg",
+        "author": "Victorgrigas"
+      }
     },
     {
       "slug": "2026-08-27-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas-en",
@@ -391,7 +559,15 @@
       "lang": "en",
       "translation_slug": "2026-08-27-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas",
       "translation_of": "2026-08-27-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-27-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas.svg"
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-27-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas.jpg",
+      "cover_credit": {
+        "file": "File:Wikimedia Foundation Servers-8055 08.jpg",
+        "artist": "Victorgrigas",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3AWikimedia_Foundation_Servers-8055_08.jpg",
+        "author": "Victorgrigas"
+      }
     },
     {
       "slug": "2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash",
@@ -409,7 +585,15 @@
       "excerpt_en": "Migrating 10k products made me realize the importance of automating tasks for efficiency and reducing errors",
       "lang": "pt",
       "translation_slug": "2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash-en",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash.svg"
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash.jpg",
+      "cover_credit": {
+        "file": "File:Linux-Mint-8-LXDE terminals info.png",
+        "artist": "VARGUX",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3ALinux-Mint-8-LXDE_terminals_info.png",
+        "author": "VARGUX"
+      }
     },
     {
       "slug": "2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash-en",
@@ -428,7 +612,15 @@
       "lang": "en",
       "translation_slug": "2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash",
       "translation_of": "2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash.svg"
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash.jpg",
+      "cover_credit": {
+        "file": "File:Linux-Mint-8-LXDE terminals info.png",
+        "artist": "VARGUX",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3ALinux-Mint-8-LXDE_terminals_info.png",
+        "author": "VARGUX"
+      }
     },
     {
       "slug": "2026-08-25-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um",
@@ -446,7 +638,15 @@
       "excerpt_en": null,
       "lang": "pt",
       "translation_slug": null,
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-25-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um.svg"
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-25-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um.jpg",
+      "cover_credit": {
+        "file": "File:Cable racks at grid computing center, Fermilab with blue lights.jpg",
+        "artist": "ENERGY.GOV",
+        "license": "Public domain",
+        "license_url": "https://en.wikipedia.org/wiki/Public_domain",
+        "page": "https://commons.wikimedia.org/wiki/File%3ACable_racks_at_grid_computing_center%2C_Fermilab_with_blue_lights.jpg",
+        "author": "ENERGY.GOV"
+      }
     },
     {
       "slug": "2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas",
@@ -464,7 +664,15 @@
       "excerpt_en": "Why “invisible” servers could be the solution for small businesses",
       "lang": "pt",
       "translation_slug": "2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas-en",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas.svg"
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas.jpg",
+      "cover_credit": {
+        "file": "File:Wikimedia Foundation Servers-8055 08.jpg",
+        "artist": "Victorgrigas",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3AWikimedia_Foundation_Servers-8055_08.jpg",
+        "author": "Victorgrigas"
+      }
     },
     {
       "slug": "2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas-en",
@@ -483,7 +691,15 @@
       "lang": "en",
       "translation_slug": "2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas",
       "translation_of": "2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas.svg"
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas.jpg",
+      "cover_credit": {
+        "file": "File:Wikimedia Foundation Servers-8055 08.jpg",
+        "artist": "Victorgrigas",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3AWikimedia_Foundation_Servers-8055_08.jpg",
+        "author": "Victorgrigas"
+      }
     },
     {
       "slug": "2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de",
@@ -501,7 +717,15 @@
       "excerpt_en": "When a web application starts getting more than a few users, the cookie‑based session approach simply doesnt scale. Its the classic scenario for anyone running an application",
       "lang": "pt",
       "translation_slug": "2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de-en",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de.svg"
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de.jpg",
+      "cover_credit": {
+        "file": "File:DOM Security Lock and Key.JPG",
+        "artist": "ItalianLocksmith",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3ADOM_Security_Lock_and_Key.JPG",
+        "author": "ItalianLocksmith"
+      }
     },
     {
       "slug": "2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de-en",
@@ -520,7 +744,15 @@
       "lang": "en",
       "translation_slug": "2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de",
       "translation_of": "2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de.svg"
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de.jpg",
+      "cover_credit": {
+        "file": "File:DOM Security Lock and Key.JPG",
+        "artist": "ItalianLocksmith",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3ADOM_Security_Lock_and_Key.JPG",
+        "author": "ItalianLocksmith"
+      }
     },
     {
       "slug": "2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria",
@@ -537,7 +769,15 @@
       "excerpt_en": "In October 2012, Microsoft announced TypeScript, reshaping JavaScript development. At the time, teams maintaining large JavaScript.",
       "lang": "pt",
       "translation_slug": "2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria-en",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria.svg"
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria.jpg",
+      "cover_credit": {
+        "file": "File:Code on computer monitor (Unsplash).jpg",
+        "artist": "Markus Spiske markusspiske",
+        "license": "CC0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3ACode_on_computer_monitor_%28Unsplash%29.jpg",
+        "author": "Markus Spiske markusspiske"
+      }
     },
     {
       "slug": "2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria-en",
@@ -555,7 +795,15 @@
       "lang": "en",
       "translation_slug": "2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria",
       "translation_of": "2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria.svg"
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria.jpg",
+      "cover_credit": {
+        "file": "File:Code on computer monitor (Unsplash).jpg",
+        "artist": "Markus Spiske markusspiske",
+        "license": "CC0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3ACode_on_computer_monitor_%28Unsplash%29.jpg",
+        "author": "Markus Spiske markusspiske"
+      }
     },
     {
       "slug": "2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug",
@@ -572,7 +820,15 @@
       "excerpt_en": "Have you ever spent hours trapped by a bug that disappears as soon as you try to inspect it? The feeling of playing cat and mouse with the browser is more common than it seems",
       "lang": "pt",
       "translation_slug": "2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug-en",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug.svg"
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug.jpg",
+      "cover_credit": {
+        "file": "File:Wikipedia-blisk-devtools-iphone-12-and-ipad-pro-11-2021.png",
+        "artist": "And85rew",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3AWikipedia-blisk-devtools-iphone-12-and-ipad-pro-11-2021.png",
+        "author": "And85rew"
+      }
     },
     {
       "slug": "2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug-en",
@@ -590,7 +846,15 @@
       "lang": "en",
       "translation_slug": "2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug",
       "translation_of": "2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug.svg"
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug.jpg",
+      "cover_credit": {
+        "file": "File:Wikipedia-blisk-devtools-iphone-12-and-ipad-pro-11-2021.png",
+        "artist": "And85rew",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3AWikipedia-blisk-devtools-iphone-12-and-ipad-pro-11-2021.png",
+        "author": "And85rew"
+      }
     },
     {
       "slug": "2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks",
@@ -608,7 +872,15 @@
         "useref"
       ],
       "lang": "pt",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks.svg"
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks.jpg",
+      "cover_credit": {
+        "file": "File:React-icon.svg",
+        "artist": "Facebook",
+        "license": "Public domain",
+        "license_url": "https://en.wikipedia.org/wiki/Public_domain",
+        "page": "https://commons.wikimedia.org/wiki/File%3AReact-icon.svg",
+        "author": "Facebook"
+      }
     },
     {
       "slug": "2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript",
@@ -626,7 +898,15 @@
         "banco-de-dados"
       ],
       "lang": "pt",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript.svg"
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript.jpg",
+      "cover_credit": {
+        "file": "File:MediaWiki 1.10 database schema.png",
+        "artist": "Nick Jenkins, but also containing information from other MediaWiki devs + contributors to MediaWiki.org",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3AMediaWiki_1.10_database_schema.png",
+        "author": "Nick Jenkins, but also containing information from other MediaWiki devs + contributors to MediaWiki.org"
+      }
     },
     {
       "slug": "2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks-en",
@@ -645,7 +925,15 @@
       "lang": "en",
       "translation_slug": "2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks",
       "translation_of": "2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks.svg"
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks.jpg",
+      "cover_credit": {
+        "file": "File:React-icon.svg",
+        "artist": "Facebook",
+        "license": "Public domain",
+        "license_url": "https://en.wikipedia.org/wiki/Public_domain",
+        "page": "https://commons.wikimedia.org/wiki/File%3AReact-icon.svg",
+        "author": "Facebook"
+      }
     },
     {
       "slug": "2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript-en",
@@ -664,7 +952,15 @@
       "lang": "en",
       "translation_slug": "2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript",
       "translation_of": "2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript.svg"
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript.jpg",
+      "cover_credit": {
+        "file": "File:MediaWiki 1.10 database schema.png",
+        "artist": "Nick Jenkins, but also containing information from other MediaWiki devs + contributors to MediaWiki.org",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3AMediaWiki_1.10_database_schema.png",
+        "author": "Nick Jenkins, but also containing information from other MediaWiki devs + contributors to MediaWiki.org"
+      }
     },
     {
       "slug": "2026-08-17-css-grid-e-flexbox-quando-usar-cada-um",
@@ -682,7 +978,15 @@
         "layout"
       ],
       "lang": "pt",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-17-css-grid-e-flexbox-quando-usar-cada-um.svg"
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-17-css-grid-e-flexbox-quando-usar-cada-um.jpg",
+      "cover_credit": {
+        "file": "File:Responsive design - Commons Android app.jpg",
+        "artist": "User:tfinc",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3AResponsive_design_-_Commons_Android_app.jpg",
+        "author": "User:tfinc"
+      }
     },
     {
       "slug": "2026-08-17-css-grid-e-flexbox-quando-usar-cada-um-en",
@@ -701,7 +1005,15 @@
       "lang": "en",
       "translation_slug": "2026-08-17-css-grid-e-flexbox-quando-usar-cada-um",
       "translation_of": "2026-08-17-css-grid-e-flexbox-quando-usar-cada-um",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-17-css-grid-e-flexbox-quando-usar-cada-um.svg"
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-17-css-grid-e-flexbox-quando-usar-cada-um.jpg",
+      "cover_credit": {
+        "file": "File:Responsive design - Commons Android app.jpg",
+        "artist": "User:tfinc",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3AResponsive_design_-_Commons_Android_app.jpg",
+        "author": "User:tfinc"
+      }
     }
   ]
 }

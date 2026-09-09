@@ -93,3 +93,7 @@ The choice between relational and NoSQL databases should be grounded in your pro
 - [Redis Documentation](https://redis.io/documentation)
 - [Understanding NoSQL Databases](https://www.red-gate.com/simple-talk/sql/database-administration/understanding-nosql-databases/)
 - [ACID Transactions in Databases](https://en.wikipedia.org/wiki/ACID)
+## 📸 Cover image credit
+- **Image:** [Cable racks at grid computing center, Fermilab with blue lights.jpg](https://commons.wikimedia.org/wiki/File%3ACable_racks_at_grid_computing_center%2C_Fermilab_with_blue_lights.jpg)
+- **Author:** ENERGY.GOV
+- **License:** [Public domain](https://en.wikipedia.org/wiki/Public_domain) · via Wikimedia Commons

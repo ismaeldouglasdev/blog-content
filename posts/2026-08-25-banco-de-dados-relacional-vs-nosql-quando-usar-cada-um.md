@@ -178,3 +178,7 @@ A normalizacao busca eliminar a duplicacao de dados dividindo as entidades em ta
 ### Desnormalizacao (NoSQL / Documentos)
 
 A desnormalizacao prioriza o padrão de acesso de leitura. Se a tela da
+## 📸 Crédito da imagem de capa
+- **Imagem:** [Cable racks at grid computing center, Fermilab with blue lights.jpg](https://commons.wikimedia.org/wiki/File%3ACable_racks_at_grid_computing_center%2C_Fermilab_with_blue_lights.jpg)
+- **Autor(a):** ENERGY.GOV
+- **Licença:** [Public domain](https://en.wikipedia.org/wiki/Public_domain) · via Wikimedia Commons

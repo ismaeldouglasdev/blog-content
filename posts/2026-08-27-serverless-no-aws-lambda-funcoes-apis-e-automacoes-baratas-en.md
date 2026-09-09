@@ -51,3 +51,7 @@ Practical takeaways:
 - [AWS Cloud Development Kit (CDK)](https://aws.amazon.com/cdk/)
 - [Official Python Documentation](https://docs.python.org/3/)
 - [Official Node.js Documentation](https://nodejs.org/en/docs/)
+## 📸 Cover image credit
+- **Image:** [Wikimedia Foundation Servers-8055 08.jpg](https://commons.wikimedia.org/wiki/File%3AWikimedia_Foundation_Servers-8055_08.jpg)
+- **Author:** Victorgrigas
+- **License:** [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) · via Wikimedia Commons
