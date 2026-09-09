@@ -309,6 +309,15 @@ await client.set(jti, '1', 'EX', ttlSeconds);
 
 Choose the approach that best fits your infrastructure. In my experience, Redis works well for microservices where each instance needs to check the blacklist without querying a relational database.
 
+
+<figure>
+  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de.jpg" alt="Cybersecurity vs. information security: complementary concepts." loading="lazy" />
+  <figcaption>
+    Cybersecurity vs. information security: complementary concepts. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ACybersecurity_vs_information_security.png">Cybersecurity vs information security.png</a> por Pcoronaf —
+    <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · via Wikimedia Commons
+  </figcaption>
+</figure>
+
 ## Common Security Pitfalls
 
 Even with rotation and blacklist, many APIs still make basic mistakes. Below are the most common pitfalls I've seen in production, with practical solutions.

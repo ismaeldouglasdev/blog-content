@@ -16,6 +16,15 @@ Go, also known as Golang, was created by the Google team in 2009 with the goal o
 
 One of the main strengths of Go is its simplicity. The language has a small set of keywords and a syntax that is easy to learn, even for developers who do not have prior experience with the language. This, combined with its efficiency and ability to handle concurrency, makes Go a popular choice for developing distributed systems, networks, and applications that require high performance.
 
+
+<figure>
+  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa.jpg" alt="The Gopher, Go's mascot, holding a wrench." loading="lazy" />
+  <figcaption>
+    The Gopher, Go's mascot, holding a wrench. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AGo_gopher_pencil_wrench.jpg">Go gopher pencil wrench.jpg</a> por Renee French —
+    <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a> · via Wikimedia Commons
+  </figcaption>
+</figure>
+
 ## Rust: Control and Performance
 Rust, on the other hand, is a language that was designed with safety and performance in mind. Released in 2010, Rust is known for its innovative approach to memory management, which eliminates the need for a garbage collector, making it a very secure language for developing system software. Additionally, Rust has a static type system and a borrow checker that helps prevent memory errors at compile time, making the code more secure and reliable.
 

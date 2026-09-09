@@ -28,6 +28,15 @@ Vamos começar definindo o que o nosso SaaS precisa:
 | **Task**          | Tarefa pertencente a um projeto                        |
 | **Invitation**    | Convite para novos usuários ingressarem na organização |
 
+
+<figure>
+  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript.jpg" alt="Exemplo de schema de banco de dados (diagrama do MediaWiki 1.41.0)." loading="lazy" />
+  <figcaption>
+    Exemplo de schema de banco de dados (diagrama do MediaWiki 1.41.0). — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AMediaWiki_1.41.0_database_schema.png">MediaWiki 1.41.0 database schema.png</a> por Nick Jenkins, Timo Tijhof —
+    <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · via Wikimedia Commons
+  </figcaption>
+</figure>
+
 ### 1. Instalando o Prisma
 
 ```bash

@@ -122,6 +122,15 @@ With this setup, each test can override the behavior of a specific endpoint with
 
 ## Coverage: quality beyond the quantity  
 
+
+<figure>
+  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-01-testing-library-testes-de-react-que-refletem-o-uso-real.jpg" alt="Software Testing Life Cycle (STLC): the phases of a testing process." loading="lazy" />
+  <figcaption>
+    Software Testing Life Cycle (STLC): the phases of a testing process. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ASoftware_Testing_Life_Cycle.jpg">Software Testing Life Cycle.jpg</a> por Perfect Happiness —
+    <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · via Wikimedia Commons
+  </figcaption>
+</figure>
+
 Having 100 % line coverage doesn’t mean your code is free of bugs. Testing Library encourages **user‑flow coverage**, which can be measured with tools like **c8** or **nyc**. In my **Plexo** project, I configured `jest` to generate a coverage report and then revisited the files that still didn’t have interaction tests. The result was a 35 % increase in critical‑path coverage, even though total coverage was only 78 %. This approach focuses on what really matters: the path the user takes.
 
 Some practices that help improve relevant coverage:

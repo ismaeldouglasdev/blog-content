@@ -121,6 +121,15 @@ Com essa configuração, cada teste pode sobrescrever o comportamento de um endp
 
 ## Coverage: qualidade além da quantidade  
 
+
+<figure>
+  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-01-testing-library-testes-de-react-que-refletem-o-uso-real.jpg" alt="Ciclo de vida do teste de software (STLC): as fases de um processo de testes." loading="lazy" />
+  <figcaption>
+    Ciclo de vida do teste de software (STLC): as fases de um processo de testes. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ASoftware_Testing_Life_Cycle.jpg">Software Testing Life Cycle.jpg</a> por Perfect Happiness —
+    <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · via Wikimedia Commons
+  </figcaption>
+</figure>
+
 Ter 100 % de cobertura de linhas não significa que seu código está livre de bugs. A Testing Library encoraja a **cobertura de fluxos de usuário**, que pode ser medida com ferramentas como **c8** ou **nyc**. No meu projeto **Plexo**, configurei o `jest` para gerar um relatório de cobertura e, em seguida, revisitei os arquivos que ainda não tinham testes de interação. O resultado foi um aumento de 35 % na cobertura de caminhos críticos, embora a cobertura total fosse apenas 78 %. Essa abordagem foca no que realmente importa: o caminho que o usuário percorre.
 
 Algumas práticas que ajudam a melhorar a cobertura relevante:

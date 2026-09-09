@@ -21,6 +21,15 @@ Outro exemplo é agendar a execução de um script para todos os dias úteis (de
 ```
 Esses exemplos ilustram a flexibilidade do `cron` em agendar tarefas para diferentes intervalos de tempo.
 
+
+<figure>
+  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash.jpg" alt="Exemplo de crontab: sintaxe e agendamentos reais." loading="lazy" />
+  <figcaption>
+    Exemplo de crontab: sintaxe e agendamentos reais. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ACrontab.png">Crontab.png</a> por Bersam —
+    <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> · via Wikimedia Commons
+  </figcaption>
+</figure>
+
 ## Systemd Timers vs Cron
 O `systemd` é um sistema de inicialização e gerenciamento de serviços que também oferece recursos de agendamento de tarefas, conhecidos como timers. Embora o `cron` seja uma ferramenta mais tradicional e amplamente utilizada, os timers do `systemd` oferecem algumas vantagens, como a capacidade de executar tarefas em paralelo e a possibilidade de configurar dependências entre serviços. No entanto, a escolha entre `cron` e `systemd` timers depende do específico caso de uso e das necessidades do sistema.
 

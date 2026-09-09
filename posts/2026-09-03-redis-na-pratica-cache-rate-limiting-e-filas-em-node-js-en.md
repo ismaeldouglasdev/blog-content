@@ -50,6 +50,15 @@ Run `docker compose up -d` and Redis is ready to accept connections on the defau
 
 In my day‑to‑day work, the cache‑aside pattern has been the most flexible, especially when the write load is lower than the read load, such as in inventory synchronization.
 
+
+<figure>
+  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js.jpg" alt="Direct-mapped cache: the concept that underpins Redis." loading="lazy" />
+  <figcaption>
+    Direct-mapped cache: the concept that underpins Redis. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ADirect-Mapped_Cache.png">Direct-Mapped Cache.png</a> por Snehalc —
+    <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · via Wikimedia Commons
+  </figcaption>
+</figure>
+
 ### 2.2. Implementing cache‑aside with `redis` (v4)
 
 Install the official client:

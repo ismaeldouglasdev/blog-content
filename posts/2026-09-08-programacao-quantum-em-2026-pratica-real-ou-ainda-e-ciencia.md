@@ -16,6 +16,15 @@ Os computadores quânticos são dispositivos que utilizam os princípios da mec�
 ## IBM, Google, IonQ
 As principais empresas que estão trabalhando na área de programação quântica são a IBM, a Google e a IonQ. A IBM tem um programa de computação quântica que inclui o desenvolvimento de hardware e software para computadores quânticos. A Google também tem um programa de computação quântica e tem desenvolvido vários algoritmos quânticos, incluindo o algoritmo de Shor e o algoritmo de Grover. A IonQ é uma empresa que se especializa em computação quântica e tem desenvolvido vários produtos, incluindo um computador quântico de gate.
 
+
+<figure>
+  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia.jpg" alt="Chip Sycamore da Google, um processador quântico supercondutor." loading="lazy" />
+  <figcaption>
+    Chip Sycamore da Google, um processador quântico supercondutor. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AGoogle_Sycamore_Chip_001.png">Google Sycamore Chip 001.png</a> por Google —
+    <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a> · via Wikimedia Commons
+  </figcaption>
+</figure>
+
 ## Qiskit e Cirq
 Qiskit e Cirq são duas linguagens de programação quântica que são amplamente utilizadas. Qiskit é uma linguagem de programação desenvolvida pela IBM que permite aos desenvolvedores criar programas quânticos para serem executados em computadores quânticos. Cirq é uma linguagem de programação desenvolvida pela Google que permite aos desenvolvedores criar programas quânticos para serem executados em computadores quânticos.
 

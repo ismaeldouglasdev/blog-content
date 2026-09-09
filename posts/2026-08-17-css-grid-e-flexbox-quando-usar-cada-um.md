@@ -16,6 +16,15 @@ Muitos desenvolvedores iniciantes — e até experientes — frequentemente fica
 
 Neste artigo, vamos explorar como o Flexbox e o Grid funcionam, suas principais características e, o mais importante, um guia prático de quando aplicar cada tecnologia no seu próximo projeto.
 
+
+<figure>
+  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-17-css-grid-e-flexbox-quando-usar-cada-um.jpg" alt="Design responsivo: o mesmo site adaptado para desktop e mobile." loading="lazy" />
+  <figcaption>
+    Design responsivo: o mesmo site adaptado para desktop e mobile. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ADesign_responsivo.png">Design responsivo.png</a> por Diego Mariano —
+    <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · via Wikimedia Commons
+  </figcaption>
+</figure>
+
 ## A Filosofia: 1D vs 2D
 
 Para entender a diferença fundamental, precisamos olhar para a terminologia usada pelos criadores do CSS:

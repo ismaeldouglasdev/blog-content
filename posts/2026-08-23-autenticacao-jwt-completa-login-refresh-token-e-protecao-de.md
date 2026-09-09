@@ -304,6 +304,15 @@ await client.set(jti, '1', 'EX', ttlSeconds);
 
 Escolha a abordagem que melhor se adapta à sua infraestrutura. Na minha experiência, o Redis funciona bem para microsserviços onde cada instância precisa verificar a blacklist sem consultar um banco de dados relacional.
 
+
+<figure>
+  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de.jpg" alt="Cibersegurança vs. segurança da informação: conceitos complementares." loading="lazy" />
+  <figcaption>
+    Cibersegurança vs. segurança da informação: conceitos complementares. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ACybersecurity_vs_information_security.png">Cybersecurity vs information security.png</a> por Pcoronaf —
+    <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · via Wikimedia Commons
+  </figcaption>
+</figure>
+
 ## Armadilhas de Segurança Comuns
 
 Mesmo com a rotação e a blacklist, muitas APIs ainda cometem erros básicos. Abaixo estão as armadilhas mais comuns que eu já vi em produção, com soluções práticas.

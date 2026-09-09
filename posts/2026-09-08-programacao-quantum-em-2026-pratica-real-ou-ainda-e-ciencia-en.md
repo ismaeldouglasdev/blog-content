@@ -17,6 +17,15 @@ Quantum computers are devices that utilize the principles of quantum mechanics t
 ## IBM, Google, IonQ
 The main companies working in the field of quantum programming are IBM, Google, and IonQ. IBM has a quantum computing program that includes the development of hardware and software for quantum computers. Google also has a quantum computing program and has developed several quantum algorithms, including Shor's algorithm and Grover's algorithm. IonQ is a company that specializes in quantum computing and has developed several products, including a quantum gate computer.
 
+
+<figure>
+  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia.jpg" alt="Google's Sycamore chip, a superconducting quantum processor." loading="lazy" />
+  <figcaption>
+    Google's Sycamore chip, a superconducting quantum processor. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AGoogle_Sycamore_Chip_001.png">Google Sycamore Chip 001.png</a> por Google —
+    <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a> · via Wikimedia Commons
+  </figcaption>
+</figure>
+
 ## Qiskit and Cirq
 Qiskit and Cirq are two quantum programming languages that are widely used. Qiskit is a programming language developed by IBM that allows developers to create quantum programs to be executed on quantum computers. Cirq is a programming language developed by Google that allows developers to create quantum programs to be executed on quantum computers.
 

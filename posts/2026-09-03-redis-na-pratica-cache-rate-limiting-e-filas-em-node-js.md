@@ -53,6 +53,15 @@ Execute `docker compose up -d` e o Redis já está pronto para aceitar conexões
 
 No meu dia a dia, o padrão cache‑aside tem sido o mais flexível, principalmente quando a carga de escrita é menor que a de leitura, como no caso da sincronização de estoque.
 
+
+<figure>
+  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js.jpg" alt="Cache de mapeamento direto: o conceito que fundamenta o Redis." loading="lazy" />
+  <figcaption>
+    Cache de mapeamento direto: o conceito que fundamenta o Redis. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ADirect-Mapped_Cache.png">Direct-Mapped Cache.png</a> por Snehalc —
+    <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · via Wikimedia Commons
+  </figcaption>
+</figure>
+
 ### 2.2. Implementando cache‑aside com `redis` (v4)
 
 Instale o cliente oficial:

@@ -27,6 +27,15 @@ Another example is scheduling the execution of a script for every weekday (Monda
 These examples illustrate the flexibility of `cron` in scheduling tasks for different time intervals.
 
 ---
+
+<figure>
+  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash.jpg" alt="Crontab example: syntax and real-world schedules." loading="lazy" />
+  <figcaption>
+    Crontab example: syntax and real-world schedules. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ACrontab.png">Crontab.png</a> por Bersam —
+    <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> · via Wikimedia Commons
+  </figcaption>
+</figure>
+
 ## Systemd Timers vs Cron
 The `systemd` is an initialization and service management system that also offers task scheduling features, known as timers. Although `cron` is a more traditional and widely used tool, `systemd` timers offer some advantages, such as the ability to run tasks in parallel and the possibility of configuring dependencies between services. However, the choice between `cron` and `systemd` timers depends on the specific use case and the system's needs.
 

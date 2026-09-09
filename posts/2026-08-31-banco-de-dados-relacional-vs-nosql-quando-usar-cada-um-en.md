@@ -55,6 +55,15 @@ Scalability is another important factor when choosing a database. Relational dat
 
 On the other hand, NoSQL databases were designed with scalability in mind. They can be easily distributed across multiple machines, allowing you to handle large volumes of data and traffic. This is particularly useful for applications that require high availability and performance at scale.
 
+
+<figure>
+  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um.jpg" alt="Data center: the infrastructure behind scalability." loading="lazy" />
+  <figcaption>
+    Data center: the infrastructure behind scalability. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AData_Center_Fish_Eye_View_%28noirlab-racks-155%29.jpg">Data Center Fish Eye View (noirlab-racks-155).jpg</a> por International Gemini Observatory/NOIRLab/NSF/AURA/Manuel Paredes —
+    <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · via Wikimedia Commons
+  </figcaption>
+</figure>
+
 ## Decision: flowchart
 
 To make it easier to choose between a relational database and NoSQL, it's helpful to follow a simple flowchart:

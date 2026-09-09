@@ -66,6 +66,15 @@ A escalabilidade é outro fator importante na escolha do banco de dados. Bancos 
 
 Em contrapartida, bancos de dados NoSQL foram projetados com a escalabilidade em mente. Eles podem ser facilmente distribuídos em várias máquinas, permitindo que você lidere com grandes volumes de dados e tráfego. Isso é particularmente útil para aplicações que precisam de alta disponibilidade e desempenho em larga escala.
 
+
+<figure>
+  <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um.jpg" alt="Data center: a infraestrutura por trás da escalabilidade." loading="lazy" />
+  <figcaption>
+    Data center: a infraestrutura por trás da escalabilidade. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AData_Center_Fish_Eye_View_%28noirlab-racks-155%29.jpg">Data Center Fish Eye View (noirlab-racks-155).jpg</a> por International Gemini Observatory/NOIRLab/NSF/AURA/Manuel Paredes —
+    <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · via Wikimedia Commons
+  </figcaption>
+</figure>
+
 ## Decisão: fluxograma
 
 Para facilitar a escolha entre um banco de dados relacional e NoSQL, é útil seguir um fluxograma simples:
