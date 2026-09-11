@@ -1,6 +1,57 @@
 {
   "posts": [
     {
+      "slug": "2026-09-11-por-que-rust-nao-vai-substituir-go-e-vice-versa",
+      "title": "Por que Rust não vai substituir Go (e vice-versa)",
+      "title_en": "Why Rust Won't Replace Go (and Vice Versa)",
+      "date": "2026-09-11",
+      "category": "curiosidade",
+      "tags": [
+        "rust",
+        "go",
+        "linguagens",
+        "opiniao"
+      ],
+      "excerpt": "IntroduÃ§Ã£o A guerra de linguagens de programaÃ§Ã£o Ã© um tÃ³pico recorrente nas comunidades de desenvolvimento de software. Com a constante evoluÃ§Ã£o da tecnologia, novas",
+      "excerpt_en": "Programming language wars recur in software development communities.",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-11-por-que-rust-nao-vai-substituir-go-e-vice-versa.jpg",
+      "cover_credit": {
+        "file": "File:De La Salle University – Dasmariñas (DLSU–D) Information and Communications Technology Center (ICTC) laboratory room 203 (ICT203) — normal view.jpg",
+        "artist": "UndueMarmot",
+        "license": "CC0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3ADe_La_Salle_University_%E2%80%93_Dasmari%C3%B1as_%28DLSU%E2%80%93D%29_Information_and_Communications_Technology_Center_%28ICTC%29_laboratory_room_203_%28ICT203%29_%E2%80%94_normal_view.jpg"
+      },
+      "lang": "pt",
+      "translation_slug": "2026-09-11-por-que-rust-nao-vai-substituir-go-e-vice-versa-en"
+    },
+    {
+      "slug": "2026-09-11-por-que-rust-nao-vai-substituir-go-e-vice-versa-en",
+      "title": "Why Rust Won't Replace Go (and Vice Versa)",
+      "title_en": "Why Rust Won't Replace Go (and Vice Versa)",
+      "date": "2026-09-11",
+      "category": "curiosidade",
+      "tags": [
+        "rust",
+        "go",
+        "linguagens",
+        "opiniao"
+      ],
+      "excerpt": "Programming language wars recur in software development communities.",
+      "excerpt_en": "Programming language wars recur in software development communities.",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-11-por-que-rust-nao-vai-substituir-go-e-vice-versa.jpg",
+      "cover_credit": {
+        "file": "File:De La Salle University – Dasmariñas (DLSU–D) Information and Communications Technology Center (ICTC) laboratory room 203 (ICT203) — normal view.jpg",
+        "artist": "UndueMarmot",
+        "license": "CC0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3ADe_La_Salle_University_%E2%80%93_Dasmari%C3%B1as_%28DLSU%E2%80%93D%29_Information_and_Communications_Technology_Center_%28ICTC%29_laboratory_room_203_%28ICT203%29_%E2%80%94_normal_view.jpg"
+      },
+      "lang": "en",
+      "translation_slug": "2026-09-11-por-que-rust-nao-vai-substituir-go-e-vice-versa",
+      "translation_of": "2026-09-11-por-que-rust-nao-vai-substituir-go-e-vice-versa"
+    },
+    {
       "slug": "2026-09-10-gerenciamento-de-estados-react-context-vs-zustand-vs-jotai",
       "title": "Gerenciamento de estados: React Context vs Zustand vs Jotai",
       "title_en": "State management: React Context vs Zustand vs Jotai",
