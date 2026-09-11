@@ -1,5 +1,5 @@
 ---
-title: "Por que Rust n�o vai substituir Go (e vice-versa)"
+title: "Por que Rust não vai substituir Go (e vice-versa)"
 date: "2026-09-11"
 category: "curiosidade"
 tags: ["rust", "go", "linguagens", "opiniao"]
@@ -47,7 +47,7 @@ Takeaways práticos:
 - [Repositório do Go no GitHub](https://github.com/golang/go)
 - [Repositório do Rust no GitHub](https://github.com/rust-lang/rust)
 - [Artigo sobre a história do Go](https://en.wikipedia.org/wiki/Go_(programming_language))
-## 📸 Cr�dito da imagem de capa
-- **Imagem:** [De La Salle University – Dasmari�as (DLSU–D) Information and Communications Technology Center (ICTC) laboratory room 203 (ICT203) — normal view.jpg](https://commons.wikimedia.org/wiki/File%3ADe_La_Salle_University_%E2%80%93_Dasmari%C3%B1as_%28DLSU%E2%80%93D%29_Information_and_Communications_Technology_Center_%28ICTC%29_laboratory_room_203_%28ICT203%29_%E2%80%94_normal_view.jpg)
+## 📸 Crédito da imagem de capa
+- **Imagem:** [De La Salle University – Dasmariñas (DLSU–D) Information and Communications Technology Center (ICTC) laboratory room 203 (ICT203) — normal view.jpg](https://commons.wikimedia.org/wiki/File%3ADe_La_Salle_University_%E2%80%93_Dasmari%C3%B1as_%28DLSU%E2%80%93D%29_Information_and_Communications_Technology_Center_%28ICTC%29_laboratory_room_203_%28ICT203%29_%E2%80%94_normal_view.jpg)
 - **Autor(a):** UndueMarmot
-- **Licen�a:** [CC0](https://creativecommons.org/publicdomain/zero/1.0/) � via Wikimedia Commons
+- **Licença:** [CC0](https://creativecommons.org/publicdomain/zero/1.0/) · via Wikimedia Commons
