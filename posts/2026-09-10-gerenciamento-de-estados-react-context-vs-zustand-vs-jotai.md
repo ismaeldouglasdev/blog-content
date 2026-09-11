@@ -220,6 +220,6 @@ O state management é invisível até quando quebra. Investir tempo em escolher 
 - [Jotai Documentation](https://jotai.org/)
 - [React Docs: useMemo](https://react.dev/reference/react/useMemo)
 ## 📸 Crédito da imagem de capa
-- **Imagem:** [Body painting - QR code.jpg](https://commons.wikimedia.org/wiki/File%3ABody_painting_-_QR_code.jpg)
-- **Autor(a):** Exey Panteleev
-- **Licença:** [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) · via Wikimedia Commons
+- **Imagem:** [Infrared photography of computer hardware - DSC05331.jpg](https://commons.wikimedia.org/wiki/File%3AInfrared_photography_of_computer_hardware_-_DSC05331.jpg)
+- **Autor(a):** Smrao
+- **Licença:** [CC0](https://creativecommons.org/publicdomain/zero/1.0/) · via Wikimedia Commons
