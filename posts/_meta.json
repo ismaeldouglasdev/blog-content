@@ -1,6 +1,57 @@
 {
   "posts": [
     {
+      "slug": "2026-09-10-gerenciamento-de-estados-react-context-vs-zustand-vs-jotai",
+      "title": "Gerenciamento de estados: React Context vs Zustand vs Jotai",
+      "title_en": "State management: React Context vs Zustand vs Jotai",
+      "date": "2026-09-10",
+      "category": "article",
+      "tags": [
+        "react",
+        "state",
+        "zustand",
+        "jotai"
+      ],
+      "excerpt": "Gerenciamento de estados: React Context vs Zustand vs Jotai",
+      "excerpt_en": "State Management: React Context vs. Zustand vs. Jotai",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-10-gerenciamento-de-estados-react-context-vs-zustand-vs-jotai.jpg",
+      "cover_credit": {
+        "file": "File:Apollo Guidance Computer (AGC).jpg",
+        "artist": "Steve Jurvetson",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3AApollo_Guidance_Computer_%28AGC%29.jpg"
+      },
+      "lang": "pt",
+      "translation_slug": "2026-09-10-gerenciamento-de-estados-react-context-vs-zustand-vs-jotai-en"
+    },
+    {
+      "slug": "2026-09-10-gerenciamento-de-estados-react-context-vs-zustand-vs-jotai-en",
+      "title": "State management: React Context vs Zustand vs Jotai",
+      "title_en": "State management: React Context vs Zustand vs Jotai",
+      "date": "2026-09-10",
+      "category": "article",
+      "tags": [
+        "react",
+        "state",
+        "zustand",
+        "jotai"
+      ],
+      "excerpt": "State Management: React Context vs. Zustand vs. Jotai",
+      "excerpt_en": "State Management: React Context vs. Zustand vs. Jotai",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-10-gerenciamento-de-estados-react-context-vs-zustand-vs-jotai.jpg",
+      "cover_credit": {
+        "file": "File:Apollo Guidance Computer (AGC).jpg",
+        "artist": "Steve Jurvetson",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3AApollo_Guidance_Computer_%28AGC%29.jpg"
+      },
+      "lang": "en",
+      "translation_slug": "2026-09-10-gerenciamento-de-estados-react-context-vs-zustand-vs-jotai",
+      "translation_of": "2026-09-10-gerenciamento-de-estados-react-context-vs-zustand-vs-jotai"
+    },
+    {
       "slug": "2026-09-09-websocket-do-zero-chat-em-tempo-real-com-node-js-e-react",
       "title": "WebSocket do zero: chat em tempo real com Node.js e React",
       "title_en": null,
