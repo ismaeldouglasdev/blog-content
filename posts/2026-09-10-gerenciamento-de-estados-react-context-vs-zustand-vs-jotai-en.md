@@ -11,29 +11,29 @@ translation_of: "2026-09-10-gerenciamento-de-estados-react-context-vs-zustand-vs
 
 # State Management: React Context vs Zustand vs Jotai
 
-Have you ever spent an entire afternoon debugging an update that didn't trigger a component re-render, only to discover the culprit was a `useMemo` wrapping your context? Or seen a project grow to the point where any global state change ends up affecting half the component tree? State management in React isn't just about storing data—it's about preventing those reality checks that make you question your career choices.
+Have you ever spent an entire afternoon debugging an update that didn't trigger a component re-render, only to discover the culprit was a `useMemo` wrapping your context? Or seen a project grow to the point where any global state change ends up affecting half the component tree? State management in React isn't just about storing data: it's about preventing those reality checks that make you question your career choices.
 
-React is powerful, but it doesn't come with a ready-made solution for what happens when `useState` starts leaking across the entire app. Over time, you realize that state management isn't a *nice to have*—it's what separates maintainable code from a structure that collapses with the first new feature.
+React is powerful, but it doesn't come with a ready-made solution for what happens when `useState` starts leaking across the entire app. Over time, you realize that state management isn't a *nice to have*: it's what separates maintainable code from a structure that collapses with the first new feature.
 
-I had to deal with this in a real project recently: `inventory-service`, which synchronizes catalog and inventory between OSPOS and marketplaces. At first, it seemed simple—a global state for the cart, another for inventory. But once you start handling concurrent updates, automatic request retries, and multiple endpoints, the state begins to take on a life of its own. That's when I decided to invest time understanding the options beyond Context.
+I had to deal with this in a real project recently: `inventory-service`, which synchronizes catalog and inventory between OSPOS and marketplaces. At first, it seemed simple: a global state for the cart, another for inventory. But once you start handling concurrent updates, automatic request retries, and multiple endpoints, the state begins to take on a life of its own. That's when I decided to invest time understanding the options beyond Context.
 
-I'll compare three approaches I've encountered in practice: React Context (the native one), Zustand (the minimalist), and Jotai (the atomic). No pure theory—just what works, what hurts, and in which scenarios each one behaves well.
+I'll compare three approaches I've encountered in practice: React Context (the native one), Zustand (the minimalist), and Jotai (the atomic). No pure theory: just what works, what hurts, and in which scenarios each one behaves well.
 
 ## When Context Is No Longer Enough
 
 React Context is built-in, requires no external dependencies, and works. True. But does it work well?
 
-Context is great for values that change infrequently: themes, authentication, global configurations. For example, in an NGO project I worked on (Mensageiros da Esperança), context works well for storing the logged-in user and permissions—these only change at login/logout.
+Context is great for values that change infrequently: themes, authentication, global configurations. For example, in an NGO project I worked on (Mensageiros da Esperança), context works well for storing the logged-in user and permissions: these only change at login/logout.
 
 The problem arises when you try to use Context for state that changes frequently: form inputs, cart product lists, loading status. Each update triggers re-renders in all consumers, even if the value consumed by that specific component hasn’t changed. This is the infamous "over-rendering."
 
-In one of my first React projects (a Linux theming dashboard), I started with Context for everything. The result? When the user changed the Hyprland transparency slider (yes, that was app state), the entire app re-rendered—including package lists, theme previews, and settings. It wasn’t sustainable.
+In one of my first React projects (a Linux theming dashboard), I started with Context for everything. The result? When the user changed the Hyprland transparency slider (yes, that was app state), the entire app re-rendered, including package lists, theme previews, and settings. It wasn’t sustainable.
 
 Context is simple to understand, but its internal implementation (the provider as a component with its own state) creates a rendering dependency that’s often heavier than it appears.
 
 ## Zustand: Simple API, Real Results
 
-Zustand emerged as a response to this complexity. Its API is minimal—you essentially create a store with `create`, pass an initial state and mutations. No providers needed, no complex hooks, no manual memoization.
+Zustand emerged as a response to this complexity. Its API is minimal: you essentially create a store with `create`, pass an initial state and mutations. No providers needed, no complex hooks, no manual memoization.
 
 ```ts
 // Real example from inventory-service: stock management
@@ -54,7 +54,7 @@ export const useStockStore = create<StockState>((set) => ({
   fetchStock: async () => {
     set({ loading: true, error: null });
     try {
-      // Simulação — no real, chama API do Mercado Livre/OSPOS
+      // Simulação: no real, chama API do Mercado Livre/OSPOS
       const response = await fetch('/api/stock');
       const data = await response.json();
       set({ items: data, loading: false });
@@ -73,7 +73,7 @@ export const useStockStore = create<StockState>((set) => ({
 }));
 ```
 
-In `inventory-service`, I used Zustand because I needed global state that was easy to test and persist. Zustand has native middleware support, so I added a `persist` middleware that saves stock to localStorage—useful when sync with the market fails and you want to keep local state functional.
+In `inventory-service`, I used Zustand because I needed global state that was easy to test and persist. Zustand has native middleware support, so I added a `persist` middleware that saves stock to localStorage: useful when sync with the market fails and you want to keep local state functional.
 
 One thing that stood out to me: Zustand avoids the "wrapper hell" of Context. You use the hook directly in the component, without nesting providers or worrying about unnecessary re-renders. The selector from `useStore` lets you pick only what the component needs:
 
@@ -92,7 +92,7 @@ function StockBadge({ sku }: { sku: string }) {
 }
 ```
 
-The `shallow` (from `zustand/shallow`) performs shallow reference comparison—important when your selector returns objects or arrays. This prevents re-renders even when the rest of the state changes.
+The `shallow` (from `zustand/shallow`) performs shallow reference comparison: important when your selector returns objects or arrays. This prevents re-renders even when the rest of the state changes.
 
 ## Jotai: atomic state, no complications
 
@@ -115,7 +115,7 @@ export const activeTasksCountAtom = atom((get) => {
 });
 ```
 
-In one of the projects in the local AI ecosystem (`provider-health-daemon`), I used Jotai for the dashboard. The panel needs to display health status for multiple providers, but each provider has independent configurations. With atoms, I can create `providerStatusAtom(providerId)`, `providerConfigAtom(providerId)` — without having to structure a massive object.
+In one of the projects in the local AI ecosystem (`provider-health-daemon`), I used Jotai for the dashboard. The panel needs to display health status for multiple providers, but each provider has independent configurations. With atoms, I can create `providerStatusAtom(providerId)`, `providerConfigAtom(providerId)`, without having to structure a massive object.
 
 The coolest part is composition: `filteredTasksAtom` is automatically recalculated whenever `tasksAtom` or `filterAtom` changes. No need for `useMemo`, `useSelector`, or extra logic. Jotai already knows which dependencies each atom has and only recalculates what's necessary.
 
@@ -141,7 +141,7 @@ In `Plexo`, I used Jotai for UI state (open tabs, filters, current selection) an
 
 ## Comparando performance
 
-Performance isn't just about how many milliseconds it takes to update — it's about how many components re-render, how many equality checks are performed, and how the garbage collector feels.
+Performance isn't just about how many milliseconds it takes to update: it's about how many components re-render, how many equality checks are performed, and how the garbage collector feels.
 
 In the traditional context (without memoization), every context update triggers re-renders in all components that consume that context, even if the specific value used by each one doesn't change. React has no way of knowing this, since the object returned by the provider is new on every render.
 
@@ -194,22 +194,22 @@ The easiest part to migrate was persistence: the Context already saved the cart 
 
 ## Conclusion
 
-State management in React isn’t about choosing the most popular option—it’s about choosing what solves your problem with the minimum complexity.
+State management in React isn’t about choosing the most popular option: it’s about choosing what solves your problem with the minimum complexity.
 
 - **Context** is still the simplest option for stable state and values that don’t change frequently. But don’t be fooled: with dynamic state, it can quickly become a performance nightmare.
 
 - **Zustand** is my default choice today: simple API, good performance, and flexible enough to support custom middleware. It strikes the right balance between minimalism and power.
 
-- **Jotai** shines in applications where state is naturally modular—dashboards, editing tools, anything with many interdependent values.
+- **Jotai** shines in applications where state is naturally modular: dashboards, editing tools, anything with many interdependent values.
 
-Ultimately, the best state management is the one you understand and can maintain. It’s not worth swapping Zustand for Context just because it’s native—or vice versa. But knowing when each makes sense? That’s what separates a project that scales from one that collapses at the first new feature.
+Ultimately, the best state management is the one you understand and can maintain. It’s not worth swapping Zustand for Context just because it’s native, or vice versa. But knowing when each makes sense? That’s what separates a project that scales from one that collapses at the first new feature.
 
 ### Practical takeaways
 
 - Start with local `useState` and simple contexts. Migrate only when the pain is real, not before.
 - If you need persistence or middleware, Zustand pays off better.
 - For complex state with many derivations, Jotai avoids cascading re-renders.
-- Never use Context for frequently changing state without memoization—or use `useContext` with `useMemo` in the provider and `React.memo` on consumers (though this already erodes the simplicity).
+- Never use Context for frequently changing state without memoization, or use `useContext` with `useMemo` in the provider and `React.memo` on consumers (though this already erodes the simplicity).
 - Test performance with the DevTools Profiler: see how many components re-render on a single update.
 
 State management is invisible until it breaks. Investing time to choose the right tool matters more than picking something “right” today only to rewrite it tomorrow.
@@ -223,6 +223,6 @@ State management is invisible until it breaks. Investing time to choose the righ
 - [Jotai Documentation](https://jotai.org/)
 - [React Docs: useMemo](https://react.dev/reference/react/useMemo)
 ## 📸 Cover image credit
-- **Image:** [Apollo Guidance Computer (AGC).jpg](https://commons.wikimedia.org/wiki/File%3AApollo_Guidance_Computer_%28AGC%29.jpg)
-- **Author:** Steve Jurvetson
+- **Image:** [Body painting - QR code.jpg](https://commons.wikimedia.org/wiki/File%3ABody_painting_-_QR_code.jpg)
+- **Author:** Exey Panteleev
 - **License:** [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) · via Wikimedia Commons
