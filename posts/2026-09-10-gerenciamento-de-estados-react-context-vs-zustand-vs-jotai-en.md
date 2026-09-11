@@ -223,6 +223,6 @@ State management is invisible until it breaks. Investing time to choose the righ
 - [Jotai Documentation](https://jotai.org/)
 - [React Docs: useMemo](https://react.dev/reference/react/useMemo)
 ## 📸 Cover image credit
-- **Image:** [Body painting - QR code.jpg](https://commons.wikimedia.org/wiki/File%3ABody_painting_-_QR_code.jpg)
-- **Author:** Exey Panteleev
-- **License:** [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) · via Wikimedia Commons
+- **Image:** [Infrared photography of computer hardware - DSC05331.jpg](https://commons.wikimedia.org/wiki/File%3AInfrared_photography_of_computer_hardware_-_DSC05331.jpg)
+- **Author:** Smrao
+- **License:** [CC0](https://creativecommons.org/publicdomain/zero/1.0/) · via Wikimedia Commons
