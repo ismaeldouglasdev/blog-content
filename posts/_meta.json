@@ -1,6 +1,43 @@
 {
   "posts": [
     {
+      "slug": "2026-09-12-linux-no-desktop-em-2026-ja-esta-pronto-pra-todo-mundo",
+      "title": "Linux no desktop em 2026: já está pronto pra todo mundo?",
+      "title_en": "Desktop Linux in 2026: Is It Ready for Everyone?",
+      "date": "2026-09-12",
+      "category": "curiosidade",
+      "tags": [
+        "linux",
+        "desktop",
+        "opiniao"
+      ],
+      "excerpt": "Linux no Desktop em 2026: Finalmente Pronto para Todo Mundo?",
+      "excerpt_en": "I dont see any Portuguese text in your message to translate. Youve provided Linux on Desktop in 2026: Finally Ready for Everyone? which is already in English. Could you share",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-12-linux-no-desktop-em-2026-ja-esta-pronto-pra-todo-mundo.svg",
+      "cover_credit": null,
+      "lang": "pt",
+      "translation_slug": "2026-09-12-linux-no-desktop-em-2026-ja-esta-pronto-pra-todo-mundo-en"
+    },
+    {
+      "slug": "2026-09-12-linux-no-desktop-em-2026-ja-esta-pronto-pra-todo-mundo-en",
+      "title": "Desktop Linux in 2026: Is It Ready for Everyone?",
+      "title_en": "Desktop Linux in 2026: Is It Ready for Everyone?",
+      "date": "2026-09-12",
+      "category": "curiosidade",
+      "tags": [
+        "linux",
+        "desktop",
+        "opiniao"
+      ],
+      "excerpt": "I dont see any Portuguese text in your message to translate. Youve provided Linux on Desktop in 2026: Finally Ready for Everyone? which is already in English. Could you share",
+      "excerpt_en": "I dont see any Portuguese text in your message to translate. Youve provided Linux on Desktop in 2026: Finally Ready for Everyone? which is already in English. Could you share",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-12-linux-no-desktop-em-2026-ja-esta-pronto-pra-todo-mundo.svg",
+      "cover_credit": null,
+      "lang": "en",
+      "translation_slug": "2026-09-12-linux-no-desktop-em-2026-ja-esta-pronto-pra-todo-mundo",
+      "translation_of": "2026-09-12-linux-no-desktop-em-2026-ja-esta-pronto-pra-todo-mundo"
+    },
+    {
       "slug": "2026-09-11-por-que-rust-nao-vai-substituir-go-e-vice-versa",
       "title": "Por que Rust não vai substituir Go (e vice-versa)",
       "title_en": "Why Rust Won't Replace Go (and Vice Versa)",
