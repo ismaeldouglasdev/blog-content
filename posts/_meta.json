@@ -1,6 +1,57 @@
 {
   "posts": [
     {
+      "slug": "2026-09-13-api-graphql-com-apollo-server-e-client-do-zero-ao-completo",
+      "title": "API GraphQL com Apollo Server e Client: do zero ao completo",
+      "title_en": "GraphQL API with Apollo Server and Client: Complete Guide",
+      "date": "2026-09-13",
+      "category": "tutorial",
+      "tags": [
+        "graphql",
+        "apollo",
+        "api"
+      ],
+      "excerpt": "GraphQL com Apollo Server e Client: Do Zero ao Completo",
+      "excerpt_en": "I dont see any Portuguese text in your message to translate. The text you provided - GraphQL with Apollo Server and Client: From Zero to Complete - is already in English",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-13-api-graphql-com-apollo-server-e-client-do-zero-ao-completo.jpg",
+      "cover_credit": {
+        "file": "File:Bob van Luijt presenting Weaviate's GraphQL APi.jpg",
+        "artist": "Bvl85",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3ABob_van_Luijt_presenting_Weaviate%27s_GraphQL_APi.jpg",
+        "source": "wikimedia"
+      },
+      "lang": "pt",
+      "translation_slug": "2026-09-13-api-graphql-com-apollo-server-e-client-do-zero-ao-completo-en"
+    },
+    {
+      "slug": "2026-09-13-api-graphql-com-apollo-server-e-client-do-zero-ao-completo-en",
+      "title": "GraphQL API with Apollo Server and Client: Complete Guide",
+      "title_en": "GraphQL API with Apollo Server and Client: Complete Guide",
+      "date": "2026-09-13",
+      "category": "tutorial",
+      "tags": [
+        "graphql",
+        "apollo",
+        "api"
+      ],
+      "excerpt": "I dont see any Portuguese text in your message to translate. The text you provided - GraphQL with Apollo Server and Client: From Zero to Complete - is already in English",
+      "excerpt_en": "I dont see any Portuguese text in your message to translate. The text you provided - GraphQL with Apollo Server and Client: From Zero to Complete - is already in English",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-13-api-graphql-com-apollo-server-e-client-do-zero-ao-completo.jpg",
+      "cover_credit": {
+        "file": "File:Bob van Luijt presenting Weaviate's GraphQL APi.jpg",
+        "artist": "Bvl85",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3ABob_van_Luijt_presenting_Weaviate%27s_GraphQL_APi.jpg",
+        "source": "wikimedia"
+      },
+      "lang": "en",
+      "translation_slug": "2026-09-13-api-graphql-com-apollo-server-e-client-do-zero-ao-completo",
+      "translation_of": "2026-09-13-api-graphql-com-apollo-server-e-client-do-zero-ao-completo"
+    },
+    {
       "slug": "2026-09-12-linux-no-desktop-em-2026-ja-esta-pronto-pra-todo-mundo",
       "title": "Linux no desktop em 2026: já está pronto pra todo mundo?",
       "title_en": "Desktop Linux in 2026: Is It Ready for Everyone?",
