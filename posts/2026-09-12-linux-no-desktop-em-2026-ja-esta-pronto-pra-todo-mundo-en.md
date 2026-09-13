@@ -3,7 +3,7 @@ title: "Desktop Linux in 2026: Is It Ready for Everyone?"
 date: "2026-09-12"
 category: "curiosidade"
 tags: ["linux", "desktop", "opiniao"]
-excerpt: "I dont see any Portuguese text in your message to translate. Youve provided Linux on Desktop in 2026: Finally Ready for Everyone? which is already in English. Could you share"
+excerpt: "Linux on the Desktop in 2026: Finally Ready for Everyone?"
 cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-12-linux-no-desktop-em-2026-ja-esta-pronto-pra-todo-mundo.svg"
 lang: "en"
 translation_of: "2026-09-12-linux-no-desktop-em-2026-ja-esta-pronto-pra-todo-mundo"

@@ -12,7 +12,7 @@
         "api"
       ],
       "excerpt": "GraphQL com Apollo Server e Client: Do Zero ao Completo",
-      "excerpt_en": "I dont see any Portuguese text in your message to translate. The text you provided - GraphQL with Apollo Server and Client: From Zero to Complete - is already in English",
+      "excerpt_en": "GraphQL with Apollo Server and Client: From Zero to Complete",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-13-api-graphql-com-apollo-server-e-client-do-zero-ao-completo.jpg",
       "cover_credit": {
         "file": "File:Bob van Luijt presenting Weaviate's GraphQL APi.jpg",
@@ -36,8 +36,8 @@
         "apollo",
         "api"
       ],
-      "excerpt": "I dont see any Portuguese text in your message to translate. The text you provided - GraphQL with Apollo Server and Client: From Zero to Complete - is already in English",
-      "excerpt_en": "I dont see any Portuguese text in your message to translate. The text you provided - GraphQL with Apollo Server and Client: From Zero to Complete - is already in English",
+      "excerpt": "GraphQL with Apollo Server and Client: From Zero to Complete",
+      "excerpt_en": "GraphQL with Apollo Server and Client: From Zero to Complete",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-13-api-graphql-com-apollo-server-e-client-do-zero-ao-completo.jpg",
       "cover_credit": {
         "file": "File:Bob van Luijt presenting Weaviate's GraphQL APi.jpg",
@@ -63,7 +63,7 @@
         "opiniao"
       ],
       "excerpt": "Linux no Desktop em 2026: Finalmente Pronto para Todo Mundo?",
-      "excerpt_en": "I dont see any Portuguese text in your message to translate. Youve provided Linux on Desktop in 2026: Finally Ready for Everyone? which is already in English. Could you share",
+      "excerpt_en": "Linux on the Desktop in 2026: Finally Ready for Everyone?",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-12-linux-no-desktop-em-2026-ja-esta-pronto-pra-todo-mundo.svg",
       "cover_credit": null,
       "lang": "pt",
@@ -80,8 +80,8 @@
         "desktop",
         "opiniao"
       ],
-      "excerpt": "I dont see any Portuguese text in your message to translate. Youve provided Linux on Desktop in 2026: Finally Ready for Everyone? which is already in English. Could you share",
-      "excerpt_en": "I dont see any Portuguese text in your message to translate. Youve provided Linux on Desktop in 2026: Finally Ready for Everyone? which is already in English. Could you share",
+      "excerpt": "Linux on the Desktop in 2026: Finally Ready for Everyone?",
+      "excerpt_en": "Linux on the Desktop in 2026: Finally Ready for Everyone?",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-12-linux-no-desktop-em-2026-ja-esta-pronto-pra-todo-mundo.svg",
       "cover_credit": null,
       "lang": "en",
@@ -111,7 +111,10 @@
         "page": "https://commons.wikimedia.org/wiki/File%3ADe_La_Salle_University_%E2%80%93_Dasmari%C3%B1as_%28DLSU%E2%80%93D%29_Information_and_Communications_Technology_Center_%28ICTC%29_laboratory_room_203_%28ICT203%29_%E2%80%94_normal_view.jpg"
       },
       "lang": "pt",
-      "translation_slug": "2026-09-11-por-que-rust-nao-vai-substituir-go-e-vice-versa-en"
+      "translation_slug": "2026-09-11-por-que-rust-nao-vai-substituir-go-e-vice-versa-en",
+      "glossary_exclude": [
+        "service"
+      ]
     },
     {
       "slug": "2026-09-11-por-que-rust-nao-vai-substituir-go-e-vice-versa-en",
@@ -137,7 +140,10 @@
       },
       "lang": "en",
       "translation_slug": "2026-09-11-por-que-rust-nao-vai-substituir-go-e-vice-versa",
-      "translation_of": "2026-09-11-por-que-rust-nao-vai-substituir-go-e-vice-versa"
+      "translation_of": "2026-09-11-por-que-rust-nao-vai-substituir-go-e-vice-versa",
+      "glossary_exclude": [
+        "service"
+      ]
     },
     {
       "slug": "2026-09-10-gerenciamento-de-estados-react-context-vs-zustand-vs-jotai",
@@ -162,7 +168,10 @@
         "page": "https://commons.wikimedia.org/wiki/File%3AInfrared_photography_of_computer_hardware_-_DSC05331.jpg"
       },
       "lang": "pt",
-      "translation_slug": "2026-09-10-gerenciamento-de-estados-react-context-vs-zustand-vs-jotai-en"
+      "translation_slug": "2026-09-10-gerenciamento-de-estados-react-context-vs-zustand-vs-jotai-en",
+      "glossary_exclude": [
+        "service"
+      ]
     },
     {
       "slug": "2026-09-10-gerenciamento-de-estados-react-context-vs-zustand-vs-jotai-en",
@@ -188,7 +197,10 @@
       },
       "lang": "en",
       "translation_slug": "2026-09-10-gerenciamento-de-estados-react-context-vs-zustand-vs-jotai",
-      "translation_of": "2026-09-10-gerenciamento-de-estados-react-context-vs-zustand-vs-jotai"
+      "translation_of": "2026-09-10-gerenciamento-de-estados-react-context-vs-zustand-vs-jotai",
+      "glossary_exclude": [
+        "service"
+      ]
     },
     {
       "slug": "2026-09-09-websocket-do-zero-chat-em-tempo-real-com-node-js-e-react",
@@ -449,7 +461,10 @@
         "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
         "page": "https://commons.wikimedia.org/wiki/File%3ALaptop_coding_programs_%28Unsplash%29.jpg",
         "author": "Tirza van Dijk tirzavandijk"
-      }
+      },
+      "glossary_exclude": [
+        "service"
+      ]
     },
     {
       "slug": "2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real-en",
@@ -514,6 +529,9 @@
           "q": "O Redis é persistente?",
           "a": "Sim, por padrão ele salva snapshots (RDB) e pode usar append-only file (AOF) para durabilidade, embora seja frequentemente usado como cache volátil onde a perda é aceitável."
         }
+      ],
+      "glossary_exclude": [
+        "service"
       ]
     },
     {
@@ -554,6 +572,9 @@
           "q": "Is Redis persistent?",
           "a": "Yes, it saves snapshots (RDB) by default and can use an append-only file (AOF) for durability, although it is often used as a volatile cache where data loss is acceptable."
         }
+      ],
+      "glossary_exclude": [
+        "service"
       ]
     },
     {
@@ -579,7 +600,10 @@
         "license_url": "https://en.wikipedia.org/wiki/Public_domain",
         "page": "https://commons.wikimedia.org/wiki/File%3AFirst_Computer_Bug%2C_1947.jpg",
         "author": "Courtesy of the Naval Surface Warfare Center, Dahlgren, VA., 1988."
-      }
+      },
+      "glossary_exclude": [
+        "service"
+      ]
     },
     {
       "slug": "2026-09-01-testing-library-testes-de-react-que-refletem-o-uso-real-en",
@@ -605,7 +629,10 @@
         "license_url": "https://en.wikipedia.org/wiki/Public_domain",
         "page": "https://commons.wikimedia.org/wiki/File%3AFirst_Computer_Bug%2C_1947.jpg",
         "author": "Courtesy of the Naval Surface Warfare Center, Dahlgren, VA., 1988."
-      }
+      },
+      "glossary_exclude": [
+        "service"
+      ]
     },
     {
       "slug": "2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um",
@@ -736,7 +763,10 @@
         "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
         "page": "https://commons.wikimedia.org/wiki/File%3AProgramming_code.jpg",
         "author": "Martin Vorel"
-      }
+      },
+      "glossary_exclude": [
+        "edge"
+      ]
     },
     {
       "slug": "2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em-en",
@@ -762,7 +792,10 @@
         "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
         "page": "https://commons.wikimedia.org/wiki/File%3AProgramming_code.jpg",
         "author": "Martin Vorel"
-      }
+      },
+      "glossary_exclude": [
+        "edge"
+      ]
     },
     {
       "slug": "2026-08-28-react-server-components-quando-e-como-usar-no-next-js",
@@ -892,7 +925,10 @@
         "license_url": "https://creativecommons.org/licenses/by/3.0/",
         "page": "https://commons.wikimedia.org/wiki/File%3ALinux-Mint-8-LXDE_terminals_info.png",
         "author": "VARGUX"
-      }
+      },
+      "glossary_exclude": [
+        "service"
+      ]
     },
     {
       "slug": "2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash-en",
@@ -971,7 +1007,10 @@
         "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
         "page": "https://commons.wikimedia.org/wiki/File%3AWikimedia_Foundation_Servers-8055_08.jpg",
         "author": "Victorgrigas"
-      }
+      },
+      "glossary_exclude": [
+        "service"
+      ]
     },
     {
       "slug": "2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas-en",
@@ -1127,7 +1166,10 @@
         "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
         "page": "https://commons.wikimedia.org/wiki/File%3AWikipedia-blisk-devtools-iphone-12-and-ipad-pro-11-2021.png",
         "author": "And85rew"
-      }
+      },
+      "glossary_exclude": [
+        "edge"
+      ]
     },
     {
       "slug": "2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug-en",
@@ -1153,7 +1195,10 @@
         "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
         "page": "https://commons.wikimedia.org/wiki/File%3AWikipedia-blisk-devtools-iphone-12-and-ipad-pro-11-2021.png",
         "author": "And85rew"
-      }
+      },
+      "glossary_exclude": [
+        "edge"
+      ]
     },
     {
       "slug": "2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks",
