@@ -15,7 +15,7 @@ The web application architecture has undergone a quiet transformation in recent 
 
 Cloudflare Workers represents one of the most mature implementations of this vision. Launched in 2017, the service allows you to run JavaScript, TypeScript, and Rust code on Cloudflare edge locations, without the need to manage servers, configure load balancers, or decide which region to deploy to. Workers runs where the user is, and this simple geographic change unlocks a range of architectural possibilities that were impractical or economically prohibitive with traditional infrastructure.
 
-# The Edge Model and Its Fundamental Differences
+## The Edge Model and Its Fundamental Differences
 
 To understand why edge functions represent a significant shift, we first need to examine the traditional cloud model and its inherent limitations. When you deploy an application on a conventional cloud provider, some fundamental choices need to be made: which regions the servers will be in, how traffic will be distributed between them, and what happens when latency between user and server affects the experience.
 
@@ -83,7 +83,7 @@ app.post('/api/process', async (c) => {
 export default app;
 ```
 
-# Persistent storage with KV and D1
+## Persistent storage with KV and D1
 
 Running code at the edge is only part of the equation. Useful applications need state, and that's where Cloudflare's storage ecosystem differentiates itself. Workers offers multiple storage products, each optimized for different access patterns.
 

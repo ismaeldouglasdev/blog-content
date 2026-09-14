@@ -10,17 +10,17 @@ lang: "pt"
 
 # Edge Functions com Cloudflare Workers: compute global sem servidor
 
-A arquitetura de aplicações web passou por uma transformação silenciosa nos últimos anos. O modelo tradicional de servidor único, onde você mantém uma máquina responding requests em uma localização geográfica específica, está dando lugar a algo fundamentalmente diferente: código que executa simultaneamente em centenas de pontos de presença ao redor do mundo, a poucos milissegundos de qualquer usuário. Essa mudança não é apenas evolutiva, é uma redefinição do que significa "distribuir" uma aplicação.
+A arquitetura de aplicações web passou por uma transformação silenciosa nos últimos anos. O modelo tradicional de servidor único, onde você mantém uma máquina respondendo a requisições em uma localização geográfica específica, está dando lugar a algo fundamentalmente diferente: código que executa simultaneamente em centenas de pontos de presença ao redor do mundo, a poucos milissegundos de qualquer usuário. Essa mudança não é apenas evolutiva, é uma redefinição do que significa "distribuir" uma aplicação.
 
 Cloudflare Workers representa uma das implementações mais maduras dessa visão. Lançado em 2017, o serviço permite executar código JavaScript, TypeScript e Rust em edge locations da Cloudflare, sem a necessidade de gerenciar servidores, configurar load balancers ou decidir em qual região fazer deploy. O Workers executa onde o usuário está, e essa simples mudança geográfica desbloqueia uma série de possibilidades arquiteturais que eram impraticáveis ou economicamente proibitivas com infraestrutura tradicional.
 
 ## O modelo edge e suas diferenças fundamentais
 
-Para entender por que edge functions representam uma mudança significativa, precisamos primeiro examinar o modelo cloud tradicional e suas limitações inerentes. Quando você implanta uma aplicação em um provedor cloud convencional, 몇 escolhas fundamentais precisam ser feitas: em quais regiões os servidores ficarão, como o tráfego será distribuído entre eles, e o que acontece quando a latência entre usuário e servidor afeta a experiência.
+Para entender por que edge functions representam uma mudança significativa, precisamos primeiro examinar o modelo cloud tradicional e suas limitações inerentes. Quando você implanta uma aplicação em um provedor cloud convencional, algumas escolhas fundamentais precisam ser feitas: em quais regiões os servidores ficarão, como o tráfego será distribuído entre eles, e o que acontece quando a latência entre usuário e servidor afeta a experiência.
 
-A maioria das aplicações web modernas segue um pattern que parece razoável no papel: o usuário faz uma requisição, ela viaja através de da internet até um data center, é processada por um servidor que pode estar a milhares de quilômetros de distância, e então a resposta faz o caminho de volta. Para usuários próximos ao servidor, essa latência é imperceptível. Para aqueles do outro lado do mundo, cada requisição adiciona dezenas ou centenas de milissegundos ao tempo de resposta, criando uma experiência degradada que impacta diretamente métricas de negócio como taxa de conversão e engajamento.
+A maioria das aplicações web modernas segue um padrão que parece razoável no papel: o usuário faz uma requisição, ela viaja através da internet até um data center, é processada por um servidor que pode estar a milhares de quilômetros de distância, e então a resposta faz o caminho de volta. Para usuários próximos ao servidor, essa latência é imperceptível. Para aqueles do outro lado do mundo, cada requisição adiciona dezenas ou centenas de milissegundos ao tempo de resposta, criando uma experiência degradada que impacta diretamente métricas de negócio como taxa de conversão e engajamento.
 
-A primeira tentativa de resolver esse problema foi a CDN tradicional, que cacheia conteúdo estático em edge locations e entrega aos usuários a partir do ponto mais próximo. Funciona bem para imagens, CSS, JavaScript e outros assets imutáveis, mas não resolve o problema de requests dinâmicos que precisam de processamento. Se o seu endpoint de API verifica autenticação, consulta um banco de dados personalizado ou executa lógica de negócio, você ainda precisa de um servidor centralizado processando essas requisições.
+A primeira tentativa de resolver esse problema foi a CDN tradicional, que cacheia conteúdo estático em edge locations e entrega aos usuários a partir do ponto mais próximo. Funciona bem para imagens, CSS, JavaScript e outros assets imutáveis, mas não resolve o problema de requisições dinâmicas que precisam de processamento. Se o seu endpoint de API verifica autenticação, consulta um banco de dados personalizado ou executa lógica de negócio, você ainda precisa de um servidor centralizado processando essas requisições.
 
 Edge functions atacam precisamente essa limitação. Em vez de apenas cachear conteúdo, o edge location pode executar código arbitrário antes de decidir se a requisição precisa ir até o servidor de origem, se pode ser servida diretamente do cache, ou se pode ser transformada de alguma forma que beneficie o usuário final. O resultado é um modelo onde a lógica de negócio pode residir fisicamente perto de quem a consome, com latência medida em milissegundos de rede em vez de centenas.
 
@@ -85,7 +85,7 @@ export default app;
 
 Executar código no edge é apenas parte da equação. Aplicações úteis precisam de estado, e é aí que o ecossistema de storage da Cloudflare se diferencia. O Workers oferece múltiplos produtos de armazenamento, cada um otimizado para padrões de acesso diferentes.
 
-Cloudflare KV é um键值 store distribuído projetado para operações de leitura frequentes e baixa latência. Dados são automaticamente replicados para milhares de edge locations, permitindo leituras com latência de milissegundos independente de onde o usuário está. A consistência eventual significa que writes podem levar alguns segundos para se propagar globalmente, mas leituras são extremamente rápidas.
+Cloudflare KV é um armazenamento chave-valor (key-value) distribuído projetado para operações de leitura frequentes e baixa latência. Dados são automaticamente replicados para milhares de edge locations, permitindo leituras com latência de milissegundos independente de onde o usuário está. A consistência eventual significa que writes podem levar alguns segundos para se propagar globalmente, mas leituras são extremamente rápidas.
 
 KV funciona excepcionalmente bem para casos de uso como caches de alta velocidade, configuração de aplicações, session stores, e qualquer dado que precise ser lido frequentemente mas atualizado ocasionalmente. A implementação de um cache simples demonstra o padrão:
 
@@ -171,7 +171,7 @@ export default {
 
 ## Armazenamento de objetos com R2
 
-O R2 é a oferta de object storage da Cloudflare, posicionado como alternativa ao S3 com uma diferença crucial: não há taxas de egress. Para aplicações que servem大量的 arquivos para usuários globalmente, essa economia pode ser substancial. O R2 é compatível com a API S3, o que significa que bibliotecas client existentes funcionam sem modificações.
+O R2 é a oferta de object storage da Cloudflare, posicionado como alternativa ao S3 com uma diferença crucial: não há taxas de egress. Para aplicações que servem grande volume de arquivos para usuários globalmente, essa economia pode ser substancial. O R2 é compatível com a API S3, o que significa que bibliotecas client existentes funcionam sem modificações.
 
 Um caso de uso comum no edge é servir imagens processadas. Você pode armazenar originais no R2 e usar Workers para redimensionar, comprimir ou converter formatos sob demanda:
 
@@ -201,7 +201,7 @@ export default {
 
 ## Automação com Cron Triggers
 
-Workers não executam apenas em resposta a requisições HTTP. O sistema de Cron Triggers permite scheduler execução periódica, habilitando padrões como sincronização de dados, limpeza de caches, geração de relatórios e tasks de manutenção que tradicionalmente exigiriam um servidor dedicado ou container running 24/7.
+Workers não executam apenas em resposta a requisições HTTP. O sistema de Cron Triggers permite agendar execução periódica, habilitando padrões como sincronização de dados, limpeza de caches, geração de relatórios e tasks de manutenção que tradicionalmente exigiriam um servidor dedicado ou container rodando 24/7.
 
 A configuração de um cron job é declarativa no wrangler.toml:
 
@@ -331,21 +331,21 @@ O sistema de environments do Wrangler também permite configuração específica
 
 ## Quando edge functions fazem sentido
 
-Nem toda aplicação se beneficia de execução no edge. O pattern brilha em cenários específicos: APIs que servem usuários globalmente com requisitos de baixa latência, processamento de requisições que podem ser completadas sem acesso a recursos centralizados, e cargas de trabalho que variam significativamente em volume.
+Nem toda aplicação se beneficia de execução no edge. O padrão brilha em cenários específicos: APIs que servem usuários globalmente com requisitos de baixa latência, processamento de requisições que podem ser completadas sem acesso a recursos centralizados, e cargas de trabalho que variam significativamente em volume.
 
-Aplicações com acesso frequente a databases transacionais pesados ainda se beneficiam mais de uma arquitetura híbrida, onde o edge trata autenticação, validation, e cache agressivo enquanto requisições complexas vão para servidores centralizados. O Workers não substitui completamente servidores tradicionais, mas os torna menos necessários para uma categoria significativa de casos de uso.
+Aplicações com acesso frequente a bancos de dados transacionais pesados ainda se beneficiam mais de uma arquitetura híbrida, onde o edge trata autenticação, validação e cache agressivo enquanto requisições complexas vão para servidores centralizados. O Workers não substitui completamente servidores tradicionais, mas os torna menos necessários para uma categoria significativa de casos de uso.
 
-A economia também é um fator de decisão válido. Para aplicações de baixo a médio tráfego, a camada gratuita do Workers cobre uma quantidade substancial de requisições, e mesmo acima desse limite os custos permanecem competitivos com alternativas serverless tradicionais. A ausência de taxas de egress no R2 especificamente pode representar economias significativas para aplicações que servem大量 de dados.
+A economia também é um fator de decisão válido. Para aplicações de baixo a médio tráfego, a camada gratuita do Workers cobre uma quantidade substancial de requisições, e mesmo acima desse limite os custos permanecem competitivos com alternativas serverless tradicionais. A ausência de taxas de egress no R2 especificamente pode representar economias significativas para aplicações que servem grande volume de dados.
 
 ## Takeaways praticos
 
 - Cloudflare Workers executa código JavaScript, TypeScript ou Rust em edge locations globais sem gerenciamento de servidores, com latência medida em milissegundos
 - KV oferece armazenamento chave-valor de alta velocidade para cache e configuração, enquanto D1 permite queries SQL com réplicas em cada edge location
-- O R2 Storage elimina taxas de egress, sendo ideal para aplicações que servem大量 de arquivos para usuários globalmente
+- O R2 Storage elimina taxas de egress, sendo ideal para aplicações que servem grande volume de arquivos para usuários globalmente
 - Cron Triggers permitem automação de tasks periódicas sem infraestrutura dedicada, simplificando sincronização e manutenção
 - Workers AI oferece inference de modelos como Llama 3 diretamente no edge, viabilizando IA sem latência de rede
 - O workflow de desenvolvimento com Wrangler é otimizado para iteração rápida, com `dev` local e `deploy` em segundos
-- Edge functions são ideais para APIs globais, processamento de requests independentes, e aplicações que priorizam latência; casos complexos de database se beneficiam de arquiteturas híbridas
+- Edge functions são ideais para APIs globais, processamento de requisições independentes, e aplicações que priorizam latência; casos complexos de banco de dados se beneficiam de arquiteturas híbridas
 
 ## Fontes
 
