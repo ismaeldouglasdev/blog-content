@@ -1,6 +1,61 @@
 {
   "posts": [
     {
+      "slug": "2026-09-14-noticia-demo-nvidia-geforce-rtx-5090-lancamento",
+      "title": "NVIDIA anuncia GeForce RTX 5090: specs, preço e o que esperar",
+      "title_en": null,
+      "date": "2026-09-14",
+      "category": "noticia",
+      "tags": [
+        "nvidia",
+        "gpu",
+        "hardware",
+        "geforce"
+      ],
+      "excerpt": "A NVIDIA revelou oficialmente a GeForce RTX 5090 com arquitetura Blackwell. Preço, datas e o que a comunidade está dizendo.",
+      "excerpt_en": "NVIDIA has officially unveiled the GeForce RTX 5090 with Blackwell architecture. Price, dates and what the community is saying.",
+      "cover": null,
+      "lang": "pt",
+      "translation_slug": null
+    },
+    {
+      "slug": "2026-09-14-teclados-mecanicos-em-2026-modelos-em-destaque",
+      "title": "Teclados mecânicos em 2026: os modelos que estão chamando atenção",
+      "title_en": null,
+      "date": "2026-09-14",
+      "category": "gadget",
+      "tags": [
+        "teclado",
+        "mecanico",
+        "gadget"
+      ],
+      "excerpt": "Curadoria de teclados mecânicos em destaque neste ano — specs, o que a comunidade diz e para quem cada um serve.",
+      "excerpt_en": "Curated highlights of mechanical keyboards this year — specs, community feedback and who each model serves.",
+      "cover": null,
+      "lang": "pt",
+      "translation_slug": null,
+      "products": [
+        {
+          "name": "Keychron Q6 Max",
+          "url": "https://example.com/keychron-q6-max",
+          "marketplace": "Placeholder",
+          "note": "Rascunho de demonstração — link placeholder, substituir antes de publicar."
+        },
+        {
+          "name": "Wooting 80HE",
+          "url": "https://example.com/wooting-80he",
+          "marketplace": "Placeholder",
+          "note": "Rascunho de demonstração — link placeholder, substituir antes de publicar."
+        },
+        {
+          "name": "NuPhy Air75 V2",
+          "url": "https://example.com/nuphy-air75-v2",
+          "marketplace": "Placeholder",
+          "note": "Rascunho de demonstração — link placeholder, substituir antes de publicar."
+        }
+      ]
+    },
+    {
       "slug": "2026-09-14-edge-functions-com-cloudflare-workers-compute-global-sem",
       "title": "Edge Functions com Cloudflare Workers: compute global sem servidor",
       "title_en": "Edge Functions with Cloudflare Workers: Global Serverless Computing",
