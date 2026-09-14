@@ -153,7 +153,7 @@
         "linguagens",
         "opiniao"
       ],
-      "excerpt": "Introdução A guerra de linguagens de programação é um tópico recorrente nas comunidades de desenvolvimento de software. Com a constante evolução da tecnologia, novas",
+      "excerpt": "Rust e Go resolvem problemas diferentes: Rust prioriza controle de baixo nível e segurança de memória, enquanto Go foca em simplicidade e produtividade. Entenda quando usar cada um.",
       "excerpt_en": "Programming language wars recur in software development communities.",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-11-por-que-rust-nao-vai-substituir-go-e-vice-versa.jpg",
       "cover_credit": {
@@ -268,7 +268,7 @@
         "react"
       ],
       "excerpt": "WebSocket do zero: chat em tempo real com Node.js e React",
-      "excerpt_en": null,
+      "excerpt_en": "Build a real-time chat application from scratch using WebSocket, Node.js, and React. Learn how WebSocket works and integrate it into a full-stack project.",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-09-websocket-do-zero-chat-em-tempo-real-com-node-js-e-react.jpg",
       "cover_credit": {
         "file": "File:Apollo Guidance Computer (AGC).jpg",
@@ -291,7 +291,7 @@
         "computacao",
         "futuro"
       ],
-      "excerpt": "Introdução A programação quântica é um campo que tem gerado grande interesse nos últimos anos, com muitos especialistas e empresas investindo tempo e recursos para",
+      "excerpt": "Computação quântica promete revolucionar a indústria, mas será que já é viável na prática? Veja onde a programação quântica realmente faz sentido em 2026.",
       "excerpt_en": "Quantum programming has generated significant interest recently",
       "lang": "pt",
       "translation_slug": "2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia-en",
@@ -342,7 +342,7 @@
         "database",
         "tendencias"
       ],
-      "excerpt": "Introdução A era dos bancos de dados NoSQL, que prometiam flexibilidade e escalabilidade, parecia ter conquistado o coração dos desenvolvedores. No entanto, nos últimos anos",
+      "excerpt": "Após anos de domínio do NoSQL, o PostgreSQL voltou com força usando JSONB, full-text search e extensões. Saiba por que bancos relacionais estão em alta novamente.",
       "excerpt_en": "NoSQL databases, promising flexibility and scalability, won developers hearts, but recently",
       "lang": "pt",
       "translation_slug": "2026-09-07-postgresql-e-o-renascimento-dos-bancos-sql-relacionais-en",
@@ -422,7 +422,7 @@
         "linguagens",
         "opiniao"
       ],
-      "excerpt": "Introdução A escolha da linguagem de programação certa para um projeto é uma decisão crucial que pode afetar significativamente o sucesso e a manutenção do software. Com o",
+      "excerpt": "Rust e Go resolvem problemas diferentes: Rust prioriza controle de baixo nível e segurança de memória, enquanto Go foca em simplicidade e produtividade. Entenda quando usar cada um.",
       "excerpt_en": "Choosing the right programming language is crucial for a projects success and maintenance.",
       "lang": "pt",
       "translation_slug": "2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa-en",
@@ -752,7 +752,7 @@
         "deno",
         "javascript"
       ],
-      "excerpt": "Introdução Quando se trata de gerenciar dependências em projetos JavaScript, o npm é o gigante da indústria. Com mais de 1,5 milhão de pacotes disponíveis, é o maior",
+      "excerpt": "Bun e Deno estão desafiando o npm com instalações mais rápidas e execução nativa de TypeScript. Veja por que esses runtime estão ganhando espaço no ecossistema JavaScript.",
       "excerpt_en": "npm is the industry giant for managing JavaScript dependencies",
       "lang": "pt",
       "translation_slug": "2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco-en",
@@ -861,7 +861,7 @@
         "server-components",
         "nextjs"
       ],
-      "excerpt": "O ecossistema frontend passou anos focado em rodar tudo no navegador do cliente, mas a arquitetura moderna de frameworks como o Next.js mudou o jogo ao trazer o servidor de",
+      "excerpt": "React Server Components permitem renderizar componentes no servidor, reduzindo o bundle no cliente. Saiba como o Next.js mudou a arquitetura frontend com essa abordagem.",
       "excerpt_en": "The frontend ecosystem spent years focused on running everything in the clients browser, but the modern architecture of frameworks like Next.js has changed the game by",
       "lang": "pt",
       "translation_slug": "2026-08-28-react-server-components-quando-e-como-usar-no-next-js-en",
@@ -913,8 +913,8 @@
         "lambda",
         "cloud"
       ],
-      "excerpt": "Introdução: Serverless e Quando Vale a Pena Quando se fala em desenvolvimento de software, uma das principais preocupações é a infraestrutura necessária para rodar as",
-      "excerpt_en": "Introduction: Serverless and When It’s Worth It. In software development, one of the biggest",
+      "excerpt": "AWS Lambda elimina a necessidade de gerenciar servidores: pague apenas pelo tempo de execução. Veja como usar funções serverless para APIs e automações com custo baixo.",
+      "excerpt_en": "Serverless and When It’s Worth It. In software development, one of the biggest",
       "lang": "pt",
       "translation_slug": "2026-08-27-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas-en",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-27-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas.jpg",
@@ -939,8 +939,8 @@
         "lambda",
         "cloud"
       ],
-      "excerpt": "Introduction: Serverless and When It’s Worth It. In software development, one of the biggest",
-      "excerpt_en": "Introduction: Serverless and When It’s Worth It. In software development, one of the biggest",
+      "excerpt": "Serverless and When It’s Worth It. In software development, one of the biggest",
+      "excerpt_en": "Serverless and When It’s Worth It. In software development, one of the biggest",
       "lang": "en",
       "translation_slug": "2026-08-27-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas",
       "translation_of": "2026-08-27-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas",
@@ -966,7 +966,7 @@
         "bash",
         "systemd"
       ],
-      "excerpt": "Introdução Quando migrei 10k produtos entre sistemas na Loja Quase Tudo, percebi a importância da automação de tarefas para manter a eficiência e reduzir erros humanos. A",
+      "excerpt": "Migrar 10 mil produtos entre sistemas mostrou o poder da automação: cron, systemd e scripts bash eliminam erros humanos e mantêm processos rodando sem intervenção.",
       "excerpt_en": "Migrating 10k products made me realize the importance of automating tasks for efficiency and reducing errors",
       "lang": "pt",
       "translation_slug": "2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash-en",
@@ -1023,7 +1023,7 @@
         "mongodb"
       ],
       "excerpt": "Escolher o banco de dados errado no início de um projeto garante refatorações dolorosas no futuro. A discussão entre bancos relacionais (SQL) e não-relacionais (NoSQL)",
-      "excerpt_en": null,
+      "excerpt_en": "Choosing the wrong database early in a project leads to painful refactoring later. Compare relational (SQL) and non-relational (NoSQL) databases to pick the right one.",
       "lang": "pt",
       "translation_slug": null,
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-25-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um.jpg",
@@ -1048,7 +1048,7 @@
         "lambda",
         "cloud"
       ],
-      "excerpt": "Por que servidores “invisíveis” podem ser a resposta para pequenos negócios",
+      "excerpt": "AWS Lambda elimina a necessidade de gerenciar servidores, permitindo que pequenas empresas rodem APIs e automações sem infraestrutura dedicada.",
       "excerpt_en": "Why “invisible” servers could be the solution for small businesses",
       "lang": "pt",
       "translation_slug": "2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas-en",
@@ -1156,7 +1156,7 @@
         "historia",
         "javascript"
       ],
-      "excerpt": "Em 2012, a Microsoft anunciou o TypeScript para resolver a crise de manutenibilidade do JavaScript grande. Esta é a história do projeto experimental que virou padrão da indústria.",
+      "excerpt": "TypeScript nasceu como experimento interno da Microsoft em 2012 para resolver a crise de manutenibilidade do JavaScript. Veja como virou padrão da indústria.",
       "excerpt_en": "In October 2012, Microsoft announced TypeScript, reshaping JavaScript development. At the time, teams maintaining large JavaScript.",
       "lang": "pt",
       "translation_slug": "2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria-en",
@@ -1207,7 +1207,7 @@
         "debug",
         "browser"
       ],
-      "excerpt": "Já ficou horas encurralado por um bug que desaparece assim que você tenta inspecionar? A sensação de estar jogando gato e rato com o navegador é mais comum do que parece, e a",
+      "excerpt": "Bugs que somem ao abrir o DevTools são mais comuns do que parece. Domine técnicas avançadas de debug no navegador para encontrar e resolver problemas rapidamente.",
       "excerpt_en": "Have you ever spent hours trapped by a bug that disappears as soon as you try to inspect it? The feeling of playing cat and mouse with the browser is more common than it seems",
       "lang": "pt",
       "translation_slug": "2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug-en",
