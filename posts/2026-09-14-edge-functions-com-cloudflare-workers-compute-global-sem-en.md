@@ -67,7 +67,6 @@ import { Hono } from 'hono';
 
 const app = new Hono();
 
-```javascript
 app.get('/', (c) => c.text('Hello from the edge!'));
 app.get('/api/users/:id', async (c) => {
   const userId = c.req.param('id');
