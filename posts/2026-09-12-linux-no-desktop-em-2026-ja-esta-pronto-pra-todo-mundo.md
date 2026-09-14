@@ -4,7 +4,7 @@ date: "2026-09-12"
 category: "curiosidade"
 tags: ["linux", "desktop", "opiniao"]
 excerpt: "Linux no Desktop em 2026: Finalmente Pronto para Todo Mundo?"
-cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-12-linux-no-desktop-em-2026-ja-esta-pronto-pra-todo-mundo.svg"
+cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-12-linux-no-desktop-em-2026-ja-esta-pronto-pra-todo-mundo.jpg"
 lang: "pt"
 ---
 
