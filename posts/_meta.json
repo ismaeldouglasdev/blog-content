@@ -1,6 +1,59 @@
 {
   "posts": [
     {
+      "slug": "2026-09-14-edge-functions-com-cloudflare-workers-compute-global-sem",
+      "title": "Edge Functions com Cloudflare Workers: compute global sem servidor",
+      "title_en": "Edge Functions with Cloudflare Workers: Global Serverless Computing",
+      "date": "2026-09-14",
+      "category": "tutorial",
+      "tags": [
+        "edge",
+        "cloudflare",
+        "serverless",
+        "workers"
+      ],
+      "excerpt": "Edge Functions com Cloudflare Workers: compute global sem servidor",
+      "excerpt_en": "Edge Functions with Cloudflare Workers: global serverless computing",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-14-edge-functions-com-cloudflare-workers-compute-global-sem.jpg",
+      "cover_credit": {
+        "file": "File:EDGE Shadow 25 loitering munition.jpg",
+        "artist": "Unknown authorUnknown author",
+        "license": "Public domain",
+        "license_url": "https://en.wikipedia.org/wiki/Public_domain",
+        "page": "https://commons.wikimedia.org/wiki/File%3AEDGE_Shadow_25_loitering_munition.jpg",
+        "source": "wikimedia"
+      },
+      "lang": "pt",
+      "translation_slug": "2026-09-14-edge-functions-com-cloudflare-workers-compute-global-sem-en"
+    },
+    {
+      "slug": "2026-09-14-edge-functions-com-cloudflare-workers-compute-global-sem-en",
+      "title": "Edge Functions with Cloudflare Workers: Global Serverless Computing",
+      "title_en": "Edge Functions with Cloudflare Workers: Global Serverless Computing",
+      "date": "2026-09-14",
+      "category": "tutorial",
+      "tags": [
+        "edge",
+        "cloudflare",
+        "serverless",
+        "workers"
+      ],
+      "excerpt": "Edge Functions with Cloudflare Workers: global serverless computing",
+      "excerpt_en": "Edge Functions with Cloudflare Workers: global serverless computing",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-14-edge-functions-com-cloudflare-workers-compute-global-sem.jpg",
+      "cover_credit": {
+        "file": "File:EDGE Shadow 25 loitering munition.jpg",
+        "artist": "Unknown authorUnknown author",
+        "license": "Public domain",
+        "license_url": "https://en.wikipedia.org/wiki/Public_domain",
+        "page": "https://commons.wikimedia.org/wiki/File%3AEDGE_Shadow_25_loitering_munition.jpg",
+        "source": "wikimedia"
+      },
+      "lang": "en",
+      "translation_slug": "2026-09-14-edge-functions-com-cloudflare-workers-compute-global-sem",
+      "translation_of": "2026-09-14-edge-functions-com-cloudflare-workers-compute-global-sem"
+    },
+    {
       "slug": "2026-09-13-api-graphql-com-apollo-server-e-client-do-zero-ao-completo",
       "title": "API GraphQL com Apollo Server e Client: do zero ao completo",
       "title_en": "GraphQL API with Apollo Server and Client: Complete Guide",
