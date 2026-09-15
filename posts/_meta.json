@@ -189,7 +189,14 @@
       "excerpt": "Linux no Desktop em 2026: Finalmente Pronto para Todo Mundo?",
       "excerpt_en": "Linux on the Desktop in 2026: Finally Ready for Everyone?",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-12-linux-no-desktop-em-2026-ja-esta-pronto-pra-todo-mundo.jpg",
-      "cover_credit": null,
+      "cover_credit": {
+        "file": "File:Tux, the Linux penguin I.jpg",
+        "artist": "Renato.pierri",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Tux,_the_Linux_penguin_I.jpg",
+        "source": "wikimedia"
+      },
       "lang": "pt",
       "translation_slug": "2026-09-12-linux-no-desktop-em-2026-ja-esta-pronto-pra-todo-mundo-en"
     },
@@ -207,7 +214,14 @@
       "excerpt": "Linux on the Desktop in 2026: Finally Ready for Everyone?",
       "excerpt_en": "Linux on the Desktop in 2026: Finally Ready for Everyone?",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-12-linux-no-desktop-em-2026-ja-esta-pronto-pra-todo-mundo.jpg",
-      "cover_credit": null,
+      "cover_credit": {
+        "file": "File:Tux, the Linux penguin I.jpg",
+        "artist": "Renato.pierri",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Tux,_the_Linux_penguin_I.jpg",
+        "source": "wikimedia"
+      },
       "lang": "en",
       "translation_slug": "2026-09-12-linux-no-desktop-em-2026-ja-esta-pronto-pra-todo-mundo",
       "translation_of": "2026-09-12-linux-no-desktop-em-2026-ja-esta-pronto-pra-todo-mundo"
