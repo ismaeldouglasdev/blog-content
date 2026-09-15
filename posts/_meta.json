@@ -3,7 +3,7 @@
     {
       "slug": "2026-09-14-noticia-demo-nvidia-geforce-rtx-5090-lancamento",
       "title": "NVIDIA anuncia GeForce RTX 5090: specs, preço e o que esperar",
-      "title_en": null,
+      "title_en": "NVIDIA unveils GeForce RTX 5090: specs, price and what to expect",
       "date": "2026-09-14",
       "category": "noticia",
       "tags": [
@@ -16,7 +16,7 @@
       "excerpt_en": "NVIDIA has officially unveiled the GeForce RTX 5090 with Blackwell architecture. Specs, price and what to expect from the most anticipated launch of the year.",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-14-noticia-demo-nvidia-geforce-rtx-5090-lancamento.jpg",
       "lang": "pt",
-      "translation_slug": null,
+      "translation_slug": "2026-09-14-noticia-demo-nvidia-geforce-rtx-5090-lancamento-en",
       "cover_credit": {
         "file": "File:ZOTAC Gaming's GeForce RTX 50 Series Graphics Carda.jpg",
         "artist": "Alphaaloy",
@@ -29,7 +29,7 @@
     {
       "slug": "2026-09-14-teclados-mecanicos-em-2026-modelos-em-destaque",
       "title": "Teclados mecânicos em 2026: os modelos que estão chamando atenção",
-      "title_en": null,
+      "title_en": "Mechanical keyboards in 2026: the models getting the most attention",
       "date": "2026-09-14",
       "category": "gadget",
       "tags": [
@@ -41,7 +41,7 @@
       "excerpt_en": "Keychron Q6 Max, Wooting 80HE and NuPhy Air75 V2: what makes each one special, what the community says and who each model is for.",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-14-teclados-mecanicos-em-2026-modelos-em-destaque.jpg",
       "lang": "pt",
-      "translation_slug": null,
+      "translation_slug": "2026-09-14-teclados-mecanicos-em-2026-modelos-em-destaque-en",
       "products": [
         {
           "name": "Keychron Q6 Max",
@@ -123,6 +123,59 @@
       "lang": "en",
       "translation_slug": "2026-09-14-edge-functions-com-cloudflare-workers-compute-global-sem",
       "translation_of": "2026-09-14-edge-functions-com-cloudflare-workers-compute-global-sem"
+    },
+    {
+      "slug": "2026-09-14-noticia-demo-nvidia-geforce-rtx-5090-lancamento-en",
+      "title": "NVIDIA unveils GeForce RTX 5090: specs, price and what to expect",
+      "title_en": "NVIDIA unveils GeForce RTX 5090: specs, price and what to expect",
+      "date": "2026-09-14",
+      "category": "noticia",
+      "tags": [
+        "nvidia",
+        "gpu",
+        "hardware",
+        "geforce"
+      ],
+      "excerpt": "NVIDIA has officially unveiled the GeForce RTX 5090 with Blackwell architecture. Specs, price and what to expect from the most anticipated launch of the year.",
+      "excerpt_en": "NVIDIA has officially unveiled the GeForce RTX 5090 with Blackwell architecture. Specs, price and what to expect from the most anticipated launch of the year.",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-14-noticia-demo-nvidia-geforce-rtx-5090-lancamento.jpg",
+      "lang": "en",
+      "translation_slug": "2026-09-14-noticia-demo-nvidia-geforce-rtx-5090-lancamento",
+      "cover_credit": {
+        "file": "File:ZOTAC Gaming's GeForce RTX 50 Series Graphics Carda.jpg",
+        "artist": "Alphaaloy",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:ZOTAC_Gaming%27s_GeForce_RTX_50_Series_Graphics_Carda.jpg",
+        "source": "wikimedia"
+      },
+      "translation_of": "2026-09-14-noticia-demo-nvidia-geforce-rtx-5090-lancamento"
+    },
+    {
+      "slug": "2026-09-14-teclados-mecanicos-em-2026-modelos-em-destaque-en",
+      "title": "Mechanical keyboards in 2026: the models getting the most attention",
+      "title_en": "Mechanical keyboards in 2026: the models getting the most attention",
+      "date": "2026-09-14",
+      "category": "gadget",
+      "tags": [
+        "teclado",
+        "mecanico",
+        "gadget"
+      ],
+      "excerpt": "Keychron Q6 Max, Wooting 80HE and NuPhy Air75 V2: what makes each one special, what the community says and who each model is for.",
+      "excerpt_en": "Keychron Q6 Max, Wooting 80HE and NuPhy Air75 V2: what makes each one special, what the community says and who each model is for.",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-14-teclados-mecanicos-em-2026-modelos-em-destaque.jpg",
+      "lang": "en",
+      "translation_slug": "2026-09-14-teclados-mecanicos-em-2026-modelos-em-destaque",
+      "cover_credit": {
+        "file": "File:Beautiful Mechanical Keyboard.jpg",
+        "artist": "Anirban Saha",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Beautiful_Mechanical_Keyboard.jpg",
+        "source": "wikimedia"
+      },
+      "translation_of": "2026-09-14-teclados-mecanicos-em-2026-modelos-em-destaque"
     },
     {
       "slug": "2026-09-13-api-graphql-com-apollo-server-e-client-do-zero-ao-completo",
@@ -343,7 +396,7 @@
     {
       "slug": "2026-09-09-websocket-do-zero-chat-em-tempo-real-com-node-js-e-react",
       "title": "WebSocket do zero: chat em tempo real com Node.js e React",
-      "title_en": null,
+      "title_en": "WebSocket from scratch: real-time chat with Node.js and React",
       "date": "2026-09-09",
       "category": "tutorial",
       "tags": [
@@ -363,7 +416,33 @@
         "page": "https://commons.wikimedia.org/wiki/File%3AApollo_Guidance_Computer_%28AGC%29.jpg"
       },
       "lang": "pt",
-      "translation_slug": null
+      "translation_slug": "2026-09-09-websocket-do-zero-chat-em-tempo-real-com-node-js-e-react-en"
+    },
+    {
+      "slug": "2026-09-09-websocket-do-zero-chat-em-tempo-real-com-node-js-e-react-en",
+      "title": "WebSocket from scratch: real-time chat with Node.js and React",
+      "title_en": "WebSocket from scratch: real-time chat with Node.js and React",
+      "date": "2026-09-09",
+      "category": "tutorial",
+      "tags": [
+        "websocket",
+        "real-time",
+        "node",
+        "react"
+      ],
+      "excerpt": "Build a real-time chat application from scratch using WebSocket, Node.js, and React. Learn how WebSocket works and integrate it into a full-stack project.",
+      "excerpt_en": "Build a real-time chat application from scratch using WebSocket, Node.js, and React. Learn how WebSocket works and integrate it into a full-stack project.",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-09-websocket-do-zero-chat-em-tempo-real-com-node-js-e-react.jpg",
+      "cover_credit": {
+        "file": "File:Apollo Guidance Computer (AGC).jpg",
+        "artist": "Steve Jurvetson",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3AApollo_Guidance_Computer_%28AGC%29.jpg"
+      },
+      "lang": "en",
+      "translation_slug": "2026-09-09-websocket-do-zero-chat-em-tempo-real-com-node-js-e-react",
+      "translation_of": "2026-09-09-websocket-do-zero-chat-em-tempo-real-com-node-js-e-react"
     },
     {
       "slug": "2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia",

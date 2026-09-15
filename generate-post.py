@@ -32,8 +32,25 @@ TOPICS = [
     {"topic": "IA no desenvolvimento: onde estamos", "category": "article", "tags": ["ia", "ferramentas", "produtividade"]},
 ]
 
+def call_llm(prompt: str, max_tokens: int = 2000) -> str:
+    """Chama o 9Router e retorna o texto gerado."""
+    response = requests.post(
+        "http://localhost:20131/v1/chat/completions",
+        headers={"Content-Type": "application/json"},
+        json={
+            "model": "groq/llama-3.3-70b-versatile",
+            "messages": [{"role": "user", "content": prompt}],
+            "temperature": 0.7,
+            "max_tokens": max_tokens,
+        },
+        timeout=60,
+    )
+    response.raise_for_status()
+    return response.json()["choices"][0]["message"]["content"]
+
+
 def generate_content(topic_info: dict) -> dict:
-    """Gera conteúdo do post via IA."""
+    """Gera conteúdo do post (PT) e sua tradução (EN) via IA."""
     topic = topic_info["topic"]
     category = topic_info["category"]
     
@@ -50,24 +67,31 @@ Requisitos:
 
 Retorne APENAS o conteúdo em Markdown, sem frontmatter."""
     
-    # Chamar API do 9Router
     try:
-        response = requests.post(
-            "http://localhost:20131/v1/chat/completions",
-            headers={"Content-Type": "application/json"},
-            json={
-                "model": "groq/llama-3.3-70b-versatile",
-                "messages": [{"role": "user", "content": prompt}],
-                "temperature": 0.7,
-                "max_tokens": 2000,
-            },
-            timeout=60,
-        )
-        response.raise_for_status()
-        content = response.json()["choices"][0]["message"]["content"]
+        content_pt = call_llm(prompt)
     except Exception as e:
         print(f"Erro ao gerar conteúdo: {e}")
         return None
+    
+    try:
+        prompt_en = f"""Translate the article below to US English.
+
+Rules:
+- Natural translation, not machine-like
+- Keep code blocks, variable names and URLs intact
+- Translate user-visible strings inside code (e.g. console.log, error messages) when it makes sense
+- Keep the Markdown format and heading structure
+- Return ONLY the translated Markdown content, without frontmatter
+
+ORIGINAL ARTICLE (PT-BR):
+{content_pt}"""
+        content_en = call_llm(prompt_en, max_tokens=2500)
+    except Exception as e:
+        print(f"Erro ao gerar tradução EN: {e}")
+        content_en = None
+    
+    if not content_en:
+        print("Aviso: tradução EN falhou, post ficará só em PT")
     
     # Gerar slug e metadata
     date = datetime.now().strftime("%Y-%m-%d")
@@ -77,7 +101,7 @@ Retorne APENAS o conteúdo em Markdown, sem frontmatter."""
     title = topic
     
     # Gerar excerpt
-    first_line = content.split("\n")[0][:150]
+    first_line = content_pt.split("\n")[0][:150]
     
     return {
         "title": title,
@@ -86,11 +110,12 @@ Retorne APENAS o conteúdo em Markdown, sem frontmatter."""
         "tags": topic_info["tags"],
         "excerpt": first_line,
         "slug": f"{date}-{slug}",
-        "content": content,
+        "content": content_pt,
+        "content_en": content_en,
     }
 
 def create_post(post_data: dict) -> bool:
-    """Cria o post no repo."""
+    """Cria o post PT + versão EN no repo."""
     repo_dir = Path("/tmp/blog-content")
     
     # Criar branch
@@ -112,9 +137,27 @@ excerpt: "{post_data['excerpt']}"
 
 """
     
-    # Escrever post
+    # Escrever post PT
     post_file = posts_dir / f"{post_data['slug']}.md"
     post_file.write_text(frontmatter + post_data["content"])
+    
+    # Escrever post EN (quando disponível)
+    if post_data.get("content_en"):
+        en_title = post_data["title"]
+        en_excerpt = post_data["excerpt"]
+        frontmatter_en = f"""---
+title: "{en_title}"
+date: "{post_data['date']}"
+category: "{post_data['category']}"
+tags: {json.dumps(post_data['tags'])}
+excerpt: "{en_excerpt}"
+lang: "en"
+translation_of: "{post_data['slug']}"
+---
+
+"""
+        en_file = posts_dir / f"{post_data['slug']}-en.md"
+        en_file.write_text(frontmatter_en + post_data["content_en"])
     
     # Atualizar _meta.json
     meta_file = posts_dir / "_meta.json"
@@ -123,13 +166,31 @@ excerpt: "{post_data['excerpt']}"
     else:
         meta = {"posts": []}
     
-    meta["posts"].append({
+    pt_entry = {
         "slug": post_data["slug"],
         "title": post_data["title"],
         "date": post_data["date"],
         "category": post_data["category"],
         "excerpt": post_data["excerpt"],
-    })
+    }
+    en_entry = None
+    if post_data.get("content_en"):
+        pt_entry["lang"] = "pt"
+        pt_entry["translation_slug"] = f"{post_data['slug']}-en"
+        en_entry = {
+            "slug": f"{post_data['slug']}-en",
+            "title": post_data["title"],
+            "date": post_data["date"],
+            "category": post_data["category"],
+            "excerpt": post_data["excerpt"],
+            "lang": "en",
+            "translation_slug": post_data["slug"],
+            "translation_of": post_data["slug"],
+        }
+    
+    meta["posts"].append(pt_entry)
+    if en_entry:
+        meta["posts"].append(en_entry)
     
     # Ordenar por data (mais recente primeiro)
     meta["posts"].sort(key=lambda x: x["date"], reverse=True)
