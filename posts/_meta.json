@@ -42,26 +42,7 @@
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-14-teclados-mecanicos-em-2026-modelos-em-destaque.jpg",
       "lang": "pt",
       "translation_slug": null,
-      "products": [
-        {
-          "name": "Keychron Q6 Max",
-          "url": "https://example.com/keychron-q6-max",
-          "marketplace": "Loja oficial",
-          "note": "Confira preço e disponibilidade na loja oficial."
-        },
-        {
-          "name": "Wooting 80HE",
-          "url": "https://example.com/wooting-80he",
-          "marketplace": "Loja oficial",
-          "note": "Confira preço e disponibilidade na loja oficial."
-        },
-        {
-          "name": "NuPhy Air75 V2",
-          "url": "https://example.com/nuphy-air75-v2",
-          "marketplace": "Loja oficial",
-          "note": "Confira preço e disponibilidade na loja oficial."
-        }
-      ],
+      "products": [],
       "cover_credit": {
         "file": "File:Beautiful Mechanical Keyboard.jpg",
         "artist": "Anirban Saha",
