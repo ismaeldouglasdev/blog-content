@@ -47,19 +47,22 @@
           "name": "Keychron Q6 Max",
           "url": "https://meli.la/1qTstkM",
           "marketplace": "Mercado Livre",
-          "note": "Produto importado dos EUA (envio internacional, garantia de 30 dias). Confira preço e disponibilidade no Mercado Livre."
+          "image": "https://http2.mlstatic.com/D_NQ_NP_982197-CBT82704061988_032025-O.jpg",
+          "price": "R$ 1.765,30"
         },
         {
           "name": "Wooting 80HE",
           "url": "https://meli.la/2wdKvPK",
           "marketplace": "Mercado Livre",
-          "note": "Produto importado dos EUA (envio internacional, garantia de 30 dias). Confira preço e disponibilidade no Mercado Livre."
+          "image": "https://http2.mlstatic.com/D_Q_NP_2X_696899-MLB83152374907_032025-E-teclado-magnetico-wooting-80he-rgb-layout-80-pbt-double-sho.webp",
+          "price": "R$ 2.949"
         },
         {
           "name": "NuPhy Air75 V2",
           "url": "https://meli.la/2k4pmZa",
           "marketplace": "Mercado Livre",
-          "note": "Produto importado dos EUA (envio internacional, garantia de 30 dias). Confira preço e disponibilidade no Mercado Livre."
+          "image": "https://http2.mlstatic.com/D_NQ_NP_707611-MLB78264712878_082024-O-nuphy-air75-v2-qmkvia-teclado-mecnico-wireless.jpg",
+          "price": "R$ 1.449"
         }
       ],
       "cover_credit": {
