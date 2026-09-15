@@ -29,8 +29,8 @@
         "mecanico",
         "gadget"
       ],
-      "excerpt": "Curadoria de teclados mecânicos em destaque neste ano — specs, o que a comunidade diz e para quem cada um serve.",
-      "excerpt_en": "Curated highlights of mechanical keyboards this year — specs, community feedback and who each model serves.",
+      "excerpt": "Curadoria de teclados mecânicos em destaque neste ano, com specs, o que a comunidade diz e para quem cada um serve.",
+      "excerpt_en": "Curated highlights of mechanical keyboards this year, with specs, community feedback and who each model serves.",
       "cover": null,
       "lang": "pt",
       "translation_slug": null,
@@ -39,19 +39,19 @@
           "name": "Keychron Q6 Max",
           "url": "https://example.com/keychron-q6-max",
           "marketplace": "Placeholder",
-          "note": "Rascunho de demonstração — link placeholder, substituir antes de publicar."
+          "note": "Rascunho de demonstração, link placeholder, substituir antes de publicar."
         },
         {
           "name": "Wooting 80HE",
           "url": "https://example.com/wooting-80he",
           "marketplace": "Placeholder",
-          "note": "Rascunho de demonstração — link placeholder, substituir antes de publicar."
+          "note": "Rascunho de demonstração, link placeholder, substituir antes de publicar."
         },
         {
           "name": "NuPhy Air75 V2",
           "url": "https://example.com/nuphy-air75-v2",
           "marketplace": "Placeholder",
-          "note": "Rascunho de demonstração — link placeholder, substituir antes de publicar."
+          "note": "Rascunho de demonstração, link placeholder, substituir antes de publicar."
         }
       ]
     },

@@ -9,25 +9,25 @@ lang: "pt"
 
 # NVIDIA anuncia GeForce RTX 5090: specs, preço e o que esperar
 
-A NVIDIA revelou oficialmente a GeForce RTX 5090 durante a CES 2026, trazendo a nova arquitetura Blackwell para o mercado consumer. Este post é um resumo curadoria — sem hands-on, apenas o que já se sabe a partir de anúncios oficiais, leakings confiáveis e análises da comunidade.
+A NVIDIA apresentou a GeForce RTX 5090 durante a CES 2026, levando a arquitetura Blackwell ao mercado consumidor. Este é um resumo de curadoria, sem teste hands-on: apenas o que já foi divulgado em anúncios oficiais, vazamentos confiáveis e análises da comunidade.
 
 ## O que mudou na arquitetura Blackwell
 
-A RTX 5090 chega com 32 GB de memória GDDR7 em barramento de 512 bits, um salto significativo em relação aos 24 GB da 4090. A NVIDIA promete ganhos de até 2x em ray tracing e uma eficiência energética 40% melhor que a geração anterior.
+A RTX 5090 chega com 32 GB de GDDR7 em barramento de 512 bits, um salto em relação aos 24 GB da 4090. A NVIDIA promete ganhos de até 2x em ray tracing e eficiência energética 40% melhor que a geração anterior.
 
-O novo design de tensor cores e a geração 4 de DLSS prometem melhorias reais em cenários de IA e upscaling. A comunidade já está testando os números oficiais e, até agora, as primeiras análises independentes confirmam grande parte do que foi prometido.
+O novo projeto de tensor cores e a geração 4 do DLSS devem trazer melhorias reais em IA e upscaling. As primeiras análises independentes confirmam boa parte do que foi prometido.
 
 ## Preço e disponibilidade
 
-O preço de lançamento nos EUA é de US$ 1.999 — alto, mas consistente com o posicionamento premium da série xx90. No Brasil, o preço estimado gira em torno de R$ 14.000 a R$ 16.000 dependendo do modelo (Founders Edition vs AIB).
+O preço de lançamento nos EUA é de US$ 1.999, alto, mas consistente com o posicionamento premium da linha xx90. No Brasil, a estimativa gira entre R$ 14.000 e R$ 16.000, dependendo do modelo (Founders Edition ou AIB).
 
-A disponibilidade está prevista para o final de janeiro de 2026, com stocks iniciais limitados. A comunidade já alerta que scalpers podem complicar a compra nos primeiros meses.
+A disponibilidade está prevista para o fim de janeiro de 2026, com estoque inicial limitado. A comunidade já alerta que scalpers podem dificultar a compra nos primeiros meses.
 
 ## O que a comunidade está dizendo
 
-- **No Reddit (r/hardware)**: recepção mista — alguns elogiam a eficiência, outros questionam o preço
-- **Canais do YouTube**: consenso de que é um bom upgrade para quem vem da série 30, menos urgente para quem tem uma 4090
-- **Especialistas**: pontos positivos na IA e eficiência; preocupação com o custo por frame
+- **No Reddit (r/hardware)**: recepção mista, com elogios à eficiência e questionamentos sobre o preço.
+- **Canais do YouTube**: consenso de que é um bom upgrade para quem vem da série 30, e menos urgente para quem tem uma 4090.
+- **Especialistas**: pontos positivos em IA e eficiência, preocupação com o custo por frame.
 
 ## Especificações resumidas
 
@@ -42,13 +42,13 @@ A disponibilidade está prevista para o final de janeiro de 2026, com stocks ini
 
 ## Veredicto preliminar
 
-Sem testes hands-on, é difícil fazer um veredicto definitivo. A RTX 5090 parece ser uma evolução sólida em eficiência e capacidade de IA, mas o preço alto e a concorrência com a AMD (que promete preços mais acessíveis) podem dividir o mercado.
+Sem teste hands-on, é difícil chegar a um veredicto definitivo. A RTX 5090 parece uma evolução sólida em eficiência e capacidade de IA, mas o preço alto e a concorrência da AMD, que promete preços mais acessíveis, podem dividir o mercado.
 
-Se você está considerando o upgrade, vale a pena esperar as primeiras reviews independentes antes de decidir. A curadoria desta post foi feita com base em fontes públicas — não testamos a placa em primeira pessoa.
+Se você pensa em fazer upgrade, espere as primeiras reviews independentes antes de decidir. Esta curadoria foi feita com base em fontes públicas, sem testar a placa em primeira pessoa.
 
 ## Fontes
 
-- [NVIDIA GeForce RTX 5090 — Página oficial](https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5090/) — Anúncio oficial com especificações completas
-- [Análise inicial no TechPowerUp](https://www.techpowerup.com/review/nvidia-geforce-rtx-5090/) — Primeira review independente com benchmarks
-- [Discussão no r/hardware](https://www.reddit.com/r/hardware/comments/example/) — Discussão da comunidade sobre preço e valor
-- [Previsão de preço no Adrenaline](https://www.adrenaline.com.br/hardware/nvidia-rtx-5090-preco-brasil/) — Estimativa de preço para o mercado brasileiro
+- [NVIDIA GeForce RTX 5090, página oficial](https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5090/), anúncio oficial com especificações completas
+- [Análise inicial no TechPowerUp](https://www.techpowerup.com/review/nvidia-geforce-rtx-5090/), primeira review independente com benchmarks
+- [Discussão no r/hardware](https://www.reddit.com/r/hardware/comments/example/), discussão da comunidade sobre preço e valor
+- [Previsão de preço no Adrenaline](https://www.adrenaline.com.br/hardware/nvidia-rtx-5090-preco-brasil/), estimativa para o mercado brasileiro
