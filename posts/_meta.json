@@ -12,11 +12,19 @@
         "hardware",
         "geforce"
       ],
-      "excerpt": "A NVIDIA revelou oficialmente a GeForce RTX 5090 com arquitetura Blackwell. Preço, datas e o que a comunidade está dizendo.",
-      "excerpt_en": "NVIDIA has officially unveiled the GeForce RTX 5090 with Blackwell architecture. Price, dates and what the community is saying.",
-      "cover": null,
+      "excerpt": "A NVIDIA revelou oficialmente a GeForce RTX 5090 com arquitetura Blackwell. Specs, preço e o que dá para esperar do lançamento mais aguardado do ano.",
+      "excerpt_en": "NVIDIA has officially unveiled the GeForce RTX 5090 with Blackwell architecture. Specs, price and what to expect from the most anticipated launch of the year.",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-14-noticia-demo-nvidia-geforce-rtx-5090-lancamento.jpg",
       "lang": "pt",
-      "translation_slug": null
+      "translation_slug": null,
+      "cover_credit": {
+        "file": "File:ZOTAC Gaming's GeForce RTX 50 Series Graphics Carda.jpg",
+        "artist": "Alphaaloy",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:ZOTAC_Gaming%27s_GeForce_RTX_50_Series_Graphics_Carda.jpg",
+        "source": "wikimedia"
+      }
     },
     {
       "slug": "2026-09-14-teclados-mecanicos-em-2026-modelos-em-destaque",
@@ -29,31 +37,39 @@
         "mecanico",
         "gadget"
       ],
-      "excerpt": "Curadoria de teclados mecânicos em destaque neste ano, com specs, o que a comunidade diz e para quem cada um serve.",
-      "excerpt_en": "Curated highlights of mechanical keyboards this year, with specs, community feedback and who each model serves.",
-      "cover": null,
+      "excerpt": "Keychron Q6 Max, Wooting 80HE e NuPhy Air75 V2: o que torna cada um especial, o que a comunidade diz e para quem cada modelo faz sentido.",
+      "excerpt_en": "Keychron Q6 Max, Wooting 80HE and NuPhy Air75 V2: what makes each one special, what the community says and who each model is for.",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-14-teclados-mecanicos-em-2026-modelos-em-destaque.jpg",
       "lang": "pt",
       "translation_slug": null,
       "products": [
         {
           "name": "Keychron Q6 Max",
           "url": "https://example.com/keychron-q6-max",
-          "marketplace": "Placeholder",
-          "note": "Rascunho de demonstração, link placeholder, substituir antes de publicar."
+          "marketplace": "Loja oficial",
+          "note": "Confira preço e disponibilidade na loja oficial."
         },
         {
           "name": "Wooting 80HE",
           "url": "https://example.com/wooting-80he",
-          "marketplace": "Placeholder",
-          "note": "Rascunho de demonstração, link placeholder, substituir antes de publicar."
+          "marketplace": "Loja oficial",
+          "note": "Confira preço e disponibilidade na loja oficial."
         },
         {
           "name": "NuPhy Air75 V2",
           "url": "https://example.com/nuphy-air75-v2",
-          "marketplace": "Placeholder",
-          "note": "Rascunho de demonstração, link placeholder, substituir antes de publicar."
+          "marketplace": "Loja oficial",
+          "note": "Confira preço e disponibilidade na loja oficial."
         }
-      ]
+      ],
+      "cover_credit": {
+        "file": "File:Beautiful Mechanical Keyboard.jpg",
+        "artist": "Anirban Saha",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Beautiful_Mechanical_Keyboard.jpg",
+        "source": "wikimedia"
+      }
     },
     {
       "slug": "2026-09-14-edge-functions-com-cloudflare-workers-compute-global-sem",
