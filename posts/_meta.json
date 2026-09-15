@@ -42,7 +42,26 @@
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-14-teclados-mecanicos-em-2026-modelos-em-destaque.jpg",
       "lang": "pt",
       "translation_slug": null,
-      "products": [],
+      "products": [
+        {
+          "name": "Keychron Q6 Max",
+          "url": "https://meli.la/1qTstkM",
+          "marketplace": "Mercado Livre",
+          "note": "Confira preço e disponibilidade no Mercado Livre."
+        },
+        {
+          "name": "Wooting 80HE",
+          "url": "https://meli.la/2wdKvPK",
+          "marketplace": "Mercado Livre",
+          "note": "Confira preço e disponibilidade no Mercado Livre."
+        },
+        {
+          "name": "NuPhy Air75 V2",
+          "url": "https://meli.la/2k4pmZa",
+          "marketplace": "Mercado Livre",
+          "note": "Confira preço e disponibilidade no Mercado Livre."
+        }
+      ],
       "cover_credit": {
         "file": "File:Beautiful Mechanical Keyboard.jpg",
         "artist": "Anirban Saha",
