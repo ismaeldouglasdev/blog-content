@@ -32,7 +32,7 @@ A Wooting 80HE usa switches magnéticos Hall Effect, que permitem ajustar o pont
 
 O que a comunidade diz: a implementação de rapid trigger é apontada como a melhor do mercado para jogos. Para digitação, o feedback é mais polarizado, e quem prefere teclas com mais curso pode estranhar o perfil baixo.
 
-Pra quem é: gamer competitivo que prioriza velocidade de resposta acima de tudo.
+Pra quem é: quem joga de forma competitiva e prioriza a velocidade de resposta acima de tudo.
 
 ## NuPhy Air75 V2: o low profile que viaja bem
 
