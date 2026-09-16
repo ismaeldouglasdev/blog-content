@@ -1,6 +1,59 @@
 {
   "posts": [
     {
+      "slug": "2026-09-16-deploy-com-vercel-railway-e-fly-io-comparativo-honesto",
+      "title": "Deploy com Vercel, Railway e Fly.io: comparativo honesto",
+      "title_en": "Honest Comparison: Deploying with Vercel, Railway, and Fly.io",
+      "date": "2026-09-16",
+      "category": "article",
+      "tags": [
+        "deploy",
+        "cloud",
+        "vercel",
+        "railway"
+      ],
+      "excerpt": "Introdução Quando se trata de deploy de aplicações web, os desenvolvedores enfrentam uma escolha difícil: qual plataforma usar? Com tantas opções disponíveis, é",
+      "excerpt_en": "Developers face a tough choice when deploying web applications, with many platforms available.",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-16-deploy-com-vercel-railway-e-fly-io-comparativo-honesto.jpg",
+      "cover_credit": {
+        "file": "File:Crimean Railway 4.jpg",
+        "artist": "Unknown; scanned by me",
+        "license": "Public domain",
+        "license_url": "https://en.wikipedia.org/wiki/Public_domain",
+        "page": "https://commons.wikimedia.org/wiki/File%3ACrimean_Railway_4.jpg",
+        "source": "wikimedia"
+      },
+      "lang": "pt",
+      "translation_slug": "2026-09-16-deploy-com-vercel-railway-e-fly-io-comparativo-honesto-en"
+    },
+    {
+      "slug": "2026-09-16-deploy-com-vercel-railway-e-fly-io-comparativo-honesto-en",
+      "title": "Honest Comparison: Deploying with Vercel, Railway, and Fly.io",
+      "title_en": "Honest Comparison: Deploying with Vercel, Railway, and Fly.io",
+      "date": "2026-09-16",
+      "category": "article",
+      "tags": [
+        "deploy",
+        "cloud",
+        "vercel",
+        "railway"
+      ],
+      "excerpt": "Developers face a tough choice when deploying web applications, with many platforms available.",
+      "excerpt_en": "Developers face a tough choice when deploying web applications, with many platforms available.",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-16-deploy-com-vercel-railway-e-fly-io-comparativo-honesto.jpg",
+      "cover_credit": {
+        "file": "File:Crimean Railway 4.jpg",
+        "artist": "Unknown; scanned by me",
+        "license": "Public domain",
+        "license_url": "https://en.wikipedia.org/wiki/Public_domain",
+        "page": "https://commons.wikimedia.org/wiki/File%3ACrimean_Railway_4.jpg",
+        "source": "wikimedia"
+      },
+      "lang": "en",
+      "translation_slug": "2026-09-16-deploy-com-vercel-railway-e-fly-io-comparativo-honesto",
+      "translation_of": "2026-09-16-deploy-com-vercel-railway-e-fly-io-comparativo-honesto"
+    },
+    {
       "slug": "2026-09-15-next-js-app-router-server-components-na-pratica",
       "title": "Next.js App Router: Server Components na prática",
       "title_en": "Next.js App Router: Server Components in Action",
