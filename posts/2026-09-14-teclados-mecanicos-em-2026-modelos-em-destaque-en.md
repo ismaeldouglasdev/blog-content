@@ -15,7 +15,7 @@ Mechanical keyboards have left the enthusiast niche and become an almost mandato
 
 ## Why interest has grown so much
 
-Three drivers explain the movement of recent years: the popularization of hot-swap switches, which let you change the typing feel without soldering; hybrid work, which put the keyboard at the center of the home office; and the custom keyboard culture, fueled by communities like r/MechanicalKeyboards.
+Three drivers explain the movement of recent years: the popularization of hot-swap switches, which let you change the typing feel without soldering; hybrid work, which put the keyboard at the center of the home office; and the custom keyboard culture, fueled by communities like [r/MechanicalKeyboards](https://www.reddit.com/r/MechanicalKeyboards/).
 
 The standout models of 2026 follow a similar recipe: aluminum or reinforced ABS construction, RGB, tri-mode wireless with Bluetooth, 2.4 GHz and cable, generous battery and configuration software. The difference is in the details: switch type, keycap profile and, above all, price.
 

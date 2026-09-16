@@ -14,7 +14,7 @@ Teclados mecânicos saíram do nicho de entusiastas e viraram item quase obrigat
 
 ## Por que o interesse cresceu tanto
 
-Três motores explicam o movimento dos últimos anos: a popularização dos switches hot-swap, que permitem trocar a sensação de digitação sem solda; o trabalho híbrido, que colocou o teclado no centro do home office; e a cultura de teclados custom, alimentada por comunidades como o r/MechanicalKeyboards.
+Três motores explicam o movimento dos últimos anos: a popularização dos switches hot-swap, que permitem trocar a sensação de digitação sem solda; o trabalho híbrido, que colocou o teclado no centro do home office; e a cultura de teclados custom, alimentada por comunidades como o [r/MechanicalKeyboards](https://www.reddit.com/r/MechanicalKeyboards/).
 
 Os modelos que se destacam em 2026 seguem uma receita parecida: construção em alumínio ou ABS reforçado, RGB, wireless tri-mode com Bluetooth, 2.4 GHz e cabo, bateria generosa e software de configuração. A diferença está nos detalhes: o tipo de switch, o perfil das keycaps e, principalmente, o preço.
 

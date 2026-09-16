@@ -27,7 +27,7 @@ Availability is expected by the end of January 2026, with limited initial stock.
 
 ## What the community is saying
 
-- **On Reddit (r/hardware)**: mixed reception, praising efficiency while questioning the price.
+- **On Reddit ([r/hardware](https://www.reddit.com/r/hardware/))**: mixed reception, praising efficiency while questioning the price.
 - **YouTube channels**: consensus that it is a good upgrade for those coming from the 30 series, and less urgent for those who already own a 4090.
 - **Specialists**: positives in AI and efficiency, concern about cost per frame.
 

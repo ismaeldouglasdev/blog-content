@@ -26,7 +26,7 @@ A disponibilidade está prevista para o fim de janeiro de 2026, com estoque inic
 
 ## O que a comunidade está dizendo
 
-- **No Reddit (r/hardware)**: recepção mista, com elogios à eficiência e questionamentos sobre o preço.
+- **No Reddit ([r/hardware](https://www.reddit.com/r/hardware/))**: recepção mista, com elogios à eficiência e questionamentos sobre o preço.
 - **Canais do YouTube**: consenso de que é um bom upgrade para quem vem da série 30, e menos urgente para quem já tem uma 4090.
 - **Especialistas**: pontos positivos em IA e eficiência, preocupação com o custo por frame.
 
