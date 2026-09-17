@@ -1,6 +1,57 @@
 {
   "posts": [
     {
+      "slug": "2026-09-17-testing-library-testes-de-react-que-refletem-o-uso-real",
+      "title": "Testing Library: testes de React que refletem o uso real",
+      "title_en": "Testing Library: React Tests That Reflect Real Usage",
+      "date": "2026-09-17",
+      "category": "tutorial",
+      "tags": [
+        "testing-library",
+        "react",
+        "testes"
+      ],
+      "excerpt": "Quando comecei a testar interfaces com React, fazia tudo errado. Escrevia testes que verificavam como o componente era construído – se esse botão tem a classe .btn-primary e",
+      "excerpt_en": "When I started testing React interfaces, I was doing everything wrong—I wrote tests checking how the component was built, like whether that button has the .btn-primary class",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-17-testing-library-testes-de-react-que-refletem-o-uso-real.jpg",
+      "cover_credit": {
+        "file": "File:Dragon 2 hover test (24159153709).jpg",
+        "artist": "SpaceX Photos",
+        "license": "CC0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3ADragon_2_hover_test_%2824159153709%29.jpg",
+        "source": "wikimedia"
+      },
+      "lang": "pt",
+      "translation_slug": "2026-09-17-testing-library-testes-de-react-que-refletem-o-uso-real-en"
+    },
+    {
+      "slug": "2026-09-17-testing-library-testes-de-react-que-refletem-o-uso-real-en",
+      "title": "Testing Library: React Tests That Reflect Real Usage",
+      "title_en": "Testing Library: React Tests That Reflect Real Usage",
+      "date": "2026-09-17",
+      "category": "tutorial",
+      "tags": [
+        "testing-library",
+        "react",
+        "testes"
+      ],
+      "excerpt": "When I started testing React interfaces, I was doing everything wrong—I wrote tests checking how the component was built, like whether that button has the .btn-primary class",
+      "excerpt_en": "When I started testing React interfaces, I was doing everything wrong—I wrote tests checking how the component was built, like whether that button has the .btn-primary class",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-17-testing-library-testes-de-react-que-refletem-o-uso-real.jpg",
+      "cover_credit": {
+        "file": "File:Dragon 2 hover test (24159153709).jpg",
+        "artist": "SpaceX Photos",
+        "license": "CC0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3ADragon_2_hover_test_%2824159153709%29.jpg",
+        "source": "wikimedia"
+      },
+      "lang": "en",
+      "translation_slug": "2026-09-17-testing-library-testes-de-react-que-refletem-o-uso-real",
+      "translation_of": "2026-09-17-testing-library-testes-de-react-que-refletem-o-uso-real"
+    },
+    {
       "slug": "2026-09-16-deploy-com-vercel-railway-e-fly-io-comparativo-honesto",
       "title": "Deploy com Vercel, Railway e Fly.io: comparativo honesto",
       "title_en": "Honest Comparison: Deploying with Vercel, Railway, and Fly.io",
