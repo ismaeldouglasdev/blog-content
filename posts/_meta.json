@@ -11,7 +11,7 @@
         "react",
         "testes"
       ],
-      "excerpt": "Quando comecei a testar interfaces com React, fazia tudo errado. Escrevia testes que verificavam como o componente era construído – se esse botão tem a classe .btn-primary e",
+      "excerpt": "Guia prático de React Testing Library: queries acessíveis, userEvent, testes assíncronos, mocking com MSW e por que cobertura não é tudo.",
       "excerpt_en": "When I started testing React interfaces, I was doing everything wrong—I wrote tests checking how the component was built, like whether that button has the .btn-primary class",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-17-testing-library-testes-de-react-que-refletem-o-uso-real.jpg",
       "cover_credit": {
@@ -36,7 +36,7 @@
         "react",
         "testes"
       ],
-      "excerpt": "When I started testing React interfaces, I was doing everything wrong—I wrote tests checking how the component was built, like whether that button has the .btn-primary class",
+      "excerpt": "Practical guide to React Testing Library: accessible queries, userEvent, async testing, mocking with MSW, and why coverage is not everything.",
       "excerpt_en": "When I started testing React interfaces, I was doing everything wrong—I wrote tests checking how the component was built, like whether that button has the .btn-primary class",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-17-testing-library-testes-de-react-que-refletem-o-uso-real.jpg",
       "cover_credit": {
