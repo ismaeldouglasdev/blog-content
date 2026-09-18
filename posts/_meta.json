@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "slug": "2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc",
+      "title": "Gerenciamento de memória em Go: escapes, stack e GC",
+      "date": "2026-09-18",
+      "category": "article",
+      "excerpt": "Entenda como o Go gerencia memória: escape analysis, alocação stack vs heap, garbage collector concorrente e sync.Pool para reduzir alocações.",
+      "lang": "pt",
+      "translation_slug": "2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc-en"
+    },
+    {
+      "slug": "2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc-en",
+      "title": "Memory Management in Go: Escape Analysis, Stack and GC",
+      "date": "2026-09-18",
+      "category": "article",
+      "excerpt": "Go memory management explained: escape analysis, stack vs heap allocation, concurrent tri-color GC, and sync.Pool patterns to reduce allocations.",
+      "lang": "en",
+      "translation_slug": "2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc",
+      "translation_of": "2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc"
+    },
+    {
       "slug": "2026-09-17-testing-library-testes-de-react-que-refletem-o-uso-real",
       "title": "Testing Library: testes de React que refletem o uso real",
       "title_en": "Testing Library: React Tests That Reflect Real Usage",
