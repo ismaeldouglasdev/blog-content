@@ -1,6 +1,57 @@
 {
   "posts": [
     {
+      "slug": "2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc",
+      "title": "Gerenciamento de memória em Go: escapes, stack e GC",
+      "title_en": "Memory Management in Go: Escape Analysis, Stack and GC",
+      "date": "2026-09-18",
+      "category": "article",
+      "tags": [
+        "go",
+        "performance",
+        "memoria"
+      ],
+      "excerpt": "Gerenciamento de Memória em Go: Entendendo Escapes, Stack e Garbage Collection",
+      "excerpt_en": "The text you provided is already in English. Memory Management in Go: Understanding Escapes, Stack and Garbage Collection doesnt need translation from Portuguese. If you have",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc.jpg",
+      "cover_credit": {
+        "file": "File:NIST computer scientists Mary Theofanos (14316126446).jpg",
+        "artist": "National Institute of Standards and Technology",
+        "license": "Public domain",
+        "license_url": "https://en.wikipedia.org/wiki/Public_domain",
+        "page": "https://commons.wikimedia.org/wiki/File%3ANIST_computer_scientists_Mary_Theofanos_%2814316126446%29.jpg",
+        "source": "wikimedia"
+      },
+      "lang": "pt",
+      "translation_slug": "2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc-en"
+    },
+    {
+      "slug": "2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc-en",
+      "title": "Memory Management in Go: Escape Analysis, Stack and GC",
+      "title_en": "Memory Management in Go: Escape Analysis, Stack and GC",
+      "date": "2026-09-18",
+      "category": "article",
+      "tags": [
+        "go",
+        "performance",
+        "memoria"
+      ],
+      "excerpt": "The text you provided is already in English. Memory Management in Go: Understanding Escapes, Stack and Garbage Collection doesnt need translation from Portuguese. If you have",
+      "excerpt_en": "The text you provided is already in English. Memory Management in Go: Understanding Escapes, Stack and Garbage Collection doesnt need translation from Portuguese. If you have",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc.jpg",
+      "cover_credit": {
+        "file": "File:NIST computer scientists Mary Theofanos (14316126446).jpg",
+        "artist": "National Institute of Standards and Technology",
+        "license": "Public domain",
+        "license_url": "https://en.wikipedia.org/wiki/Public_domain",
+        "page": "https://commons.wikimedia.org/wiki/File%3ANIST_computer_scientists_Mary_Theofanos_%2814316126446%29.jpg",
+        "source": "wikimedia"
+      },
+      "lang": "en",
+      "translation_slug": "2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc",
+      "translation_of": "2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc"
+    },
+    {
       "slug": "2026-09-17-testing-library-testes-de-react-que-refletem-o-uso-real",
       "title": "Testing Library: testes de React que refletem o uso real",
       "title_en": "Testing Library: React Tests That Reflect Real Usage",
