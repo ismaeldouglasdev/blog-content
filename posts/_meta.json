@@ -1,57 +1,6 @@
 {
   "posts": [
     {
-      "slug": "2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc",
-      "title": "Gerenciamento de memória em Go: escapes, stack e GC",
-      "title_en": "Memory Management in Go: Escape Analysis, Stack and GC",
-      "date": "2026-09-18",
-      "category": "article",
-      "tags": [
-        "go",
-        "performance",
-        "memoria"
-      ],
-      "excerpt": "Gerenciamento de Memória em Go: Entendendo Escapes, Stack e Garbage Collection",
-      "excerpt_en": "The text you provided is already in English. Memory Management in Go: Understanding Escapes, Stack and Garbage Collection doesnt need translation from Portuguese. If you have",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc.jpg",
-      "cover_credit": {
-        "file": "File:NIST computer scientists Mary Theofanos (14316126446).jpg",
-        "artist": "National Institute of Standards and Technology",
-        "license": "Public domain",
-        "license_url": "https://en.wikipedia.org/wiki/Public_domain",
-        "page": "https://commons.wikimedia.org/wiki/File%3ANIST_computer_scientists_Mary_Theofanos_%2814316126446%29.jpg",
-        "source": "wikimedia"
-      },
-      "lang": "pt",
-      "translation_slug": "2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc-en"
-    },
-    {
-      "slug": "2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc-en",
-      "title": "Memory Management in Go: Escape Analysis, Stack and GC",
-      "title_en": "Memory Management in Go: Escape Analysis, Stack and GC",
-      "date": "2026-09-18",
-      "category": "article",
-      "tags": [
-        "go",
-        "performance",
-        "memoria"
-      ],
-      "excerpt": "The text you provided is already in English. Memory Management in Go: Understanding Escapes, Stack and Garbage Collection doesnt need translation from Portuguese. If you have",
-      "excerpt_en": "The text you provided is already in English. Memory Management in Go: Understanding Escapes, Stack and Garbage Collection doesnt need translation from Portuguese. If you have",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc.jpg",
-      "cover_credit": {
-        "file": "File:NIST computer scientists Mary Theofanos (14316126446).jpg",
-        "artist": "National Institute of Standards and Technology",
-        "license": "Public domain",
-        "license_url": "https://en.wikipedia.org/wiki/Public_domain",
-        "page": "https://commons.wikimedia.org/wiki/File%3ANIST_computer_scientists_Mary_Theofanos_%2814316126446%29.jpg",
-        "source": "wikimedia"
-      },
-      "lang": "en",
-      "translation_slug": "2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc",
-      "translation_of": "2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc"
-    },
-    {
       "slug": "2026-09-17-testing-library-testes-de-react-que-refletem-o-uso-real",
       "title": "Testing Library: testes de React que refletem o uso real",
       "title_en": "Testing Library: React Tests That Reflect Real Usage",
@@ -114,7 +63,7 @@
         "vercel",
         "railway"
       ],
-      "excerpt": "Introdução Quando se trata de deploy de aplicações web, os desenvolvedores enfrentam uma escolha difícil: qual plataforma usar? Com tantas opções disponíveis, é",
+      "excerpt": "Comparativo honesto entre Vercel, Railway e Fly.io para deploy de aplicações web: custos, cold starts, DX, limites grátis e quando usar cada um.",
       "excerpt_en": "Developers face a tough choice when deploying web applications, with many platforms available.",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-16-deploy-com-vercel-railway-e-fly-io-comparativo-honesto.jpg",
       "cover_credit": {
@@ -140,7 +89,7 @@
         "vercel",
         "railway"
       ],
-      "excerpt": "Developers face a tough choice when deploying web applications, with many platforms available.",
+      "excerpt": "Honest comparison of Vercel, Railway, and Fly.io for web app deploy: costs, cold starts, DX, free tiers, and when to choose each platform.",
       "excerpt_en": "Developers face a tough choice when deploying web applications, with many platforms available.",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-16-deploy-com-vercel-railway-e-fly-io-comparativo-honesto.jpg",
       "cover_credit": {
@@ -166,7 +115,7 @@
         "react",
         "server-components"
       ],
-      "excerpt": "Introdução Quando se trata de desenvolver aplicações web escaláveis e performáticas, a escolha da arquitetura e das ferramentas certas é crucial. Uma das principais",
+      "excerpt": "Server Components no Next.js App Router na prática: como funcionam, quando usar, patterns de data fetching, streaming e interop com Client Components.",
       "excerpt_en": "Choosing the right architecture and tools is crucial for scalable web applications.",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-15-next-js-app-router-server-components-na-pratica.jpg",
       "cover_credit": {
@@ -191,7 +140,7 @@
         "react",
         "server-components"
       ],
-      "excerpt": "Choosing the right architecture and tools is crucial for scalable web applications.",
+      "excerpt": "Next.js App Router Server Components in practice: how they work, when to use, data fetching patterns, streaming, and Client Component interop.",
       "excerpt_en": "Choosing the right architecture and tools is crucial for scalable web applications.",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-15-next-js-app-router-server-components-na-pratica.jpg",
       "cover_credit": {
