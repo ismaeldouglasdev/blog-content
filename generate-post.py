@@ -6,6 +6,7 @@ Gera artigos via IA e cria PR para review.
 
 import json
 import os
+import re
 import subprocess
 import sys
 from datetime import datetime
@@ -32,6 +33,35 @@ TOPICS = [
     {"topic": "IA no desenvolvimento: onde estamos", "category": "article", "tags": ["ia", "ferramentas", "produtividade"]},
 ]
 
+EM_DASH_PATTERN = re.compile(r'[—–]')
+AI_SLOP_PATTERNS = [
+    re.compile(r'(?i)the text you provided is already in english'),
+    re.compile(r'(?i)doesn\'t need translation'),
+    re.compile(r'(?i)if you have.*english'),
+    re.compile(r'(?i)here is the (translation|english version)'),
+    re.compile(r'(?i)translated article:'),
+    re.compile(r'(?i)here\'s the (translation|english)'),
+]
+
+def contains_em_dash(text: str) -> bool:
+    """Check if text contains em dash or en dash."""
+    return bool(EM_DASH_PATTERN.search(text))
+
+def contains_ai_slop(text: str) -> bool:
+    """Check if text contains AI meta-responses instead of actual content."""
+    for pattern in AI_SLOP_PATTERNS:
+        if pattern.search(text):
+            return True
+    return False
+
+def sanitize_em_dashes(text: str) -> str:
+    """Replace em dashes and en dashes with regular dashes or commas."""
+    # Replace em dash with " - " or ", "
+    text = text.replace('—', ' - ').replace('–', '-')
+    # Fix double spaces
+    text = re.sub(r'\s+', ' ', text)
+    return text.strip()
+
 def call_llm(prompt: str, max_tokens: int = 2000) -> str:
     """Chama o 9Router e retorna o texto gerado."""
     response = requests.post(
@@ -49,6 +79,53 @@ def call_llm(prompt: str, max_tokens: int = 2000) -> str:
     return response.json()["choices"][0]["message"]["content"]
 
 
+def generate_excerpt(content: str, max_len: int = 160) -> str:
+    """Generate a proper excerpt from article content."""
+    # Remove frontmatter if present
+    if content.startswith('---'):
+        parts = content.split('---', 2)
+        if len(parts) >= 3:
+            content = parts[2]
+    
+    # Find first meaningful paragraph (skip headings, code blocks)
+    lines = content.strip().split('\n')
+    paragraphs = []
+    current_para = []
+    
+    for line in lines:
+        line = line.strip()
+        if not line:
+            if current_para:
+                paragraphs.append(' '.join(current_para))
+                current_para = []
+            continue
+        # Skip headings
+        if line.startswith('#'):
+            if current_para:
+                paragraphs.append(' '.join(current_para))
+                current_para = []
+            continue
+        # Skip code fences
+        if line.startswith('```'):
+            if current_para:
+                paragraphs.append(' '.join(current_para))
+                current_para = []
+            continue
+        current_para.append(line)
+    
+    if current_para:
+        paragraphs.append(' '.join(current_para))
+    
+    # Get first substantial paragraph
+    for para in paragraphs:
+        if len(para) > 50:
+            excerpt = para[:max_len].rsplit(' ', 1)[0] + '...'
+            return sanitize_em_dashes(excerpt)
+    
+    # Fallback: first 160 chars of content
+    return sanitize_em_dashes(content[:max_len].rsplit(' ', 1)[0] + '...')
+
+
 def generate_content(topic_info: dict) -> dict:
     """Gera conteúdo do post (PT) e sua tradução (EN) via IA."""
     topic = topic_info["topic"]
@@ -64,6 +141,8 @@ Requisitos:
 - Inclua introdução, desenvolvimento e conclusão
 - Formato Markdown
 - Linguagem: Português do Brasil
+- NÃO use travessões (— ou –), use vírgulas ou " - " entre espaços
+- NÃO use aspas curvas (“”), use aspas retas ("")
 
 Retorne APENAS o conteúdo em Markdown, sem frontmatter."""
     
@@ -73,15 +152,27 @@ Retorne APENAS o conteúdo em Markdown, sem frontmatter."""
         print(f"Erro ao gerar conteúdo: {e}")
         return None
     
+    # Sanitize Portuguese content
+    if contains_em_dash(content_pt):
+        print("Aviso: conteúdo PT contém travessões, sanitizando...")
+        content_pt = sanitize_em_dashes(content_pt)
+    
+    # Generate PT excerpt
+    excerpt_pt = generate_excerpt(content_pt)
+    
+    # Generate English translation
     try:
-        prompt_en = f"""Translate the article below to US English.
+        prompt_en = f"""Translate the article below to natural US English.
 
 Rules:
-- Natural translation, not machine-like
-- Keep code blocks, variable names and URLs intact
-- Translate user-visible strings inside code (e.g. console.log, error messages) when it makes sense
+- Natural, fluent translation - not machine-like
+- Keep code blocks, variable names, and URLs intact
+- Translate user-visible strings inside code (e.g., console.log, error messages) when it makes sense
 - Keep the Markdown format and heading structure
+- DO NOT use em dashes (—) or en dashes (–), use commas or " - " with spaces
+- DO NOT use curly quotes (“”), use straight quotes (")
 - Return ONLY the translated Markdown content, without frontmatter
+- DO NOT include any meta-commentary like "Here is the translation" or "The text is already in English"
 
 ORIGINAL ARTICLE (PT-BR):
 {content_pt}"""
@@ -90,25 +181,43 @@ ORIGINAL ARTICLE (PT-BR):
         print(f"Erro ao gerar tradução EN: {e}")
         content_en = None
     
+    # Validate English translation
+    if content_en:
+        if contains_ai_slop(content_en):
+            print("Erro: tradução EN contém resposta de IA em vez de tradução. Tentando novamente...")
+            # Retry with stricter prompt
+            retry_prompt = prompt_en + "\n\nIMPORTANTE: Retorne APENAS o artigo traduzido. Sem comentários, sem meta-texto."
+            content_en = call_llm(retry_prompt, max_tokens=2500)
+        
+        if contains_ai_slop(content_en):
+            print("Erro: tradução EN ainda contém resposta de IA. Abortando.")
+            content_en = None
+        
+        # Sanitize em dashes in EN content
+        if contains_em_dash(content_en):
+            print("Aviso: tradução EN contém travessões, sanitizando...")
+            content_en = sanitize_em_dashes(content_en)
+    
     if not content_en:
-        print("Aviso: tradução EN falhou, post ficará só em PT")
+        print("Aviso: tradução EN falhou ou foi rejeitada, post ficará só em PT")
+    
+    # Generate English excerpt
+    excerpt_en = generate_excerpt(content_en) if content_en else None
     
     # Gerar slug e metadata
     date = datetime.now().strftime("%Y-%m-%d")
     slug = topic.lower().replace(" ", "-").replace(":", "").replace("?", "")
-    slug = slug[:50]  # Limitar tamanho
+    slug = slug[:50]
     
     title = topic
-    
-    # Gerar excerpt
-    first_line = content_pt.split("\n")[0][:150]
     
     return {
         "title": title,
         "date": date,
         "category": category,
         "tags": topic_info["tags"],
-        "excerpt": first_line,
+        "excerpt": excerpt_pt,
+        "excerpt_en": excerpt_en,
         "slug": f"{date}-{slug}",
         "content": content_pt,
         "content_en": content_en,
@@ -126,13 +235,13 @@ def create_post(post_data: dict) -> bool:
     posts_dir = repo_dir / "posts"
     posts_dir.mkdir(exist_ok=True)
     
-    # Criar frontmatter
+    # Criar frontmatter PT
     frontmatter = f"""---
 title: "{post_data['title']}"
 date: "{post_data['date']}"
 category: "{post_data['category']}"
 tags: {json.dumps(post_data['tags'])}
-excerpt: "{post_data['excerpt']}"
+excerpt: "{post_data['excerpt'].replace('"', '\\"')}"
 ---
 
 """
@@ -144,13 +253,13 @@ excerpt: "{post_data['excerpt']}"
     # Escrever post EN (quando disponível)
     if post_data.get("content_en"):
         en_title = post_data["title"]
-        en_excerpt = post_data["excerpt"]
+        en_excerpt = post_data["excerpt_en"] or post_data["excerpt"]
         frontmatter_en = f"""---
 title: "{en_title}"
 date: "{post_data['date']}"
 category: "{post_data['category']}"
 tags: {json.dumps(post_data['tags'])}
-excerpt: "{en_excerpt}"
+excerpt: "{en_excerpt.replace('"', '\\"')}"
 lang: "en"
 translation_of: "{post_data['slug']}"
 ---
@@ -182,7 +291,7 @@ translation_of: "{post_data['slug']}"
             "title": post_data["title"],
             "date": post_data["date"],
             "category": post_data["category"],
-            "excerpt": post_data["excerpt"],
+            "excerpt": post_data["excerpt_en"] or post_data["excerpt"],
             "lang": "en",
             "translation_slug": post_data["slug"],
             "translation_of": post_data["slug"],
@@ -211,7 +320,6 @@ def create_pr(branch: str, title: str) -> str:
     )
     
     if result.returncode == 0:
-        # Extrair URL do PR
         for line in result.stdout.split("\n"):
             if "https://github.com" in line:
                 return line.strip()
