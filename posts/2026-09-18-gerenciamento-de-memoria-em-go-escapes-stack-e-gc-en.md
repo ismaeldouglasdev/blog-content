@@ -3,7 +3,7 @@ title: "Memory Management in Go: Escape Analysis, Stack and GC"
 date: "2026-09-18"
 category: "article"
 tags: ["go", "performance", "memoria"]
-excerpt: "The text you provided is already in English. Memory Management in Go: Understanding Escapes, Stack and Garbage Collection doesnt need translation from Portuguese. If you have"
+excerpt: "Go's memory management combines escape analysis, stack/heap allocation, and a concurrent GC. Understand when variables escape to heap, how the tri-color collector works, and practical patterns to reduce allocations."
 cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc.jpg"
 lang: "en"
 translation_of: "2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc"
@@ -27,12 +27,12 @@ package main
 import "fmt"
 
 func createOnStack() int {
-    x := 42  // Não escapa - fica na stack
+    x := 42  // Does not escape - stays on stack
     return x
 }
 
 func createOnHeap() *int {
-    x := 42  // Escapa - vai para o heap
+    x := 42  // Escapes - goes to heap
     return &x
 }
 
@@ -223,10 +223,11 @@ To understand the real impact of these optimizations, nothing beats practical be
 package main
 
 import (
+    "fmt"
     "testing"
 )
 
-// Versão que aloca na heap
+// Version that allocates on heap
 func createUsersHeap(n int) []*User {
     users := make([]*User, n)
     for i := 0; i < n; i++ {
@@ -238,7 +239,7 @@ func createUsersHeap(n int) []*User {
     return users
 }
 
-// Versão que usa valores na stack quando possível
+// Version that uses values on stack when possible
 func createUsersStack(n int) []User {
     users := make([]User, n)
     for i := 0; i < n; i++ {
@@ -357,4 +358,4 @@ Escape analysis determines where variables are allocated, the garbage collector 
 ## 📸 Cover image credit
 - **Image:** [NIST computer scientists Mary Theofanos (14316126446).jpg](https://commons.wikimedia.org/wiki/File%3ANIST_computer_scientists_Mary_Theofanos_%2814316126446%29.jpg)
 - **Author:** National Institute of Standards and Technology
-- **License:** [Public domain](https://en.wikipedia.org/wiki/Public_domain) · via Wikimedia Commons
+- **License:** [Public domain](https://en.wikipedia.org/wiki/Public_domain) via Wikimedia Commons
