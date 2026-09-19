@@ -1,6 +1,57 @@
 {
   "posts": [
     {
+      "slug": "2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao",
+      "title": "Git na prática: workflows profissionais, rebase e resolução de conflitos",
+      "title_en": "Git in Action: Pro Workflows, Rebase, and Conflict Resolution",
+      "date": "2026-09-19",
+      "category": "tutorial",
+      "tags": [
+        "git",
+        "workflow",
+        "produtividade"
+      ],
+      "excerpt": "Introdução Quando se trata de controle de versão, o Git é a ferramenta mais amplamente utilizada no mundo do desenvolvimento de software. No entanto, muitos",
+      "excerpt_en": "Git is the most used version control tool, but many developers underutilize it",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao.jpg",
+      "cover_credit": {
+        "file": "File:Git format.png",
+        "artist": "Julian Kücklich",
+        "license": "CC0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3AGit_format.png",
+        "source": "wikimedia"
+      },
+      "lang": "pt",
+      "translation_slug": "2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao-en"
+    },
+    {
+      "slug": "2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao-en",
+      "title": "Git in Action: Pro Workflows, Rebase, and Conflict Resolution",
+      "title_en": "Git in Action: Pro Workflows, Rebase, and Conflict Resolution",
+      "date": "2026-09-19",
+      "category": "tutorial",
+      "tags": [
+        "git",
+        "workflow",
+        "produtividade"
+      ],
+      "excerpt": "Git is the most used version control tool, but many developers underutilize it",
+      "excerpt_en": "Git is the most used version control tool, but many developers underutilize it",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao.jpg",
+      "cover_credit": {
+        "file": "File:Git format.png",
+        "artist": "Julian Kücklich",
+        "license": "CC0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3AGit_format.png",
+        "source": "wikimedia"
+      },
+      "lang": "en",
+      "translation_slug": "2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao",
+      "translation_of": "2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao"
+    },
+    {
       "slug": "2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc",
       "title": "Gerenciamento de memória em Go: escapes, stack e GC",
       "date": "2026-09-18",
