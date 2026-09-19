@@ -8,7 +8,7 @@ lang: "pt"
 ---
 
 ## Introdução
-Quando se trata de gerenciar dependências em projetos JavaScript, o npm é o gigante da indústria. Com mais de 1,5 milhão de pacotes disponíveis, é o maior repositório de código aberto do mundo. No entanto, com o tempo, o npm tem enfrentado problemas crônicos que afetam a velocidade, a segurança e a estabilidade dos projetos. aqui, vou mostrar os problemas do npm e como dois novos players, Bun e Deno, estão ganhando espaço no mercado.
+Quando se trata de gerenciar dependências em projetos JavaScript, o npm é o gigante da indústria. Com mais de 1,5 milhão de pacotes disponíveis, é o maior repositório de código aberto do mundo. No entanto, com o tempo, o npm tem enfrentado problemas crônicos que afetam a velocidade, a segurança e a estabilidade dos projetos. Aqui, vou mostrar os problemas do npm e como dois novos players, Bun e Deno, estão ganhando espaço no mercado.
 
 
 <figure>
@@ -60,7 +60,7 @@ Isso instalará o pacote react e suas dependências com permissões limitadas.
 Com a ascensão de Bun e Deno, é natural se perguntar se o npm ainda vai durar. A resposta é sim. O npm ainda é o maior repositório de código aberto do mundo e tem uma comunidade muito grande de desenvolvedores. No entanto, é importante notar que o npm precisa melhorar sua velocidade, segurança e estabilidade para continuar sendo relevante.
 
 ## Conclusão
-resumindo, o npm é um gerenciador de pacotes que tem problemas crônicos de velocidade, segurança e estabilidade. Bun e Deno são dois novos players no mercado que estão ganhando espaço com suas políticas de segurança mais rigorosas e suas sintaxes mais simples. No entanto, o npm ainda é o maior repositório de código aberto do mundo e tem uma comunidade muito grande de desenvolvedores.
+Resumindo, o npm é um gerenciador de pacotes que tem problemas crônicos de velocidade, segurança e estabilidade. Bun e Deno são dois novos players no mercado que estão ganhando espaço com suas políticas de segurança mais rigorosas e suas sintaxes mais simples. No entanto, o npm ainda é o maior repositório de código aberto do mundo e tem uma comunidade muito grande de desenvolvedores.
 
 Takeaways práticos:
 

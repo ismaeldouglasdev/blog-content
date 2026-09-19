@@ -3,7 +3,7 @@ title: "TypeScript: Advanced Types to Take Your Code to Production"
 date: "2026-08-29"
 category: "tutorial"
 tags: ["typescript", "javascript", "tipagem"]
-excerpt: "Tipos Avançados do TypeScript que Evitam Erros em Produção"
+excerpt: "Advanced TypeScript Types That Prevent Bugs in Production"
 lang: "en"
 translation_of: "2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em"
 ---
@@ -20,7 +20,7 @@ Here, I'll explore how to use advanced TypeScript features to create more robust
 <figure>
   <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em.jpg" alt="The TypeScript logo: static typing that prevents bugs in production." loading="lazy" />
   <figcaption>
-    The TypeScript logo: static typing that prevents bugs in production. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ATypescript.svg">Typescript.svg</a> por TypeScript —
+    The TypeScript logo: static typing that prevents bugs in production. — Image: <a href="https://commons.wikimedia.org/wiki/File%3ATypescript.svg">Typescript.svg</a> by TypeScript —
     <a href="https://en.wikipedia.org/wiki/Public_domain">Public domain</a> · via Wikimedia Commons
   </figcaption>
 </figure>
@@ -35,7 +35,7 @@ Using the `extends` operator, we can say that `T` must be an object that has an 
 
 The practice of using generics with constraints prevents generic functions from accepting inappropriate types, preventing silent error behaviors. This is crucial in complex systems where the interaction between the front-end (React) and the back-end (Node.js or Python) depends on strict contracts.
 
-### Utility Types e a Limpeza do Boilerplate
+### Utility Types and Boilerplate Cleanup
 
 ---
 

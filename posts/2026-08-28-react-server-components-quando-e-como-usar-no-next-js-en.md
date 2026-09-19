@@ -3,7 +3,7 @@ title: "React Server Components: when and how to use them in Next.js"
 date: "2026-08-28"
 category: "tutorial"
 tags: ["react", "server-components", "nextjs"]
-excerpt: "The frontend ecosystem spent years focused on running everything in the clients browser, but the modern architecture of frameworks like Next.js has changed the game by"
+excerpt: "The frontend ecosystem spent years focused on running everything in the client's browser, but the modern architecture of frameworks like Next.js has changed the game by bringing the server back to the center of rendering decisions."
 lang: "en"
 translation_of: "2026-08-28-react-server-components-quando-e-como-usar-no-next-js"
 ---
@@ -18,7 +18,7 @@ When I started building my own projects and structuring interfaces with React, t
 <figure>
   <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-28-react-server-components-quando-e-como-usar-no-next-js.jpg" alt="The React logo: components that run on both server and client." loading="lazy" />
   <figcaption>
-    The React logo: components that run on both server and client. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AReact.svg">React.svg</a> por ReactJS —
+    The React logo: components that run on both server and client. — Image: <a href="https://commons.wikimedia.org/wiki/File%3AReact.svg">React.svg</a> by ReactJS —
     <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · via Wikimedia Commons
   </figcaption>
 </figure>
@@ -33,7 +33,7 @@ Client Components, in turn, need to be explicitly marked with the 'use client' d
 
 A common mistake is trying to treat 'use client' as a shortcut button to solve import problems. When a Client Component is declared, the entire component tree imported by it also becomes part of the bundle sent to the browser.
 
-## Quando usar cada um
+## When to Use Each One
 
 The rule of thumb for deciding between Server and Client Components is based on the need for interactivity and access to browser features.
 
@@ -100,7 +100,7 @@ The header and static text appear immediately to the user. Meanwhile, the SlowAn
 
 ## Forms with Server Actions
 
-Server Actions allow you turn asynchronous functions directly on the server triggered by form elements on the client, reducing the need to create dedicated API routes for simple data mutation operations.
+Server Actions allow you to execute asynchronous functions directly on the server, triggered by form elements on the client, reducing the need to create dedicated API routes for simple data mutation operations.
 
 ```tsx
 // app/actions.ts
@@ -163,7 +163,7 @@ The Server Components model in Next.js requires a mindset shift in how we design
 - **Author:** ReactJS
 - **License:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) · via Wikimedia Commons
 
-## 📸 Crédito da imagem de capa
-- **Imagem:** [BalticServers data center.jpg](https://commons.wikimedia.org/wiki/File%3ABalticServers_data_center.jpg)
-- **Autor(a):** BalticServers.com
-- **Licença:** [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) · via Wikimedia Commons
+## 📸 Cover image credit
+- **Image:** [BalticServers data center.jpg](https://commons.wikimedia.org/wiki/File%3ABalticServers_data_center.jpg)
+- **Author:** BalticServers.com
+- **License:** [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) · via Wikimedia Commons

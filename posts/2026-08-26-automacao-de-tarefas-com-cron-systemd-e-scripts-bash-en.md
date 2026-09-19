@@ -16,7 +16,7 @@ When I migrated 10k products between systems at Loja Quase Tudo, I realized the 
 ---
 
 ## Cron: Syntax and Real-World Examples
-The `cron` is a task scheduling tool that allows executing commands or scripts at specific time intervals. The `cron` syntax is simple and consists of five fields, separated by spaces, which specify the minute, hour, day of the month, month, and day of the week, respectively. For example, the following command will schedule the execution of a Bash script every day at 2:00 AM:
+`cron` is a task scheduling tool that allows executing commands or scripts at specific time intervals. The `cron` syntax is simple and consists of five fields, separated by spaces, which specify the minute, hour, day of the month, month, and day of the week, respectively. For example, the following command will schedule the execution of a Bash script every day at 2:00 AM:
 ```bash
 0 2 * * * /path/to/script.sh
 ```
@@ -31,13 +31,13 @@ These examples illustrate the flexibility of `cron` in scheduling tasks for diff
 <figure>
   <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash.jpg" alt="Crontab example: syntax and real-world schedules." loading="lazy" />
   <figcaption>
-    Crontab example: syntax and real-world schedules. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ACrontab.png">Crontab.png</a> por Bersam —
+    Crontab example: syntax and real-world schedules. — Image: <a href="https://commons.wikimedia.org/wiki/File%3ACrontab.png">Crontab.png</a> by Bersam —
     <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> · via Wikimedia Commons
   </figcaption>
 </figure>
 
 ## Systemd Timers vs Cron
-The `systemd` is an initialization and service management system that also offers task scheduling features, known as timers. Although `cron` is a more traditional and widely used tool, `systemd` timers offer some advantages, such as the ability to run tasks in parallel and the possibility of configuring dependencies between services. However, the choice between `cron` and `systemd` timers depends on the specific use case and the system's needs.
+`systemd` is an initialization and service management system that also offers task scheduling features, known as timers. Although `cron` is a more traditional and widely used tool, `systemd` timers offer some advantages, such as the ability to run tasks in parallel and the possibility of configuring dependencies between services. However, the choice between `cron` and `systemd` timers depends on the specific use case and the system's needs.
 
 ---
 

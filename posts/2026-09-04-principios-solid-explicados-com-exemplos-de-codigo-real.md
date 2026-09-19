@@ -11,7 +11,7 @@ lang: "pt"
 
 Imagine que um cliente da sua loja de varejo, que usa OSPOS como ponto de venda, solicita uma integração que sincroniza estoque com o Mercado Livre em tempo real. Você entrega o código em um fim de semana, mas, dois meses depois, o mesmo cliente pede para acrescentar um relatório de vendas por categoria. O que era um módulo simples agora está cheio de condições, métodos que fazem tudo e pouca margem para mudanças. Essa situação acontece com frequência quando as regras de design são deixadas de lado.
 
-aqui eu explico como os cinco princípios SOLID podem impedir que um código evolua para um monólito incontrolável. Cada princípio vem acompanhado de um exemplo prático escrito em linguagens que eu uso no dia a dia – TypeScript para o front‑end e Python para serviços back‑end. Ao final, mostro como aplicar todos eles em conjunto num caso real que surgiu ao migrar mais de 10 k produtos da loja Quase Tudo para um serviço omnichannel.
+Aqui eu explico como os cinco princípios SOLID podem impedir que um código evolua para um monólito incontrolável. Cada princípio vem acompanhado de um exemplo prático escrito em linguagens que eu uso no dia a dia – TypeScript para o front‑end e Python para serviços back‑end. Ao final, mostro como aplicar todos eles em conjunto num caso real que surgiu ao migrar mais de 10 k produtos da loja Quase Tudo para um serviço omnichannel.
 
 ---
 
@@ -287,7 +287,7 @@ Em 2020 assumi a liderança comercial da loja Quase Tudo. Entre 2020 e 2022 migr
                           +-------------------+   +-------------------+
 ```
 
-* **SRP** – Cada classe tem uma única responsabilidade (fetch, normalize, persist, notificar, enviar a canais).
+* **SRP** – Cada classe tem uma única responsabilidade (buscar, normalizar, persistir, notificar e enviar a canais).
 * **OCP** – `ChannelAdapters` são extensíveis; ao acrescentar TikTok Shop, criamos `TikTokAdapter` que implementa a mesma interface.
 * **LSP** – Qualquer `ChannelAdapter` pode ser usado no `SyncEngine` sem quebrar a lógica de iteração.
 * **ISP** – `ChannelAdapter` expõe apenas `push`; funcionalidades de métricas ou alertas são oferecidas por interfaces separadas.

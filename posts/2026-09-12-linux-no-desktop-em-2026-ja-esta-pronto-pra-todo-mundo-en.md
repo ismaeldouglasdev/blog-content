@@ -19,7 +19,7 @@ Linux has always been the preferred system for servers and developers, but the h
 
 ### Drivers That Actually Work
 
-The biggest historical nightmare of the Linux desktop was hardware support. NVIDIA graphics cards were a hell of unstable proprietary drivers, Wi-Fi rarely worked out-of-the-box, and printers were an exercise in patience. Today, the scenario is radically different.
+The biggest historical nightmare of the Linux desktop was hardware support. NVIDIA graphics cards were plagued by unstable proprietary drivers, Wi-Fi rarely worked out-of-the-box, and printers were an exercise in patience. Today, the scenario is radically different.
 
 NVIDIA finally embraced Wayland with drivers that don't break with every update. AMD has always had better open-source support, and now even exotic hardware like 2-in-1 tablets work without manual configuration. The 6.x kernel brought native support for an impressive range of devices, including game controllers and USB-C peripherals.
 

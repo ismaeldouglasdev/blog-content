@@ -31,7 +31,7 @@ In this article, we’ll dive into the details that make a difference in the day
 <figure>
   <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks.jpg" alt="The React logo, the open source JavaScript library that popularized Hooks." loading="lazy" />
   <figcaption>
-    The React logo, the open source JavaScript library that popularized Hooks. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AReact-icon.svg">React-icon.svg</a> por Facebook —
+    The React logo, the open source JavaScript library that popularized Hooks. — Image: <a href="https://commons.wikimedia.org/wiki/File%3AReact-icon.svg">React-icon.svg</a> by Facebook —
     <a href="https://en.wikipedia.org/wiki/Public_domain">Public domain</a> · via Wikimedia Commons
   </figcaption>
 </figure>
@@ -410,7 +410,7 @@ export function useDebouncedCallback<T extends unknown[]>(
 | **Misusing `useRef` as state** | Mutating `ref.current` does not trigger a re-render, leading to an outdated UI. | When the UI depends on the value, use `useState`. Reserve `useRef` for "mutable storage" or DOM access. |
 | **Custom Hooks that don't clean up resources** | External libraries (e.g., `Chart.js`, `WebSocket`) remain active after unmounting. | Always return a cleanup function in the hook's internal `useEffect`. |
 | **Serializing complex objects in dependencies** | `useEffect([obj])` always triggers a new effect because `obj` has a different reference on every render. | Use `useMemo(() => obj, [obj.prop1, obj.prop2])` or serialize the object to a string (`JSON.stringify`) if it is small and stable. |
-| **Over-abstraction** | Creating hooks for everything can create unnecessary layers | |
+| **Over-abstraction** | Creating hooks for everything can create unnecessary layers | Only create a custom hook when the logic is reused in at least two places; keep simple logic inline. |
 
 ## Sources
 
@@ -424,7 +424,7 @@ export function useDebouncedCallback<T extends unknown[]>(
 - **Author:** Facebook
 - **License:** [Public domain](https://en.wikipedia.org/wiki/Public_domain) · via Wikimedia Commons
 
-## 📸 Crédito da imagem de capa
-- **Imagem:** [Programming.jpg](https://commons.wikimedia.org/wiki/File%3AProgramming.jpg)
-- **Autor(a):** Lorenzo Cafaro
-- **Licença:** [CC0](https://creativecommons.org/publicdomain/zero/1.0/) · via Wikimedia Commons
+## 📸 Cover image credit
+- **Image:** [Programming.jpg](https://commons.wikimedia.org/wiki/File%3AProgramming.jpg)
+- **Author:** Lorenzo Cafaro
+- **License:** [CC0](https://creativecommons.org/publicdomain/zero/1.0/) · via Wikimedia Commons

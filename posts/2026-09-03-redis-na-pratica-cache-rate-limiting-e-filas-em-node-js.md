@@ -13,7 +13,7 @@ lang: "pt"
 
 Imagine que o seu e‑commerce acabou de integrar o OSPOS, o PDV open source que eu customizei para a loja Quase Tudo, ao Mercado Livre. A cada venda o estoque tem que ser atualizado em milissegundos, senão o cliente compra um produto que já acabou e a reputação da loja despenca. No primeiro teste a API do Mercado Livre começou a responder com erros de *429 Too Many Requests* e, ao mesmo tempo, o banco de dados ficou sobrecarregado com consultas repetidas ao mesmo registro de produto. A solução acabou sendo colocar uma camada de Redis entre a aplicação e o banco, usando o Redis não só como cache, mas também como limitador de taxa e como broker de filas.  
 
-Se você já passou por situação parecida – ou ainda não, mas sabe que pode acontecer – este artigo mostra, passo a passo, como montar essas três funções essenciais com Node.js, Docker e poucas linhas de código.
+Se você já passou por uma situação parecida – ou ainda não, mas sabe que pode acontecer – este artigo mostra, passo a passo, como montar essas três funções essenciais com Node.js, Docker e poucas linhas de código.
 
 ---
 
@@ -38,7 +38,7 @@ volumes:
   redis-data:
 ```
 
-Execute `docker compose up -d` e o Redis já está pronto para aceitar conexões na porta padrão. No meu projeto *inventory-service* eu usei exatamente esse setup para sincronizar catálogo e estoque entre OSPOS e Mercado Livre, garantindo que a latência fosse previsível.
+Execute `docker compose up -d` e o Redis já está pronto para aceitar conexões na porta padrão. No meu projeto *inventory-service* eu usei exatamente essa configuração para sincronizar catálogo e estoque entre OSPOS e Mercado Livre, garantindo que a latência fosse previsível.
 
 > **Dica:** mantenha a mesma versão da imagem em todos os ambientes. O `redis:7-alpine` tem o menor tamanho e já inclui os módulos de *streams* e *Lua* que vamos usar mais adiante.
 
@@ -297,7 +297,7 @@ events.on('completed', ({ jobId }) => {
 });
 ```
 
-Com BullMQ eu consegui desacoplar a geração de relatórios do *Plexo* (gerenciador de tasks). Cada relatório é colocado na fila, processado em segundo plano e, ao final, o usuário recebe uma notificação via Slack.
+Com BullMQ eu consegui desacoplar a geração de relatórios do *Plexo* (gerenciador de tarefas). Cada relatório é colocado na fila, processado em segundo plano e, ao final, o usuário recebe uma notificação via Slack.
 
 ---
 

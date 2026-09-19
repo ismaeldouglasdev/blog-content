@@ -38,7 +38,7 @@ Anti-cheat sempre foi o calcanhar de Aquiles, mas até mesmo essa barreira está
 
 O X11 estava tecnicamente obsoleto há uma década, mas o Wayland demorou para amadurecer. Em 2026, finalmente temos um protocolo de display moderno que resolve problemas fundamentais: segurança entre aplicações, suporte adequado para múltiplos monitores, e compositing eficiente.
 
-Gerenciadores de janela como o Hyprland aproveitam o Wayland para criar experiências que simplesmente não eram possíveis no X11. Animações fluidas, tiling dinâmico, e efeitos visuais que rivalizem com qualquer sistema proprietário.
+Gerenciadores de janela como o Hyprland aproveitam o Wayland para criar experiências que simplesmente não eram possíveis no X11. Animações fluidas, tiling dinâmico, e efeitos visuais que rivalizam com qualquer sistema proprietário.
 
 ### KDE Plasma 6 e GNOME 46: Maturidade Técnica
 

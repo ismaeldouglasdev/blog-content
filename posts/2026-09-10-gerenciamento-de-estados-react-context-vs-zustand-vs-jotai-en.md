@@ -139,7 +139,7 @@ And if you need to mutate? Jotai has mutable atoms (with `write`), but it recomm
 
 In `Plexo`, I used Jotai for UI state (open tabs, filters, current selection) and kept persistence logic separate with a custom middleware. The separation of concerns was clear: atoms for data, hooks/services for side effects.
 
-## Comparando performance
+## Comparing Performance
 
 Performance isn't just about how many milliseconds it takes to update: it's about how many components re-render, how many equality checks are performed, and how the garbage collector feels.
 

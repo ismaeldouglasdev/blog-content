@@ -8,7 +8,7 @@ lang: "pt"
 ---
 
 ## Introdução
-A era dos bancos de dados NoSQL, que prometiam flexibilidade e escalabilidade, parecia ter conquistado o coração dos desenvolvedores. No entanto, nos últimos anos, temos assistido a um renascimento dos bancos de dados SQL relacionais, liderado por soluções como o PostgreSQL. Mas o que levou a esse retorno? aqui, vou mostrar as razões por trás desse movimento e como o PostgreSQL se destacou como uma das principais opções para armazenamento de dados.
+A era dos bancos de dados NoSQL, que prometiam flexibilidade e escalabilidade, parecia ter conquistado o coração dos desenvolvedores. No entanto, nos últimos anos, temos assistido a um renascimento dos bancos de dados SQL relacionais, liderado por soluções como o PostgreSQL. Mas o que levou a esse retorno? Aqui, vou mostrar as razões por trás desse movimento e como o PostgreSQL se destacou como uma das principais opções para armazenamento de dados.
 
 
 <figure>
@@ -26,7 +26,7 @@ No início dos anos 2010, os bancos de dados NoSQL começaram a ganhar popularid
 Em meados dos anos 2010, os desenvolvedores começaram a perceber que os bancos de dados SQL relacionais não eram tão limitados quanto pareciam. Com o advento de tecnologias como o PostgreSQL, que oferecia recursos como suporte a JSON e extensões, os bancos de dados SQL relacionais começaram a ganhar novamente a atenção dos desenvolvedores. Além disso, a necessidade de garantir a consistência e a integridade dos dados, bem como a capacidade de realizar consultas complexas, tornou os bancos de dados SQL relacionais mais atraentes.
 
 ## JSON nativo no PostgreSQL
-Um dos recursos que mais contribuiu para o renascimento do PostgreSQL foi o suporte a JSON nativo. Com a versão 9.4, o PostgreSQL introduziu o tipo de dados JSON, que permitia armazenar e consultar dados JSON de forma eficiente. Isso tornou o PostgreSQL uma opção atraente para aplicativos que requeriam armazenamento de dados flexíveis e escaláveis. Por exemplo, em um dos meus projetos em Python, utilizei o PostgreSQL para armazenar dados de configuração em JSON, o que me permitiu ter uma grande flexibilidade na forma como os dados eram armazenados e consultados.
+Um dos recursos que mais contribuiu para o renascimento do PostgreSQL foi o suporte a JSON nativo. Com a versão 9.4, o PostgreSQL introduziu o tipo de dados JSON, que permitia armazenar e consultar dados JSON de forma eficiente. Isso tornou o PostgreSQL uma opção atraente para aplicativos que requeriam armazenamento de dados flexível e escalável. Por exemplo, em um dos meus projetos em Python, utilizei o PostgreSQL para armazenar dados de configuração em JSON, o que me permitiu ter uma grande flexibilidade na forma como os dados eram armazenados e consultados.
 
 ## Extensions (pgvector, PostGIS, pg_cron)
 Outro recurso que tornou o PostgreSQL mais atraente foi a capacidade de adicionar extensões. Com a versão 9.1, o PostgreSQL introduziu a capacidade de adicionar extensões, que permitiam adicionar novos recursos e funcionalidades ao banco de dados. Algumas das extensões mais populares incluem o pgvector, que permite armazenar e consultar dados vetoriais, o PostGIS, que permite armazenar e consultar dados geoespaciais, e o pg_cron, que permite agendar tarefas para serem executadas automaticamente. Essas extensões tornaram o PostgreSQL uma opção mais versátil e flexível para os desenvolvedores.
@@ -38,7 +38,7 @@ Além disso, a ascensão de soluções como o Supabase e o PlanetScale também c
 Com o renascimento do PostgreSQL, o SQL também ganhou novamente a atenção dos desenvolvedores. A capacidade de realizar consultas complexas e garantir a consistência e a integridade dos dados tornou o SQL uma opção mais atraente para muitos desenvolvedores. Além disso, a capacidade de utilizar o SQL para realizar consultas em dados JSON e vetoriais também tornou o SQL mais versátil e flexível.
 
 ## Conclusão
-resumindo, o renascimento do PostgreSQL se deve à combinação de recursos como o suporte a JSON nativo, extensões e soluções como o Supabase e o PlanetScale. Além disso, a necessidade de garantir a consistência e a integridade dos dados, bem como a capacidade de realizar consultas complexas, tornou os bancos de dados SQL relacionais mais atraentes para os desenvolvedores. Aqui estão alguns takeaways práticos:
+Resumindo, o renascimento do PostgreSQL se deve à combinação de recursos como o suporte a JSON nativo, extensões e soluções como o Supabase e o PlanetScale. Além disso, a necessidade de garantir a consistência e a integridade dos dados, bem como a capacidade de realizar consultas complexas, tornou os bancos de dados SQL relacionais mais atraentes para os desenvolvedores. Aqui estão alguns takeaways práticos:
 
 * O PostgreSQL é uma opção atraente para armazenamento de dados devido ao seu suporte a JSON nativo e extensões.
 * As extensões como o pgvector, PostGIS e pg_cron tornam o PostgreSQL mais versátil e flexível.

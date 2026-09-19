@@ -21,7 +21,7 @@ The simplicity of Go is one of its main strengths. With a relatively low learnin
 
 ---
 ## Rust: Control and Performance
-Rust, on the other hand, was launched in2010 with the goal of providing a programming language that prioritizes security and performance. Its unique approach to memory management, through the concept of ownership and borrowing, eliminates the need for a garbage collector, making it more efficient in terms of performance. Additionally, Rust is designed to be a systems language, allowing developers to have fine-grained control over system resources.
+Rust, on the other hand, was launched in 2010 with the goal of providing a programming language that prioritizes security and performance. Its unique approach to memory management, through the concept of ownership and borrowing, eliminates the need for a garbage collector, making it more efficient in terms of performance. Additionally, Rust is designed to be a systems language, allowing developers to have fine-grained control over system resources.
 
 Rust's performance is one of its strong points. With its compiled approach and lack of a garbage collector, Rust applications can achieve speeds close to those of C and C++, but with the security of a modern language. Furthermore, the language is designed to be safe, avoiding common errors such as null pointers and unauthorized memory access.
 

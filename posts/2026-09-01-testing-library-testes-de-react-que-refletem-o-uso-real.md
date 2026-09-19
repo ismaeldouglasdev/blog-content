@@ -9,7 +9,7 @@ lang: "pt"
 
 ## Introdução  
 
-Você já viu um teste verde no CI e, na hora de abrir a aplicação, o botão que deveria estar habilitado continua desabilitado? Essa desconexão entre o que o teste verifica e o que o usuário realmente vê é a raiz de bugs que custam tempo e dinheiro. Quando comecei a migrar o catálogo da **Loja Quase Tudo** para o OSPOS, percebi que a maioria dos testes de interface eram baseados em detalhes de implementação – seletores de classe, chamadas de função interna – e não no fluxo que o cliente experimenta. Foi aí que descobri o **Testing Library** e, desde então, ele se tornou a ferramenta padrão nos meus projetos React, como o **inventory‑service** e o **Plexo**.  
+Você já viu um teste verde no CI e, na hora de abrir a aplicação, o botão que deveria estar habilitado continua desabilitado? Essa desconexão entre o que o teste verifica e o que o usuário realmente vê é a raiz de bugs que custam tempo e dinheiro. Quando comecei a migrar o catálogo da **Loja Quase Tudo** para o OSPOS, percebi que a maioria dos testes de interface eram baseados em detalhes de implementação – seletores de classe, chamadas de função interna – e não no fluxo que o cliente experimenta. Foi aí que descobri a **Testing Library** e, desde então, ela se tornou a ferramenta padrão nos meus projetos React, como o **inventory‑service** e o **Plexo**.  
 
 Neste texto, mostro como usar a Testing Library para escrever testes que realmente refletem o uso real, evitando armadilhas comuns e garantindo que o comportamento do usuário seja o critério principal de aceitação.
 
@@ -60,7 +60,7 @@ A query `getByLabelText` garante que o teste falhe se o campo perder o rótulo, 
 
 ## User events: simulando interações reais  
 
-A API `fireEvent` funciona, mas reproduz eventos de forma muito baixa‑nível. A **user-event** library, mantida pelos próprios mantenedores da Testing Library, simula cliques, digitação e arrastos da mesma forma que o navegador faz. No meu workflow de CI, troco `fireEvent.click` por `userEvent.click` sempre que possível.
+A API `fireEvent` funciona, mas reproduz eventos de forma muito baixa‑nível. A biblioteca **user-event**, mantida pelos próprios mantenedores da Testing Library, simula cliques, digitação e arrastos da mesma forma que o navegador faz. No meu workflow de CI, troco `fireEvent.click` por `userEvent.click` sempre que possível.
 
 ```tsx
 import userEvent from '@testing-library/user-event';

@@ -54,7 +54,7 @@ In my day‑to‑day work, the cache‑aside pattern has been the most flexible,
 <figure>
   <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js.jpg" alt="Direct-mapped cache: the concept that underpins Redis." loading="lazy" />
   <figcaption>
-    Direct-mapped cache: the concept that underpins Redis. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ADirect-Mapped_Cache.png">Direct-Mapped Cache.png</a> por Snehalc —
+    Direct-mapped cache: the concept that underpins Redis. — Image: <a href="https://commons.wikimedia.org/wiki/File%3ADirect-Mapped_Cache.png">Direct-Mapped Cache.png</a> by Snehalc —
     <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · via Wikimedia Commons
   </figcaption>
 </figure>

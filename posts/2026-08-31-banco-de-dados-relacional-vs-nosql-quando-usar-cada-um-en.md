@@ -33,15 +33,13 @@ This command creates a products table with a unique identifier, name, price, and
 
 ## NoSQL: MongoDB, Redis
 
-On the other hand, NoSQL databases, such as MongoDB and Redis, emerged to meet specific demands that relational databases cannot satisfy efficiently. MongoDB, for
+On the other hand, NoSQL databases, such as MongoDB and Redis, emerged to meet specific demands that relational databases cannot satisfy efficiently. MongoDB, for example, is document-oriented and allows you to store data in JSON format, making it easier to manipulate data without a rigid structure.
 
-```markdown
 ## Data Modeling
 
 Data modeling is a crucial point when deciding between a relational database and a NoSQL database. In a relational database, modeling must be done in a way that ensures that entities and their relationships are well defined. This may include normalizing the data to avoid redundancies and ensure referential integrity.
 
 In the case of NoSQL databases, modeling is more focused on how the data will be accessed. The flexible structure allows you to group related data into a single document, which can improve performance for frequent reads. However, this can lead to data duplication, which must be managed properly.
-```
 
 ## Transactions and ACID
 
@@ -59,7 +57,7 @@ On the other hand, NoSQL databases were designed with scalability in mind. They 
 <figure>
   <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um.jpg" alt="Data center: the infrastructure behind scalability." loading="lazy" />
   <figcaption>
-    Data center: the infrastructure behind scalability. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AData_Center_Fish_Eye_View_%28noirlab-racks-155%29.jpg">Data Center Fish Eye View (noirlab-racks-155).jpg</a> por International Gemini Observatory/NOIRLab/NSF/AURA/Manuel Paredes —
+    Data center: the infrastructure behind scalability. — Image: <a href="https://commons.wikimedia.org/wiki/File%3AData_Center_Fish_Eye_View_%28noirlab-racks-155%29.jpg">Data Center Fish Eye View (noirlab-racks-155).jpg</a> by International Gemini Observatory/NOIRLab/NSF/AURA/Manuel Paredes —
     <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · via Wikimedia Commons
   </figcaption>
 </figure>

@@ -28,7 +28,7 @@ Edge functions atacam precisamente essa limitação. Em vez de apenas cachear co
 
 O Workers utiliza o padrão Service Worker como modelo de programação, o que significa que cada requisição que entra passa por um handler que você define. A API é deliberadamente minimalista: você define um listener para eventos de fetch, processa a requisição, e retorna uma resposta. Essa simplicidade esconde um sistema sofisticadamente projetado para inicialização instantânea e execução em ambientes isolados.
 
-Para começar a desenvolver, você precisa instalar o Wrangler, a CLI oficial da Cloudflare para Workers. O Wrangler não é apenas um tool de deploy, é seu ambiente de desenvolvimento completo, permitindo criar novos projetos, testar localmente com miniflare, e fazer deploy com um único comando.
+Para começar a desenvolver, você precisa instalar o Wrangler, a CLI oficial da Cloudflare para Workers. O Wrangler não é apenas uma ferramenta de deploy, é seu ambiente de desenvolvimento completo, permitindo criar novos projetos, testar localmente com miniflare, e fazer deploy com um único comando.
 
 ```bash
 npm install -g wrangler
@@ -57,7 +57,7 @@ export default {
 };
 ```
 
-Quando você faz deploy desse código com `npx wrangler deploy`, ele se torna disponível em uma URL que a Cloudflare distribui globalmente através de sua rede de pontos de presença. Não há configuração de regiões, load balancers ou auto-scaling. O código simplesmente existe em todos os locations da rede simultaneamente.
+Quando você faz deploy desse código com `npx wrangler deploy`, ele se torna disponível em uma URL que a Cloudflare distribui globalmente através de sua rede de pontos de presença. Não há configuração de regiões, load balancers ou auto-scaling. O código simplesmente existe em todos os locais da rede simultaneamente.
 
 O sistema de routing do Workers permite definir padrões mais complexos diretamente no código. Para aplicações que precisam de múltiplos endpoints, você pode implementar um router simples ou utilizar uma biblioteca como Hono, que oferece uma API familiar para desenvolvedores que já trabalharam com frameworks como Express:
 
@@ -85,7 +85,7 @@ export default app;
 
 Executar código no edge é apenas parte da equação. Aplicações úteis precisam de estado, e é aí que o ecossistema de storage da Cloudflare se diferencia. O Workers oferece múltiplos produtos de armazenamento, cada um otimizado para padrões de acesso diferentes.
 
-Cloudflare KV é um armazenamento chave-valor (key-value) distribuído projetado para operações de leitura frequentes e baixa latência. Dados são automaticamente replicados para milhares de edge locations, permitindo leituras com latência de milissegundos independente de onde o usuário está. A consistência eventual significa que writes podem levar alguns segundos para se propagar globalmente, mas leituras são extremamente rápidas.
+Cloudflare KV é um armazenamento chave-valor (key-value) distribuído projetado para operações de leitura frequentes e baixa latência. Dados são automaticamente replicados para milhares de edge locations, permitindo leituras com latência de milissegundos independente de onde o usuário está. A consistência eventual significa que escritas podem levar alguns segundos para se propagar globalmente, mas leituras são extremamente rápidas.
 
 KV funciona excepcionalmente bem para casos de uso como caches de alta velocidade, configuração de aplicações, session stores, e qualquer dado que precise ser lido frequentemente mas atualizado ocasionalmente. A implementação de um cache simples demonstra o padrão:
 
@@ -122,7 +122,7 @@ export default {
 };
 ```
 
-Para dados que requerem consultas relacionais, o D1 oferece um banco de dados SQLite distribuídos. O D1 cria réplicas read-only em cada edge location, permitindo queries SQL com latência extremamente baixa para operações de leitura. Writes ainda precisam passar por uma região primária, mas o sistema de replicação garante que leituras sejam servidas localmente.
+Para dados que requerem consultas relacionais, o D1 oferece um banco de dados SQLite distribuído. O D1 cria réplicas read-only em cada edge location, permitindo queries SQL com latência extremamente baixa para operações de leitura. Writes ainda precisam passar por uma região primária, mas o sistema de replicação garante que leituras sejam servidas localmente.
 
 A criação de um banco D1 e suas primeiras tabelas são feitas via configuração:
 
@@ -171,7 +171,7 @@ export default {
 
 ## Armazenamento de objetos com R2
 
-O R2 é a oferta de object storage da Cloudflare, posicionado como alternativa ao S3 com uma diferença crucial: não há taxas de egress. Para aplicações que servem grande volume de arquivos para usuários globalmente, essa economia pode ser substancial. O R2 é compatível com a API S3, o que significa que bibliotecas client existentes funcionam sem modificações.
+O R2 é a oferta de object storage da Cloudflare, posicionado como alternativa ao S3 com uma diferença crucial: não há taxas de egress. Para aplicações que servem grande volume de arquivos para usuários globalmente, essa economia pode ser substancial. O R2 é compatível com a API S3, o que significa que bibliotecas clientes existentes funcionam sem modificações.
 
 Um caso de uso comum no edge é servir imagens processadas. Você pode armazenar originais no R2 e usar Workers para redimensionar, comprimir ou converter formatos sob demanda:
 
@@ -201,7 +201,7 @@ export default {
 
 ## Automação com Cron Triggers
 
-Workers não executam apenas em resposta a requisições HTTP. O sistema de Cron Triggers permite agendar execução periódica, habilitando padrões como sincronização de dados, limpeza de caches, geração de relatórios e tasks de manutenção que tradicionalmente exigiriam um servidor dedicado ou container rodando 24/7.
+Workers não executam apenas em resposta a requisições HTTP. O sistema de Cron Triggers permite agendar execução periódica, habilitando padrões como sincronização de dados, limpeza de caches, geração de relatórios e tarefas de manutenção que tradicionalmente exigiriam um servidor dedicado ou container rodando 24/7.
 
 A configuração de um cron job é declarativa no wrangler.toml:
 
@@ -260,9 +260,9 @@ async function generateWeeklyReport(env) {
 }
 ```
 
-## AI Inference no edge
+## Inferência de IA no edge
 
-Uma das adições mais interessantes ao Workers é a capacidade de executar modelos de machine learning diretamente no edge. O Workers AI oferece inference para modelos como Llama 3, Mistral e Stable Diffusion, acessível através de uma API REST simples. Para casos de uso que não justificam infraestrutura própria de GPU, essa opção democratiza acesso a capacidades de IA generativa.
+Uma das adições mais interessantes ao Workers é a capacidade de executar modelos de machine learning diretamente no edge. O Workers AI oferece inferência para modelos como Llama 3, Mistral e Stable Diffusion, acessível através de uma API REST simples. Para casos de uso que não justificam infraestrutura própria de GPU, essa opção democratiza o acesso a capacidades de IA generativa.
 
 A integração usa o binding AI disponível em todo Worker:
 
@@ -303,7 +303,7 @@ export default {
 };
 ```
 
-Para tarefas de processamento de texto como classificação, extração de entidades ou análise de sentimento, a latência típica é de centenas de milissegundos, viabilizando integrações em tempo real que seriam impraticáveis com calls para APIs centralizadas.
+Para tarefas de processamento de texto como classificação, extração de entidades ou análise de sentimento, a latência típica é de centenas de milissegundos, viabilizando integrações em tempo real que seriam impraticáveis com chamadas para APIs centralizadas.
 
 ## Deploy e workflow de desenvolvimento
 
@@ -327,7 +327,7 @@ npx wrangler secret put API_KEY --env development
 npx wrangler secret put API_KEY --env production
 ```
 
-O sistema de environments do Wrangler também permite configuração específica por ambiente no wrangler.toml, facilitando manter uma configuração que faz sentido para todos os estágios do desenvolvimento.
+O sistema de ambientes do Wrangler também permite configuração específica por ambiente no wrangler.toml, facilitando manter uma configuração que faz sentido para todos os estágios do desenvolvimento.
 
 ## Quando edge functions fazem sentido
 
@@ -337,13 +337,13 @@ Aplicações com acesso frequente a bancos de dados transacionais pesados ainda 
 
 A economia também é um fator de decisão válido. Para aplicações de baixo a médio tráfego, a camada gratuita do Workers cobre uma quantidade substancial de requisições, e mesmo acima desse limite os custos permanecem competitivos com alternativas serverless tradicionais. A ausência de taxas de egress no R2 especificamente pode representar economias significativas para aplicações que servem grande volume de dados.
 
-## Takeaways praticos
+## Takeaways práticos
 
 - Cloudflare Workers executa código JavaScript, TypeScript ou Rust em edge locations globais sem gerenciamento de servidores, com latência medida em milissegundos
 - KV oferece armazenamento chave-valor de alta velocidade para cache e configuração, enquanto D1 permite queries SQL com réplicas em cada edge location
 - O R2 Storage elimina taxas de egress, sendo ideal para aplicações que servem grande volume de arquivos para usuários globalmente
-- Cron Triggers permitem automação de tasks periódicas sem infraestrutura dedicada, simplificando sincronização e manutenção
-- Workers AI oferece inference de modelos como Llama 3 diretamente no edge, viabilizando IA sem latência de rede
+- Cron Triggers permitem automação de tarefas periódicas sem infraestrutura dedicada, simplificando sincronização e manutenção
+- Workers AI oferece inferência de modelos como Llama 3 diretamente no edge, viabilizando IA sem latência de rede
 - O workflow de desenvolvimento com Wrangler é otimizado para iteração rápida, com `dev` local e `deploy` em segundos
 - Edge functions são ideais para APIs globais, processamento de requisições independentes, e aplicações que priorizam latência; casos complexos de banco de dados se beneficiam de arquiteturas híbridas
 
@@ -357,5 +357,5 @@ A economia também é um fator de decisão válido. Para aplicações de baixo a
 - [Wrangler CLI GitHub Repository](https://github.com/cloudflare/wrangler)
 ## 📸 Crédito da imagem de capa
 - **Imagem:** [EDGE Shadow 25 loitering munition.jpg](https://commons.wikimedia.org/wiki/File%3AEDGE_Shadow_25_loitering_munition.jpg)
-- **Autor(a):** Unknown authorUnknown author
+- **Autor(a):** Unknown author
 - **Licença:** [Public domain](https://en.wikipedia.org/wiki/Public_domain) · via Wikimedia Commons

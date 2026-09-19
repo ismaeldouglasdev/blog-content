@@ -34,7 +34,7 @@ Let’s start by defining what our SaaS needs:
 <figure>
   <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript.jpg" alt="Example of a database schema (MediaWiki 1.41.0 diagram)." loading="lazy" />
   <figcaption>
-    Example of a database schema (MediaWiki 1.41.0 diagram). — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AMediaWiki_1.41.0_database_schema.png">MediaWiki 1.41.0 database schema.png</a> por Nick Jenkins, Timo Tijhof —
+    Example of a database schema (MediaWiki 1.41.0 diagram). — Image: <a href="https://commons.wikimedia.org/wiki/File%3AMediaWiki_1.41.0_database_schema.png">MediaWiki 1.41.0 database schema.png</a> by Nick Jenkins, Timo Tijhof —
     <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · via Wikimedia Commons
   </figcaption>
 </figure>

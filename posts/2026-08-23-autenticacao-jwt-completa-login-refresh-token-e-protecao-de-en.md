@@ -3,7 +3,7 @@ title: "Full JWT Authentication: Login, Refresh Tokens, and Route Protection"
 date: "2026-08-23"
 category: "tutorial"
 tags: ["jwt", "autenticacao", "seguranca", "node"]
-excerpt: "When a web application starts getting more than a few users, the cookie‑based session approach simply doesnt scale. Its the classic scenario for anyone running an application"
+excerpt: "When a web application starts getting more than a few users, the cookie‑based session approach simply doesn't scale. It's the classic scenario for anyone running an application that grows: traffic goes up, the server‑side session store becomes a bottleneck, database latency spikes, and the natural response is to migrate to JWT tokens."
 lang: "en"
 translation_of: "2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de"
 ---
@@ -234,7 +234,7 @@ const userSchema = new mongoose.Schema({
 });
 ```
 
-Endpoint de logout:
+Logout endpoint:
 
 ```js
 router.post('/logout', authenticateToken, async (req, res) => {
@@ -265,7 +265,7 @@ router.post('/logout', authenticateToken, async (req, res) => {
 });
 ```
 
-Middleware de verificação de blacklist:
+Blacklist verification middleware:
 
 ```js
 async function checkBlacklist(req, res, next) {
@@ -313,7 +313,7 @@ Choose the approach that best fits your infrastructure. In my experience, Redis 
 <figure>
   <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de.jpg" alt="Cybersecurity vs. information security: complementary concepts." loading="lazy" />
   <figcaption>
-    Cybersecurity vs. information security: complementary concepts. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ACybersecurity_vs_information_security.png">Cybersecurity vs information security.png</a> por Pcoronaf —
+    Cybersecurity vs. information security: complementary concepts. — Image: <a href="https://commons.wikimedia.org/wiki/File%3ACybersecurity_vs_information_security.png">Cybersecurity vs information security.png</a> by Pcoronaf —
     <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · via Wikimedia Commons
   </figcaption>
 </figure>
@@ -340,7 +340,7 @@ A 24‑hour access token increases the risk of misuse. Keep the access token sho
 
 ### 5. Storing Secrets in Source Code
 
-Keep `JWT
+Keep `JWT_SECRET` and `JWT_REFRESH_SECRET` in environment variables, never in the source code.
 ## 📸 Cover image credit
 - **Image:** [DOM Security Lock and Key.JPG](https://commons.wikimedia.org/wiki/File%3ADOM_Security_Lock_and_Key.JPG)
 - **Author:** ItalianLocksmith

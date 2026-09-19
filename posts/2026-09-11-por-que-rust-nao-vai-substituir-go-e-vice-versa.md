@@ -9,7 +9,7 @@ lang: "pt"
 ---
 
 ## Introdução
-A guerra de linguagens de programação é um tópico recorrente nas comunidades de desenvolvimento de software. Com a constante evolução da tecnologia, novas linguagens surgem, e outras ganham popularidade. Neste cenário, Go e Rust têm se destacado como linguagens de sistemas robustas e eficientes. No entanto, uma pergunta frequente surge: Rust não vai substituir Go, e vice-versa? Para entender essa questão, é fundamental explorar as características, vantagens e desvantagens de cada linguagem.
+A guerra de linguagens de programação é um tópico recorrente nas comunidades de desenvolvimento de software. Com a constante evolução da tecnologia, novas linguagens surgem, e outras ganham popularidade. Neste cenário, Go e Rust têm se destacado como linguagens de sistemas robustas e eficientes. No entanto, uma pergunta frequente surge: por que Rust não vai substituir Go, e vice-versa? Para entender essa questão, é fundamental explorar as características, vantagens e desvantagens de cada linguagem.
 
 ## Go: Simplicidade e Produtividade
 Go, também conhecida como Golang, foi criada pelo time do Google em 2009. Sua principal meta é fornecer uma linguagem de programação simples, eficiente e fácil de aprender. Go se destaca por sua sintaxe minimalista, concorrência leve e uma grande biblioteca padrão. Essas características a tornam uma escolha popular para desenvolvimento de sistemas distribuídos, redes e aplicações em nuvem.
@@ -33,7 +33,7 @@ Em meus próprios projetos, como o **inventory-service**, que é um MVP omnichan
 A realidade é que Go e Rust não são mutuamente exclusivas. Ambas as linguagens têm seus próprios pontos fortes e fracos, e a escolha entre elas depende do projeto específico e das necessidades do desenvolvedor. Em vez de tentar substituir uma pela outra, é mais produtivo entender como cada linguagem pode ser usada para resolver problemas específicos.
 
 ## Conclusão
-resumindo, a escolha entre Go e Rust depende do projeto e das necessidades do desenvolvedor. Go é uma escolha popular para projetos que exigem concorrência leve e facilidade de uso, enquanto Rust é mais adequada para projetos que exigem um controle fino sobre os recursos do sistema e performance crítica.
+Resumindo, a escolha entre Go e Rust depende do projeto e das necessidades do desenvolvedor. Go é uma escolha popular para projetos que exigem concorrência leve e facilidade de uso, enquanto Rust é mais adequada para projetos que exigem um controle fino sobre os recursos do sistema e performance crítica.
 
 Takeaways práticos:
 * Go é uma escolha popular para aplicações web, sistemas distribuídos e ferramentas de linha de comando devido à sua concorrência leve e facilidade de uso.

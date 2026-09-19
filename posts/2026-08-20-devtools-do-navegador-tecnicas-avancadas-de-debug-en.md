@@ -1,5 +1,4 @@
 ---
----
 title: "Browser DevTools: Advanced Debugging Techniques"
 date: "2026-08-20"
 category: "article"
@@ -16,7 +15,7 @@ Have you ever spent hours trapped by a bug that disappears as soon as you try to
 <figure>
   <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug.jpg" alt="Blisk browser DevTools: panels opened for iPhone 12 and iPad Pro 11." loading="lazy" />
   <figcaption>
-    Blisk browser DevTools: panels opened for iPhone 12 and iPad Pro 11. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AWikipedia-blisk-devtools-iphone-12-and-ipad-pro-11-2021.png">Wikipedia-blisk-devtools-iphone-12-and-ipad-pro-11-2021.png</a> por And85rew —
+    Blisk browser DevTools: panels opened for iPhone 12 and iPad Pro 11. — Image: <a href="https://commons.wikimedia.org/wiki/File%3AWikipedia-blisk-devtools-iphone-12-and-ipad-pro-11-2021.png">Wikipedia-blisk-devtools-iphone-12-and-ipad-pro-11-2021.png</a> by And85rew —
     <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · via Wikimedia Commons
   </figcaption>
 </figure>
@@ -145,7 +144,7 @@ async function sendTelemetryFetch(data) {
 
 In the Waterfall, `sendBeacon` appears as “(pending)” and does not block rendering. When I tested the same flow without `keepalive`, the browser kept the connection open until the user closed the tab, which caused a visible "blocking" in the "Waiting" column.
 
-Another point that often goes unnoticed is **caching**. In the Network panel, enable the "Disable cache" option only when testing code changes. In practice, I keep caching enabled in most sessions to observe %
+Another point that often goes unnoticed is **caching**. In the Network panel, enable the "Disable cache" option only when testing code changes. In practice, I keep caching enabled in most sessions to observe the real user behavior. If a request is always returning 200 OK instead of 304 Not Modified, it may be a sign that the `Cache-Control` header is configured inadequately.
 
 ## Sources
 

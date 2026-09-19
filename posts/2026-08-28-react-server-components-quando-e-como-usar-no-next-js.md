@@ -70,7 +70,7 @@ Neste exemplo, o código SQL ou a requisição HTTP acontece diretamente no serv
 
 ## Streaming e Suspense
 
-O Server Components introduz uma vantagem considerável na entrega de conteúdo através do streaming baseado em partes. Em vez de esperar o servidor processar toda a página antes de enviar qualquer byte ao navegador, o Next.js consegue enviar o HTML em pedaços conforme os dados ficam prontos.
+Os Server Components introduzem uma vantagem considerável na entrega de conteúdo através do streaming baseado em partes. Em vez de esperar o servidor processar toda a página antes de enviar qualquer byte ao navegador, o Next.js consegue enviar o HTML em pedaços conforme os dados ficam prontos.
 
 O uso do componente Suspense permite isolar partes lentas da aplicação sem travar o carregamento do layout principal.
 
@@ -150,7 +150,7 @@ O modelo de Server Components no Next.js exige uma mudança de mentalidade na fo
 - Aproveite o Suspense para melhorar a percepção de velocidade com carregamento em partes.
 - Utilize Server Actions para simplificar mutações de dados sem criar rotas de API desnecessárias.
 
-## Sources
+## Fontes
 
 - [Next.js Documentation: Server Components](https://nextjs.org/docs/app/building-your-application/rendering/server-components)
 - [React Documentation: Server Components](https://react.dev/reference/react/components)

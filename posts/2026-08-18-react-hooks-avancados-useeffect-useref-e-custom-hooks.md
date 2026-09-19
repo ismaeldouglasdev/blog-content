@@ -94,7 +94,7 @@ function useUser(id: string) {
 **Dicas práticas**
 
 - **Sempre inclua as variáveis usadas dentro do efeito** (`id` no exemplo) na lista de dependências. O ESLint plugin `react-hooks/exhaustive-deps` ajuda a detectar ausências.
-- **AbortController** funciona em navegadores modernos e em Node (via `node-fetch`). Se precisar de suporte legados, use bibliotecas como `axios` que já possuem cancelamento interno.
+- **AbortController** funciona em navegadores modernos e em Node (via `node-fetch`). Se precisar de suporte a navegadores legados, use bibliotecas como `axios` que já possuem cancelamento interno.
 
 ### Exemplo 2 – `setInterval` com cleanup
 
@@ -203,7 +203,7 @@ export function RenderCounter() {
 }
 ```
 
-> **Curiosidade:** Se você quiser que o valor seja exibido no UI, ainda precisará de `useState` (ou `useReducer`). O `useRef` serve aqui apenas como *instrumento de medição*.
+> **Curiosidade:** Se você quiser que o valor seja exibido na UI, ainda precisará de `useState` (ou `useReducer`). O `useRef` serve aqui apenas como *instrumento de medição*.
 
 ### Dicas avançadas
 
@@ -380,7 +380,7 @@ function SearchInput() {
 }
 ```
 
-**Truque avançado:** Se precisar debouncing de *funções* (não apenas valores), combine `useCallback` com `useRef`:
+**Truque avançado:** Se precisar de *debounce* de *funções* (não apenas valores), combine `useCallback` com `useRef`:
 
 ```tsx
 export function useDebouncedCallback<T extends unknown[]>(
@@ -408,7 +408,7 @@ export function useDebouncedCallback<T extends unknown[]>(
 | **Uso indevido de `useRef` como estado** | Alterar `ref.current` não dispara render, levando a UI desatualizada. | Quando a UI depende do valor, use `useState`. Reserve `useRef` para “armazenamento mutável” ou acesso ao DOM. |
 | **Custom Hook que não limpa recursos** | Bibliotecas externas (ex.: `Chart.js`, `WebSocket`) permanecem ativas após desmontar. | Sempre retorne uma função de limpeza no `useEffect` interno do hook. |
 | **Serialização de objetos complexos nas dependências** | `useEffect([obj])` sempre cria novo efeito, pois `obj` tem referência diferente a cada render. | Use `useMemo(() => obj, [obj.prop1, obj.prop2])` ou transforme o objeto em string (`JSON.stringify`) se for pequeno e estável. |
-| **Excesso de abstração** | Criar hooks para tudo pode gerar camadas desnecess
+| **Excesso de abstração** | Criar hooks para tudo pode gerar camadas desnecessárias
 
 ## Fontes
 

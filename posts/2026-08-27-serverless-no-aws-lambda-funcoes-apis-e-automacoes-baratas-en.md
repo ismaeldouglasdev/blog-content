@@ -3,7 +3,7 @@ title: "Serverless with AWS Lambda: Low-Cost Functions, APIs, and Automation"
 date: "2026-08-27"
 category: "tutorial"
 tags: ["serverless", "aws", "lambda", "cloud"]
-excerpt: "Introduction: Serverless and When It’s Worth It. In software development, one of the biggest"
+excerpt: "Introduction: Serverless and When It's Worth It. When it comes to software development, one of the biggest challenges is the infrastructure needed to run applications."
 lang: "en"
 translation_of: "2026-08-27-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas"
 ---
@@ -17,16 +17,16 @@ When it comes to software development, one of the biggest challenges is the infr
 <figure>
   <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-27-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas.jpg" alt="Wikimedia Foundation servers: the infrastructure behind on-demand services." loading="lazy" />
   <figcaption>
-    Wikimedia Foundation servers: the infrastructure behind on-demand services. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AWikimedia_Foundation_Servers-8055_08.jpg">Wikimedia Foundation Servers-8055 08.jpg</a> por Victorgrigas —
+    Wikimedia Foundation servers: the infrastructure behind on-demand services. — Image: <a href="https://commons.wikimedia.org/wiki/File%3AWikimedia_Foundation_Servers-8055_08.jpg">Wikimedia Foundation Servers-8055 08.jpg</a> by Victorgrigas —
     <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> · via Wikimedia Commons
   </figcaption>
 </figure>
 
 ## Basic Lambda with Python/Node
-To get started with AWS Lambda, it's important to understand how to create a simple function. Lambda supports several programming languages, including Python and Node.js, which are
+To get started with AWS Lambda, it's important to understand how to create a simple function. Lambda supports several programming languages, including Python and Node.js, which are two of the most popular. With Python, for example, you can create a function that responds to a simple event, such as an HTTP request. With Node.js, creating asynchronous functions is even more straightforward, thanks to its non-blocking nature.
 
 ## API Gateway for REST
-One of the most common uses of AWS Lambda is in conjunction with API Gateway to create RESTful APIs. API Gateway acts as
+One of the most common uses of AWS Lambda is in conjunction with API Gateway to create RESTful APIs. API Gateway acts as a frontend for Lambda functions, allowing them to be called through HTTP requests. This makes it easy to create APIs without the complexity of managing servers or load balancers.
 
 ## Event Triggers (S3, SQS, DynamoDB)
 In addition to being invoked through API Gateway, Lambda can be triggered by a variety of events from other AWS services, such as Amazon S3, Amazon SQS, and Amazon DynamoDB. This allows Lambda functions to be used to process data as soon as it is created or updated, without the need for polling or other periodic check mechanisms.

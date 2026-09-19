@@ -126,7 +126,7 @@ With this setup, each test can override the behavior of a specific endpoint with
 <figure>
   <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-01-testing-library-testes-de-react-que-refletem-o-uso-real.jpg" alt="Software Testing Life Cycle (STLC): the phases of a testing process." loading="lazy" />
   <figcaption>
-    Software Testing Life Cycle (STLC): the phases of a testing process. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ASoftware_Testing_Life_Cycle.jpg">Software Testing Life Cycle.jpg</a> por Perfect Happiness —
+    Software Testing Life Cycle (STLC): the phases of a testing process. — Image: <a href="https://commons.wikimedia.org/wiki/File%3ASoftware_Testing_Life_Cycle.jpg">Software Testing Life Cycle.jpg</a> by Perfect Happiness —
     <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · via Wikimedia Commons
   </figcaption>
 </figure>
@@ -137,7 +137,7 @@ Some practices that help improve relevant coverage:
 
 - **Visible state testing** – verify that a button enables/disables according to user input.  
 - **Error‑message testing** – mock API responses with errors and confirm that the UI displays the correct alert.  
-- **Navigation testing** – use `MemoryRouter` to ensure the correct route
+- **Navigation testing** – use `MemoryRouter` to ensure the correct route is rendered.
 
 ## Conclusion  
 
@@ -166,7 +166,7 @@ If you still use fragile selectors or `setTimeout`s to wait for elements, it’s
 - **Author:** J-at-ywalters-dot-net
 - **License:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) · via Wikimedia Commons
 
-## 📸 Crédito da imagem de capa
-- **Imagem:** [First Computer Bug, 1947.jpg](https://commons.wikimedia.org/wiki/File%3AFirst_Computer_Bug%2C_1947.jpg)
-- **Autor(a):** Courtesy of the Naval Surface Warfare Center, Dahlgren, VA., 1988.
-- **Licença:** [Public domain](https://en.wikipedia.org/wiki/Public_domain) · via Wikimedia Commons
+## 📸 Cover image credit
+- **Image:** [First Computer Bug, 1947.jpg](https://commons.wikimedia.org/wiki/File%3AFirst_Computer_Bug%2C_1947.jpg)
+- **Author:** Courtesy of the Naval Surface Warfare Center, Dahlgren, VA., 1988.
+- **License:** [Public domain](https://en.wikipedia.org/wiki/Public_domain) · via Wikimedia Commons

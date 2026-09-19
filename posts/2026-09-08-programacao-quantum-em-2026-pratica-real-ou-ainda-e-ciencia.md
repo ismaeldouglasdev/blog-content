@@ -8,7 +8,7 @@ lang: "pt"
 ---
 
 ## Introdução
-A programação quântica é um campo que tem gerado grande interesse nos últimos anos, com muitos especialistas e empresas investindo tempo e recursos para desenvolver tecnologias quânticas. No entanto, a pergunta que muitos desenvolvedores se fazem é: a programação quântica é uma prática real ou ainda está na esfera da ciência? aqui, vou mostrar o estado atual dos computadores quânticos, as principais empresas que estão trabalhando nessa área, as ferramentas e linguagens de programação disponíveis e os problemas reais que a programação quântica pode resolver.
+A programação quântica é um campo que tem gerado grande interesse nos últimos anos, com muitos especialistas e empresas investindo tempo e recursos para desenvolver tecnologias quânticas. No entanto, a pergunta que muitos desenvolvedores se fazem é: a programação quântica é uma prática real ou ainda está na esfera da ciência? Aqui, vou mostrar o estado atual dos computadores quânticos, as principais empresas que estão trabalhando nessa área, as ferramentas e linguagens de programação disponíveis e os problemas reais que a programação quântica pode resolver.
 
 ## O estado atual dos computadores quânticos
 Os computadores quânticos são dispositivos que utilizam os princípios da mecânica quântica para realizar cálculos. Eles têm o potencial de resolver problemas que são muito difíceis ou impossíveis de serem resolvidos pelos computadores clássicos. Atualmente, existem vários tipos de computadores quânticos, incluindo os computadores quânticos de gate, os computadores quânticos de topo e os computadores quânticos de óptica quântica.
@@ -29,7 +29,7 @@ As principais empresas que estão trabalhando na área de programação quântic
 Qiskit e Cirq são duas linguagens de programação quântica que são amplamente utilizadas. Qiskit é uma linguagem de programação desenvolvida pela IBM que permite aos desenvolvedores criar programas quânticos para serem executados em computadores quânticos. Cirq é uma linguagem de programação desenvolvida pela Google que permite aos desenvolvedores criar programas quânticos para serem executados em computadores quânticos.
 
 ## Problemas reais resolvidos
-A programação quântica pode resolver vários problemas reais, incluindo a simulação de sistemas quânticos, a otimização de problemas complexos e a quebra de códigos. Por exemplo, a simulação de sistemas quânticos pode ser utilizada para entender melhor o comportamento de materiais e moléculas, o que pode levar a avanços em áreas como a medicina e a energia. A otimização de problemas complexos pode ser utilizada para resolver problemas como a rotação de veículos e a alocação de recursos.
+A programação quântica pode resolver vários problemas reais, incluindo a simulação de sistemas quânticos, a otimização de problemas complexos e a quebra de códigos. Por exemplo, a simulação de sistemas quânticos pode ser utilizada para entender melhor o comportamento de materiais e moléculas, o que pode levar a avanços em áreas como a medicina e a energia. A otimização de problemas complexos pode ser utilizada para resolver problemas como o roteamento de veículos e a alocação de recursos.
 
 ## Quantum advantage
 O quantum advantage é o conceito de que os computadores quânticos podem resolver problemas mais rapidamente do que os computadores clássicos. Isso é possível porque os computadores quânticos podem realizar cálculos em paralelo, o que pode levar a uma grande aceleração em relação aos computadores clássicos.

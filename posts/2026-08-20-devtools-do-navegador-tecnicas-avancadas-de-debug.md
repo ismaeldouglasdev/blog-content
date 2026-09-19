@@ -87,7 +87,7 @@ No painel de Performance, a diferença aparece como um pico único na primeira v
 
 A memória pode ser o vilão silencioso de uma aplicação que parece estar “pesada” depois de alguns minutos de uso. O painel **Memory** oferece três tipos de captura: *Heap snapshot*, *Allocation instrumentation on timeline* e *Allocation sampling*. Na minha experiência, a combinação de um snapshot inicial e outro após reproduzir o fluxo problemático revela rapidamente onde os objetos permanecem vivos sem necessidade.
 
-Um caso clássico que eu já passei por foi um listener de scroll que nunca era removido. Cada chamada criava um novo objeto de configuração, e o GC não conseguia coletar porque o listener ainda referenciava o objeto. O código a seguir reproduz o problema e mostra como corrigi‑lo:
+Um caso clássico pelo qual eu já passei foi um listener de scroll que nunca era removido. Cada chamada criava um novo objeto de configuração, e o GC não conseguia coletar porque o listener ainda referenciava o objeto. O código a seguir reproduz o problema e mostra como corrigi‑lo:
 
 ```js
 // Código problemático
@@ -152,7 +152,7 @@ Outro ponto que costuma passar despercebido é o **caching**. No painel Network,
 
 Muitos desenvolvedores acreditam que o painel **Elements** resolve tudo quando o layout está errado. Na prática, a inspeção avançada de CSS vai muito além de mudar cores e margens na hora. O recurso **Computed** mostra o valor final de cada propriedade, já o **Coverage** indica quais regras nunca são aplicadas.
 
-Um truque que usei recentemente foi forçar a re‑cálculo de estilos para descobrir por que um elemento não está recebendo a cor esperada. No console, basta digitar:
+Um truque que usei recentemente foi forçar o re‑cálculo de estilos para descobrir por que um elemento não está recebendo a cor esperada. No console, basta digitar:
 
 ```js
 getComputedStyle(document.querySelector('.botao')).color
@@ -160,7 +160,7 @@ getComputedStyle(document.querySelector('.botao')).color
 
 Se o valor retornado for diferente do que aparece no painel “Styles”, significa que há uma regra mais específica sendo aplicada em outro nível da árvore.
 
-Além disso, o **CSS Overview** (disponível no Chrome 111+) gera um resumo visual de cores, fontes e média queries usadas na página. Ao analisar um projeto legado, eu identifiquei que mais de 30 % das regras eram duplicadas ou nunca eram usadas. Remover essas linhas reduziu o tamanho do CSS em 45 KB e melhorou o **First Contentful Paint** em 120 ms.
+Além disso, o **CSS Overview** (disponível no Chrome 111+) gera um resumo visual de cores, fontes e media queries usadas na página. Ao analisar um projeto legado, eu identifiquei que mais de 30 % das regras eram duplicadas ou nunca eram usadas. Remover essas linhas reduziu o tamanho do CSS em 45 KB e melhorou o **First Contentful Paint** em 120 ms.
 
 Para depurar animações, o painel **Animations** permite pausar, acelerar ou desacelerar a timeline. Uma situação que eu já enfrentei foi uma animação CSS que entrava em loop infinito devido a um erro de `animation-iteration-count`. Ao pausar a animação e inspecionar o valor de `animation-name`, ficou claro que o nome estava escrito errado em um dos arquivos SCSS.
 
@@ -257,7 +257,7 @@ A jornada de debug não termina quando o bug desaparece; ela continua com a impl
 ### Takeaways práticos
 
 - Use o **Performance Profiler** para capturar cenários reais; procure por “long tasks” e otimize loops com `requestAnimationFrame` ou `setTimeout`.
-- Capture **Memory Snapshots** antes e depois de reproduzir o fluxo problemático;
+- Capture **Memory Snapshots** antes e depois de reproduzir o fluxo problemático.
 
 ## Fontes
 - [MDN Web Docs: Using the Performance API](https://developer.mozilla.org/en-US/docs/Web/API/Performance_API)

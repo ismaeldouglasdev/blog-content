@@ -12,16 +12,16 @@ translation_of: "2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-
 Quantum programming is a field that has generated significant interest in recent years, with many experts and companies investing time and resources to develop quantum technologies. However, the question many developers ask themselves is: is quantum programming a real practice or is it still in the realm of science? Here, I will show the current state of quantum computers, the main companies working in this area, the available tools and programming languages, and the real problems that quantum programming can solve.
 
 ## The current state of quantum computers
-Quantum computers are devices that utilize the principles of quantum mechanics to perform calculations. They have the potential to solve problems that are very difficult or impossible for classical computers to solve. Currently, there are several types of quantum computers, including gate-based quantum computers, topological quantum computers, and quantum optics quantum computers.
+Quantum computers are devices that utilize the principles of quantum mechanics to perform calculations. They have the potential to solve problems that are very difficult or impossible for classical computers to solve. Currently, there are several types of quantum computers, including gate-based quantum computers, topological quantum computers, and photonic quantum computers.
 
 ## IBM, Google, IonQ
-The main companies working in the field of quantum programming are IBM, Google, and IonQ. IBM has a quantum computing program that includes the development of hardware and software for quantum computers. Google also has a quantum computing program and has developed several quantum algorithms, including Shor's algorithm and Grover's algorithm. IonQ is a company that specializes in quantum computing and has developed several products, including a quantum gate computer.
+The main companies working in the field of quantum programming are IBM, Google, and IonQ. IBM has a quantum computing program that includes the development of hardware and software for quantum computers. Google also has a quantum computing program and has developed several quantum algorithms, including Shor's algorithm and Grover's algorithm. IonQ is a company that specializes in quantum computing and has developed several products, including a gate-based quantum computer.
 
 
 <figure>
   <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia.jpg" alt="Google's Sycamore chip, a superconducting quantum processor." loading="lazy" />
   <figcaption>
-    Google's Sycamore chip, a superconducting quantum processor. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AGoogle_Sycamore_Chip_001.png">Google Sycamore Chip 001.png</a> por Google —
+    Google's Sycamore chip, a superconducting quantum processor. — Image: <a href="https://commons.wikimedia.org/wiki/File%3AGoogle_Sycamore_Chip_001.png">Google Sycamore Chip 001.png</a> by Google —
     <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a> · via Wikimedia Commons
   </figcaption>
 </figure>

@@ -8,14 +8,14 @@ lang: "en"
 translation_of: "2026-09-07-postgresql-e-o-renascimento-dos-bancos-sql-relacionais"
 ---
 
-## Introdução
+## Introduction
 The era of NoSQL databases, which promised flexibility and scalability, seemed to have won the hearts of developers. However, in recent years, we have witnessed a resurgence of relational SQL databases, led by solutions like PostgreSQL. But what drove this return? Here, I will show the reasons behind this movement and how PostgreSQL has stood out as one of the top options for data storage.
 
 
 <figure>
   <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-07-postgresql-e-o-renascimento-dos-bancos-sql-relacionais.jpg" alt="The elephant, PostgreSQL's mascot, the relational database that came back." loading="lazy" />
   <figcaption>
-    The elephant, PostgreSQL's mascot, the relational database that came back. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3APostgresql_elephant.svg">Postgresql elephant.svg</a> por Daniel Lundin —
+    The elephant, PostgreSQL's mascot, the relational database that came back. — Image: <a href="https://commons.wikimedia.org/wiki/File%3APostgresql_elephant.svg">Postgresql elephant.svg</a> by Daniel Lundin —
     <a href="https://opensource.org/license/bsd-3-clause">BSD</a> · via Wikimedia Commons
   </figcaption>
 </figure>
@@ -28,7 +28,7 @@ In the mid-2010s, developers began to realize that relational SQL databases were
 
 ---
 ## Native JSON in PostgreSQL
-One of the features that most contributed to the resurgence of PostgreSQL was its native support for JSON. With version 9.4, PostgreSQL introduced the JSON data type, which allowed for efficient storage and querying of JSON data. This made PostgreSQL an attractive option for applications that required flexible and scalable data storage. For example, in one of my Python projects, I used PostgreSQL to store configuration data in JSON, which gave me a great deal of flexibility in how the data was stored and queried.
+One of the features that contributed most to the resurgence of PostgreSQL was its native support for JSON. With version 9.4, PostgreSQL introduced the JSON data type, which allowed for efficient storage and querying of JSON data. This made PostgreSQL an attractive option for applications that required flexible and scalable data storage. For example, in one of my Python projects, I used PostgreSQL to store configuration data in JSON, which gave me a great deal of flexibility in how the data was stored and queried.
 
 ---
 ## Extensions (pgvector, PostGIS, pg_cron)
@@ -40,7 +40,7 @@ Additionally, the rise of solutions like Supabase and PlanetScale has also contr
 ## SQL gained momentum again
 With the resurgence of PostgreSQL, SQL also regained the attention of developers. The ability to perform complex queries and ensure data consistency and integrity made SQL a more attractive option for many developers. Additionally, the ability to use SQL to query JSON and vector data also made SQL more versatile and flexible.
 
-## Conclusão
+## Conclusion
 In summary, the resurgence of PostgreSQL is due to the combination of features such as native JSON support, extensions, and solutions like Supabase and PlanetScale. Additionally, the need to ensure data consistency and integrity, as well as the ability to perform complex queries, has made relational SQL databases more appealing to developers. Here are some practical takeaways:
 
 * PostgreSQL is an attractive option for data storage due to its native JSON support and extensions.
@@ -62,7 +62,7 @@ In summary, the resurgence of PostgreSQL is due to the combination of features s
 - **Author:** Daniel Lundin
 - **License:** [BSD](https://en.wikipedia.org/wiki/BSD_licenses) · via Wikimedia Commons
 
-## 📸 Crédito da imagem de capa
-- **Imagem:** [Postgres Query.jpg](https://commons.wikimedia.org/wiki/File%3APostgres_Query.jpg)
-- **Autor(a):** Chiffre01
-- **Licença:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) · via Wikimedia Commons
+## 📸 Cover image credit
+- **Image:** [Postgres Query.jpg](https://commons.wikimedia.org/wiki/File%3APostgres_Query.jpg)
+- **Author:** Chiffre01
+- **License:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) · via Wikimedia Commons

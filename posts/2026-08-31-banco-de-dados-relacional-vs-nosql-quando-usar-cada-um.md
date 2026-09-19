@@ -9,7 +9,7 @@ lang: "pt"
 
 ## Banco de dados relacional vs NoSQL: quando usar cada um
 
-A escolha do banco de dados adequado para um projeto pode ser um dos fatores mais críticos para o sucesso do mesmo. Com a crescente complexidade das aplicações modernas, entender as diferenças entre bancos de dados relacionais e NoSQL se torna essencial. aqui, vou mostrar quando e por que utilizar cada um desses tipos de banco de dados, considerando aspectos como modelagem de dados, transações e escalabilidade.
+A escolha do banco de dados adequado para um projeto pode ser um dos fatores mais críticos para o sucesso do mesmo. Com a crescente complexidade das aplicações modernas, entender as diferenças entre bancos de dados relacionais e NoSQL se torna essencial. Aqui, vou mostrar quando e por que utilizar cada um desses tipos de banco de dados, considerando aspectos como modelagem de dados, transações e escalabilidade.
 
 ## SQL: PostgreSQL como padrão
 
@@ -64,7 +64,7 @@ Os bancos de dados NoSQL, embora alguns ofereçam suporte a transações, geralm
 
 A escalabilidade é outro fator importante na escolha do banco de dados. Bancos de dados relacionais, como o PostgreSQL, são geralmente mais desafiadores de escalar horizontalmente. Embora seja possível, isso pode exigir um esforço significativo em termos de configuração e manutenção.
 
-Em contrapartida, bancos de dados NoSQL foram projetados com a escalabilidade em mente. Eles podem ser facilmente distribuídos em várias máquinas, permitindo que você lidere com grandes volumes de dados e tráfego. Isso é particularmente útil para aplicações que precisam de alta disponibilidade e desempenho em larga escala.
+Em contrapartida, bancos de dados NoSQL foram projetados com a escalabilidade em mente. Eles podem ser facilmente distribuídos em várias máquinas, permitindo que você lide com grandes volumes de dados e tráfego. Isso é particularmente útil para aplicações que precisam de alta disponibilidade e desempenho em larga escala.
 
 
 <figure>

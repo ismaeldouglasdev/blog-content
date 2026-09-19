@@ -8,7 +8,7 @@ lang: "pt"
 ---
 
 ## Introdução: Serverless e Quando Vale a Pena
-Quando se fala em desenvolvimento de software, uma das principais preocupações é a infraestrutura necessária para rodar as aplicações. Servidores, manutenção, escalabilidade - tudo isso pode ser um desafio, especialmente para projetos menores ou startups. É aqui que entra o conceito de serverless, uma abordagem que permite aos desenvolvedores criar e implantar aplicações sem se preocupar com a infraestrutura subjacente. aqui, vou mostrar como o AWS Lambda, um dos principais serviços serverless da Amazon Web Services (AWS), pode ser utilizado para criar funções, APIs e automações de forma eficiente e barata.
+Quando se fala em desenvolvimento de software, uma das principais preocupações é a infraestrutura necessária para rodar as aplicações. Servidores, manutenção, escalabilidade - tudo isso pode ser um desafio, especialmente para projetos menores ou startups. É aqui que entra o conceito de serverless, uma abordagem que permite aos desenvolvedores criar e implantar aplicações sem se preocupar com a infraestrutura subjacente. Aqui, vou mostrar como o AWS Lambda, um dos principais serviços serverless da Amazon Web Services (AWS), pode ser utilizado para criar funções, APIs e automações de forma eficiente e barata.
 
 
 <figure>
@@ -48,7 +48,7 @@ Um dos usos mais comuns do AWS Lambda é em conjunto com o API Gateway, para cri
 Por exemplo, você pode criar um recurso no API Gateway que mapeia uma requisição GET para uma função Lambda. Quando uma requisição é feita para esse recurso, o API Gateway chama a função Lambda correspondente, passando os parâmetros necessários, e então retorna a resposta da função para o cliente.
 
 ## Event Triggers (S3, SQS, DynamoDB)
-Além de ser chamado através do API Gateway, o Lambda pode ser disparado por uma variedade de eventos provenientes de outros serviços da AWS, como o Amazon S3, Amazon SQS, e Amazon DynamoDB. Isso permite que as funções Lambda sejam usadas para processar dados assim que eles são criados ou atualizados, sem a necessidade de polling ou outros mecanismos de verificações periódicas.
+Além de ser chamado através do API Gateway, o Lambda pode ser disparado por uma variedade de eventos provenientes de outros serviços da AWS, como o Amazon S3, Amazon SQS, e Amazon DynamoDB. Isso permite que as funções Lambda sejam usadas para processar dados assim que eles são criados ou atualizados, sem a necessidade de polling ou outros mecanismos de verificação periódica.
 
 Por exemplo, você pode configurar o Lambda para ser disparado sempre que um novo arquivo é uploadado para um bucket do S3. A função então pode processar o arquivo, realizando tarefas como compressão, conversão de formato, ou até mesmo análise de conteúdo.
 

@@ -70,7 +70,7 @@ Na prática, eu já passei por muitos projetos que usaram o TypeScript e posso d
 * Use as bibliotecas e frameworks existentes para o TypeScript, pois isso pode ajudar a acelerar o desenvolvimento e a reduzir a complexidade do código.
 
 ## Conclusão
-resumindo, o TypeScript é uma linguagem que passou de um projeto experimental para se tornar um padrão da indústria. Com a ajuda da tipagem gradual e da inferência de tipos, o TypeScript é uma ferramenta poderosa para qualquer desenvolvedor que queira criar código seguro e manutenível. Aqui estão os principais takeaways do artigo:
+Resumindo, o TypeScript é uma linguagem que passou de um projeto experimental para se tornar um padrão da indústria. Com a ajuda da tipagem gradual e da inferência de tipos, o TypeScript é uma ferramenta poderosa para qualquer desenvolvedor que queira criar código seguro e manutenível. Aqui estão os principais takeaways do artigo:
 
 * O TypeScript é uma linguagem que foi criada pela Microsoft em 2012 para fornecer uma alternativa mais segura e manutenível ao JavaScript.
 * A tipagem gradual é uma característica fundamental do TypeScript, pois permite que os desenvolvedores usem tipagem estática e dinâmica juntas.

@@ -291,7 +291,7 @@ async function listTasks(projectId: string, cursor?: string, take = 10) {
 }
 ```
 
-Cursor‑based pagination evita o famoso *offset* problem em tabelas grandes, mantendo a consistência mesmo quando linhas são inseridas ou removidas entre as requisições.
+A paginação baseada em cursor evita o famoso problema do *offset* em tabelas grandes, mantendo a consistência mesmo quando linhas são inseridas ou removidas entre as requisições.
 
 ### 3. Operações atômicas com `transaction`
 
@@ -396,7 +396,7 @@ async function createUser(input: CreateUserInput) {
 * **Filtros combinados** – `projectId + status` para listagem de tarefas.
 * **Ordenação** – índices que suportam `ORDER BY` evitam *filesort*.
 
-### 2. Evite o **N+1 problem** com `include`
+### 2. Evite o problema **N+1** com `include`
 
 Sem `include`, ao buscar projetos você pode acabar disparando uma query por projeto para trazer as tasks. Use `include` ou **batch loading**:
 

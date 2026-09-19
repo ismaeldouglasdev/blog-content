@@ -23,7 +23,7 @@ In this article, we'll explore how Flexbox and Grid work, their main characteris
 <figure>
   <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-17-css-grid-e-flexbox-quando-usar-cada-um.jpg" alt="Responsive design: the same website adapted to desktop and mobile." loading="lazy" />
   <figcaption>
-    Responsive design: the same website adapted to desktop and mobile. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ADesign_responsivo.png">Design responsivo.png</a> por Diego Mariano —
+    Responsive design: the same website adapted to desktop and mobile. — Image: <a href="https://commons.wikimedia.org/wiki/File%3ADesign_responsivo.png">Design responsivo.png</a> by Diego Mariano —
     <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · via Wikimedia Commons
   </figcaption>
 </figure>

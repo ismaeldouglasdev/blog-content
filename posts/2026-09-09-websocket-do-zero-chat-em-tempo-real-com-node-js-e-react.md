@@ -100,7 +100,7 @@ export const useChat = () => {
 };
 ```
 
-Nesse código, estabelecemos uma conexão com o servidor e ouvimos por mensagens do chat. Quando uma nova mensagem chega, ela é adicionada ao estado `messages`. O método `sendMessage` é usado para enviar mensagens ao servidor.
+Nesse código, estabelecemos uma conexão com o servidor e ouvimos as mensagens do chat. Quando uma nova mensagem chega, ela é adicionada ao estado `messages`. O método `sendMessage` é usado para enviar mensagens ao servidor.
 
 ### Salas e broadcast
 
@@ -167,7 +167,7 @@ socket.on('chat message', async ({ room, msg }) => {
 });
 ```
 
-### Reconnection e fallback
+### Reconexão e fallback
 
 Um dos aspectos mais importantes ao trabalhar com WebSockets é a gestão de reconexões e a implementação de fallback. O Socket.IO já possui uma implementação básica de reconexão que tentará reconectar o cliente em caso de perda de conexão. No entanto, é sempre bom ter uma estratégia de fallback.
 
@@ -185,7 +185,7 @@ useEffect(() => {
 }, [socket]);
 ```
 
-### Produção: scaling
+### Produção: escalabilidade
 
 Quando sua aplicação começa a ganhar popularidade, é crucial pensar em escalabilidade. O Socket.IO pode ser escalado horizontalmente usando um adaptador como o `socket.io-redis`, que permite que múltiplas instâncias do seu servidor se comuniquem entre si. Para isso, instale o adaptador:
 
@@ -205,7 +205,7 @@ Isso permitirá que suas instâncias do servidor Socket.IO compartilhem eventos,
 
 ### Conclusão
 
-Criar um chat em tempo real com WebSockets utilizando Node.js e React é uma tarefa bastante acessível e oferece uma ótima oportunidade para aprender sobre comunicação bidirecional. aqui, cobrimos desde a configuração básica até a implementação de funcionalidades como salas, persistência de mensagens e escalabilidade.
+Criar um chat em tempo real com WebSockets utilizando Node.js e React é uma tarefa bastante acessível e oferece uma ótima oportunidade para aprender sobre comunicação bidirecional. Aqui, cobrimos desde a configuração básica até a implementação de funcionalidades como salas, persistência de mensagens e escalabilidade.
 
 ### Takeaways práticos:
 - O WebSocket é ideal para aplicações que exigem comunicação em tempo real.

@@ -3,7 +3,7 @@ title: "The History of TypeScript: From Accident to Industry Standard"
 date: "2026-08-22"
 category: "curiosidade"
 tags: ["typescript", "historia", "javascript"]
-excerpt: "In October 2012, Microsoft announced TypeScript, reshaping JavaScript development. At the time, teams maintaining large JavaScript."
+excerpt: "In October 2012, Microsoft announced TypeScript, reshaping JavaScript development. At the time, teams maintaining large JavaScript applications were facing a maintainability crisis. This is the story of the experimental project that became the industry standard."
 lang: "en"
 translation_of: "2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria"
 ---
@@ -18,7 +18,7 @@ In October 2012, Microsoft made an announcement that would change the directio
 <figure>
   <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria.jpg" alt="The TypeScript logo, created by Microsoft." loading="lazy" />
   <figcaption>
-    The TypeScript logo, created by Microsoft. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ATypeScript_Logo.svg">TypeScript Logo.svg</a> por Microsoft —
+    The TypeScript logo, created by Microsoft. — Image: <a href="https://commons.wikimedia.org/wiki/File%3ATypeScript_Logo.svg">TypeScript Logo.svg</a> by Microsoft —
     <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a> · via Wikimedia Commons
   </figcaption>
 </figure>

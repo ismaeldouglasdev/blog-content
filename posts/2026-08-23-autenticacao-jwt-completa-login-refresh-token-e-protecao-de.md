@@ -11,7 +11,7 @@ lang: "pt"
 
 Quando um aplicativo web começa a receber mais de alguns poucos usuários, a abordagem de sessão baseada em cookie simplesmente não escala. É o cenário clássico de quem opera qualquer aplicação que cresce: o tráfego aumenta, a sessão armazenada no lado do servidor vira gargalo, a latência do banco dispara e a resposta natural é migrar para tokens JWT. Em vez de armazenar um ID de sessão em um banco de dados e verificar isso a cada solicitação, podemos assinar dados e verificá-los em qualquer lugar.
 
-JWT se tornou o padrão para APIs modernas, principalmente porque funciona bem com microsserviços e clientes móveis. No entanto, a praticidade vem com responsabilidades. Uma implementação descuidada pode transformar um sistema aparentemente seguro em um alvo fácil para atacantes. Este artigo percorre o ciclo de vida completo de autenticação: desde o primeiro login até a renovação de credenciais e a proteção das rotas. Vou compartilhar soluções que usei em produção, armadilhas que eu já passei por ter que consertar e dicas práticas que funcionam na vida real. Nada é teórico aqui; cada trecho de código foi testado e funciona.
+JWT se tornou o padrão para APIs modernas, principalmente porque funciona bem com microsserviços e clientes móveis. No entanto, a praticidade vem com responsabilidades. Uma implementação descuidada pode transformar um sistema aparentemente seguro em um alvo fácil para atacantes. Este artigo percorre o ciclo de vida completo de autenticação: desde o primeiro login até a renovação de credenciais e a proteção das rotas. Vou compartilhar soluções que usei em produção, armadilhas pelas quais já passei e precisei consertar e dicas práticas que funcionam na vida real. Nada é teórico aqui; cada trecho de código foi testado e funciona.
 
 ## O Fluxo de Login Completo
 
@@ -77,7 +77,7 @@ Na minha experiência, é importante nunca expor o refresh token via JSON; um co
 
 ### Access Token
 
-O access token carrega as informações que você precisa para autorizar ações. Eu sempre incluo um identificador de usuário mínimo e um papel (ou função). Nunca coloque informações confidenciais—como senha—dentro do token, mesmo que ele seja assinado. A assinatura impede a adulteração, mas o payload é visível para qualquer pessoa que decodifique o token.
+O access token carrega as informações que você precisa para autorizar ações. Eu sempre incluo um identificador de usuário mínimo e um papel (ou função). Nunca coloque informações confidenciais—como senhas—dentro do token, mesmo que ele seja assinado. A assinatura impede a adulteração, mas o payload é visível para qualquer pessoa que decodifique o token.
 
 ```js
 const accessToken = jwt.sign(
@@ -211,7 +211,7 @@ router.post('/refresh', async (req, res) => {
 });
 ```
 
-Na minha experiência, muitas APIs simplesmente renovam o access token sem girar o refresh. Isso está bem se você pode confiar no dispositivo do usuário (por exemplo, um SPA em um navegador confiável). No entanto, para aplicativos móveis ou backends que expõem um refresh endpoint, a rotação adiciona uma camada extra de segurança.
+Na minha experiência, muitas APIs simplesmente renovam o access token sem girar o refresh. Isso está bem se você pode confiar no dispositivo do usuário (por exemplo, um SPA em um navegador confiável). No entanto, para aplicativos móveis ou backends que expõem um endpoint de refresh, a rotação adiciona uma camada extra de segurança.
 
 ## Blacklist e Invalidação
 
@@ -335,7 +335,7 @@ Um access token de 24 horas aumenta o risco de uso indevido. Mantenha o access t
 
 ### 5. Armazenar Segredos em Código-Fonte
 
-Mantenha `JWT
+Mantenha `JWT_SECRET` e `JWT_REFRESH_SECRET` fora do código-fonte, em variáveis de ambiente.
 ## 📸 Crédito da imagem de capa
 - **Imagem:** [DOM Security Lock and Key.JPG](https://commons.wikimedia.org/wiki/File%3ADOM_Security_Lock_and_Key.JPG)
 - **Autor(a):** ItalianLocksmith

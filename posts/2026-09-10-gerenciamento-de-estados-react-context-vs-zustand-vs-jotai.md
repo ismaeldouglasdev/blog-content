@@ -14,7 +14,7 @@ Você já passou uma tarde inteira debugando uma atualização que não disparav
 
 O React é poderoso, mas ele não vem com uma solução pronta para o que acontece quando o `useState` começa a vazar pelo app inteiro. Com o tempo, você percebe que state management não é um *nice to have*: é o que separa um código sustentável de uma estrutura que desaba com a primeira feature nova.
 
-Tive que lidar com isso de verdade num projeto recente: o `inventory-service`, que sincroniza catálogo e estoque entre OSPOS e marketplaces. A principio, parecia simples: um estado global para o carrinho, outro para o estoque. Mas quando você começa a lidar com atualizações concorrentes, retry automático de requisições e múltiplos endpoints, o estado começa a ter vida própria. Foi ali que decidi investir tempo em entender as opções além do Context.
+Tive que lidar com isso de verdade num projeto recente: o `inventory-service`, que sincroniza catálogo e estoque entre OSPOS e marketplaces. A princípio, parecia simples: um estado global para o carrinho, outro para o estoque. Mas quando você começa a lidar com atualizações concorrentes, retry automático de requisições e múltiplos endpoints, o estado começa a ter vida própria. Foi ali que decidi investir tempo em entender as opções além do Context.
 
 Vou comparar três abordagens que encontrei na prática: React Context (a nativa), Zustand (a minimalista) e Jotai (a atômica). Nada de teoria pura: o que funciona, o que dói e em que cenário cada um se comporta bem.
 
@@ -24,7 +24,7 @@ O React Context é nativo, não precisa de dependências externas e funciona. É
 
 O Context é ótimo para valores que mudam raramente: temas, autenticação, configurações globais. Por exemplo, num projeto de ONG que fiz (Mensageiros da Esperança), o contexto serve bem para armazenar o usuário logado e permissões: mudam só no login/logout.
 
-O problema surge quando você tenta usar o Context para estado que muda com frequência: inputs de formulários, lists de produtos em carrinho, status de carregamento. Cada atualização disso dispara re-renders em todos os consumers, mesmo que o valor consumido por aquele componente específico não tenha mudado. É o famoso "over-rendering".
+O problema surge quando você tenta usar o Context para estado que muda com frequência: inputs de formulários, listas de produtos em carrinho, status de carregamento. Cada atualização disso dispara re-renders em todos os consumidores, mesmo que o valor consumido por aquele componente específico não tenha mudado. É o famoso "over-rendering".
 
 Num dos meus primeiros projetos com React (um dashboard para ricing Linux), comecei com Context para tudo. O resultado? Quando o usuário mudava o slider de transparência do Hyprland (sim, isso era um estado no app), o app inteiro re-renderizava, e isso incluía listas de pacotes, previews de temas, configurações. Não era sustentável.
 
@@ -93,7 +93,7 @@ function StockBadge({ sku }: { sku: string }) {
 
 O `shallow` (do `zustand/shallow`) compara referências superficialmente: importante quando você retorna objetos ou arrays no seletor. Isso evita re-renders mesmo que o restante do estado mude.
 
-## Jotai: atomic state, sem complicações
+## Jotai: estado atômico, sem complicações
 
 Jotai segue outro princípio: estado atômico. Em vez de um único objeto grande, você divide o estado em pequenas unidades ("atoms") que podem ser combinadas livremente.
 
@@ -134,23 +134,23 @@ function TaskList() {
 }
 ```
 
-E se você precisa mutate? O Jotai tem atoms mutáveis (com `write`), mas recomenda-se preferir atoms derivados sempre que possível. Isso tira a tentação de colocar lógica imperativa direto no estado.
+E se você precisa mutar? O Jotai tem atoms mutáveis (com `write`), mas recomenda-se preferir atoms derivados sempre que possível. Isso tira a tentação de colocar lógica imperativa direto no estado.
 
-No `Plexo`, usei Jotai para o state de UI (tabs abertas, filtros, seleção atual) e mantive a lógica de persistência separada com middleware customizado. A separação de responsabilidades ficou clara: atoms para dados, hooks/services para efeitos colaterais.
+No `Plexo`, usei Jotai para o estado de UI (tabs abertas, filtros, seleção atual) e mantive a lógica de persistência separada com middleware customizado. A separação de responsabilidades ficou clara: atoms para dados, hooks/services para efeitos colaterais.
 
 ## Comparando performance
 
 Performance não é só sobre quantos ms leva para atualizar: é sobre quantos componentes re-renderizam, quantas verificações de igualdade são feitas e como o garbage collector se sente.
 
-No contexto tradicional (sem memoização), cada atualização de contexto dispara re-renders em todos os components que consumem aquele contexto, mesmo que o valor específico usado por cada um não mude. O React não tem como saber disso, já que o objeto retornado pelo provider é novo a cada render.
+No contexto tradicional (sem memoização), cada atualização de contexto dispara re-renders em todos os componentes que consumem aquele contexto, mesmo que o valor específico usado por cada um não mude. O React não tem como saber disso, já que o objeto retornado pelo provider é novo a cada render.
 
-Zustand evita isso com o hook `useStore` que usa referência de estado interno (via `useSyncExternalStore`) e comparação seletiva. Só quem usa o estado modificado re-renderiza. No testes que fiz com listas de 100+ itens (como no dashboard do inventory-service), o Zustand manteve 60fps mesmo com atualizações frequentes.
+Zustand evita isso com o hook `useStore` que usa referência de estado interno (via `useSyncExternalStore`) e comparação seletiva. Só quem usa o estado modificado re-renderiza. Nos testes que fiz com listas de 100+ itens (como no dashboard do inventory-service), o Zustand manteve 60fps mesmo com atualizações frequentes.
 
-Jotai brilha quando você tem muitos átomos interdependentes. Cada atom sabe quais outros atoms ele lê, então só recalcula os derivados que precisam. Num cenário de filter + search + pagination (como num dos meus tests de prototype), Jotai re-renderizou apenas o necessário: a lista, não os filtros.
+Jotai brilha quando você tem muitos átomos interdependentes. Cada atom sabe quais outros atoms ele lê, então só recalcula os derivados que precisam. Num cenário de filter + search + pagination (como num dos meus testes de protótipo), Jotai re-renderizou apenas o necessário: a lista, não os filtros.
 
-Mas cuidado com abuso de atoms derivados em cascata. Se você tiver 10 levels de `atom((get) => get(anotherAtom))`, cada mudança no fundo dispara recalculo em todos. Jotai é rápido, mas não mágico.
+Mas cuidado com abuso de atoms derivados em cascata. Se você tiver 10 níveis de `atom((get) => get(anotherAtom))`, cada mudança no fundo dispara recálculo em todos. Jotai é rápido, mas não mágico.
 
-Context sem memoização: lento. Context com `useMemo` em cada provider e `React.memo` em cada consumer: trabalhoso, mas possível. Zustand/Jotai: menos código, menos surpresas.
+Context sem memoização: lento. Context com `useMemo` em cada provider e `React.memo` em cada consumidor: trabalhoso, mas possível. Zustand/Jotai: menos código, menos surpresas.
 
 ## Quando usar cada um
 
@@ -160,18 +160,18 @@ Context sem memoização: lento. Context com `useMemo` em cada provider e `React
 - Quando você já tem uma árvore de componentes complexa e não quer reescrever
 
 **Zustand:**
-- Estado global que muda com frequência (carrinhos, forms, lists)
+- Estado global que muda com frequência (carrinhos, formulários, listas)
 - Quando você quer uma API simples e direta
 - Para projetos onde testabilidade e persistência são importantes
 - Quando você precisa de middleware personalizado (persist, logger, middleware de API)
 
 **Jotai:**
-- Estados complexos com muitos valores interdependentes (dashboards, ferramentas de editing)
+- Estados complexos com muitos valores interdependentes (dashboards, ferramentas de edição)
 - Quando você quer evitar state nesting e preferir composição
 - Para componentes que precisam de múltiplos valores independentes
-- Quando performance de atualização específica é crítica (ex: grids grandes, lists com drag-and-drop)
+- Quando performance de atualização específica é crítica (ex: grids grandes, listas com drag-and-drop)
 
-No `lead-pipeline`, por exemplo, usei Zustand para o estado global do pipeline (passos, status atual) e Jotai para o editor de lead (formulário com many fields, validações). Os dois se complementam bem.
+No `lead-pipeline`, por exemplo, usei Zustand para o estado global do pipeline (passos, status atual) e Jotai para o editor de lead (formulário com muitos campos, validações). Os dois se complementam bem.
 
 ## O que fazer se já usa Context?
 
@@ -181,7 +181,7 @@ Migração não precisa ser de um dia para o outro. Você pode fazer por camadas
 
 2. **Extraia para um store:** pegue o valor do contexto e crie um Zustand/Jotai equivalente. Não mude nada no componente ainda.
 
-3. **Substitua consume um por um:** comece pelos componentes mais simples. Se você usa `useContext(MyContext)` e o valor é usado direto, mude para `useMyStore((s) => s.value)`.
+3. **Substitua o consumo um por um:** comece pelos componentes mais simples. Se você usa `useContext(MyContext)` e o valor é usado direto, mude para `useMyStore((s) => s.value)`.
 
 4. **Use middleware para migração:** Zustand tem `persist` que lê JSON antigo do localStorage, então você pode migrar valores antigos de Context para Zustand sem perder estado.
 
@@ -197,16 +197,16 @@ State management em React não é sobre escolher o mais popular: é sobre escolh
 
 - **Zustand** é a minha escolha padrão hoje: API simples, performance boa, flexível o suficiente para middleware customizado. É o "middle ground" entre minimalismo e poder.
 
-- **Jotai** brilha em aplicações onde o estado é naturalmente modular: dashboards, ferramentas de editing, qualquer coisa com muitos valores interdependentes.
+- **Jotai** brilha em aplicações onde o estado é naturalmente modular: dashboards, ferramentas de edição, qualquer coisa com muitos valores interdependentes.
 
 No fim das contas, o melhor state management é aquele que você entende e consegue manter. Não vale trocar Zustand por Context só porque é nativo, ou vice-versa. Mas saber quando cada um faz sentido? Isso sim faz a diferença entre um projeto que escala e um que colapsa com a primeira feature nova.
 
 ### Takeaways práticos
 
 - Comece com `useState` local e contextos simples. Migre quando a dor for real, não antes.
-- Se você precisa de persistência ou middleware, Zustand paga better.
-- Para estados complexos com many derivadas, Jotai evita re-renders em cascata.
-- Nunca use contexto sem memoização para estado que muda com frequência, ou use `useContext` com `useMemo` no provider e `React.memo` nos consumers (mas isso já tira a simplicidade).
+- Se você precisa de persistência ou middleware, Zustand compensa mais.
+- Para estados complexos com muitas derivadas, Jotai evita re-renders em cascata.
+- Nunca use contexto sem memoização para estado que muda com frequência, ou use `useContext` com `useMemo` no provider e `React.memo` nos consumidores (mas isso já tira a simplicidade).
 - Teste performance com DevTools Profiler: veja quantos componentes re-renderizam com uma atualização.
 
 O state management é invisível até quando quebra. Investir tempo em escolher certo vale mais que escolher "certo" hoje e ter que reescrever amanhã.

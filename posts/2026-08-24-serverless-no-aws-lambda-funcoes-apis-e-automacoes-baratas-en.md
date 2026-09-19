@@ -22,7 +22,7 @@ Below, I’ll show how to build functions, APIs, and triggers in a practical and
 <figure>
   <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas.jpg" alt="Wikimedia Foundation servers: the infrastructure behind on-demand services." loading="lazy" />
   <figcaption>
-    Wikimedia Foundation servers: the infrastructure behind on-demand services. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AWikimedia_Foundation_Servers-8055_08.jpg">Wikimedia Foundation Servers-8055 08.jpg</a> por Victorgrigas —
+    Wikimedia Foundation servers: the infrastructure behind on-demand services. — Image: <a href="https://commons.wikimedia.org/wiki/File%3AWikimedia_Foundation_Servers-8055_08.jpg">Wikimedia Foundation Servers-8055 08.jpg</a> by Victorgrigas —
     <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> · via Wikimedia Commons
   </figcaption>
 </figure>
@@ -185,7 +185,7 @@ This architecture helped me maintain consistency across sales channels without n
 
 ## 4. Cold start and mitigation strategies  
 
-A **cold start** occurs when Lambda has to spin up a new execution environment because no warm instances are available. The time spent can range from a few milliseconds to several seconds, depending on the runtime and the amount of dependencies.
+A **cold start** occurs when Lambda has to spin up a new execution environment because no warm instances are available. The time spent can range from a few milliseconds to several seconds, depending on the runtime and the number of dependencies.
 
 ### 4.1 Main causes  
 
@@ -282,7 +282,7 @@ With `cdk deploy` the full stack is created, and future changes are handled as a
 
 ## 7. Practical Conclusion  
 
-Serverless on AWS isn’t just a fad; it’s a strategy that lets developers – even those coming from backgrounds like retail and PDV – deliver cheap, scalable APIs and automations.  
+Serverless on AWS isn’t just a fad; it’s a strategy that lets developers – even those coming from backgrounds like retail and POS – deliver cheap, scalable APIs and automations.  
 
 In my journey, the experience of migrating **10 k products** between store systems taught me that integration must be lightweight and resilient. The Lambdas I wrote to connect OSPOS to Mercado Livre proved that, with just a few megabytes of code, you can move thousands of orders without needing a dedicated server.  
 

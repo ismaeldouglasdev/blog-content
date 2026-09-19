@@ -16,11 +16,11 @@ A NVIDIA apresentou a GeForce RTX 5090 durante a CES 2026, levando a arquitetura
 
 A RTX 5090 chega com 32 GB de GDDR7 em barramento de 512 bits, um salto considerável em relação aos 24 GB da RTX 4090. A NVIDIA promete ganhos de até 2x em ray tracing e eficiência energética 40% melhor que a geração anterior, com o mesmo TDP de 450W.
 
-O que mais me chama atenção é o DLSS 4. A geração anterior já era impressionante em upscaling, mas a versão nova ataca exatamente onde a 4090 sofria: cenas com path tracing pesado em 4K. As primeiras análises independentes que saíram confirmam boa parte do que foi prometido, o que nem sempre acontece em lançamentos desse porte.
+O que mais me chama a atenção é o DLSS 4. A geração anterior já era impressionante em upscaling, mas a versão nova ataca exatamente onde a 4090 sofria: cenas com path tracing pesado em 4K. As primeiras análises independentes que saíram confirmam boa parte do que foi prometido, o que nem sempre acontece em lançamentos desse porte.
 
 ## Preço e disponibilidade
 
-O preço de lançamento nos EUA é de US$ 1.999. É alto, mas consistente com o posicionamento premium da linha xx90. No Brasil, a estimativa gira entre R$ 14.000 e R$ 16.000 dependendo do modelo, Founders Edition ou das parceiras AIB.
+O preço de lançamento nos EUA é de US$ 1.999. É alto, mas consistente com o posicionamento premium da linha xx90. No Brasil, a estimativa gira entre R$ 14.000 e R$ 16.000 dependendo do modelo, Founders Edition ou parceiras AIB.
 
 A disponibilidade está prevista para o fim de janeiro de 2026, com estoque inicial limitado. A comunidade já alerta que scalpers devem dificultar a compra nos primeiros meses, então quem quiser uma no lançamento precisa de alerta de estoque e paciência.
 

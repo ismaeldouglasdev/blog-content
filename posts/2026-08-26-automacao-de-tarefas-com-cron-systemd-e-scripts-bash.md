@@ -31,7 +31,7 @@ Esses exemplos ilustram a flexibilidade do `cron` em agendar tarefas para difere
 </figure>
 
 ## Systemd Timers vs Cron
-O `systemd` é um sistema de inicialização e gerenciamento de serviços que também oferece recursos de agendamento de tarefas, conhecidos como timers. Embora o `cron` seja uma ferramenta mais tradicional e amplamente utilizada, os timers do `systemd` oferecem algumas vantagens, como a capacidade de executar tarefas em paralelo e a possibilidade de configurar dependências entre serviços. No entanto, a escolha entre `cron` e `systemd` timers depende do específico caso de uso e das necessidades do sistema.
+O `systemd` é um sistema de inicialização e gerenciamento de serviços que também oferece recursos de agendamento de tarefas, conhecidos como timers. Embora o `cron` seja uma ferramenta mais tradicional e amplamente utilizada, os timers do `systemd` oferecem algumas vantagens, como a capacidade de executar tarefas em paralelo e a possibilidade de configurar dependências entre serviços. No entanto, a escolha entre `cron` e `systemd` timers depende do caso de uso específico e das necessidades do sistema.
 
 ## Scripts Robustos
 Para garantir a robustez dos scripts, é fundamental implementar mecanismos de tratamento de erros e exceções. Isso pode ser feito utilizando comandos como `try`-`catch` ou `if`-`else` para lidar com situações inesperadas. Além disso, é importante testar os scripts em diferentes cenários e ambientes para garantir sua estabilidade e confiabilidade. Por exemplo, no meu projeto `inventory-service`, utilizei um script Bash para sincronizar o catálogo de produtos com o Mercado Livre, e implementei mecanismos de tratamento de erros para lidar com possíveis falhas na comunicação com a API.

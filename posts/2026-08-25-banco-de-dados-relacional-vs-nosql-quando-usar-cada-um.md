@@ -7,7 +7,7 @@ excerpt: "Escolher o banco de dados errado no início de um projeto garante refa
 lang: "pt"
 ---
 
-Escolher o banco de dados errado no início de um projeto garante refatorações dolorosas no futuro. A discussão entre bancos relacionais (SQL) e não-relacionais (NoSQL) frequentemente cai em modismos: ha momentos em que a comunidade decide que tudo deve ser documento JSON e, anos depois, percebe que precisava de transacoes ACID e integridade referencial.
+Escolher o banco de dados errado no início de um projeto garante refatorações dolorosas no futuro. A discussão entre bancos relacionais (SQL) e não-relacionais (NoSQL) frequentemente cai em modismos: há momentos em que a comunidade decide que tudo deve ser documento JSON e, anos depois, percebe que precisava de transações ACID e integridade referencial.
 
 Em 2020, quando precisei migrar um catálogo com mais de 10 mil produtos entre sistemas de PDV na Loja Quase Tudo, a importância da integridade de dados ficou clara. Qualquer falha na associação de códigos de barra, preços e estoques resultaria em divergência financeira direta na operação do caixa. Por outro lado, ao construir aplicações com estruturas de dados dinâmicas ou pipelines de atualização constante, a rigidez do SQL pode se tornar um gargalo de desenvolvimento inicial se a modelagem não for bem alinhada.
 
@@ -24,13 +24,13 @@ A decisão entre SQL e NoSQL não é sobre qual tecnologia é superior, mas sobr
   </figcaption>
 </figure>
 
-## SQL: O PostgreSQL como Padrão da Industria
+## SQL: O PostgreSQL como Padrão da Indústria
 
-Bancos de dados relacionais existem ha mais de quatro décadas e se baseiam na álgebra relacional. Os dados são estruturados em tabelas compostas por linhas e colunas, com tipos de dados estritamente definidos e esquemas (schemas) rígidos impostos no momento da gravação (*schema-on-write*).
+Bancos de dados relacionais existem há mais de quatro décadas e se baseiam na álgebra relacional. Os dados são estruturados em tabelas compostas por linhas e colunas, com tipos de dados estritamente definidos e esquemas (schemas) rígidos impostos no momento da gravação (*schema-on-write*).
 
 O PostgreSQL se consolidou como a escolha padrão para a maioria das aplicações modernas. Ele é um banco de dados relacional objeto-orientado, open-source, extremamente aderente ao padrão SQL e conhecido por sua extensibilidade e robustez técnica.
 
-### Por que o PostgreSQL costuma ser a primeira opcao
+### Por que o PostgreSQL costuma ser a primeira opção
 
 1. **Integridade de Dados e Constraints**: Garantia de que dados inválidos não entram no sistema. Foreign keys, check constraints e tipos customizados garantem a coerência do domínio.
 2. **Suporte Robusto a JSON**: Com o tipo `jsonb`, o PostgreSQL oferece armazenamento binário de documentos JSON com suporte a índices GIN (Generalized Inverted Index), permitindo misturar relacional e não-relacional na mesma base.
@@ -81,7 +81,7 @@ HAVING SUM(o.total_amount) > 500.00
 ORDER BY total_spent DESC;
 ```
 
-A forca desse modelo reside no fato de que o dado e armazenado sem duplicacao (normalizado). Se o email de um cliente muda, alteramos um único registro na tabela `clients`, e todas as relações refletem a informação correta imediatamente.
+A força desse modelo reside no fato de que o dado é armazenado sem duplicação (normalizado). Se o email de um cliente muda, alteramos um único registro na tabela `clients`, e todas as relações refletem a informação correta imediatamente.
 
 ---
 
@@ -90,13 +90,13 @@ A forca desse modelo reside no fato de que o dado e armazenado sem duplicacao (n
 O termo NoSQL (geralmente interpretado como *Not Only SQL*) engloba bancos de dados que abandonam o modelo relacional tradicional em prol de estruturas de dados otimizadas para cenários específicos. As principais categorias incluem:
 
 - **Bancos de Documento**: MongoDB, CouchDB. Armazenam dados em documentos semi-estruturados (JSON, BSON).
-- **Chave-Valor**: Redis, Memcached. Armazenamento extremamente rápido em memoria para cache e gerenciamento de estado.
-- **Bancos de Colunas Largas**: Apache Cassandra, ScyllaDB. Otimizados para gravação massiva e consultas por chaves de particao.
-- **Bancos de Grafo**: Neo4j, Amazon Neptune. Otimizados para navegar em relacionamentos complexos (redes sociais, deteccao de fraudes).
+- **Chave-Valor**: Redis, Memcached. Armazenamento extremamente rápido em memória para cache e gerenciamento de estado.
+- **Bancos de Colunas Largas**: Apache Cassandra, ScyllaDB. Otimizados para gravação massiva e consultas por chaves de partição.
+- **Bancos de Grafo**: Neo4j, Amazon Neptune. Otimizados para navegar em relacionamentos complexos (redes sociais, detecção de fraudes).
 
 ### MongoDB: O Modelo Baseado em Documentos
 
-O MongoDB armazena dados na forma de documentos BSON (Binary JSON). Diferente do SQL, onde os dados são divididos em várias tabelas normalizadas, o MongoDB encoraja o agrupamento de dados correlacionados dentro do mesmo documento (desnormalizacao).
+O MongoDB armazena dados na forma de documentos BSON (Binary JSON). Diferente do SQL, onde os dados são divididos em várias tabelas normalizadas, o MongoDB encoraja o agrupamento de dados correlacionados dentro do mesmo documento (desnormalização).
 
 Isso elimina a necessidade de JOINs caros em leitura, permitindo buscar um documento inteiro e suas dependências em uma única operação de I/O de disco.
 
@@ -141,11 +141,11 @@ async function createOrder() {
 }
 ```
 
-A flexibilidade do *schema-on-read* permite adicionar novos campos a um documento sem necessidade de executar migração de schema no banco (`ALTER TABLE`). Contudo, essa flexibilidade e uma faca de dois gumes: a responsabilidade de garantir a estrutura dos dados passa integralmente para o código da aplicação.
+A flexibilidade do *schema-on-read* permite adicionar novos campos a um documento sem necessidade de executar migração de schema no banco (`ALTER TABLE`). Contudo, essa flexibilidade é uma faca de dois gumes: a responsabilidade de garantir a estrutura dos dados passa integralmente para o código da aplicação.
 
 ### Redis: Armazenamento Chave-Valor de Alta Performance
 
-O Redis opera inteiramente em memoria RAM, oferecendo tempos de resposta sub-milissegundos. Ele não é pensado para substituir o banco de dados principal de persistência, mas para atuar como camada de cache, fila de mensagens ou gerenciador de sessões.
+O Redis opera inteiramente em memória RAM, oferecendo tempos de resposta sub-milissegundos. Ele não é pensado para substituir o banco de dados principal de persistência, mas para atuar como camada de cache, fila de mensagens ou gerenciador de sessões.
 
 ```python
 import redis
@@ -173,20 +173,20 @@ def get_user_profile(user_id: str):
 
 ---
 
-## Modelagem de Dados: Estruturacao vs Flexibilidade
+## Modelagem de Dados: Estruturação vs Flexibilidade
 
-A maior diferença prática entre SQL e NoSQL esta na abordagem da modelagem de dados.
+A maior diferença prática entre SQL e NoSQL está na abordagem da modelagem de dados.
 
-### Normalizacao (SQL)
+### Normalização (SQL)
 
-A normalizacao busca eliminar a duplicacao de dados dividindo as entidades em tabelas próprias vinculadas por chaves estrangeiras.
+A normalização busca eliminar a duplicação de dados dividindo as entidades em tabelas próprias vinculadas por chaves estrangeiras.
 
-- **Vantagens**: Fonte única da verdade. Atualizar um registro e uma operação simples e atômica. Menor uso de espaço em disco.
-- **Desvantagens**: Leituras de dados complexos exigem múltiplos JOINs, o que consome CPU e memoria a medida que as tabelas crescem significativamente.
+- **Vantagens**: Fonte única da verdade. Atualizar um registro é uma operação simples e atômica. Menor uso de espaço em disco.
+- **Desvantagens**: Leituras de dados complexos exigem múltiplos JOINs, o que consome CPU e memória à medida que as tabelas crescem significativamente.
 
-### Desnormalizacao (NoSQL / Documentos)
+### Desnormalização (NoSQL / Documentos)
 
-A desnormalizacao prioriza o padrão de acesso de leitura. Se a tela da
+A desnormalização prioriza o padrão de acesso de leitura. Se a tela da
 ## 📸 Crédito da imagem de capa
 - **Imagem:** [Cable racks at grid computing center, Fermilab with blue lights.jpg](https://commons.wikimedia.org/wiki/File%3ACable_racks_at_grid_computing_center%2C_Fermilab_with_blue_lights.jpg)
 - **Autor(a):** ENERGY.GOV

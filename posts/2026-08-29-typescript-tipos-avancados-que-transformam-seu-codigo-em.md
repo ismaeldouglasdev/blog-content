@@ -9,11 +9,11 @@ lang: "pt"
 
 ## Tipos Avançados do TypeScript que Evitam Bugs em Produção
 
-Uma produção quebra no banco de dados porque um número foi passado como string. Um estado de autenticação vira `null` em vez de `Authenticated`, permitindo acesso não autorizado. A interface quebrada porque a tipagem não via que o campo era opcional. Esses são os tipos de dor que acontecem quando a lógica é deixada para a sorte.
+Uma produção quebra no banco de dados porque um número foi passado como string. Um estado de autenticação vira `null` em vez de `Authenticated`, permitindo acesso não autorizado. A interface quebrou porque a tipagem não via que o campo era opcional. Esses são os tipos de dor que acontecem quando a lógica é deixada para a sorte.
 
 Muitos iniciantes em TypeScript aprendem a sintaxe: declarar uma variável, usar interfaces e types básicos. Entretanto, a transição de escrever código que "compila" para escrever código que "resiste" em produção exige o uso de recursos mais profundos. Construo software de verdade desde 2024 e já vi projetos que parecem sólidos no desenvolvimento local quebrarem rotineiramente devido a conflitos de tipagem mal definidos.
 
-aqui, vou explorar como utilizar recursos avançados do TypeScript para criar interfaces de código mais robustas, reduzir bugs em tempo de execução e facilitar a manutenção de sistemas sob medida, como o ecossistema que estou construindo para meus produtos SaaS e contribuições open source.
+Aqui, vou explorar como utilizar recursos avançados do TypeScript para criar interfaces de código mais robustas, reduzir bugs em tempo de execução e facilitar a manutenção de sistemas sob medida, como o ecossistema que estou construindo para meus produtos SaaS e contribuições open source.
 
 
 <figure>
@@ -24,15 +24,15 @@ aqui, vou explorar como utilizar recursos avançados do TypeScript para criar in
   </figcaption>
 </figure>
 
-### Generics com Restrices
+### Generics com Restrições
 
-O grande poder do TypeScript reside na capacidade de reutilizar lógica com tipos variáveis. Isso é feito através de Generics, mas nem sempre funcionam bem com qualquer tipo. É aqui que entram as Restrices.
+O grande poder do TypeScript reside na capacidade de reutilizar lógica com tipos variáveis. Isso é feito através de Generics, mas nem sempre funcionam bem com qualquer tipo. É aqui que entram as Restrições.
 
-Imaginemos que estamos construindo um sistema de inventário similar ao que trabalho em meus projetos de e-commerce. Precisamos criar uma função que salve dados no banco de dados, mas ela deve respeitar a estrutura de uma entidade do sistema. Se tentarmos passar um tipo genérico `T` sem restrições, o TypeScript não sabe o que o `T` possui, resultando em erros ou métodos inexistentes sendo chamados.
+Imaginemos que estamos construindo um sistema de inventário similar ao que uso em meus projetos de e-commerce. Precisamos criar uma função que salve dados no banco de dados, mas ela deve respeitar a estrutura de uma entidade do sistema. Se tentarmos passar um tipo genérico `T` sem restrições, o TypeScript não sabe o que o `T` possui, resultando em erros ou métodos inexistentes sendo chamados.
 
 Usando o operador `extends`, podemos dizer que `T` deve ser um objeto que tenha uma propriedade `id`. Isso cria uma segurança vital. Se a futura equipe adicionar um novo campo ao schema do banco de dados, o TypeScript irá apontar exatamente onde a referência a esse campo precisa ser atualizada no código que usa o generic.
 
-A prática de usar generics com restrições evita que funções genéricas aceitem tipos inapropriados, prevenindo comportamentos silenciosos de erro. Isso é crucial em sistemas complexos onde a interação entre o front-end (React) e o back-end (Node.js ou Python) depende de contratos estritos.
+A prática de usar generics com restrições evita que funções genéricas aceitem tipos inapropriados, prevenindo erros silenciosos. Isso é crucial em sistemas complexos onde a interação entre o front-end (React) e o back-end (Node.js ou Python) depende de contratos estritos.
 
 ### Utility Types e a Limpeza do Boilerplate
 
@@ -52,9 +52,9 @@ Tipos condicionais permitem que o TypeScript verifique a forma de um tipo e reto
 
 Imagine um sistema que processa respostas de diferentes provedores de IA. Cada provedor pode retornar dados no formato JSON, mas a estrutura interna varia. Em vez de criar tipos gigantescos com todas as variações possíveis, podemos usar tipos condicionais e inferência para isolar essas diferenças.
 
-A inferência automática de tipos (`infer`) dentro de expressões condicionais é uma feature avançada que poupa a necessidade de anotações explícitas. O TypeScript infere o tipo do lado direito baseado no que foi passado no lado esquerdo.
+A inferência automática de tipos (`infer`) dentro de expressões condicionais é um recurso avançado que poupa a necessidade de anotações explícitas. O TypeScript infere o tipo do lado direito baseado no que foi passado no lado esquerdo.
 
-Isso reduz drasticamente a verbosidade do código e melhora a legibilidade. Em vez de escrever `string | number | boolean` manualmente para lidar com algo que o TypeScript pode deduzir, usamos tipos condicionais para criar lógica de digitação que se adapta automaticamente ao contexto. Isso é vital para manter a saúde do código em projetos que crescem com o tempo.
+Isso reduz drasticamente a verbosidade do código e melhora a legibilidade. Em vez de escrever `string | number | boolean` manualmente para lidar com algo que o TypeScript pode deduzir, usamos tipos condicionais para criar lógica de tipagem que se adapta automaticamente ao contexto. Isso é vital para manter a saúde do código em projetos que crescem com o tempo.
 
 ### Discriminated Unions para State Machines
 
@@ -70,11 +70,11 @@ O uso de discriminated unions cria um *state machine* seguro no nível da lingua
 
 Vamos aplicar esses conceitos em um cenário prático de API. Quando desenvolvo serviços de backend com Python (FastAPI) ou Node, a tipagem da resposta é o primeiro ponto de ataque contra erros de consumo de API no front-end.
 
-Um cenário comum é uma chamada que retorna um usuário ou uma lista de usuários. Em vez de criar um tipo genérico que falha em situações edge case, usamos uma combinação de Union Types e Generics.
+Um cenário comum é uma chamada que retorna um usuário ou uma lista de usuários. Em vez de criar um tipo genérico que falha em situações de borda, usamos uma combinação de Union Types e Generics.
 
-Pense numa função que busca usuários. Ela pode falhar (Retorna um objeto de erro) ou ter sucesso (Retorna um array). Ao tipar isso corretamente, o desenvolvedor que consome essa API sabe que, se a resposta não for um erro, ele poderá iterar sobre a lista sem verificar se é null ou undefined.
+Pense numa função que busca usuários. Ela pode falhar (retorna um objeto de erro) ou ter sucesso (retorna um array). Ao tipar isso corretamente, o desenvolvedor que consome essa API sabe que, se a resposta não for um erro, ele poderá iterar sobre a lista sem verificar se é null ou undefined.
 
-Este padrão é fundamental para APIs robustas. Ele elimina a necessidade de `try/catch` excessivos para validação de dados e garante que os dados vindos da rede estejam estruturados conforme o contrato. Em projetos comerciais, como o PDV e integrações que gerencio, essa precisão evita perdas financeiras ou falhas na interface
+Este padrão é fundamental para APIs robustas. Ele elimina a necessidade de blocos `try/catch` excessivos para validação de dados e garante que os dados vindos da rede estejam estruturados conforme o contrato. Em projetos comerciais, como o PDV e integrações que gerencio, essa precisão evita perdas financeiras ou falhas na interface.
 ## 📸 Crédito da imagem de capa
 - **Imagem:** [Programming code.jpg](https://commons.wikimedia.org/wiki/File%3AProgramming_code.jpg)
 - **Autor(a):** Martin Vorel
