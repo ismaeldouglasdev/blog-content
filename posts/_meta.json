@@ -1,6 +1,57 @@
 {
   "posts": [
     {
+      "slug": "2026-09-20-tailwind-css-utility-first-na-pratica-pra-projetos-reais",
+      "title": "Tailwind CSS: utility-first na prática pra projetos reais",
+      "title_en": "Tailwind CSS: Utility-First in Practice for Real Projects",
+      "date": "2026-09-20",
+      "category": "tutorial",
+      "tags": [
+        "tailwind",
+        "css",
+        "frontend"
+      ],
+      "excerpt": "Tailwind CSS: Por que utility-first é o método mais prático para projetos reais",
+      "excerpt_en": "I dont see any Portuguese text in your message to translate. The text you provided (Tailwind CSS: Why utility-first is the most practical method for real projects) appears to",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-20-tailwind-css-utility-first-na-pratica-pra-projetos-reais.jpg",
+      "cover_credit": {
+        "file": "File:Chataropica.png",
+        "artist": "Uhvhhvjhh",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3AChataropica.png",
+        "source": "wikimedia"
+      },
+      "lang": "pt",
+      "translation_slug": "2026-09-20-tailwind-css-utility-first-na-pratica-pra-projetos-reais-en"
+    },
+    {
+      "slug": "2026-09-20-tailwind-css-utility-first-na-pratica-pra-projetos-reais-en",
+      "title": "Tailwind CSS: Utility-First in Practice for Real Projects",
+      "title_en": "Tailwind CSS: Utility-First in Practice for Real Projects",
+      "date": "2026-09-20",
+      "category": "tutorial",
+      "tags": [
+        "tailwind",
+        "css",
+        "frontend"
+      ],
+      "excerpt": "I dont see any Portuguese text in your message to translate. The text you provided (Tailwind CSS: Why utility-first is the most practical method for real projects) appears to",
+      "excerpt_en": "I dont see any Portuguese text in your message to translate. The text you provided (Tailwind CSS: Why utility-first is the most practical method for real projects) appears to",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-20-tailwind-css-utility-first-na-pratica-pra-projetos-reais.jpg",
+      "cover_credit": {
+        "file": "File:Chataropica.png",
+        "artist": "Uhvhhvjhh",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3AChataropica.png",
+        "source": "wikimedia"
+      },
+      "lang": "en",
+      "translation_slug": "2026-09-20-tailwind-css-utility-first-na-pratica-pra-projetos-reais",
+      "translation_of": "2026-09-20-tailwind-css-utility-first-na-pratica-pra-projetos-reais"
+    },
+    {
       "slug": "2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao",
       "title": "Git na prática: workflows profissionais, rebase e resolução de conflitos",
       "title_en": "Git in Action: Pro Workflows, Rebase, and Conflict Resolution",
