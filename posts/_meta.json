@@ -1,6 +1,43 @@
 {
   "posts": [
     {
+      "slug": "2026-09-21-arquitetura-limpa-em-typescript-principios-solid-aplicados",
+      "title": "Arquitetura limpa em TypeScript: princípios SOLID aplicados",
+      "title_en": "Clean Architecture in TypeScript: Applying SOLID Principles",
+      "date": "2026-09-21",
+      "category": "article",
+      "tags": [
+        "typescript",
+        "arquitetura",
+        "solid"
+      ],
+      "excerpt": "Introdução Quando se trata de desenvolver software, a arquitetura limpa é fundamental para garantir que o código seja fácil de manter, escalar e entender. No entanto",
+      "excerpt_en": "Clean architecture is key to maintaining scalable code.",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-21-arquitetura-limpa-em-typescript-principios-solid-aplicados.svg",
+      "cover_credit": null,
+      "lang": "pt",
+      "translation_slug": "2026-09-21-arquitetura-limpa-em-typescript-principios-solid-aplicados-en"
+    },
+    {
+      "slug": "2026-09-21-arquitetura-limpa-em-typescript-principios-solid-aplicados-en",
+      "title": "Clean Architecture in TypeScript: Applying SOLID Principles",
+      "title_en": "Clean Architecture in TypeScript: Applying SOLID Principles",
+      "date": "2026-09-21",
+      "category": "article",
+      "tags": [
+        "typescript",
+        "arquitetura",
+        "solid"
+      ],
+      "excerpt": "Clean architecture is key to maintaining scalable code.",
+      "excerpt_en": "Clean architecture is key to maintaining scalable code.",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-21-arquitetura-limpa-em-typescript-principios-solid-aplicados.svg",
+      "cover_credit": null,
+      "lang": "en",
+      "translation_slug": "2026-09-21-arquitetura-limpa-em-typescript-principios-solid-aplicados",
+      "translation_of": "2026-09-21-arquitetura-limpa-em-typescript-principios-solid-aplicados"
+    },
+    {
       "slug": "2026-09-20-tailwind-css-utility-first-na-pratica-pra-projetos-reais",
       "title": "Tailwind CSS: utility-first na prática pra projetos reais",
       "title_en": "Tailwind CSS: Utility-First in Practice for Real Projects",
