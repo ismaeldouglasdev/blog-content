@@ -4,7 +4,7 @@ date: "2026-09-21"
 category: "article"
 tags: ["typescript", "arquitetura", "solid"]
 excerpt: "Introdução Quando se trata de desenvolver software, a arquitetura limpa é fundamental para garantir que o código seja fácil de manter, escalar e entender. No entanto"
-cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-21-arquitetura-limpa-em-typescript-principios-solid-aplicados.svg"
+cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-21-arquitetura-limpa-em-typescript-principios-solid-aplicados.jpg"
 lang: "pt"
 ---
 
