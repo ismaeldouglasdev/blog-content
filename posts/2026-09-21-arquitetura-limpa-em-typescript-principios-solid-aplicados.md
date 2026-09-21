@@ -4,7 +4,7 @@ date: "2026-09-21"
 category: "article"
 tags: ["typescript", "arquitetura", "solid"]
 excerpt: "Introdução Quando se trata de desenvolver software, a arquitetura limpa é fundamental para garantir que o código seja fácil de manter, escalar e entender. No entanto"
-cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-21-arquitetura-limpa-em-typescript-principios-solid-aplicados.svg"
+cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-21-arquitetura-limpa-em-typescript-principios-solid-aplicados.jpg"
 lang: "pt"
 ---
 
@@ -174,3 +174,7 @@ resumindo, os princípios SOLID são fundamentais para criar uma arquitetura lim
 - [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
 - [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/basic-types.html)
 - [Design Patterns](https://en.wikipedia.org/wiki/Design_pattern_(computer_science))
+## 📸 Crédito da imagem de capa
+- **Imagem:** [File:Convento de Santa Maria de Aguiar - Castelo Rodrigo - Portugal (15669320394).jpg](https://commons.wikimedia.org/wiki/File%3AConvento_de_Santa_Maria_de_Aguiar_-_Castelo_Rodrigo_-_Portugal_%2815669320394%29.jpg)
+- **Autor(a):** Vitor Oliveira from Torres Vedras, PORTUGAL
+- **Licença:** [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/) · via Wikimedia Commons
