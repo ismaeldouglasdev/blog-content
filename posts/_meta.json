@@ -1,6 +1,57 @@
 {
   "posts": [
     {
+      "slug": "2026-09-22-postgresql-e-o-renascimento-dos-bancos-sql-relacionais",
+      "title": "PostgreSQL e o renascimento dos bancos SQL relacionais",
+      "title_en": "PostgreSQL and the Resurgence of Relational SQL Databases",
+      "date": "2026-09-22",
+      "category": "curiosidade",
+      "tags": [
+        "postgresql",
+        "database",
+        "tendencias"
+      ],
+      "excerpt": "Introdução A escolha do banco de dados certo é crucial para qualquer projeto de desenvolvimento de software. Nos últimos anos, temos visto um aumento significativo no uso",
+      "excerpt_en": "Choosing the right database is crucial for software development projects.",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-22-postgresql-e-o-renascimento-dos-bancos-sql-relacionais.jpg",
+      "cover_credit": {
+        "file": "File:Body painting - QR code.jpg",
+        "artist": "Exey Panteleev",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3ABody_painting_-_QR_code.jpg",
+        "source": "wikimedia"
+      },
+      "lang": "pt",
+      "translation_slug": "2026-09-22-postgresql-e-o-renascimento-dos-bancos-sql-relacionais-en"
+    },
+    {
+      "slug": "2026-09-22-postgresql-e-o-renascimento-dos-bancos-sql-relacionais-en",
+      "title": "PostgreSQL and the Resurgence of Relational SQL Databases",
+      "title_en": "PostgreSQL and the Resurgence of Relational SQL Databases",
+      "date": "2026-09-22",
+      "category": "curiosidade",
+      "tags": [
+        "postgresql",
+        "database",
+        "tendencias"
+      ],
+      "excerpt": "Choosing the right database is crucial for software development projects.",
+      "excerpt_en": "Choosing the right database is crucial for software development projects.",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-22-postgresql-e-o-renascimento-dos-bancos-sql-relacionais.jpg",
+      "cover_credit": {
+        "file": "File:Body painting - QR code.jpg",
+        "artist": "Exey Panteleev",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3ABody_painting_-_QR_code.jpg",
+        "source": "wikimedia"
+      },
+      "lang": "en",
+      "translation_slug": "2026-09-22-postgresql-e-o-renascimento-dos-bancos-sql-relacionais",
+      "translation_of": "2026-09-22-postgresql-e-o-renascimento-dos-bancos-sql-relacionais"
+    },
+    {
       "slug": "2026-09-21-arquitetura-limpa-em-typescript-principios-solid-aplicados",
       "title": "Arquitetura limpa em TypeScript: princípios SOLID aplicados",
       "title_en": "Clean Architecture in TypeScript: Applying SOLID Principles",
