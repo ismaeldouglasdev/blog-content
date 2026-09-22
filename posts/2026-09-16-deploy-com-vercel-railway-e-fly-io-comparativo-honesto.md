@@ -3,7 +3,7 @@ title: "Deploy com Vercel, Railway e Fly.io: comparativo honesto"
 date: "2026-09-16"
 category: "article"
 tags: ["deploy", "cloud", "vercel", "railway"]
-excerpt: "Introdução Quando se trata de deploy de aplicações web, os desenvolvedores enfrentam uma escolha difícil: qual plataforma usar? Com tantas opções disponíveis, é"
+excerpt: "Comparativo honesto entre Vercel, Railway e Fly.io para deploy de aplicações web: custos, cold starts, DX, limites grátis e quando usar cada um."
 cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-16-deploy-com-vercel-railway-e-fly-io-comparativo-honesto.jpg"
 lang: "pt"
 ---

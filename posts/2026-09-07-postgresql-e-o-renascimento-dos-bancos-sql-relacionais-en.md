@@ -3,7 +3,7 @@ title: "PostgreSQL and the Resurgence of Relational SQL Databases"
 date: "2026-09-07"
 category: "curiosidade"
 tags: ["postgresql", "database", "tendencias"]
-excerpt: "NoSQL databases, promising flexibility and scalability, won developers hearts, but recently"
+excerpt: "After NoSQL dominance, PostgreSQL fought back: JSONB, full-text search, and extensions like PostGIS put SQL back at the center of decisions."
 lang: "en"
 translation_of: "2026-09-07-postgresql-e-o-renascimento-dos-bancos-sql-relacionais"
 ---

@@ -3,7 +3,7 @@ title: "Testing Library: React tests that reflect real‑world usage"
 date: "2026-09-01"
 category: "tutorial"
 tags: ["testing-library", "react", "testes"]
-excerpt: "Have you ever seen a green test in CI, only to open the application and find that the button that should be enabled is still disabled? That disconnect between what the test"
+excerpt: "React tests that reflect real usage: accessible queries, userEvent, async testing, MSW mocking, and coverage beyond quantity."
 lang: "en"
 translation_of: "2026-09-01-testing-library-testes-de-react-que-refletem-o-uso-real"
 ---

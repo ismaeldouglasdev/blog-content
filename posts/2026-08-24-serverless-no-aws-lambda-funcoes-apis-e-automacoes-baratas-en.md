@@ -3,7 +3,7 @@ title: "Serverless on AWS Lambda: Affordable Functions, APIs, and Automation"
 date: "2026-08-24"
 category: "tutorial"
 tags: ["serverless", "aws", "lambda", "cloud"]
-excerpt: "Why “invisible” servers could be the solution for small businesses"
+excerpt: "Serverless on AWS Lambda: how \"invisible\" servers let small businesses run APIs and automations without dedicated infrastructure."
 lang: "en"
 translation_of: "2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas"
 ---

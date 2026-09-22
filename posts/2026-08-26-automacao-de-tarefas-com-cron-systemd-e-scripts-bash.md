@@ -3,7 +3,7 @@ title: "Automação de tarefas com cron, systemd e scripts Bash"
 date: "2026-08-26"
 category: "tutorial"
 tags: ["linux", "automacao", "bash", "systemd"]
-excerpt: "Introdução Quando migrei 10k produtos entre sistemas na Loja Quase Tudo, percebi a importância da automação de tarefas para manter a eficiência e reduzir erros humanos. A"
+excerpt: "Automação de tarefas com cron, systemd e scripts bash: exemplos reais, scripts robustos com logging e os erros clássicos a evitar."
 lang: "pt"
 ---
 

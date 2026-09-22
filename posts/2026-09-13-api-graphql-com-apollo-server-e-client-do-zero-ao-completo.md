@@ -3,7 +3,7 @@ title: "API GraphQL com Apollo Server e Client: do zero ao completo"
 date: "2026-09-13"
 category: "tutorial"
 tags: ["graphql", "apollo", "api"]
-excerpt: "GraphQL com Apollo Server e Client: Do Zero ao Completo"
+excerpt: "GraphQL com Apollo Server e Client: Do Zero ao Completo."
 cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-13-api-graphql-com-apollo-server-e-client-do-zero-ao-completo.jpg"
 lang: "pt"
 ---

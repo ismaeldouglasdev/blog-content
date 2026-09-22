@@ -3,7 +3,7 @@ title: "Serverless with AWS Lambda: Low-Cost Functions, APIs, and Automation"
 date: "2026-08-27"
 category: "tutorial"
 tags: ["serverless", "aws", "lambda", "cloud"]
-excerpt: "Introduction: Serverless and When It's Worth It. When it comes to software development, one of the biggest challenges is the infrastructure needed to run applications."
+excerpt: "Serverless on AWS with Lambda: cheap APIs and automations with API Gateway, event triggers, cold start mitigation, and a real cost comparison."
 lang: "en"
 translation_of: "2026-08-27-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas"
 ---

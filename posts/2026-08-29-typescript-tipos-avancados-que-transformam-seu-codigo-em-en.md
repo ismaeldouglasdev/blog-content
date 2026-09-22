@@ -3,7 +3,7 @@ title: "TypeScript: Advanced Types to Take Your Code to Production"
 date: "2026-08-29"
 category: "tutorial"
 tags: ["typescript", "javascript", "tipagem"]
-excerpt: "Advanced TypeScript Types That Prevent Bugs in Production"
+excerpt: "Advanced TypeScript Types That Prevent Bugs in Production."
 lang: "en"
 translation_of: "2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em"
 ---

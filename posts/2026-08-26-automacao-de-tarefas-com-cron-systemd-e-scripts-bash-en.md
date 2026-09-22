@@ -3,7 +3,7 @@ title: "Automating Tasks with Cron, Systemd, and Bash Scripts"
 date: "2026-08-26"
 category: "tutorial"
 tags: ["linux", "automacao", "bash", "systemd"]
-excerpt: "Migrating 10k products made me realize the importance of automating tasks for efficiency and reducing errors"
+excerpt: "Task automation with cron, systemd, and bash scripts: real examples, robust scripts with logging, and classic mistakes to avoid."
 lang: "en"
 translation_of: "2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash"
 ---

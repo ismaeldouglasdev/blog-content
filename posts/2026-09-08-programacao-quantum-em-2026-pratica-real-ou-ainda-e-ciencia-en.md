@@ -3,7 +3,7 @@ title: "Quantum Programming in 2026: Reality or Still Science?"
 date: "2026-09-08"
 category: "curiosidade"
 tags: ["quantum", "computacao", "futuro"]
-excerpt: "Quantum programming has generated significant interest recently"
+excerpt: "Quantum computing in 2026: the real state of the technology, Qiskit and Cirq, practical problems being solved, and when developers need to care."
 lang: "en"
 translation_of: "2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia"
 ---

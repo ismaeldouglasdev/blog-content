@@ -3,7 +3,7 @@ title: "Programação quântica em 2026: prática real ou ainda é ciência?"
 date: "2026-09-08"
 category: "curiosidade"
 tags: ["quantum", "computacao", "futuro"]
-excerpt: "Introdução A programação quântica é um campo que tem gerado grande interesse nos últimos anos, com muitos especialistas e empresas investindo tempo e recursos para"
+excerpt: "Computação quântica em 2026: o estado real da tecnologia, Qiskit e Cirq, problemas práticos sendo resolvidos e quando devs precisarão se preparar."
 lang: "pt"
 ---
 

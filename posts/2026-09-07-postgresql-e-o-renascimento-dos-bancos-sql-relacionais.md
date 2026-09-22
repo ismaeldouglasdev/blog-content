@@ -3,7 +3,7 @@ title: "PostgreSQL e o renascimento dos bancos SQL relacionais"
 date: "2026-09-07"
 category: "curiosidade"
 tags: ["postgresql", "database", "tendencias"]
-excerpt: "Introdução A era dos bancos de dados NoSQL, que prometiam flexibilidade e escalabilidade, parecia ter conquistado o coração dos desenvolvedores. No entanto, nos últimos anos"
+excerpt: "Após o domínio do NoSQL, o PostgreSQL reagiu: JSONB, full-text search e extensions como PostGIS voltaram a colocar o SQL no centro das decisões."
 lang: "pt"
 ---
 

@@ -3,7 +3,7 @@ title: "Git in Action: Pro Workflows, Rebase, and Conflict Resolution"
 date: "2026-09-19"
 category: "tutorial"
 tags: ["git", "workflow", "produtividade"]
-excerpt: "Git is the most used version control tool, but many developers underutilize it"
+excerpt: "Git in practice: Git Flow vs trunk-based, interactive rebase, cherry-pick and bisect, conflict resolution, and commit conventions."
 cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao.jpg"
 lang: "en"
 translation_of: "2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao"

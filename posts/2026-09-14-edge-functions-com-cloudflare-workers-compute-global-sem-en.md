@@ -3,7 +3,7 @@ title: "Edge Functions with Cloudflare Workers: Global Serverless Computing"
 date: "2026-09-14"
 category: "tutorial"
 tags: ["edge", "cloudflare", "serverless", "workers"]
-excerpt: "Edge Functions with Cloudflare Workers: global serverless computing"
+excerpt: "Edge Functions with Cloudflare Workers: global serverless computing."
 cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-14-edge-functions-com-cloudflare-workers-compute-global-sem.jpg"
 lang: "en"
 translation_of: "2026-09-14-edge-functions-com-cloudflare-workers-compute-global-sem"

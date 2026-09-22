@@ -3,7 +3,7 @@ title: "The End of npm: Why Bun and Deno are Gaining Ground"
 date: "2026-08-30"
 category: "curiosidade"
 tags: ["npm", "bun", "deno", "javascript"]
-excerpt: "npm is the industry giant for managing JavaScript dependencies"
+excerpt: "Bun and Deno are gaining ground in the JavaScript ecosystem: speed, native TypeScript, security, and why npm will still last."
 lang: "en"
 translation_of: "2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco"
 ---

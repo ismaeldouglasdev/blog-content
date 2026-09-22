@@ -3,7 +3,7 @@ title: "PostgreSQL and the Resurgence of Relational SQL Databases"
 date: "2026-09-22"
 category: "curiosidade"
 tags: ["postgresql", "database", "tendencias"]
-excerpt: "Choosing the right database is crucial for software development projects."
+excerpt: "PostgreSQL and the revival of SQL databases: native JSON, extensions like pgvector and PostGIS, and why SQL beat NoSQL again."
 cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-22-postgresql-e-o-renascimento-dos-bancos-sql-relacionais.jpg"
 lang: "en"
 translation_of: "2026-09-22-postgresql-e-o-renascimento-dos-bancos-sql-relacionais"

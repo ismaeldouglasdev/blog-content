@@ -3,7 +3,7 @@ title: "Banco de dados relacional vs NoSQL: quando usar cada um"
 date: "2026-08-25"
 category: "article"
 tags: ["database", "sql", "nosql", "mongodb"]
-excerpt: "Escolher o banco de dados errado no início de um projeto garante refatorações dolorosas no futuro. A discussão entre bancos relacionais (SQL) e não-relacionais (NoSQL)"
+excerpt: "Banco de dados relacional vs NoSQL: quando escolher SQL com PostgreSQL, quando aceitar a flexibilidade de documentos e como modelar cada caso."
 lang: "pt"
 ---
 

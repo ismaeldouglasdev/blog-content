@@ -3,7 +3,7 @@ title: "Por que Rust não vai substituir Go (e vice-versa)"
 date: "2026-09-06"
 category: "curiosidade"
 tags: ["rust", "go", "linguagens", "opiniao"]
-excerpt: "Introdução A escolha da linguagem de programação certa para um projeto é uma decisão crucial que pode afetar significativamente o sucesso e a manutenção do software. Com o"
+excerpt: "Rust e Go resolvem problemas diferentes: Rust prioriza controle de baixo nível e segurança de memória, enquanto Go foca em simplicidade e produtividade. Entenda quando usar cada um."
 lang: "pt"
 ---
 

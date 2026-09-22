@@ -3,7 +3,7 @@ title: "Por que Rust não vai substituir Go (e vice-versa)"
 date: "2026-09-11"
 category: "curiosidade"
 tags: ["rust", "go", "linguagens", "opiniao"]
-excerpt: "Introdução A guerra de linguagens de programação é um tópico recorrente nas comunidades de desenvolvimento de software. Com a constante evolução da tecnologia, novas"
+excerpt: "Rust e Go resolvem problemas diferentes: Rust prioriza controle de baixo nível e segurança de memória, enquanto Go foca em simplicidade e produtividade. Entenda quando usar cada um."
 cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-11-por-que-rust-nao-vai-substituir-go-e-vice-versa.jpg"
 lang: "pt"
 ---

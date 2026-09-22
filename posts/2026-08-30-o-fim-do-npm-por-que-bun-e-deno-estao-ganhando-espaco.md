@@ -3,7 +3,7 @@ title: "O fim do npm: por que bun e deno estão ganhando espaço"
 date: "2026-08-30"
 category: "curiosidade"
 tags: ["npm", "bun", "deno", "javascript"]
-excerpt: "Introdução Quando se trata de gerenciar dependências em projetos JavaScript, o npm é o gigante da indústria. Com mais de 1,5 milhão de pacotes disponíveis, é o maior"
+excerpt: "Bun e Deno estão ganhando espaço no ecossistema JavaScript: velocidade, TypeScript nativo, segurança e por que o npm ainda vai durar."
 lang: "pt"
 ---
 

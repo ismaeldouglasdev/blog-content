@@ -3,7 +3,7 @@ title: "Memory Management in Go: Escape Analysis, Stack and GC"
 date: "2026-09-18"
 category: "article"
 tags: ["go", "performance", "memoria"]
-excerpt: "Go's memory management combines escape analysis, stack/heap allocation, and a concurrent GC. Understand when variables escape to heap, how the tri-color collector works, and practical patterns to reduce allocations."
+excerpt: "Go memory management explained: escape analysis, stack vs heap allocation, concurrent tri-color GC, and sync.Pool patterns to reduce allocations."
 cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc.jpg"
 lang: "en"
 translation_of: "2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc"

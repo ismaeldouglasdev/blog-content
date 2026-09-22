@@ -3,7 +3,7 @@ title: "React Server Components: quando e como usar no Next.js"
 date: "2026-08-28"
 category: "tutorial"
 tags: ["react", "server-components", "nextjs"]
-excerpt: "O ecossistema frontend passou anos focado em rodar tudo no navegador do cliente, mas a arquitetura moderna de frameworks como o Next.js mudou o jogo ao trazer o servidor de"
+excerpt: "React Server Components permitem renderizar componentes no servidor, reduzindo o bundle no cliente. Saiba como o Next.js mudou a arquitetura frontend com essa abordagem."
 lang: "pt"
 ---
 

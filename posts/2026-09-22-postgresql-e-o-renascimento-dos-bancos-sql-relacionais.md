@@ -3,7 +3,7 @@ title: "PostgreSQL e o renascimento dos bancos SQL relacionais"
 date: "2026-09-22"
 category: "curiosidade"
 tags: ["postgresql", "database", "tendencias"]
-excerpt: "Introdução A escolha do banco de dados certo é crucial para qualquer projeto de desenvolvimento de software. Nos últimos anos, temos visto um aumento significativo no uso"
+excerpt: "PostgreSQL e o renascimento dos bancos SQL: JSON nativo, extensions como pgvector e PostGIS, e por que o SQL voltou a vencer o NoSQL."
 cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-22-postgresql-e-o-renascimento-dos-bancos-sql-relacionais.jpg"
 lang: "pt"
 ---

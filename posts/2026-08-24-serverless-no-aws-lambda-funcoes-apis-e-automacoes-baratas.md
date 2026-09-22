@@ -3,7 +3,7 @@ title: "Serverless no AWS Lambda: funções, APIs e automações baratas"
 date: "2026-08-24"
 category: "tutorial"
 tags: ["serverless", "aws", "lambda", "cloud"]
-excerpt: "Por que servidores “invisíveis” podem ser a resposta para pequenos negócios"
+excerpt: "AWS Lambda elimina a necessidade de gerenciar servidores, permitindo que pequenas empresas rodem APIs e automações sem infraestrutura dedicada."
 lang: "pt"
 ---
 

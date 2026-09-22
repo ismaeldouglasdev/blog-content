@@ -3,7 +3,7 @@ title: "Serverless no AWS Lambda: funções, APIs e automações baratas"
 date: "2026-08-27"
 category: "tutorial"
 tags: ["serverless", "aws", "lambda", "cloud"]
-excerpt: "Introdução: Serverless e Quando Vale a Pena Quando se fala em desenvolvimento de software, uma das principais preocupações é a infraestrutura necessária para rodar as"
+excerpt: "Serverless na AWS com Lambda: APIs e automações baratas com API Gateway, event triggers, mitigação de cold start e comparação real de custos."
 lang: "pt"
 ---
 

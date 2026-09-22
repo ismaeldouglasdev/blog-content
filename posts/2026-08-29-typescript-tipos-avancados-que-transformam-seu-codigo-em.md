@@ -3,7 +3,7 @@ title: "TypeScript: tipos avançados que transformam seu código em produção"
 date: "2026-08-29"
 category: "tutorial"
 tags: ["typescript", "javascript", "tipagem"]
-excerpt: "Tipos Avançados do TypeScript que Evitam Bugs em Produção"
+excerpt: "Tipos Avançados do TypeScript que Evitam Bugs em Produção."
 lang: "pt"
 ---
 

@@ -3,7 +3,7 @@ title: "Browser DevTools: Advanced Debugging Techniques"
 date: "2026-08-20"
 category: "article"
 tags: ["devtools", "debug", "browser"]
-excerpt: "Have you ever spent hours trapped by a bug that disappears as soon as you try to inspect it? The feeling of playing cat and mouse with the browser is more common than it seems, and most of the time the issue isn't the code itself but rather how we analyze it. When I started using DevTools as a "notebook" instead of just a simple inspection panel, my productivity skyrocketed and my frustration decreased drastically. In this article, I share the advanced techniques that helped me turn hours of bug hunting into minutes of precise diagnosis. Prepare your coffee, open Chrome (or Firefox; Edge has almost the same functionalities), and let's zoom in on the layers that really matter."
+excerpt: "Advanced browser debugging techniques: breakpoints, memory snapshots, network inspection, and console tricks for elusive bugs."
 lang: "en"
 ---
 

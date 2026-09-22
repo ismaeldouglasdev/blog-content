@@ -3,7 +3,7 @@ title: "SOLID Principles Explained with Real Code Examples"
 date: "2026-09-04"
 category: "article"
 tags: ["solid", "arquitetura", "boas-praticas"]
-excerpt: "Picture a retail store customer using OSPOS who asks for real‑time inventory sync with Mercado Livre. You deliver."
+excerpt: "SOLID principles explained with real code: SRP, OCP, LSP, ISP, and DIP applied to an e-commerce integration case."
 lang: "en"
 translation_of: "2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real"
 ---

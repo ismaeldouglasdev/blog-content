@@ -3,7 +3,7 @@ title: "Full JWT Authentication: Login, Refresh Tokens, and Route Protection"
 date: "2026-08-23"
 category: "tutorial"
 tags: ["jwt", "autenticacao", "seguranca", "node"]
-excerpt: "When a web application starts getting more than a few users, the cookie‑based session approach simply doesn't scale. It's the classic scenario for anyone running an application that grows: traffic goes up, the server‑side session store becomes a bottleneck, database latency spikes, and the natural response is to migrate to JWT tokens."
+excerpt: "Complete JWT authentication: login flow, access and refresh tokens, route protection with middleware, rotation, and revocation."
 lang: "en"
 translation_of: "2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de"
 ---

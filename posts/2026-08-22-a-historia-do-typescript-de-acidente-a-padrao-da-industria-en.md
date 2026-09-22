@@ -3,7 +3,7 @@ title: "The History of TypeScript: From Accident to Industry Standard"
 date: "2026-08-22"
 category: "curiosidade"
 tags: ["typescript", "historia", "javascript"]
-excerpt: "In October 2012, Microsoft announced TypeScript, reshaping JavaScript development. At the time, teams maintaining large JavaScript applications were facing a maintainability crisis. This is the story of the experimental project that became the industry standard."
+excerpt: "In October 2012, Microsoft announced TypeScript, reshaping JavaScript development. At the time, teams maintaining large JavaScript."
 lang: "en"
 translation_of: "2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria"
 ---

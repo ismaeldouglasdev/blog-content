@@ -3,7 +3,7 @@ title: "Tailwind CSS: Utility-First in Practice for Real Projects"
 date: "2026-09-20"
 category: "tutorial"
 tags: ["tailwind", "css", "frontend"]
-excerpt: "I dont see any Portuguese text in your message to translate. The text you provided (Tailwind CSS: Why utility-first is the most practical method for real projects) appears to"
+excerpt: "Tailwind CSS in practice: why utility-first speeds up development, from Vite setup to dark mode and production optimization."
 cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-20-tailwind-css-utility-first-na-pratica-pra-projetos-reais.jpg"
 lang: "en"
 translation_of: "2026-09-20-tailwind-css-utility-first-na-pratica-pra-projetos-reais"

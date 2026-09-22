@@ -3,7 +3,7 @@ title: "Testing Library: testes de React que refletem o uso real"
 date: "2026-09-01"
 category: "tutorial"
 tags: ["testing-library", "react", "testes"]
-excerpt: "Você já viu um teste verde no CI e, na hora de abrir a aplicação, o botão que deveria estar habilitado continua desabilitado? Essa desconexão entre o que o teste verifica e o"
+excerpt: "Testes de React que refletem o uso real: queries acessíveis, userEvent, testes assíncronos, mocking com MSW e cobertura além da quantidade."
 lang: "pt"
 ---
 

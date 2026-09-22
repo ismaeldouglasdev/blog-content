@@ -3,7 +3,7 @@ title: "Princípios SOLID explicados com exemplos de código real"
 date: "2026-09-04"
 category: "article"
 tags: ["solid", "arquitetura", "boas-praticas"]
-excerpt: "Imagine que um cliente da sua loja de varejo, que usa OSPOS como ponto de venda, solicita uma integração que sincroniza estoque com o Mercado Livre em tempo real. Você"
+excerpt: "Princípios SOLID explicados com código real: SRP, OCP, LSP, ISP e DIP aplicados a um caso de integração de e-commerce."
 lang: "pt"
 ---
 

@@ -3,7 +3,7 @@ title: "Git na prática: workflows profissionais, rebase e resolução de confli
 date: "2026-09-19"
 category: "tutorial"
 tags: ["git", "workflow", "produtividade"]
-excerpt: "Introdução Quando se trata de controle de versão, o Git é a ferramenta mais amplamente utilizada no mundo do desenvolvimento de software. No entanto, muitos"
+excerpt: "Git na prática: Git Flow vs trunk-based, rebase interativo, cherry-pick e bisect, resolução de conflitos e convenção de commits."
 cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao.jpg"
 lang: "pt"
 ---

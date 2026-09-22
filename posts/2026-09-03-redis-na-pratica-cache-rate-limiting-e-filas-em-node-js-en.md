@@ -3,7 +3,7 @@ title: "Redis in Practice: Caching, Rate Limiting & Queues in Node.js"
 date: "2026-09-03"
 category: "tutorial"
 tags: ["redis", "cache", "backend"]
-excerpt: "Redis in practice: caching, rate limiting and queues in Node.js"
+excerpt: "Redis in practice: caching, rate limiting and queues in Node.js."
 lang: "en"
 translation_of: "2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js"
 ---

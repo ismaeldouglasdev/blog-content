@@ -3,7 +3,7 @@ title: "Prisma ORM: como modelar banco de dados com TypeScript"
 date: "2026-08-18"
 category: "tutorial"
 tags: ["prisma", "orm", "banco-de-dados", "typescript"]
-excerpt: "> “Se a única forma que você conhece de conversar com o banco de dados é gritar SQL, está na hora de aprender a falar a língua dele.”"
+excerpt: "Prisma ORM na prática: modelando o schema de um SaaS, relacionamentos, migrations seguras, query API avançada e indexing de performance."
 ---
 
 ## Introdução: ORM vs query raw

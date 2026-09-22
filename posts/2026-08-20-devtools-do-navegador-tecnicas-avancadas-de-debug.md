@@ -3,7 +3,7 @@ title: "DevTools do navegador: técnicas avançadas de debug"
 date: "2026-08-20"
 category: "article"
 tags: ["devtools", "debug", "browser"]
-excerpt: "Já ficou horas encurralado por um bug que desaparece assim que você tenta inspecionar? A sensação de estar jogando gato e rato com o navegador é mais comum do que parece, e a maior"
+excerpt: "Bugs que somem ao abrir o DevTools são mais comuns do que parece. Domine técnicas avançadas de debug no navegador para encontrar e resolver problemas de performance e memória."
 lang: "pt"
 ---
 

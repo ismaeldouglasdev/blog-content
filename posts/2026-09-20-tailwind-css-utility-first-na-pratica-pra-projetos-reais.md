@@ -3,7 +3,7 @@ title: "Tailwind CSS: utility-first na prática pra projetos reais"
 date: "2026-09-20"
 category: "tutorial"
 tags: ["tailwind", "css", "frontend"]
-excerpt: "Tailwind CSS: Por que utility-first é o método mais prático para projetos reais"
+excerpt: "Tailwind CSS na prática: por que utility-first acelera o desenvolvimento, do setup com Vite ao dark mode e otimização para produção."
 cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-20-tailwind-css-utility-first-na-pratica-pra-projetos-reais.jpg"
 lang: "pt"
 ---

@@ -11,8 +11,8 @@
         "database",
         "tendencias"
       ],
-      "excerpt": "Introdução A escolha do banco de dados certo é crucial para qualquer projeto de desenvolvimento de software. Nos últimos anos, temos visto um aumento significativo no uso",
-      "excerpt_en": "Choosing the right database is crucial for software development projects.",
+      "excerpt": "PostgreSQL e o renascimento dos bancos SQL: JSON nativo, extensions como pgvector e PostGIS, e por que o SQL voltou a vencer o NoSQL.",
+      "excerpt_en": "PostgreSQL and the revival of SQL databases: native JSON, extensions like pgvector and PostGIS, and why SQL beat NoSQL again.",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-22-postgresql-e-o-renascimento-dos-bancos-sql-relacionais.jpg",
       "cover_credit": {
         "file": "File:Data center infrastructure in the United States.jpg",
@@ -36,8 +36,8 @@
         "database",
         "tendencias"
       ],
-      "excerpt": "Choosing the right database is crucial for software development projects.",
-      "excerpt_en": "Choosing the right database is crucial for software development projects.",
+      "excerpt": "PostgreSQL and the revival of SQL databases: native JSON, extensions like pgvector and PostGIS, and why SQL beat NoSQL again.",
+      "excerpt_en": "PostgreSQL and the revival of SQL databases: native JSON, extensions like pgvector and PostGIS, and why SQL beat NoSQL again.",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-22-postgresql-e-o-renascimento-dos-bancos-sql-relacionais.jpg",
       "cover_credit": {
         "file": "File:Data center infrastructure in the United States.jpg",
@@ -62,8 +62,8 @@
         "arquitetura",
         "solid"
       ],
-      "excerpt": "Introdução Quando se trata de desenvolver software, a arquitetura limpa é fundamental para garantir que o código seja fácil de manter, escalar e entender. No entanto",
-      "excerpt_en": "Clean architecture is key to maintaining scalable code.",
+      "excerpt": "Arquitetura limpa em TypeScript: princípios SOLID aplicados com services, strategy pattern, generics e inversão de dependência.",
+      "excerpt_en": "Clean architecture in TypeScript: SOLID principles applied with services, the strategy pattern, generics, and dependency inversion.",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-21-arquitetura-limpa-em-typescript-principios-solid-aplicados.jpg",
       "cover_credit": null,
       "lang": "pt",
@@ -80,8 +80,8 @@
         "arquitetura",
         "solid"
       ],
-      "excerpt": "Clean architecture is key to maintaining scalable code.",
-      "excerpt_en": "Clean architecture is key to maintaining scalable code.",
+      "excerpt": "Clean architecture in TypeScript: SOLID principles applied with services, the strategy pattern, generics, and dependency inversion.",
+      "excerpt_en": "Clean architecture in TypeScript: SOLID principles applied with services, the strategy pattern, generics, and dependency inversion.",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-21-arquitetura-limpa-em-typescript-principios-solid-aplicados.jpg",
       "cover_credit": null,
       "lang": "en",
@@ -99,8 +99,8 @@
         "css",
         "frontend"
       ],
-      "excerpt": "Tailwind CSS: Por que utility-first é o método mais prático para projetos reais",
-      "excerpt_en": "I dont see any Portuguese text in your message to translate. The text you provided (Tailwind CSS: Why utility-first is the most practical method for real projects) appears to",
+      "excerpt": "Tailwind CSS na prática: por que utility-first acelera o desenvolvimento, do setup com Vite ao dark mode e otimização para produção.",
+      "excerpt_en": "Tailwind CSS in practice: why utility-first speeds up development, from Vite setup to dark mode and production optimization.",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-20-tailwind-css-utility-first-na-pratica-pra-projetos-reais.jpg",
       "cover_credit": {
         "file": "File:Chataropica.png",
@@ -124,8 +124,8 @@
         "css",
         "frontend"
       ],
-      "excerpt": "I dont see any Portuguese text in your message to translate. The text you provided (Tailwind CSS: Why utility-first is the most practical method for real projects) appears to",
-      "excerpt_en": "I dont see any Portuguese text in your message to translate. The text you provided (Tailwind CSS: Why utility-first is the most practical method for real projects) appears to",
+      "excerpt": "Tailwind CSS in practice: why utility-first speeds up development, from Vite setup to dark mode and production optimization.",
+      "excerpt_en": "Tailwind CSS in practice: why utility-first speeds up development, from Vite setup to dark mode and production optimization.",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-20-tailwind-css-utility-first-na-pratica-pra-projetos-reais.jpg",
       "cover_credit": {
         "file": "File:Chataropica.png",
@@ -150,8 +150,8 @@
         "workflow",
         "produtividade"
       ],
-      "excerpt": "Introdução Quando se trata de controle de versão, o Git é a ferramenta mais amplamente utilizada no mundo do desenvolvimento de software. No entanto, muitos",
-      "excerpt_en": "Git is the most used version control tool, but many developers underutilize it",
+      "excerpt": "Git na prática: Git Flow vs trunk-based, rebase interativo, cherry-pick e bisect, resolução de conflitos e convenção de commits.",
+      "excerpt_en": "Git in practice: Git Flow vs trunk-based, interactive rebase, cherry-pick and bisect, conflict resolution, and commit conventions.",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao.jpg",
       "cover_credit": {
         "file": "File:Git format.png",
@@ -175,8 +175,8 @@
         "workflow",
         "produtividade"
       ],
-      "excerpt": "Git is the most used version control tool, but many developers underutilize it",
-      "excerpt_en": "Git is the most used version control tool, but many developers underutilize it",
+      "excerpt": "Git in practice: Git Flow vs trunk-based, interactive rebase, cherry-pick and bisect, conflict resolution, and commit conventions.",
+      "excerpt_en": "Git in practice: Git Flow vs trunk-based, interactive rebase, cherry-pick and bisect, conflict resolution, and commit conventions.",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao.jpg",
       "cover_credit": {
         "file": "File:Git format.png",
@@ -198,7 +198,8 @@
       "excerpt": "Entenda como o Go gerencia memória: escape analysis, alocação stack vs heap, garbage collector concorrente e sync.Pool para reduzir alocações.",
       "lang": "pt",
       "translation_slug": "2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc-en",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc.jpg"
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc.jpg",
+      "excerpt_en": "Go memory management explained: escape analysis, stack vs heap allocation, concurrent tri-color GC, and sync.Pool patterns to reduce allocations."
     },
     {
       "slug": "2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc-en",
@@ -209,7 +210,8 @@
       "lang": "en",
       "translation_slug": "2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc",
       "translation_of": "2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc.jpg"
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc.jpg",
+      "excerpt_en": "Go memory management explained: escape analysis, stack vs heap allocation, concurrent tri-color GC, and sync.Pool patterns to reduce allocations."
     },
     {
       "slug": "2026-09-17-testing-library-testes-de-react-que-refletem-o-uso-real",
@@ -223,7 +225,7 @@
         "testes"
       ],
       "excerpt": "Guia prático de React Testing Library: queries acessíveis, userEvent, testes assíncronos, mocking com MSW e por que cobertura não é tudo.",
-      "excerpt_en": "When I started testing React interfaces, I was doing everything wrong—I wrote tests checking how the component was built, like whether that button has the .btn-primary class",
+      "excerpt_en": "Practical guide to React Testing Library: accessible queries, userEvent, async testing, mocking with MSW, and why coverage is not everything.",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-17-testing-library-testes-de-react-que-refletem-o-uso-real.jpg",
       "cover_credit": {
         "file": "File:Dragon 2 hover test (24159153709).jpg",
@@ -248,7 +250,7 @@
         "testes"
       ],
       "excerpt": "Practical guide to React Testing Library: accessible queries, userEvent, async testing, mocking with MSW, and why coverage is not everything.",
-      "excerpt_en": "When I started testing React interfaces, I was doing everything wrong—I wrote tests checking how the component was built, like whether that button has the .btn-primary class",
+      "excerpt_en": "Practical guide to React Testing Library: accessible queries, userEvent, async testing, mocking with MSW, and why coverage is not everything.",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-17-testing-library-testes-de-react-que-refletem-o-uso-real.jpg",
       "cover_credit": {
         "file": "File:Dragon 2 hover test (24159153709).jpg",
@@ -300,7 +302,7 @@
         "vercel",
         "railway"
       ],
-      "excerpt": "Honest comparison of Vercel, Railway, and Fly.io for web app deploy: costs, cold starts, DX, free tiers, and when to choose each platform.",
+      "excerpt": "Developers face a tough choice when deploying web applications, with many platforms available.",
       "excerpt_en": "Developers face a tough choice when deploying web applications, with many platforms available.",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-16-deploy-com-vercel-railway-e-fly-io-comparativo-honesto.jpg",
       "cover_credit": {
@@ -351,7 +353,7 @@
         "react",
         "server-components"
       ],
-      "excerpt": "Next.js App Router Server Components in practice: how they work, when to use, data fetching patterns, streaming, and Client Component interop.",
+      "excerpt": "Choosing the right architecture and tools is crucial for scalable web applications.",
       "excerpt_en": "Choosing the right architecture and tools is crucial for scalable web applications.",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-15-next-js-app-router-server-components-na-pratica.jpg",
       "cover_credit": {
@@ -452,8 +454,8 @@
         "serverless",
         "workers"
       ],
-      "excerpt": "Edge Functions com Cloudflare Workers: compute global sem servidor",
-      "excerpt_en": "Edge Functions with Cloudflare Workers: global serverless computing",
+      "excerpt": "Edge Functions com Cloudflare Workers: compute global sem servidor.",
+      "excerpt_en": "Edge Functions with Cloudflare Workers: global serverless computing.",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-14-edge-functions-com-cloudflare-workers-compute-global-sem.jpg",
       "cover_credit": {
         "file": "File:EDGE Shadow 25 loitering munition.jpg",
@@ -478,8 +480,8 @@
         "serverless",
         "workers"
       ],
-      "excerpt": "Edge Functions with Cloudflare Workers: global serverless computing",
-      "excerpt_en": "Edge Functions with Cloudflare Workers: global serverless computing",
+      "excerpt": "Edge Functions with Cloudflare Workers: global serverless computing.",
+      "excerpt_en": "Edge Functions with Cloudflare Workers: global serverless computing.",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-14-edge-functions-com-cloudflare-workers-compute-global-sem.jpg",
       "cover_credit": {
         "file": "File:EDGE Shadow 25 loitering munition.jpg",
@@ -557,8 +559,8 @@
         "apollo",
         "api"
       ],
-      "excerpt": "GraphQL com Apollo Server e Client: Do Zero ao Completo",
-      "excerpt_en": "GraphQL with Apollo Server and Client: From Zero to Complete",
+      "excerpt": "GraphQL com Apollo Server e Client: Do Zero ao Completo.",
+      "excerpt_en": "GraphQL with Apollo Server and Client: From Zero to Complete.",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-13-api-graphql-com-apollo-server-e-client-do-zero-ao-completo.jpg",
       "cover_credit": {
         "file": "File:Bob van Luijt presenting Weaviate's GraphQL APi.jpg",
@@ -582,8 +584,8 @@
         "apollo",
         "api"
       ],
-      "excerpt": "GraphQL with Apollo Server and Client: From Zero to Complete",
-      "excerpt_en": "GraphQL with Apollo Server and Client: From Zero to Complete",
+      "excerpt": "GraphQL with Apollo Server and Client: From Zero to Complete.",
+      "excerpt_en": "GraphQL with Apollo Server and Client: From Zero to Complete.",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-13-api-graphql-com-apollo-server-e-client-do-zero-ao-completo.jpg",
       "cover_credit": {
         "file": "File:Bob van Luijt presenting Weaviate's GraphQL APi.jpg",
@@ -717,8 +719,8 @@
         "zustand",
         "jotai"
       ],
-      "excerpt": "Gerenciamento de estados: React Context vs Zustand vs Jotai",
-      "excerpt_en": "State Management: React Context vs. Zustand vs. Jotai",
+      "excerpt": "Gerenciamento de estados: React Context vs Zustand vs Jotai.",
+      "excerpt_en": "State Management: React Context vs. Zustand vs. Jotai.",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-10-gerenciamento-de-estados-react-context-vs-zustand-vs-jotai.jpg",
       "cover_credit": {
         "file": "File:Infrared photography of computer hardware - DSC05331.jpg",
@@ -745,8 +747,8 @@
         "zustand",
         "jotai"
       ],
-      "excerpt": "State Management: React Context vs. Zustand vs. Jotai",
-      "excerpt_en": "State Management: React Context vs. Zustand vs. Jotai",
+      "excerpt": "State Management: React Context vs. Zustand vs. Jotai.",
+      "excerpt_en": "State Management: React Context vs. Zustand vs. Jotai.",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-10-gerenciamento-de-estados-react-context-vs-zustand-vs-jotai.jpg",
       "cover_credit": {
         "file": "File:Infrared photography of computer hardware - DSC05331.jpg",
@@ -774,7 +776,7 @@
         "node",
         "react"
       ],
-      "excerpt": "WebSocket do zero: chat em tempo real com Node.js e React",
+      "excerpt": "WebSocket do zero: chat em tempo real com Node.js e React.",
       "excerpt_en": "Build a real-time chat application from scratch using WebSocket, Node.js, and React. Learn how WebSocket works and integrate it into a full-stack project.",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-09-websocket-do-zero-chat-em-tempo-real-com-node-js-e-react.jpg",
       "cover_credit": {
@@ -824,8 +826,8 @@
         "computacao",
         "futuro"
       ],
-      "excerpt": "Computação quântica promete revolucionar a indústria, mas será que já é viável na prática? Veja onde a programação quântica realmente faz sentido em 2026.",
-      "excerpt_en": "Quantum programming has generated significant interest recently",
+      "excerpt": "Computação quântica em 2026: o estado real da tecnologia, Qiskit e Cirq, problemas práticos sendo resolvidos e quando devs precisarão se preparar.",
+      "excerpt_en": "Quantum computing in 2026: the real state of the technology, Qiskit and Cirq, practical problems being solved, and when developers need to care.",
       "lang": "pt",
       "translation_slug": "2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia-en",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia.jpg",
@@ -849,8 +851,8 @@
         "computacao",
         "futuro"
       ],
-      "excerpt": "Quantum programming has generated significant interest recently",
-      "excerpt_en": "Quantum programming has generated significant interest recently",
+      "excerpt": "Quantum computing in 2026: the real state of the technology, Qiskit and Cirq, practical problems being solved, and when developers need to care.",
+      "excerpt_en": "Quantum computing in 2026: the real state of the technology, Qiskit and Cirq, practical problems being solved, and when developers need to care.",
       "lang": "en",
       "translation_slug": "2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia",
       "translation_of": "2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia",
@@ -875,8 +877,8 @@
         "database",
         "tendencias"
       ],
-      "excerpt": "Após anos de domínio do NoSQL, o PostgreSQL voltou com força usando JSONB, full-text search e extensões. Saiba por que bancos relacionais estão em alta novamente.",
-      "excerpt_en": "NoSQL databases, promising flexibility and scalability, won developers hearts, but recently",
+      "excerpt": "Após o domínio do NoSQL, o PostgreSQL reagiu: JSONB, full-text search e extensions como PostGIS voltaram a colocar o SQL no centro das decisões.",
+      "excerpt_en": "After NoSQL dominance, PostgreSQL fought back: JSONB, full-text search, and extensions like PostGIS put SQL back at the center of decisions.",
       "lang": "pt",
       "translation_slug": "2026-09-07-postgresql-e-o-renascimento-dos-bancos-sql-relacionais-en",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-07-postgresql-e-o-renascimento-dos-bancos-sql-relacionais.jpg",
@@ -914,8 +916,8 @@
         "database",
         "tendencias"
       ],
-      "excerpt": "NoSQL databases, promising flexibility and scalability, won developers hearts, but recently",
-      "excerpt_en": "NoSQL databases, promising flexibility and scalability, won developers hearts, but recently",
+      "excerpt": "After NoSQL dominance, PostgreSQL fought back: JSONB, full-text search, and extensions like PostGIS put SQL back at the center of decisions.",
+      "excerpt_en": "After NoSQL dominance, PostgreSQL fought back: JSONB, full-text search, and extensions like PostGIS put SQL back at the center of decisions.",
       "lang": "en",
       "translation_slug": "2026-09-07-postgresql-e-o-renascimento-dos-bancos-sql-relacionais",
       "translation_of": "2026-09-07-postgresql-e-o-renascimento-dos-bancos-sql-relacionais",
@@ -1035,8 +1037,8 @@
         "arquitetura",
         "boas-praticas"
       ],
-      "excerpt": "Imagine que um cliente da sua loja de varejo, que usa OSPOS como ponto de venda, solicita uma integração que sincroniza estoque com o Mercado Livre em tempo real. Você",
-      "excerpt_en": "Picture a retail store customer using OSPOS who asks for real‑time inventory sync with Mercado Livre. You deliver.",
+      "excerpt": "Princípios SOLID explicados com código real: SRP, OCP, LSP, ISP e DIP aplicados a um caso de integração de e-commerce.",
+      "excerpt_en": "SOLID principles explained with real code: SRP, OCP, LSP, ISP, and DIP applied to an e-commerce integration case.",
       "lang": "pt",
       "translation_slug": "2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real-en",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real.jpg",
@@ -1063,8 +1065,8 @@
         "arquitetura",
         "boas-praticas"
       ],
-      "excerpt": "Picture a retail store customer using OSPOS who asks for real‑time inventory sync with Mercado Livre. You deliver.",
-      "excerpt_en": "Picture a retail store customer using OSPOS who asks for real‑time inventory sync with Mercado Livre. You deliver.",
+      "excerpt": "SOLID principles explained with real code: SRP, OCP, LSP, ISP, and DIP applied to an e-commerce integration case.",
+      "excerpt_en": "SOLID principles explained with real code: SRP, OCP, LSP, ISP, and DIP applied to an e-commerce integration case.",
       "lang": "en",
       "translation_slug": "2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real",
       "translation_of": "2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real",
@@ -1089,8 +1091,8 @@
         "cache",
         "backend"
       ],
-      "excerpt": "Redis na prática: cache, rate limiting e filas em Node.js",
-      "excerpt_en": "Redis in practice: caching, rate limiting and queues in Node.js",
+      "excerpt": "Redis na prática: cache, rate limiting e filas em Node.js.",
+      "excerpt_en": "Redis in practice: caching, rate limiting and queues in Node.js.",
       "lang": "pt",
       "translation_slug": "2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js-en",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js.jpg",
@@ -1131,8 +1133,8 @@
         "cache",
         "backend"
       ],
-      "excerpt": "Redis in practice: caching, rate limiting and queues in Node.js",
-      "excerpt_en": "Redis in practice: caching, rate limiting and queues in Node.js",
+      "excerpt": "Redis in practice: caching, rate limiting and queues in Node.js.",
+      "excerpt_en": "Redis in practice: caching, rate limiting and queues in Node.js.",
       "lang": "en",
       "translation_slug": "2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js",
       "translation_of": "2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js",
@@ -1174,8 +1176,8 @@
         "react",
         "testes"
       ],
-      "excerpt": "Você já viu um teste verde no CI e, na hora de abrir a aplicação, o botão que deveria estar habilitado continua desabilitado? Essa desconexão entre o que o teste verifica e o",
-      "excerpt_en": "Have you ever seen a green test in CI, only to open the application and find that the button that should be enabled is still disabled? That disconnect between what the test",
+      "excerpt": "Testes de React que refletem o uso real: queries acessíveis, userEvent, testes assíncronos, mocking com MSW e cobertura além da quantidade.",
+      "excerpt_en": "React tests that reflect real usage: accessible queries, userEvent, async testing, MSW mocking, and coverage beyond quantity.",
       "lang": "pt",
       "translation_slug": "2026-09-01-testing-library-testes-de-react-que-refletem-o-uso-real-en",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-01-testing-library-testes-de-react-que-refletem-o-uso-real.jpg",
@@ -1202,8 +1204,8 @@
         "react",
         "testes"
       ],
-      "excerpt": "Have you ever seen a green test in CI, only to open the application and find that the button that should be enabled is still disabled? That disconnect between what the test",
-      "excerpt_en": "Have you ever seen a green test in CI, only to open the application and find that the button that should be enabled is still disabled? That disconnect between what the test",
+      "excerpt": "React tests that reflect real usage: accessible queries, userEvent, async testing, MSW mocking, and coverage beyond quantity.",
+      "excerpt_en": "React tests that reflect real usage: accessible queries, userEvent, async testing, MSW mocking, and coverage beyond quantity.",
       "lang": "en",
       "translation_slug": "2026-09-01-testing-library-testes-de-react-que-refletem-o-uso-real",
       "translation_of": "2026-09-01-testing-library-testes-de-react-que-refletem-o-uso-real",
@@ -1232,7 +1234,7 @@
         "nosql",
         "mongodb"
       ],
-      "excerpt": "Banco de dados relacional vs NoSQL: quando usar cada um",
+      "excerpt": "Banco de dados relacional vs NoSQL: quando usar cada um.",
       "excerpt_en": "Relational vs. NoSQL databases: when to use each one.",
       "lang": "pt",
       "translation_slug": "2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um-en",
@@ -1285,8 +1287,8 @@
         "deno",
         "javascript"
       ],
-      "excerpt": "Bun e Deno estão desafiando o npm com instalações mais rápidas e execução nativa de TypeScript. Veja por que esses runtime estão ganhando espaço no ecossistema JavaScript.",
-      "excerpt_en": "npm is the industry giant for managing JavaScript dependencies",
+      "excerpt": "Bun e Deno estão ganhando espaço no ecossistema JavaScript: velocidade, TypeScript nativo, segurança e por que o npm ainda vai durar.",
+      "excerpt_en": "Bun and Deno are gaining ground in the JavaScript ecosystem: speed, native TypeScript, security, and why npm will still last.",
       "lang": "pt",
       "translation_slug": "2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco-en",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco.jpg",
@@ -1311,8 +1313,8 @@
         "deno",
         "javascript"
       ],
-      "excerpt": "npm is the industry giant for managing JavaScript dependencies",
-      "excerpt_en": "npm is the industry giant for managing JavaScript dependencies",
+      "excerpt": "Bun and Deno are gaining ground in the JavaScript ecosystem: speed, native TypeScript, security, and why npm will still last.",
+      "excerpt_en": "Bun and Deno are gaining ground in the JavaScript ecosystem: speed, native TypeScript, security, and why npm will still last.",
       "lang": "en",
       "translation_slug": "2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco",
       "translation_of": "2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco",
@@ -1337,8 +1339,8 @@
         "javascript",
         "tipagem"
       ],
-      "excerpt": "Tipos Avançados do TypeScript que Evitam Bugs em Produção",
-      "excerpt_en": "Tipos Avançados do TypeScript que Evitam Erros em Produção",
+      "excerpt": "Tipos Avançados do TypeScript que Evitam Bugs em Produção.",
+      "excerpt_en": "Tipos Avançados do TypeScript que Evitam Erros em Produção.",
       "lang": "pt",
       "translation_slug": "2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em-en",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em.jpg",
@@ -1365,8 +1367,8 @@
         "javascript",
         "tipagem"
       ],
-      "excerpt": "Tipos Avançados do TypeScript que Evitam Erros em Produção",
-      "excerpt_en": "Tipos Avançados do TypeScript que Evitam Erros em Produção",
+      "excerpt": "Advanced TypeScript Types That Prevent Bugs in Production.",
+      "excerpt_en": "Advanced TypeScript Types That Prevent Bugs in Production.",
       "lang": "en",
       "translation_slug": "2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em",
       "translation_of": "2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em",
@@ -1395,7 +1397,7 @@
         "nextjs"
       ],
       "excerpt": "React Server Components permitem renderizar componentes no servidor, reduzindo o bundle no cliente. Saiba como o Next.js mudou a arquitetura frontend com essa abordagem.",
-      "excerpt_en": "The frontend ecosystem spent years focused on running everything in the clients browser, but the modern architecture of frameworks like Next.js has changed the game by",
+      "excerpt_en": "React Server Components and Next.js: how server-side rendering shrinks the client bundle, and when this architecture makes sense.",
       "lang": "pt",
       "translation_slug": "2026-08-28-react-server-components-quando-e-como-usar-no-next-js-en",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-28-react-server-components-quando-e-como-usar-no-next-js.jpg",
@@ -1419,8 +1421,8 @@
         "server-components",
         "nextjs"
       ],
-      "excerpt": "The frontend ecosystem spent years focused on running everything in the clients browser, but the modern architecture of frameworks like Next.js has changed the game by",
-      "excerpt_en": "The frontend ecosystem spent years focused on running everything in the clients browser, but the modern architecture of frameworks like Next.js has changed the game by",
+      "excerpt": "React Server Components and Next.js: how server-side rendering shrinks the client bundle, and when this architecture makes sense.",
+      "excerpt_en": "React Server Components and Next.js: how server-side rendering shrinks the client bundle, and when this architecture makes sense.",
       "lang": "en",
       "translation_slug": "2026-08-28-react-server-components-quando-e-como-usar-no-next-js",
       "translation_of": "2026-08-28-react-server-components-quando-e-como-usar-no-next-js",
@@ -1446,8 +1448,8 @@
         "lambda",
         "cloud"
       ],
-      "excerpt": "AWS Lambda elimina a necessidade de gerenciar servidores: pague apenas pelo tempo de execução. Veja como usar funções serverless para APIs e automações com custo baixo.",
-      "excerpt_en": "Serverless and When It’s Worth It. In software development, one of the biggest",
+      "excerpt": "Serverless na AWS com Lambda: APIs e automações baratas com API Gateway, event triggers, mitigação de cold start e comparação real de custos.",
+      "excerpt_en": "Serverless on AWS with Lambda: cheap APIs and automations with API Gateway, event triggers, cold start mitigation, and a real cost comparison.",
       "lang": "pt",
       "translation_slug": "2026-08-27-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas-en",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-27-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas.jpg",
@@ -1472,8 +1474,8 @@
         "lambda",
         "cloud"
       ],
-      "excerpt": "Serverless and When It’s Worth It. In software development, one of the biggest",
-      "excerpt_en": "Serverless and When It’s Worth It. In software development, one of the biggest",
+      "excerpt": "Serverless on AWS with Lambda: cheap APIs and automations with API Gateway, event triggers, cold start mitigation, and a real cost comparison.",
+      "excerpt_en": "Serverless on AWS with Lambda: cheap APIs and automations with API Gateway, event triggers, cold start mitigation, and a real cost comparison.",
       "lang": "en",
       "translation_slug": "2026-08-27-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas",
       "translation_of": "2026-08-27-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas",
@@ -1499,8 +1501,8 @@
         "bash",
         "systemd"
       ],
-      "excerpt": "Migrar 10 mil produtos entre sistemas mostrou o poder da automação: cron, systemd e scripts bash eliminam erros humanos e mantêm processos rodando sem intervenção.",
-      "excerpt_en": "Migrating 10k products made me realize the importance of automating tasks for efficiency and reducing errors",
+      "excerpt": "Automação de tarefas com cron, systemd e scripts bash: exemplos reais, scripts robustos com logging e os erros clássicos a evitar.",
+      "excerpt_en": "Task automation with cron, systemd, and bash scripts: real examples, robust scripts with logging, and classic mistakes to avoid.",
       "lang": "pt",
       "translation_slug": "2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash-en",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash.jpg",
@@ -1528,8 +1530,8 @@
         "bash",
         "systemd"
       ],
-      "excerpt": "Migrating 10k products made me realize the importance of automating tasks for efficiency and reducing errors",
-      "excerpt_en": "Migrating 10k products made me realize the importance of automating tasks for efficiency and reducing errors",
+      "excerpt": "Task automation with cron, systemd, and bash scripts: real examples, robust scripts with logging, and classic mistakes to avoid.",
+      "excerpt_en": "Task automation with cron, systemd, and bash scripts: real examples, robust scripts with logging, and classic mistakes to avoid.",
       "lang": "en",
       "translation_slug": "2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash",
       "translation_of": "2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash",
@@ -1555,8 +1557,8 @@
         "nosql",
         "mongodb"
       ],
-      "excerpt": "Escolher o banco de dados errado no início de um projeto garante refatorações dolorosas no futuro. A discussão entre bancos relacionais (SQL) e não-relacionais (NoSQL)",
-      "excerpt_en": "Choosing the wrong database early in a project leads to painful refactoring later. Compare relational (SQL) and non-relational (NoSQL) databases to pick the right one.",
+      "excerpt": "Banco de dados relacional vs NoSQL: quando escolher SQL com PostgreSQL, quando aceitar a flexibilidade de documentos e como modelar cada caso.",
+      "excerpt_en": "Relational vs NoSQL databases: when to choose SQL with PostgreSQL, when to embrace document flexibility, and how to model each case.",
       "lang": "pt",
       "translation_slug": null,
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-25-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um.jpg",
@@ -1582,7 +1584,7 @@
         "cloud"
       ],
       "excerpt": "AWS Lambda elimina a necessidade de gerenciar servidores, permitindo que pequenas empresas rodem APIs e automações sem infraestrutura dedicada.",
-      "excerpt_en": "Why “invisible” servers could be the solution for small businesses",
+      "excerpt_en": "Serverless on AWS Lambda: how \"invisible\" servers let small businesses run APIs and automations without dedicated infrastructure.",
       "lang": "pt",
       "translation_slug": "2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas-en",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas.jpg",
@@ -1610,8 +1612,8 @@
         "lambda",
         "cloud"
       ],
-      "excerpt": "Why “invisible” servers could be the solution for small businesses",
-      "excerpt_en": "Why “invisible” servers could be the solution for small businesses",
+      "excerpt": "Serverless on AWS Lambda: how \"invisible\" servers let small businesses run APIs and automations without dedicated infrastructure.",
+      "excerpt_en": "Serverless on AWS Lambda: how \"invisible\" servers let small businesses run APIs and automations without dedicated infrastructure.",
       "lang": "en",
       "translation_slug": "2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas",
       "translation_of": "2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas",
@@ -1637,8 +1639,8 @@
         "seguranca",
         "node"
       ],
-      "excerpt": "Sessões em cookie não escalam quando o tráfego cresce: latência do banco dispara e a experiência do usuário sofre. Guia completo de JWT: login, refresh token e proteção de rotas.",
-      "excerpt_en": "When a web application starts getting more than a few users, the cookie‑based session approach simply doesnt scale. Its the classic scenario for anyone running an application",
+      "excerpt": "Autenticação JWT completa: fluxo de login, access e refresh tokens, proteção de rotas com middleware, rotação e revogação.",
+      "excerpt_en": "Complete JWT authentication: login flow, access and refresh tokens, route protection with middleware, rotation, and revocation.",
       "lang": "pt",
       "translation_slug": "2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de-en",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de.jpg",
@@ -1663,8 +1665,8 @@
         "seguranca",
         "node"
       ],
-      "excerpt": "When a web application starts getting more than a few users, the cookie‑based session approach simply doesnt scale. Its the classic scenario for anyone running an application",
-      "excerpt_en": "When a web application starts getting more than a few users, the cookie‑based session approach simply doesnt scale. Its the classic scenario for anyone running an application",
+      "excerpt": "Complete JWT authentication: login flow, access and refresh tokens, route protection with middleware, rotation, and revocation.",
+      "excerpt_en": "Complete JWT authentication: login flow, access and refresh tokens, route protection with middleware, rotation, and revocation.",
       "lang": "en",
       "translation_slug": "2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de",
       "translation_of": "2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de",
@@ -1740,8 +1742,8 @@
         "debug",
         "browser"
       ],
-      "excerpt": "Bugs que somem ao abrir o DevTools são mais comuns do que parece. Domine técnicas avançadas de debug no navegador para encontrar e resolver problemas rapidamente.",
-      "excerpt_en": "Have you ever spent hours trapped by a bug that disappears as soon as you try to inspect it? The feeling of playing cat and mouse with the browser is more common than it seems",
+      "excerpt": "Bugs que somem ao abrir o DevTools são mais comuns do que parece. Domine técnicas avançadas de debug no navegador para encontrar e resolver problemas de performance e memória.",
+      "excerpt_en": "Advanced browser debugging techniques: breakpoints, memory snapshots, network inspection, and console tricks for elusive bugs.",
       "lang": "pt",
       "translation_slug": "2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug-en",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug.jpg",
@@ -1768,8 +1770,8 @@
         "debug",
         "browser"
       ],
-      "excerpt": "Have you ever spent hours trapped by a bug that disappears as soon as you try to inspect it? The feeling of playing cat and mouse with the browser is more common than it",
-      "excerpt_en": "Have you ever spent hours trapped by a bug that disappears as soon as you try to inspect it? The feeling of playing cat and mouse with the browser is more common than it seems",
+      "excerpt": "Advanced browser debugging techniques: breakpoints, memory snapshots, network inspection, and console tricks for elusive bugs.",
+      "excerpt_en": "Advanced browser debugging techniques: breakpoints, memory snapshots, network inspection, and console tricks for elusive bugs.",
       "lang": "en",
       "translation_slug": "2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug",
       "translation_of": "2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug",
@@ -1817,9 +1819,9 @@
       "title": "Prisma ORM: como modelar banco de dados com TypeScript",
       "date": "2026-08-18",
       "category": "tutorial",
-      "excerpt": "“Se a única forma que você conhece de conversar com o banco de dados é gritar SQL, está na hora de aprender a falar a língua dele.”",
+      "excerpt": "Prisma ORM na prática: modelando o schema de um SaaS, relacionamentos, migrations seguras, query API avançada e indexing de performance.",
       "title_en": "Prisma ORM: Modeling Databases with TypeScript",
-      "excerpt_en": "If the only way you know how to talk to the database is by shouting SQL, its time to learn its language.",
+      "excerpt_en": "Prisma ORM in practice: modeling a SaaS schema, relationships, safe migrations, advanced query API, and performance indexing.",
       "translation_slug": "2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript-en",
       "tags": [
         "prisma",
@@ -1850,8 +1852,8 @@
         "useeffect",
         "useref"
       ],
-      "excerpt": "Since React 16.8, Hooks have become the community standard. Master useEffect, useRef, and custom hooks with production-ready examples.",
-      "excerpt_en": "Since React 16.8, Hooks have become the community standard. Master useEffect, useRef, and custom hooks with production-ready examples.",
+      "excerpt": "By 2018, 85% of React projects had already adopted Hooks.",
+      "excerpt_en": "By 2018, 85% of React projects had already adopted Hooks.",
       "lang": "en",
       "translation_slug": "2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks",
       "translation_of": "2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks",
@@ -1877,8 +1879,8 @@
         "typescript",
         "banco-de-dados"
       ],
-      "excerpt": "If the only way you know how to talk to the database is by shouting SQL, it's time to learn its language.",
-      "excerpt_en": "If the only way you know how to talk to the database is by shouting SQL, it's time to learn its language.",
+      "excerpt": "Prisma ORM in practice: modeling a SaaS schema, relationships, safe migrations, advanced query API, and performance indexing.",
+      "excerpt_en": "Prisma ORM in practice: modeling a SaaS schema, relationships, safe migrations, advanced query API, and performance indexing.",
       "lang": "en",
       "translation_slug": "2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript",
       "translation_of": "2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript",
@@ -1897,9 +1899,9 @@
       "title": "CSS Grid e Flexbox: quando usar cada um",
       "date": "2026-08-17",
       "category": "tutorial",
-      "excerpt": "CSS Grid vs. Flexbox: Quando Usar Cada Um no Desenvolvimento Web",
+      "excerpt": "CSS Grid vs. Flexbox: Quando Usar Cada Um no Desenvolvimento Web.",
       "title_en": "CSS Grid vs Flexbox: When to Use Each One",
-      "excerpt_en": "CSS Grid vs. Flexbox: When to Use Each in Web Development",
+      "excerpt_en": "CSS Grid vs. Flexbox: When to Use Each in Web Development.",
       "translation_slug": "2026-08-17-css-grid-e-flexbox-quando-usar-cada-um-en",
       "tags": [
         "css",
@@ -1930,8 +1932,8 @@
         "flexbox",
         "layout"
       ],
-      "excerpt": "CSS Grid vs. Flexbox: When to Use Each in Web Development",
-      "excerpt_en": "CSS Grid vs. Flexbox: When to Use Each in Web Development",
+      "excerpt": "CSS Grid vs. Flexbox: When to Use Each in Web Development.",
+      "excerpt_en": "CSS Grid vs. Flexbox: When to Use Each in Web Development.",
       "lang": "en",
       "translation_slug": "2026-08-17-css-grid-e-flexbox-quando-usar-cada-um",
       "translation_of": "2026-08-17-css-grid-e-flexbox-quando-usar-cada-um",

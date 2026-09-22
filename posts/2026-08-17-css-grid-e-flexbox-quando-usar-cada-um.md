@@ -3,7 +3,7 @@ title: "CSS Grid e Flexbox: quando usar cada um"
 date: "2026-08-17"
 category: "tutorial"
 tags: ["css", "frontend"]
-excerpt: "# CSS Grid vs. Flexbox: Quando Usar Cada Um no Desenvolvimento Web"
+excerpt: "CSS Grid vs. Flexbox: Quando Usar Cada Um no Desenvolvimento Web."
 ---
 
 # CSS Grid vs. Flexbox: Quando Usar Cada Um no Desenvolvimento Web

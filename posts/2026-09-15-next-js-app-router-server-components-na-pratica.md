@@ -3,7 +3,7 @@ title: "Next.js App Router: Server Components na prática"
 date: "2026-09-15"
 category: "tutorial"
 tags: ["nextjs", "react", "server-components"]
-excerpt: "Introdução Quando se trata de desenvolver aplicações web escaláveis e performáticas, a escolha da arquitetura e das ferramentas certas é crucial. Uma das principais"
+excerpt: "Server Components no Next.js App Router na prática: como funcionam, quando usar, patterns de data fetching, streaming e interop com Client Components."
 cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-15-next-js-app-router-server-components-na-pratica.jpg"
 lang: "pt"
 ---
