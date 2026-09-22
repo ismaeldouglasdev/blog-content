@@ -32,7 +32,7 @@ Neste artigo, vamos mergulhar nos detalhes que fazem a diferença no dia‑a‑d
   </figcaption>
 </figure>
 
-##  useEffect com cleanup e dependências
+## useEffect com cleanup e dependências
 
 ### O que o `useEffect` realmente faz?
 
@@ -138,7 +138,7 @@ useEffect(() => {
 
 ---  
 
-##  useRef para acessar DOM e valores persistentes
+## useRef para acessar DOM e valores persistentes
 
 ### O que o `useRef` realmente armazena?
 
@@ -213,7 +213,7 @@ export function RenderCounter() {
 
 ---  
 
-##  Custom Hooks reais que você precisa conhecer
+## Custom Hooks reais que você precisa conhecer
 
 Criar *custom hooks* é a arte de **extrair lógica reutilizável** e **isolar side‑effects**. Quando bem projetados, eles tornam o código mais declarativo e testável.
 
@@ -398,7 +398,7 @@ export function useDebouncedCallback<T extends unknown[]>(
 
 ---  
 
-##  Erros comuns e como evitá‑los
+## Erros comuns e como evitá‑los
 
 | Erro | Por que acontece | Como corrigir |
 |------|------------------|----------------|

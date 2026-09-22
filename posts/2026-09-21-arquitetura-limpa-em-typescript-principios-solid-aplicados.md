@@ -160,7 +160,7 @@ class PagamentoProcessor {
 ```
 
 ## Conclusão
-resumindo, os princípios SOLID são fundamentais para criar uma arquitetura limpa e escalável em TypeScript. Ao aplicar esses princípios, podemos criar código que seja fácil de manter, entender e escalar. Aqui estão os principais takeaways:
+Resumindo, os princípios SOLID são fundamentais para criar uma arquitetura limpa e escalável em TypeScript. Ao aplicar esses princípios, podemos criar código que seja fácil de manter, entender e escalar. Aqui estão os principais takeaways:
 
 * SRP: cada classe deve ter apenas uma responsabilidade
 * Open/Closed: as classes devem ser abertas para extensão, mas fechadas para modificação

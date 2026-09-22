@@ -36,7 +36,7 @@ Agora que conhecemos as características e preços das três plataformas, vamos 
 Como em qualquer plataforma de deploy, há gotchas que você precisa estar ciente. Vercel pode ter problemas de compatibilidade com certas bibliotecas ou frameworks. Railway pode ter problemas de desempenho com aplicações muito grandes. Fly.io pode ter problemas de configuração com aplicações complexas.
 
 ## Conclusão
-resumindo, as três plataformas de deploy têm suas próprias características e vantagens. Vercel é uma boa escolha para aplicações web modernas que precisam de serverless e uma infraestrutura escalável. Railway é uma boa escolha para aplicações que precisam de containers Docker e preços competitivos. Fly.io é uma boa escolha para aplicações web globais que precisam de edge computing e uma infraestrutura escalável.
+Resumindo, as três plataformas de deploy têm suas próprias características e vantagens. Vercel é uma boa escolha para aplicações web modernas que precisam de serverless e uma infraestrutura escalável. Railway é uma boa escolha para aplicações que precisam de containers Docker e preços competitivos. Fly.io é uma boa escolha para aplicações web globais que precisam de edge computing e uma infraestrutura escalável.
 
 Takeaways práticos:
 

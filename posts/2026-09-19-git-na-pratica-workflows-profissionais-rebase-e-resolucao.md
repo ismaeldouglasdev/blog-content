@@ -30,7 +30,7 @@ Os git hooks são scripts que são executados automaticamente em diferentes est�
 Uma convenção de commits bem definida é fundamental para manter um histórico de mudanças limpo e organizado. Uma das convenções mais populares é a convenção de commits do GitHub, que utiliza um formato de mensagem de commit específico para descrever as mudanças. Além disso, é importante utilizar tags e branches para organizar as mudanças e facilitar a navegação no histórico do projeto.
 
 ## Conclusão
-resumindo, o Git é uma ferramenta poderosa que oferece muitos recursos para gerenciar o fluxo de trabalho de forma eficiente. Com o interactive rebase, cherry-pick, bisect e resolução de conflitos, você pode manter um histórico de mudanças limpo e organizado. Além disso, com o Husky e a convenção de commits, você pode garantir que o código seja de alta qualidade e siga as convenções de codificação do projeto. Aqui estão alguns takeaways práticos:
+Resumindo, o Git é uma ferramenta poderosa que oferece muitos recursos para gerenciar o fluxo de trabalho de forma eficiente. Com o interactive rebase, cherry-pick, bisect e resolução de conflitos, você pode manter um histórico de mudanças limpo e organizado. Além disso, com o Husky e a convenção de commits, você pode garantir que o código seja de alta qualidade e siga as convenções de codificação do projeto. Aqui estão alguns takeaways práticos:
 
 * Utilize o interactive rebase para manter um histórico de mudanças limpo e organizado
 * Utilize o cherry-pick e o bisect para aplicar mudanças específicas e resolver problemas

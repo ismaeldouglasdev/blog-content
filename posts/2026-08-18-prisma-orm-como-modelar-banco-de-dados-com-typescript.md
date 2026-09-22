@@ -6,7 +6,7 @@ tags: ["prisma", "orm", "banco-de-dados", "typescript"]
 excerpt: "> “Se a única forma que você conhece de conversar com o banco de dados é gritar SQL, está na hora de aprender a falar a língua dele.”"
 ---
 
-##  Introdução: ORM vs query raw
+## Introdução: ORM vs query raw
 
 > “Se a única forma que você conhece de conversar com o banco de dados é gritar **SQL**, está na hora de aprender a falar a língua dele.”  
 
@@ -16,7 +16,7 @@ O **Prisma** tem ganhado destaque no ecossistema TypeScript por combinar a produ
 
 ---
 
-##  Modelando o schema de um SaaS
+## Modelando o schema de um SaaS
 
 Vamos começar definindo o que o nosso SaaS precisa:
 
@@ -157,7 +157,7 @@ enum TaskStatus {
 
 ---
 
-##  Relacionamentos (1:1, 1:N, N:M)
+## Relacionamentos (1:1, 1:N, N:M)
 
 ### 1:1 – Usuário ↔ Organização (owner)
 
@@ -218,7 +218,7 @@ model UserProject {
 
 ---
 
-##  Migrations: versionando o banco de forma segura
+## Migrations: versionando o banco de forma segura
 
 Com o schema pronto, basta gerar a primeira migration:
 
@@ -246,7 +246,7 @@ Se precisar mudar algo que já foi aplicado em produção, crie **uma nova migra
 
 ---
 
-##  Query API avançada
+## Query API avançada
 
 ### 1. Selecionando campos específicos (select) e relações (include)
 
@@ -332,7 +332,7 @@ await prisma.invitation.upsert({
 
 ---
 
-##  Prisma Client e validação
+## Prisma Client e validação
 
 ### Tipagem automática
 
@@ -388,7 +388,7 @@ async function createUser(input: CreateUserInput) {
 
 ---
 
-##  Performance e indexing
+## Performance e indexing
 
 ### 1. Use `@@index` e `@unique` estrategicamente
 
@@ -444,7 +444,7 @@ Logar a duração das queries ajuda a identificar gargalos antes que eles apare�
 
 ---
 
-##  Conclusão
+## Conclusão
 
 O Prisma não é apenas um *wrapper* de SQL; ele é um **framework de modelagem de dados** que traz tipagem forte, migrations automáticas e uma API fluente para consultas avançadas. Quando usado corretamente, ele reduz o tempo de desenvolvimento, melhora a segurança e ainda entrega performance competitiva com consultas *raw* bem escritas.
 
@@ -454,7 +454,7 @@ Ao modelar um SaaS, a clareza do schema – com enums, relações bem definidas 
 
 ---
 
-##  Takeaways práticos
+## Takeaways práticos
 
 - **Comece sempre com o schema**: defina PKs como UUID, use enums e crie índices (`@@index`) no próprio arquivo `.prisma`.
 - **Migrations são seu controle de versão**: nunca edite arquivos de migração; crie novas ao mudar o modelo.
