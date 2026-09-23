@@ -1,6 +1,45 @@
 {
   "posts": [
     {
+      "slug": "2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam",
+      "title": "Vitest: como testar React com testes que realmente ajudam",
+      "title_en": "Vitest: How to Test React with Truly Helpful Tests",
+      "date": "2026-09-23",
+      "category": "tutorial",
+      "tags": [
+        "vitest",
+        "testes",
+        "react",
+        "tdd"
+      ],
+      "excerpt": "Vitest: como testar React com testes que realmente ajudam.",
+      "excerpt_en": "Vitest: how to test React with tests that genuinely assist.",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam.svg",
+      "cover_credit": null,
+      "lang": "pt",
+      "translation_slug": "2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam-en"
+    },
+    {
+      "slug": "2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam-en",
+      "title": "Vitest: How to Test React with Truly Helpful Tests",
+      "title_en": "Vitest: How to Test React with Truly Helpful Tests",
+      "date": "2026-09-23",
+      "category": "tutorial",
+      "tags": [
+        "vitest",
+        "testes",
+        "react",
+        "tdd"
+      ],
+      "excerpt": "Vitest: how to test React with tests that genuinely assist.",
+      "excerpt_en": "Vitest: how to test React with tests that genuinely assist.",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam.svg",
+      "cover_credit": null,
+      "lang": "en",
+      "translation_slug": "2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam",
+      "translation_of": "2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam"
+    },
+    {
       "slug": "2026-09-22-postgresql-e-o-renascimento-dos-bancos-sql-relacionais",
       "title": "PostgreSQL e o renascimento dos bancos SQL relacionais",
       "title_en": "PostgreSQL and the Resurgence of Relational SQL Databases",
