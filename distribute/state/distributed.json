@@ -7,6 +7,62 @@
         "telegram": "7",
         "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mw4lm32tqc2l"
       }
+    },
+    "2026-09-25-testing-library-testes-de-react-que-refletem-o-uso-real": {
+      "url": "https://blog.ismaeltech.com/2026-09-25-testing-library-testes-de-react-que-refletem-o-uso-real",
+      "posted_at": "2026-09-25T15:32:45.263846+00:00",
+      "platforms": {
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mwe3qsazoa27",
+        "telegram": "8"
+      }
+    },
+    "2026-09-24-formularios-react-react-hook-form-zod-pra-validacao": {
+      "url": "https://blog.ismaeltech.com/2026-09-24-formularios-react-react-hook-form-zod-pra-validacao",
+      "posted_at": "2026-09-25T15:32:46.150993+00:00",
+      "platforms": {
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mwe3qsxuxa27",
+        "telegram": "9"
+      }
+    },
+    "2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam": {
+      "url": "https://blog.ismaeltech.com/2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam",
+      "posted_at": "2026-09-25T15:32:47.060931+00:00",
+      "platforms": {
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mwe3qtu2ms2f",
+        "telegram": "10"
+      }
+    },
+    "2026-09-22-postgresql-e-o-renascimento-dos-bancos-sql-relacionais": {
+      "url": "https://blog.ismaeltech.com/2026-09-22-postgresql-e-o-renascimento-dos-bancos-sql-relacionais",
+      "posted_at": "2026-09-25T15:32:47.956598+00:00",
+      "platforms": {
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mwe3quovov2z",
+        "telegram": "11"
+      }
+    },
+    "2026-09-21-arquitetura-limpa-em-typescript-principios-solid-aplicados": {
+      "url": "https://blog.ismaeltech.com/2026-09-21-arquitetura-limpa-em-typescript-principios-solid-aplicados",
+      "posted_at": "2026-09-25T15:32:48.810655+00:00",
+      "platforms": {
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mwe3qvkf4w2m",
+        "telegram": "12"
+      }
+    },
+    "2026-09-20-tailwind-css-utility-first-na-pratica-pra-projetos-reais": {
+      "url": "https://blog.ismaeltech.com/2026-09-20-tailwind-css-utility-first-na-pratica-pra-projetos-reais",
+      "posted_at": "2026-09-25T15:32:56.332983+00:00",
+      "platforms": {
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mwe3r4p2c22f",
+        "telegram": "13"
+      }
+    },
+    "2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc": {
+      "url": "https://blog.ismaeltech.com/2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc",
+      "posted_at": "2026-09-25T15:32:57.204373+00:00",
+      "platforms": {
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mwe3r5jn5s22",
+        "telegram": "14"
+      }
     }
   }
 }
