@@ -95,6 +95,22 @@
         "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mwehnktqst2m",
         "telegram": "33"
       }
+    },
+    "2026-09-14-teclados-mecanicos-em-2026-modelos-em-destaque": {
+      "url": "https://blog.ismaeltech.com/2026-09-14-teclados-mecanicos-em-2026-modelos-em-destaque",
+      "posted_at": "2026-09-25T19:10:59.348532+00:00",
+      "platforms": {
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mwehwgn2gg2d",
+        "telegram": "34"
+      }
+    },
+    "2026-09-14-edge-functions-com-cloudflare-workers-compute-global-sem": {
+      "url": "https://blog.ismaeltech.com/2026-09-14-edge-functions-com-cloudflare-workers-compute-global-sem",
+      "posted_at": "2026-09-25T19:12:25.242735+00:00",
+      "platforms": {
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mwehyyhtmd2p",
+        "telegram": "35"
+      }
     }
   }
 }
