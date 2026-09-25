@@ -240,13 +240,15 @@ def find_undelivered(meta_posts, days, state, active=None):
         if post_date >= cutoff:
             candidates.append(post)
     candidates.sort(key=lambda p: p["date"], reverse=True)
-    # primeiro vence: mantem a versao mais recente de cada conteudo
-    seen = set()
+    # primeiro vence: mantem a versao mais recente de cada conteudo.
+    # O `seen` ja nasce com o que ja foi ENTREGUE: se o mesmo artigo ja foi
+    # publicado numa data anterior, a copia antiga nao deve sair de novo.
+    seen = {re.sub(r"^\d{4}-\d{2}-\d{2}-", "", s) for s in delivered}
     out = []
     for post in candidates:
         base = re.sub(r"^\d{4}-\d{2}-\d{2}-", "", post["slug"])
         if base in seen:
-            print("SKIP: '%s' duplica conteudo de um post mais recente" % post["slug"][:60])
+            print("SKIP: '%s' - conteudo ja saiu no canal (copy anterior do mesmo artigo)" % post["slug"][:60])
             continue
         seen.add(base)
         out.append(post)
