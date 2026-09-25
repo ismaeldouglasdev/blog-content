@@ -123,6 +123,37 @@ workflow **não** vai spammar os posts históricos (65 entradas no `_meta.json`,
 quiser um backfill deliberado, rode `--days 365` (ou o valor desejado)
 manualmente com o argumento ajustado, ou localmente com credenciais.
 
+## 5.1 `share_hook`: o texto que vai pra rede social
+
+O campo opcional `share_hook` no frontmatter e o texto usado no Telegram,
+Threads e Bluesky. Ele deve dizer **o que a pessoa leva do post**, sem
+repetir o titulo.
+
+```yaml
+title: "Vitest: como testar React com testes que realmente ajudam"
+excerpt: "Vitest: como testar React com testes que realmente ajudam."
+share_hook: "Setup, mocking, testes de integracao e coverage no CI: o fluxo completo de testes com Vitest em React."
+```
+
+Sem `share_hook`, o script usa o `excerpt` cortado em fronteira de frase.
+Com ele, o post social deixa de ser um paragrafo de blog e vira
+compartilhamento de link. Vale revisar o tom de vez em quando.
+
+## 5.2 Ritmo de publicacao (rate limiting)
+
+- `POST_DELAY_SECONDS` (20s): espaco entre plataformas do mesmo post
+- `POSTS_GAP_SECONDS` (45s): espaco entre posts diferentes
+- `MAX_POSTS_PER_RUN` (2): teto de posts por execucao
+
+Publicar tudo de uma vez faz as plataformas tratarem como spam. O que passa
+do teto fica pendente no state e sai na proxima execucao.
+
+## 5.3 Deduplicacao
+
+Ha posts com o mesmo conteudo e datas diferentes (ex.: 2026-09-01 e
+2026-09-17 sao o mesmo artigo). O script publica **so o mais recente** e
+ignora os demais, para o canal publico nao receber o mesmo texto duas vezes.
+
 ## 6. Retry e arquivo de state
 
 - `distribute/state/distributed.json` guarda, por slug master:

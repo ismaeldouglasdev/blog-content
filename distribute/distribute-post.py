@@ -201,26 +201,55 @@ def build_variants(post, blog_url):
     }
 
 
-def find_undelivered(meta_posts, days, state):
-    """Retorna posts master nao totalmente entregues, mais recentes primeiro."""
+def find_undelivered(meta_posts, days, state, active=None):
+    """Retorna posts master nao totalmente entregues, mais recentes primeiro.
+
+    `active` = plataformas com credenciais configuradas. So elas contam para
+    decidir se o post esta completo: uma plataforma sem credencial (ex.: Threads
+    hoje) nunca sera entregue, e se ela contasse, nenhum post seria considerado
+    pronto e o lote seria sempre preenchido com no-ops -- o backlog nunca drena.
+
+    Deduplica por conteudo: quando o mesmo post existe com datas diferentes
+    (ex.: 2026-09-01 e 2026-09-17 sao o mesmo artigo), so o mais recente entra.
+    Sem isso o canal publico receberia o mesmo texto duas vezes.
+    """
     today = datetime.date.today()
     cutoff = today - datetime.timedelta(days=days)
     delivered = state.get("posts", {})
-    out = []
+    candidates = []
     for post in meta_posts:
         if post.get("lang") == "en":
             continue
         slug = post.get("slug")
-        entry = delivered.get(slug)
-        if not slug or (entry and all(entry.get("platforms", {}).get(n) for n in PLATFORMS)):
+        if not slug:
             continue
+        entry = delivered.get(slug)
+        if entry:
+            recorded = entry.get("platforms", {})
+            if active:
+                # so as plataformas configuradas contam
+                if all(recorded.get(n) for n in active):
+                    continue
+            elif recorded:
+                # sem credencial nao ha o que publicar: ja entregou o que dava
+                continue
         try:
             post_date = datetime.date.fromisoformat(post["date"])
         except (KeyError, ValueError):
             continue
         if post_date >= cutoff:
-            out.append(post)
-    out.sort(key=lambda p: p["date"], reverse=True)
+            candidates.append(post)
+    candidates.sort(key=lambda p: p["date"], reverse=True)
+    # primeiro vence: mantem a versao mais recente de cada conteudo
+    seen = set()
+    out = []
+    for post in candidates:
+        base = re.sub(r"^\d{4}-\d{2}-\d{2}-", "", post["slug"])
+        if base in seen:
+            print("SKIP: '%s' duplica conteudo de um post mais recente" % post["slug"][:60])
+            continue
+        seen.add(base)
+        out.append(post)
     return out
 
 
@@ -336,8 +365,8 @@ def main(argv=None):
         print("ERRO fatal: nao foi possivel ler %s: %s" % (STATE_PATH, exc))
         return 2
 
-    undelivered = find_undelivered(meta_posts, args.days, state)
     clients = build_clients(env)
+    undelivered = find_undelivered(meta_posts, args.days, state, active=tuple(clients))
 
     if args.dry_run:
         if not undelivered:

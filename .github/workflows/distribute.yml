@@ -3,7 +3,22 @@ name: Distribute Posts
 on:
   push:
     branches: [main]
+  # Drenagem periodica: o script tem teto de posts por execucao (rate limiting),
+  # entao um backlog so termina de sair sozinho se houver execucao agendada.
+  schedule:
+    - cron: '17 */6 * * *'
   workflow_dispatch:
+    inputs:
+      days:
+        description: 'Janela em dias para varredura de pendentes'
+        required: false
+        default: '365'
+
+# Impede runs simultaneos: dois jobs escrevendo o distributed.json ao mesmo
+# tempo causam conflict de push.
+concurrency:
+  group: distribute
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -30,7 +45,10 @@ jobs:
           BLUESKY_HANDLE: ${{ secrets.BLUESKY_HANDLE }}
           BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
           BLOG_URL: ${{ secrets.BLOG_URL }}
-        run: python3 distribute/distribute-post.py
+        run: |
+          DAYS="${{ github.event.inputs.days || 365 }}"
+          echo "janela: ${DAYS} dias"
+          python3 distribute/distribute-post.py --days="$DAYS"
 
       - name: Commit state back
         run: |
