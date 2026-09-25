@@ -4,7 +4,7 @@ date: "2026-09-23"
 category: "tutorial"
 tags: ["vitest", "testes", "react", "tdd"]
 excerpt: "Vitest: how to test React with tests that genuinely assist."
-cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam.svg"
+cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam.jpg"
 lang: "en"
 translation_of: "2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam"
 ---
