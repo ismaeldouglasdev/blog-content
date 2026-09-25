@@ -25,6 +25,13 @@ permissions:
 
 jobs:
   distribute:
+    # O proprio bot commita o distributed.json de volta na main. Sem esta
+    # guarda, esse push dispara `on: push` de novo, a run publica mais 2 posts,
+    # commita, e o ciclo se repete -- drenando o backlog inteiro em rajada.
+    if: >-
+      github.event_name != 'push' ||
+      (github.actor != 'github-actions[bot]' &&
+       !contains(github.event.head_commit.message, 'distribute: update state'))
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
