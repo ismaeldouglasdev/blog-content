@@ -6,6 +6,8 @@ Heurísticas aplicadas (uma imagem é reprovada se ATINGIR Pelo menos um critér
   - Vazia por escuro   : fração de pixels quase-pretos (luma < 10)   > 60%
   - Sem textura        : desvio padrão da luma < 12 E variedade de cor baixa
   - Poucas cores       : cores únicas (quantizadas a 5 bits) < 25 numa imagem >= 1200px
+
+NOTA: Este script roda localmente e NÃO requer internet.
 """
 import sys, glob, os
 try:

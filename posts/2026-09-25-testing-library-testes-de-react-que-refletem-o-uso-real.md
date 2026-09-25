@@ -3,7 +3,7 @@ title: "Testing Library: testes de React que refletem o uso real"
 date: "2026-09-25"
 category: "tutorial"
 tags: ["testing-library", "react", "testes"]
-excerpt: "Introdução Quando se trata de testar aplicações React, é comum que os desenvolvedores se perguntem sobre a melhor abordagem para garantir que seus componentes sejam robustos e funcionem como esperado."
+excerpt: "Testing Library: testes que simulam o uso real do usuário, com queries getBy/findBy/queryBy, user events, testes assíncronos e mocking de API."
 cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-25-testing-library-testes-de-react-que-refletem-o-uso-real.jpg"
 lang: "pt"
 ---

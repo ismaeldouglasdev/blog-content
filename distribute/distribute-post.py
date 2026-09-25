@@ -13,6 +13,7 @@ import json
 import os
 import re
 import sys
+import time
 
 from channels import BlueskyClient, TelegramClient, ThreadsClient
 
@@ -32,6 +33,20 @@ ENV_VARS = (
     "BLUESKY_HANDLE",
     "BLUESKY_APP_PASSWORD",
 )
+
+# Limite do Bluesky para o texto do post (graphemes). O corpo e truncado para
+# caber nesse orcamento SEM tocar na URL, que sempre vai no fim, inteira.
+BSKY_MAX = 300
+
+# Rate limiting: as plataformas nao gostam de rajada. Publicar varios posts
+# seguidos pode ser tratado como spam. Dorme entre cada publicacao e tambem
+# entre posts diferentes.
+POST_DELAY_SECONDS = 20
+
+# Gap entre posts diferentes (segundos) e teto de posts por execucao.
+POSTS_GAP_SECONDS = 45
+MAX_POSTS_PER_RUN = 2
+
 
 
 def read_env():
@@ -141,7 +156,13 @@ def build_variants(post, blog_url):
     if hashtags:
         threads += "\n\n%s" % hashtags
 
-    bsky = "%s\n\n%s\n\n🔗 %s" % (sanitize(en_title), sanitize(en_excerpt), bsky_url)
+    # Trunca o corpo, nunca a URL: cortar o texto montado quebrava o link
+    # em posts com titulo+excerpt longos (a URL ficava cortada com reticencias).
+    # O limite do Bluesky e de 300 graphemes para o post inteiro.
+    bsky_title = truncate(sanitize(en_title), 120)
+    overhead = len(bsky_title) + len("\n\n") + len("\n\n🔗 ") + len(bsky_url)
+    bsky_body = truncate(sanitize(en_excerpt), max(BSKY_MAX - overhead, 40))
+    bsky = "%s\n\n%s\n\n🔗 %s" % (bsky_title, bsky_body, bsky_url)
 
     telegram = "<b>%s</b>\n\n%s\n\n<a href=\"%s\">Leia no blog</a>" % (
         html.escape(sanitize(title)), html.escape(sanitize(excerpt)), html.escape(post_url)
@@ -150,7 +171,7 @@ def build_variants(post, blog_url):
     return {
         "threads": truncate(threads, 430),
         "threads_comment": "Artigo completo: %s" % post_url,
-        "bsky": truncate(bsky, 290),
+        "bsky": bsky,
         "bsky_url": bsky_url,
         "telegram": telegram,
     }
@@ -246,9 +267,16 @@ def distribute_post(post, clients, env, state):
             print("    [ERRO] %s: %s" % (name, exc))
             results[name] = "falhou"
 
-    attempt("threads", lambda: _threads_post(clients["threads"], variants))
-    attempt("bsky", lambda: clients["bsky"].post_text(variants["bsky"], link_url=variants["bsky_url"]))
-    attempt("telegram", lambda: str(clients["telegram"].send_message(env["TELEGRAM_CHAT_ID"], variants["telegram"])))
+    for platform in PLATFORMS:
+        if platform in clients and not entry["platforms"].get(platform):
+            # Espaco entre plataformas: rajada seguida parece spam.
+            time.sleep(POST_DELAY_SECONDS)
+        if platform == "threads":
+            attempt(platform, lambda: _threads_post(clients["threads"], variants))
+        elif platform == "bsky":
+            attempt(platform, lambda: clients["bsky"].post_text(variants["bsky"], link_url=variants["bsky_url"]))
+        else:
+            attempt(platform, lambda: str(clients["telegram"].send_message(env["TELEGRAM_CHAT_ID"], variants["telegram"])))
 
     if changed and not entry["posted_at"]:
         entry["posted_at"] = datetime.datetime.now(datetime.timezone.utc).isoformat()
@@ -299,7 +327,16 @@ def main(argv=None):
         return 0
 
     changed = False
-    for post in undelivered:
+    # Teto por execucao: evita rajada. O que sobrar fica no state como
+    # pendente e sai na proxima execucao (ou no proximo workflow_dispatch).
+    batch = undelivered[:MAX_POSTS_PER_RUN]
+    skipped = len(undelivered) - len(batch)
+    if skipped > 0:
+        print("LIMITE: %d post(s) adiado(s) para a proxima execucao (teto %d/-run)."
+              % (skipped, MAX_POSTS_PER_RUN))
+    for index, post in enumerate(batch):
+        if index > 0:
+            time.sleep(POSTS_GAP_SECONDS)
         changed |= distribute_post(post, clients, env, state)
     if changed:
         save_state(state)
