@@ -119,6 +119,22 @@
         "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mweidr33yb2f",
         "telegram": "37"
       }
+    },
+    "2026-09-11-por-que-rust-nao-vai-substituir-go-e-vice-versa": {
+      "url": "https://blog.ismaeltech.com/2026-09-11-por-que-rust-nao-vai-substituir-go-e-vice-versa",
+      "posted_at": "2026-09-25T19:24:03.475535+00:00",
+      "platforms": {
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mweinsgsqc2r",
+        "telegram": "38"
+      }
+    },
+    "2026-09-10-gerenciamento-de-estados-react-context-vs-zustand-vs-jotai": {
+      "url": "https://blog.ismaeltech.com/2026-09-10-gerenciamento-de-estados-react-context-vs-zustand-vs-jotai",
+      "posted_at": "2026-09-25T19:25:29.582295+00:00",
+      "platforms": {
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mweiqefaxs2l",
+        "telegram": "39"
+      }
     }
   }
 }
