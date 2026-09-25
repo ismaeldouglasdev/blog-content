@@ -135,6 +135,22 @@
         "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mweiqefaxs2l",
         "telegram": "39"
       }
+    },
+    "2026-09-09-websocket-do-zero-chat-em-tempo-real-com-node-js-e-react": {
+      "url": "https://blog.ismaeltech.com/2026-09-09-websocket-do-zero-chat-em-tempo-real-com-node-js-e-react",
+      "posted_at": "2026-09-25T21:09:09.828607+00:00",
+      "platforms": {
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mweojqjqzw2m",
+        "telegram": "40"
+      }
+    },
+    "2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia": {
+      "url": "https://blog.ismaeltech.com/2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia",
+      "posted_at": "2026-09-25T21:10:35.977981+00:00",
+      "platforms": {
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mweomcowag2r",
+        "telegram": "41"
+      }
     }
   }
 }
