@@ -79,6 +79,22 @@
         "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mwehdpellh2l",
         "telegram": "29"
       }
+    },
+    "2026-09-15-next-js-app-router-server-components-na-pratica": {
+      "url": "https://blog.ismaeltech.com/2026-09-15-next-js-app-router-server-components-na-pratica",
+      "posted_at": "2026-09-25T19:04:35.505095+00:00",
+      "platforms": {
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mwehkyejc227",
+        "telegram": "32"
+      }
+    },
+    "2026-09-14-noticia-demo-nvidia-geforce-rtx-5090-lancamento": {
+      "url": "https://blog.ismaeltech.com/2026-09-14-noticia-demo-nvidia-geforce-rtx-5090-lancamento",
+      "posted_at": "2026-09-25T19:06:01.758041+00:00",
+      "platforms": {
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mwehnktqst2m",
+        "telegram": "33"
+      }
     }
   }
 }
