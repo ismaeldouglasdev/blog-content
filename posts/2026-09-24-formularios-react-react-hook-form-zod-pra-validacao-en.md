@@ -4,6 +4,7 @@ date: "2026-09-24"
 category: "tutorial"
 tags: ["react", "forms", "zod", "react-hook-form"]
 excerpt: "React Forms: React Hook Form + Zod for Effortless Validation."
+share_hook: "Validation, error messages, multi-step forms and performance."
 cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-24-formularios-react-react-hook-form-zod-pra-validacao.jpg"
 lang: "en"
 translation_of: "2026-09-24-formularios-react-react-hook-form-zod-pra-validacao"

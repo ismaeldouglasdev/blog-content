@@ -1,0 +1,63 @@
+name: Distribute Posts
+
+on:
+  push:
+    branches: [main]
+  # Drenagem periodica: o script tem teto de posts por execucao (rate limiting),
+  # entao um backlog so termina de sair sozinho se houver execucao agendada.
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+    inputs:
+      days:
+        description: 'Janela em dias para varredura de pendentes'
+        required: false
+        default: '365'
+
+# Impede runs simultaneos: dois jobs escrevendo o distributed.json ao mesmo
+# tempo causam conflict de push.
+concurrency:
+  group: distribute
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  distribute:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install requests
+        run: pip install requests
+
+      - name: Distribute posts
+        env:
+          THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
+          THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          BLUESKY_HANDLE: ${{ secrets.BLUESKY_HANDLE }}
+          BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
+          BLOG_URL: ${{ secrets.BLOG_URL }}
+        run: |
+          DAYS="${{ github.event.inputs.days || 365 }}"
+          echo "janela: ${DAYS} dias"
+          python3 distribute/distribute-post.py --days="$DAYS"
+
+      - name: Commit state back
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add distribute/state/distributed.json
+          if git diff --cached --quiet; then
+            echo "no state change"
+          else
+            git commit -m "distribute: update state"
+            git push origin HEAD:main
+          fi

@@ -119,8 +119,16 @@ def generate_excerpt(content: str, max_len: int = 160) -> str:
     # Get first substantial paragraph
     for para in paragraphs:
         if len(para) > 50:
-            excerpt = para[:max_len].rsplit(' ', 1)[0] + '...'
-            return sanitize_em_dashes(excerpt)
+            if len(para) <= max_len:
+                return sanitize_em_dashes(para)
+            # Try to cut at the last sentence ending before max_len
+            cut = para[:max_len]
+            for sep in ('. ', '! ', '? '):
+                idx = cut.rfind(sep)
+                if idx > max_len // 2:
+                    return sanitize_em_dashes(cut[:idx + 1])
+            # Fallback: last space (no sentence boundary found)
+            return sanitize_em_dashes(cut.rsplit(' ', 1)[0] + '...')
     
     # Fallback: first 160 chars of content
     return sanitize_em_dashes(content[:max_len].rsplit(' ', 1)[0] + '...')

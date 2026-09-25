@@ -1,0 +1,84 @@
+{
+  "posts": {
+    "2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao": {
+      "url": "https://blog.ismaeltech.com/2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao",
+      "posted_at": "2026-09-22T15:34:38.126447+00:00",
+      "platforms": {
+        "telegram": "7",
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mwedmuwwun27"
+      }
+    },
+    "2026-09-25-testing-library-testes-de-react-que-refletem-o-uso-real": {
+      "url": "https://blog.ismaeltech.com/2026-09-25-testing-library-testes-de-react-que-refletem-o-uso-real",
+      "posted_at": "2026-09-25T15:32:45.263846+00:00",
+      "platforms": {
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mwedylznz22f",
+        "telegram": "27"
+      }
+    },
+    "2026-09-24-formularios-react-react-hook-form-zod-pra-validacao": {
+      "url": "https://blog.ismaeltech.com/2026-09-24-formularios-react-react-hook-form-zod-pra-validacao",
+      "posted_at": "2026-09-25T15:32:46.150993+00:00",
+      "platforms": {
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mwedwnjyxn2d",
+        "telegram": "26"
+      }
+    },
+    "2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam": {
+      "url": "https://blog.ismaeltech.com/2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam",
+      "posted_at": "2026-09-25T15:32:47.060931+00:00",
+      "platforms": {
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mweduoypkh26",
+        "telegram": "25"
+      }
+    },
+    "2026-09-22-postgresql-e-o-renascimento-dos-bancos-sql-relacionais": {
+      "url": "https://blog.ismaeltech.com/2026-09-22-postgresql-e-o-renascimento-dos-bancos-sql-relacionais",
+      "posted_at": "2026-09-25T15:32:47.956598+00:00",
+      "platforms": {
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mwedsqgxcn2d",
+        "telegram": "24"
+      }
+    },
+    "2026-09-21-arquitetura-limpa-em-typescript-principios-solid-aplicados": {
+      "url": "https://blog.ismaeltech.com/2026-09-21-arquitetura-limpa-em-typescript-principios-solid-aplicados",
+      "posted_at": "2026-09-25T15:32:48.810655+00:00",
+      "platforms": {
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mwedqruuvn2d",
+        "telegram": "23"
+      }
+    },
+    "2026-09-20-tailwind-css-utility-first-na-pratica-pra-projetos-reais": {
+      "url": "https://blog.ismaeltech.com/2026-09-20-tailwind-css-utility-first-na-pratica-pra-projetos-reais",
+      "posted_at": "2026-09-25T15:32:56.332983+00:00",
+      "platforms": {
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mwedotgqf72m",
+        "telegram": "22"
+      }
+    },
+    "2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc": {
+      "url": "https://blog.ismaeltech.com/2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc",
+      "posted_at": "2026-09-25T15:32:57.204373+00:00",
+      "platforms": {
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mwedkwqre42c",
+        "telegram": "20"
+      }
+    },
+    "2026-09-17-testing-library-testes-de-react-que-refletem-o-uso-real": {
+      "url": "https://blog.ismaeltech.com/2026-09-17-testing-library-testes-de-react-que-refletem-o-uso-real",
+      "posted_at": "2026-09-25T18:59:04.895866+00:00",
+      "platforms": {
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mwehb5dqeo2c",
+        "telegram": "28"
+      }
+    },
+    "2026-09-16-deploy-com-vercel-railway-e-fly-io-comparativo-honesto": {
+      "url": "https://blog.ismaeltech.com/2026-09-16-deploy-com-vercel-railway-e-fly-io-comparativo-honesto",
+      "posted_at": "2026-09-25T19:00:31.131401+00:00",
+      "platforms": {
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mwehdpellh2l",
+        "telegram": "29"
+      }
+    }
+  }
+}

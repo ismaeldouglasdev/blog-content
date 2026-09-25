@@ -4,6 +4,7 @@ date: "2026-09-18"
 category: "article"
 tags: ["go", "performance", "memoria"]
 excerpt: "Go memory management explained: escape analysis, stack vs heap allocation, concurrent tri-color GC, and sync.Pool patterns to reduce allocations."
+share_hook: "Escape analysis, sync.Pool, benchmarks, and why Go burns memory."
 cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc.jpg"
 lang: "en"
 translation_of: "2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc"
