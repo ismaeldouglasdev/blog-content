@@ -111,6 +111,22 @@
         "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mwehyyhtmd2p",
         "telegram": "35"
       }
+    },
+    "2026-09-13-api-graphql-com-apollo-server-e-client-do-zero-ao-completo": {
+      "url": "https://blog.ismaeltech.com/2026-09-13-api-graphql-com-apollo-server-e-client-do-zero-ao-completo",
+      "posted_at": "2026-09-25T19:17:00.669947+00:00",
+      "platforms": {
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mweib75zus2l",
+        "telegram": "36"
+      }
+    },
+    "2026-09-12-linux-no-desktop-em-2026-ja-esta-pronto-pra-todo-mundo": {
+      "url": "https://blog.ismaeltech.com/2026-09-12-linux-no-desktop-em-2026-ja-esta-pronto-pra-todo-mundo",
+      "posted_at": "2026-09-25T19:18:26.588146+00:00",
+      "platforms": {
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mweidr33yb2f",
+        "telegram": "37"
+      }
     }
   }
 }
