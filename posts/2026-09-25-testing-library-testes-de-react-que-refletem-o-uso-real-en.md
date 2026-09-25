@@ -4,6 +4,7 @@ date: "2026-09-25"
 category: "tutorial"
 tags: ["testing-library", "react", "testes"]
 excerpt: "When testing React, developers often wonder what approach ensures robust components."
+share_hook: "Queries that survive refactors, async tests and API mocking."
 cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-25-testing-library-testes-de-react-que-refletem-o-uso-real.jpg"
 lang: "en"
 translation_of: "2026-09-25-testing-library-testes-de-react-que-refletem-o-uso-real"

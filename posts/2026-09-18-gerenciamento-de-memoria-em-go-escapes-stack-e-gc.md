@@ -4,6 +4,7 @@ date: "2026-09-18"
 category: "article"
 tags: ["go", "performance", "memoria"]
 excerpt: "Entenda como o Go gerencia memória: escape analysis, alocação stack vs heap, garbage collector concorrente e sync.Pool para reduzir alocações."
+share_hook: "Por que aquele endpoint consome tanta memória? Escape analysis, stack vs heap, sync.Pool, benchmarks e as armadilhas que só aparecem em produção."
 cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc.jpg"
 lang: "pt"
 ---

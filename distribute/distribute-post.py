@@ -121,6 +121,21 @@ def truncate(text, limit):
     return text[: limit - 1].rstrip() + "…"
 
 
+def sentence_hook(text, limit=180):
+    """Recorta o excerpt em fronteira de frase, para o post social nao
+    virar um paragrafo de blog. Nao inventa texto: so corta o que ja existe."""
+    text = text.strip()
+    if len(text) <= limit:
+        return text
+    cut = text[:limit]
+    # ultima pontuacao de fim de frase antes do corte
+    best = max(cut.rfind(". "), cut.rfind("! "), cut.rfind("? "),
+               cut.rfind(".\n"), cut.rfind("!\n"), cut.rfind("?\n"))
+    if best > limit * 0.4:
+        return cut[: best + 1].strip()
+    return cut.rstrip() + "…"
+
+
 def build_hashtags(tags, max_tags=4):
     """Converte ate 4 tags em hashtags capitalizadas (#Node, #Javascript)."""
     out = []
@@ -151,7 +166,14 @@ def build_variants(post, blog_url):
     bsky_slug = post.get("translation_slug") or ("%s-en" % slug if en_fm else slug)
     bsky_url = "%s/%s" % (blog_url, bsky_slug)
 
-    threads = "💡 %s\n\n%s" % (sanitize(title), sanitize(excerpt))
+    # Formato de compartilhamento: gancho curto + link.
+    # `share_hook` no frontmatter e o texto autorado pra rede social (diz o que
+    # a pessoa leva do post, sem repetir o titulo). Sem ele, cai no excerpt
+    # cortado em fronteira de frase.
+    hook = sentence_hook(sanitize(fm.get("share_hook") or excerpt))
+    en_hook = sentence_hook(sanitize(en_fm.get("share_hook") or en_excerpt))
+
+    threads = "💡 %s\n\n%s" % (truncate(sanitize(title), 120), hook)
     hashtags = build_hashtags(tags)
     if hashtags:
         threads += "\n\n%s" % hashtags
@@ -161,11 +183,13 @@ def build_variants(post, blog_url):
     # O limite do Bluesky e de 300 graphemes para o post inteiro.
     bsky_title = truncate(sanitize(en_title), 120)
     overhead = len(bsky_title) + len("\n\n") + len("\n\n🔗 ") + len(bsky_url)
-    bsky_body = truncate(sanitize(en_excerpt), max(BSKY_MAX - overhead, 40))
+    bsky_body = truncate(en_hook, max(BSKY_MAX - overhead, 40))
     bsky = "%s\n\n%s\n\n🔗 %s" % (bsky_title, bsky_body, bsky_url)
 
-    telegram = "<b>%s</b>\n\n%s\n\n<a href=\"%s\">Leia no blog</a>" % (
-        html.escape(sanitize(title)), html.escape(sanitize(excerpt)), html.escape(post_url)
+    telegram = "<b>%s</b>\n\n%s\n\n<a href=\"%s\">Ler no blog</a>" % (
+        html.escape(truncate(sanitize(title), 120)),
+        html.escape(hook),
+        html.escape(post_url),
     )
 
     return {

@@ -4,6 +4,7 @@ date: "2026-09-20"
 category: "tutorial"
 tags: ["tailwind", "css", "frontend"]
 excerpt: "Tailwind CSS in practice: why utility-first speeds up development, from Vite setup to dark mode and production optimization."
+share_hook: "Vite setup to dark mode and production optimization."
 cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-20-tailwind-css-utility-first-na-pratica-pra-projetos-reais.jpg"
 lang: "en"
 translation_of: "2026-09-20-tailwind-css-utility-first-na-pratica-pra-projetos-reais"

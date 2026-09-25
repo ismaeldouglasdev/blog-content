@@ -4,6 +4,7 @@ date: "2026-09-25"
 category: "tutorial"
 tags: ["testing-library", "react", "testes"]
 excerpt: "Testing Library: testes que simulam o uso real do usuário, com queries getBy/findBy/queryBy, user events, testes assíncronos e mocking de API."
+share_hook: "As queries que não quebram quando o componente muda (getBy, findBy, queryBy), testes assíncronos e mocking de API."
 cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-25-testing-library-testes-de-react-que-refletem-o-uso-real.jpg"
 lang: "pt"
 ---
