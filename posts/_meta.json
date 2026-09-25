@@ -1,6 +1,59 @@
 {
   "posts": [
     {
+      "slug": "2026-09-24-formularios-react-react-hook-form-zod-pra-validacao",
+      "title": "Formulários React: React Hook Form + Zod pra validação perfeita",
+      "title_en": "React Forms: Perfect Validation with React Hook Form + Zod",
+      "date": "2026-09-24",
+      "category": "tutorial",
+      "tags": [
+        "react",
+        "forms",
+        "zod",
+        "react-hook-form"
+      ],
+      "excerpt": "Formulários React: React Hook Form + Zod para validação perfeita.",
+      "excerpt_en": "React Forms: React Hook Form + Zod for Effortless Validation.",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-24-formularios-react-react-hook-form-zod-pra-validacao.jpg",
+      "cover_credit": {
+        "file": "File:111031-F-ZZ999-102 (6349579508).jpg",
+        "artist": "NATO Training Mission-Afghanistan",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3A111031-F-ZZ999-102_%286349579508%29.jpg",
+        "source": "wikimedia"
+      },
+      "lang": "pt",
+      "translation_slug": "2026-09-24-formularios-react-react-hook-form-zod-pra-validacao-en"
+    },
+    {
+      "slug": "2026-09-24-formularios-react-react-hook-form-zod-pra-validacao-en",
+      "title": "React Forms: Perfect Validation with React Hook Form + Zod",
+      "title_en": "React Forms: Perfect Validation with React Hook Form + Zod",
+      "date": "2026-09-24",
+      "category": "tutorial",
+      "tags": [
+        "react",
+        "forms",
+        "zod",
+        "react-hook-form"
+      ],
+      "excerpt": "React Forms: React Hook Form + Zod for Effortless Validation.",
+      "excerpt_en": "React Forms: React Hook Form + Zod for Effortless Validation.",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-24-formularios-react-react-hook-form-zod-pra-validacao.jpg",
+      "cover_credit": {
+        "file": "File:111031-F-ZZ999-102 (6349579508).jpg",
+        "artist": "NATO Training Mission-Afghanistan",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3A111031-F-ZZ999-102_%286349579508%29.jpg",
+        "source": "wikimedia"
+      },
+      "lang": "en",
+      "translation_slug": "2026-09-24-formularios-react-react-hook-form-zod-pra-validacao",
+      "translation_of": "2026-09-24-formularios-react-react-hook-form-zod-pra-validacao"
+    },
+    {
       "slug": "2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam",
       "title": "Vitest: como testar React com testes que realmente ajudam",
       "title_en": "Vitest: How to Test React with Truly Helpful Tests",
