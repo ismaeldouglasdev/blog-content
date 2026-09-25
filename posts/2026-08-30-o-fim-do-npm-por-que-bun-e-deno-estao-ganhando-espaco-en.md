@@ -4,6 +4,7 @@ date: "2026-08-30"
 category: "curiosidade"
 tags: ["npm", "bun", "deno", "javascript"]
 excerpt: "Bun and Deno are gaining ground in the JavaScript ecosystem: speed, native TypeScript, security, and why npm will still last."
+share_hook: "npm's real problems, what Bun and Deno fix, and whether migrating is worth it."
 lang: "en"
 translation_of: "2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco"
 ---

@@ -4,6 +4,7 @@ date: "2026-09-10"
 category: "article"
 tags: ["react", "state", "zustand", "jotai"]
 excerpt: "State Management: React Context vs. Zustand vs. Jotai."
+share_hook: "Context vs Zustand vs Jotai - real performance numbers and when Context stops being enough."
 cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-10-gerenciamento-de-estados-react-context-vs-zustand-vs-jotai.jpg"
 lang: "en"
 translation_of: "2026-09-10-gerenciamento-de-estados-react-context-vs-zustand-vs-jotai"

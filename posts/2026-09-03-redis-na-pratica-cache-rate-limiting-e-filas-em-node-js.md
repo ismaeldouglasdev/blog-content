@@ -4,6 +4,7 @@ date: "2026-09-03"
 category: "tutorial"
 tags: ["redis", "cache", "backend"]
 excerpt: "Redis na prática: cache, rate limiting e filas em Node.js."
+share_hook: "Cache, rate limiting com janela deslizante, filas com BullMQ e pub/sub — tudo num Redis que roda em Docker."
 lang: "pt"
 ---
 

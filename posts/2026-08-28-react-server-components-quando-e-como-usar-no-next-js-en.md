@@ -4,6 +4,7 @@ date: "2026-08-28"
 category: "tutorial"
 tags: ["react", "server-components", "nextjs"]
 excerpt: "React Server Components and Next.js: how server-side rendering shrinks the client bundle, and when this architecture makes sense."
+share_hook: "Server vs Client Components, streaming and Server Actions - when each one fits."
 lang: "en"
 translation_of: "2026-08-28-react-server-components-quando-e-como-usar-no-next-js"
 ---

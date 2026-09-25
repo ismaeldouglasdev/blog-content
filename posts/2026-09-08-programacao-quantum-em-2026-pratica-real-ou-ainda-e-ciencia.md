@@ -4,6 +4,7 @@ date: "2026-09-08"
 category: "curiosidade"
 tags: ["quantum", "computacao", "futuro"]
 excerpt: "Computação quântica em 2026: o estado real da tecnologia, Qiskit e Cirq, problemas práticos sendo resolvidos e quando devs precisarão se preparar."
+share_hook: "Qiskit e Cirq na prática, o que já foi resolvido de verdade e onde a computação quântica ainda é mais marketing que tecnologia."
 lang: "pt"
 ---
 

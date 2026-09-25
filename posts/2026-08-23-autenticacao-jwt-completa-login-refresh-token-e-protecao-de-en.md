@@ -4,6 +4,7 @@ date: "2026-08-23"
 category: "tutorial"
 tags: ["jwt", "autenticacao", "seguranca", "node"]
 excerpt: "Complete JWT authentication: login flow, access and refresh tokens, route protection with middleware, rotation, and revocation."
+share_hook: "Access and refresh tokens, route middleware, rotation and blacklist - the full flow."
 lang: "en"
 translation_of: "2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de"
 ---

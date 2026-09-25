@@ -4,6 +4,7 @@ date: "2026-08-27"
 category: "tutorial"
 tags: ["serverless", "aws", "lambda", "cloud"]
 excerpt: "Serverless na AWS com Lambda: APIs e automações baratas com API Gateway, event triggers, mitigação de cold start e comparação real de custos."
+share_hook: "Cold start, event triggers e o custo real comparado com EC2: onde serverless economiza e onde só complica."
 lang: "pt"
 ---
 

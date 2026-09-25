@@ -4,6 +4,7 @@ date: "2026-08-31"
 category: "article"
 tags: ["database", "sql", "nosql", "mongodb"]
 excerpt: "Relational vs. NoSQL databases: when to use each one."
+share_hook: "ACID, data modeling and scaling: when PostgreSQL wins and when NoSQL pays."
 lang: "en"
 translation_of: "2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um"
 ---

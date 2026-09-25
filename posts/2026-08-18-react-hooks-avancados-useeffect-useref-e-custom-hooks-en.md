@@ -4,6 +4,7 @@ date: "2026-08-18"
 category: "tutorial"
 tags: ["react", "hooks", "javascript", "frontend"]
 excerpt: "By 2018, 85% of React projects had already adopted Hooks."
+share_hook: "useEffect cleanup, useRef, custom hooks, and the mistakes that keep showing up."
 lang: "en"
 translation_of: "2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks"
 ---

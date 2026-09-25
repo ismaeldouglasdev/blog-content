@@ -4,6 +4,7 @@ date: "2026-08-29"
 category: "tutorial"
 tags: ["typescript", "javascript", "tipagem"]
 excerpt: "Advanced TypeScript Types That Prevent Bugs in Production."
+share_hook: "Narrowing, branded types and generics that kill bugs before deploy."
 lang: "en"
 translation_of: "2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em"
 ---

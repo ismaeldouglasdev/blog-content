@@ -4,6 +4,7 @@ date: "2026-09-04"
 category: "article"
 tags: ["solid", "arquitetura", "boas-praticas"]
 excerpt: "SOLID principles explained with real code: SRP, OCP, LSP, ISP, and DIP applied to an e-commerce integration case."
+share_hook: "Each SOLID principle with before-and-after code, from a real integration."
 lang: "en"
 translation_of: "2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real"
 ---

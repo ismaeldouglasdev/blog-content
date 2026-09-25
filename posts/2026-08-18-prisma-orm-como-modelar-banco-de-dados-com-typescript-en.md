@@ -4,6 +4,7 @@ date: "2026-08-18"
 category: "tutorial"
 tags: ["prisma", "orm", "banco-de-dados", "typescript"]
 excerpt: "Prisma ORM in practice: modeling a SaaS schema, relationships, safe migrations, advanced query API, and performance indexing."
+share_hook: "Modeling a SaaS schema: relations, safe migrations and the advanced Query API."
 lang: "en"
 translation_of: "2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript"
 ---

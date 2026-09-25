@@ -4,6 +4,7 @@ date: "2026-09-11"
 category: "curiosidade"
 tags: ["rust", "go", "linguagens", "opiniao"]
 excerpt: "Programming language wars recur in software development communities."
+share_hook: "Where each shines, and why the honest answer is: both."
 cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-11-por-que-rust-nao-vai-substituir-go-e-vice-versa.jpg"
 lang: "en"
 translation_of: "2026-09-11-por-que-rust-nao-vai-substituir-go-e-vice-versa"

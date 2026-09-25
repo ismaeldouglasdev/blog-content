@@ -4,6 +4,7 @@ date: "2026-09-12"
 category: "curiosidade"
 tags: ["linux", "desktop", "opiniao"]
 excerpt: "Linux no Desktop em 2026: Finalmente Pronto para Todo Mundo?"
+share_hook: "O que o Steam Deck provou, as lacunas que restam e para quem o Linux desktop faz sentido em 2026."
 cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-12-linux-no-desktop-em-2026-ja-esta-pronto-pra-todo-mundo.jpg"
 lang: "pt"
 ---

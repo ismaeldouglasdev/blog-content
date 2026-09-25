@@ -4,6 +4,7 @@ date: "2026-09-09"
 category: "tutorial"
 tags: ["websocket", "real-time", "node", "react"]
 excerpt: "Build a real-time chat application from scratch using WebSocket, Node.js, and React. Learn how WebSocket works and integrate it into a full-stack project."
+share_hook: "From handshake to reconnect: how a realtime chat actually works."
 cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-09-websocket-do-zero-chat-em-tempo-real-com-node-js-e-react.jpg"
 lang: "en"
 translation_of: "2026-09-09-websocket-do-zero-chat-em-tempo-real-com-node-js-e-react"

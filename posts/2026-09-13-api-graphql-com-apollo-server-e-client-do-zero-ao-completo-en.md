@@ -4,6 +4,7 @@ date: "2026-09-13"
 category: "tutorial"
 tags: ["graphql", "apollo", "api"]
 excerpt: "GraphQL with Apollo Server and Client: From Zero to Complete."
+share_hook: "From schema to resolvers to Apollo Client: over-fetching and what GraphQL actually fixes."
 cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-13-api-graphql-com-apollo-server-e-client-do-zero-ao-completo.jpg"
 lang: "en"
 translation_of: "2026-09-13-api-graphql-com-apollo-server-e-client-do-zero-ao-completo"

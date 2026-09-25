@@ -4,6 +4,7 @@ date: "2026-09-03"
 category: "tutorial"
 tags: ["redis", "cache", "backend"]
 excerpt: "Redis in practice: caching, rate limiting and queues in Node.js."
+share_hook: "Cache, sliding-window rate limiting, BullMQ queues and pub/sub in one Redis."
 lang: "en"
 translation_of: "2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js"
 ---

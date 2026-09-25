@@ -4,6 +4,7 @@ date: "2026-09-04"
 category: "article"
 tags: ["solid", "arquitetura", "boas-praticas"]
 excerpt: "Princípios SOLID explicados com código real: SRP, OCP, LSP, ISP e DIP aplicados a um caso de integração de e-commerce."
+share_hook: "Cada princípio SOLID com o código antes e depois, a partir de uma integração que quebrou dois meses depois de entrega."
 lang: "pt"
 ---
 

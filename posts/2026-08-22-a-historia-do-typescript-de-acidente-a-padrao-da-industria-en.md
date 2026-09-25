@@ -4,6 +4,7 @@ date: "2026-08-22"
 category: "curiosidade"
 tags: ["typescript", "historia", "javascript"]
 excerpt: "In October 2012, Microsoft announced TypeScript, reshaping JavaScript development. At the time, teams maintaining large JavaScript."
+share_hook: "From 2012 to ecosystem default: how TypeScript was born and won."
 lang: "en"
 translation_of: "2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria"
 ---

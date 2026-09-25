@@ -4,6 +4,7 @@ date: "2026-09-09"
 category: "tutorial"
 tags: ["websocket", "real-time", "node", "react"]
 excerpt: "WebSocket do zero: chat em tempo real com Node.js e React."
+share_hook: "Do handshake à reconexão: como funciona por dentro um chat em tempo real com Node.js e React."
 cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-09-websocket-do-zero-chat-em-tempo-real-com-node-js-e-react.jpg"
 lang: "pt"
 ---

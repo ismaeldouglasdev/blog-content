@@ -4,6 +4,7 @@ date: "2026-08-28"
 category: "tutorial"
 tags: ["react", "server-components", "nextjs"]
 excerpt: "React Server Components permitem renderizar componentes no servidor, reduzindo o bundle no cliente. Saiba como o Next.js mudou a arquitetura frontend com essa abordagem."
+share_hook: "Server ou Client Component, data fetching no servidor, streaming com Suspense e Server Actions — e quando cada um é a escolha certa."
 lang: "pt"
 ---
 
