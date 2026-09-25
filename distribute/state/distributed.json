@@ -63,6 +63,22 @@
         "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mwedkwqre42c",
         "telegram": "20"
       }
+    },
+    "2026-09-17-testing-library-testes-de-react-que-refletem-o-uso-real": {
+      "url": "https://blog.ismaeltech.com/2026-09-17-testing-library-testes-de-react-que-refletem-o-uso-real",
+      "posted_at": "2026-09-25T18:59:04.895866+00:00",
+      "platforms": {
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mwehb5dqeo2c",
+        "telegram": "28"
+      }
+    },
+    "2026-09-16-deploy-com-vercel-railway-e-fly-io-comparativo-honesto": {
+      "url": "https://blog.ismaeltech.com/2026-09-16-deploy-com-vercel-railway-e-fly-io-comparativo-honesto",
+      "posted_at": "2026-09-25T19:00:31.131401+00:00",
+      "platforms": {
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mwehdpellh2l",
+        "telegram": "29"
+      }
     }
   }
 }
