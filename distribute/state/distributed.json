@@ -151,6 +151,22 @@
         "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mweomcowag2r",
         "telegram": "41"
       }
+    },
+    "2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real": {
+      "url": "https://blog.ismaeltech.com/2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real",
+      "posted_at": "2026-09-25T21:47:14.078752+00:00",
+      "platforms": {
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mweqnsywgr2c",
+        "telegram": "44"
+      }
+    },
+    "2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js": {
+      "url": "https://blog.ismaeltech.com/2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js",
+      "posted_at": "2026-09-25T21:48:40.338174+00:00",
+      "platforms": {
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mweqqf5gkz2r",
+        "telegram": "45"
+      }
     }
   }
 }
