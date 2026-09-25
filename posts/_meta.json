@@ -1,6 +1,57 @@
 {
   "posts": [
     {
+      "slug": "2026-09-25-testing-library-testes-de-react-que-refletem-o-uso-real",
+      "title": "Testing Library: testes de React que refletem o uso real",
+      "title_en": "Testing Library: React Tests that Mimic Real-World Usage",
+      "date": "2026-09-25",
+      "category": "tutorial",
+      "tags": [
+        "testing-library",
+        "react",
+        "testes"
+      ],
+      "excerpt": "Introdução Quando se trata de testar aplicações React, é comum que os desenvolvedores se perguntem sobre a melhor abordagem para garantir que seus componentes sejam robustos e funcionem como esperado.",
+      "excerpt_en": "When testing React, developers often wonder what approach ensures robust components.",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-25-testing-library-testes-de-react-que-refletem-o-uso-real.jpg",
+      "cover_credit": {
+        "file": "File:Colobocentrotus atratus MHNT Bali Test.jpg",
+        "artist": "Didier Descouens",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3AColobocentrotus_atratus_MHNT_Bali_Test.jpg",
+        "source": "wikimedia"
+      },
+      "lang": "pt",
+      "translation_slug": "2026-09-25-testing-library-testes-de-react-que-refletem-o-uso-real-en"
+    },
+    {
+      "slug": "2026-09-25-testing-library-testes-de-react-que-refletem-o-uso-real-en",
+      "title": "Testing Library: React Tests that Mimic Real-World Usage",
+      "title_en": "Testing Library: React Tests that Mimic Real-World Usage",
+      "date": "2026-09-25",
+      "category": "tutorial",
+      "tags": [
+        "testing-library",
+        "react",
+        "testes"
+      ],
+      "excerpt": "When testing React, developers often wonder what approach ensures robust components.",
+      "excerpt_en": "When testing React, developers often wonder what approach ensures robust components.",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-25-testing-library-testes-de-react-que-refletem-o-uso-real.jpg",
+      "cover_credit": {
+        "file": "File:Colobocentrotus atratus MHNT Bali Test.jpg",
+        "artist": "Didier Descouens",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "page": "https://commons.wikimedia.org/wiki/File%3AColobocentrotus_atratus_MHNT_Bali_Test.jpg",
+        "source": "wikimedia"
+      },
+      "lang": "en",
+      "translation_slug": "2026-09-25-testing-library-testes-de-react-que-refletem-o-uso-real",
+      "translation_of": "2026-09-25-testing-library-testes-de-react-que-refletem-o-uso-real"
+    },
+    {
       "slug": "2026-09-24-formularios-react-react-hook-form-zod-pra-validacao",
       "title": "Formulários React: React Hook Form + Zod pra validação perfeita",
       "title_en": "React Forms: Perfect Validation with React Hook Form + Zod",
