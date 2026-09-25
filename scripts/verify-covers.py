@@ -146,6 +146,9 @@ def verify_workspace(workspace: Path) -> dict:
                     add("warning", "photo_review_status", slug, f"review_status={meta.get('review_status')}")
                 if not (post.get("cover_credit") or {}).get("license"):
                     add("error", "photo_license_missing", slug, "Foto sem licença")
+            elif strategy == "legacy":
+                if meta.get("review_status") != "unreviewed":
+                    add("warning", "legacy_review_status", slug, f"review_status={meta.get('review_status')}")
             elif strategy != "fallback":
                 add("warning", "unknown_strategy", slug, f"strategy={strategy}")
 
@@ -162,6 +165,7 @@ def verify_workspace(workspace: Path) -> dict:
             "errors": errors,
             "warnings": warnings,
             "legacy": sum(1 for item in findings if item["code"] == "cover_meta_legacy"),
+            "legacy_registered": sum(1 for post in posts if isinstance(post.get("cover_meta"), dict) and post["cover_meta"].get("strategy") == "legacy"),
         },
         "files": files,
         "findings": findings,

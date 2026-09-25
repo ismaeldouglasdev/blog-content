@@ -33,15 +33,26 @@ class VerifyCoversTests(unittest.TestCase):
         (root / "posts" / "_meta.json").write_text(json.dumps({"posts": posts}), encoding="utf-8")
         return root
 
-    def test_valid_legacy_cover_warns_only(self):
+    def test_valid_explicit_legacy_is_quiet(self):
+        root = self.workspace([{
+            "slug": "post",
+            "cover": "https://example.com/post.jpg",
+            "cover_meta": {"strategy": "legacy", "review_status": "unreviewed", "source": "historical"},
+        }])
+        report = verify_covers.verify_workspace(root)
+        self.assertTrue(report["ok"], report["findings"])
+        self.assertEqual(report["summary"]["errors"], 0)
+        self.assertEqual(report["summary"]["warnings"], 0)
+        self.assertEqual(report["summary"]["legacy_registered"], 1)
+
+    def test_missing_cover_meta_still_warns(self):
         root = self.workspace([{
             "slug": "post",
             "cover": "https://example.com/post.jpg",
         }])
         report = verify_covers.verify_workspace(root)
-        self.assertTrue(report["ok"], report["findings"])
-        self.assertEqual(report["summary"]["errors"], 0)
         self.assertEqual(report["summary"]["legacy"], 1)
+        self.assertIn("cover_meta_legacy", {item["code"] for item in report["findings"]})
 
     def test_low_photo_score_blocks(self):
         root = self.workspace([{
