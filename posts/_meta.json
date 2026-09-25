@@ -23,7 +23,15 @@
         "source": "wikimedia"
       },
       "lang": "pt",
-      "translation_slug": "2026-09-25-testing-library-testes-de-react-que-refletem-o-uso-real-en"
+      "translation_slug": "2026-09-25-testing-library-testes-de-react-que-refletem-o-uso-real-en",
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-25-testing-library-testes-de-react-que-refletem-o-uso-real.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
+      }
     },
     {
       "slug": "2026-09-25-testing-library-testes-de-react-que-refletem-o-uso-real-en",
@@ -49,7 +57,15 @@
       },
       "lang": "en",
       "translation_slug": "2026-09-25-testing-library-testes-de-react-que-refletem-o-uso-real",
-      "translation_of": "2026-09-25-testing-library-testes-de-react-que-refletem-o-uso-real"
+      "translation_of": "2026-09-25-testing-library-testes-de-react-que-refletem-o-uso-real",
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-25-testing-library-testes-de-react-que-refletem-o-uso-real.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
+      }
     },
     {
       "slug": "2026-09-24-formularios-react-react-hook-form-zod-pra-validacao",
@@ -75,7 +91,15 @@
         "source": "wikimedia"
       },
       "lang": "pt",
-      "translation_slug": "2026-09-24-formularios-react-react-hook-form-zod-pra-validacao-en"
+      "translation_slug": "2026-09-24-formularios-react-react-hook-form-zod-pra-validacao-en",
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-24-formularios-react-react-hook-form-zod-pra-validacao.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
+      }
     },
     {
       "slug": "2026-09-24-formularios-react-react-hook-form-zod-pra-validacao-en",
@@ -102,7 +126,15 @@
       },
       "lang": "en",
       "translation_slug": "2026-09-24-formularios-react-react-hook-form-zod-pra-validacao",
-      "translation_of": "2026-09-24-formularios-react-react-hook-form-zod-pra-validacao"
+      "translation_of": "2026-09-24-formularios-react-react-hook-form-zod-pra-validacao",
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-24-formularios-react-react-hook-form-zod-pra-validacao.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
+      }
     },
     {
       "slug": "2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam",
@@ -121,7 +153,15 @@
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam.jpg",
       "cover_credit": null,
       "lang": "pt",
-      "translation_slug": "2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam-en"
+      "translation_slug": "2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam-en",
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
+      }
     },
     {
       "slug": "2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam-en",
@@ -141,7 +181,15 @@
       "cover_credit": null,
       "lang": "en",
       "translation_slug": "2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam",
-      "translation_of": "2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam"
+      "translation_of": "2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam",
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
+      }
     },
     {
       "slug": "2026-09-22-postgresql-e-o-renascimento-dos-bancos-sql-relacionais",
@@ -166,7 +214,15 @@
         "source": "wikimedia"
       },
       "lang": "pt",
-      "translation_slug": "2026-09-22-postgresql-e-o-renascimento-dos-bancos-sql-relacionais-en"
+      "translation_slug": "2026-09-22-postgresql-e-o-renascimento-dos-bancos-sql-relacionais-en",
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-22-postgresql-e-o-renascimento-dos-bancos-sql-relacionais.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
+      }
     },
     {
       "slug": "2026-09-22-postgresql-e-o-renascimento-dos-bancos-sql-relacionais-en",
@@ -192,7 +248,15 @@
       },
       "lang": "en",
       "translation_slug": "2026-09-22-postgresql-e-o-renascimento-dos-bancos-sql-relacionais",
-      "translation_of": "2026-09-22-postgresql-e-o-renascimento-dos-bancos-sql-relacionais"
+      "translation_of": "2026-09-22-postgresql-e-o-renascimento-dos-bancos-sql-relacionais",
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-22-postgresql-e-o-renascimento-dos-bancos-sql-relacionais.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
+      }
     },
     {
       "slug": "2026-09-21-arquitetura-limpa-em-typescript-principios-solid-aplicados",
@@ -210,7 +274,15 @@
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-21-arquitetura-limpa-em-typescript-principios-solid-aplicados.jpg",
       "cover_credit": null,
       "lang": "pt",
-      "translation_slug": "2026-09-21-arquitetura-limpa-em-typescript-principios-solid-aplicados-en"
+      "translation_slug": "2026-09-21-arquitetura-limpa-em-typescript-principios-solid-aplicados-en",
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-21-arquitetura-limpa-em-typescript-principios-solid-aplicados.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
+      }
     },
     {
       "slug": "2026-09-21-arquitetura-limpa-em-typescript-principios-solid-aplicados-en",
@@ -229,7 +301,15 @@
       "cover_credit": null,
       "lang": "en",
       "translation_slug": "2026-09-21-arquitetura-limpa-em-typescript-principios-solid-aplicados",
-      "translation_of": "2026-09-21-arquitetura-limpa-em-typescript-principios-solid-aplicados"
+      "translation_of": "2026-09-21-arquitetura-limpa-em-typescript-principios-solid-aplicados",
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-21-arquitetura-limpa-em-typescript-principios-solid-aplicados.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
+      }
     },
     {
       "slug": "2026-09-20-tailwind-css-utility-first-na-pratica-pra-projetos-reais",
@@ -254,7 +334,15 @@
         "source": "wikimedia"
       },
       "lang": "pt",
-      "translation_slug": "2026-09-20-tailwind-css-utility-first-na-pratica-pra-projetos-reais-en"
+      "translation_slug": "2026-09-20-tailwind-css-utility-first-na-pratica-pra-projetos-reais-en",
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-20-tailwind-css-utility-first-na-pratica-pra-projetos-reais.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
+      }
     },
     {
       "slug": "2026-09-20-tailwind-css-utility-first-na-pratica-pra-projetos-reais-en",
@@ -280,7 +368,15 @@
       },
       "lang": "en",
       "translation_slug": "2026-09-20-tailwind-css-utility-first-na-pratica-pra-projetos-reais",
-      "translation_of": "2026-09-20-tailwind-css-utility-first-na-pratica-pra-projetos-reais"
+      "translation_of": "2026-09-20-tailwind-css-utility-first-na-pratica-pra-projetos-reais",
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-20-tailwind-css-utility-first-na-pratica-pra-projetos-reais.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
+      }
     },
     {
       "slug": "2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao",
@@ -305,7 +401,15 @@
         "source": "wikimedia"
       },
       "lang": "pt",
-      "translation_slug": "2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao-en"
+      "translation_slug": "2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao-en",
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
+      }
     },
     {
       "slug": "2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao-en",
@@ -331,7 +435,15 @@
       },
       "lang": "en",
       "translation_slug": "2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao",
-      "translation_of": "2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao"
+      "translation_of": "2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao",
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
+      }
     },
     {
       "slug": "2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc",
@@ -342,7 +454,15 @@
       "lang": "pt",
       "translation_slug": "2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc-en",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc.jpg",
-      "excerpt_en": "Go memory management explained: escape analysis, stack vs heap allocation, concurrent tri-color GC, and sync.Pool patterns to reduce allocations."
+      "excerpt_en": "Go memory management explained: escape analysis, stack vs heap allocation, concurrent tri-color GC, and sync.Pool patterns to reduce allocations.",
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
+      }
     },
     {
       "slug": "2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc-en",
@@ -354,7 +474,15 @@
       "translation_slug": "2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc",
       "translation_of": "2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc.jpg",
-      "excerpt_en": "Go memory management explained: escape analysis, stack vs heap allocation, concurrent tri-color GC, and sync.Pool patterns to reduce allocations."
+      "excerpt_en": "Go memory management explained: escape analysis, stack vs heap allocation, concurrent tri-color GC, and sync.Pool patterns to reduce allocations.",
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
+      }
     },
     {
       "slug": "2026-09-17-testing-library-testes-de-react-que-refletem-o-uso-real",
@@ -379,7 +507,15 @@
         "source": "wikimedia"
       },
       "lang": "pt",
-      "translation_slug": "2026-09-17-testing-library-testes-de-react-que-refletem-o-uso-real-en"
+      "translation_slug": "2026-09-17-testing-library-testes-de-react-que-refletem-o-uso-real-en",
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-17-testing-library-testes-de-react-que-refletem-o-uso-real.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
+      }
     },
     {
       "slug": "2026-09-17-testing-library-testes-de-react-que-refletem-o-uso-real-en",
@@ -405,7 +541,15 @@
       },
       "lang": "en",
       "translation_slug": "2026-09-17-testing-library-testes-de-react-que-refletem-o-uso-real",
-      "translation_of": "2026-09-17-testing-library-testes-de-react-que-refletem-o-uso-real"
+      "translation_of": "2026-09-17-testing-library-testes-de-react-que-refletem-o-uso-real",
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-17-testing-library-testes-de-react-que-refletem-o-uso-real.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
+      }
     },
     {
       "slug": "2026-09-16-deploy-com-vercel-railway-e-fly-io-comparativo-honesto",
@@ -431,7 +575,15 @@
         "source": "wikimedia"
       },
       "lang": "pt",
-      "translation_slug": "2026-09-16-deploy-com-vercel-railway-e-fly-io-comparativo-honesto-en"
+      "translation_slug": "2026-09-16-deploy-com-vercel-railway-e-fly-io-comparativo-honesto-en",
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-16-deploy-com-vercel-railway-e-fly-io-comparativo-honesto.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
+      }
     },
     {
       "slug": "2026-09-16-deploy-com-vercel-railway-e-fly-io-comparativo-honesto-en",
@@ -458,7 +610,15 @@
       },
       "lang": "en",
       "translation_slug": "2026-09-16-deploy-com-vercel-railway-e-fly-io-comparativo-honesto",
-      "translation_of": "2026-09-16-deploy-com-vercel-railway-e-fly-io-comparativo-honesto"
+      "translation_of": "2026-09-16-deploy-com-vercel-railway-e-fly-io-comparativo-honesto",
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-16-deploy-com-vercel-railway-e-fly-io-comparativo-honesto.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
+      }
     },
     {
       "slug": "2026-09-15-next-js-app-router-server-components-na-pratica",
@@ -483,7 +643,15 @@
         "source": "wikimedia"
       },
       "lang": "pt",
-      "translation_slug": "2026-09-15-next-js-app-router-server-components-na-pratica-en"
+      "translation_slug": "2026-09-15-next-js-app-router-server-components-na-pratica-en",
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-15-next-js-app-router-server-components-na-pratica.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
+      }
     },
     {
       "slug": "2026-09-15-next-js-app-router-server-components-na-pratica-en",
@@ -509,7 +677,15 @@
       },
       "lang": "en",
       "translation_slug": "2026-09-15-next-js-app-router-server-components-na-pratica",
-      "translation_of": "2026-09-15-next-js-app-router-server-components-na-pratica"
+      "translation_of": "2026-09-15-next-js-app-router-server-components-na-pratica",
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-15-next-js-app-router-server-components-na-pratica.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
+      }
     },
     {
       "slug": "2026-09-14-noticia-demo-nvidia-geforce-rtx-5090-lancamento",
@@ -535,6 +711,14 @@
         "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
         "page": "https://commons.wikimedia.org/wiki/File:ZOTAC_Gaming%27s_GeForce_RTX_50_Series_Graphics_Carda.jpg",
         "source": "wikimedia"
+      },
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-14-noticia-demo-nvidia-geforce-rtx-5090-lancamento.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
       }
     },
     {
@@ -583,6 +767,14 @@
         "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
         "page": "https://commons.wikimedia.org/wiki/File:Beautiful_Mechanical_Keyboard.jpg",
         "source": "wikimedia"
+      },
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-14-teclados-mecanicos-em-2026-modelos-em-destaque.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
       }
     },
     {
@@ -609,7 +801,15 @@
         "source": "wikimedia"
       },
       "lang": "pt",
-      "translation_slug": "2026-09-14-edge-functions-com-cloudflare-workers-compute-global-sem-en"
+      "translation_slug": "2026-09-14-edge-functions-com-cloudflare-workers-compute-global-sem-en",
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-14-edge-functions-com-cloudflare-workers-compute-global-sem.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
+      }
     },
     {
       "slug": "2026-09-14-edge-functions-com-cloudflare-workers-compute-global-sem-en",
@@ -636,7 +836,15 @@
       },
       "lang": "en",
       "translation_slug": "2026-09-14-edge-functions-com-cloudflare-workers-compute-global-sem",
-      "translation_of": "2026-09-14-edge-functions-com-cloudflare-workers-compute-global-sem"
+      "translation_of": "2026-09-14-edge-functions-com-cloudflare-workers-compute-global-sem",
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-14-edge-functions-com-cloudflare-workers-compute-global-sem.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
+      }
     },
     {
       "slug": "2026-09-14-noticia-demo-nvidia-geforce-rtx-5090-lancamento-en",
@@ -663,7 +871,15 @@
         "page": "https://commons.wikimedia.org/wiki/File:ZOTAC_Gaming%27s_GeForce_RTX_50_Series_Graphics_Carda.jpg",
         "source": "wikimedia"
       },
-      "translation_of": "2026-09-14-noticia-demo-nvidia-geforce-rtx-5090-lancamento"
+      "translation_of": "2026-09-14-noticia-demo-nvidia-geforce-rtx-5090-lancamento",
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-14-noticia-demo-nvidia-geforce-rtx-5090-lancamento.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
+      }
     },
     {
       "slug": "2026-09-14-teclados-mecanicos-em-2026-modelos-em-destaque-en",
@@ -689,7 +905,15 @@
         "page": "https://commons.wikimedia.org/wiki/File:Beautiful_Mechanical_Keyboard.jpg",
         "source": "wikimedia"
       },
-      "translation_of": "2026-09-14-teclados-mecanicos-em-2026-modelos-em-destaque"
+      "translation_of": "2026-09-14-teclados-mecanicos-em-2026-modelos-em-destaque",
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-14-teclados-mecanicos-em-2026-modelos-em-destaque.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
+      }
     },
     {
       "slug": "2026-09-13-api-graphql-com-apollo-server-e-client-do-zero-ao-completo",
@@ -714,7 +938,15 @@
         "source": "wikimedia"
       },
       "lang": "pt",
-      "translation_slug": "2026-09-13-api-graphql-com-apollo-server-e-client-do-zero-ao-completo-en"
+      "translation_slug": "2026-09-13-api-graphql-com-apollo-server-e-client-do-zero-ao-completo-en",
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-13-api-graphql-com-apollo-server-e-client-do-zero-ao-completo.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
+      }
     },
     {
       "slug": "2026-09-13-api-graphql-com-apollo-server-e-client-do-zero-ao-completo-en",
@@ -740,7 +972,15 @@
       },
       "lang": "en",
       "translation_slug": "2026-09-13-api-graphql-com-apollo-server-e-client-do-zero-ao-completo",
-      "translation_of": "2026-09-13-api-graphql-com-apollo-server-e-client-do-zero-ao-completo"
+      "translation_of": "2026-09-13-api-graphql-com-apollo-server-e-client-do-zero-ao-completo",
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-13-api-graphql-com-apollo-server-e-client-do-zero-ao-completo.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
+      }
     },
     {
       "slug": "2026-09-12-linux-no-desktop-em-2026-ja-esta-pronto-pra-todo-mundo",
@@ -765,7 +1005,15 @@
         "source": "wikimedia"
       },
       "lang": "pt",
-      "translation_slug": "2026-09-12-linux-no-desktop-em-2026-ja-esta-pronto-pra-todo-mundo-en"
+      "translation_slug": "2026-09-12-linux-no-desktop-em-2026-ja-esta-pronto-pra-todo-mundo-en",
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-12-linux-no-desktop-em-2026-ja-esta-pronto-pra-todo-mundo.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
+      }
     },
     {
       "slug": "2026-09-12-linux-no-desktop-em-2026-ja-esta-pronto-pra-todo-mundo-en",
@@ -791,7 +1039,15 @@
       },
       "lang": "en",
       "translation_slug": "2026-09-12-linux-no-desktop-em-2026-ja-esta-pronto-pra-todo-mundo",
-      "translation_of": "2026-09-12-linux-no-desktop-em-2026-ja-esta-pronto-pra-todo-mundo"
+      "translation_of": "2026-09-12-linux-no-desktop-em-2026-ja-esta-pronto-pra-todo-mundo",
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-12-linux-no-desktop-em-2026-ja-esta-pronto-pra-todo-mundo.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
+      }
     },
     {
       "slug": "2026-09-11-por-que-rust-nao-vai-substituir-go-e-vice-versa",
@@ -819,7 +1075,15 @@
       "translation_slug": "2026-09-11-por-que-rust-nao-vai-substituir-go-e-vice-versa-en",
       "glossary_exclude": [
         "service"
-      ]
+      ],
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-11-por-que-rust-nao-vai-substituir-go-e-vice-versa.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
+      }
     },
     {
       "slug": "2026-09-11-por-que-rust-nao-vai-substituir-go-e-vice-versa-en",
@@ -848,7 +1112,15 @@
       "translation_of": "2026-09-11-por-que-rust-nao-vai-substituir-go-e-vice-versa",
       "glossary_exclude": [
         "service"
-      ]
+      ],
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-11-por-que-rust-nao-vai-substituir-go-e-vice-versa.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
+      }
     },
     {
       "slug": "2026-09-10-gerenciamento-de-estados-react-context-vs-zustand-vs-jotai",
@@ -876,7 +1148,15 @@
       "translation_slug": "2026-09-10-gerenciamento-de-estados-react-context-vs-zustand-vs-jotai-en",
       "glossary_exclude": [
         "service"
-      ]
+      ],
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-10-gerenciamento-de-estados-react-context-vs-zustand-vs-jotai.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
+      }
     },
     {
       "slug": "2026-09-10-gerenciamento-de-estados-react-context-vs-zustand-vs-jotai-en",
@@ -905,7 +1185,15 @@
       "translation_of": "2026-09-10-gerenciamento-de-estados-react-context-vs-zustand-vs-jotai",
       "glossary_exclude": [
         "service"
-      ]
+      ],
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-10-gerenciamento-de-estados-react-context-vs-zustand-vs-jotai.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
+      }
     },
     {
       "slug": "2026-09-09-websocket-do-zero-chat-em-tempo-real-com-node-js-e-react",
@@ -930,7 +1218,15 @@
         "page": "https://commons.wikimedia.org/wiki/File%3AApollo_Guidance_Computer_%28AGC%29.jpg"
       },
       "lang": "pt",
-      "translation_slug": "2026-09-09-websocket-do-zero-chat-em-tempo-real-com-node-js-e-react-en"
+      "translation_slug": "2026-09-09-websocket-do-zero-chat-em-tempo-real-com-node-js-e-react-en",
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-09-websocket-do-zero-chat-em-tempo-real-com-node-js-e-react.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
+      }
     },
     {
       "slug": "2026-09-09-websocket-do-zero-chat-em-tempo-real-com-node-js-e-react-en",
@@ -956,7 +1252,15 @@
       },
       "lang": "en",
       "translation_slug": "2026-09-09-websocket-do-zero-chat-em-tempo-real-com-node-js-e-react",
-      "translation_of": "2026-09-09-websocket-do-zero-chat-em-tempo-real-com-node-js-e-react"
+      "translation_of": "2026-09-09-websocket-do-zero-chat-em-tempo-real-com-node-js-e-react",
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-09-websocket-do-zero-chat-em-tempo-real-com-node-js-e-react.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
+      }
     },
     {
       "slug": "2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia",
@@ -981,6 +1285,14 @@
         "license_url": "https://creativecommons.org/licenses/by/2.0/",
         "page": "https://commons.wikimedia.org/wiki/File%3AA_Wafer_of_the_Latest_D-Wave_Quantum_Computers_%2839188583425%29.jpg",
         "author": "Steve Jurvetson from Menlo Park, USA"
+      },
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
       }
     },
     {
@@ -1007,6 +1319,14 @@
         "license_url": "https://creativecommons.org/licenses/by/2.0/",
         "page": "https://commons.wikimedia.org/wiki/File%3AA_Wafer_of_the_Latest_D-Wave_Quantum_Computers_%2839188583425%29.jpg",
         "author": "Steve Jurvetson from Menlo Park, USA"
+      },
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-ciencia.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
       }
     },
     {
@@ -1046,7 +1366,15 @@
           "q": "O que é o JSONB do PostgreSQL?",
           "a": "É um tipo de coluna que armazena JSON binário, permitindo consultar e indexar campos de documentos semi-estruturados sem abandonar o poder relacional — o melhor dos dois mundos."
         }
-      ]
+      ],
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-07-postgresql-e-o-renascimento-dos-bancos-sql-relacionais.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
+      }
     },
     {
       "slug": "2026-09-07-postgresql-e-o-renascimento-dos-bancos-sql-relacionais-en",
@@ -1086,7 +1414,15 @@
           "q": "What is PostgreSQL JSONB?",
           "a": "It is a binary JSON column type that lets you query and index semi-structured document fields without giving up relational power — the best of both worlds."
         }
-      ]
+      ],
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-07-postgresql-e-o-renascimento-dos-bancos-sql-relacionais.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
+      }
     },
     {
       "slug": "2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa",
@@ -1126,7 +1462,15 @@
           "q": "Qual tem ecossistema melhor?",
           "a": "Ambos têm ecossistemas maduros. Go tem ótimo suporte nativo para rede e HTTP. Rust tem um sistema de tipos e ferramentas (Cargo, clippy) excepcionais, com forte presença em WASM e sistemas."
         }
-      ]
+      ],
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
+      }
     },
     {
       "slug": "2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa-en",
@@ -1167,7 +1511,15 @@
           "q": "Which has a better ecosystem?",
           "a": "Both have mature ecosystems. Go has great native support for networking and HTTP. Rust has an exceptional type system and tooling (Cargo, clippy), with a strong presence in WASM and systems."
         }
-      ]
+      ],
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-06-por-que-rust-nao-vai-substituir-go-e-vice-versa.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
+      }
     },
     {
       "slug": "2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real",
@@ -1195,7 +1547,15 @@
       },
       "glossary_exclude": [
         "service"
-      ]
+      ],
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
+      }
     },
     {
       "slug": "2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real-en",
@@ -1221,6 +1581,14 @@
         "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
         "page": "https://commons.wikimedia.org/wiki/File%3ALaptop_coding_programs_%28Unsplash%29.jpg",
         "author": "Tirza van Dijk tirzavandijk"
+      },
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-real.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
       }
     },
     {
@@ -1263,7 +1631,15 @@
       ],
       "glossary_exclude": [
         "service"
-      ]
+      ],
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
+      }
     },
     {
       "slug": "2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js-en",
@@ -1306,7 +1682,15 @@
       ],
       "glossary_exclude": [
         "service"
-      ]
+      ],
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
+      }
     },
     {
       "slug": "2026-09-01-testing-library-testes-de-react-que-refletem-o-uso-real",
@@ -1334,7 +1718,15 @@
       },
       "glossary_exclude": [
         "service"
-      ]
+      ],
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-01-testing-library-testes-de-react-que-refletem-o-uso-real.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
+      }
     },
     {
       "slug": "2026-09-01-testing-library-testes-de-react-que-refletem-o-uso-real-en",
@@ -1363,7 +1755,15 @@
       },
       "glossary_exclude": [
         "service"
-      ]
+      ],
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-01-testing-library-testes-de-react-que-refletem-o-uso-real.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
+      }
     },
     {
       "slug": "2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um",
@@ -1389,6 +1789,14 @@
         "license_url": "https://en.wikipedia.org/wiki/Public_domain",
         "page": "https://commons.wikimedia.org/wiki/File%3ACable_racks_at_grid_computing_center%2C_Fermilab_with_blue_lights.jpg",
         "author": "ENERGY.GOV"
+      },
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
       }
     },
     {
@@ -1416,6 +1824,14 @@
         "license_url": "https://en.wikipedia.org/wiki/Public_domain",
         "page": "https://commons.wikimedia.org/wiki/File%3ACable_racks_at_grid_computing_center%2C_Fermilab_with_blue_lights.jpg",
         "author": "ENERGY.GOV"
+      },
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
       }
     },
     {
@@ -1442,6 +1858,14 @@
         "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
         "page": "https://commons.wikimedia.org/wiki/File%3AVS_Code_Screenshot.png",
         "author": "Cycling2"
+      },
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
       }
     },
     {
@@ -1469,6 +1893,14 @@
         "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
         "page": "https://commons.wikimedia.org/wiki/File%3AVS_Code_Screenshot.png",
         "author": "Cycling2"
+      },
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
       }
     },
     {
@@ -1497,7 +1929,15 @@
       },
       "glossary_exclude": [
         "edge"
-      ]
+      ],
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
+      }
     },
     {
       "slug": "2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em-en",
@@ -1526,7 +1966,15 @@
       },
       "glossary_exclude": [
         "edge"
-      ]
+      ],
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
+      }
     },
     {
       "slug": "2026-08-28-react-server-components-quando-e-como-usar-no-next-js",
@@ -1551,6 +1999,14 @@
         "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
         "page": "https://commons.wikimedia.org/wiki/File%3ABalticServers_data_center.jpg",
         "author": "BalticServers.com"
+      },
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-28-react-server-components-quando-e-como-usar-no-next-js.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
       }
     },
     {
@@ -1577,6 +2033,14 @@
         "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
         "page": "https://commons.wikimedia.org/wiki/File%3ABalticServers_data_center.jpg",
         "author": "BalticServers.com"
+      },
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-28-react-server-components-quando-e-como-usar-no-next-js.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
       }
     },
     {
@@ -1603,6 +2067,14 @@
         "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
         "page": "https://commons.wikimedia.org/wiki/File%3AWikimedia_Foundation_Servers-8055_08.jpg",
         "author": "Victorgrigas"
+      },
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-27-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
       }
     },
     {
@@ -1630,6 +2102,14 @@
         "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
         "page": "https://commons.wikimedia.org/wiki/File%3AWikimedia_Foundation_Servers-8055_08.jpg",
         "author": "Victorgrigas"
+      },
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-27-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
       }
     },
     {
@@ -1659,7 +2139,15 @@
       },
       "glossary_exclude": [
         "service"
-      ]
+      ],
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
+      }
     },
     {
       "slug": "2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash-en",
@@ -1686,6 +2174,14 @@
         "license_url": "https://creativecommons.org/licenses/by/3.0/",
         "page": "https://commons.wikimedia.org/wiki/File%3ALinux-Mint-8-LXDE_terminals_info.png",
         "author": "VARGUX"
+      },
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
       }
     },
     {
@@ -1712,6 +2208,14 @@
         "license_url": "https://en.wikipedia.org/wiki/Public_domain",
         "page": "https://commons.wikimedia.org/wiki/File%3ACable_racks_at_grid_computing_center%2C_Fermilab_with_blue_lights.jpg",
         "author": "ENERGY.GOV"
+      },
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-25-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
       }
     },
     {
@@ -1741,7 +2245,15 @@
       },
       "glossary_exclude": [
         "service"
-      ]
+      ],
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
+      }
     },
     {
       "slug": "2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas-en",
@@ -1768,6 +2280,14 @@
         "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
         "page": "https://commons.wikimedia.org/wiki/File%3AWikimedia_Foundation_Servers-8055_08.jpg",
         "author": "Victorgrigas"
+      },
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
       }
     },
     {
@@ -1794,6 +2314,14 @@
         "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
         "page": "https://commons.wikimedia.org/wiki/File%3ADOM_Security_Lock_and_Key.JPG",
         "author": "ItalianLocksmith"
+      },
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
       }
     },
     {
@@ -1821,6 +2349,14 @@
         "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
         "page": "https://commons.wikimedia.org/wiki/File%3ADOM_Security_Lock_and_Key.JPG",
         "author": "ItalianLocksmith"
+      },
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
       }
     },
     {
@@ -1846,6 +2382,14 @@
         "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
         "page": "https://commons.wikimedia.org/wiki/File%3ACode_on_computer_monitor_%28Unsplash%29.jpg",
         "author": "Markus Spiske markusspiske"
+      },
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
       }
     },
     {
@@ -1872,6 +2416,14 @@
         "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
         "page": "https://commons.wikimedia.org/wiki/File%3ACode_on_computer_monitor_%28Unsplash%29.jpg",
         "author": "Markus Spiske markusspiske"
+      },
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-industria.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
       }
     },
     {
@@ -1900,7 +2452,15 @@
       },
       "glossary_exclude": [
         "edge"
-      ]
+      ],
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
+      }
     },
     {
       "slug": "2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug-en",
@@ -1929,7 +2489,15 @@
       },
       "glossary_exclude": [
         "edge"
-      ]
+      ],
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
+      }
     },
     {
       "slug": "2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks",
@@ -1955,6 +2523,14 @@
         "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
         "page": "https://commons.wikimedia.org/wiki/File%3AProgramming.jpg",
         "author": "Lorenzo Cafaro"
+      },
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
       }
     },
     {
@@ -1981,6 +2557,14 @@
         "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
         "page": "https://commons.wikimedia.org/wiki/File%3AMediaWiki_1.10_database_schema.png",
         "author": "Nick Jenkins, but also containing information from other MediaWiki devs + contributors to MediaWiki.org"
+      },
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
       }
     },
     {
@@ -2008,6 +2592,14 @@
         "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
         "page": "https://commons.wikimedia.org/wiki/File%3AProgramming.jpg",
         "author": "Lorenzo Cafaro"
+      },
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
       }
     },
     {
@@ -2035,6 +2627,14 @@
         "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
         "page": "https://commons.wikimedia.org/wiki/File%3AMediaWiki_1.10_database_schema.png",
         "author": "Nick Jenkins, but also containing information from other MediaWiki devs + contributors to MediaWiki.org"
+      },
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
       }
     },
     {
@@ -2061,6 +2661,14 @@
         "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
         "page": "https://commons.wikimedia.org/wiki/File%3AResponsive_design_-_Commons_Android_app.jpg",
         "author": "User:tfinc"
+      },
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-17-css-grid-e-flexbox-quando-usar-cada-um.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
       }
     },
     {
@@ -2088,6 +2696,14 @@
         "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
         "page": "https://commons.wikimedia.org/wiki/File%3AResponsive_design_-_Commons_Android_app.jpg",
         "author": "User:tfinc"
+      },
+      "cover_meta": {
+        "strategy": "legacy",
+        "source": "historical",
+        "review_status": "unreviewed",
+        "relevance_score": null,
+        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-17-css-grid-e-flexbox-quando-usar-cada-um.jpg",
+        "note": "Existing asset preserved; regenerate through review workflow before approval."
       }
     }
   ]
