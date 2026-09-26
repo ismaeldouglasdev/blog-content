@@ -1,6 +1,289 @@
 {
   "posts": [
     {
+      "slug": "2026-09-26-testing-library-testes-de-react-que-refletem-o-uso-real",
+      "title": "Testing Library: testes de React que refletem o uso real",
+      "title_en": "Testing Library: React Tests that Reflect Real Usage",
+      "date": "2026-09-26",
+      "category": "tutorial",
+      "tags": [
+        "testing-library",
+        "react",
+        "testes"
+      ],
+      "excerpt": "A maioria dos testes de React falha não por erro técnico, mas por má interpretação do que está sendo testado.",
+      "excerpt_en": "The Illusion of Control in Interface Testing.",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-26-testing-library-testes-de-react-que-refletem-o-uso-real.jpg",
+      "cover_credit": null,
+      "cover_meta": {
+        "strategy": "fallback",
+        "source": "code",
+        "query": null,
+        "relevance_score": 0.0,
+        "review_status": "auto_fallback",
+        "fallback_reason": "no_candidate_passed",
+        "motif": "interaction",
+        "brief": {
+          "subject": "Testing Library: testes de React que refletem o uso real",
+          "entities": [
+            "testing",
+            "library",
+            "testes",
+            "react",
+            "refletem",
+            "uso",
+            "real",
+            "maioria"
+          ],
+          "category": "tutorial",
+          "motif": "interaction",
+          "visual_concept": "user interaction focused on observable interface behavior",
+          "queries": [
+            "user interaction focused observable interface behavior",
+            "user interface testing",
+            "browser interaction testing",
+            "testing library testes"
+          ],
+          "search_terms": [
+            "testing",
+            "library",
+            "testes",
+            "react",
+            "que",
+            "refletem",
+            "uso",
+            "real",
+            "maioria",
+            "dos",
+            "falha",
+            "nao",
+            "por",
+            "erro",
+            "tecnico",
+            "mas",
+            "interpretacao",
+            "esta",
+            "sendo",
+            "testado"
+          ],
+          "avoid": [
+            "logo",
+            "wordmark",
+            "icon",
+            "stock photo",
+            "unrelated"
+          ],
+          "language": "agnostic"
+        },
+        "review_candidates": [
+          {
+            "file": "File:SpaceX Crew-1, crew equipment interface testing (2).jpg",
+            "score": 0.349,
+            "query": "user interface testing",
+            "reasons": [
+              "overlap=0.05",
+              "concept=0.33"
+            ],
+            "status": "low_relevance"
+          },
+          {
+            "file": "File:SpaceX Crew-1, crew equipment interface testing (3).jpg",
+            "score": 0.34,
+            "query": "user interface testing",
+            "reasons": [
+              "overlap=0.05",
+              "concept=0.33"
+            ],
+            "status": "low_relevance"
+          },
+          {
+            "file": "File:SpaceX Crew-1, crew equipment interface testing (1).jpg",
+            "score": 0.329,
+            "query": "user interface testing",
+            "reasons": [
+              "overlap=0.05",
+              "concept=0.33"
+            ],
+            "status": "low_relevance"
+          },
+          {
+            "file": "File:Flame developer reference phone testing for Hindi interface during Indic FirefoxOS L10n Sprint 2014, Pune.jpg",
+            "score": 0.328,
+            "query": "user interface testing",
+            "reasons": [
+              "overlap=0.05",
+              "concept=0.33"
+            ],
+            "status": "low_relevance"
+          },
+          {
+            "file": "File:Flame developer reference phone testing for Hindi interface during Indic FirefoxOS L10n Sprint 2014, Pune 01.jpg",
+            "score": 0.328,
+            "query": "user interface testing",
+            "reasons": [
+              "overlap=0.05",
+              "concept=0.33"
+            ],
+            "status": "low_relevance"
+          },
+          {
+            "file": "File:Paste Check interface for September 2025's test.png",
+            "score": 0.325,
+            "query": "user interface testing",
+            "reasons": [
+              "overlap=0.05",
+              "concept=0.33"
+            ],
+            "status": "low_relevance"
+          }
+        ]
+      },
+      "lang": "pt",
+      "translation_slug": "2026-09-26-testing-library-testes-de-react-que-refletem-o-uso-real-en"
+    },
+    {
+      "slug": "2026-09-26-testing-library-testes-de-react-que-refletem-o-uso-real-en",
+      "title": "Testing Library: React Tests that Reflect Real Usage",
+      "title_en": "Testing Library: React Tests that Reflect Real Usage",
+      "date": "2026-09-26",
+      "category": "tutorial",
+      "tags": [
+        "testing-library",
+        "react",
+        "testes"
+      ],
+      "excerpt": "The Illusion of Control in Interface Testing.",
+      "excerpt_en": "The Illusion of Control in Interface Testing.",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-26-testing-library-testes-de-react-que-refletem-o-uso-real.jpg",
+      "cover_credit": null,
+      "cover_meta": {
+        "strategy": "fallback",
+        "source": "code",
+        "query": null,
+        "relevance_score": 0.0,
+        "review_status": "auto_fallback",
+        "fallback_reason": "no_candidate_passed",
+        "motif": "interaction",
+        "brief": {
+          "subject": "Testing Library: testes de React que refletem o uso real",
+          "entities": [
+            "testing",
+            "library",
+            "testes",
+            "react",
+            "refletem",
+            "uso",
+            "real",
+            "maioria"
+          ],
+          "category": "tutorial",
+          "motif": "interaction",
+          "visual_concept": "user interaction focused on observable interface behavior",
+          "queries": [
+            "user interaction focused observable interface behavior",
+            "user interface testing",
+            "browser interaction testing",
+            "testing library testes"
+          ],
+          "search_terms": [
+            "testing",
+            "library",
+            "testes",
+            "react",
+            "que",
+            "refletem",
+            "uso",
+            "real",
+            "maioria",
+            "dos",
+            "falha",
+            "nao",
+            "por",
+            "erro",
+            "tecnico",
+            "mas",
+            "interpretacao",
+            "esta",
+            "sendo",
+            "testado"
+          ],
+          "avoid": [
+            "logo",
+            "wordmark",
+            "icon",
+            "stock photo",
+            "unrelated"
+          ],
+          "language": "agnostic"
+        },
+        "review_candidates": [
+          {
+            "file": "File:SpaceX Crew-1, crew equipment interface testing (2).jpg",
+            "score": 0.349,
+            "query": "user interface testing",
+            "reasons": [
+              "overlap=0.05",
+              "concept=0.33"
+            ],
+            "status": "low_relevance"
+          },
+          {
+            "file": "File:SpaceX Crew-1, crew equipment interface testing (3).jpg",
+            "score": 0.34,
+            "query": "user interface testing",
+            "reasons": [
+              "overlap=0.05",
+              "concept=0.33"
+            ],
+            "status": "low_relevance"
+          },
+          {
+            "file": "File:SpaceX Crew-1, crew equipment interface testing (1).jpg",
+            "score": 0.329,
+            "query": "user interface testing",
+            "reasons": [
+              "overlap=0.05",
+              "concept=0.33"
+            ],
+            "status": "low_relevance"
+          },
+          {
+            "file": "File:Flame developer reference phone testing for Hindi interface during Indic FirefoxOS L10n Sprint 2014, Pune.jpg",
+            "score": 0.328,
+            "query": "user interface testing",
+            "reasons": [
+              "overlap=0.05",
+              "concept=0.33"
+            ],
+            "status": "low_relevance"
+          },
+          {
+            "file": "File:Flame developer reference phone testing for Hindi interface during Indic FirefoxOS L10n Sprint 2014, Pune 01.jpg",
+            "score": 0.328,
+            "query": "user interface testing",
+            "reasons": [
+              "overlap=0.05",
+              "concept=0.33"
+            ],
+            "status": "low_relevance"
+          },
+          {
+            "file": "File:Paste Check interface for September 2025's test.png",
+            "score": 0.325,
+            "query": "user interface testing",
+            "reasons": [
+              "overlap=0.05",
+              "concept=0.33"
+            ],
+            "status": "low_relevance"
+          }
+        ]
+      },
+      "lang": "en",
+      "translation_slug": "2026-09-26-testing-library-testes-de-react-que-refletem-o-uso-real",
+      "translation_of": "2026-09-26-testing-library-testes-de-react-que-refletem-o-uso-real"
+    },
+    {
       "slug": "2026-09-25-testing-library-testes-de-react-que-refletem-o-uso-real",
       "title": "Testing Library: testes de React que refletem o uso real",
       "title_en": "Testing Library: React Tests that Mimic Real-World Usage",
