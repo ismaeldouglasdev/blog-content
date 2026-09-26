@@ -2,3 +2,6 @@
 # Python
 __pycache__/
 *.pyc
+
+# scratch de geracao de arte (nao versionado)
+build/

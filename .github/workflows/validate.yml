@@ -209,6 +209,36 @@ jobs:
       # Perdeu diacritico em texto pt-BR. O vocabulario vem do proprio corpus:
       # se o blog escreve "interacao" acentuada num post, "interacao" sem
       # acento em outro e bug. Palavras que o blog nunca acentua nao sao julgadas.
+      - name: Check for orphaned markdown
+        run: |
+          python3 - <<'PY'
+          import glob, json, os, sys
+
+          with open('posts/_meta.json', encoding='utf-8') as f:
+              slugs = {p['slug'] for p in json.load(f).get('posts', [])}
+
+          # Um .md no disco que NAO esta no _meta.json e orfao. Cenarios em que
+          # isso acontece: (1) o post foi despublicado e o arquivo ficou; (2) o
+          # mirror bidirecional devolveu um post que foi apagado -- e o proximo
+          # `git add -A` volta a publica-lo. Por isso o erro e de Publicacao.
+          orphans = sorted(
+              os.path.basename(p)[:-3]
+              for p in glob.glob('posts/2026-*.md')
+              if os.path.basename(p)[:-3] not in slugs
+          )
+          if orphans:
+              for slug in orphans:
+                  print(f'ERROR: {slug}.md esta no disco mas fora do _meta.json')
+              print('\nSe o post foi despublicado de proposito, apague o arquivo.')
+              print('Se nao deveria estar la, e o mirror que devolveu: apague o')
+              print('arquivo e o post no PC, senao o proximo add -A republica.')
+              sys.exit(1)
+          print(f'OK: {len(slugs)} posts, nenhum orfao em posts/')
+          PY
+
+      # Perdeu diacritico em texto pt-BR. O vocabulario vem do proprio corpus:
+      # se o blog escreve "interacao" acentuada num post, "interacao" sem
+      # acento em outro e bug. Palavras que o blog nunca acentua nao sao julgadas.
       - name: Check pt-BR diacritics
         run: |
           python3 scripts/audit-pt-diacritics.py

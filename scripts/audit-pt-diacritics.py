@@ -94,7 +94,11 @@ def strip_code(text: str) -> str:
 def read_body(path: str) -> str:
     with open(path, encoding="utf-8") as fh:
         raw = fh.read()
-    raw = re.sub(r"^---\n.*?\n---\n", "\n", raw, count=1, flags=re.S)
+    # O frontmatter vira uma linha em branco por linha: o numero de linha
+    # reportado tem de bater com o arquivo, senao "conserta" a linha errada.
+    raw = re.sub(r"^---\n.*?\n---\n",
+                 lambda m: "\n" * m.group(0).count("\n"),
+                 raw, count=1, flags=re.S)
     return strip_code(raw)
 
 
