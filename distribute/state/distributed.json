@@ -199,6 +199,22 @@
         "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mwfivmxycn22",
         "telegram": "49"
       }
+    },
+    "2026-08-27-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas": {
+      "url": "https://blog.ismaeltech.com/2026-08-27-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas",
+      "posted_at": "2026-09-26T11:26:57.148647+00:00",
+      "platforms": {
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mwg6hlegvq2v",
+        "telegram": "50"
+      }
+    },
+    "2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash": {
+      "url": "https://blog.ismaeltech.com/2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash",
+      "posted_at": "2026-09-26T11:28:23.721832+00:00",
+      "platforms": {
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mwg6k5zou42c",
+        "telegram": "51"
+      }
     }
   }
 }
