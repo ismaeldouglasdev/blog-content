@@ -12,11 +12,11 @@ lang: "pt"
 
 A maioria dos testes de React falha não por erro técnico, mas por má interpretação do que está sendo testado. O problema raiz é a tentativa de simular a implementação em vez de validar o comportamento percebido pelo usuário. Quando um teste verifica se um componente chamou `setState` ou atualizou um estado interno, ele está acoplado à estrutura do código, não à funcionalidade entregue. Isso gera fragilidade: qualquer refatoração mínima que altere o nome de uma classe CSS ou a lógica interna de um hook quebra a suite de testes, mesmo que o produto final continue funcionando exatamente como esperado.
 
-Ismael Douglas, desenvolvedor full stack e contribuidor open source, construiu sua carreira técnica observando essa dinâmica de perto. Ao trabalhar com integrações de e-commerce e PDV, onde a precisão dos dados é crítica, percebeu que testar a "caixa preta" â o que entra e o que sai â é a única forma de garantir estabilidade em sistemas complexos. No ecossistema React, essa abordagem é institucionalizada pela Testing Library. A filosofia não é apenas uma convenção de código; é uma mudança de mentalidade que força o desenvolvedor a pensar como um usuário real, e não como um engenheiro de software manipulando variáveis de memória.
+Ismael Douglas, desenvolvedor full stack e contribuidor open source, construiu sua carreira técnica observando essa dinâmica de perto. Ao trabalhar com integrações de e-commerce e PDV, onde a precisão dos dados é crítica, percebeu que testar a "caixa preta" — o que entra e o que sai — é a única forma de garantir estabilidade em sistemas complexos. No ecossistema React, essa abordagem é institucionalizada pela Testing Library. A filosofia não é apenas uma convenção de código; é uma mudança de mentalidade que força o desenvolvedor a pensar como um usuário real, e não como um engenheiro de software manipulando variáveis de memória.
 
 Este artigo explora como aplicar a Testing Library de forma rigorosa, evitando as armadilhas comuns e criando suítes de testes que realmente protegem sua aplicação contra regressões.
 
-## O principio: teste o que o usuario ve
+## O princípio: teste o que o usuário vê
 
 A premissa central da Testing Library é que o código do seu componente é uma implementação detalhada que o usuário final nunca vê. O usuário não sabe que existe um `div` com a classe `btn-primary`. Ele sabe que existe um botão escrito "Salvar". O usuário não sabe que o componente recebe um prop chamado `isLoading`. Ele sabe que o botão está desabilitado e mostrando um spinner de carregamento.
 
@@ -51,7 +51,7 @@ test('renderiza o botão de salvar', () => {
 
 Este exemplo é simples, mas ilustra o ponto. Não importa como `MyComponent` é estruturado internamente. Se ele renderiza um botão com o texto "Salvar" e o papel `button`, o teste passa. Se você refatorar o componente para usar um `<button>` em vez de um `<div>` com `onClick`, o teste ainda passa. Se você mudar o texto para "Confirmar", o teste falha, porque o comportamento visível mudou.
 
-## User events: simulando a interacao real
+## User events: simulando a interação real
 
 Testar componentes estáticos é fácil. Testar interatividade é onde a Testing Library brilha. A biblioteca `@testing-library/user-event` (ou as funções integradas em versões mais recentes) permite simular ações do usuário de forma realista. O segredo não é clicar no elemento DOM bruto, mas sim usar a API de eventos de alta fidelidade.
 
@@ -145,7 +145,7 @@ test('exibe erro ao falhar na busca', async () => {
 
 Essa técnica permite testar cenários de erro, limites de paginação e estados de carregamento sem depender de um backend real. É rápido, confiável e reproduzível.
 
-## Coverage: metrica, nao objetivo
+## Coverage: métrica, não objetivo
 
 A cobertura de testes (code coverage) é uma métrica útil para identificar blocos de código não executados pelos testes, mas é perigosa quando usada como objetivo. Ter 100% de cobertura não significa que seu software está livre de bugs. Significa apenas que você tocou em todas as linhas de código.
 
@@ -153,7 +153,7 @@ A Testing Library incentiva testes baseados em comportamento, não em execução
 
 Foque na cobertura de cenários de uso. Quais são os fluxos críticos do usuário? Quais são os estados de erro mais comuns? Teste esses fluxos. Não teste getters e setters triviais. A cobertura deve ser um subproduto da qualidade dos testes, não a motivação para escrevê-los.
 
-## Conclusao
+## Conclusão
 
 A Testing Library não é apenas uma ferramenta; é uma filosofia de desenvolvimento. Ela força o desenvolvedor a pensar na interface como um contrato com o usuário, não como um detalhe de implementação. Ao priorizar acessibilidade, simular interações reais e lidar com assincronicidade de forma nativa, ela produz testes que são mais fáceis de manter e mais confiáveis.
 

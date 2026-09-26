@@ -52,6 +52,76 @@ jobs:
           print(f'All {len(data[\"posts\"])} markdown files present')
           "
 
+      # O check de 'Duplicate slug' acima nao pega repeticao de TEMA: o slug
+      # embute a data, entao 2026-09-17-x e 2026-09-26-x sao slugs distintos
+      # para o mesmo artigo.Foi assim que o mesmo texto saiu 4x no feed
+      # (01/09, 17/09, 25/09 e 26/09) sem a CI reclamar.
+      - name: Check for duplicate topics
+        run: |
+          python3 - <<'PY'
+          import json, re, sys, collections
+          with open('posts/_meta.json', encoding='utf-8') as f:
+              posts = json.load(f).get('posts', [])
+
+          # Um topico = slug sem a data e sem o sufixo -en. O par PT+EN legitimo
+          # produz 2 slugs NA MESMA data; repeticao de tema e o mesmo topico
+          # aparecendo em datas diferentes.
+          def split_slug(slug):
+              m = re.match(r'^(\d{4}-\d{2}-\d{2})-(.+?)(-en)?$', slug or '')
+              if not m:
+                  return None, slug
+              return m.group(1), m.group(2)
+
+          by_topic = collections.defaultdict(lambda: collections.defaultdict(list))
+          for p in posts:
+              date, topic = split_slug(p.get('slug', ''))
+              lang = 'en' if p.get('slug', '').endswith('-en') else 'pt'
+              by_topic[topic][date].append(lang)
+
+          dupes, orphans = {}, []
+          for topic, dates in by_topic.items():
+              if len(dates) > 1:
+                  dupes[topic] = {d: sorted(l) for d, l in dates.items()}
+              for date, langs in dates.items():
+                  if sorted(langs) != ['en', 'pt']:
+                      orphans.append((topic, date, sorted(langs)))
+
+          if dupes or orphans:
+              for topic, dates in sorted(dupes.items()):
+                  print(f'ERROR: topico repetido "{topic}" em {len(dates)} datas:')
+                  for date, langs in sorted(dates.items()):
+                      print(f'         {date}: {"/".join(langs)}')
+              for topic, date, langs in sorted(orphans):
+                  print(f'ERROR: par PT/EN incompleto em "{topic}" '
+                        f'({date}): {langs}')
+              print('\nCada tema vale uma data (par PT+EN). Remova as copias '
+                    'antigas ou troque o slug antes do merge.')
+              sys.exit(1)
+          print(f'OK: {len(by_topic)} topicos, um por data, todos com par PT+EN')
+          PY
+
+      # Mojibake de travessao (\u00e2\u0080\u0094) e de acentos em bloco de codigo
+      # (\u00c3\u0083\u00c2\u00a9) ja vazou para posts publicados. C1 controls nao
+      # tem lugar em markdown legivel, entao qualquer ocorrencia e bug.
+      - name: Check encoding (mojibake)
+        run: |
+          python3 - <<'PY'
+          import glob, sys
+          bad = []
+          for path in sorted(glob.glob('posts/*.md')):
+              with open(path, encoding='utf-8', errors='replace') as f:
+                  text = f.read()
+              c1 = sum(1 for c in text if '\u0080' <= c <= '\u009f')
+              if c1:
+                  bad.append((path, c1))
+          if bad:
+              for path, c1 in bad:
+                  print(f'ERROR: {path}: {c1} caractere(s) de controle C1 '
+                        f'(mojibake). Reencode o trecho afetado.')
+              sys.exit(1)
+          print('OK: nenhum mojibake nos posts')
+          PY
+
       - name: Lint markdown
         uses: avto-dev/markdown-lint@v1
         with:

@@ -38,8 +38,8 @@ import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 
 const schema = z.object({
-  nome: z.string().min(1, 'Nome ÃÂ© obrigatÃÂ³rio.'),
-  email: z.string().email('Email invÃÂ¡lido.'),
+  nome: z.string().min(1, 'Nome é obrigatório.'),
+  email: z.string().email('Email inválido.'),
 });
 
 const MeuFormulario = () => {
@@ -137,7 +137,7 @@ const MultiStepForm = () => {
             <input type="text" {...register('email')} />
             {errors.email && <span>{errors.email.message}</span>}
           </div>
-          <button type="submit">PrÃÂ³ximo</button>
+          <button type="submit">Próximo</button>
         </>
       )}
       {step === 2 && (
@@ -163,8 +163,8 @@ Handling file uploads is a feature that may be required in many forms. With Reac
 
 ```javascript
 const schema = z.object({
-  nome: z.string().min(1, 'Nome ÃÂ© obrigatÃÂ³rio.'),
-  email: z.string().email('Email invÃÂ¡lido.'),
+  nome: z.string().min(1, 'Nome é obrigatório.'),
+  email: z.string().email('Email inválido.'),
   arquivo: z.instanceof(File).refine(file => file.size < 5000000, 'O arquivo deve ter menos de 5MB.'),
 });
 ```

@@ -333,6 +333,94 @@ def create_pr(branch: str, title: str) -> str:
                 return line.strip()
     return None
 
+def published_topics(repo_dir: Path) -> set:
+    """Topicos ja publicados, lidos do _meta.json do repo clonado.
+
+    Sem essa checagem o `random.choice(TOPICS)` sortava o mesmo tema varias
+    vezes: a lista tem 11 itens e nao muda, entao com 1 post/dia a repeticao
+    era garantida -- foi assim que 'Testing Library' saiu em 01/09, 17/09, 25/09
+    e 26/09, quatro datas para o mesmo artigo.
+    """
+    meta_path = repo_dir / "posts" / "_meta.json"
+    used = set()
+    if not meta_path.exists():
+        return used
+    try:
+        data = json.loads(meta_path.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError) as exc:
+        print(f"Aviso: nao foi possivel ler {meta_path} ({exc}); "
+              "assumindo nenhum topico usado.")
+        return used
+
+    for post in data.get("posts", []):
+        slug = post.get("slug", "")
+        # Remove a data e o sufixo -en: o que identifica o tema e o miolo do slug.
+        topic_slug = re.sub(r"^\d{4}-\d{2}-\d{2}-", "", slug)
+        topic_slug = re.sub(r"-en$", "", topic_slug)
+        if topic_slug:
+            used.add(topic_slug)
+    return used
+
+
+def slugify_topic(topic: str) -> str:
+    """Deriva o slug de um topico da lista TOPICS no mesmo formato dos publicados."""
+    import unicodedata
+
+    normalized = unicodedata.normalize("NFKD", topic.lower())
+    ascii_only = normalized.encode("ascii", "ignore").decode("ascii")
+    return re.sub(r"[^a-z0-9]+", "-", ascii_only).strip("-")
+
+
+def pick_unused_topic(repo_dir: Path) -> dict:
+    """Escolhe um topico que ainda nao foi publicado.
+
+    A lista TOPICS e' estatica e nao acompanha o que o blog ja cobriu, entao
+    casar por slug exato falha. Por isso a selecao e' por palavra-chave: um topico
+    e' considerado usado quando pelo menos dois termos seus (sem stopwords)
+    aparecem no slug de algum post ja publicado. Exigir dois termos evita falso
+    positivo por palavras genericas como 'para', 'com' ou 'como'.
+    """
+    import random
+
+    stopwords = {
+        "para", "com", "que", "por", "uma", "como", "na", "no", "de", "da",
+        "do", "das", "dos", "em", "a", "o", "e", "nao", "mais", "seu",
+        "sua", "pratica", "pratico",
+    }
+
+    used = published_topics(repo_dir)
+    used_words = set()
+    for slug in used:
+        used_words.update(
+            w for w in slug.split("-") if len(w) >= 3 and w not in stopwords
+        )
+
+    def is_used(candidate: dict) -> bool:
+        if slugify_topic(candidate["topic"]) in used:
+            return True
+        significant = [
+            w for w in slugify_topic(candidate["topic"]).split("-")
+            if len(w) >= 3 and w not in stopwords
+        ]
+        if not significant:
+            return False
+        hits = sum(1 for w in significant if w in used_words)
+        # >= 2 termos E >= metade dos termos significativos: preciso o bastante
+        # para nao bloquear topico novo so por sharespalavras genericas.
+        return hits >= 2 and hits >= len(significant) / 2
+
+    available = [t for t in TOPICS if not is_used(t)]
+    if not available:
+        raise SystemExit(
+            "Todos os topicos da lista TOPICS ja foram publicados. "
+            "Atualize TOPICS em generate-post.py antes de rodar de novo."
+        )
+
+    print(f"Topicos disponiveis: {len(available)}/{len(TOPICS)} "
+          f"(ja publicados: {len(TOPICS) - len(available)})")
+    return random.choice(available)
+
+
 def main():
     # Clonar repo
     repo_dir = Path("/tmp/blog-content")
@@ -341,9 +429,8 @@ def main():
     
     subprocess.run(["git", "clone", f"https://github.com/{REPO}.git", repo_dir], check=True)
     
-    # Escolher tópico aleatório
-    import random
-    topic = random.choice(TOPICS)
+    # Escolher topico aleatorio entre os que ainda nao foram publicados
+    topic = pick_unused_topic(repo_dir)
     print(f"Gerando artigo sobre: {topic['topic']}")
     
     # Gerar conteúdo
