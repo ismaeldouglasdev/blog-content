@@ -96,6 +96,11 @@ If you want to see The Sift in motion, these are the official routes:
 
 And if you want to see it in 2027, from September 29 you can start with Dungeons II, which is the only way to know The Sift before it reaches the main game.
 
+## 📸 Cover image credit
+- **Image:** [MCD2 promotional material (The Sift)](https://news.xbox.com/en-us/2026/09/26/minecraft-new-dimension-sift-dungeons-2/)
+- **Author:** Mojang Studios
+- **License:** [Mojang Studios - material de imprensa, todos os direitos reservados](https://www.minecraft.net/en-us/usage-guidelines) · via XBOX Wire
+
 ## Sources
 
 - [Minecraft Dungeons II's New Dimension Coming to Minecraft Java & Bedrock Edition, XBOX Wire](https://news.xbox.com/en-us/2026/09/26/minecraft-new-dimension-sift-dungeons-2/)
@@ -105,8 +110,3 @@ And if you want to see it in 2027, from September 29 you can start with Dungeons
 - [Minecraft Live Reveals New Dimension and Dungeons II, Twisted Voxel](https://twistedvoxel.com/minecraft-live-september-2026/)
 - [Everything We Saw At Minecraft Live, Kotaku](https://kotaku.com/minecraft-live-dungeons-ii-ice-caves-the-sift-microsoft-mojang-2000737181)
 - ["Minecraft" gets its first new dimension in 15 years in 2027, heise online](https://www.heise.de/en/news/Minecraft-gets-its-first-new-dimension-in-15-years-in-2027-11466147.html)
-
-## 📸 Cover image credit
-- **Image:** [MCD2 promotional material (The Sift)](https://news.xbox.com/en-us/2026/09/26/minecraft-new-dimension-sift-dungeons-2/)
-- **Author:** Mojang Studios
-- **License:** [Mojang Studios - material de imprensa, todos os direitos reservados](https://www.minecraft.net/en-us/usage-guidelines) · via XBOX Wire
