@@ -183,6 +183,22 @@
         "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mwf2p5anmq2t",
         "telegram": "47"
       }
+    },
+    "2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em": {
+      "url": "https://blog.ismaeltech.com/2026-08-29-typescript-tipos-avancados-que-transformam-seu-codigo-em",
+      "posted_at": "2026-09-26T04:59:39.915366+00:00",
+      "platforms": {
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mwfit2nj532l",
+        "telegram": "48"
+      }
+    },
+    "2026-08-28-react-server-components-quando-e-como-usar-no-next-js": {
+      "url": "https://blog.ismaeltech.com/2026-08-28-react-server-components-quando-e-como-usar-no-next-js",
+      "posted_at": "2026-09-26T05:01:06.087725+00:00",
+      "platforms": {
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mwfivmxycn22",
+        "telegram": "49"
+      }
     }
   }
 }
