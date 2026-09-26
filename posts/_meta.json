@@ -403,12 +403,55 @@
       "lang": "pt",
       "translation_slug": "2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao-en",
       "cover_meta": {
-        "strategy": "legacy",
-        "source": "historical",
-        "review_status": "unreviewed",
-        "relevance_score": null,
-        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao.jpg",
-        "note": "Existing asset preserved; regenerate through review workflow before approval."
+        "strategy": "fallback",
+        "source": "code",
+        "query": null,
+        "relevance_score": 0.0,
+        "review_status": "auto_fallback",
+        "fallback_reason": "no_candidate_passed",
+        "motif": "vcs",
+        "brief": {
+          "subject": "Git na prática: workflows profissionais, rebase e resolução de conflitos",
+          "entities": [
+            "git",
+            "pratica",
+            "workflows",
+            "profissionais",
+            "rebase",
+            "resolucao",
+            "conflitos",
+            "workflow"
+          ],
+          "category": "tutorial",
+          "motif": "vcs",
+          "visual_concept": "branching commit graph with a merge point",
+          "queries": [
+            "branching commit graph with merge point",
+            "version control branching diagram",
+            "commit history graph",
+            "git pratica workflows"
+          ],
+          "search_terms": [
+            "git",
+            "pratica",
+            "workflows",
+            "profissionais",
+            "rebase",
+            "resolucao",
+            "conflitos",
+            "workflow",
+            "produtividade"
+          ],
+          "avoid": [
+            "logo",
+            "wordmark",
+            "icon",
+            "stock photo",
+            "unrelated"
+          ],
+          "language": "agnostic"
+        },
+        "review_candidates": []
       }
     },
     {
@@ -437,12 +480,55 @@
       "translation_slug": "2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao",
       "translation_of": "2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao",
       "cover_meta": {
-        "strategy": "legacy",
-        "source": "historical",
-        "review_status": "unreviewed",
-        "relevance_score": null,
-        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao.jpg",
-        "note": "Existing asset preserved; regenerate through review workflow before approval."
+        "strategy": "fallback",
+        "source": "code",
+        "query": null,
+        "relevance_score": 0.0,
+        "review_status": "auto_fallback",
+        "fallback_reason": "no_candidate_passed",
+        "motif": "vcs",
+        "brief": {
+          "subject": "Git na prática: workflows profissionais, rebase e resolução de conflitos",
+          "entities": [
+            "git",
+            "pratica",
+            "workflows",
+            "profissionais",
+            "rebase",
+            "resolucao",
+            "conflitos",
+            "workflow"
+          ],
+          "category": "tutorial",
+          "motif": "vcs",
+          "visual_concept": "branching commit graph with a merge point",
+          "queries": [
+            "branching commit graph with merge point",
+            "version control branching diagram",
+            "commit history graph",
+            "git pratica workflows"
+          ],
+          "search_terms": [
+            "git",
+            "pratica",
+            "workflows",
+            "profissionais",
+            "rebase",
+            "resolucao",
+            "conflitos",
+            "workflow",
+            "produtividade"
+          ],
+          "avoid": [
+            "logo",
+            "wordmark",
+            "icon",
+            "stock photo",
+            "unrelated"
+          ],
+          "language": "agnostic"
+        },
+        "review_candidates": []
       }
     },
     {
@@ -2454,12 +2540,50 @@
         "edge"
       ],
       "cover_meta": {
-        "strategy": "legacy",
-        "source": "historical",
-        "review_status": "unreviewed",
-        "relevance_score": null,
-        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug.jpg",
-        "note": "Existing asset preserved; regenerate through review workflow before approval."
+        "strategy": "fallback",
+        "source": "code",
+        "query": null,
+        "relevance_score": 0.0,
+        "review_status": "auto_fallback",
+        "fallback_reason": "no_candidate_passed",
+        "motif": "debug",
+        "brief": {
+          "subject": "DevTools do navegador: técnicas avançadas de debug",
+          "entities": [
+            "devtools",
+            "navegador",
+            "tecnicas",
+            "avancadas",
+            "debug",
+            "browser"
+          ],
+          "category": "article",
+          "motif": "debug",
+          "visual_concept": "browser devtools panels with an inspection focus",
+          "queries": [
+            "browser devtools panels with inspection focus",
+            "browser devtools inspector panel",
+            "debugging breakpoint workflow",
+            "devtools navegador tecnicas"
+          ],
+          "search_terms": [
+            "devtools",
+            "navegador",
+            "tecnicas",
+            "avancadas",
+            "debug",
+            "browser"
+          ],
+          "avoid": [
+            "logo",
+            "wordmark",
+            "icon",
+            "stock photo",
+            "unrelated"
+          ],
+          "language": "agnostic"
+        },
+        "review_candidates": []
       }
     },
     {
@@ -2491,12 +2615,50 @@
         "edge"
       ],
       "cover_meta": {
-        "strategy": "legacy",
-        "source": "historical",
-        "review_status": "unreviewed",
-        "relevance_score": null,
-        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug.jpg",
-        "note": "Existing asset preserved; regenerate through review workflow before approval."
+        "strategy": "fallback",
+        "source": "code",
+        "query": null,
+        "relevance_score": 0.0,
+        "review_status": "auto_fallback",
+        "fallback_reason": "no_candidate_passed",
+        "motif": "debug",
+        "brief": {
+          "subject": "DevTools do navegador: técnicas avançadas de debug",
+          "entities": [
+            "devtools",
+            "navegador",
+            "tecnicas",
+            "avancadas",
+            "debug",
+            "browser"
+          ],
+          "category": "article",
+          "motif": "debug",
+          "visual_concept": "browser devtools panels with an inspection focus",
+          "queries": [
+            "browser devtools panels with inspection focus",
+            "browser devtools inspector panel",
+            "debugging breakpoint workflow",
+            "devtools navegador tecnicas"
+          ],
+          "search_terms": [
+            "devtools",
+            "navegador",
+            "tecnicas",
+            "avancadas",
+            "debug",
+            "browser"
+          ],
+          "avoid": [
+            "logo",
+            "wordmark",
+            "icon",
+            "stock photo",
+            "unrelated"
+          ],
+          "language": "agnostic"
+        },
+        "review_candidates": []
       }
     },
     {
@@ -2525,12 +2687,56 @@
         "author": "Lorenzo Cafaro"
       },
       "cover_meta": {
-        "strategy": "legacy",
-        "source": "historical",
-        "review_status": "unreviewed",
-        "relevance_score": null,
-        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks.jpg",
-        "note": "Existing asset preserved; regenerate through review workflow before approval."
+        "strategy": "fallback",
+        "source": "code",
+        "query": null,
+        "relevance_score": 0.0,
+        "review_status": "auto_fallback",
+        "fallback_reason": "no_candidate_passed",
+        "motif": "hooks",
+        "brief": {
+          "subject": "React Hooks avançados: useEffect, useRef e custom hooks que você precisa conhecer",
+          "entities": [
+            "react",
+            "hooks",
+            "avancados",
+            "useeffect",
+            "useref",
+            "custom",
+            "voce",
+            "precisa"
+          ],
+          "category": "tutorial",
+          "motif": "hooks",
+          "visual_concept": "component lifecycle wiring hooks around shared state",
+          "queries": [
+            "component lifecycle wiring hooks around shared state",
+            "react component lifecycle diagram",
+            "custom hooks composition",
+            "react hooks avancados"
+          ],
+          "search_terms": [
+            "react",
+            "hooks",
+            "avancados",
+            "useeffect",
+            "useref",
+            "custom",
+            "que",
+            "voce",
+            "precisa",
+            "conhecer"
+          ],
+          "avoid": [
+            "logo",
+            "wordmark",
+            "icon",
+            "stock photo",
+            "unrelated"
+          ],
+          "language": "agnostic"
+        },
+        "review_candidates": []
       }
     },
     {
@@ -2559,12 +2765,52 @@
         "author": "Nick Jenkins, but also containing information from other MediaWiki devs + contributors to MediaWiki.org"
       },
       "cover_meta": {
-        "strategy": "legacy",
-        "source": "historical",
-        "review_status": "unreviewed",
-        "relevance_score": null,
-        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript.jpg",
-        "note": "Existing asset preserved; regenerate through review workflow before approval."
+        "strategy": "fallback",
+        "source": "code",
+        "query": null,
+        "relevance_score": 0.0,
+        "review_status": "auto_fallback",
+        "fallback_reason": "no_candidate_passed",
+        "motif": "data",
+        "brief": {
+          "subject": "Prisma ORM: como modelar banco de dados com TypeScript",
+          "entities": [
+            "prisma",
+            "orm",
+            "modelar",
+            "banco",
+            "dados",
+            "typescript"
+          ],
+          "category": "tutorial",
+          "motif": "data",
+          "visual_concept": "data records and relational structure",
+          "queries": [
+            "data records and relational structure",
+            "database structure diagram",
+            "data relationships diagram",
+            "prisma orm modelar"
+          ],
+          "search_terms": [
+            "prisma",
+            "orm",
+            "como",
+            "modelar",
+            "banco",
+            "dados",
+            "com",
+            "typescript"
+          ],
+          "avoid": [
+            "logo",
+            "wordmark",
+            "icon",
+            "stock photo",
+            "unrelated"
+          ],
+          "language": "agnostic"
+        },
+        "review_candidates": []
       }
     },
     {
@@ -2594,12 +2840,56 @@
         "author": "Lorenzo Cafaro"
       },
       "cover_meta": {
-        "strategy": "legacy",
-        "source": "historical",
-        "review_status": "unreviewed",
-        "relevance_score": null,
-        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks.jpg",
-        "note": "Existing asset preserved; regenerate through review workflow before approval."
+        "strategy": "fallback",
+        "source": "code",
+        "query": null,
+        "relevance_score": 0.0,
+        "review_status": "auto_fallback",
+        "fallback_reason": "no_candidate_passed",
+        "motif": "hooks",
+        "brief": {
+          "subject": "React Hooks avançados: useEffect, useRef e custom hooks que você precisa conhecer",
+          "entities": [
+            "react",
+            "hooks",
+            "avancados",
+            "useeffect",
+            "useref",
+            "custom",
+            "voce",
+            "precisa"
+          ],
+          "category": "tutorial",
+          "motif": "hooks",
+          "visual_concept": "component lifecycle wiring hooks around shared state",
+          "queries": [
+            "component lifecycle wiring hooks around shared state",
+            "react component lifecycle diagram",
+            "custom hooks composition",
+            "react hooks avancados"
+          ],
+          "search_terms": [
+            "react",
+            "hooks",
+            "avancados",
+            "useeffect",
+            "useref",
+            "custom",
+            "que",
+            "voce",
+            "precisa",
+            "conhecer"
+          ],
+          "avoid": [
+            "logo",
+            "wordmark",
+            "icon",
+            "stock photo",
+            "unrelated"
+          ],
+          "language": "agnostic"
+        },
+        "review_candidates": []
       }
     },
     {
@@ -2629,12 +2919,52 @@
         "author": "Nick Jenkins, but also containing information from other MediaWiki devs + contributors to MediaWiki.org"
       },
       "cover_meta": {
-        "strategy": "legacy",
-        "source": "historical",
-        "review_status": "unreviewed",
-        "relevance_score": null,
-        "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript.jpg",
-        "note": "Existing asset preserved; regenerate through review workflow before approval."
+        "strategy": "fallback",
+        "source": "code",
+        "query": null,
+        "relevance_score": 0.0,
+        "review_status": "auto_fallback",
+        "fallback_reason": "no_candidate_passed",
+        "motif": "data",
+        "brief": {
+          "subject": "Prisma ORM: como modelar banco de dados com TypeScript",
+          "entities": [
+            "prisma",
+            "orm",
+            "modelar",
+            "banco",
+            "dados",
+            "typescript"
+          ],
+          "category": "tutorial",
+          "motif": "data",
+          "visual_concept": "data records and relational structure",
+          "queries": [
+            "data records and relational structure",
+            "database structure diagram",
+            "data relationships diagram",
+            "prisma orm modelar"
+          ],
+          "search_terms": [
+            "prisma",
+            "orm",
+            "como",
+            "modelar",
+            "banco",
+            "dados",
+            "com",
+            "typescript"
+          ],
+          "avoid": [
+            "logo",
+            "wordmark",
+            "icon",
+            "stock photo",
+            "unrelated"
+          ],
+          "language": "agnostic"
+        },
+        "review_candidates": []
       }
     },
     {
