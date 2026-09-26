@@ -27,8 +27,51 @@ THRESHOLDS = {
 MIN_PHOTO_SCORE = 0.62
 
 
+def jpeg_dimensions(path: Path | str) -> tuple[int, int] | None:
+    """Lê largura/altura de um JPEG só com a stdlib, percorrendo os marcadores SOF.
+
+    Existe para que a checagem de integridade do asset (existe, e JPEG, e
+    1200x630) funcione em maquina sem Pillow. A analise de pixel continua
+    dependendo de Pillow, porque decidir "BRANCO 80%" exige decodificar a
+    imagem. Um asset truncado ou corrompido nao tem marcador SOF e aqui
+    retorna None, que e exatamente o sinal de erro que o chamador espera.
+    """
+    try:
+        data = Path(path).read_bytes()
+    except OSError:
+        return None
+    if len(data) < 4 or data[:2] != b"\xff\xd8":  # SOI
+        return None
+    i = 2
+    n = len(data)
+    while i + 3 < n:
+        if data[i] != 0xFF:
+            i += 1
+            continue
+        marker = data[i + 1]
+        # marcadores SOF de frame, exceto os de codificacao(DHT/DAC/RST/SOI)
+        if marker in (0xC0, 0xC1, 0xC2, 0xC3, 0xC5, 0xC6, 0xC7,
+                      0xC9, 0xCA, 0xCB, 0xCD, 0xCE, 0xCF):
+            if i + 9 >= n:
+                return None
+            h = (data[i + 5] << 8) | data[i + 6]
+            w = (data[i + 7] << 8) | data[i + 8]
+            return (w, h) if w and h else None
+        # segmentos sem payload proprio
+        if marker in (0xD8, 0x01) or 0xD0 <= marker <= 0xD7:
+            i += 2
+            continue
+        if i + 4 > n:
+            return None
+        seg_len = (data[i + 2] << 8) | data[i + 3]
+        if seg_len < 2:
+            return None
+        i += 2 + seg_len
+    return None
+
+
 def analyze(path: Path | str) -> dict:
-    """Mantém a API anterior e adiciona size/exists para o verificador."""
+    """Analise de pixel. Exige Pillow: sem ele, o chamador usa jpeg_dimensions."""
     path = Path(path)
     if Image is None:
         raise RuntimeError("Pillow não está instalado")
@@ -123,15 +166,31 @@ def verify_workspace(workspace: Path) -> dict:
         elif not asset.exists():
             add("error", "asset_missing", slug, f"Asset ausente: {asset}")
         else:
-            try:
-                metrics = analyze(asset)
-                files.append({"slug": slug, "asset": str(asset), **metrics})
-                if (metrics["width"], metrics["height"]) != (1200, 630):
-                    add("error", "wrong_dimensions", slug, f"{metrics['size']} != 1200x630")
-                for flag in _visual_flags(metrics):
-                    add("warning", "visual_heuristic", slug, flag)
-            except Exception as exc:  # asset corrompido não deve derrubar o relatório
-                add("error", "asset_unreadable", slug, str(exc))
+            if Image is not None:
+                try:
+                    metrics = analyze(asset)
+                    files.append({"slug": slug, "asset": str(asset), **metrics})
+                    if (metrics["width"], metrics["height"]) != (1200, 630):
+                        add("error", "wrong_dimensions", slug, f"{metrics['size']} != 1200x630")
+                    for flag in _visual_flags(metrics):
+                        add("warning", "visual_heuristic", slug, flag)
+                except Exception as exc:  # asset corrompido não deve derrubar o relatório
+                    add("error", "asset_unreadable", slug, str(exc))
+            else:
+                # Sem Pillow: a integridade do asset continua verificavel pelo
+                # cabecalho JPEG. So a heuristica de pixel (BRANCO/PRETO/
+                # SEM-TEXTURA) fica indisponivel -- e isso e ambiente, nao
+                # defeito do post, entao vira UM aviso agregado, nao 1 erro
+                # por post. Reportar 68 "asset_unreadable" antes dizia que os
+                # 68 assets estavam corrompidos, o que era mentira.
+                dims = jpeg_dimensions(asset)
+                if dims is None:
+                    add("error", "asset_unreadable", slug, "JPEG sem cabeçalho legível (truncado ou corrompido)")
+                else:
+                    w, h = dims
+                    files.append({"slug": slug, "asset": str(asset), "width": w, "height": h, "size": f"{w}x{h}"})
+                    if (w, h) != (1200, 630):
+                        add("error", "wrong_dimensions", slug, f"{w}x{h} != 1200x630")
 
         meta = post.get("cover_meta")
         if not isinstance(meta, dict):
@@ -151,6 +210,16 @@ def verify_workspace(workspace: Path) -> dict:
                     add("warning", "legacy_review_status", slug, f"review_status={meta.get('review_status')}")
             elif strategy != "fallback":
                 add("warning", "unknown_strategy", slug, f"strategy={strategy}")
+
+    if Image is None and files:
+        add(
+            "warning",
+            "visual_analysis_skipped",
+            "",
+            f"Análise visual de pixel indisponível (Pillow não instalado): "
+            f"integridade e 1200x630 de {len(files)} capas foram verificadas "
+            f"pelo cabeçalho JPEG, mas BRANCO/PRETO/SEM-TEXTURA não rodaram.",
+        )
 
     for asset_name, slugs in by_cover.items():
         if len(slugs) > 1 and len(set(slugs)) > 1:

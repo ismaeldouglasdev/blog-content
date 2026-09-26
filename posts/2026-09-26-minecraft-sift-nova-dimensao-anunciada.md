@@ -105,7 +105,6 @@ E se quiser ver em 2027, a partir de 29 de setembro dá para começar por Dungeo
 - [Minecraft Dungeons II's New Dimension Coming to Minecraft Java & Bedrock Edition, XBOX Wire](https://news.xbox.com/en-us/2026/09/26/minecraft-new-dimension-sift-dungeons-2/)
 - [Minecraft Live: September 2026 Recap, Minecraft](https://www.minecraft.net/en-us/article/mclive_sept2026_recap)
 - [Minecraft Is Getting Its First New Dimension In Over 15 Years, GameSpot](https://www.gamespot.com/articles/minecraft-is-getting-its-first-new-dimension-in-over-15-years/)
-- [Minecraft Is Getting Its First New Dimension Since 2011, Polygon](https://www.polygon.com/minecraft-live-news-recap-sift-dimension/)
 - [Minecraft Live Reveals New Dimension and Dungeons II, Twisted Voxel](https://twistedvoxel.com/minecraft-live-september-2026/)
 - [Everything We Saw At Minecraft Live, Kotaku](https://kotaku.com/minecraft-live-dungeons-ii-ice-caves-the-sift-microsoft-mojang-2000737181)
 - ["Minecraft" gets its first new dimension in 15 years in 2027, heise online](https://www.heise.de/en/news/Minecraft-gets-its-first-new-dimension-in-15-years-in-2027-11466147.html)
