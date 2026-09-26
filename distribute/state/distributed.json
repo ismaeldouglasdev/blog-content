@@ -167,6 +167,22 @@
         "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mweqqf5gkz2r",
         "telegram": "45"
       }
+    },
+    "2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um": {
+      "url": "https://blog.ismaeltech.com/2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um",
+      "posted_at": "2026-09-26T00:45:29.622583+00:00",
+      "platforms": {
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mwf2mkwcsa2t",
+        "telegram": "46"
+      }
+    },
+    "2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco": {
+      "url": "https://blog.ismaeltech.com/2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco",
+      "posted_at": "2026-09-26T00:46:55.978095+00:00",
+      "platforms": {
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mwf2p5anmq2t",
+        "telegram": "47"
+      }
     }
   }
 }
