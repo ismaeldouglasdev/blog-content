@@ -263,6 +263,22 @@
         "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mwh766zmre2f",
         "telegram": "60"
       }
+    },
+    "2026-09-26-minecraft-sift-nova-dimensao-anunciada": {
+      "url": "https://blog.ismaeltech.com/2026-09-26-minecraft-sift-nova-dimensao-anunciada",
+      "posted_at": "2026-09-26T21:42:33.460366+00:00",
+      "platforms": {
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mwhauep3cg26",
+        "telegram": "61"
+      }
+    },
+    "2026-09-26-minecraft-sift-nova-dimensao-anunciada-en": {
+      "url": "https://blog.ismaeltech.com/2026-09-26-minecraft-sift-nova-dimensao-anunciada-en",
+      "posted_at": "2026-09-26T21:43:59.643844+00:00",
+      "platforms": {
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mwhawwvkc22v",
+        "telegram": "62"
+      }
     }
   }
 }
