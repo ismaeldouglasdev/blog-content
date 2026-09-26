@@ -9,7 +9,6 @@ cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/pos
 lang: "pt"
 ---
 
-# Tailwind CSS: Por que utility-first é o método mais prático para projetos reais
 
 Quantas vezes você já passou horas nomeando classes CSS, apenas para descobrir que seu `button-primary-large-rounded` não serve para o botão que precisa ser "quase primary, mas um pouco menor"? O CSS tradicional nos força a pensar em abstrações antes mesmo de entender o que estamos construindo.
 

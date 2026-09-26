@@ -9,7 +9,6 @@ cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/pos
 lang: "pt"
 ---
 
-# Linux no Desktop em 2026: Finalmente Pronto para Todo Mundo?
 
 A pergunta que não quer calar: "Este é o ano do Linux no desktop?" Já virou meme entre desenvolvedores, repetida religiosamente a cada nova versão do Ubuntu ou atualização do kernel. Mas em 2026, com o Steam Deck provando que Linux pode rodar jogos AAA sem drama e interfaces como o Hyprland transformando a experiência do usuário, talvez seja hora de revisitar essa questão com seriedade.
 
@@ -137,3 +136,8 @@ O mais importante: pela primeira vez na história, escolher Linux não significa
 - [Hyprland Documentation](https://wiki.hyprland.org/)
 - [Linux Hardware Compatibility - Kernel Documentation](https://www.kernel.org/doc/html/latest/)
 - [NVIDIA Linux Driver Release Notes](https://docs.nvidia.com/datacenter/tesla/)
+
+## 📸 Crédito da imagem de capa
+- **Imagem:** [Tux, the Linux penguin I.jpg](https://commons.wikimedia.org/wiki/File:Tux,_the_Linux_penguin_I.jpg)
+- **Autor(a):** Renato.pierri
+- **Licença:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) · via Wikimedia Commons

@@ -9,7 +9,6 @@ lang: "en"
 translation_of: "2026-09-14-teclados-mecanicos-em-2026-modelos-em-destaque"
 ---
 
-# Mechanical keyboards in 2026: the models getting the most attention
 
 Mechanical keyboards have left the enthusiast niche and become an almost mandatory setup item. In 2026, the question is no longer "why buy one", but "which one to buy". After spending some time following reviews, forum discussions and what the community talks about most, I picked the three models that appear most often in conversations and looked at what each one actually delivers.
 
@@ -61,3 +60,8 @@ If you're coming from a membrane keyboard, any of the three will be a noticeable
 - [Wooting 80HE, official page](https://wooting.io/80he): Hall Effect switches and rapid trigger
 - [NuPhy Air75 V2, official page](https://nuphy.com/products/air75-v2): specifications and battery
 - [r/MechanicalKeyboards](https://www.reddit.com/r/MechanicalKeyboards/): community discussions
+
+## 📸 Cover image credit
+- **Image:** [Beautiful Mechanical Keyboard.jpg](https://commons.wikimedia.org/wiki/File:Beautiful_Mechanical_Keyboard.jpg)
+- **Author:** Anirban Saha
+- **License:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) · via Wikimedia Commons

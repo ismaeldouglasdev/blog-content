@@ -9,7 +9,6 @@ lang: "en"
 translation_of: "2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash"
 ---
 
----
 
 ## Introduction
 When I migrated 10k products between systems at Loja Quase Tudo, I realized the importance of automating tasks to maintain efficiency and reduce human errors. Task automation is crucial for any system or application, allowing tasks to be executed regularly and consistently without the need for human intervention. In this context, tools like `cron`, `systemd`, and Bash scripts are essential for automating tasks and ensuring system stability and security.

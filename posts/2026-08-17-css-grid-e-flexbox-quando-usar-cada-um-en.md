@@ -10,7 +10,6 @@ lang: "en"
 translation_of: "2026-08-17-css-grid-e-flexbox-quando-usar-cada-um"
 ---
 
-# CSS Grid vs. Flexbox: When to Use Each in Web Development
 
 ## Introduction
 
@@ -73,7 +72,8 @@ Here's the CSS needed to make this work:
 }
 
 .navegacao a {
-  color: white
+  color: white;
+}
 ```
 
 ## Sources

@@ -8,7 +8,6 @@ cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/pos
 lang: "pt"
 ---
 
-# NVIDIA anuncia GeForce RTX 5090: specs, preço e o que esperar
 
 A NVIDIA apresentou a GeForce RTX 5090 durante a CES 2026, levando a arquitetura Blackwell ao mercado consumidor. É a geração que promete o maior salto em ray tracing e inteligência artificial desde a virada para os tensor cores, mas também a mais cara da história da linha xx90. A pergunta que todo mundo está fazendo: vale o preço?
 
@@ -55,3 +54,8 @@ Para quem está no meio-termo, esperar as reviews completas e a chegada da RTX 5
 - [Análise inicial no TechPowerUp](https://www.techpowerup.com/review/nvidia-geforce-rtx-5090/): primeira review independente com benchmarks
 - [Discussão no r/hardware](https://www.reddit.com/r/hardware/): discussão da comunidade sobre preço e valor
 - [Previsão de preço no Adrenaline](https://www.adrenaline.com.br/hardware/nvidia-rtx-5090-preco-brasil/): estimativa para o mercado brasileiro
+
+## 📸 Crédito da imagem de capa
+- **Imagem:** [ZOTAC Gaming's GeForce RTX 50 Series Graphics Carda.jpg](https://commons.wikimedia.org/wiki/File:ZOTAC_Gaming%27s_GeForce_RTX_50_Series_Graphics_Carda.jpg)
+- **Autor(a):** Alphaaloy
+- **Licença:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) · via Wikimedia Commons

@@ -9,7 +9,6 @@ cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/pos
 lang: "pt"
 ---
 
-# Gerenciamento de estados: React Context vs Zustand vs Jotai
 
 Você já passou uma tarde inteira debugando uma atualização que não disparava reação no componente, só para descobrir que o problema estava no `useMemo` que envolveu seu contexto? Ou já viu um projeto crescer até o ponto em que qualquer mudança num estado global acaba afetando metade da árvore de componentes? Gerenciamento de estado em React não é só sobre guardar dados: é sobre prevenir esses choques de realidade que te fazem questionar sua carreira.
 

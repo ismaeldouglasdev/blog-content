@@ -10,7 +10,6 @@ lang: "en"
 translation_of: "2026-09-18-gerenciamento-de-memoria-em-go-escapes-stack-e-gc"
 ---
 
-# Memory Management in Go: Understanding Escapes, Stack and Garbage Collection
 
 Have you ever wondered why a Go program sometimes consumes much more memory than it should? Or why that API endpoint that should be fast is showing strange latencies? The answer often lies in Go's memory management behavior - a topic that may seem abstract, but has direct impact on application performance.
 

@@ -9,7 +9,6 @@ lang: "en"
 translation_of: "2026-08-30-o-fim-do-npm-por-que-bun-e-deno-estao-ganhando-espaco"
 ---
 
----
 ## Introduction
 When it comes to managing dependencies in JavaScript projects, npm is the industry giant. With over 1.5 million packages available, it is the largest open-source repository in the world. However, over time, npm has been facing chronic issues that affect the speed, security, and stability of projects. Here, I will outline the problems with npm and how two new players, Bun and Deno, are gaining traction in the market.
 

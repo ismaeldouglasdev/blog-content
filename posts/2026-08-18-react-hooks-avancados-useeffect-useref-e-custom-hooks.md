@@ -5,6 +5,7 @@ category: "tutorial"
 tags: ["react", "hooks", "javascript", "frontend"]
 excerpt: "Desde a versão 16.8 do React, os Hooks se tornaram o padrão da comunidade. Domine useEffect, useRef e custom hooks com exemplos de produção."
 share_hook: "useEffect com cleanup, useRef para DOM e valores persistentes, e os custom hooks que você realmente usa — com os erros que mais aparecem."
+lang: "pt"
 ---
 
 ## Introdução: Por que os Hooks mudaram o React? 

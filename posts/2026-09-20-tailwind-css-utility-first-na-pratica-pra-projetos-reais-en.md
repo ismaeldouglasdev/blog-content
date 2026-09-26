@@ -10,7 +10,6 @@ lang: "en"
 translation_of: "2026-09-20-tailwind-css-utility-first-na-pratica-pra-projetos-reais"
 ---
 
-# Tailwind CSS: Why utility-first is the most practical method for real projects
 
 How many times have you spent hours naming CSS classes, only to discover that your `button-primary-large-rounded` doesn't work for the button that needs to be "almost primary, but slightly smaller"? Traditional CSS forces us to think in abstractions before we even understand what we're building.
 

@@ -8,7 +8,6 @@ cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/pos
 lang: "pt"
 ---
 
-# Edge Functions com Cloudflare Workers: compute global sem servidor
 
 A arquitetura de aplicações web passou por uma transformação silenciosa nos últimos anos. O modelo tradicional de servidor único, onde você mantém uma máquina respondendo a requisições em uma localização geográfica específica, está dando lugar a algo fundamentalmente diferente: código que executa simultaneamente em centenas de pontos de presença ao redor do mundo, a poucos milissegundos de qualquer usuário. Essa mudança não é apenas evolutiva, é uma redefinição do que significa "distribuir" uma aplicação.
 

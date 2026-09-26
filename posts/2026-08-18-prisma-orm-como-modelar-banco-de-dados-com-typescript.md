@@ -5,6 +5,7 @@ category: "tutorial"
 tags: ["prisma", "orm", "banco-de-dados", "typescript"]
 excerpt: "Prisma ORM na prática: modelando o schema de um SaaS, relacionamentos, migrations seguras, query API avançada e indexing de performance."
 share_hook: "Modelando o schema de um SaaS no Prisma: relacionamentos 1:1, 1:N e N:M, migrations seguras e a Query API avançada."
+lang: "pt"
 ---
 
 ## Introdução: ORM vs query raw

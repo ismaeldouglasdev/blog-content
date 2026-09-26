@@ -10,7 +10,6 @@ lang: "en"
 translation_of: "2026-09-10-gerenciamento-de-estados-react-context-vs-zustand-vs-jotai"
 ---
 
-# State Management: React Context vs Zustand vs Jotai
 
 Have you ever spent an entire afternoon debugging an update that didn't trigger a component re-render, only to discover the culprit was a `useMemo` wrapping your context? Or seen a project grow to the point where any global state change ends up affecting half the component tree? State management in React isn't just about storing data: it's about preventing those reality checks that make you question your career choices.
 

@@ -421,11 +421,6 @@ export function useDebouncedCallback<T extends unknown[]>(
 - [Kent C. Dodds: Custom Hooks](https://kentcdodds.com/blog/how-to-use-react-hooks-effectively)
 
 ## 📸 Cover image credit
-- **Image:** [React-icon.svg](https://commons.wikimedia.org/wiki/File%3AReact-icon.svg)
-- **Author:** Facebook
-- **License:** [Public domain](https://en.wikipedia.org/wiki/Public_domain) · via Wikimedia Commons
-
-## 📸 Cover image credit
 - **Image:** [Programming.jpg](https://commons.wikimedia.org/wiki/File%3AProgramming.jpg)
 - **Author:** Lorenzo Cafaro
 - **License:** [CC0](https://creativecommons.org/publicdomain/zero/1.0/) · via Wikimedia Commons

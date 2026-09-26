@@ -17,20 +17,90 @@ import requests
 # Config
 REPO = "ismaeldouglasdev/blog-content"
 BRANCH_PREFIX = "post"
+
+# Lista de temas candidatos. pick_unused_topic() descarta os que ja foram
+# publicados, mas a lista precisa acompanhar o ritmo do blog: com 10 itens e 33
+# posts publicados, o sorteio_secado sobrava quase nada -- e o gerador travava
+# com SystemExit assim que os 10 acabavam.
+#
+# Regra ao adicionar: nao repetir angulo ja coberto. "Gerenciamento de memoria
+# em Go" nao pode virar "Go do zero"; o topic novo tem que ser outro assunto.
 TOPICS = [
-    # Tutoriais
-    {"topic": "React Hooks avançados", "category": "tutorial", "tags": ["react", "hooks", "javascript"]},
-    {"topic": "TypeScript para iniciantes", "category": "tutorial", "tags": ["typescript", "javascript"]},
-    {"topic": "Como criar uma API REST com Node.js", "category": "tutorial", "tags": ["node", "api", "backend"]},
-    {"topic": "CSS Grid na prática", "category": "tutorial", "tags": ["css", "frontend", "layout"]},
-    {"topic": "Docker para desenvolvedores", "category": "tutorial", "tags": ["docker", "devops", "containers"]},
-    # Case Studies
-    {"topic": "Como construí meu portfólio minimalista", "category": "case-study", "tags": ["portfolio", "design", "react"]},
-    {"topic": "Automatizando deploy com Vercel", "category": "case-study", "tags": ["vercel", "ci-cd", "deploy"]},
-    # Artigos
-    {"topic": "Tendências de desenvolvimento 2026", "category": "article", "tags": ["tendências", "mercado"]},
-    {"topic": "Por que Rust está crescendo", "category": "article", "tags": ["rust", "linguagens"]},
-    {"topic": "IA no desenvolvimento: onde estamos", "category": "article", "tags": ["ia", "ferramentas", "produtividade"]},
+    # --- React / Frontend ---
+    {"topic": "React 19 e Server Actions na prática", "category": "tutorial", "tags": ["react", "server-actions", "frontend"]},
+    {"topic": "Performance em React: memo, useMemo e re-renderização", "category": "tutorial", "tags": ["react", "performance", "frontend"]},
+    {"topic": "Error Boundary e Suspense: tratando falhas na UI", "category": "tutorial", "tags": ["react", "erros", "frontend"]},
+    {"topic": "TanStack Query: cache, revalidação e estados de servidor", "category": "tutorial", "tags": ["react", "cache", "dados"]},
+    {"topic": "CSS moderno: container queries e cascade layers", "category": "tutorial", "tags": ["css", "frontend", "layout"]},
+    {"topic": "Animações em CSS sem biblioteca", "category": "tutorial", "tags": ["css", "animacao", "frontend"]},
+    {"topic": "Acessibilidade web na prática: WCAG sem complicação", "category": "tutorial", "tags": ["acessibilidade", "wcag", "frontend"]},
+    {"topic": "Web performance: otimizando Core Web Vitals", "category": "tutorial", "tags": ["performance", "web-vitals", "frontend"]},
+    {"topic": "Service Workers e PWA do zero", "category": "tutorial", "tags": ["pwa", "service-worker", "frontend"]},
+    {"topic": "IndexedDB: armazenamento local no navegador", "category": "tutorial", "tags": ["storage", "navegador", "frontend"]},
+
+    # --- TypeScript ---
+    {"topic": "Decorators e metaprogramação em TypeScript", "category": "tutorial", "tags": ["typescript", "metaprogramacao"]},
+    {"topic": "TypeScript do compilador ao runtime", "category": "article", "tags": ["typescript", "compilador"]},
+    {"topic": "Validação de tipos em runtime com Zod", "category": "tutorial", "tags": ["typescript", "zod", "validacao"]},
+
+    # --- Node.js / Backend ---
+    {"topic": "Node.js: streams e buffers na prática", "category": "tutorial", "tags": ["node", "streams", "backend"]},
+    {"topic": "Node.js: worker threads e paralelismo real", "category": "tutorial", "tags": ["node", "performance", "backend"]},
+    {"topic": "API REST do zero com FastAPI", "category": "tutorial", "tags": ["python", "fastapi", "api"]},
+    {"topic": "Python assíncrono: asyncio do zero", "category": "tutorial", "tags": ["python", "assincrono"]},
+    {"topic": "gRPC e Protocol Buffers entre serviços", "category": "tutorial", "tags": ["grpc", "protobuf", "backend"]},
+    {"topic": "Event streaming com Kafka do zero", "category": "tutorial", "tags": ["kafka", "streaming", "backend"]},
+    {"topic": "WebAssembly: rodando Rust e Go no navegador", "category": "article", "tags": ["wasm", "rust", "go"]},
+    {"topic": "SQLite: quando um banco em arquivo basta", "category": "article", "tags": ["sqlite", "banco-de-dados"]},
+
+    # --- Go / Rust ---
+    {"topic": "Go: goroutines, channels e concorrência", "category": "tutorial", "tags": ["go", "concorrencia"]},
+    {"topic": "Go: net/http e APIs do zero", "category": "tutorial", "tags": ["go", "api", "backend"]},
+    {"topic": "Rust: ownership e borrow checker sem medo", "category": "tutorial", "tags": ["rust", "ownership", "linguagens"]},
+    {"topic": "Rust async com Tokio", "category": "tutorial", "tags": ["rust", "async", "tokio"]},
+
+    # --- Banco de dados ---
+    {"topic": "PostgreSQL: índices, EXPLAIN e performance", "category": "tutorial", "tags": ["postgresql", "performance", "banco-de-dados"]},
+    {"topic": "PostgreSQL: JSONB e consultas semi-estruturadas", "category": "tutorial", "tags": ["postgresql", "jsonb", "banco-de-dados"]},
+    {"topic": "Modelagem de dados: quando normalizar", "category": "article", "tags": ["banco-de-dados", "modelagem"]},
+
+    # --- DevOps / Infra ---
+    {"topic": "Docker do zero: imagem, container e volume", "category": "tutorial", "tags": ["docker", "containers", "devops"]},
+    {"topic": "GitHub Actions: CI que roda de verdade", "category": "tutorial", "tags": ["ci-cd", "github-actions", "devops"]},
+    {"topic": "Kubernetes: conceitos que você precisa antes do deploy", "category": "tutorial", "tags": ["kubernetes", "devops", "containers"]},
+    {"topic": "Terraform: infraestrutura como código", "category": "tutorial", "tags": ["terraform", "iac", "devops"]},
+    {"topic": "Nginx: proxy reverso e balanceamento de carga", "category": "tutorial", "tags": ["nginx", "infra", "devops"]},
+    {"topic": "Observabilidade: OpenTelemetry, logs, métricas e traces", "category": "tutorial", "tags": ["observabilidade", "opentelemetry", "monitoring"]},
+    {"topic": "Linux: tuning de performance e gargalo", "category": "tutorial", "tags": ["linux", "performance", "sistema"]},
+    {"topic": "Bash: scripting robusto com set -euo pipefail", "category": "tutorial", "tags": ["bash", "scripting", "automacao"]},
+    {"topic": "Monorepo: pnpm workspaces e Turbo", "category": "tutorial", "tags": ["monorepo", "pnpm", "turbo"]},
+    {"topic": "Comparativo de bundlers: Vite, Turbopack e Webpack", "category": "article", "tags": ["build", "vite", "frontend"]},
+
+    # --- Segurança ---
+    {"topic": "OWASP Top 10: os erros que mais aparecem em produção", "category": "article", "tags": ["seguranca", "owasp"]},
+    {"topic": "Autenticação vs autorização: a linha que quase todo mundo atravessa", "category": "article", "tags": ["seguranca", "auth"]},
+    {"topic": "Criptografia aplicada: hashes, salts e rotação de chaves", "category": "tutorial", "tags": ["seguranca", "criptografia"]},
+
+    # --- IA ---
+    {"topic": "LLMs em produção: chamadas, custo e limites de taxa", "category": "tutorial", "tags": ["ia", "llm", "backend"]},
+    {"topic": "RAG e embeddings: quando a busca semântica compensa", "category": "article", "tags": ["ia", "rag", "embeddings"]},
+    {"topic": "MCP: o padrão que conecta IA a ferramentas", "category": "article", "tags": ["ia", "mcp", "ferramentas"]},
+    {"topic": "Como a IA está mudando o trabalho de quem programa", "category": "article", "tags": ["ia", "carreira"]},
+
+    # --- Curiosidade / News / Gadget ---
+    {"topic": "Como o GitHub Copilot mudou meu fluxo de trabalho", "category": "article", "tags": ["ia", "github", "produtividade"]},
+    {"topic": "Neovim: produtividade com configuração mínima", "category": "tutorial", "tags": ["neovim", "editor", "produtividade"]},
+    {"topic": "Terminais e TUIs: interfaces de texto que ainda vencem", "category": "curiosity", "tags": ["tui", "terminal"]},
+    {"topic": "Regex na prática: do básico ao que ninguém te ensinou", "category": "tutorial", "tags": ["regex", "programacao"]},
+    {"topic": "Eletrônica: teclado mecânico montado do zero", "category": "gadget", "tags": ["teclado", "eletronica"]},
+    {"topic": "Guia de compra: monitor para programmer em 2026", "category": "gadget", "tags": ["monitor", "hardware"]},
+    {"topic": "Notebook para programar: o que importa de verdade", "category": "gadget", "tags": ["notebook", "hardware"]},
+
+    # --- Carreira / Case studies ---
+    {"topic": "Contrato de freelance: cláusulas que evitam prejuízo", "category": "case-study", "tags": ["freelance", "carreira", "contrato"]},
+    {"topic": "Como precifico meu trabalho como desenvolvedor", "category": "case-study", "tags": ["freelance", "carreira", "precificacao"]},
+    {"topic": "PDV e e-commerce: integrando estoque entre sistemas", "category": "case-study", "tags": ["pdv", "ecommerce", "arquitetura"]},
+    {"topic": "Migrar um sistema legado sem parar de vender", "category": "case-study", "tags": ["legado", "migracao", "arquitetura"]},
 ]
 
 EM_DASH_PATTERN = re.compile(r'[—–]')

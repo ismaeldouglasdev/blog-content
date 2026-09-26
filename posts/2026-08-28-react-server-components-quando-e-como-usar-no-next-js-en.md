@@ -9,7 +9,6 @@ lang: "en"
 translation_of: "2026-08-28-react-server-components-quando-e-como-usar-no-next-js"
 ---
 
----
 
 The frontend ecosystem spent years focused on running everything in the client's browser, but the modern architecture of frameworks like Next.js has changed the game by bringing the server back to the center of rendering decisions.
 

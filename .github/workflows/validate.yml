@@ -122,6 +122,97 @@ jobs:
           print('OK: nenhum mojibake nos posts')
           PY
 
+      # Checks estruturais que jaNvaram quebrados em posts publicados:
+      #  - EN sem `translation_of` aparece como entrada independente no feed
+      #    (o site filtra a lista por `!p.translation_of`) -- ou seja, duplicata
+      #  - fence de codigo sem fechar engole o resto do post na renderizacao
+      #  - `---` orfao depois do frontmatter vira linha solta no corpo
+      #  - `h1` no corpo duplica o <h1> que o site ja renderiza a partir do title
+      #  - bloco de credito da capa divergente do `cover_credit` do _meta.json
+      - name: Check post structure
+        run: |
+          python3 - <<'PY'
+          import json, os, re, sys
+
+          with open('posts/_meta.json', encoding='utf-8') as f:
+              posts = json.load(f).get('posts', [])
+          errors = []
+
+          for entry in posts:
+              slug = entry.get('slug', '')
+              path = f'posts/{slug}.md'
+              if not os.path.exists(path):
+                  continue
+              raw = open(path, encoding='utf-8').read()
+              lines = raw.split('\n')
+              is_en = slug.endswith('-en')
+
+              m = re.match(r'^---\n(.*?)\n---\n', raw, re.S)
+              if not m:
+                  errors.append(f'{slug}: sem frontmatter')
+                  continue
+              fm, body = m.group(1), raw[m.end():]
+
+              if is_en and 'translation_of' not in fm:
+                  errors.append(
+                      f'{slug}: post EN sem translation_of -- vai aparecer '
+                      f'como entrada duplicada no feed'
+                  )
+              if not is_en and 'translation_of' in fm:
+                  errors.append(f'{slug}: post PT nao deve ter translation_of')
+              if re.search(r'^lang:\s*"?(\w[\w-]*)"?', fm, re.M) is None:
+                  errors.append(f'{slug}: frontmatter sem campo lang')
+              elif re.search(rf'^lang:\s*"?{ "en" if is_en else "pt" }"?\s*$',
+                             fm, re.M) is None:
+                  errors.append(f'{slug}: campo lang incorreto')
+
+              if raw.count('```') % 2 != 0:
+                  errors.append(f'{slug}: cerca de codigo sem fechar '
+                                f'({raw.count("```")} marcadores) -- o resto '
+                                f'do post renderiza dentro do bloco')
+
+              first = next((l for l in body.split('\n') if l.strip()), '')
+              if first.strip() == '---':
+                  errors.append(f'{slug}: "---" orfao depois do frontmatter')
+
+              stripped = re.sub(r'```.*?```', '', body, flags=re.S)
+              if re.search(r'^#\s+\S', stripped, re.M):
+                  errors.append(f'{slug}: h1 no corpo duplica o titulo')
+
+              credit = entry.get('cover_credit') or {}
+              expected = (credit.get('file') or '').replace('File:', '')
+              blocks = re.findall(r'^##\s*\U0001F4F8[^\n]*\n'
+                                  r'(?:- \*\*[^\n]*\n)+', raw, re.M)
+              # Pode haver mais de um bloco: imagem inline do corpo tambem
+              # precisa de credito. O que nao pode faltar e o credito da CAPA,
+              # que e o que o _meta.json declara.
+              if expected and not any(expected.lower() in b.lower()
+                                       for b in blocks):
+                  got = [re.search(r'\[([^\]]+)\]', b).group(1)
+                         for b in blocks if re.search(r'\[([^\]]+)\]', b)]
+                  errors.append(f'{slug}: credito da capa ausente ou divergente '
+                                f'do _meta.json (esperado {expected}; '
+                                f'encontrado {got or "nenhum"})')
+              if blocks:
+                  label = ('Cover image credit' if is_en
+                           else 'Crédito da imagem de capa')
+                  if not any(label in b for b in blocks):
+                      errors.append(f'{slug}: bloco de credito no idioma errado')
+
+          if errors:
+              for e in errors:
+                  print(f'ERROR: {e}')
+              sys.exit(1)
+          print(f'OK: estrutura valida em {len(posts)} posts')
+          PY
+
+      # Perdeu diacritico em texto pt-BR. O vocabulario vem do proprio corpus:
+      # se o blog escreve "interacao" acentuada num post, "interacao" sem
+      # acento em outro e bug. Palavras que o blog nunca acentua nao sao julgadas.
+      - name: Check pt-BR diacritics
+        run: |
+          python3 scripts/audit-pt-diacritics.py
+
       - name: Lint markdown
         uses: avto-dev/markdown-lint@v1
         with:

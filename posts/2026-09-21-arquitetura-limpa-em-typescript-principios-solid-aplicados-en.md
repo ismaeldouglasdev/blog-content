@@ -10,7 +10,6 @@ lang: "en"
 translation_of: "2026-09-21-arquitetura-limpa-em-typescript-principios-solid-aplicados"
 ---
 
----
 ## Introduction
 When it comes to developing software, clean architecture is fundamental to ensuring that the code is easy to maintain, scale, and understand. However, many developers face challenges in implementing this approach in their projects. Recently, I had the opportunity to work on a project that required a clean and scalable architecture, and I realized that the SOLID principles are essential to achieving this goal. Here, I will show how to apply these principles in TypeScript to create a clean and effective architecture.
 

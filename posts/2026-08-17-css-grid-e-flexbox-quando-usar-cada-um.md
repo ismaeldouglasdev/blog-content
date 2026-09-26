@@ -5,9 +5,9 @@ category: "tutorial"
 tags: ["css", "frontend"]
 excerpt: "CSS Grid vs. Flexbox: Quando Usar Cada Um no Desenvolvimento Web."
 share_hook: "Grid é 2D, Flexbox é 1D: entender essa diferença resolve a maioria dos problemas de layout que ninguém consegue explicar."
+lang: "pt"
 ---
 
-# CSS Grid vs. Flexbox: Quando Usar Cada Um no Desenvolvimento Web
 
 ## Introdução
 
@@ -70,7 +70,9 @@ Aqui está o CSS necessário para fazer isso funcionar:
 }
 
 .navegacao a {
-  color: white
+  color: white;
+}
+```
 
 ## Fontes
 

@@ -69,7 +69,8 @@ Resumindo, o PostgreSQL é um banco de dados relacional que oferece muitas funci
 - [PlanetScale Documentation](https://planetscale.com/docs)
 - [pgvector GitHub Repository](https://github.com/pgvector/pgvector)
 - [PostGIS GitHub Repository](https://github.com/postgis/postgis)
+
 ## 📸 Crédito da imagem de capa
-- **Imagem:** [Body painting - QR code.jpg](https://commons.wikimedia.org/wiki/File%3ABody_painting_-_QR_code.jpg)
-- **Autor(a):** Exey Panteleev
-- **Licença:** [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) · via Wikimedia Commons
+- **Imagem:** [Data center infrastructure in the United States.jpg](https://commons.wikimedia.org/wiki/File%3AData_center_infrastructure_in_the_United_States.jpg)
+- **Autor(a):** DOE/National Renewable Energy Laboratory
+- **Licença:** [Public domain](https://en.wikipedia.org/wiki/Public_domain) · via Wikimedia Commons

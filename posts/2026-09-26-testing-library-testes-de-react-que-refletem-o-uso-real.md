@@ -161,7 +161,7 @@ A transição de testes baseados em implementação para testes baseados em comp
 
 Para quem constrói sistemas reais, como integrações de varejo ou dashboards complexos, essa robustez é essencial. A velocidade de desenvolvimento pode parecer menor no início, mas o tempo gasto corrigindo testes quebrados por refatorações desnecessárias consome muito mais recursos.
 
-Takeaways praticos:
+Takeaways práticos:
 
 *   Priorize sempre queries baseadas em acessibilidade (`getByRole`, `getByLabelText`). Use `getByTestId` apenas como último recurso.
 *   Simule interações de usuário reais com `userEvent`. Evite disparar eventos manualmente com `fireEvent`, a menos que tenha uma razão específica e documentada.

@@ -8,7 +8,6 @@ cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/pos
 lang: "pt"
 ---
 
-# Teclados mecânicos em 2026: os modelos que estão chamando atenção
 
 Teclados mecânicos saíram do nicho de entusiastas e viraram item quase obrigatório de setup. Em 2026, a pergunta não é mais "por que comprar um", e sim "qual comprar". Depois de passar algum tempo acompanhando reviews, discussões em fóruns e o que a comunidade brasileira mais comenta, separei os três modelos que mais aparecem nas conversas e o que cada um entrega de verdade.
 
@@ -60,3 +59,8 @@ Se você está vindo de um teclado de membrana, qualquer um dos três vai ser um
 - [Wooting 80HE, página oficial](https://wooting.io/80he): switches Hall Effect e rapid trigger
 - [NuPhy Air75 V2, página oficial](https://nuphy.com/products/air75-v2): especificações e bateria
 - [r/MechanicalKeyboards](https://www.reddit.com/r/MechanicalKeyboards/): discussões da comunidade
+
+## 📸 Crédito da imagem de capa
+- **Imagem:** [Beautiful Mechanical Keyboard.jpg](https://commons.wikimedia.org/wiki/File:Beautiful_Mechanical_Keyboard.jpg)
+- **Autor(a):** Anirban Saha
+- **Licença:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) · via Wikimedia Commons

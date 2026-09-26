@@ -10,7 +10,6 @@ lang: "en"
 translation_of: "2026-09-13-api-graphql-com-apollo-server-e-client-do-zero-ao-completo"
 ---
 
-# GraphQL with Apollo Server and Client: From Zero to Complete
 
 REST APIs dominated web development for more than a decade, but carry limitations that became increasingly evident as applications grew in complexity. Over-fetching of data, multiple requests to load a single screen, and the rigidity of fixed endpoints created real bottlenecks in modern projects. GraphQL emerges as an alternative that puts the client in control, allowing you to fetch exactly the data needed in a single request.
 

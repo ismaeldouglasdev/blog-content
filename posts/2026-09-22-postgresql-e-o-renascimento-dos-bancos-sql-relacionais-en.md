@@ -10,7 +10,6 @@ lang: "en"
 translation_of: "2026-09-22-postgresql-e-o-renascimento-dos-bancos-sql-relacionais"
 ---
 
----
 ## Introduction
 Generally, the choice of the right database is crucial for any software development project. In recent years, we have seen a significant increase in the use of NoSQL databases, which promise greater flexibility and scalability compared to traditional relational databases. However, over time, many developers have begun to realize the limitations of NoSQL databases and appreciate the robustness and consistency of relational databases, such as PostgreSQL. Here, I will demonstrate the resurgence of relational SQL databases, with a focus on PostgreSQL and its functionalities that make it an attractive choice for many projects.
 
@@ -77,6 +76,6 @@ Resuming, PostgreSQL is a relational database that offers many attractive featur
 - [pgvector GitHub Repository](https://github.com/pgvector/pgvector)
 - [PostGIS GitHub Repository](https://github.com/postgis/postgis)
 ## 📸 Cover image credit
-- **Image:** [Body painting - QR code.jpg](https://commons.wikimedia.org/wiki/File%3ABody_painting_-_QR_code.jpg)
-- **Author:** Exey Panteleev
-- **License:** [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) · via Wikimedia Commons
+- **Image:** [Data center infrastructure in the United States.jpg](https://commons.wikimedia.org/wiki/File%3AData_center_infrastructure_in_the_United_States.jpg)
+- **Author:** DOE/National Renewable Energy Laboratory
+- **License:** [Public domain](https://en.wikipedia.org/wiki/Public_domain) · via Wikimedia Commons

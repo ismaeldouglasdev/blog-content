@@ -9,7 +9,6 @@ cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/pos
 lang: "pt"
 ---
 
-# GraphQL com Apollo Server e Client: Do Zero ao Completo
 
 APIs REST dominaram o desenvolvimento web por mais de uma década, mas carregam limitações que se tornaram cada vez mais evidentes conforme aplicações cresceram em complexidade. Over-fetching de dados, múltiplas requisições para carregar uma única tela, e a rigidez dos endpoints fixos criaram gargalos reais em projetos modernos. GraphQL surge como uma alternativa que coloca o cliente no controle, permitindo buscar exatamente os dados necessários em uma única requisição.
 

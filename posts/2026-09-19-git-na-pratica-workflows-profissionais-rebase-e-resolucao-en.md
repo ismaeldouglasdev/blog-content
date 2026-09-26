@@ -10,7 +10,6 @@ lang: "en"
 translation_of: "2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao"
 ---
 
----
 ## Introduction
 When it comes to version control, Git is the most widely used tool in the software development world. However, many developers still underutilize Git, limiting themselves to basic commands like `git add`, `git commit`, and `git push`. But Git is much more than just committing changes. It offers a wide range of features to manage the workflow efficiently, resolve conflicts, and maintain a clean and organized history of changes.
 

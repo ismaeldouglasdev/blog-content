@@ -10,7 +10,6 @@ lang: "en"
 translation_of: "2026-09-12-linux-no-desktop-em-2026-ja-esta-pronto-pra-todo-mundo"
 ---
 
-# Linux on Desktop in 2026: Finally Ready for Everyone?
 
 The question that won't go away: "Is this the year of Linux on desktop?" It's already become a meme among developers, repeated religiously with every new Ubuntu release or kernel update. But in 2026, with the Steam Deck proving that Linux can run AAA games without drama and interfaces like Hyprland transforming the user experience, maybe it's time to revisit this question seriously.
 
@@ -138,3 +137,8 @@ Most importantly: for the first time in history, choosing Linux doesn't mean acc
 - [Hyprland Documentation](https://wiki.hyprland.org/)
 - [Linux Hardware Compatibility - Kernel Documentation](https://www.kernel.org/doc/html/latest/)
 - [NVIDIA Linux Driver Release Notes](https://docs.nvidia.com/datacenter/tesla/)
+
+## 📸 Cover image credit
+- **Image:** [Tux, the Linux penguin I.jpg](https://commons.wikimedia.org/wiki/File:Tux,_the_Linux_penguin_I.jpg)
+- **Author:** Renato.pierri
+- **License:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) · via Wikimedia Commons

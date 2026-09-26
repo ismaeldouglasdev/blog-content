@@ -9,7 +9,6 @@ lang: "en"
 translation_of: "2026-09-14-edge-functions-com-cloudflare-workers-compute-global-sem"
 ---
 
-# Edge Functions with Cloudflare Workers: global serverless computing
 
 The web application architecture has undergone a quiet transformation in recent years. The traditional single-server model, where you maintain a machine responding to requests in a specific geographic location, is giving way to something fundamentally different: code that runs simultaneously in hundreds of points of presence around the world, just milliseconds away from any user. This change is not just evolutionary; it's a redefinition of what it means to "distribute" an application.
 

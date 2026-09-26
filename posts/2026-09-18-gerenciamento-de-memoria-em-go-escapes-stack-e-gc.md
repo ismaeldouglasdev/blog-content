@@ -9,7 +9,6 @@ cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/pos
 lang: "pt"
 ---
 
-# Gerenciamento de Memória em Go: Entendendo Escapes, Stack e Garbage Collection
 
 Você já se perguntou por que um programa Go às vezes consome muito mais memória do que deveria? Ou por que aquele endpoint da API que deveria ser rápido está apresentando latências estranhas? A resposta muitas vezes está no comportamento do gerenciamento de memória do Go - um tópico que pode parecer abstrato, mas tem impacto direto na performance das aplicações.
 

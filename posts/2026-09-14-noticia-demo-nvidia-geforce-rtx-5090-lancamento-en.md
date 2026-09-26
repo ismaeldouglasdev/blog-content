@@ -9,7 +9,6 @@ lang: "en"
 translation_of: "2026-09-14-noticia-demo-nvidia-geforce-rtx-5090-lancamento"
 ---
 
-# NVIDIA unveils GeForce RTX 5090: specs, price and what to expect
 
 NVIDIA presented the GeForce RTX 5090 at CES 2026, bringing the Blackwell architecture to the consumer market. It is the generation promising the biggest jump in ray tracing and artificial intelligence since the move to tensor cores — but also the most expensive in the history of the xx90 lineup. The question on everyone's mind: is it worth the price?
 
@@ -56,3 +55,8 @@ For those in the middle ground, waiting for the full reviews and the arrival of 
 - [TechPowerUp initial review](https://www.techpowerup.com/review/nvidia-geforce-rtx-5090/): first independent review with benchmarks
 - [r/hardware discussion](https://www.reddit.com/r/hardware/): community discussion on price and value
 - [Price forecast on Adrenaline](https://www.adrenaline.com.br/hardware/nvidia-rtx-5090-preco-brasil/): estimate for the Brazilian market
+
+## 📸 Cover image credit
+- **Image:** [ZOTAC Gaming's GeForce RTX 50 Series Graphics Carda.jpg](https://commons.wikimedia.org/wiki/File:ZOTAC_Gaming%27s_GeForce_RTX_50_Series_Graphics_Carda.jpg)
+- **Author:** Alphaaloy
+- **License:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) · via Wikimedia Commons
