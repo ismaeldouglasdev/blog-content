@@ -26,6 +26,35 @@
 # REGRA: FALHA FECHADA. Se a auditoria nao rodar, nao produzir lista, ou a
 # lista vier com main/HEAD dentro, o script ABORTA sem apagar nada. Um script
 # que destroi nao pode ter valor padrao em caso de duvida.
+#
+# ---------------------------------------------------------------------------
+# NAO USE `git bundle` PARA BACKUP DESTE REPO
+#
+# ~/blog-content e um clone SHALLOW (existe .git/shallow, fronteira em
+# 2026-09-14, 217 commits). `git bundle create` NAO avisa disso: ele produz um
+# arquivo que passa em `git bundle verify` ("records a complete history") e
+# depois falha ao restaurar com
+#
+#   error: Could not read <sha>
+#   fatal: Failed to traverse parents of commit <sha>
+#   fatal: ... did not send all necessary objects
+#
+# Ou seja: o bundle parece backup, sobe para o R2 com checksum conferido, e
+# ainda assim nao restaura nada. Isso aconteceu em 2026-09-27 e so foi
+# encontrado porque o restore foi TESTADO, nao porque o backup foi conferido.
+# `rclone check --download --one-way` dando "0 differences" prova que os
+# bytes chegaram -- nao que eles servem para alguma coisa.
+#
+# A recuperacao real aqui e por SHA, e nao depende do clone local:
+#   git ls-remote --heads origin > refs.tsv
+#   git push origin <SHA>:refs/heads/<branch>      # restaura a branch
+# O commit continua alcancavel no GitHub depois de apagada a ref. O manifesto
+# salvo em 2026-09-27 tem os 41 refs com o comando no cabecalho.
+#
+# Se algum dia for preciso um bundle de verdade: `git fetch --unshallow` antes
+# (verifique o disco antes -- esta VPS tem 6.7G), e TESTE o restore num clone
+# descartavel antes de confiar no arquivo.
+# ---------------------------------------------------------------------------
 set -euo pipefail
 
 OWNER="ismaeldouglasdev"
