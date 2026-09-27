@@ -1,6 +1,16 @@
 # Blog Content
 
-Repositório privado com artigos do blog ismaeltech.com.
+Repositório com os artigos do blog ismaeltech.com.
+
+> **Atenção: este repositório é PÚBLICO.** A descrição dizendo "privado" está
+> errada desde antes de 2026-09-27, e é justamente por ser público que o site
+> consegue ler o conteúdo com fetch anônimo (sem token, em `api.github.com`).
+> Consequência prática: **não existe rascunho privado**. Um `.md` commitado aqui
+> é público na hora, mesmo sem entrada no `_meta.json` — o `_meta.json` controla
+> o que *aparece no site*, não o que é *visível no GitHub*.
+>
+> Para tornar privado, o site precisaria de um proxy de leitura com token no
+> servidor, o que é uma mudança de arquitetura no `meu-portfolio`.
 
 ## Estrutura
 
