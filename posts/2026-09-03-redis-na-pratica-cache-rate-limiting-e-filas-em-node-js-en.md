@@ -9,8 +9,6 @@ lang: "en"
 translation_of: "2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js"
 ---
 
-## Redis in practice: caching, rate limiting and queues in Node.js  
-
 ### Why you should care right now  
 
 Imagine your e‑commerce has just integrated OSPOS, the open‑source POS I customized for the Quase Tudo store, with Mercado Livre. With each sale, inventory must be updated within milliseconds, otherwise a customer ends up buying a product that’s already out of stock and the store’s reputation plummets. In the first test, the Mercado Livre API started responding with *429 Too Many Requests* errors, and at the same time the database became overloaded with repeated queries to the same product record. The solution turned out to be to place a Redis layer between the application and the database, using Redis not only as a cache but also as a rate limiter and as a queue broker.  
@@ -22,7 +20,6 @@ If you’ve already faced a similar situation – or haven’t yet, but know it 
 Starting with Redis inside a container makes it easier to replicate the environment in development, testing, and production. The command below creates a lean `docker-compose.yml`:
 
 ```yaml
-version: "3.9"
 services:
   redis:
     image: redis:7-alpine
@@ -32,7 +29,20 @@ services:
     restart: unless-stopped
     volumes:
       - redis-data:/data
-    command: ["redis-server", "--save", "60", "1", "--loglevel", "warning"]
+    # A cache cannot have unlimited memory: once it runs out, Redis stops
+    # answering instead of evicting. maxmemory plus an eviction policy is
+    # what keeps the service up under pressure.
+    command:
+      - redis-server
+      - --save
+      - "60"
+      - "1"
+      - --loglevel
+      - warning
+      - --maxmemory
+      - 256mb
+      - --maxmemory-policy
+      - allkeys-lru
 
 volumes:
   redis-data:
@@ -173,7 +183,13 @@ local count = redis.call("ZCARD", key)
 if count >= limit then
   return 0
 else
-  redis.call("ZADD", key, timestamp, tostring(timestamp))
+  -- The member must be unique within the ZSET. Using the timestamp alone as
+  -- the member makes two requests in the same millisecond collide: the second
+  -- ZADD overwrites the first and the counter sees 1 where there were 2,
+  -- which opens a hole for bursting past the limit.
+  local seq = redis.call("INCR", key .. ":seq")
+  redis.call("PEXPIRE", key .. ":seq", window)
+  redis.call("ZADD", key, timestamp, timestamp .. "-" .. seq)
   redis.call("PEXPIRE", key, window)
   return 1
 end
@@ -216,7 +232,13 @@ export async function canProceed(ip, limit = 100, windowMs = 60_000) {
 And in the Express middleware:
 
 ```js
+// Trust only the hops you actually control.
+app.set('trust proxy', 1);
+
 app.use(async (req, res, next) => {
+  // IMPORTANT: without this, req.ip is the proxy/load balancer's IP, not the
+  // client's. The effect is the whole world landing in the same rate-limit
+  // bucket: one legitimate user spending 100 requests locks everyone out.
   const ip = req.ip;
   if (await canProceed(ip)) {
     return next();
@@ -325,12 +347,27 @@ In *inventory-service* I used exactly this flow so that the React frontend was u
 
 ## 6. Production: clustered mode  
 
-In production environments, a standalone Redis can become a single point of failure. **Cluster** mode distributes key slots across multiple nodes, enabling horizontal scalability and fault tolerance.
+In production environments, a standalone Redis can become a single point of failure. **Cluster** mode distributes key slots across multiple nodes, enabling horizontal scalability.
 
+It is worth being precise about what it delivers, because it is easy to over-promise here: **cluster on its own does not give fault tolerance.** What it gives is slot distribution and the ability to grow horizontally. Fault tolerance comes from a different feature, replicas, and the example below uses `--cluster-replicas 0` precisely because it is the simplest to set up locally. With zero replicas, if one of the three nodes dies, its slots become unavailable — there is no copy to fail over to.
+
+When you actually want to survive losing a node:
+
+```bash
+# 3 masters + 1 replica each = 6 nodes, every master with a copy
+docker exec -it redis-node-1 redis-cli --cluster create \
+  172.28.0.11:7000 172.28.0.12:7001 172.28.0.13:7002 \
+  172.28.0.14:7003 172.28.0.15:7004 172.28.0.16:7005 \
+  --cluster-replicas 1
+```
+
+Two caveats that only show up once you are in production:
+
+- **`--cluster-replicas 1` needs at least 6 nodes.** Redis refuses to create the cluster without enough nodes to distribute masters and replicas.
+- **Replication is asynchronous.** A replica can lag behind its master when the failure hits, and you lose the writes that never made it across. For a cache that is usually fine. For a BullMQ queue, weigh it more carefully: a job acknowledged but not replicated is a job lost.
 ### 6.1. Setting up a local cluster with Docker Compose
 
 ```yaml
-version: "3.9"
 services:
   redis-node-1:
     image: redis:7-alpine
@@ -338,6 +375,9 @@ services:
     ports: ["7000:7000"]
     volumes:
       - node1-data:/data
+    networks:
+      redis-net:
+        ipv4_address: 172.28.0.11
 
   redis-node-2:
     image: redis:7-alpine
@@ -345,6 +385,9 @@ services:
     ports: ["7001:7001"]
     volumes:
       - node2-data:/data
+    networks:
+      redis-net:
+        ipv4_address: 172.28.0.12
 
   redis-node-3:
     image: redis:7-alpine
@@ -352,6 +395,16 @@ services:
     ports: ["7002:7002"]
     volumes:
       - node3-data:/data
+    networks:
+      redis-net:
+        ipv4_address: 172.28.0.13
+
+networks:
+  redis-net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.28.0.0/16
 
 volumes:
   node1-data:
@@ -363,9 +416,11 @@ After bringing up the containers, create the cluster:
 
 ```bash
 docker exec -it redis-node-1 redis-cli --cluster create \
-  172.18.0.2:7000 172.18.0.3:7001 172.18.0.4:7002 \
+  172.28.0.11:7000 172.28.0.12:7001 172.28.0.13:7002 \
   --cluster-replicas 0
 ```
+
+Look at the `networks` block above. `redis-cli --cluster create` needs **fixed** addresses, and Compose does not provide them on its own: the Docker subnet is assigned dynamically and changes from machine to machine. Without the explicit `ipv4_address`, the command works on your machine and fails on your colleague's — which is the definition of "works on my machine".
 
 ### 6.2. Connecting a Node.js client to the cluster
 
@@ -391,16 +446,19 @@ From that point on, all cache calls, rate limiting, and queues operate transpare
 
 Implementing caching, rate limiting, and queues with Redis is not just “big‑company stuff”. In projects like *inventory-service* or *lead-pipeline* I was able to cut query latency by up to 70 %, avoid blocks due to API limits, and ensure that critical tasks were processed even when the primary server faced load spikes.  
 
-The combination of Docker, the official `redis` client, and libraries such as BullMQ provides a fast and reliable path. When the business grows, you simply switch to cluster mode and the rest of the architecture is already prepared.
+The combination of Docker, the official `redis` client, and libraries such as BullMQ provides a fast and reliable path.
 
-## Practical Takeaways  
+## Next steps
 
-- Use Docker to version the Redis instance; this avoids “works on my machine”.  
-- Cache‑aside solves most read‑heavy cases; keep the TTL short when data changes frequently.  
-- The sliding‑window algorithm in Lua provides precise rate‑limiting, even across multiple instances.  
-- BullMQ brings retries, backoff, and queue monitoring with no extra effort.  
-- Pub/Sub is ideal for short‑lived events, such as real‑time inventory updates.  
-- When you need high availability, swap the Redis *standalone* for a cluster; the Node.js client handles routing automatically.  
+What this post builds is already fine for low-traffic production. The known gaps, in the order I would face them:
+
+1. **Cache stampede** — cache-aside has a race: when a key expires, every simultaneous request falls through to the database at once. [`ttl-lru`](https://github.com/luin/redis-lru) (needs Redis >= 6.2) fixes it with a stampede lock, or the simple pattern of guarding the rebuild per key. Measure before optimizing: the symptom is latency under spike, not errors.
+2. **Invalidation** — the 10-minute TTL in the example is a guess. When data changes by event (the inventory flow in this post), the right move is to invalidate on write, and the Pub/Sub from section 5 is the natural hook.
+3. **Truly distributed rate limiting** — the Lua script assumes a single Redis. With a cluster, the key has to land in a single slot (use hashtags `{user123}`, otherwise the `ZADD` and `ZREMRANGEBYSCORE` on different nodes break the algorithm).
+4. **Observability** — `SLOWLOG GET`, `INFO memory` and `LATENCY DOCTOR` tell you why Redis got slow before you guess.
+5. **Auth and TLS** — the local compose exposes port 6379 on the host with no password. In any shared environment, `requirepass` plus `redis://:password@host` are not optional.
+
+Beyond Redis: **rate limiting** on a real network needs a key per user rather than per IP, otherwise an entire NAT (an office, a school, a carrier) shares one bucket.
 
 ## Sources  
 
