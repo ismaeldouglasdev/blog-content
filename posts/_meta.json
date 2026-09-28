@@ -2572,23 +2572,22 @@
       "translation_slug": "2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug-en",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug.jpg",
       "cover_credit": {
-        "file": "File:Wikipedia-blisk-devtools-iphone-12-and-ipad-pro-11-2021.png",
-        "artist": "And85rew",
-        "license": "CC BY-SA 4.0",
-        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "page": "https://commons.wikimedia.org/wiki/File%3AWikipedia-blisk-devtools-iphone-12-and-ipad-pro-11-2021.png",
-        "author": "And85rew"
+        "license": "CC0",
+        "license_version": "1.0",
+        "title": "CSS code on a screen (Unsplash)",
+        "creator": "Sai Kiran Anagani (_imkiran)",
+        "source": "wikimedia-commons",
+        "source_url": "https://commons.wikimedia.org/wiki/File:CSS_code_on_a_screen_(Unsplash).jpg"
       },
       "glossary_exclude": [
         "edge"
       ],
       "cover_meta": {
-        "strategy": "fallback",
-        "source": "code",
-        "query": null,
-        "relevance_score": 0.0,
-        "review_status": "auto_fallback",
-        "fallback_reason": "no_search_run",
+        "strategy": "photo",
+        "source": "photo",
+        "query": "css code on screen",
+        "relevance_score": 0.76,
+        "review_status": "approved",
         "motif": "debug",
         "brief": {
           "subject": "DevTools do navegador: técnicas avançadas de debug",
@@ -2626,8 +2625,14 @@
           ],
           "language": "agnostic"
         },
-        "review_candidates": [],
-        "fallback_note": "Nenhum candidato foi buscado: cover_meta.query ficou null e review_candidates veio vazio. O valor anterior, 'no_candidate_passed', afirmava que candidatos existiram e reprovaram -- nunca houve busca. A arte generica veio de nao haver busca configurada, nao de reprovacao."
+        "review_candidates": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/CSS_code_on_a_screen_%28Unsplash%29.jpg",
+            "license": "CC0",
+            "relevance_score": 0.76,
+            "reason": "HTML/CSS legivel com o navegador ao lado; sem marca de terceiro"
+          }
+        ]
       }
     },
     {
@@ -2648,23 +2653,22 @@
       "translation_of": "2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug.jpg",
       "cover_credit": {
-        "file": "File:Wikipedia-blisk-devtools-iphone-12-and-ipad-pro-11-2021.png",
-        "artist": "And85rew",
-        "license": "CC BY-SA 4.0",
-        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "page": "https://commons.wikimedia.org/wiki/File%3AWikipedia-blisk-devtools-iphone-12-and-ipad-pro-11-2021.png",
-        "author": "And85rew"
+        "license": "CC0",
+        "license_version": "1.0",
+        "title": "CSS code on a screen (Unsplash)",
+        "creator": "Sai Kiran Anagani (_imkiran)",
+        "source": "wikimedia-commons",
+        "source_url": "https://commons.wikimedia.org/wiki/File:CSS_code_on_a_screen_(Unsplash).jpg"
       },
       "glossary_exclude": [
         "edge"
       ],
       "cover_meta": {
-        "strategy": "fallback",
-        "source": "code",
-        "query": null,
-        "relevance_score": 0.0,
-        "review_status": "auto_fallback",
-        "fallback_reason": "no_search_run",
+        "strategy": "photo",
+        "source": "photo",
+        "query": "css code on screen",
+        "relevance_score": 0.76,
+        "review_status": "approved",
         "motif": "debug",
         "brief": {
           "subject": "DevTools do navegador: técnicas avançadas de debug",
@@ -2702,8 +2706,14 @@
           ],
           "language": "agnostic"
         },
-        "review_candidates": [],
-        "fallback_note": "Nenhum candidato foi buscado: cover_meta.query ficou null e review_candidates veio vazio. O valor anterior, 'no_candidate_passed', afirmava que candidatos existiram e reprovaram -- nunca houve busca. A arte generica veio de nao haver busca configurada, nao de reprovacao."
+        "review_candidates": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/CSS_code_on_a_screen_%28Unsplash%29.jpg",
+            "license": "CC0",
+            "relevance_score": 0.76,
+            "reason": "HTML/CSS legivel com o navegador ao lado; sem marca de terceiro"
+          }
+        ]
       }
     },
     {
