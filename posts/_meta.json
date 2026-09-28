@@ -14,14 +14,20 @@
       "excerpt": "Kubernetes pra iniciantes: conceitos essenciais sem complicação.",
       "excerpt_en": "Kubernetes for Beginners: Key Concepts Made Simple.",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-27-kubernetes-pra-iniciantes-conceitos-essenciais-sem.jpg",
-      "cover_credit": null,
+      "cover_credit": {
+        "license": "cc0",
+        "license_version": "1.0",
+        "title": "Stacks shipping containers Port Barcelona",
+        "creator": null,
+        "source": "rawpixel",
+        "source_url": "https://www.rawpixel.com/image/3305642/free-photo-image-shipping-cargo-transportation-containers"
+      },
       "cover_meta": {
-        "strategy": "fallback",
-        "source": "code",
-        "query": null,
-        "relevance_score": 0.0,
-        "review_status": "auto_fallback",
-        "fallback_reason": "no_candidate_passed",
+        "strategy": "photo",
+        "source": "photo",
+        "query": "kubernetes shipping containers port",
+        "relevance_score": 0.72,
+        "review_status": "approved",
         "motif": "cloud",
         "brief": {
           "subject": "Kubernetes pra iniciantes: conceitos essenciais sem complicação",
@@ -64,7 +70,14 @@
           ],
           "language": "agnostic"
         },
-        "review_candidates": []
+        "review_candidates": [
+          {
+            "url": "https://images.rawpixel.com/editor_1024/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA3L3Vwd2s2MjI2OTY3Ni13aWtpbWVkaWEtaW1hZ2UuanBn.jpg",
+            "license": "cc0",
+            "relevance_score": 0.72,
+            "reason": "porto de contineres = metafora direta"
+          }
+        ]
       },
       "lang": "pt",
       "translation_slug": "2026-09-27-kubernetes-pra-iniciantes-conceitos-essenciais-sem-en"
@@ -83,14 +96,20 @@
       "excerpt": "Kubernetes for Beginners: Key Concepts Made Simple.",
       "excerpt_en": "Kubernetes for Beginners: Key Concepts Made Simple.",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-27-kubernetes-pra-iniciantes-conceitos-essenciais-sem.jpg",
-      "cover_credit": null,
+      "cover_credit": {
+        "license": "cc0",
+        "license_version": "1.0",
+        "title": "Stacks shipping containers Port Barcelona",
+        "creator": null,
+        "source": "rawpixel",
+        "source_url": "https://www.rawpixel.com/image/3305642/free-photo-image-shipping-cargo-transportation-containers"
+      },
       "cover_meta": {
-        "strategy": "fallback",
-        "source": "code",
-        "query": null,
-        "relevance_score": 0.0,
-        "review_status": "auto_fallback",
-        "fallback_reason": "no_candidate_passed",
+        "strategy": "photo",
+        "source": "photo",
+        "query": "kubernetes shipping containers port",
+        "relevance_score": 0.72,
+        "review_status": "approved",
         "motif": "cloud",
         "brief": {
           "subject": "Kubernetes pra iniciantes: conceitos essenciais sem complicação",
@@ -133,7 +152,14 @@
           ],
           "language": "agnostic"
         },
-        "review_candidates": []
+        "review_candidates": [
+          {
+            "url": "https://images.rawpixel.com/editor_1024/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA3L3Vwd2s2MjI2OTY3Ni13aWtpbWVkaWEtaW1hZ2UuanBn.jpg",
+            "license": "cc0",
+            "relevance_score": 0.72,
+            "reason": "porto de contineres = metafora direta"
+          }
+        ]
       },
       "lang": "en",
       "translation_slug": "2026-09-27-kubernetes-pra-iniciantes-conceitos-essenciais-sem",
