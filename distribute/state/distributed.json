@@ -287,6 +287,14 @@
         "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mwixrktqvu2t",
         "telegram": "63"
       }
+    },
+    "2026-09-28-error-handling-em-typescript-result-types-e-typed-errors": {
+      "url": "https://blog.ismaeltech.com/2026-09-28-error-handling-em-typescript-result-types-e-typed-errors",
+      "posted_at": "2026-09-28T13:26:51.691441+00:00",
+      "platforms": {
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mwlg3tq2q72p",
+        "telegram": "64"
+      }
     }
   }
 }
