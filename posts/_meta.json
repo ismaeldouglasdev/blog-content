@@ -1,6 +1,209 @@
 {
   "posts": [
     {
+      "slug": "2026-09-28-error-handling-em-typescript-result-types-e-typed-errors",
+      "title": "Error handling em TypeScript: Result types e typed errors",
+      "title_en": "Error Handling in TypeScript: Result Types and Typed Errors",
+      "date": "2026-09-28",
+      "category": "article",
+      "tags": [
+        "typescript",
+        "error-handling",
+        "arquitetura"
+      ],
+      "excerpt": "Error handling em TypeScript: Result types e typed errors.",
+      "excerpt_en": "Error handling in TypeScript: Result types and typed errors.",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-28-error-handling-em-typescript-result-types-e-typed-errors.jpg",
+      "cover_credit": null,
+      "cover_meta": {
+        "strategy": "fallback",
+        "source": "code",
+        "query": null,
+        "relevance_score": 0.0,
+        "review_status": "auto_fallback",
+        "fallback_reason": "no_candidate_passed",
+        "motif": "layout",
+        "brief": {
+          "subject": "Error handling em TypeScript: Result types e typed errors",
+          "entities": [
+            "error",
+            "handling",
+            "typescript",
+            "result",
+            "types",
+            "typed",
+            "errors",
+            "arquitetura"
+          ],
+          "category": "article",
+          "motif": "layout",
+          "visual_concept": "precise interface grid and layout blocks",
+          "queries": [
+            "precise interface grid and layout blocks",
+            "responsive web layout",
+            "interface grid design",
+            "error handling typescript"
+          ],
+          "search_terms": [
+            "error",
+            "handling",
+            "typescript",
+            "result",
+            "types",
+            "typed",
+            "errors",
+            "arquitetura"
+          ],
+          "avoid": [
+            "logo",
+            "wordmark",
+            "icon",
+            "stock photo",
+            "unrelated"
+          ],
+          "language": "agnostic"
+        },
+        "review_candidates": [
+          {
+            "file": "File:Wikidata-query-service - cats query results with images.png",
+            "score": 0.383,
+            "query": "interface grid design",
+            "reasons": [
+              "overlap=0.17",
+              "concept=0.33"
+            ],
+            "status": "low_relevance"
+          },
+          {
+            "file": "File:Rough mobile UX sketch.jpg",
+            "score": 0.302,
+            "query": "interface grid design",
+            "reasons": [
+              "overlap=0.17",
+              "concept=0.33",
+              "generic_penalty=1"
+            ],
+            "status": "low_relevance"
+          },
+          {
+            "file": "File:Nokia 5110 COBBA (Baseband, Audio).jpg",
+            "score": 0.263,
+            "query": "interface grid design",
+            "reasons": [
+              "overlap=0.17",
+              "concept=0.50",
+              "generic_penalty=2"
+            ],
+            "status": "low_relevance"
+          }
+        ]
+      },
+      "lang": "pt",
+      "translation_slug": "2026-09-28-error-handling-em-typescript-result-types-e-typed-errors-en"
+    },
+    {
+      "slug": "2026-09-28-error-handling-em-typescript-result-types-e-typed-errors-en",
+      "title": "Error Handling in TypeScript: Result Types and Typed Errors",
+      "title_en": "Error Handling in TypeScript: Result Types and Typed Errors",
+      "date": "2026-09-28",
+      "category": "article",
+      "tags": [
+        "typescript",
+        "error-handling",
+        "arquitetura"
+      ],
+      "excerpt": "Error handling in TypeScript: Result types and typed errors.",
+      "excerpt_en": "Error handling in TypeScript: Result types and typed errors.",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-28-error-handling-em-typescript-result-types-e-typed-errors.jpg",
+      "cover_credit": null,
+      "cover_meta": {
+        "strategy": "fallback",
+        "source": "code",
+        "query": null,
+        "relevance_score": 0.0,
+        "review_status": "auto_fallback",
+        "fallback_reason": "no_candidate_passed",
+        "motif": "layout",
+        "brief": {
+          "subject": "Error handling em TypeScript: Result types e typed errors",
+          "entities": [
+            "error",
+            "handling",
+            "typescript",
+            "result",
+            "types",
+            "typed",
+            "errors",
+            "arquitetura"
+          ],
+          "category": "article",
+          "motif": "layout",
+          "visual_concept": "precise interface grid and layout blocks",
+          "queries": [
+            "precise interface grid and layout blocks",
+            "responsive web layout",
+            "interface grid design",
+            "error handling typescript"
+          ],
+          "search_terms": [
+            "error",
+            "handling",
+            "typescript",
+            "result",
+            "types",
+            "typed",
+            "errors",
+            "arquitetura"
+          ],
+          "avoid": [
+            "logo",
+            "wordmark",
+            "icon",
+            "stock photo",
+            "unrelated"
+          ],
+          "language": "agnostic"
+        },
+        "review_candidates": [
+          {
+            "file": "File:Wikidata-query-service - cats query results with images.png",
+            "score": 0.383,
+            "query": "interface grid design",
+            "reasons": [
+              "overlap=0.17",
+              "concept=0.33"
+            ],
+            "status": "low_relevance"
+          },
+          {
+            "file": "File:Rough mobile UX sketch.jpg",
+            "score": 0.302,
+            "query": "interface grid design",
+            "reasons": [
+              "overlap=0.17",
+              "concept=0.33",
+              "generic_penalty=1"
+            ],
+            "status": "low_relevance"
+          },
+          {
+            "file": "File:Nokia 5110 COBBA (Baseband, Audio).jpg",
+            "score": 0.263,
+            "query": "interface grid design",
+            "reasons": [
+              "overlap=0.17",
+              "concept=0.50",
+              "generic_penalty=2"
+            ],
+            "status": "low_relevance"
+          }
+        ]
+      },
+      "lang": "en",
+      "translation_slug": "2026-09-28-error-handling-em-typescript-result-types-e-typed-errors",
+      "translation_of": "2026-09-28-error-handling-em-typescript-result-types-e-typed-errors"
+    },
+    {
       "slug": "2026-09-27-kubernetes-pra-iniciantes-conceitos-essenciais-sem",
       "title": "Kubernetes pra iniciantes: conceitos essenciais sem complicação",
       "title_en": "Kubernetes for Beginners: Essential Concepts Made Easy",
