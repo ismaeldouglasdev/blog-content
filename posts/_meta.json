@@ -439,22 +439,31 @@
       "excerpt_en": "React Forms: React Hook Form + Zod for Effortless Validation.",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-24-formularios-react-react-hook-form-zod-pra-validacao.jpg",
       "cover_credit": {
-        "file": "File:111031-F-ZZ999-102 (6349579508).jpg",
-        "artist": "NATO Training Mission-Afghanistan",
-        "license": "CC BY-SA 2.0",
-        "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
-        "page": "https://commons.wikimedia.org/wiki/File%3A111031-F-ZZ999-102_%286349579508%29.jpg",
-        "source": "wikimedia"
+        "license": "Pexels License",
+        "license_version": null,
+        "title": "Close-up of a red check mark on a crisp white surface",
+        "creator": "Tara Winstead",
+        "source": "pexels",
+        "source_url": "https://www.pexels.com/photo/8850721/"
       },
       "lang": "pt",
       "translation_slug": "2026-09-24-formularios-react-react-hook-form-zod-pra-validacao-en",
       "cover_meta": {
-        "strategy": "legacy",
-        "source": "historical",
-        "review_status": "unreviewed",
-        "relevance_score": null,
+        "strategy": "photo",
+        "source": "photo",
+        "review_status": "approved",
+        "relevance_score": 0.74,
         "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-24-formularios-react-react-hook-form-zod-pra-validacao.jpg",
-        "note": "Existing asset preserved; regenerate through review workflow before approval."
+        "note": "Existing asset preserved; regenerate through review workflow before approval.",
+        "query": "form validation web",
+        "review_candidates": [
+          {
+            "pexels_id": 8850721,
+            "license": "Pexels License",
+            "relevance_score": 0.74,
+            "reason": "Close-up of a red check mark on a crisp white surface"
+          }
+        ]
       }
     },
     {
@@ -473,23 +482,32 @@
       "excerpt_en": "React Forms: React Hook Form + Zod for Effortless Validation.",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-24-formularios-react-react-hook-form-zod-pra-validacao.jpg",
       "cover_credit": {
-        "file": "File:111031-F-ZZ999-102 (6349579508).jpg",
-        "artist": "NATO Training Mission-Afghanistan",
-        "license": "CC BY-SA 2.0",
-        "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
-        "page": "https://commons.wikimedia.org/wiki/File%3A111031-F-ZZ999-102_%286349579508%29.jpg",
-        "source": "wikimedia"
+        "license": "Pexels License",
+        "license_version": null,
+        "title": "Close-up of a red check mark on a crisp white surface",
+        "creator": "Tara Winstead",
+        "source": "pexels",
+        "source_url": "https://www.pexels.com/photo/8850721/"
       },
       "lang": "en",
       "translation_slug": "2026-09-24-formularios-react-react-hook-form-zod-pra-validacao",
       "translation_of": "2026-09-24-formularios-react-react-hook-form-zod-pra-validacao",
       "cover_meta": {
-        "strategy": "legacy",
-        "source": "historical",
-        "review_status": "unreviewed",
-        "relevance_score": null,
+        "strategy": "photo",
+        "source": "photo",
+        "review_status": "approved",
+        "relevance_score": 0.74,
         "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-24-formularios-react-react-hook-form-zod-pra-validacao.jpg",
-        "note": "Existing asset preserved; regenerate through review workflow before approval."
+        "note": "Existing asset preserved; regenerate through review workflow before approval.",
+        "query": "form validation web",
+        "review_candidates": [
+          {
+            "pexels_id": 8850721,
+            "license": "Pexels License",
+            "relevance_score": 0.74,
+            "reason": "Close-up of a red check mark on a crisp white surface"
+          }
+        ]
       }
     },
     {
@@ -507,16 +525,32 @@
       "excerpt": "Vitest: como testar React com testes que realmente ajudam.",
       "excerpt_en": "Vitest: how to test React with tests that genuinely assist.",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam.jpg",
-      "cover_credit": null,
+      "cover_credit": {
+        "license": "Pexels License",
+        "license_version": null,
+        "title": "Close-up of a computer screen displaying colored code",
+        "creator": "Godfrey Atima",
+        "source": "pexels",
+        "source_url": "https://www.pexels.com/photo/4976710/"
+      },
       "lang": "pt",
       "translation_slug": "2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam-en",
       "cover_meta": {
-        "strategy": "legacy",
-        "source": "historical",
-        "review_status": "unreviewed",
-        "relevance_score": null,
+        "strategy": "photo",
+        "source": "photo",
+        "review_status": "approved",
+        "relevance_score": 0.66,
         "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam.jpg",
-        "note": "Existing asset preserved; regenerate through review workflow before approval."
+        "note": "Existing asset preserved; regenerate through review workflow before approval.",
+        "query": "code review developer",
+        "review_candidates": [
+          {
+            "pexels_id": 4976710,
+            "license": "Pexels License",
+            "relevance_score": 0.66,
+            "reason": "Close-up of a computer screen displaying colored code"
+          }
+        ]
       }
     },
     {
@@ -534,17 +568,33 @@
       "excerpt": "Vitest: how to test React with tests that genuinely assist.",
       "excerpt_en": "Vitest: how to test React with tests that genuinely assist.",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam.jpg",
-      "cover_credit": null,
+      "cover_credit": {
+        "license": "Pexels License",
+        "license_version": null,
+        "title": "Close-up of a computer screen displaying colored code",
+        "creator": "Godfrey Atima",
+        "source": "pexels",
+        "source_url": "https://www.pexels.com/photo/4976710/"
+      },
       "lang": "en",
       "translation_slug": "2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam",
       "translation_of": "2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam",
       "cover_meta": {
-        "strategy": "legacy",
-        "source": "historical",
-        "review_status": "unreviewed",
-        "relevance_score": null,
+        "strategy": "photo",
+        "source": "photo",
+        "review_status": "approved",
+        "relevance_score": 0.66,
         "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam.jpg",
-        "note": "Existing asset preserved; regenerate through review workflow before approval."
+        "note": "Existing asset preserved; regenerate through review workflow before approval.",
+        "query": "code review developer",
+        "review_candidates": [
+          {
+            "pexels_id": 4976710,
+            "license": "Pexels License",
+            "relevance_score": 0.66,
+            "reason": "Close-up of a computer screen displaying colored code"
+          }
+        ]
       }
     },
     {
