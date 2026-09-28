@@ -9,8 +9,6 @@ cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/pos
 lang: "pt"
 ---
 
-## Vitest: como testar React com testes que realmente ajudam
-
 Testes não são opcionais. Eles são essenciais para garantir a qualidade do software e a confiança nas funcionalidades que estamos implementando. Especialmente em aplicações React, onde as interações do usuário e o comportamento dinâmico são constantes. Aqui, vou compartilhar como configurar e utilizar o Vitest para testar suas aplicações React de maneira eficiente, garantindo que seus testes realmente ajudem a melhorar a qualidade do seu código.
 
 ## Setup com Vite

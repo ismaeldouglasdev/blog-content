@@ -9,8 +9,6 @@ cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/pos
 lang: "pt"
 ---
 
-## WebSocket do zero: chat em tempo real com Node.js e React
-
 Construir um chat em tempo real pode parecer uma tarefa desafiadora, mas, com as ferramentas adequadas, é possível criar uma aplicação funcional em questão de horas. Um dos principais desafios que os desenvolvedores enfrentam ao criar aplicações interativas é a escolha do protocolo de comunicação. Enquanto o HTTP é amplamente utilizado para a troca de dados entre cliente e servidor, ele não é o mais eficiente para aplicações que exigem comunicação em tempo real, como um chat. É aí que o WebSocket se destaca.
 
 ### HTTP vs WebSocket

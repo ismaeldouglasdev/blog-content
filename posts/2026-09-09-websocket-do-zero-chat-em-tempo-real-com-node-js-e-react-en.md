@@ -10,8 +10,6 @@ lang: "en"
 translation_of: "2026-09-09-websocket-do-zero-chat-em-tempo-real-com-node-js-e-react"
 ---
 
-## WebSocket from scratch: real-time chat with Node.js and React
-
 Building a real-time chat application may seem like a challenging task, but with the right tools it is possible to create a working application in a matter of hours. One of the main challenges developers face when building interactive applications is choosing the communication protocol. While HTTP is widely used for exchanging data between client and server, it is not the most efficient option for applications that require real-time communication, such as a chat. That is where WebSocket shines.
 
 ### HTTP vs WebSocket

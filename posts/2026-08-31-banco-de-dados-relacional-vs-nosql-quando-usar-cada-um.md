@@ -8,8 +8,6 @@ share_hook: "ACID, modelagem de dados e escalabilidade: quando PostgreSQL é a r
 lang: "pt"
 ---
 
-## Banco de dados relacional vs NoSQL: quando usar cada um
-
 A escolha do banco de dados adequado para um projeto pode ser um dos fatores mais críticos para o sucesso do mesmo. Com a crescente complexidade das aplicações modernas, entender as diferenças entre bancos de dados relacionais e NoSQL se torna essencial. Aqui, vou mostrar quando e por que utilizar cada um desses tipos de banco de dados, considerando aspectos como modelagem de dados, transações e escalabilidade.
 
 ## SQL: PostgreSQL como padrão

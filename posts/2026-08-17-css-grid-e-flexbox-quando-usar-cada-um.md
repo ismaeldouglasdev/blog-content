@@ -37,7 +37,7 @@ Essa distinção não é apenas teórica; ela define o tipo de problema que cada
 
 ## Flexbox: O Rei do Alinhamento
 
-O Flexbox foi projetado para resolver problemas de *alinhamento* e *distribuição de espaço*. Ele é ideal quando você quer que os itens dentro de um contêiner sejam flexíveis — ou seja, mudem de tamanho para ocupar o espaço disponível — ou quando você precisa centralizar itens perfeitamente.
+O Flexbox foi projetado para resolver problemas de *alinhamento* e *distribuição de espaço*. Ele é ideal quando você quer que os itens dentro de um container sejam flexíveis — ou seja, mudem de tamanho para ocupar o espaço disponível — ou quando você precisa centralizar itens perfeitamente.
 
 ### Quando usar Flexbox?
 

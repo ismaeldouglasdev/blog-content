@@ -25,7 +25,7 @@ metadata:
 spec:
   containers:
     - name: meu-container
-      image: node:14
+      image: node:22
       ports:
         - containerPort: 3000
 ```
@@ -49,7 +49,7 @@ spec:
     spec:
       containers:
         - name: meu-container
-          image: node:14
+          image: node:22
           ports:
             - containerPort: 3000
 ```

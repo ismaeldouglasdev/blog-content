@@ -8,13 +8,12 @@ share_hook: "Cache, rate limiting com janela deslizante, filas com BullMQ e pub/
 lang: "pt"
 ---
 
-## Redis na prática: cache, rate limiting e filas em Node.js  
-
 ### Por que você deve se preocupar agora  
 
 Imagine que o seu e‑commerce acabou de integrar o OSPOS, o PDV open source que eu customizei para a loja Quase Tudo, ao Mercado Livre. A cada venda o estoque tem que ser atualizado em milissegundos, senão o cliente compra um produto que já acabou e a reputação da loja despenca. No primeiro teste a API do Mercado Livre começou a responder com erros de *429 Too Many Requests* e, ao mesmo tempo, o banco de dados ficou sobrecarregado com consultas repetidas ao mesmo registro de produto. A solução acabou sendo colocar uma camada de Redis entre a aplicação e o banco, usando o Redis não só como cache, mas também como limitador de taxa e como broker de filas.  
 
 Se você já passou por uma situação parecida – ou ainda não, mas sabe que pode acontecer – este artigo mostra, passo a passo, como montar essas três funções essenciais com Node.js, Docker e poucas linhas de código.
+
 
 ---
 
@@ -42,6 +41,7 @@ volumes:
 Execute `docker compose up -d` e o Redis já está pronto para aceitar conexões na porta padrão. No meu projeto *inventory-service* eu usei exatamente essa configuração para sincronizar catálogo e estoque entre OSPOS e Mercado Livre, garantindo que a latência fosse previsível.
 
 > **Dica:** mantenha a mesma versão da imagem em todos os ambientes. O `redis:7-alpine` tem o menor tamanho e já inclui os módulos de *streams* e *Lua* que vamos usar mais adiante.
+
 
 ---
 
@@ -144,6 +144,7 @@ export async function upsertProduct(product) {
 
 Assim, o cache nunca fica desatualizado, mesmo que a base de dados seja alterada por outro processo.
 
+
 ---
 
 ## 3. Rate limiting com janela deslizante  
@@ -230,6 +231,7 @@ app.use(async (req, res, next) => {
 
 No *lead-pipeline* eu adicionei esse limitador para impedir que a API de enriquecimento de leads fosse invadida por bots, mantendo a latência estável mesmo sob pico de tráfego.
 
+
 ---
 
 ## 4. Filas com BullMQ  
@@ -300,6 +302,7 @@ events.on('completed', ({ jobId }) => {
 
 Com BullMQ eu consegui desacoplar a geração de relatórios do *Plexo* (gerenciador de tarefas). Cada relatório é colocado na fila, processado em segundo plano e, ao final, o usuário recebe uma notificação via Slack.
 
+
 ---
 
 ## 5. Pub/Sub para eventos em tempo real  
@@ -329,6 +332,7 @@ await subscriber.subscribe('stock:*', (message, channel) => {
 ```
 
 Em *inventory-service* eu usei exatamente esse fluxo para que o frontend React fosse atualizado instantaneamente quando o estoque fosse alterado por uma venda no PDV.
+
 
 ---
 
@@ -396,6 +400,7 @@ export default cluster;
 
 A partir daí, todas as chamadas de cache, rate limiting e filas funcionam de forma transparente, pois o cliente roteia a chave para o nó correto.
 
+
 ---
 
 ## 7. Conclusão  
@@ -403,6 +408,7 @@ A partir daí, todas as chamadas de cache, rate limiting e filas funcionam de fo
 Implementar cache, rate limiting e filas com Redis não é apenas “coisa de grande empresa”. Em projetos como o *inventory-service* ou o *lead-pipeline* eu consegui reduzir a latência de consultas em até 70 %, evitar bloqueios por limites de API e garantir que tarefas críticas fossem processadas mesmo quando o servidor principal enfrentava picos de carga.  
 
 A combinação de Docker, o cliente oficial `redis` e bibliotecas como BullMQ oferece um caminho rápido e confiável. Quando o negócio cresce, basta migrar para o modo cluster e o restante da arquitetura já está preparado.
+
 
 ---
 
@@ -414,6 +420,7 @@ A combinação de Docker, o cliente oficial `redis` e bibliotecas como BullMQ of
 - BullMQ traz retries, backoff e monitoramento de filas sem esforço adicional.  
 - Pub/Sub é ideal para eventos de curto prazo, como atualização de estoque em tempo real.  
 - Quando precisar de alta disponibilidade, troque o Redis *standalone* por um cluster; o cliente Node.js lida com o roteamento automaticamente.
+
 
 ---
 

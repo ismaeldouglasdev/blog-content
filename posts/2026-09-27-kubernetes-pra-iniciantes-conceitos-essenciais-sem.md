@@ -8,8 +8,6 @@ cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/pos
 lang: "pt"
 ---
 
-## Kubernetes pra iniciantes: conceitos essenciais sem complicação
-
 A adoção do Kubernetes tem crescido exponencialmente nos últimos anos, e não é para menos. Ao lidar com aplicações que precisam ser escaláveis e gerenciáveis de forma eficiente, o Kubernetes se destaca como uma solução poderosa. No entanto, para quem está começando, o ambiente pode parecer complexo e intimidador. Este artigo visa desmistificar os conceitos básicos do Kubernetes, tornando-os acessíveis e compreensíveis.
 
 ## Pods e Deployments
@@ -24,7 +22,7 @@ metadata:
 spec:
   containers:
     - name: meu-container
-      image: node:14
+      image: node:22
       ports:
         - containerPort: 3000
 ```
@@ -48,7 +46,7 @@ spec:
     spec:
       containers:
         - name: meu-container
-          image: node:14
+          image: node:22
           ports:
             - containerPort: 3000
 ```
@@ -154,7 +152,7 @@ Depois, você pode aplicar suas configurações YAML diretamente no seu cluster 
 
 ## Conclusão
 
-Aqui, exploramos os conceitos essenciais do Kubernetes de forma acessível. Ao entender como funcionam os pods, deployments, services, ingress, ConfigMaps, secrets e a capacidade de escalar aplicações, você estará mais preparado para enfrentar os desafios de gerenciar aplicações em contêineres.
+Aqui, exploramos os conceitos essenciais do Kubernetes de forma acessível. Ao entender como funcionam os pods, deployments, services, ingress, ConfigMaps, secrets e a capacidade de escalar aplicações, você estará mais preparado para enfrentar os desafios de gerenciar aplicações em containeres.
 
 ### Takeaways práticos:
 

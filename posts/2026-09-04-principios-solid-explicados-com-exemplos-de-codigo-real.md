@@ -339,7 +339,7 @@ Aplicar SOLID não é uma questão de seguir regras abstratas; é um caminho par
 - Defina um ponto de entrada único para cada fluxo de dados; depois extraia funções auxiliares em classes menores.
 - Crie interfaces que representem apenas o que o consumidor realmente usa; adicione extensões quando necessário.
 - Teste substituição de subclasses usando mocks; se o teste falhar, provavelmente há violação de LSP.
-- Injete dependências por meio de construtores ou contêineres DI; isso isola módulos de alto nível de detalhes de implementação.
+- Injete dependências por meio de construtores ou containeres DI; isso isola módulos de alto nível de detalhes de implementação.
 - Revise o código sempre que uma nova funcionalidade for adicionada; pergunte se está violando algum princípio antes de escrever.
 
 Seguindo esses passos, você reduz o risco de “código que funciona hoje, mas quebra amanhã” e ganha tempo para focar no que realmente importa: entregar valor ao cliente.
