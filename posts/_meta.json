@@ -732,22 +732,31 @@
       "excerpt_en": "Tailwind CSS in practice: why utility-first speeds up development, from Vite setup to dark mode and production optimization.",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-20-tailwind-css-utility-first-na-pratica-pra-projetos-reais.jpg",
       "cover_credit": {
-        "file": "File:Chataropica.png",
-        "artist": "Uhvhhvjhh",
-        "license": "CC BY 4.0",
-        "license_url": "https://creativecommons.org/licenses/by/4.0/",
-        "page": "https://commons.wikimedia.org/wiki/File%3AChataropica.png",
-        "source": "wikimedia"
+        "license": "Pexels License",
+        "license_version": null,
+        "title": "CSS code displayed on a computer screen",
+        "creator": "Bibek ghosh",
+        "source": "pexels",
+        "source_url": "https://www.pexels.com/photo/14553730/"
       },
       "lang": "pt",
       "translation_slug": "2026-09-20-tailwind-css-utility-first-na-pratica-pra-projetos-reais-en",
       "cover_meta": {
-        "strategy": "legacy",
-        "source": "historical",
-        "review_status": "unreviewed",
-        "relevance_score": null,
+        "strategy": "photo",
+        "source": "photo",
+        "review_status": "approved",
+        "relevance_score": 0.68,
         "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-20-tailwind-css-utility-first-na-pratica-pra-projetos-reais.jpg",
-        "note": "Existing asset preserved; regenerate through review workflow before approval."
+        "note": "Existing asset preserved; regenerate through review workflow before approval.",
+        "query": "css code on screen",
+        "review_candidates": [
+          {
+            "pexels_id": 14553730,
+            "license": "Pexels License",
+            "relevance_score": 0.68,
+            "reason": "CSS code displayed on a computer screen"
+          }
+        ]
       }
     },
     {
@@ -765,23 +774,32 @@
       "excerpt_en": "Tailwind CSS in practice: why utility-first speeds up development, from Vite setup to dark mode and production optimization.",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-20-tailwind-css-utility-first-na-pratica-pra-projetos-reais.jpg",
       "cover_credit": {
-        "file": "File:Chataropica.png",
-        "artist": "Uhvhhvjhh",
-        "license": "CC BY 4.0",
-        "license_url": "https://creativecommons.org/licenses/by/4.0/",
-        "page": "https://commons.wikimedia.org/wiki/File%3AChataropica.png",
-        "source": "wikimedia"
+        "license": "Pexels License",
+        "license_version": null,
+        "title": "CSS code displayed on a computer screen",
+        "creator": "Bibek ghosh",
+        "source": "pexels",
+        "source_url": "https://www.pexels.com/photo/14553730/"
       },
       "lang": "en",
       "translation_slug": "2026-09-20-tailwind-css-utility-first-na-pratica-pra-projetos-reais",
       "translation_of": "2026-09-20-tailwind-css-utility-first-na-pratica-pra-projetos-reais",
       "cover_meta": {
-        "strategy": "legacy",
-        "source": "historical",
-        "review_status": "unreviewed",
-        "relevance_score": null,
+        "strategy": "photo",
+        "source": "photo",
+        "review_status": "approved",
+        "relevance_score": 0.68,
         "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-20-tailwind-css-utility-first-na-pratica-pra-projetos-reais.jpg",
-        "note": "Existing asset preserved; regenerate through review workflow before approval."
+        "note": "Existing asset preserved; regenerate through review workflow before approval.",
+        "query": "css code on screen",
+        "review_candidates": [
+          {
+            "pexels_id": 14553730,
+            "license": "Pexels License",
+            "relevance_score": 0.68,
+            "reason": "CSS code displayed on a computer screen"
+          }
+        ]
       }
     },
     {
