@@ -179,14 +179,20 @@
       "excerpt": "A maioria dos testes de React falha não por erro técnico, mas por má interpretação do que está sendo testado.",
       "excerpt_en": "The Illusion of Control in Interface Testing.",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-26-testing-library-testes-de-react-que-refletem-o-uso-real.jpg",
-      "cover_credit": null,
+      "cover_credit": {
+        "license": "Pexels License",
+        "license_version": null,
+        "title": "A programmer working on code with a laptop",
+        "creator": "Jakub Zerdzicki",
+        "source": "pexels",
+        "source_url": "https://www.pexels.com/photo/36496927/"
+      },
       "cover_meta": {
-        "strategy": "fallback",
-        "source": "code",
-        "query": null,
-        "relevance_score": 0.0,
-        "review_status": "auto_fallback",
-        "fallback_reason": "no_candidate_passed",
+        "strategy": "photo",
+        "source": "photo",
+        "query": "software testing",
+        "relevance_score": 0.68,
+        "review_status": "approved",
         "motif": "interaction",
         "brief": {
           "subject": "Testing Library: testes de React que refletem o uso real",
@@ -242,64 +248,10 @@
         },
         "review_candidates": [
           {
-            "file": "File:SpaceX Crew-1, crew equipment interface testing (2).jpg",
-            "score": 0.349,
-            "query": "user interface testing",
-            "reasons": [
-              "overlap=0.05",
-              "concept=0.33"
-            ],
-            "status": "low_relevance"
-          },
-          {
-            "file": "File:SpaceX Crew-1, crew equipment interface testing (3).jpg",
-            "score": 0.34,
-            "query": "user interface testing",
-            "reasons": [
-              "overlap=0.05",
-              "concept=0.33"
-            ],
-            "status": "low_relevance"
-          },
-          {
-            "file": "File:SpaceX Crew-1, crew equipment interface testing (1).jpg",
-            "score": 0.329,
-            "query": "user interface testing",
-            "reasons": [
-              "overlap=0.05",
-              "concept=0.33"
-            ],
-            "status": "low_relevance"
-          },
-          {
-            "file": "File:Flame developer reference phone testing for Hindi interface during Indic FirefoxOS L10n Sprint 2014, Pune.jpg",
-            "score": 0.328,
-            "query": "user interface testing",
-            "reasons": [
-              "overlap=0.05",
-              "concept=0.33"
-            ],
-            "status": "low_relevance"
-          },
-          {
-            "file": "File:Flame developer reference phone testing for Hindi interface during Indic FirefoxOS L10n Sprint 2014, Pune 01.jpg",
-            "score": 0.328,
-            "query": "user interface testing",
-            "reasons": [
-              "overlap=0.05",
-              "concept=0.33"
-            ],
-            "status": "low_relevance"
-          },
-          {
-            "file": "File:Paste Check interface for September 2025's test.png",
-            "score": 0.325,
-            "query": "user interface testing",
-            "reasons": [
-              "overlap=0.05",
-              "concept=0.33"
-            ],
-            "status": "low_relevance"
+            "pexels_id": 36496927,
+            "license": "Pexels License",
+            "relevance_score": 0.68,
+            "reason": "A programmer working on code with a laptop"
           }
         ]
       },
@@ -320,14 +272,20 @@
       "excerpt": "The Illusion of Control in Interface Testing.",
       "excerpt_en": "The Illusion of Control in Interface Testing.",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-26-testing-library-testes-de-react-que-refletem-o-uso-real.jpg",
-      "cover_credit": null,
+      "cover_credit": {
+        "license": "Pexels License",
+        "license_version": null,
+        "title": "A programmer working on code with a laptop",
+        "creator": "Jakub Zerdzicki",
+        "source": "pexels",
+        "source_url": "https://www.pexels.com/photo/36496927/"
+      },
       "cover_meta": {
-        "strategy": "fallback",
-        "source": "code",
-        "query": null,
-        "relevance_score": 0.0,
-        "review_status": "auto_fallback",
-        "fallback_reason": "no_candidate_passed",
+        "strategy": "photo",
+        "source": "photo",
+        "query": "software testing",
+        "relevance_score": 0.68,
+        "review_status": "approved",
         "motif": "interaction",
         "brief": {
           "subject": "Testing Library: testes de React que refletem o uso real",
@@ -383,64 +341,10 @@
         },
         "review_candidates": [
           {
-            "file": "File:SpaceX Crew-1, crew equipment interface testing (2).jpg",
-            "score": 0.349,
-            "query": "user interface testing",
-            "reasons": [
-              "overlap=0.05",
-              "concept=0.33"
-            ],
-            "status": "low_relevance"
-          },
-          {
-            "file": "File:SpaceX Crew-1, crew equipment interface testing (3).jpg",
-            "score": 0.34,
-            "query": "user interface testing",
-            "reasons": [
-              "overlap=0.05",
-              "concept=0.33"
-            ],
-            "status": "low_relevance"
-          },
-          {
-            "file": "File:SpaceX Crew-1, crew equipment interface testing (1).jpg",
-            "score": 0.329,
-            "query": "user interface testing",
-            "reasons": [
-              "overlap=0.05",
-              "concept=0.33"
-            ],
-            "status": "low_relevance"
-          },
-          {
-            "file": "File:Flame developer reference phone testing for Hindi interface during Indic FirefoxOS L10n Sprint 2014, Pune.jpg",
-            "score": 0.328,
-            "query": "user interface testing",
-            "reasons": [
-              "overlap=0.05",
-              "concept=0.33"
-            ],
-            "status": "low_relevance"
-          },
-          {
-            "file": "File:Flame developer reference phone testing for Hindi interface during Indic FirefoxOS L10n Sprint 2014, Pune 01.jpg",
-            "score": 0.328,
-            "query": "user interface testing",
-            "reasons": [
-              "overlap=0.05",
-              "concept=0.33"
-            ],
-            "status": "low_relevance"
-          },
-          {
-            "file": "File:Paste Check interface for September 2025's test.png",
-            "score": 0.325,
-            "query": "user interface testing",
-            "reasons": [
-              "overlap=0.05",
-              "concept=0.33"
-            ],
-            "status": "low_relevance"
+            "pexels_id": 36496927,
+            "license": "Pexels License",
+            "relevance_score": 0.68,
+            "reason": "A programmer working on code with a laptop"
           }
         ]
       },
@@ -845,22 +749,21 @@
       "excerpt_en": "Git in practice: Git Flow vs trunk-based, interactive rebase, cherry-pick and bisect, conflict resolution, and commit conventions.",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao.jpg",
       "cover_credit": {
-        "file": "File:Git format.png",
-        "artist": "Julian Kücklich",
-        "license": "CC0",
-        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-        "page": "https://commons.wikimedia.org/wiki/File%3AGit_format.png",
-        "source": "wikimedia"
+        "license": "Pexels License",
+        "license_version": null,
+        "title": "A man stands in front of a wall filled with sticky notes",
+        "creator": "Startup Stock Photos",
+        "source": "pexels",
+        "source_url": "https://www.pexels.com/photo/212286/"
       },
       "lang": "pt",
       "translation_slug": "2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao-en",
       "cover_meta": {
-        "strategy": "fallback",
-        "source": "code",
-        "query": null,
-        "relevance_score": 0.0,
-        "review_status": "auto_fallback",
-        "fallback_reason": "no_search_run",
+        "strategy": "photo",
+        "source": "photo",
+        "query": "code review",
+        "relevance_score": 0.66,
+        "review_status": "approved",
         "motif": "vcs",
         "brief": {
           "subject": "Git na prática: workflows profissionais, rebase e resolução de conflitos",
@@ -903,8 +806,14 @@
           ],
           "language": "agnostic"
         },
-        "review_candidates": [],
-        "fallback_note": "Nenhum candidato foi buscado: cover_meta.query ficou null e review_candidates veio vazio. O valor anterior, 'no_candidate_passed', afirmava que candidatos existiram e reprovaram -- nunca houve busca. A arte generica veio de nao haver busca configurada, nao de reprovacao."
+        "review_candidates": [
+          {
+            "pexels_id": 212286,
+            "license": "Pexels License",
+            "relevance_score": 0.66,
+            "reason": "A man stands in front of a wall filled with sticky notes"
+          }
+        ]
       }
     },
     {
@@ -922,23 +831,22 @@
       "excerpt_en": "Git in practice: Git Flow vs trunk-based, interactive rebase, cherry-pick and bisect, conflict resolution, and commit conventions.",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao.jpg",
       "cover_credit": {
-        "file": "File:Git format.png",
-        "artist": "Julian Kücklich",
-        "license": "CC0",
-        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-        "page": "https://commons.wikimedia.org/wiki/File%3AGit_format.png",
-        "source": "wikimedia"
+        "license": "Pexels License",
+        "license_version": null,
+        "title": "A man stands in front of a wall filled with sticky notes",
+        "creator": "Startup Stock Photos",
+        "source": "pexels",
+        "source_url": "https://www.pexels.com/photo/212286/"
       },
       "lang": "en",
       "translation_slug": "2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao",
       "translation_of": "2026-09-19-git-na-pratica-workflows-profissionais-rebase-e-resolucao",
       "cover_meta": {
-        "strategy": "fallback",
-        "source": "code",
-        "query": null,
-        "relevance_score": 0.0,
-        "review_status": "auto_fallback",
-        "fallback_reason": "no_search_run",
+        "strategy": "photo",
+        "source": "photo",
+        "query": "code review",
+        "relevance_score": 0.66,
+        "review_status": "approved",
         "motif": "vcs",
         "brief": {
           "subject": "Git na prática: workflows profissionais, rebase e resolução de conflitos",
@@ -981,8 +889,14 @@
           ],
           "language": "agnostic"
         },
-        "review_candidates": [],
-        "fallback_note": "Nenhum candidato foi buscado: cover_meta.query ficou null e review_candidates veio vazio. O valor anterior, 'no_candidate_passed', afirmava que candidatos existiram e reprovaram -- nunca houve busca. A arte generica veio de nao haver busca configurada, nao de reprovacao."
+        "review_candidates": [
+          {
+            "pexels_id": 212286,
+            "license": "Pexels License",
+            "relevance_score": 0.66,
+            "reason": "A man stands in front of a wall filled with sticky notes"
+          }
+        ]
       }
     },
     {
@@ -2818,20 +2732,19 @@
       "lang": "pt",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript.jpg",
       "cover_credit": {
-        "file": "File:MediaWiki 1.10 database schema.png",
-        "artist": "Nick Jenkins, but also containing information from other MediaWiki devs + contributors to MediaWiki.org",
-        "license": "CC BY-SA 3.0",
-        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
-        "page": "https://commons.wikimedia.org/wiki/File%3AMediaWiki_1.10_database_schema.png",
-        "author": "Nick Jenkins, but also containing information from other MediaWiki devs + contributors to MediaWiki.org"
+        "license": "Pexels License",
+        "license_version": null,
+        "title": "Detailed image of a server rack with glowing LEDs",
+        "creator": "panumas nikhomkhai",
+        "source": "pexels",
+        "source_url": "https://www.pexels.com/photo/1148820/"
       },
       "cover_meta": {
-        "strategy": "fallback",
-        "source": "code",
-        "query": null,
-        "relevance_score": 0.0,
-        "review_status": "auto_fallback",
-        "fallback_reason": "no_search_run",
+        "strategy": "photo",
+        "source": "photo",
+        "query": "database server",
+        "relevance_score": 0.64,
+        "review_status": "approved",
         "motif": "data",
         "brief": {
           "subject": "Prisma ORM: como modelar banco de dados com TypeScript",
@@ -2871,8 +2784,14 @@
           ],
           "language": "agnostic"
         },
-        "review_candidates": [],
-        "fallback_note": "Nenhum candidato foi buscado: cover_meta.query ficou null e review_candidates veio vazio. O valor anterior, 'no_candidate_passed', afirmava que candidatos existiram e reprovaram -- nunca houve busca. A arte generica veio de nao haver busca configurada, nao de reprovacao."
+        "review_candidates": [
+          {
+            "pexels_id": 1148820,
+            "license": "Pexels License",
+            "relevance_score": 0.64,
+            "reason": "Detailed image of a server rack with glowing LEDs"
+          }
+        ]
       }
     },
     {
@@ -2979,20 +2898,19 @@
       "translation_of": "2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript.jpg",
       "cover_credit": {
-        "file": "File:MediaWiki 1.10 database schema.png",
-        "artist": "Nick Jenkins, but also containing information from other MediaWiki devs + contributors to MediaWiki.org",
-        "license": "CC BY-SA 3.0",
-        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
-        "page": "https://commons.wikimedia.org/wiki/File%3AMediaWiki_1.10_database_schema.png",
-        "author": "Nick Jenkins, but also containing information from other MediaWiki devs + contributors to MediaWiki.org"
+        "license": "Pexels License",
+        "license_version": null,
+        "title": "Detailed image of a server rack with glowing LEDs",
+        "creator": "panumas nikhomkhai",
+        "source": "pexels",
+        "source_url": "https://www.pexels.com/photo/1148820/"
       },
       "cover_meta": {
-        "strategy": "fallback",
-        "source": "code",
-        "query": null,
-        "relevance_score": 0.0,
-        "review_status": "auto_fallback",
-        "fallback_reason": "no_search_run",
+        "strategy": "photo",
+        "source": "photo",
+        "query": "database server",
+        "relevance_score": 0.64,
+        "review_status": "approved",
         "motif": "data",
         "brief": {
           "subject": "Prisma ORM: como modelar banco de dados com TypeScript",
@@ -3032,8 +2950,14 @@
           ],
           "language": "agnostic"
         },
-        "review_candidates": [],
-        "fallback_note": "Nenhum candidato foi buscado: cover_meta.query ficou null e review_candidates veio vazio. O valor anterior, 'no_candidate_passed', afirmava que candidatos existiram e reprovaram -- nunca houve busca. A arte generica veio de nao haver busca configurada, nao de reprovacao."
+        "review_candidates": [
+          {
+            "pexels_id": 1148820,
+            "license": "Pexels License",
+            "relevance_score": 0.64,
+            "reason": "Detailed image of a server rack with glowing LEDs"
+          }
+        ]
       }
     },
     {
