@@ -14,14 +14,20 @@
       "excerpt": "Kubernetes pra iniciantes: conceitos essenciais sem complicação.",
       "excerpt_en": "Kubernetes for Beginners: Key Concepts Made Simple.",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-27-kubernetes-pra-iniciantes-conceitos-essenciais-sem.jpg",
-      "cover_credit": null,
+      "cover_credit": {
+        "license": "cc0",
+        "license_version": "1.0",
+        "title": "Stacks shipping containers Port Barcelona",
+        "creator": null,
+        "source": "rawpixel",
+        "source_url": "https://www.rawpixel.com/image/3305642/free-photo-image-shipping-cargo-transportation-containers"
+      },
       "cover_meta": {
-        "strategy": "fallback",
-        "source": "code",
-        "query": null,
-        "relevance_score": 0.0,
-        "review_status": "auto_fallback",
-        "fallback_reason": "no_candidate_passed",
+        "strategy": "photo",
+        "source": "photo",
+        "query": "kubernetes shipping containers port",
+        "relevance_score": 0.72,
+        "review_status": "approved",
         "motif": "cloud",
         "brief": {
           "subject": "Kubernetes pra iniciantes: conceitos essenciais sem complicação",
@@ -64,7 +70,14 @@
           ],
           "language": "agnostic"
         },
-        "review_candidates": []
+        "review_candidates": [
+          {
+            "url": "https://images.rawpixel.com/editor_1024/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA3L3Vwd2s2MjI2OTY3Ni13aWtpbWVkaWEtaW1hZ2UuanBn.jpg",
+            "license": "cc0",
+            "relevance_score": 0.72,
+            "reason": "porto de contineres = metafora direta"
+          }
+        ]
       },
       "lang": "pt",
       "translation_slug": "2026-09-27-kubernetes-pra-iniciantes-conceitos-essenciais-sem-en"
@@ -83,14 +96,20 @@
       "excerpt": "Kubernetes for Beginners: Key Concepts Made Simple.",
       "excerpt_en": "Kubernetes for Beginners: Key Concepts Made Simple.",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-27-kubernetes-pra-iniciantes-conceitos-essenciais-sem.jpg",
-      "cover_credit": null,
+      "cover_credit": {
+        "license": "cc0",
+        "license_version": "1.0",
+        "title": "Stacks shipping containers Port Barcelona",
+        "creator": null,
+        "source": "rawpixel",
+        "source_url": "https://www.rawpixel.com/image/3305642/free-photo-image-shipping-cargo-transportation-containers"
+      },
       "cover_meta": {
-        "strategy": "fallback",
-        "source": "code",
-        "query": null,
-        "relevance_score": 0.0,
-        "review_status": "auto_fallback",
-        "fallback_reason": "no_candidate_passed",
+        "strategy": "photo",
+        "source": "photo",
+        "query": "kubernetes shipping containers port",
+        "relevance_score": 0.72,
+        "review_status": "approved",
         "motif": "cloud",
         "brief": {
           "subject": "Kubernetes pra iniciantes: conceitos essenciais sem complicação",
@@ -133,7 +152,14 @@
           ],
           "language": "agnostic"
         },
-        "review_candidates": []
+        "review_candidates": [
+          {
+            "url": "https://images.rawpixel.com/editor_1024/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA3L3Vwd2s2MjI2OTY3Ni13aWtpbWVkaWEtaW1hZ2UuanBn.jpg",
+            "license": "cc0",
+            "relevance_score": 0.72,
+            "reason": "porto de contineres = metafora direta"
+          }
+        ]
       },
       "lang": "en",
       "translation_slug": "2026-09-27-kubernetes-pra-iniciantes-conceitos-essenciais-sem",
@@ -834,7 +860,7 @@
         "query": null,
         "relevance_score": 0.0,
         "review_status": "auto_fallback",
-        "fallback_reason": "no_candidate_passed",
+        "fallback_reason": "no_search_run",
         "motif": "vcs",
         "brief": {
           "subject": "Git na prática: workflows profissionais, rebase e resolução de conflitos",
@@ -877,7 +903,8 @@
           ],
           "language": "agnostic"
         },
-        "review_candidates": []
+        "review_candidates": [],
+        "fallback_note": "Nenhum candidato foi buscado: cover_meta.query ficou null e review_candidates veio vazio. O valor anterior, 'no_candidate_passed', afirmava que candidatos existiram e reprovaram -- nunca houve busca. A arte generica veio de nao haver busca configurada, nao de reprovacao."
       }
     },
     {
@@ -911,7 +938,7 @@
         "query": null,
         "relevance_score": 0.0,
         "review_status": "auto_fallback",
-        "fallback_reason": "no_candidate_passed",
+        "fallback_reason": "no_search_run",
         "motif": "vcs",
         "brief": {
           "subject": "Git na prática: workflows profissionais, rebase e resolução de conflitos",
@@ -954,7 +981,8 @@
           ],
           "language": "agnostic"
         },
-        "review_candidates": []
+        "review_candidates": [],
+        "fallback_note": "Nenhum candidato foi buscado: cover_meta.query ficou null e review_candidates veio vazio. O valor anterior, 'no_candidate_passed', afirmava que candidatos existiram e reprovaram -- nunca houve busca. A arte generica veio de nao haver busca configurada, nao de reprovacao."
       }
     },
     {
@@ -2544,23 +2572,22 @@
       "translation_slug": "2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug-en",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug.jpg",
       "cover_credit": {
-        "file": "File:Wikipedia-blisk-devtools-iphone-12-and-ipad-pro-11-2021.png",
-        "artist": "And85rew",
-        "license": "CC BY-SA 4.0",
-        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "page": "https://commons.wikimedia.org/wiki/File%3AWikipedia-blisk-devtools-iphone-12-and-ipad-pro-11-2021.png",
-        "author": "And85rew"
+        "license": "CC0",
+        "license_version": "1.0",
+        "title": "CSS code on a screen (Unsplash)",
+        "creator": "Sai Kiran Anagani (_imkiran)",
+        "source": "wikimedia-commons",
+        "source_url": "https://commons.wikimedia.org/wiki/File:CSS_code_on_a_screen_(Unsplash).jpg"
       },
       "glossary_exclude": [
         "edge"
       ],
       "cover_meta": {
-        "strategy": "fallback",
-        "source": "code",
-        "query": null,
-        "relevance_score": 0.0,
-        "review_status": "auto_fallback",
-        "fallback_reason": "no_candidate_passed",
+        "strategy": "photo",
+        "source": "photo",
+        "query": "css code on screen",
+        "relevance_score": 0.76,
+        "review_status": "approved",
         "motif": "debug",
         "brief": {
           "subject": "DevTools do navegador: técnicas avançadas de debug",
@@ -2598,7 +2625,14 @@
           ],
           "language": "agnostic"
         },
-        "review_candidates": []
+        "review_candidates": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/CSS_code_on_a_screen_%28Unsplash%29.jpg",
+            "license": "CC0",
+            "relevance_score": 0.76,
+            "reason": "HTML/CSS legivel com o navegador ao lado; sem marca de terceiro"
+          }
+        ]
       }
     },
     {
@@ -2619,23 +2653,22 @@
       "translation_of": "2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug.jpg",
       "cover_credit": {
-        "file": "File:Wikipedia-blisk-devtools-iphone-12-and-ipad-pro-11-2021.png",
-        "artist": "And85rew",
-        "license": "CC BY-SA 4.0",
-        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "page": "https://commons.wikimedia.org/wiki/File%3AWikipedia-blisk-devtools-iphone-12-and-ipad-pro-11-2021.png",
-        "author": "And85rew"
+        "license": "CC0",
+        "license_version": "1.0",
+        "title": "CSS code on a screen (Unsplash)",
+        "creator": "Sai Kiran Anagani (_imkiran)",
+        "source": "wikimedia-commons",
+        "source_url": "https://commons.wikimedia.org/wiki/File:CSS_code_on_a_screen_(Unsplash).jpg"
       },
       "glossary_exclude": [
         "edge"
       ],
       "cover_meta": {
-        "strategy": "fallback",
-        "source": "code",
-        "query": null,
-        "relevance_score": 0.0,
-        "review_status": "auto_fallback",
-        "fallback_reason": "no_candidate_passed",
+        "strategy": "photo",
+        "source": "photo",
+        "query": "css code on screen",
+        "relevance_score": 0.76,
+        "review_status": "approved",
         "motif": "debug",
         "brief": {
           "subject": "DevTools do navegador: técnicas avançadas de debug",
@@ -2673,7 +2706,14 @@
           ],
           "language": "agnostic"
         },
-        "review_candidates": []
+        "review_candidates": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/CSS_code_on_a_screen_%28Unsplash%29.jpg",
+            "license": "CC0",
+            "relevance_score": 0.76,
+            "reason": "HTML/CSS legivel com o navegador ao lado; sem marca de terceiro"
+          }
+        ]
       }
     },
     {
@@ -2694,20 +2734,19 @@
       "lang": "pt",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks.jpg",
       "cover_credit": {
-        "file": "File:Programming.jpg",
-        "artist": "Lorenzo Cafaro",
-        "license": "CC0",
-        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-        "page": "https://commons.wikimedia.org/wiki/File%3AProgramming.jpg",
-        "author": "Lorenzo Cafaro"
+        "license": "cc0",
+        "license_version": "1.0",
+        "title": "Programming Code",
+        "creator": "One Idea LLC",
+        "source": "stocksnap",
+        "source_url": "https://stocksnap.io/photo/programming-code-1STVFMTBJY"
       },
       "cover_meta": {
-        "strategy": "fallback",
-        "source": "code",
-        "query": null,
-        "relevance_score": 0.0,
-        "review_status": "auto_fallback",
-        "fallback_reason": "no_candidate_passed",
+        "strategy": "photo",
+        "source": "photo",
+        "query": "javascript code screen",
+        "relevance_score": 0.7,
+        "review_status": "approved",
         "motif": "hooks",
         "brief": {
           "subject": "React Hooks avançados: useEffect, useRef e custom hooks que você precisa conhecer",
@@ -2751,7 +2790,14 @@
           ],
           "language": "agnostic"
         },
-        "review_candidates": []
+        "review_candidates": [
+          {
+            "url": "https://cdn.stocksnap.io/img-thumbs/960w/1STVFMTBJY.jpg",
+            "license": "cc0",
+            "relevance_score": 0.7,
+            "reason": "JavaScript com highlight de sintaxe; escuro e legivel, sem marca de terceiro"
+          }
+        ]
       }
     },
     {
@@ -2785,7 +2831,7 @@
         "query": null,
         "relevance_score": 0.0,
         "review_status": "auto_fallback",
-        "fallback_reason": "no_candidate_passed",
+        "fallback_reason": "no_search_run",
         "motif": "data",
         "brief": {
           "subject": "Prisma ORM: como modelar banco de dados com TypeScript",
@@ -2825,7 +2871,8 @@
           ],
           "language": "agnostic"
         },
-        "review_candidates": []
+        "review_candidates": [],
+        "fallback_note": "Nenhum candidato foi buscado: cover_meta.query ficou null e review_candidates veio vazio. O valor anterior, 'no_candidate_passed', afirmava que candidatos existiram e reprovaram -- nunca houve busca. A arte generica veio de nao haver busca configurada, nao de reprovacao."
       }
     },
     {
@@ -2847,20 +2894,19 @@
       "translation_of": "2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks.jpg",
       "cover_credit": {
-        "file": "File:Programming.jpg",
-        "artist": "Lorenzo Cafaro",
-        "license": "CC0",
-        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-        "page": "https://commons.wikimedia.org/wiki/File%3AProgramming.jpg",
-        "author": "Lorenzo Cafaro"
+        "license": "cc0",
+        "license_version": "1.0",
+        "title": "Programming Code",
+        "creator": "One Idea LLC",
+        "source": "stocksnap",
+        "source_url": "https://stocksnap.io/photo/programming-code-1STVFMTBJY"
       },
       "cover_meta": {
-        "strategy": "fallback",
-        "source": "code",
-        "query": null,
-        "relevance_score": 0.0,
-        "review_status": "auto_fallback",
-        "fallback_reason": "no_candidate_passed",
+        "strategy": "photo",
+        "source": "photo",
+        "query": "javascript code screen",
+        "relevance_score": 0.7,
+        "review_status": "approved",
         "motif": "hooks",
         "brief": {
           "subject": "React Hooks avançados: useEffect, useRef e custom hooks que você precisa conhecer",
@@ -2904,7 +2950,14 @@
           ],
           "language": "agnostic"
         },
-        "review_candidates": []
+        "review_candidates": [
+          {
+            "url": "https://cdn.stocksnap.io/img-thumbs/960w/1STVFMTBJY.jpg",
+            "license": "cc0",
+            "relevance_score": 0.7,
+            "reason": "JavaScript com highlight de sintaxe; escuro e legivel, sem marca de terceiro"
+          }
+        ]
       }
     },
     {
@@ -2939,7 +2992,7 @@
         "query": null,
         "relevance_score": 0.0,
         "review_status": "auto_fallback",
-        "fallback_reason": "no_candidate_passed",
+        "fallback_reason": "no_search_run",
         "motif": "data",
         "brief": {
           "subject": "Prisma ORM: como modelar banco de dados com TypeScript",
@@ -2979,7 +3032,8 @@
           ],
           "language": "agnostic"
         },
-        "review_candidates": []
+        "review_candidates": [],
+        "fallback_note": "Nenhum candidato foi buscado: cover_meta.query ficou null e review_candidates veio vazio. O valor anterior, 'no_candidate_passed', afirmava que candidatos existiram e reprovaram -- nunca houve busca. A arte generica veio de nao haver busca configurada, nao de reprovacao."
       }
     },
     {
