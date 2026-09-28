@@ -860,7 +860,7 @@
         "query": null,
         "relevance_score": 0.0,
         "review_status": "auto_fallback",
-        "fallback_reason": "no_candidate_passed",
+        "fallback_reason": "no_search_run",
         "motif": "vcs",
         "brief": {
           "subject": "Git na prática: workflows profissionais, rebase e resolução de conflitos",
@@ -903,7 +903,8 @@
           ],
           "language": "agnostic"
         },
-        "review_candidates": []
+        "review_candidates": [],
+        "fallback_note": "Nenhum candidato foi buscado: cover_meta.query ficou null e review_candidates veio vazio. O valor anterior, 'no_candidate_passed', afirmava que candidatos existiram e reprovaram -- nunca houve busca. A arte generica veio de nao haver busca configurada, nao de reprovacao."
       }
     },
     {
@@ -937,7 +938,7 @@
         "query": null,
         "relevance_score": 0.0,
         "review_status": "auto_fallback",
-        "fallback_reason": "no_candidate_passed",
+        "fallback_reason": "no_search_run",
         "motif": "vcs",
         "brief": {
           "subject": "Git na prática: workflows profissionais, rebase e resolução de conflitos",
@@ -980,7 +981,8 @@
           ],
           "language": "agnostic"
         },
-        "review_candidates": []
+        "review_candidates": [],
+        "fallback_note": "Nenhum candidato foi buscado: cover_meta.query ficou null e review_candidates veio vazio. O valor anterior, 'no_candidate_passed', afirmava que candidatos existiram e reprovaram -- nunca houve busca. A arte generica veio de nao haver busca configurada, nao de reprovacao."
       }
     },
     {
@@ -2586,7 +2588,7 @@
         "query": null,
         "relevance_score": 0.0,
         "review_status": "auto_fallback",
-        "fallback_reason": "no_candidate_passed",
+        "fallback_reason": "no_search_run",
         "motif": "debug",
         "brief": {
           "subject": "DevTools do navegador: técnicas avançadas de debug",
@@ -2624,7 +2626,8 @@
           ],
           "language": "agnostic"
         },
-        "review_candidates": []
+        "review_candidates": [],
+        "fallback_note": "Nenhum candidato foi buscado: cover_meta.query ficou null e review_candidates veio vazio. O valor anterior, 'no_candidate_passed', afirmava que candidatos existiram e reprovaram -- nunca houve busca. A arte generica veio de nao haver busca configurada, nao de reprovacao."
       }
     },
     {
@@ -2661,7 +2664,7 @@
         "query": null,
         "relevance_score": 0.0,
         "review_status": "auto_fallback",
-        "fallback_reason": "no_candidate_passed",
+        "fallback_reason": "no_search_run",
         "motif": "debug",
         "brief": {
           "subject": "DevTools do navegador: técnicas avançadas de debug",
@@ -2699,7 +2702,8 @@
           ],
           "language": "agnostic"
         },
-        "review_candidates": []
+        "review_candidates": [],
+        "fallback_note": "Nenhum candidato foi buscado: cover_meta.query ficou null e review_candidates veio vazio. O valor anterior, 'no_candidate_passed', afirmava que candidatos existiram e reprovaram -- nunca houve busca. A arte generica veio de nao haver busca configurada, nao de reprovacao."
       }
     },
     {
@@ -2733,7 +2737,7 @@
         "query": null,
         "relevance_score": 0.0,
         "review_status": "auto_fallback",
-        "fallback_reason": "no_candidate_passed",
+        "fallback_reason": "no_search_run",
         "motif": "hooks",
         "brief": {
           "subject": "React Hooks avançados: useEffect, useRef e custom hooks que você precisa conhecer",
@@ -2777,7 +2781,8 @@
           ],
           "language": "agnostic"
         },
-        "review_candidates": []
+        "review_candidates": [],
+        "fallback_note": "Nenhum candidato foi buscado: cover_meta.query ficou null e review_candidates veio vazio. O valor anterior, 'no_candidate_passed', afirmava que candidatos existiram e reprovaram -- nunca houve busca. A arte generica veio de nao haver busca configurada, nao de reprovacao."
       }
     },
     {
@@ -2811,7 +2816,7 @@
         "query": null,
         "relevance_score": 0.0,
         "review_status": "auto_fallback",
-        "fallback_reason": "no_candidate_passed",
+        "fallback_reason": "no_search_run",
         "motif": "data",
         "brief": {
           "subject": "Prisma ORM: como modelar banco de dados com TypeScript",
@@ -2851,7 +2856,8 @@
           ],
           "language": "agnostic"
         },
-        "review_candidates": []
+        "review_candidates": [],
+        "fallback_note": "Nenhum candidato foi buscado: cover_meta.query ficou null e review_candidates veio vazio. O valor anterior, 'no_candidate_passed', afirmava que candidatos existiram e reprovaram -- nunca houve busca. A arte generica veio de nao haver busca configurada, nao de reprovacao."
       }
     },
     {
@@ -2886,7 +2892,7 @@
         "query": null,
         "relevance_score": 0.0,
         "review_status": "auto_fallback",
-        "fallback_reason": "no_candidate_passed",
+        "fallback_reason": "no_search_run",
         "motif": "hooks",
         "brief": {
           "subject": "React Hooks avançados: useEffect, useRef e custom hooks que você precisa conhecer",
@@ -2930,7 +2936,8 @@
           ],
           "language": "agnostic"
         },
-        "review_candidates": []
+        "review_candidates": [],
+        "fallback_note": "Nenhum candidato foi buscado: cover_meta.query ficou null e review_candidates veio vazio. O valor anterior, 'no_candidate_passed', afirmava que candidatos existiram e reprovaram -- nunca houve busca. A arte generica veio de nao haver busca configurada, nao de reprovacao."
       }
     },
     {
@@ -2965,7 +2972,7 @@
         "query": null,
         "relevance_score": 0.0,
         "review_status": "auto_fallback",
-        "fallback_reason": "no_candidate_passed",
+        "fallback_reason": "no_search_run",
         "motif": "data",
         "brief": {
           "subject": "Prisma ORM: como modelar banco de dados com TypeScript",
@@ -3005,7 +3012,8 @@
           ],
           "language": "agnostic"
         },
-        "review_candidates": []
+        "review_candidates": [],
+        "fallback_note": "Nenhum candidato foi buscado: cover_meta.query ficou null e review_candidates veio vazio. O valor anterior, 'no_candidate_passed', afirmava que candidatos existiram e reprovaram -- nunca houve busca. A arte generica veio de nao haver busca configurada, nao de reprovacao."
       }
     },
     {
