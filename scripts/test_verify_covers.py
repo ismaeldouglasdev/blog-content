@@ -89,6 +89,27 @@ class VerifyCoversTests(unittest.TestCase):
         report = verify_covers.verify_workspace(root)
         self.assertIn("duplicate_cover", {item["code"] for item in report["findings"]})
 
+    def test_orphan_cover_is_flagged(self):
+        # Capa solta em posts/covers/ que nenhum post referencia. Aconteceu de
+        # verdade: um .svg de arte gerada ficou versionado e servindo no CDN sem
+        # o guard reclamar, porque so ele validava capas REFERENCIADAS.
+        root = self.workspace(
+            [{"slug": "post", "cover": "https://example.com/post.jpg"}],
+            assets=("post.jpg", "2026-01-01-orfao.jpg"),
+        )
+        report = verify_covers.verify_workspace(root)
+        codes = {item["code"] for item in report["findings"]}
+        self.assertIn("orphan_cover", codes)
+        orfaos = [f for f in report["findings"] if f["code"] == "orphan_cover"]
+        self.assertTrue(any("2026-01-01-orfao.jpg" in f["message"] for f in orfaos))
+
+    def test_referenced_cover_is_not_orphan(self):
+        # O contra-teste: a checagem nao pode acusar a capa que o post usa, senao
+        # ela vira ruido e ninguem vai ler o warning.
+        root = self.workspace([{"slug": "post", "cover": "https://example.com/post.jpg"}])
+        report = verify_covers.verify_workspace(root)
+        self.assertNotIn("orphan_cover", {item["code"] for item in report["findings"]})
+
     def test_cli_json_output(self):
         root = self.workspace([{"slug": "post", "cover": "https://example.com/post.jpg"}])
         self.assertEqual(verify_covers.main([str(root), "--format", "json", "--fail-on", "never"]), 0)

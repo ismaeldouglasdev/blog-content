@@ -225,6 +225,25 @@ def verify_workspace(workspace: Path) -> dict:
         if len(slugs) > 1 and len(set(slugs)) > 1:
             add("warning", "duplicate_cover", ",".join(sorted(set(slugs))), f"Asset reutilizado: {asset_name}")
 
+    # Capa solta em posts/covers/ que nenhum post referencia. A CI ja barra .md
+    # orfao desde o caso do espelho bidirecional, mas capa nao tinha o mesmo
+    # portao -- e o resultado foi um .svg de arte gerada commitado e servindo no
+    # CDN sem ninguem notar, mais 7 versoes pre-revisao devolvidas pelo espelho.
+    # `git add -A` publicaria arte velha de capa. Severidade warning, e nao
+    # error: orfao nao quebra o site, ele so polui o repositorio e o CDN.
+    referenced_assets = set(by_cover)
+    for asset in sorted(covers_dir.iterdir()):
+        if not asset.is_file() or asset.name in referenced_assets:
+            continue
+        if asset.name == "_meta.json":
+            continue
+        add(
+            "warning",
+            "orphan_cover",
+            "",
+            f"Asset sem post referenciando: {asset.name}",
+        )
+
     return {
         "workspace": str(workspace),
         "ok": errors == 0,
