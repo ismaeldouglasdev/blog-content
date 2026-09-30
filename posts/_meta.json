@@ -1,6 +1,135 @@
 {
   "posts": [
     {
+      "slug": "2026-09-30-arquitetura-limpa-em-typescript-principios-solid-aplicados",
+      "title": "Arquitetura limpa em TypeScript: princípios SOLID aplicados",
+      "title_en": "Clean Architecture in TypeScript: Applying SOLID Principles",
+      "date": "2026-09-30",
+      "category": "article",
+      "tags": [
+        "typescript",
+        "arquitetura",
+        "solid"
+      ],
+      "excerpt": "Arquitetura limpa em TypeScript: princípios SOLID aplicados.",
+      "excerpt_en": "Clean Architecture in TypeScript: SOLID Principles Applied.",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-30-arquitetura-limpa-em-typescript-principios-solid-aplicados.jpg",
+      "cover_credit": null,
+      "cover_meta": {
+        "strategy": "fallback",
+        "source": "code",
+        "query": null,
+        "relevance_score": 0.0,
+        "review_status": "auto_fallback",
+        "fallback_reason": "no_candidate_passed",
+        "motif": "layout",
+        "brief": {
+          "subject": "Arquitetura limpa em TypeScript: princípios SOLID aplicados",
+          "entities": [
+            "arquitetura",
+            "limpa",
+            "typescript",
+            "principios",
+            "solid",
+            "aplicados"
+          ],
+          "category": "article",
+          "motif": "layout",
+          "visual_concept": "precise interface grid and layout blocks",
+          "queries": [
+            "precise interface grid and layout blocks",
+            "responsive web layout",
+            "interface grid design",
+            "arquitetura limpa typescript"
+          ],
+          "search_terms": [
+            "arquitetura",
+            "limpa",
+            "typescript",
+            "principios",
+            "solid",
+            "aplicados"
+          ],
+          "avoid": [
+            "logo",
+            "wordmark",
+            "icon",
+            "stock photo",
+            "unrelated"
+          ],
+          "language": "agnostic"
+        },
+        "review_candidates": []
+      },
+      "lang": "pt",
+      "translation_slug": "2026-09-30-arquitetura-limpa-em-typescript-principios-solid-aplicados-en"
+    },
+    {
+      "slug": "2026-09-30-arquitetura-limpa-em-typescript-principios-solid-aplicados-en",
+      "title": "Clean Architecture in TypeScript: Applying SOLID Principles",
+      "title_en": "Clean Architecture in TypeScript: Applying SOLID Principles",
+      "date": "2026-09-30",
+      "category": "article",
+      "tags": [
+        "typescript",
+        "arquitetura",
+        "solid"
+      ],
+      "excerpt": "Clean Architecture in TypeScript: SOLID Principles Applied.",
+      "excerpt_en": "Clean Architecture in TypeScript: SOLID Principles Applied.",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-30-arquitetura-limpa-em-typescript-principios-solid-aplicados.jpg",
+      "cover_credit": null,
+      "cover_meta": {
+        "strategy": "fallback",
+        "source": "code",
+        "query": null,
+        "relevance_score": 0.0,
+        "review_status": "auto_fallback",
+        "fallback_reason": "no_candidate_passed",
+        "motif": "layout",
+        "brief": {
+          "subject": "Arquitetura limpa em TypeScript: princípios SOLID aplicados",
+          "entities": [
+            "arquitetura",
+            "limpa",
+            "typescript",
+            "principios",
+            "solid",
+            "aplicados"
+          ],
+          "category": "article",
+          "motif": "layout",
+          "visual_concept": "precise interface grid and layout blocks",
+          "queries": [
+            "precise interface grid and layout blocks",
+            "responsive web layout",
+            "interface grid design",
+            "arquitetura limpa typescript"
+          ],
+          "search_terms": [
+            "arquitetura",
+            "limpa",
+            "typescript",
+            "principios",
+            "solid",
+            "aplicados"
+          ],
+          "avoid": [
+            "logo",
+            "wordmark",
+            "icon",
+            "stock photo",
+            "unrelated"
+          ],
+          "language": "agnostic"
+        },
+        "review_candidates": []
+      },
+      "lang": "en",
+      "translation_slug": "2026-09-30-arquitetura-limpa-em-typescript-principios-solid-aplicados",
+      "translation_of": "2026-09-30-arquitetura-limpa-em-typescript-principios-solid-aplicados"
+    },
+    {
       "slug": "2026-09-28-error-handling-em-typescript-result-types-e-typed-errors",
       "title": "Error handling em TypeScript: Result types e typed errors",
       "title_en": "Error Handling in TypeScript: Result Types and Typed Errors",
