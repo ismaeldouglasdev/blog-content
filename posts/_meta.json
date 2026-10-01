@@ -1,6 +1,139 @@
 {
   "posts": [
     {
+      "slug": "2026-10-01-react-server-components-quando-e-como-usar-no-next-js",
+      "title": "React Server Components: quando e como usar no Next.js",
+      "title_en": "React Server Components: When and How to Use in Next.js",
+      "date": "2026-10-01",
+      "category": "tutorial",
+      "tags": [
+        "react",
+        "server-components",
+        "nextjs"
+      ],
+      "excerpt": "React Server Components: quando e como usar no Next.js.",
+      "excerpt_en": "React Server Components: when and how to use in Next.js.",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-01-react-server-components-quando-e-como-usar-no-next-js.jpg",
+      "cover_credit": null,
+      "cover_meta": {
+        "strategy": "fallback",
+        "source": "code",
+        "query": null,
+        "relevance_score": 0.0,
+        "review_status": "auto_fallback",
+        "fallback_reason": "no_candidate_passed",
+        "motif": "generic",
+        "brief": {
+          "subject": "React Server Components: quando e como usar no Next.js",
+          "entities": [
+            "react",
+            "server",
+            "components",
+            "quando",
+            "usar",
+            "next",
+            "nextjs"
+          ],
+          "category": "tutorial",
+          "motif": "generic",
+          "visual_concept": "instructional technical diagram",
+          "queries": [
+            "instructional technical diagram",
+            "react server components",
+            "tutorial instructional technical diagram"
+          ],
+          "search_terms": [
+            "react",
+            "server",
+            "components",
+            "quando",
+            "como",
+            "usar",
+            "next",
+            "nextjs"
+          ],
+          "avoid": [
+            "logo",
+            "wordmark",
+            "icon",
+            "stock photo",
+            "unrelated"
+          ],
+          "language": "agnostic"
+        },
+        "review_candidates": []
+      },
+      "lang": "pt",
+      "translation_slug": "2026-10-01-react-server-components-quando-e-como-usar-no-next-js-en"
+    },
+    {
+      "slug": "2026-10-01-react-server-components-quando-e-como-usar-no-next-js-en",
+      "title": "React Server Components: When and How to Use in Next.js",
+      "title_en": "React Server Components: When and How to Use in Next.js",
+      "date": "2026-10-01",
+      "category": "tutorial",
+      "tags": [
+        "react",
+        "server-components",
+        "nextjs"
+      ],
+      "excerpt": "React Server Components: when and how to use in Next.js.",
+      "excerpt_en": "React Server Components: when and how to use in Next.js.",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-01-react-server-components-quando-e-como-usar-no-next-js.jpg",
+      "cover_credit": null,
+      "cover_meta": {
+        "strategy": "fallback",
+        "source": "code",
+        "query": null,
+        "relevance_score": 0.0,
+        "review_status": "auto_fallback",
+        "fallback_reason": "no_candidate_passed",
+        "motif": "generic",
+        "brief": {
+          "subject": "React Server Components: quando e como usar no Next.js",
+          "entities": [
+            "react",
+            "server",
+            "components",
+            "quando",
+            "usar",
+            "next",
+            "nextjs"
+          ],
+          "category": "tutorial",
+          "motif": "generic",
+          "visual_concept": "instructional technical diagram",
+          "queries": [
+            "instructional technical diagram",
+            "react server components",
+            "tutorial instructional technical diagram"
+          ],
+          "search_terms": [
+            "react",
+            "server",
+            "components",
+            "quando",
+            "como",
+            "usar",
+            "next",
+            "nextjs"
+          ],
+          "avoid": [
+            "logo",
+            "wordmark",
+            "icon",
+            "stock photo",
+            "unrelated"
+          ],
+          "language": "agnostic"
+        },
+        "review_candidates": []
+      },
+      "lang": "en",
+      "translation_slug": "2026-10-01-react-server-components-quando-e-como-usar-no-next-js",
+      "translation_of": "2026-10-01-react-server-components-quando-e-como-usar-no-next-js"
+    },
+    {
       "slug": "2026-09-30-arquitetura-limpa-em-typescript-principios-solid-aplicados",
       "title": "Arquitetura limpa em TypeScript: princípios SOLID aplicados",
       "title_en": "Clean Architecture in TypeScript: Applying SOLID Principles",
