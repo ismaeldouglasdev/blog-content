@@ -295,6 +295,14 @@
         "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mwlg3tq2q72p",
         "telegram": "64"
       }
+    },
+    "2026-10-02-ci-cd-do-zero-github-actions-pra-projetos-node-js-e-react": {
+      "url": "https://blog.ismaeltech.com/2026-10-02-ci-cd-do-zero-github-actions-pra-projetos-node-js-e-react",
+      "posted_at": "2026-10-02T13:12:26.224094+00:00",
+      "platforms": {
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mwvh5qa3gm2s",
+        "telegram": "65"
+      }
     }
   }
 }
