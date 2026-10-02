@@ -1,6 +1,187 @@
 {
   "posts": [
     {
+      "slug": "2026-10-02-ci-cd-do-zero-github-actions-pra-projetos-node-js-e-react",
+      "title": "CI/CD do zero: GitHub Actions pra projetos Node.js e React",
+      "title_en": "CI/CD from Scratch: GitHub Actions for Node.js and React Projects",
+      "date": "2026-10-02",
+      "category": "tutorial",
+      "tags": [
+        "ci-cd",
+        "github-actions",
+        "devops"
+      ],
+      "excerpt": "CI/CD do zero: GitHub Actions para projetos Node.js e React.",
+      "excerpt_en": "CI/CD from scratch: GitHub Actions for Node.js and React projects.",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-02-ci-cd-do-zero-github-actions-pra-projetos-node-js-e-react.jpg",
+      "cover_credit": null,
+      "cover_meta": {
+        "strategy": "fallback",
+        "source": "code",
+        "query": null,
+        "relevance_score": 0.0,
+        "review_status": "auto_fallback",
+        "fallback_reason": "no_candidate_passed",
+        "motif": "vcs",
+        "brief": {
+          "subject": "CI/CD do zero: GitHub Actions pra projetos Node.js e React",
+          "entities": [
+            "zero",
+            "github",
+            "actions",
+            "pra",
+            "projetos",
+            "node",
+            "react",
+            "devops"
+          ],
+          "category": "tutorial",
+          "motif": "vcs",
+          "visual_concept": "branching commit graph with a merge point",
+          "queries": [
+            "branching commit graph with merge point",
+            "version control branching diagram",
+            "commit history graph",
+            "zero github actions"
+          ],
+          "search_terms": [
+            "zero",
+            "github",
+            "actions",
+            "pra",
+            "projetos",
+            "node",
+            "react",
+            "para",
+            "devops"
+          ],
+          "avoid": [
+            "logo",
+            "wordmark",
+            "icon",
+            "stock photo",
+            "unrelated"
+          ],
+          "language": "agnostic"
+        },
+        "review_candidates": [
+          {
+            "file": "File:X-studio ide shot.png",
+            "score": 0.388,
+            "query": "zero github actions",
+            "reasons": [
+              "overlap=0.33",
+              "concept=0.00"
+            ],
+            "status": "low_relevance"
+          },
+          {
+            "file": "File:2024-pro-palestinian-demonstrations.png",
+            "score": 0.382,
+            "query": "zero github actions",
+            "reasons": [
+              "overlap=0.33",
+              "concept=0.00"
+            ],
+            "status": "low_relevance"
+          }
+        ]
+      },
+      "lang": "pt",
+      "translation_slug": "2026-10-02-ci-cd-do-zero-github-actions-pra-projetos-node-js-e-react-en"
+    },
+    {
+      "slug": "2026-10-02-ci-cd-do-zero-github-actions-pra-projetos-node-js-e-react-en",
+      "title": "CI/CD from Scratch: GitHub Actions for Node.js and React Projects",
+      "title_en": "CI/CD from Scratch: GitHub Actions for Node.js and React Projects",
+      "date": "2026-10-02",
+      "category": "tutorial",
+      "tags": [
+        "ci-cd",
+        "github-actions",
+        "devops"
+      ],
+      "excerpt": "CI/CD from scratch: GitHub Actions for Node.js and React projects.",
+      "excerpt_en": "CI/CD from scratch: GitHub Actions for Node.js and React projects.",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-02-ci-cd-do-zero-github-actions-pra-projetos-node-js-e-react.jpg",
+      "cover_credit": null,
+      "cover_meta": {
+        "strategy": "fallback",
+        "source": "code",
+        "query": null,
+        "relevance_score": 0.0,
+        "review_status": "auto_fallback",
+        "fallback_reason": "no_candidate_passed",
+        "motif": "vcs",
+        "brief": {
+          "subject": "CI/CD do zero: GitHub Actions pra projetos Node.js e React",
+          "entities": [
+            "zero",
+            "github",
+            "actions",
+            "pra",
+            "projetos",
+            "node",
+            "react",
+            "devops"
+          ],
+          "category": "tutorial",
+          "motif": "vcs",
+          "visual_concept": "branching commit graph with a merge point",
+          "queries": [
+            "branching commit graph with merge point",
+            "version control branching diagram",
+            "commit history graph",
+            "zero github actions"
+          ],
+          "search_terms": [
+            "zero",
+            "github",
+            "actions",
+            "pra",
+            "projetos",
+            "node",
+            "react",
+            "para",
+            "devops"
+          ],
+          "avoid": [
+            "logo",
+            "wordmark",
+            "icon",
+            "stock photo",
+            "unrelated"
+          ],
+          "language": "agnostic"
+        },
+        "review_candidates": [
+          {
+            "file": "File:X-studio ide shot.png",
+            "score": 0.388,
+            "query": "zero github actions",
+            "reasons": [
+              "overlap=0.33",
+              "concept=0.00"
+            ],
+            "status": "low_relevance"
+          },
+          {
+            "file": "File:2024-pro-palestinian-demonstrations.png",
+            "score": 0.382,
+            "query": "zero github actions",
+            "reasons": [
+              "overlap=0.33",
+              "concept=0.00"
+            ],
+            "status": "low_relevance"
+          }
+        ]
+      },
+      "lang": "en",
+      "translation_slug": "2026-10-02-ci-cd-do-zero-github-actions-pra-projetos-node-js-e-react",
+      "translation_of": "2026-10-02-ci-cd-do-zero-github-actions-pra-projetos-node-js-e-react"
+    },
+    {
       "slug": "2026-10-01-react-server-components-quando-e-como-usar-no-next-js",
       "title": "React Server Components: quando e como usar no Next.js",
       "title_en": "React Server Components: When and How to Use in Next.js",
