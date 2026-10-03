@@ -303,6 +303,14 @@
         "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mwvh5qa3gm2s",
         "telegram": "65"
       }
+    },
+    "2026-10-03-nginx-como-reverse-proxy-ssl-load-balancing-e-caching": {
+      "url": "https://blog.ismaeltech.com/2026-10-03-nginx-como-reverse-proxy-ssl-load-balancing-e-caching",
+      "posted_at": "2026-10-03T14:09:19.678562+00:00",
+      "platforms": {
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mwy2sefmja2d",
+        "telegram": "66"
+      }
     }
   }
 }
