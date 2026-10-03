@@ -186,10 +186,6 @@ ALLOW_PROPER_NOUNS = re.compile(
     r"\bCSS Overview\b", re.I
 )
 
-# Cardinalidade de relacao: "1:1 - User" usa o travessao como elemento da
-# notacao. 6 ocorrencias em 3 posts. Sem esta excepcao reprova terminologia de
-# dominio, que foi o erro de alargar o lexicon.
-ALLOW_NOTATION = re.compile(r"\b(?:1:1|1:N|N:M|1:1:1)\s*[—–]\s*")
 
 
 def strip_noise(raw: str) -> str:
@@ -210,7 +206,6 @@ def audit(path: Path) -> tuple[list[str], list[str], int]:
     # DevTools. Reprovar exigiria que um post de devtools renomeasse uma
     # feature existente. Sem este comentario a lista parece arbitraria.
     body = ALLOW_PROPER_NOUNS.sub(" ", body)
-    body = ALLOW_NOTATION.sub(" ", body)
     # `TIC_INGLES_PT` reprova anglicismos num post PT; num ficheiro -en seria
     # falso positivo por construcao. Sem este filtro, o `is_en` parece
     # defensivo redundante e uma "simplificacao" reintroduz o bug.
