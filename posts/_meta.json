@@ -229,7 +229,17 @@
       "translation_slug": "2026-10-03-uuid-v4-por-que-o-id-aleatorio-ainda-e-a-escolha-certa-en",
       "tools": [
         "uuid"
-      ]
+      ],
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-03-uuid-v4-por-que-o-id-aleatorio-ainda-e-a-escolha-certa.jpg",
+      "cover_meta": {
+        "strategy": "fallback",
+        "source": "code",
+        "query": null,
+        "relevance_score": 0,
+        "review_status": "auto_fallback",
+        "fallback_reason": "code_cover_generated_for_pilot",
+        "motif": "generic"
+      }
     },
     {
       "slug": "2026-10-03-uuid-v4-por-que-o-id-aleatorio-ainda-e-a-escolha-certa-en",
@@ -248,7 +258,17 @@
       "translation_of": "2026-10-03-uuid-v4-por-que-o-id-aleatorio-ainda-e-a-escolha-certa",
       "tools": [
         "uuid"
-      ]
+      ],
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-03-uuid-v4-por-que-o-id-aleatorio-ainda-e-a-escolha-certa.jpg",
+      "cover_meta": {
+        "strategy": "fallback",
+        "source": "code",
+        "query": null,
+        "relevance_score": 0,
+        "review_status": "auto_fallback",
+        "fallback_reason": "code_cover_generated_for_pilot",
+        "motif": "generic"
+      }
     },
     {
       "slug": "2026-10-02-ci-cd-do-zero-github-actions-pra-projetos-node-js-e-react",
