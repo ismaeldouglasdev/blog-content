@@ -214,6 +214,43 @@
       "translation_of": "2026-10-03-nginx-como-reverse-proxy-ssl-load-balancing-e-caching"
     },
     {
+      "slug": "2026-10-03-uuid-v4-por-que-o-id-aleatorio-ainda-e-a-escolha-certa",
+      "title": "UUID v4: por que o ID aleatório ainda é a escolha certa",
+      "title_en": "UUID v4: Why the Random ID Is Still the Right Call",
+      "date": "2026-10-03",
+      "category": "tutorial",
+      "tags": [
+        "uuid",
+        "javascript"
+      ],
+      "excerpt": "Identificador universalmente único parece ganho de tempo até você precisar de um índice no Postgres e o tamanho do ID começa a doer. Um olhar honesto sobre quando usar UUID e quando não usar.",
+      "excerpt_en": "A universally unique identifier looks like a shortcut until you need an index in Postgres and the ID size starts to hurt. An honest look at when UUID is the right choice and when it is not.",
+      "lang": "pt",
+      "translation_slug": "2026-10-03-uuid-v4-por-que-o-id-aleatorio-ainda-e-a-escolha-certa-en",
+      "tools": [
+        "uuid"
+      ]
+    },
+    {
+      "slug": "2026-10-03-uuid-v4-por-que-o-id-aleatorio-ainda-e-a-escolha-certa-en",
+      "title": "UUID v4: Why the Random ID Is Still the Right Call",
+      "title_en": "UUID v4: Why the Random ID Is Still the Right Call",
+      "date": "2026-10-03",
+      "category": "tutorial",
+      "tags": [
+        "uuid",
+        "javascript"
+      ],
+      "excerpt": "A universally unique identifier looks like a shortcut until you need an index in Postgres and the ID size starts to hurt. An honest look at when UUID is the right choice and when it is not.",
+      "excerpt_en": "A universally unique identifier looks like a shortcut until you need an index in Postgres and the ID size starts to hurt. An honest look at when UUID is the right choice and when it is not.",
+      "lang": "en",
+      "translation_slug": "2026-10-03-uuid-v4-por-que-o-id-aleatorio-ainda-e-a-escolha-certa",
+      "translation_of": "2026-10-03-uuid-v4-por-que-o-id-aleatorio-ainda-e-a-escolha-certa",
+      "tools": [
+        "uuid"
+      ]
+    },
+    {
       "slug": "2026-10-02-ci-cd-do-zero-github-actions-pra-projetos-node-js-e-react",
       "title": "CI/CD do zero: GitHub Actions pra projetos Node.js e React",
       "title_en": "CI/CD from Scratch: GitHub Actions for Node.js and React Projects",
