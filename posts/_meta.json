@@ -1,6 +1,219 @@
 {
   "posts": [
     {
+      "slug": "2026-10-03-nginx-como-reverse-proxy-ssl-load-balancing-e-caching",
+      "title": "Nginx como reverse proxy: SSL, load balancing e caching",
+      "title_en": "Nginx as a Reverse Proxy: SSL, Load Balancing, and Caching",
+      "date": "2026-10-03",
+      "category": "tutorial",
+      "tags": [
+        "nginx",
+        "devops",
+        "proxy"
+      ],
+      "excerpt": "Colocar uma aplicacao web em producao expondo diretamente a porta do Node.js, Python ou Go para a internet publica e pedir para ter dor de cabeca.",
+      "excerpt_en": "Deploying a web app directly exposing the Node.js, Python, or Go port to the public internet is asking for trouble.",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-03-nginx-como-reverse-proxy-ssl-load-balancing-e-caching.jpg",
+      "cover_credit": null,
+      "cover_meta": {
+        "strategy": "fallback",
+        "source": "code",
+        "query": null,
+        "relevance_score": 0.0,
+        "review_status": "auto_fallback",
+        "fallback_reason": "no_candidate_passed",
+        "motif": "generic",
+        "brief": {
+          "subject": "Nginx como reverse proxy: SSL, load balancing e caching",
+          "entities": [
+            "nginx",
+            "reverse",
+            "proxy",
+            "ssl",
+            "load",
+            "balancing",
+            "caching",
+            "colocar"
+          ],
+          "category": "tutorial",
+          "motif": "generic",
+          "visual_concept": "instructional technical diagram",
+          "queries": [
+            "instructional technical diagram",
+            "nginx reverse proxy",
+            "tutorial instructional technical diagram"
+          ],
+          "search_terms": [
+            "nginx",
+            "como",
+            "reverse",
+            "proxy",
+            "ssl",
+            "load",
+            "balancing",
+            "caching",
+            "colocar",
+            "uma",
+            "aplicacao",
+            "web",
+            "producao",
+            "expondo",
+            "diretamente",
+            "porta",
+            "node",
+            "python",
+            "para",
+            "internet",
+            "publica",
+            "pedir",
+            "ter",
+            "dor",
+            "cabeca",
+            "devops"
+          ],
+          "avoid": [
+            "logo",
+            "wordmark",
+            "icon",
+            "stock photo",
+            "unrelated"
+          ],
+          "language": "agnostic"
+        },
+        "review_candidates": [
+          {
+            "file": "File:Run nginx.png",
+            "score": 0.273,
+            "query": "nginx reverse proxy",
+            "reasons": [
+              "overlap=0.12",
+              "concept=0.00"
+            ],
+            "status": "low_relevance"
+          },
+          {
+            "file": "File:Turnkey-linux-nginx-php-fastcgi-18.0-webmin-dashboard.png",
+            "score": 0.27,
+            "query": "nginx reverse proxy",
+            "reasons": [
+              "overlap=0.15",
+              "concept=0.00"
+            ],
+            "status": "low_relevance"
+          }
+        ]
+      },
+      "lang": "pt",
+      "translation_slug": "2026-10-03-nginx-como-reverse-proxy-ssl-load-balancing-e-caching-en"
+    },
+    {
+      "slug": "2026-10-03-nginx-como-reverse-proxy-ssl-load-balancing-e-caching-en",
+      "title": "Nginx as a Reverse Proxy: SSL, Load Balancing, and Caching",
+      "title_en": "Nginx as a Reverse Proxy: SSL, Load Balancing, and Caching",
+      "date": "2026-10-03",
+      "category": "tutorial",
+      "tags": [
+        "nginx",
+        "devops",
+        "proxy"
+      ],
+      "excerpt": "Deploying a web app directly exposing the Node.js, Python, or Go port to the public internet is asking for trouble.",
+      "excerpt_en": "Deploying a web app directly exposing the Node.js, Python, or Go port to the public internet is asking for trouble.",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-03-nginx-como-reverse-proxy-ssl-load-balancing-e-caching.jpg",
+      "cover_credit": null,
+      "cover_meta": {
+        "strategy": "fallback",
+        "source": "code",
+        "query": null,
+        "relevance_score": 0.0,
+        "review_status": "auto_fallback",
+        "fallback_reason": "no_candidate_passed",
+        "motif": "generic",
+        "brief": {
+          "subject": "Nginx como reverse proxy: SSL, load balancing e caching",
+          "entities": [
+            "nginx",
+            "reverse",
+            "proxy",
+            "ssl",
+            "load",
+            "balancing",
+            "caching",
+            "colocar"
+          ],
+          "category": "tutorial",
+          "motif": "generic",
+          "visual_concept": "instructional technical diagram",
+          "queries": [
+            "instructional technical diagram",
+            "nginx reverse proxy",
+            "tutorial instructional technical diagram"
+          ],
+          "search_terms": [
+            "nginx",
+            "como",
+            "reverse",
+            "proxy",
+            "ssl",
+            "load",
+            "balancing",
+            "caching",
+            "colocar",
+            "uma",
+            "aplicacao",
+            "web",
+            "producao",
+            "expondo",
+            "diretamente",
+            "porta",
+            "node",
+            "python",
+            "para",
+            "internet",
+            "publica",
+            "pedir",
+            "ter",
+            "dor",
+            "cabeca",
+            "devops"
+          ],
+          "avoid": [
+            "logo",
+            "wordmark",
+            "icon",
+            "stock photo",
+            "unrelated"
+          ],
+          "language": "agnostic"
+        },
+        "review_candidates": [
+          {
+            "file": "File:Run nginx.png",
+            "score": 0.273,
+            "query": "nginx reverse proxy",
+            "reasons": [
+              "overlap=0.12",
+              "concept=0.00"
+            ],
+            "status": "low_relevance"
+          },
+          {
+            "file": "File:Turnkey-linux-nginx-php-fastcgi-18.0-webmin-dashboard.png",
+            "score": 0.27,
+            "query": "nginx reverse proxy",
+            "reasons": [
+              "overlap=0.15",
+              "concept=0.00"
+            ],
+            "status": "low_relevance"
+          }
+        ]
+      },
+      "lang": "en",
+      "translation_slug": "2026-10-03-nginx-como-reverse-proxy-ssl-load-balancing-e-caching",
+      "translation_of": "2026-10-03-nginx-como-reverse-proxy-ssl-load-balancing-e-caching"
+    },
+    {
       "slug": "2026-10-02-ci-cd-do-zero-github-actions-pra-projetos-node-js-e-react",
       "title": "CI/CD do zero: GitHub Actions pra projetos Node.js e React",
       "title_en": "CI/CD from Scratch: GitHub Actions for Node.js and React Projects",
