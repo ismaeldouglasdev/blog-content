@@ -14,7 +14,7 @@ translation_of: "2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-b
 
 Have you ever received a request from a client who needs to expose an endpoint to validate coupons, but doesn’t have the budget to keep a server running 24 hours a day? Or have you ever needed to sync the inventory of your physical store with a marketplace, only to find that the traditional solution consumed hours of development and infrastructure costs?  
 
-These situations are more common than we imagine, especially in retail environments where every penny counts. The promise of **serverless** — executing code only when an event occurs — allows you to turn those demands into lightweight functions, paid only for the actual execution time. In the AWS ecosystem, the service that materializes this idea is **AWS Lambda**.
+These situations are more common than we imagine, especially in retail environments where every penny counts. The promise of **serverless**, executing code only when an event occurs, allows you to turn those demands into lightweight functions, paid only for the actual execution time. In the AWS ecosystem, the service that materializes this idea is **AWS Lambda**.
 
 Below, I’ll show how to build functions, APIs, and triggers in a practical and cost‑effective way, using the resources I already master in my integration projects between OSPOS and marketplaces, and in the automation pipelines I’ve developed for clients.
 
@@ -22,7 +22,7 @@ Below, I’ll show how to build functions, APIs, and triggers in a practical and
 <figure>
   <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas.jpg" alt="Wikimedia Foundation servers: the infrastructure behind on-demand services." loading="lazy" />
   <figcaption>
-    Wikimedia Foundation servers: the infrastructure behind on-demand services. — Image: <a href="https://commons.wikimedia.org/wiki/File%3AWikimedia_Foundation_Servers-8055_08.jpg">Wikimedia Foundation Servers-8055 08.jpg</a> by Victorgrigas —
+    Wikimedia Foundation servers: the infrastructure behind on-demand services. Image: <a href="https://commons.wikimedia.org/wiki/File%3AWikimedia_Foundation_Servers-8055_08.jpg">Wikimedia Foundation Servers-8055 08.jpg</a> by Victorgrigas  ·
     <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> · via Wikimedia Commons
   </figcaption>
 </figure>
@@ -189,16 +189,16 @@ A **cold start** occurs when Lambda has to spin up a new execution environment b
 
 ### 4.1 Main causes  
 
-* **Package size** – more files = longer download time.  
-* **Language** – runtimes such as Java and .NET tend to start slower than Python or Node.js.  
-* **Allocated memory** – more memory provides more CPU, reducing initialization time.
+* **Package size**: more files = longer download time.  
+* **Language**: runtimes such as Java and .NET tend to start slower than Python or Node.js.  
+* **Allocated memory**: more memory provides more CPU, reducing initialization time.
 
 ### 4.2 Practical mitigations  
 
-1. **Keep‑alive via CloudWatch Events** – scheduling invocations every 5 minutes keeps the function “warm”. In tests with the **lead‑pipeline**, this technique reduced the average response time from 800 ms to under 150 ms.  
-2. **Layers for dependencies** – separating large libraries into a reusable layer prevents the function zip from growing.  
-3. **Provisioned Concurrency** – AWS allows you to reserve pre‑initialized instances. Although it adds extra cost, it can be justified for critical APIs.  
-4. **Runtime choice** – for simple validation or webhook tasks, prefer Python or Node.js. When the workload demands high CPU performance, consider Go, which I am studying intensively in 2026.
+1. **Keep‑alive via CloudWatch Events**: scheduling invocations every 5 minutes keeps the function “warm”. In tests with the **lead‑pipeline**, this technique reduced the average response time from 800 ms to under 150 ms.  
+2. **Layers for dependencies**: separating large libraries into a reusable layer prevents the function zip from growing.  
+3. **Provisioned Concurrency**: AWS allows you to reserve pre‑initialized instances. Although it adds extra cost, it can be justified for critical APIs.  
+4. **Runtime choice**: for simple validation or webhook tasks, prefer Python or Node.js. When the workload demands high CPU performance, consider Go, which I am studying intensively in 2026.
 
 ## 5. Real Costs vs EC2: When the Numbers Add Up  
 
@@ -282,7 +282,7 @@ With `cdk deploy` the full stack is created, and future changes are handled as a
 
 ## 7. Practical Conclusion  
 
-Serverless on AWS isn’t just a fad; it’s a strategy that lets developers – even those coming from backgrounds like retail and POS – deliver cheap, scalable APIs and automations.  
+Serverless on AWS isn’t just a fad; it’s a strategy that lets developers, even those coming from backgrounds like retail and POS, deliver cheap, scalable APIs and automations.  
 
 In my journey, the experience of migrating **10 k products** between store systems taught me that integration must be lightweight and resilient. The Lambdas I wrote to connect OSPOS to Mercado Livre proved that, with just a few megabytes of code, you can move thousands of orders without needing a dedicated server.  
 
@@ -299,12 +299,12 @@ If you still have doubts about feasibility, try creating a simple function, hook
 
 ## Sources
 
-- [AWS Lambda – Official Documentation](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)  
-- [Amazon API Gateway – Quick Start Guide](https://docs.aws.amazon.com/apigateway/latest/developerguide/getting-started.html)  
-- [AWS SAM – Serverless Application Model](https://aws.amazon.com/serverless/sam/)  
-- [AWS CDK – High‑level Infrastructure Library](https://docs.aws.amazon.com/cdk/v2/guide/home.html)  
-- [Pricing – AWS Lambda](https://aws.amazon.com/lambda/pricing/)  
-- [AWS Blog – Reducing cold start latency](https://aws.amazon.com/blogs/compute/reducing-cold-start-latency/)
+- [AWS Lambda: Official Documentation](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)  
+- [Amazon API Gateway: Quick Start Guide](https://docs.aws.amazon.com/apigateway/latest/developerguide/getting-started.html)  
+- [AWS SAM: Serverless Application Model](https://aws.amazon.com/serverless/sam/)  
+- [AWS CDK: High‑level Infrastructure Library](https://docs.aws.amazon.com/cdk/v2/guide/home.html)  
+- [Pricing: AWS Lambda](https://aws.amazon.com/lambda/pricing/)  
+- [AWS Blog: Reducing cold start latency](https://aws.amazon.com/blogs/compute/reducing-cold-start-latency/)
 ## 📸 Cover image credit
 - **Image:** [Wikimedia Foundation Servers-8055 08.jpg](https://commons.wikimedia.org/wiki/File%3AWikimedia_Foundation_Servers-8055_08.jpg)
 - **Author:** Victorgrigas

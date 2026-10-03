@@ -4,7 +4,7 @@ date: "2026-09-03"
 category: "tutorial"
 tags: ["redis", "cache", "backend"]
 excerpt: "Redis na prática: cache, rate limiting e filas em Node.js."
-share_hook: "Cache, rate limiting com janela deslizante, filas com BullMQ e pub/sub — tudo num Redis que roda em Docker."
+share_hook: "Cache, rate limiting com janela deslizante, filas com BullMQ e pub/sub, tudo num Redis que roda em Docker."
 lang: "pt"
 ---
 
@@ -12,7 +12,7 @@ lang: "pt"
 
 Imagine que o seu e‑commerce acabou de integrar o OSPOS, o PDV open source que eu customizei para a loja Quase Tudo, ao Mercado Livre. A cada venda o estoque tem que ser atualizado em milissegundos, senão o cliente compra um produto que já acabou e a reputação da loja despenca. No primeiro teste a API do Mercado Livre começou a responder com erros de *429 Too Many Requests* e, ao mesmo tempo, o banco de dados ficou sobrecarregado com consultas repetidas ao mesmo registro de produto. A solução acabou sendo colocar uma camada de Redis entre a aplicação e o banco, usando o Redis não só como cache, mas também como limitador de taxa e como broker de filas.  
 
-Se você já passou por uma situação parecida – ou ainda não, mas sabe que pode acontecer – este artigo mostra, passo a passo, como montar essas três funções essenciais com Node.js, Docker e poucas linhas de código.
+Se você já passou por uma situação parecida, ou ainda não, mas sabe que pode acontecer, este artigo mostra, passo a passo, como montar essas três funções essenciais com Node.js, Docker e poucas linhas de código.
 
 
 ---
@@ -61,8 +61,8 @@ Execute `docker compose up -d` e o Redis já está pronto para aceitar conexões
 
 ### 2.1. Conceitos rápidos  
 
-* **Write‑through** – toda escrita no banco também atualiza o cache.  
-* **Cache‑aside** – a aplicação lê do cache; se o dado não está lá, consulta o banco, grava no cache e devolve ao cliente.
+* **Write‑through**: toda escrita no banco também atualiza o cache.  
+* **Cache‑aside**: a aplicação lê do cache; se o dado não está lá, consulta o banco, grava no cache e devolve ao cliente.
 
 No meu dia a dia, o padrão cache‑aside tem sido o mais flexível, principalmente quando a carga de escrita é menor que a de leitura, como no caso da sincronização de estoque.
 
@@ -70,7 +70,7 @@ No meu dia a dia, o padrão cache‑aside tem sido o mais flexível, principalme
 <figure>
   <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js.jpg" alt="Cache de mapeamento direto: o conceito que fundamenta o Redis." loading="lazy" />
   <figcaption>
-    Cache de mapeamento direto: o conceito que fundamenta o Redis. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ADirect-Mapped_Cache.png">Direct-Mapped Cache.png</a> por Snehalc —
+    Cache de mapeamento direto: o conceito que fundamenta o Redis. Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ADirect-Mapped_Cache.png">Direct-Mapped Cache.png</a> por Snehalc  ·
     <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · via Wikimedia Commons
   </figcaption>
 </figure>
@@ -163,7 +163,7 @@ Assim, o cache nunca fica desatualizado, mesmo que a base de dados seja alterada
 
 ### 3.1. Por que não usar apenas `express-rate-limit`  
 
-Muitos projetos dependem de middleware que guarda contadores em memória. Isso funciona em um único servidor, mas falha assim que você escala para múltiplas instâncias – cada nó tem sua própria contagem. O Redis, por ser centralizado, resolve esse problema.
+Muitos projetos dependem de middleware que guarda contadores em memória. Isso funciona em um único servidor, mas falha assim que você escala para múltiplas instâncias, cada nó tem sua própria contagem. O Redis, por ser centralizado, resolve esse problema.
 
 ### 3.2. Algoritmo de janela deslizante em Lua  
 
@@ -253,7 +253,7 @@ app.use(async (req, res, next) => {
 });
 ```
 
-Detalhe que costuma passar batido: o script Lua usa `redis.call("TIME")`, ou seja, o **relógio do Redis**, e nao o da aplicacao. E o que voce quer aqui — se o relógio da sua máquina estivesse adiantado, ele contaria entradas que ainda nao sairam da janela. Usar o tempo do servidor de dados tambem evita um segundo problema: quando voce roda o Redis em varios nos com relogios diferentes, todos precisam concordar sobre "agora".
+Detalhe que costuma passar batido: o script Lua usa `redis.call("TIME")`, ou seja, o **relógio do Redis**, e não o da aplicação. E o que você quer aqui, se o relógio da sua máquina estivesse adiantado, ele contaria entradas que ainda não sairam da janela. Usar o tempo do servidor de dados também evita um segundo problema: quando você roda o Redis em varios nos com relogios diferentes, todos precisam concordar sobre "agora".
 
 No *lead-pipeline* eu adicionei esse limitador para impedir que a API de enriquecimento de leads fosse invadida por bots, mantendo a latência estável mesmo sob pico de tráfego.
 
@@ -366,7 +366,7 @@ Em *inventory-service* eu usei exatamente esse fluxo para que o frontend React f
 
 Em ambientes de produção, o Redis *standalone* pode se tornar um ponto único de falha. O modo **cluster** distribui slots de chave entre múltiplos nós, permitindo escalabilidade horizontal.
 
-Vale ser preciso sobre o que ele entrega, porque é fácil prometer demais aqui: **cluster por si só não dá tolerância a falhas.** O que dá é a distribuição de slots e a possibilidade de cresc horizontalmente. A tolerância a falhas vem de outro recurso, os *replicas*, e o exemplo abaixo usa `--cluster-replicas 0` justamente porque é o mais simples de montar localmente. Com zero réplicas, se um dos três nós morrer, os slots dele ficam indisponíveis — não há replicação para onde ir.
+Vale ser preciso sobre o que ele entrega, porque é fácil prometer demais aqui: **cluster por si só não dá tolerância a falhas.** O que dá é a distribuição de slots e a possibilidade de cresc horizontalmente. A tolerância a falhas vem de outro recurso, os *replicas*, e o exemplo abaixo usa `--cluster-replicas 0` justamente porque é o mais simples de montar localmente. Com zero réplicas, se um dos três nós morrer, os slots dele ficam indisponíveis, não há replicação para onde ir.
 
 Quando quiser realmente sobreviver à queda de um nó, o caminho é:
 
@@ -430,7 +430,7 @@ volumes:
   node3-data:
 ```
 
-Repare no bloco `networks`. O `redis-cli --cluster create` precisa de endereços **fixos**, e o Compose não os garante sozinho: a sub-rede do Docker é atribuída dinamicamente e muda de máquina para máquina. Sem o `ipv4_address` explícito, o comando abaixo funciona na sua máquina e falha na do colega — que é a definição de "funciona na minha máquina".
+Repare no bloco `networks`. O `redis-cli --cluster create` precisa de endereços **fixos**, e o Compose não os garante sozinho: a sub-rede do Docker é atribuída dinamicamente e muda de máquina para máquina. Sem o `ipv4_address` explícito, o comando abaixo funciona na sua máquina e falha na do colega, que é a definição de "funciona na minha máquina".
 
 Depois de subir os containers, crie o cluster:
 
@@ -473,11 +473,11 @@ A combinação de Docker, o cliente oficial `redis` e bibliotecas como BullMQ of
 
 O que este post monta já serve para produção de tráfego baixo. Os furos conhecidos, na ordem em que eu os enfrentaria:
 
-1. **Cache stampede** — o padrão cache-aside tem uma corrida: quando uma chave expira, todas as requisições simultâneas caem no banco ao mesmo tempo. [`ttl-lru`](https://github.com/luin/redis-lru) (precisa de Redis ≥ 6.2) resolve com lock de stampede, ou é o padrão simples de travar a reconstrução por chave. Vale medir antes de otimizar: o sintoma é latência em pico, não erro.
-2. **Invalidação** — o TTL de 10 minutos do exemplo é um chute. Quando o dado muda por evento (o fluxo de estoque deste post), o certo é invalidar na escrita, e o Pub/Sub da seção 5 é o gancho natural para isso.
-3. **Rate limit distribuído de verdade** — o script Lua assume um Redis só. Com cluster, a chave precisa cair num slot só (use hashtags `{user123}`, senão o *ZADD* e o *ZREMRANGEBYSCORE* em nós diferentes quebram o algoritmo).
-4. **Observabilidade** — `SLOWLOG GET`, `INFO memory` e `LATENCY DOCTOR` dizem por que o Redis ficou lento antes de você adivinhar.
-5. **Autenticação e TLS** — o compose local abre a porta 6379 no host sem senha. Em qualquer ambiente compartilhado, `requirepass` + `redis://:senha@host` não são opcionais.
+1. **Cache stampede**: o padrão cache-aside tem uma corrida: quando uma chave expira, todas as requisições simultâneas caem no banco ao mesmo tempo. [`ttl-lru`](https://github.com/luin/redis-lru) (precisa de Redis ≥ 6.2) resolve com lock de stampede, ou é o padrão simples de travar a reconstrução por chave. Vale medir antes de otimizar: o sintoma é latência em pico, não erro.
+2. **Invalidação**: o TTL de 10 minutos do exemplo é um chute. Quando o dado muda por evento (o fluxo de estoque deste post), o certo é invalidar na escrita, e o Pub/Sub da seção 5 é o gancho natural para isso.
+3. **Rate limit distribuído de verdade**: o script Lua assume um Redis só. Com cluster, a chave precisa cair num slot só (use hashtags `{user123}`, senão o *ZADD* e o *ZREMRANGEBYSCORE* em nós diferentes quebram o algoritmo).
+4. **Observabilidade**: `SLOWLOG GET`, `INFO memory` e `LATENCY DOCTOR` dizem por que o Redis ficou lento antes de você adivinhar.
+5. **Autenticação e TLS**: o compose local abre a porta 6379 no host sem senha. Em qualquer ambiente compartilhado, `requirepass` + `redis://:senha@host` não são opcionais.
 
 Além do Redis: **rate limiting** em rede real pede atenção a chave por usuário e não só por IP, senão uma rede NAT inteiro (escritório, escola, carrier) compartilha o mesmo balde.
 
@@ -486,11 +486,11 @@ Além do Redis: **rate limiting** em rede real pede atenção a chave por usuár
 
 ## Fontes  
 
-- [Redis Documentation – Clustering](https://redis.io/docs/manual/scaling/)  
-- [BullMQ – GitHub Repository](https://github.com/taskforcesh/bullmq)  
-- [Node‑Redis (redis) v4 – API Reference](https://github.com/redis/node-redis)  
-- [Rate limiting with Redis and Lua – blog post by Upstash](https://upstash.com/blog/redis-rate-limiting)  
-- [Express Rate Limit – npm package (conceptual comparison)](https://www.npmjs.com/package/express-rate-limit)
+- [Redis Documentation: Clustering](https://redis.io/docs/manual/scaling/)  
+- [BullMQ: GitHub Repository](https://github.com/taskforcesh/bullmq)  
+- [Node‑Redis (redis) v4: API Reference](https://github.com/redis/node-redis)  
+- [Rate limiting with Redis and Lua: blog post by Upstash](https://upstash.com/blog/redis-rate-limiting)  
+- [Express Rate Limit: npm package (conceptual comparison)](https://www.npmjs.com/package/express-rate-limit)
 
 ## 📸 Crédito da imagem de capa
 - **Imagem:** [Cache Memory-jurvetson.jpg](https://commons.wikimedia.org/wiki/File%3ACache_Memory-jurvetson.jpg)
