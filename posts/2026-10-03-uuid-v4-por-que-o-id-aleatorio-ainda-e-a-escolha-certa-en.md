@@ -114,7 +114,8 @@ function badId() {
 ```
 
 `Math.random()` isn't a cryptographic generator, and the npm `uuid` package used
-it as a fallback until version 9. With platform APIs available, it became a
+it as a fallback **before version 7** — v7 removed that path, and npm deprecated
+the older versions over it. With platform APIs available, the package became a
 dependency you don't need: `crypto.randomUUID()` is in the browser and in Node.js
 and does the whole job.
 

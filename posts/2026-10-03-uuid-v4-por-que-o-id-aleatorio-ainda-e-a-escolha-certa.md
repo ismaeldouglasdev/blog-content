@@ -114,10 +114,11 @@ function idRuim() {
 }
 ```
 
-`Math.random()` não é gerador criptográfico, e o gerador do npm `uuid` usava
-`Math.random()` como fallback até a versão 9. Com APIs que evoluem, ele próprio
-virou dependência desnecessária: `crypto.randomUUID()` está no navegador e no
-Node.js e faz o serviço completo.
+`Math.random()` não é gerador criptográfico, e o pacote npm `uuid` usava
+`Math.random()` como fallback **antes da versão 7** — a v7 removeu esse caminho e
+o npm passou a deprecar as versões antigas por causa disso. Com APIs que evoluem,
+o pacote acabou por ser dependência desnecessária: `crypto.randomUUID()` está no
+navegador e no Node.js e faz o serviço completo.
 
 ```js
 // Um caminho só. O resto da aplicação não sabe de onde veio o id.
