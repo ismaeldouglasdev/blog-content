@@ -253,7 +253,7 @@ app.use(async (req, res, next) => {
 });
 ```
 
-Detalhe que costuma passar batido: o script Lua usa `redis.call("TIME")`, ou seja, o **relógio do Redis**, e nao o da aplicacao. E o que voce quer aqui, se o relógio da sua máquina estivesse adiantado, ele contaria entradas que ainda nao sairam da janela. Usar o tempo do servidor de dados tambem evita um segundo problema: quando voce roda o Redis em varios nos com relogios diferentes, todos precisam concordar sobre "agora".
+Detalhe que costuma passar batido: o script Lua usa `redis.call("TIME")`, ou seja, o **relógio do Redis**, e não o da aplicação. E o que você quer aqui, se o relógio da sua máquina estivesse adiantado, ele contaria entradas que ainda não sairam da janela. Usar o tempo do servidor de dados também evita um segundo problema: quando você roda o Redis em varios nos com relogios diferentes, todos precisam concordar sobre "agora".
 
 No *lead-pipeline* eu adicionei esse limitador para impedir que a API de enriquecimento de leads fosse invadida por bots, mantendo a latência estável mesmo sob pico de tráfego.
 
