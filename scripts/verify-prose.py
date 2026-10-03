@@ -10,7 +10,8 @@ Filosofia: nem todo registo formal e slop. "Nao e X, e Y" numa frase
 factual e informacao; a mesma formula repetida como titulo de seccao e um
 tique. Por isso severidade em dois niveis:
 
-  ERROR  tic inequivoco, nunca passa. Faz o script sair != 0.
+  ERROR  tic inequivoco, nunca passa. Faz o script sair != 0. Tambem entra a
+         pontuacao reprovada (EM_DASH): nao e tic retorico, e illegalidade.
   WARN   registo que pode ser intencional. Conta, reporta, nao reprova.
 
 Os ratios (TIC_FORMULA, TIC_TRIPLA) so disparam acima de N ocorrencias no
@@ -50,6 +51,14 @@ class Rule:
 # ERROR: tics que nao tem razao de sobreviver num post tecnico
 # --------------------------------------------------------------------------
 ERROR_RULES: list[Rule] = [
+    # Zero tolerancia por decisao do dono. O lookahead preserva o unico uso
+    # legitimo de en dash no corpus, o intervalo "2020-2024".
+    Rule(
+        "EM_DASH",
+        re.compile(r"—|–(?!\s*\d)"),
+        "ERROR",
+        "travessao: nao e pontuacao PT-BR e e marcador citado de prosa gerada",
+    ),
     Rule(
         "CLICHE_NOTAR",
         re.compile(
@@ -152,7 +161,9 @@ WARN_RULES: list[Rule] = [
     # ratios: so conta acima do limiar
     Rule(
         "TIC_FORMULA",
-        re.compile(r"n[ãa]o (?:é|e) [^.\n]{1,40}, (?:é|e) ", re.I),
+        # O separador e `(?:,|—|–)`, nao so a virgula: com a virgula isolada a
+        # regra escapava a mesmaformula escrita com travessao. Medido, nao suposto.
+        re.compile(r"n[ãa]o (?:é|e) [^.\n]{1,40}(?:,|—|–)\s*(?:é|e)\s", re.I),
         "WARN",
         "formula 'nao e X, e Y': informativa uma vez, tique repetida",
         max_occurrences=2,
@@ -236,9 +247,15 @@ def main() -> int:
     if args.files:
         paths = [Path(f) for f in args.files]
     else:
-        paths = sorted(
-            p for p in Path(args.posts_dir).glob("*.md") if p.name[0].isdigit()
-        )
+        # `verify-prose.py posts/2026-10-03-uuid.md` caia em "nenhum post
+        # encontrado" (o glob de um ficheiro devolve vazio) e o post passava.
+        target = Path(args.posts_dir)
+        if target.is_file():
+            paths = [target]
+        else:
+            paths = sorted(
+                p for p in target.glob("*.md") if p.name[0].isdigit()
+            )
     if not paths:
         print("nenhum post encontrado", file=sys.stderr)
         return 2
