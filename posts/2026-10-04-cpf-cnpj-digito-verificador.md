@@ -83,7 +83,7 @@ impossível.
 fecha". A camada de sanidade diz "esta forma é plausível". Uma ferramenta de validação
 séria tem as duas.
 
-## A mutation que passa: por que isso não é bug
+## A mutação que passa: por que isso não é bug
 
 Há um detalhe que costuma alarmar quem estuda o algoritmo pela primeira vez. Se
 você pega um CPF válido e troca um único dígito, é comum que o resultado **continue
