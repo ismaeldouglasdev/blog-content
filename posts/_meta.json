@@ -3955,6 +3955,67 @@
         "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-17-css-grid-e-flexbox-quando-usar-cada-um.jpg",
         "note": "Existing asset preserved; regenerate through review workflow before approval."
       }
+    },
+    {
+      "slug": "2026-10-04-cpf-cnpj-digito-verificador",
+      "title": "CPF e CNPJ: o que o dígito verificador realmente garante",
+      "title_en": "CPF and CNPJ: What the Check Digit Actually Guarantees",
+      "date": "2026-10-04",
+      "category": "tutorial",
+      "tags": [
+        "cpf",
+        "cnpj",
+        "regra-de-negocio",
+        "validacao"
+      ],
+      "excerpt": "Todo mundo já preencheu um CPF e digitou um dígito a mais. O dígito verificador existe para pegar exatamente isso — mas ele não prova que o documento existe. A diferença é onde quase todo mundo erra.",
+      "excerpt_en": "Everyone has typed a CPF and entered one digit too many. The check digit exists to catch exactly that — but it does not prove the document exists. That gap is where almost everyone goes wrong.",
+      "lang": "pt",
+      "translation_slug": "2026-10-04-cpf-cnpj-digito-verificador-en",
+      "tools": [
+        "validar-cpf-cnpj"
+      ],
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-04-cpf-cnpj-digito-verificador.jpg",
+      "cover_meta": {
+        "strategy": "fallback",
+        "source": "code",
+        "query": null,
+        "relevance_score": 0,
+        "review_status": "auto_fallback",
+        "fallback_reason": "code_cover_generated_for_cpf_post",
+        "motif": "generic"
+      }
+    },
+    {
+      "slug": "2026-10-04-cpf-cnpj-digito-verificador-en",
+      "title": "CPF and CNPJ: What the Check Digit Actually Guarantees",
+      "title_en": "CPF and CNPJ: What the Check Digit Actually Guarantees",
+      "date": "2026-10-04",
+      "category": "tutorial",
+      "tags": [
+        "cpf",
+        "cnpj",
+        "business-logic",
+        "validation"
+      ],
+      "excerpt": "Everyone has typed a CPF and entered one digit too many. The check digit exists to catch exactly that — but it does not prove the document exists. That gap is where almost everyone goes wrong.",
+      "excerpt_en": "Everyone has typed a CPF and entered one digit too many. The check digit exists to catch exactly that — but it does not prove the document exists. That gap is where almost everyone goes wrong.",
+      "lang": "en",
+      "translation_slug": "2026-10-04-cpf-cnpj-digito-verificador",
+      "translation_of": "2026-10-04-cpf-cnpj-digito-verificador",
+      "tools": [
+        "validar-cpf-cnpj"
+      ],
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-04-cpf-cnpj-digito-verificador.jpg",
+      "cover_meta": {
+        "strategy": "fallback",
+        "source": "code",
+        "query": null,
+        "relevance_score": 0,
+        "review_status": "auto_fallback",
+        "fallback_reason": "code_cover_generated_for_cpf_post",
+        "motif": "generic"
+      }
     }
   ]
 }
