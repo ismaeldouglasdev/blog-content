@@ -111,7 +111,7 @@ A regra prática para um formulário de cadastro:
   servidor, e elimina a esmagadora maioria dos erros de digitação.
 - **No backend:** o mesmo dígito verificador, de novo. Nunca confie no cliente —
   o JavaScript do utilizador está sob o controlo dele.
-- **Só quando o dado for consequential:** uma consulta a uma fonte oficial. E
+- **Só quando o dado for relevante:** uma consulta a uma fonte oficial. E
   isso é um fluxo assíncrono, com cache, com custo e com política de
   retenção — não uma chamada no `blur` do campo.
 
@@ -122,16 +122,6 @@ a existência quando o valor realmente importa, e guarda o resultado.
 Um validador que só faz a primeira parte não está errado — está honesto sobre o
 que sabe. O problema aparece quando o sistema inteiro trata "formato válido" como
 "pessoa verificada", e essa é uma decisão de arquitectura, não de validação.
-
-## Resumo
-
-- O dígito verificador é aritmética pura: pega erro de digitação, não verifica
-  existência.
-- Módulo 11, com pesos descrescentes e uma correção para resto 0 ou 1.
-- Dígitos repetidos são rejeitados por regra de sanidade, não pela aritmética.
-- Uma mutação de um dígito pode continuar válida; é redundância, não falha.
-- Frontend filtra forma; backend repete a validação; fonte oficial só quando o
-  dado pesa.
 
 Se você chegou aqui querendo validar um documento num formulário, a parte
 honesta é esta: o que você consegue verificar em milissegundos diz respeito à
