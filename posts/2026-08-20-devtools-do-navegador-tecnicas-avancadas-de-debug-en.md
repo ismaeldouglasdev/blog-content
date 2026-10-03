@@ -26,9 +26,9 @@ Have you ever spent hours trapped by a bug that disappears as soon as you try to
 
 The first thing that usually catches attention when the application starts to stutter is the response time. The **Performance** panel (or **Profiler** in browsers that still use the old name) allows you to record the execution of the page and analyze each frame, each function call, and each layout event. In practice, I usually follow three steps:
 
-1. **Record a real scenario** – no "random clicking". Reproduce the sequence that the end user would perform, such as opening a modal, scrolling the page, or submitting a form.
-2. **Identify "long tasks"** – Chrome highlights sections that exceed 50 ms. Click on them to see the call stack.
-3. **Isolate the culprit** – use the "Bottom-Up" tool to discover which function consumes the most total time.
+1. **Record a real scenario**: no "random clicking". Reproduce the sequence that the end user would perform, such as opening a modal, scrolling the page, or submitting a form.
+2. **Identify "long tasks"**: Chrome highlights sections that exceed 50 ms. Click on them to see the call stack.
+3. **Isolate the culprit**: use the "Bottom-Up" tool to discover which function consumes the most total time.
 
 A classic example is a rendering loop that tries to update 10,000 rows of a table every frame. The code below demonstrates how the simple addition of `requestAnimationFrame` can transform "freezing code" into something fluid:
 

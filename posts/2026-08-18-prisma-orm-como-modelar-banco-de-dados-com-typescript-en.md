@@ -15,7 +15,7 @@ translation_of: "2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescrip
 
 The sentence may sound cliché, but it captures the reality of modern application developers. While raw queries give you total control, they also bring **cognitive load**, risk of *SQL injection*, and painful maintenance. An **ORM** (Object‑Relational Mapping) abstracts the persistence layer, letting you work with typed objects, versioned migrations, and, best of all, **autocomplete** and **validation** in your editor.
 
-**Prisma** has been gaining traction in the TypeScript ecosystem by combining the productivity of an ORM with the performance of optimized queries. In this article we’ll walk through the entire lifecycle of a data model – from schema definition to query optimization – using a **project‑management SaaS** example. If you already use Node.js/TypeScript, you’ll see that Prisma can be the “safety net” your stack was missing.
+**Prisma** has been gaining traction in the TypeScript ecosystem by combining the productivity of an ORM with the performance of optimized queries. In this article we’ll walk through the entire lifecycle of a data model, from schema definition to query optimization, using a **project‑management SaaS** example. If you already use Node.js/TypeScript, you’ll see that Prisma can be the “safety net” your stack was missing.
 
 ---
 
@@ -154,9 +154,9 @@ enum TaskStatus {
 
 **Practical tips**
 
-* **UUID as PK** – avoids collisions in distributed environments and simplifies replication.  
-* **Enums** – bring type safety to status and role fields, eliminating *magic strings*.  
-* **Indexes** – Prisma lets you declare indexes directly in the schema (`@@index`). They are created in migrations, saving you manual tuning time.
+* **UUID as PK**: avoids collisions in distributed environments and simplifies replication.  
+* **Enums**: bring type safety to status and role fields, eliminating *magic strings*.  
+* **Indexes**: Prisma lets you declare indexes directly in the schema (`@@index`). They are created in migrations, saving you manual tuning time.
 
 ---
 
@@ -313,7 +313,7 @@ async function moveTaskToProject(taskId: string, newProjectId: string) {
 }
 ```
 
-Transactions guarantee **ACID** across multiple operations – essential when you need to update more than one table at once (e.g., moving a task and updating the project’s timestamp).
+Transactions guarantee **ACID** across multiple operations, essential when you need to update more than one table at once (e.g., moving a task and updating the project’s timestamp).
 
 ### 4. Upserts (insert or update)
 
@@ -395,9 +395,9 @@ async function createUser(input: CreateUserInput) {
 
 ### 1. Use `@@index` and `@unique` strategically
 
-* **Frequently searched fields** – `email`, `domain`, `organizationId + name`.  
-* **Combined filters** – `projectId + status` for task listings.  
-* **Ordering** – indexes that support `ORDER BY` avoid *filesort*.
+* **Frequently searched fields**: `email`, `domain`, `organizationId + name`.  
+* **Combined filters**: `projectId + status` for task listings.  
+* **Ordering**: indexes that support `ORDER BY` avoid *filesort*.
 
 ### 2. Avoid the **N+1 problem** with `include`
 
@@ -451,7 +451,7 @@ Logging query durations helps spot bottlenecks before they surface in production
 
 Prisma is not just an SQL *wrapper*; it’s a **data‑modeling framework** that brings strong typing, automatic migrations, and a fluent API for advanced queries. When used correctly, it cuts development time, improves security, and still delivers performance comparable to well‑written raw SQL.
 
-When modeling a SaaS, a clear schema – with enums, well‑defined relations, and indexes – pays dividends throughout the application’s lifecycle. Pair that with solid validation practices (Zod), atomic transactions, and query monitoring, and you’ll have a robust foundation ready to scale without surprises.
+When modeling a SaaS, a clear schema, with enums, well‑defined relations, and indexes, pays dividends throughout the application’s lifecycle. Pair that with solid validation practices (Zod), atomic transactions, and query monitoring, and you’ll have a robust foundation ready to scale without surprises.
 
 > **Prisma + TypeScript = fewer bugs, higher productivity, and code that truly talks to the database.**  
 

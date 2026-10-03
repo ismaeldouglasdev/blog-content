@@ -19,8 +19,8 @@ If you started coding in React before version 16.8, you probably still remembe
 
 Then, Hooks arrived as a silent revolution. They brought two core promises:
 
-1. **Simple composition of state logic** – no inheritance hierarchies or complicated “wrapper components”.  
-2. **Direct access to the lifecycle** – everything inside the same function, without needing to create classes.
+1. **Simple composition of state logic**: no inheritance hierarchies or complicated “wrapper components”.  
+2. **Direct access to the lifecycle**: everything inside the same function, without needing to create classes.
 
 But, like any powerful tool, Hooks require deep understanding. It’s not enough to use `useState` and `useEffect` superficially; to truly unlock React’s potential, we need to master *advanced hooks*: `useEffect` with proper cleanup, `useRef` for persistent values and DOM references, and, of course, create our own reusable *custom hooks*.
 
@@ -32,7 +32,7 @@ In this article, we’ll dive into the details that make a difference in the day
 <figure>
   <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks.jpg" alt="The React logo, the open source JavaScript library that popularized Hooks." loading="lazy" />
   <figcaption>
-    The React logo, the open source JavaScript library that popularized Hooks. Image: <a href="https://commons.wikimedia.org/wiki/File%3AReact-icon.svg">React-icon.svg</a> by Facebook —
+    The React logo, the open source JavaScript library that popularized Hooks. Image: <a href="https://commons.wikimedia.org/wiki/File%3AReact-icon.svg">React-icon.svg</a> by Facebook  ·
     <a href="https://en.wikipedia.org/wiki/Public_domain">Public domain</a> · via Wikimedia Commons
   </figcaption>
 </figure>
@@ -101,7 +101,7 @@ function useUser(id: string) {
 - **Always include the variables used inside the effect** (`id` in the example) in the dependency list. The ESLint plugin `react-hooks/exhaustive-deps` helps detect missing ones.
 - **AbortController** works in modern browsers and in Node (via `node-fetch`). For legacy support, use libraries like `axios` that already have built‑in cancellation.
 
-### Example 2 – `setInterval` with cleanup
+### Example 2, `setInterval` with cleanup
 
 A simple second‑by‑second counter seems easy, but if we don’t clear the interval, the timer will keep running even after the component unmounts.
 
@@ -129,14 +129,14 @@ There's no problem splitting the logic into several effects, each handling a dif
 
 ```tsx
 useEffect(() => {
-  // effect A – listens to resize events
+  // effect A: listens to resize events
   const onResize = () => console.log(window.innerWidth);
   window.addEventListener('resize', onResize);
   return () => window.removeEventListener('resize', onResize);
 }, []); // effect A has no props/state dependencies
 
 useEffect(() => {
-  // effect B – fetch data when `userId` changes
+  // effect B: fetch data when `userId` changes
   fetchUser(userId);
 }, [userId]); // effect B depends only on userId
 ```
@@ -145,8 +145,8 @@ useEffect(() => {
 
 ### What does `useRef` actually store?
 
-- **A DOM reference** – widely used for focusing inputs, measuring elements, or integrating third-party libraries.
-- **A mutable value that persists across renders** – unlike `useState`, changing `ref.current` does **not** trigger a new render.
+- **A DOM reference**: widely used for focusing inputs, measuring elements, or integrating third-party libraries.
+- **A mutable value that persists across renders**: unlike `useState`, changing `ref.current` does **not** trigger a new render.
 
 ### Example 1: Focusing a text field on mount
 
@@ -210,9 +210,9 @@ export function RenderCounter() {
 
 ### Advanced tips
 
-1. **Avoid using `ref` as "state"** – changing `ref.current` does not update the UI. If the UI depends on the value, use `useState`.
-2. **References to third-party components** – when integrating with libraries like `Chart.js` or `Mapbox`, create the canvas or container with a `ref` and initialize the library inside a `useEffect` with a cleanup function that destroys the instance.
-3. **Persistence across routes** – `useRef` can store temporary data that doesn't need to be serialized in the URL or in `localStorage`. It is ideal for storing API "caches" that don't justify full persistence.
+1. **Avoid using `ref` as "state"**: changing `ref.current` does not update the UI. If the UI depends on the value, use `useState`.
+2. **References to third-party components**: when integrating with libraries like `Chart.js` or `Mapbox`, create the canvas or container with a `ref` and initialize the library inside a `useEffect` with a cleanup function that destroys the instance.
+3. **Persistence across routes**: `useRef` can store temporary data that doesn't need to be serialized in the URL or in `localStorage`. It is ideal for storing API "caches" that don't justify full persistence.
 
 ---
 
@@ -309,7 +309,7 @@ export function useLocalStorage<T>(key: string, initialValue: T) {
     try {
       window.localStorage.setItem(key, JSON.stringify(value));
     } catch {
-      // silent failure – could be quota exceeded
+      // silent failure: could be quota exceeded
     }
   }, [key, value]);
 
@@ -333,8 +333,8 @@ function ThemeToggle() {
 
 **Best practices**
 
-- **Selective persistence** – not every state deserves to be in `localStorage`. Evaluate if the data will be reused across sessions.
-- **Versioning** – when changing the structure of the stored object, consider clearing the key or migrating the data to avoid `JSON.parse` failures.
+- **Selective persistence**: not every state deserves to be in `localStorage`. Evaluate if the data will be reused across sessions.
+- **Versioning**: when changing the structure of the stored object, consider clearing the key or migrating the data to avoid `JSON.parse` failures.
 
 ### 3. `useDebounce`: Debounce values or callbacks
 
