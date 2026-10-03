@@ -15,7 +15,7 @@ you need to merge two environments, import data, accept events from a machine
 that never touched your database, and `1` stops being true.
 
 That's when most people reach for the UUID. And they reach for it thinking the
-UUID solves a uniqueness problem. It does — but that's the least interesting
+UUID solves a uniqueness problem. It does, but that's the least interesting
 part of it.
 
 ## What a UUID actually is
@@ -28,7 +28,7 @@ in RFC 4122, written as eight-four-four-four-twelve hexadecimal characters:
 ```
 
 The "universally" is what trips people up. It isn't a magic property of the
-number — it's a property of the **process that generated it**. Nobody
+number. It's a property of the **process that generated it**. Nobody
 coordinates these IDs. Every machine, every service, every browser generates its
 own, and the chance of a collision between two of them is negligible.
 
@@ -46,8 +46,8 @@ In a v4 UUID like `9f8e7d6c-5b4a-4392-8180-7f6e5d4c3b2a`:
 
 - The first block `9f8e7d6c` is 32 random bits
 - The second block `5b4a` is 16 more random bits
-- The third block `4392` starts with the nibble `4` — the **version identifier**
-- The fourth block `8180` starts with `8`, `9`, `a`, or `b` — the **variant** (the
+- The third block `4392` starts with the nibble `4`: the **version identifier**
+- The fourth block `8180` starts with `8`, `9`, `a`, or `b`: the **variant** (the
   bit layout reserved by the RFC)
 - The fifth block is random
 
@@ -71,7 +71,7 @@ milliseconds.
 
 There are escapes for both, and they're worth knowing before you choose. **UUID
 v7** is the direct answer: 48 timestamp bits at the top, randomness below. It
-stays a UUID — same format, same compatibility — but it sorts by time, which
+stays a UUID, with the same format and the same compatibility, but it sorts by time, which
 fixes the page split and makes the index behave like a growing integer. For most
 new systems, that's the call I'd make without thinking hard about it.
 
@@ -114,7 +114,7 @@ function badId() {
 ```
 
 `Math.random()` isn't a cryptographic generator, and the npm `uuid` package used
-it as a fallback **before version 7** — v7 removed that path, and npm deprecated
+it as a fallback **before version 7**: v7 removed that path, and npm deprecated
 the older versions over it. With platform APIs available, the package became a
 dependency you don't need: `crypto.randomUUID()` is in the browser and in Node.js
 and does the whole job.
@@ -126,8 +126,8 @@ export function generateBatch(count) {
 }
 ```
 
-If the environment lacks `crypto.randomUUID()` — rare, but it happens on older
-Node and in non-secure contexts — the fallback is `crypto.getRandomValues()` with
+If the environment lacks `crypto.randomUUID()`, which is rare but happens on older
+Node and in non-secure contexts. The fallback is `crypto.getRandomValues()` with
 the version and variant bits set by hand:
 
 ```js
@@ -141,7 +141,7 @@ function uuidV4Fallback() {
 ```
 
 That's enough to generate one or a few. When you need dozens, you can roll it
-yourself — but at that point the question worth asking is whether you're minting
+yourself. But at that point the question worth asking is whether you're minting
 thousands of ids client-side per request, which is a sign the architecture wants
 a conversation.
 
