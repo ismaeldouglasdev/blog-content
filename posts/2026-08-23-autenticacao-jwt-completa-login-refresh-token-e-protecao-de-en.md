@@ -314,7 +314,7 @@ Choose the approach that best fits your infrastructure. In my experience, Redis 
 <figure>
   <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de.jpg" alt="Cybersecurity vs. information security: complementary concepts." loading="lazy" />
   <figcaption>
-    Cybersecurity vs. information security: complementary concepts. — Image: <a href="https://commons.wikimedia.org/wiki/File%3ACybersecurity_vs_information_security.png">Cybersecurity vs information security.png</a> by Pcoronaf —
+    Cybersecurity vs. information security: complementary concepts. Image: <a href="https://commons.wikimedia.org/wiki/File%3ACybersecurity_vs_information_security.png">Cybersecurity vs information security.png</a> by Pcoronaf  ·
     <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · via Wikimedia Commons
   </figcaption>
 </figure>

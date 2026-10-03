@@ -34,7 +34,7 @@ Vamos começar definindo o que o nosso SaaS precisa:
 <figure>
   <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript.jpg" alt="Exemplo de schema de banco de dados (diagrama do MediaWiki 1.41.0)." loading="lazy" />
   <figcaption>
-    Exemplo de schema de banco de dados (diagrama do MediaWiki 1.41.0). — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AMediaWiki_1.41.0_database_schema.png">MediaWiki 1.41.0 database schema.png</a> por Nick Jenkins, Timo Tijhof —
+    Exemplo de schema de banco de dados (diagrama do MediaWiki 1.41.0). Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AMediaWiki_1.41.0_database_schema.png">MediaWiki 1.41.0 database schema.png</a> por Nick Jenkins, Timo Tijhof —
     <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · via Wikimedia Commons
   </figcaption>
 </figure>
@@ -161,7 +161,7 @@ enum TaskStatus {
 
 ## Relacionamentos (1:1, 1:N, N:M)
 
-### 1:1 – Usuário ↔ Organização (owner)
+### 1:1 · Usuário ↔ Organização (owner)
 
 ```prisma
 model Organization {
@@ -172,7 +172,7 @@ model Organization {
 
 O `ownerId` é único por organização, garantindo que **apenas um** usuário seja dono. No Prisma, a relação 1:1 é declarada usando `@relation` e o campo de chave estrangeira.
 
-### 1:N – Organização → Usuários (membros)
+### 1:N · Organização → Usuários (membros)
 
 ```prisma
 model Organization {
@@ -191,7 +191,7 @@ model User {
 
 O campo opcional (`?`) permite que um usuário ainda não pertença a nenhuma organização (por exemplo, durante o onboarding).
 
-### N:M – Usuário ↔ Projeto (colaboradores)
+### N:M · Usuário ↔ Projeto (colaboradores)
 
 Embora o exemplo acima não precise de N:M direto, caso queira permitir que **vários usuários colaborem em vários projetos**, basta criar uma tabela de junção automática:
 
@@ -408,7 +408,7 @@ const projects = await prisma.project.findMany({
 });
 ```
 
-### 3. `select` vs `include` – quando usar?
+### 3. `select` vs `include`: quando usar?
 
 * **`select`**: quando você só precisa de alguns campos da relação (ex.: lista de nomes de usuários).
 * **`include`**: quando precisa da relação completa ou de filtros avançados dentro dela.

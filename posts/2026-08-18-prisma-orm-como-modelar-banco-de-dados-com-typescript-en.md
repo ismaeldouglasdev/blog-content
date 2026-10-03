@@ -35,7 +35,7 @@ Let’s start by defining what our SaaS needs:
 <figure>
   <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript.jpg" alt="Example of a database schema (MediaWiki 1.41.0 diagram)." loading="lazy" />
   <figcaption>
-    Example of a database schema (MediaWiki 1.41.0 diagram). — Image: <a href="https://commons.wikimedia.org/wiki/File%3AMediaWiki_1.41.0_database_schema.png">MediaWiki 1.41.0 database schema.png</a> by Nick Jenkins, Timo Tijhof —
+    Example of a database schema (MediaWiki 1.41.0 diagram). Image: <a href="https://commons.wikimedia.org/wiki/File%3AMediaWiki_1.41.0_database_schema.png">MediaWiki 1.41.0 database schema.png</a> by Nick Jenkins, Timo Tijhof  ·
     <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · via Wikimedia Commons
   </figcaption>
 </figure>
@@ -162,7 +162,7 @@ enum TaskStatus {
 
 ## Relationships (1:1, 1:N, N:M)
 
-### 1:1 – User ↔ Organization (owner)
+### 1:1 · User ↔ Organization (owner)
 
 ```prisma
 model Organization {
@@ -173,7 +173,7 @@ model Organization {
 
 `ownerId` is unique per organization, guaranteeing that **only one** user is the owner. In Prisma, a 1:1 relation is declared using `@relation` and the foreign‑key field.
 
-### 1:N – Organization → Users (members)
+### 1:N · Organization → Users (members)
 
 ```prisma
 model Organization {
@@ -192,7 +192,7 @@ model User {
 
 The optional (`?`) field allows a user to belong to no organization yet (e.g., during onboarding).
 
-### N:M – User ↔ Project (collaborators)
+### N:M · User ↔ Project (collaborators)
 
 Although the example above doesn’t need a direct N:M, if you want to allow **multiple users to collaborate on multiple projects**, just create an automatic join table:
 
@@ -409,7 +409,7 @@ const projects = await prisma.project.findMany({
 });
 ```
 
-### 3. `select` vs `include` – when to use which?
+### 3. `select` vs `include`: when to use which?
 
 * **`select`**: when you only need a few fields from the relation (e.g., a list of user names).  
 * **`include`**: when you need the full relation or advanced filters inside it.

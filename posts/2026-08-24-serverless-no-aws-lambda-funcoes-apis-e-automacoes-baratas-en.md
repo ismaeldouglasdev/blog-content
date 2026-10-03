@@ -22,7 +22,7 @@ Below, I’ll show how to build functions, APIs, and triggers in a practical and
 <figure>
   <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-24-serverless-no-aws-lambda-funcoes-apis-e-automacoes-baratas.jpg" alt="Wikimedia Foundation servers: the infrastructure behind on-demand services." loading="lazy" />
   <figcaption>
-    Wikimedia Foundation servers: the infrastructure behind on-demand services. — Image: <a href="https://commons.wikimedia.org/wiki/File%3AWikimedia_Foundation_Servers-8055_08.jpg">Wikimedia Foundation Servers-8055 08.jpg</a> by Victorgrigas —
+    Wikimedia Foundation servers: the infrastructure behind on-demand services. Image: <a href="https://commons.wikimedia.org/wiki/File%3AWikimedia_Foundation_Servers-8055_08.jpg">Wikimedia Foundation Servers-8055 08.jpg</a> by Victorgrigas  ·
     <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> · via Wikimedia Commons
   </figcaption>
 </figure>

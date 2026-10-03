@@ -21,7 +21,7 @@ Neste artigo, vamos explorar como o Flexbox e o Grid funcionam, suas principais 
 <figure>
   <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-17-css-grid-e-flexbox-quando-usar-cada-um.jpg" alt="Design responsivo: o mesmo site adaptado para desktop e mobile." loading="lazy" />
   <figcaption>
-    Design responsivo: o mesmo site adaptado para desktop e mobile. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ADesign_responsivo.png">Design responsivo.png</a> por Diego Mariano —
+    Design responsivo: o mesmo site adaptado para desktop e mobile. Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ADesign_responsivo.png">Design responsivo.png</a> por Diego Mariano —
     <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · via Wikimedia Commons
   </figcaption>
 </figure>

@@ -29,7 +29,7 @@ Neste artigo, vamos mergulhar nos detalhes que fazem a diferença no dia‑a‑d
 <figure>
   <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks.jpg" alt="O logo do React, a biblioteca JavaScript de código aberto que popularizou os Hooks." loading="lazy" />
   <figcaption>
-    O logo do React, a biblioteca JavaScript de código aberto que popularizou os Hooks. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AReact-icon.svg">React-icon.svg</a> por Facebook —
+    O logo do React, a biblioteca JavaScript de código aberto que popularizou os Hooks. Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AReact-icon.svg">React-icon.svg</a> por Facebook —
     <a href="https://en.wikipedia.org/wiki/Public_domain">Public domain</a> · via Wikimedia Commons
   </figcaption>
 </figure>
@@ -53,7 +53,7 @@ useEffect(() => {
 - O **valor retornado** (se houver) será chamado **antes** da próxima execução do efeito ou quando o componente for desmontado.
 - O **segundo argumento** (array de dependências) controla *quando* o efeito deve ser re‑executado.
 
-### Exemplo 1 – Fetch de dados com cancelamento
+### Exemplo 1: Fetch de dados com cancelamento
 
 Imagine um componente que busca detalhes de um usuário ao montar. Se o usuário navegar para outra página antes da requisição terminar, precisamos abortar a chamada para evitar *memory leaks* e atualizações de estado em componentes desmontados.
 
@@ -147,7 +147,7 @@ useEffect(() => {
 - **Referência ao DOM** – muito usado para focar inputs, medir elementos ou integrar bibliotecas de terceiros.
 - **Valor mutável que persiste entre renders** – ao contrário de `useState`, mudar `ref.current` **não** dispara nova renderização.
 
-### Exemplo 1 – Focar um campo de texto ao montar
+### Exemplo 1: Focar um campo de texto ao montar
 
 ```tsx
 import { useEffect, useRef } from 'react';
@@ -163,7 +163,7 @@ export function SearchBox() {
 }
 ```
 
-### Exemplo 2 – Guardar o valor anterior de uma prop
+### Exemplo 2: Guardar o valor anterior de uma prop
 
 Muitas vezes precisamos comparar o valor atual de uma prop com o anterior (por exemplo, para disparar animações). `useRef` permite armazenar o “valor anterior” sem causar re‑render.
 
@@ -192,7 +192,7 @@ export function PriceTag({ price }: { price: number }) {
 }
 ```
 
-### Exemplo 3 – Contador de renderizações sem re‑render
+### Exemplo 3: Contador de renderizações sem re‑render
 
 ```tsx
 import { useRef } from 'react';
@@ -219,7 +219,7 @@ export function RenderCounter() {
 
 Criar *custom hooks* é a arte de **extrair lógica reutilizável** e **isolar side‑effects**. Quando bem projetados, eles tornam o código mais declarativo e testável.
 
-### 1. `useFetch` – Busca genérica com estado de loading e erro
+### 1. `useFetch`: Busca genérica com estado de loading e erro
 
 ```tsx
 import { useEffect, useState } from 'react';
@@ -289,7 +289,7 @@ function UsersList() {
 
 > **Dica:** Sempre inclua `JSON.stringify(options)` nas dependências se quiser que mudanças em headers ou query params reinicializem a requisição. Caso as opções sejam estáticas, passe um objeto memoizado com `useMemo`.
 
-### 2. `useLocalStorage` – Sincroniza estado com `localStorage`
+### 2. `useLocalStorage`: Sincroniza estado com `localStorage`
 
 ```tsx
 import { useState, useEffect } from 'react';
@@ -335,7 +335,7 @@ function ThemeToggle() {
 - **Persistência seletiva** – nem todo estado merece ficar no `localStorage`. Avalie se o dado será reutilizado entre sessões.
 - **Versionamento** – ao mudar a estrutura do objeto armazenado, considere limpar a chave ou migrar os dados para evitar `JSON.parse` falho.
 
-### 3. `useDebounce` – Debounce de valores ou callbacks
+### 3. `useDebounce`: Debounce de valores ou callbacks
 
 Ideal para buscas “type‑ahead”, onde queremos esperar o usuário parar de digitar antes de disparar a requisição.
 

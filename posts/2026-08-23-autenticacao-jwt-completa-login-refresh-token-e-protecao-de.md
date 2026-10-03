@@ -309,7 +309,7 @@ Escolha a abordagem que melhor se adapta à sua infraestrutura. Na minha experi�
 <figure>
   <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de.jpg" alt="Cibersegurança vs. segurança da informação: conceitos complementares." loading="lazy" />
   <figcaption>
-    Cibersegurança vs. segurança da informação: conceitos complementares. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ACybersecurity_vs_information_security.png">Cybersecurity vs information security.png</a> por Pcoronaf —
+    Cibersegurança vs. segurança da informação: conceitos complementares. Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ACybersecurity_vs_information_security.png">Cybersecurity vs information security.png</a> por Pcoronaf —
     <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · via Wikimedia Commons
   </figcaption>
 </figure>

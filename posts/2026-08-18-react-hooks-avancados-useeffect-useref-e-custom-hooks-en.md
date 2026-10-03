@@ -13,7 +13,7 @@ translation_of: "2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hook
 
 ## Introduction: Why Hooks Changed React?
 
-> **“In 2018, 85 % of React projects had already adopted Hooks.”** – State of React Survey 2023  
+> **“In 2018, 85 % of React projects had already adopted Hooks.”**, State of React Survey 2023  
 
 If you started coding in React before version 16.8, you probably still remember the saga of *class components*: `componentDidMount`, `componentWillUnmount`, `this.setState`, and the endless battle with method *binding*. It was a period of limited productivity and, let’s face it, verbose code.
 
@@ -32,7 +32,7 @@ In this article, we’ll dive into the details that make a difference in the day
 <figure>
   <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hooks.jpg" alt="The React logo, the open source JavaScript library that popularized Hooks." loading="lazy" />
   <figcaption>
-    The React logo, the open source JavaScript library that popularized Hooks. — Image: <a href="https://commons.wikimedia.org/wiki/File%3AReact-icon.svg">React-icon.svg</a> by Facebook —
+    The React logo, the open source JavaScript library that popularized Hooks. Image: <a href="https://commons.wikimedia.org/wiki/File%3AReact-icon.svg">React-icon.svg</a> by Facebook —
     <a href="https://en.wikipedia.org/wiki/Public_domain">Public domain</a> · via Wikimedia Commons
   </figcaption>
 </figure>
@@ -56,7 +56,7 @@ useEffect(() => {
 - The **returned value** (if any) will be called **before** the next effect execution or when the component unmounts.
 - The **second argument** (dependency array) controls *when* the effect should re‑run.
 
-### Example 1 – Data fetch with cancellation
+### Example 1: Data fetch with cancellation
 
 Imagine a component that fetches a user's details on mount. If the user navigates away before the request finishes, we need to abort the call to avoid *memory leaks* and state updates in unmounted components.
 
@@ -148,7 +148,7 @@ useEffect(() => {
 - **A DOM reference** – widely used for focusing inputs, measuring elements, or integrating third-party libraries.
 - **A mutable value that persists across renders** – unlike `useState`, changing `ref.current` does **not** trigger a new render.
 
-### Example 1 – Focusing a text field on mount
+### Example 1: Focusing a text field on mount
 
 ```tsx
 import { useEffect, useRef } from 'react';
@@ -164,7 +164,7 @@ export function SearchBox() {
 }
 ```
 
-### Example 2 – Storing the previous value of a prop
+### Example 2: Storing the previous value of a prop
 
 We often need to compare the current value of a prop with the previous one (for example, to trigger animations). `useRef` allows us to store the "previous value" without causing a re-render.
 
@@ -193,7 +193,7 @@ export function PriceTag({ price }: { price: number }) {
 }
 ```
 
-### Example 3 – Render counter without re-rendering
+### Example 3: Render counter without re-rendering
 
 ```tsx
 import { useRef } from 'react';
@@ -220,7 +220,7 @@ export function RenderCounter() {
 
 Creating *custom hooks* is the art of **extracting reusable logic** and **isolating side effects**. When well-designed, they make code more declarative and testable.
 
-### 1. `useFetch` – Generic fetch with loading and error states
+### 1. `useFetch`: Generic fetch with loading and error states
 
 ```tsx
 import { useEffect, useState } from 'react';
@@ -290,7 +290,7 @@ function UsersList() {
 
 > **Tip:** Always include `JSON.stringify(options)` in the dependencies if you want changes to headers or query params to re-trigger the request. If the options are static, pass an object memoized with `useMemo`.
 
-### 2. `useLocalStorage` – Sync state with `localStorage`
+### 2. `useLocalStorage`: Sync state with `localStorage`
 
 ```tsx
 import { useState, useEffect } from 'react';
@@ -336,7 +336,7 @@ function ThemeToggle() {
 - **Selective persistence** – not every state deserves to be in `localStorage`. Evaluate if the data will be reused across sessions.
 - **Versioning** – when changing the structure of the stored object, consider clearing the key or migrating the data to avoid `JSON.parse` failures.
 
-### 3. `useDebounce` – Debounce values or callbacks
+### 3. `useDebounce`: Debounce values or callbacks
 
 Ideal for "type-ahead" searches, where we want to wait for the user to stop typing before firing the request.
 
