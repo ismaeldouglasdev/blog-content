@@ -311,6 +311,14 @@
         "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mwy2sefmja2d",
         "telegram": "66"
       }
+    },
+    "2026-10-05-machine-learning-com-python-do-scikit-learn-ao-pytorch-em": {
+      "url": "https://blog.ismaeltech.com/2026-10-05-machine-learning-com-python-do-scikit-learn-ao-pytorch-em",
+      "posted_at": "2026-10-05T14:08:04.900925+00:00",
+      "platforms": {
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mx53nyo3ce2s",
+        "telegram": "67"
+      }
     }
   }
 }
