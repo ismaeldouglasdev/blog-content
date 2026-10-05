@@ -12,7 +12,7 @@ Colocar uma aplicação web em produção expondo diretamente a porta do Node.js
 
 E aqui que o Nginx entra como um divisor de águas. Criado no início dos anos 2000 por Igor Sysoev para resolver o famoso problema C10k (sustentar dez mil conexões simultâneas em uma única máquina), o Nginx usa uma arquitetura assíncrona orientada a eventos. Em vez de abrir uma thread pesada para cada conexão TCP, ele processa milhares de clientes com consumo mínimo de memória.
 
-Configurar o Nginx como reverse proxy transforma a arquitetura de qualquer aplicação. Ele funciona como uma camada de blindagem e performance: assume a terminação SSL, distribui carga entre instâncias, aplicá cache de respostas e protege o backend contra abusos de requisições.
+Configurar o Nginx como reverse proxy transforma a arquitetura de qualquer aplicação. Ele funciona como uma camada de blindagem e performance: assume a terminação SSL, distribui carga entre instâncias, aplica cache de respostas e protege o backend contra abusos de requisições.
 
 ## Anatomia básica de um reverse proxy
 
@@ -51,7 +51,7 @@ As diretivas `Upgrade` e `Connection` garantem compatibilidade imediata com WebS
 
 Subir um serviço sem criptografia hoje e inviável. Além da questão básica de privacidade, navegadores modernos penalizam conexões puras em HTTP, e APIs bloqueiam chamadas inseguras por padrão.
 
-A combinação de Nginx com o Certbot da Electronic Frontier Foundation (EFF) torná a emissao e renovação de certificados SSL/TLS da Let's Encrypt praticamente automática no Linux.
+A combinação de Nginx com o Certbot da Electronic Frontier Foundation (EFF) torna a emissao e renovação de certificados SSL/TLS da Let's Encrypt praticamente automática no Linux.
 
 Para instalar o Certbot no Ubuntu, Debian ou em distribuições baseadas em Arch Linux, basta utilizar o gerenciador de pacotes padrão e acionar o plugin próprio do Nginx:
 

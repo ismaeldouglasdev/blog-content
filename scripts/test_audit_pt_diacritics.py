@@ -66,6 +66,16 @@ class ExitCodeTests(unittest.TestCase):
             c.add(1, "Processo e acesso são duas palavras.")
             self.assertEqual(c.run(), 0)
 
+    def test_enclitic_accent_is_not_a_missing_diacritic(self):
+        """Regressao: com pronome enclitico o acento do verbo passa a ser
+        gramatical ("torná-se"), nao um diacritico perdido. Sem esta regra o
+        corpus ensinava "torna -> torná" e o `torna` solto passava a ser
+        julgado -- o --fix escrevia `torná` onde o verbo nao leva acento."""
+        with Corpus() as c:
+            c.add(1, "No desktop, torná-se horizontal.")
+            c.add(2, "Isso torna mais fácil a migração.")
+            self.assertEqual(c.run(), 0)
+
 
 class ApplyFixTests(unittest.TestCase):
     def build(self, *bodies):

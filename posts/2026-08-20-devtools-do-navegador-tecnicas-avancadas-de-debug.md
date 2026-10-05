@@ -191,7 +191,7 @@ console.log('Buscando perfil...');
 console.groupEnd();
 ```
 
-- **`monitorEvents`**: registrá todos os eventos disparados em um elemento. Ideal para descobrir por que um clique não chega ao handler.
+- **`monitorEvents`**: registra todos os eventos disparados em um elemento. Ideal para descobrir por que um clique não chega ao handler.
 
 ```js
 const botao = document.querySelector('.botao');

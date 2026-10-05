@@ -13,7 +13,7 @@ A escolha da linguagem de programação certa para um projeto é uma decisão cr
 ## Go: Simplicidade e Produtividade
 Go, também conhecida como Golang, foi criada pelo time do Google em 2009 com o objetivo de ser uma linguagem simples, eficiente e fácil de usar. Ela se destaca por sua sintaxe minimalista, concisão e capacidade de lidar com concorrência de forma eficaz. Go é projetada para ser uma linguagem de sistemas, ou seja, ela é capaz de lidar com operações de baixo nível, como manipulação de memória e E/S, de forma segura e eficiente. Além disso, Go tem um ecossistema crescente, com uma comunidade ativa e uma grande quantidade de bibliotecas e ferramentas disponíveis.
 
-Um dos principais pontos fortes de Go é sua simplicidade. A linguagem tem um conjunto pequeno de palavras-chave e uma sintaxe que é fácil de aprender, mesmo para desenvolvedores que não têm experiência prévia com a linguagem. Isso, combinado com sua eficiência e capacidade de lidar com concorrência, torná Go uma escolha popular para desenvolver sistemas distribuídos, redes e aplicações que requerem alta performance.
+Um dos principais pontos fortes de Go é sua simplicidade. A linguagem tem um conjunto pequeno de palavras-chave e uma sintaxe que é fácil de aprender, mesmo para desenvolvedores que não têm experiência prévia com a linguagem. Isso, combinado com sua eficiência e capacidade de lidar com concorrência, torna Go uma escolha popular para desenvolver sistemas distribuídos, redes e aplicações que requerem alta performance.
 
 
 <figure>

@@ -67,6 +67,13 @@ NEVER_FLAG = {
 # Siglas e marcas aparecem em CAIXA ALTA; ignoramos token todo maiusculo.
 CODE_HINT = re.compile(r"^[A-Z]{2,}$")
 
+# Verbo + pronome enclitico. O enclitico desloca a silaba tonica para a ultima
+# silaba do verbo, e o acento passa a ser obrigatorio: "torna-se" escreve-se
+# "torná-se". Estas construcoes nao entram no vocabulario (ver build_vocabulary).
+ENCLITIC = re.compile(
+    r"[A-Za-zÀ-ÿ]+-(?:se|lo|la|los|las|nos|na|me|te|lhe|lhes|vos|os|as|num|uma)\b"
+)
+
 
 def strip_accents(word: str) -> str:
     decomposed = unicodedata.normalize("NFKD", word)
@@ -110,7 +117,14 @@ def build_vocabulary(paths: list) -> dict:
     """Mapeia forma acentuada -> forma sem acento, so do que o corpus usa."""
     vocab = defaultdict(set)
     for path in paths:
-        for word in re.findall(r"[A-Za-zÀ-ÿ]+", read_body(path)):
+        # As construcoes com enclitico saem antes de tokenizar. La o acento do
+        # verbo e gramatical e obrigatorio ("torna-se" mas "torná-se"), porque o
+        # verbo deixa de ter a ultima silaba tonica. Sem esta remocao o corpus
+        # ensina "torna -> torná", e o --fix passa a escrever `torná` tambem
+        # onde o verbo esta solto -- que e como 12 verbs foram partidos num post.
+        # `re.sub` com " " mantem a contagem de linhas, como read_body.
+        text = ENCLITIC.sub(" ", read_body(path))
+        for word in re.findall(r"[A-Za-zÀ-ÿ]+", text):
             if CODE_HINT.match(word):
                 continue
             low = word.lower()

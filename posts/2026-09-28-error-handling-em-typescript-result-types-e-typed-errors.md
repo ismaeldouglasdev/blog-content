@@ -10,7 +10,7 @@ lang: "pt"
 
 ## Error handling em TypeScript: Result types e typed errors
 
-Lidar com erros em aplicações é uma tarefa desafiadora e muitas vezes negligenciada por desenvolvedores. Em vez de apenas lançar exceções, é fundamental considerar como os erros são tratados e propagados através do código. Isso se torná ainda mais importante em projetos grandes, onde a clareza e a robustez do tratamento de erros podem fazer a diferença entre uma aplicação estável e uma cheia de bugs. Aqui, vou mostrar como os tipos de resultados (`Result<T, E>`) e erros tipados podem melhorar a forma como lidamos com falhas em TypeScript.
+Lidar com erros em aplicações é uma tarefa desafiadora e muitas vezes negligenciada por desenvolvedores. Em vez de apenas lançar exceções, é fundamental considerar como os erros são tratados e propagados através do código. Isso se torna ainda mais importante em projetos grandes, onde a clareza e a robustez do tratamento de erros podem fazer a diferença entre uma aplicação estável e uma cheia de bugs. Aqui, vou mostrar como os tipos de resultados (`Result<T, E>`) e erros tipados podem melhorar a forma como lidamos com falhas em TypeScript.
 
 ## Throw vs Return
 
@@ -58,7 +58,7 @@ if (resultado.ok) {
 }
 ```
 
-Com essa abordagem, a função `dividirComResultado` retorna um objeto que indica se a operação foi bem-sucedida ou não. Isso torná o tratamento de erros mais explícito e facilita a manutenção do código.
+Com essa abordagem, a função `dividirComResultado` retorna um objeto que indica se a operação foi bem-sucedida ou não. Isso torna o tratamento de erros mais explícito e facilita a manutenção do código.
 
 ## Neverthrow Lib
 
@@ -86,7 +86,7 @@ A biblioteca `neverthrow` permite que você trate resultados e erros de forma ma
 
 ## Custom Error Classes
 
-Embora o uso de tipos de resultado seja uma ótima maneira de lidar com erros, também é importante ter classes de erro personalizadas para situações específicas. Isso torná mais fácil identificar e tratar diferentes tipos de erros em seu código. Aqui está um exemplo de como criar uma classe de erro personalizada:
+Embora o uso de tipos de resultado seja uma ótima maneira de lidar com erros, também é importante ter classes de erro personalizadas para situações específicas. Isso torna mais fácil identificar e tratar diferentes tipos de erros em seu código. Aqui está um exemplo de como criar uma classe de erro personalizada:
 
 ```typescript
 class DivisaoPorZeroError extends Error {

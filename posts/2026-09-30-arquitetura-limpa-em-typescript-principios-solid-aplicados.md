@@ -169,7 +169,7 @@ const notification = new Notification(emailService);
 notification.notify('Olá, Ismael!');
 ```
 
-Nesse caso, a classe `Notification` depende da abstração `MessageService`, e não de uma implementação específica. Isso torná o código mais flexível e fácil de testar, já que podemos substituir a implementação do serviço de mensagens por outra (como SMS ou Push) sem alterar a lógica de notificação.
+Nesse caso, a classe `Notification` depende da abstração `MessageService`, e não de uma implementação específica. Isso torna o código mais flexível e fácil de testar, já que podemos substituir a implementação do serviço de mensagens por outra (como SMS ou Push) sem alterar a lógica de notificação.
 
 ## Exemplo completo
 
@@ -239,7 +239,7 @@ const finalPrice = pricingContext.executePricing(100);
 console.log(`Preço final: R$ ${finalPrice}`);
 ```
 
-Neste exemplo, temos um sistema de gerenciamento de produtos que aplicá os princípios SOLID. A separação de responsabilidades é clara, e a estrutura permite futuras extensões sem grandes mudanças no código.
+Neste exemplo, temos um sistema de gerenciamento de produtos que aplica os princípios SOLID. A separação de responsabilidades é clara, e a estrutura permite futuras extensões sem grandes mudanças no código.
 
 ## Conclusão
 

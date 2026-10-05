@@ -27,7 +27,7 @@ Pra quem é: quem usa o teclado o dia todo no trabalho e não abre mão do bloco
 
 ## Wooting 80HE: a aposta em Hall Effect
 
-A Wooting 80HE usa switches magnéticos Hall Effect, que permitem ajustar o ponto de atuação por tecla. Na prática, isso é um diferencial enorme para quem joga FPS competitivo: a resposta fica mais rápida e consistente, e o tal do rapid trigger já virou referência no segmento. Em 2026, a marca ampliou o suporte a keycaps e manteve o perfil baixo, o que a torná interessante para quem alterna entre trabalho e jogo.
+A Wooting 80HE usa switches magnéticos Hall Effect, que permitem ajustar o ponto de atuação por tecla. Na prática, isso é um diferencial enorme para quem joga FPS competitivo: a resposta fica mais rápida e consistente, e o tal do rapid trigger já virou referência no segmento. Em 2026, a marca ampliou o suporte a keycaps e manteve o perfil baixo, o que a torna interessante para quem alterna entre trabalho e jogo.
 
 O que a comunidade diz: a implementação de rapid trigger é apontada como a melhor do mercado para jogos. Para digitação, o feedback é mais polarizado, e quem prefere teclas com mais curso pode estranhar o perfil baixo.
 
