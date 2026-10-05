@@ -1,6 +1,299 @@
 {
   "posts": [
     {
+      "slug": "2026-10-05-machine-learning-com-python-do-scikit-learn-ao-pytorch-em",
+      "title": "Machine Learning com Python: do scikit-learn ao PyTorch em 2026",
+      "title_en": "Machine Learning with Python: From scikit-learn to PyTorch in 2026",
+      "date": "2026-10-05",
+      "category": "tutorial",
+      "tags": [
+        "machine-learning",
+        "python",
+        "ia",
+        "data-science"
+      ],
+      "excerpt": "Machine Learning (ML) é uma área em constante expansão, e sua aplicação está se tornando cada vez mais comum em diversos setores.",
+      "excerpt_en": "Machine Learning (ML) is a rapidly growing field, and its application is becoming more common across various sectors.",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-05-machine-learning-com-python-do-scikit-learn-ao-pytorch-em.jpg",
+      "cover_credit": null,
+      "cover_meta": {
+        "strategy": "fallback",
+        "source": "code",
+        "query": null,
+        "relevance_score": 0.0,
+        "review_status": "auto_fallback",
+        "fallback_reason": "no_candidate_passed",
+        "motif": "data",
+        "brief": {
+          "subject": "Machine Learning com Python: do scikit-learn ao PyTorch em 2026",
+          "entities": [
+            "machine",
+            "learning",
+            "python",
+            "scikit",
+            "learn",
+            "pytorch",
+            "2026",
+            "area"
+          ],
+          "category": "tutorial",
+          "motif": "data",
+          "visual_concept": "data records and relational structure",
+          "queries": [
+            "data records and relational structure",
+            "database structure diagram",
+            "data relationships diagram",
+            "machine learning python"
+          ],
+          "search_terms": [
+            "machine",
+            "learning",
+            "com",
+            "python",
+            "scikit",
+            "learn",
+            "pytorch",
+            "2026",
+            "uma",
+            "area",
+            "constante",
+            "expansao",
+            "sua",
+            "aplicacao",
+            "esta",
+            "tornando",
+            "cada",
+            "vez",
+            "mais",
+            "comum",
+            "diversos",
+            "setores",
+            "data",
+            "science"
+          ],
+          "avoid": [
+            "logo",
+            "wordmark",
+            "icon",
+            "stock photo",
+            "unrelated"
+          ],
+          "language": "agnostic"
+        },
+        "review_candidates": [
+          {
+            "file": "File:Manchester Row, Vulcan Village 2.jpg",
+            "score": 0.501,
+            "query": "data records and relational structure",
+            "reasons": [
+              "overlap=0.04",
+              "concept=1.00"
+            ],
+            "status": "needs_manual_review"
+          },
+          {
+            "file": "File:Arlington Row Bibury.jpg",
+            "score": 0.497,
+            "query": "data records and relational structure",
+            "reasons": [
+              "overlap=0.04",
+              "concept=1.00"
+            ],
+            "status": "needs_manual_review"
+          },
+          {
+            "file": "File:Row of five red wooden bungalows on stilts with terraces and steep roofs Otherside guesthouse Vang Vieng Laos.jpg",
+            "score": 0.497,
+            "query": "data records and relational structure",
+            "reasons": [
+              "overlap=0.04",
+              "concept=1.00"
+            ],
+            "status": "needs_manual_review"
+          },
+          {
+            "file": "File:Triplexfabriek, Bestanddeelnr 920-4698.jpg",
+            "score": 0.49,
+            "query": "data records and relational structure",
+            "reasons": [
+              "overlap=0.04",
+              "concept=1.00"
+            ],
+            "status": "needs_manual_review"
+          },
+          {
+            "file": "File:Olympic Stadium Munich - Rows of Seats, April 2019 -04.jpg",
+            "score": 0.489,
+            "query": "data records and relational structure",
+            "reasons": [
+              "overlap=0.04",
+              "concept=1.00"
+            ],
+            "status": "needs_manual_review"
+          },
+          {
+            "file": "File:Cannery Row at night.jpg",
+            "score": 0.487,
+            "query": "data records and relational structure",
+            "reasons": [
+              "overlap=0.04",
+              "concept=1.00"
+            ],
+            "status": "needs_manual_review"
+          }
+        ]
+      },
+      "lang": "pt",
+      "translation_slug": "2026-10-05-machine-learning-com-python-do-scikit-learn-ao-pytorch-em-en"
+    },
+    {
+      "slug": "2026-10-05-machine-learning-com-python-do-scikit-learn-ao-pytorch-em-en",
+      "title": "Machine Learning with Python: From scikit-learn to PyTorch in 2026",
+      "title_en": "Machine Learning with Python: From scikit-learn to PyTorch in 2026",
+      "date": "2026-10-05",
+      "category": "tutorial",
+      "tags": [
+        "machine-learning",
+        "python",
+        "ia",
+        "data-science"
+      ],
+      "excerpt": "Machine Learning (ML) is a rapidly growing field, and its application is becoming more common across various sectors.",
+      "excerpt_en": "Machine Learning (ML) is a rapidly growing field, and its application is becoming more common across various sectors.",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-05-machine-learning-com-python-do-scikit-learn-ao-pytorch-em.jpg",
+      "cover_credit": null,
+      "cover_meta": {
+        "strategy": "fallback",
+        "source": "code",
+        "query": null,
+        "relevance_score": 0.0,
+        "review_status": "auto_fallback",
+        "fallback_reason": "no_candidate_passed",
+        "motif": "data",
+        "brief": {
+          "subject": "Machine Learning com Python: do scikit-learn ao PyTorch em 2026",
+          "entities": [
+            "machine",
+            "learning",
+            "python",
+            "scikit",
+            "learn",
+            "pytorch",
+            "2026",
+            "area"
+          ],
+          "category": "tutorial",
+          "motif": "data",
+          "visual_concept": "data records and relational structure",
+          "queries": [
+            "data records and relational structure",
+            "database structure diagram",
+            "data relationships diagram",
+            "machine learning python"
+          ],
+          "search_terms": [
+            "machine",
+            "learning",
+            "com",
+            "python",
+            "scikit",
+            "learn",
+            "pytorch",
+            "2026",
+            "uma",
+            "area",
+            "constante",
+            "expansao",
+            "sua",
+            "aplicacao",
+            "esta",
+            "tornando",
+            "cada",
+            "vez",
+            "mais",
+            "comum",
+            "diversos",
+            "setores",
+            "data",
+            "science"
+          ],
+          "avoid": [
+            "logo",
+            "wordmark",
+            "icon",
+            "stock photo",
+            "unrelated"
+          ],
+          "language": "agnostic"
+        },
+        "review_candidates": [
+          {
+            "file": "File:Manchester Row, Vulcan Village 2.jpg",
+            "score": 0.501,
+            "query": "data records and relational structure",
+            "reasons": [
+              "overlap=0.04",
+              "concept=1.00"
+            ],
+            "status": "needs_manual_review"
+          },
+          {
+            "file": "File:Arlington Row Bibury.jpg",
+            "score": 0.497,
+            "query": "data records and relational structure",
+            "reasons": [
+              "overlap=0.04",
+              "concept=1.00"
+            ],
+            "status": "needs_manual_review"
+          },
+          {
+            "file": "File:Row of five red wooden bungalows on stilts with terraces and steep roofs Otherside guesthouse Vang Vieng Laos.jpg",
+            "score": 0.497,
+            "query": "data records and relational structure",
+            "reasons": [
+              "overlap=0.04",
+              "concept=1.00"
+            ],
+            "status": "needs_manual_review"
+          },
+          {
+            "file": "File:Triplexfabriek, Bestanddeelnr 920-4698.jpg",
+            "score": 0.49,
+            "query": "data records and relational structure",
+            "reasons": [
+              "overlap=0.04",
+              "concept=1.00"
+            ],
+            "status": "needs_manual_review"
+          },
+          {
+            "file": "File:Olympic Stadium Munich - Rows of Seats, April 2019 -04.jpg",
+            "score": 0.489,
+            "query": "data records and relational structure",
+            "reasons": [
+              "overlap=0.04",
+              "concept=1.00"
+            ],
+            "status": "needs_manual_review"
+          },
+          {
+            "file": "File:Cannery Row at night.jpg",
+            "score": 0.487,
+            "query": "data records and relational structure",
+            "reasons": [
+              "overlap=0.04",
+              "concept=1.00"
+            ],
+            "status": "needs_manual_review"
+          }
+        ]
+      },
+      "lang": "en",
+      "translation_slug": "2026-10-05-machine-learning-com-python-do-scikit-learn-ao-pytorch-em",
+      "translation_of": "2026-10-05-machine-learning-com-python-do-scikit-learn-ao-pytorch-em"
+    },
+    {
       "slug": "2026-10-03-nginx-como-reverse-proxy-ssl-load-balancing-e-caching",
       "title": "Nginx como reverse proxy: SSL, load balancing e caching",
       "title_en": "Nginx as a Reverse Proxy: SSL, Load Balancing, and Caching",
