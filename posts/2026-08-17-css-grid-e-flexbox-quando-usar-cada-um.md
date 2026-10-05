@@ -15,7 +15,7 @@ Por décadas, o layout de websites dependeu de ferramentas limitadas, como a pro
 
 Muitos desenvolvedores iniciantes — e até experientes — frequentemente ficam na dúvida: "Qual devo usar?". A resposta curta é: ambos são ótimos, mas têm propósitos diferentes. Para dominar o design responsivo, é essencial entender a filosofia por trás de cada um.
 
-Neste artigo, vamos explorar como o Flexbox e o Grid funcionam, suas principais características e, o mais importante, um guia prático de quando aplicar cada tecnologia no seu próximo projeto.
+O Flexbox e o Grid resolvem problemas diferentes, com caracteristicas diferentes, o mais importante, um guia prático de quando aplicar cada tecnologia no seu próximo projeto.
 
 
 <figure>

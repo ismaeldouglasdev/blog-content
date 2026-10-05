@@ -21,7 +21,7 @@ Então, os Hooks chegaram como uma revolução silenciosa. Eles trouxeram duas p
 
 Mas, como toda ferramenta poderosa, os Hooks exigem compreensão profunda. Não basta usar `useState` e `useEffect` de forma superficial; para realmente extrair o potencial do React, precisamos dominar os *hooks avançados*: `useEffect` com limpeza correta, `useRef` para valores persistentes e referências ao DOM, e, claro, criar nossos próprios *custom hooks* reutilizáveis.
 
-Neste artigo, vamos mergulhar nos detalhes que fazem a diferença no dia‑a‑dia de um desenvolvedor full‑stack. Prepare o teclado, abra o VS Code e acompanhe os exemplos reais que você poderá copiar‑colar nos seus projetos.
+Os detalhes que fazem a diferença no dia‑a‑dia de um desenvolvedor full‑stack. Prepare o teclado, abra o VS Code e acompanhe os exemplos reais que você poderá copiar‑colar nos seus projetos.
 
 ---  
 
