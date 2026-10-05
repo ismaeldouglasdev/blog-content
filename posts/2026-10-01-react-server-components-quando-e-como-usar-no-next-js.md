@@ -370,3 +370,9 @@ A migração de uma aplicação CSR existente para server components exige plane
 - Server Actions são ideais para formulários que precisam criar ou atualizar dados no servidor
 - Implemente cache e revalidação estratégicos para cada rota baseada na frequência de mudança dos dados
 - Não abandone client components â eles ainda são necessários para interatividade, mas server components devem ser a base da sua UI
+
+## 📸 Crédito da imagem de capa
+- **Image:** [photo-image-background-public-domain-technology](https://www.rawpixel.com/image/5904920/photo-image-background-public-domain-technology)
+- **Autor(a):** rawpixel
+- **License:** [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) · via www.rawpixel.com
+

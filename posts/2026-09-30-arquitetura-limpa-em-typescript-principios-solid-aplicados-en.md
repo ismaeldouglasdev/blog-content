@@ -271,3 +271,9 @@ With these principles in mind, you will be better prepared to build systems that
 - [FreeCodeCamp: Understanding SOLID Principles](https://www.freecodecamp.org/news/understanding-solid-principles-with-examples-in-javascript/)
 - [Refactoring Guru: SOLID Principles](https://refactoring.guru/pt-br/solidity-principles)
 ```
+
+## 📸 Cover image credit
+- **Image:** [File:Modern Geometric Architectural Facade.jpg](https://commons.wikimedia.org/wiki/File:Modern_Geometric_Architectural_Facade.jpg)
+- **Author:** PAULIX04
+- **License:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) · via commons.wikimedia.org
+

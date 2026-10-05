@@ -184,3 +184,9 @@ Implementing a CI/CD pipeline with GitHub Actions for Node.js and React projects
 - [ESLint Documentation](https://eslint.org/docs/user-guide/getting-started)
 - [Jest Documentation](https://jestjs.io/docs/getting-started)
 - [Actions Cache Documentation](https://github.com/actions/cache)
+
+## 📸 Cover image credit
+- **Image:** [File:19-inch rackmount Ethernet switches and patch panels.jpg](https://commons.wikimedia.org/wiki/File:19-inch_rackmount_Ethernet_switches_and_patch_panels.jpg)
+- **Author:** Dsimic
+- **License:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) · via commons.wikimedia.org
+

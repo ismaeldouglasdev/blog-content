@@ -191,3 +191,9 @@ Machine learning is a fascinating field full of opportunities. With tools like s
 - [FastAPI Documentation](https://fastapi.tiangolo.com/)
 - [Machine Learning Mastery: Feature Engineering](https://machinelearningmastery.com/feature-engineering-for-machine-learning/)
 - [Random Forests for Classification](https://towardsdatascience.com/random-forest-algorithm-in-python-9d1c7f6b8f8a)
+
+## 📸 Cover image credit
+- **Image:** [File:Racks Amravati Data Center.jpg](https://commons.wikimedia.org/wiki/File:Racks_Amravati_Data_Center.jpg)
+- **Author:** PiDatacenters
+- **License:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) · via commons.wikimedia.org
+
