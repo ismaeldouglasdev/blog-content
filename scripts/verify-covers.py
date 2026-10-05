@@ -208,7 +208,12 @@ def verify_workspace(workspace: Path) -> dict:
             elif strategy == "legacy":
                 if meta.get("review_status") != "unreviewed":
                     add("warning", "legacy_review_status", slug, f"review_status={meta.get('review_status')}")
-            elif strategy != "fallback":
+            elif strategy == "fallback":
+                add("error", "ai_fallback_cover", slug,
+                    "capa gerada por codigo (source=code, auto_fallback). "
+                    "O dono pediu imagens reais, nao feitas por IA. Substituir "
+                    "por fotografia com licenca e pôr review_status=approved")
+            else:
                 add("warning", "unknown_strategy", slug, f"strategy={strategy}")
 
     if Image is None and files:

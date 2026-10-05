@@ -214,3 +214,9 @@ Tratar erros de forma eficiente é crucial para a criação de aplicações robu
 - [Zod Documentation](https://zod.dev/)
 - [MDN Web Docs: try...catch](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/try...catch)
 - [LogRocket Blog: Error Handling in JavaScript](https://blog.logrocket.com/error-handling-in-javascript/)
+
+## 📸 Crédito da imagem de capa
+- **Image:** [File:Labyrinthine circuit board lines - Flickr - quapan.jpg](https://commons.wikimedia.org/wiki/File:Labyrinthine_circuit_board_lines_-_Flickr_-_quapan.jpg)
+- **Autor(a):** quapan
+- **License:** [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) · via commons.wikimedia.org
+

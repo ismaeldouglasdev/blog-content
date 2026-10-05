@@ -282,3 +282,9 @@ The `reload` command instructs the Nginx master process to re-read the configura
 - [Let's Encrypt Documentation](https://letsencrypt.org/docs/)
 - [Certbot Instructions by EFF](https://certbot.eff.org/)
 - [Nginx Admin Guide: Reverse Proxy](https://docs.nginx.com/nginx/admin-guide/web-server/reverse-proxy/)
+
+## 📸 Cover image credit
+- **Image:** [File:Datacenter Server Racks (22370909788).jpg](https://commons.wikimedia.org/wiki/File:Datacenter_Server_Racks_(22370909788).jpg)
+- **Author:** Carl Lender from Sunrise, USA
+- **License:** [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) · via commons.wikimedia.org
+

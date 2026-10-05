@@ -223,3 +223,9 @@ Handling errors efficiently is crucial for the creation of robust and reliable a
 - [Zod Documentation](https://zod.dev/)
 - [MDN Web Docs: try...catch](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/try...catch)
 - [LogRocket Blog: Error Handling in JavaScript](https://blog.logrocket.com/error-handling-in-javascript/)
+
+## 📸 Cover image credit
+- **Image:** [File:Labyrinthine circuit board lines - Flickr - quapan.jpg](https://commons.wikimedia.org/wiki/File:Labyrinthine_circuit_board_lines_-_Flickr_-_quapan.jpg)
+- **Author:** quapan
+- **License:** [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) · via commons.wikimedia.org
+

@@ -260,3 +260,9 @@ Com esses princípios em mente, você estará melhor preparado para construir si
 - [Design Patterns: Elements of Reusable Object-Oriented Software](https://www.pearson.com/us/higher-education/program/GoF-Design-Patterns-Elements-of-Reusable-Object-Oriented-Software-Addison-Wesley-Longman-1994/PGM282093.html)
 - [FreeCodeCamp: Understanding SOLID Principles](https://www.freecodecamp.org/news/understanding-solid-principles-with-examples-in-javascript/)
 - [Refactoring Guru: SOLID Principles](https://refactoring.guru/pt-br/solidity-principles)
+
+## 📸 Crédito da imagem de capa
+- **Image:** [File:Modern Geometric Architectural Facade.jpg](https://commons.wikimedia.org/wiki/File:Modern_Geometric_Architectural_Facade.jpg)
+- **Autor(a):** PAULIX04
+- **License:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) · via commons.wikimedia.org
+
