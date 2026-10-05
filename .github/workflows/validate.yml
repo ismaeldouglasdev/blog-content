@@ -243,6 +243,12 @@ jobs:
         run: |
           python3 scripts/audit-pt-diacritics.py
 
+      # Os testes do repo nao corriam em lado nenhum. `audit-pt-diacritics`
+      # ganhou suite com o exit code, e a correccao da comparacao capitalizada
+      # so se apanha com um teste de regressao.
+      - name: Run script tests
+        run: python3 -m unittest discover -s scripts -p "test_*.py"
+
       # Tics de prosa que um LLM emite por defeito ("vale a pena notar",
       # hedging empilhado, "vamos explorar", fecho de conversa). Bloqueia o
       # merge de posts gerados sem revisao de estilo. WARN nao reprova: um
