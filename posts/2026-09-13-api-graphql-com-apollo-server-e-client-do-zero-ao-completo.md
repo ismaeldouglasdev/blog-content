@@ -747,7 +747,7 @@ const client = new ApolloClient({
 
 GraphQL com Apollo Server e Client oferece uma base sólida para APIs modernas. A capacidade de buscar exatamente os dados necessários, o caching inteligente, e a integração natural com React resolvem problemas reais que REST não consegue abordar elegantemente. 
 
-O investimento inicial em aprender GraphQL compensa rapidamente quando você percebe que não precisa mais gerenciar manualmente loading states, sincronização de cache, ou fazer múltiplas requisições para carregar uma tela. É uma mudança de paradigma que, uma vez adotada, torna difícil voltar para APIs REST tradicionais.
+O investimento inicial em aprender GraphQL compensa rapidamente quando você percebe que não precisa mais gerenciar manualmente loading states, sincronização de cache, ou fazer múltiplas requisições para carregar uma tela. É uma mudança de paradigma que, uma vez adotada, torná difícil voltar para APIs REST tradicionais.
 
 ### Takeaways Práticos
 

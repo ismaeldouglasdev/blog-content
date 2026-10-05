@@ -125,7 +125,7 @@ function ProductCard({ product }) {
 }
 ```
 
-No mobile, o card é vertical com imagem no topo. No desktop (`lg:`), torna-se horizontal com flexbox. Cada breakpoint é explícito e previsível.
+No mobile, o card é vertical com imagem no topo. No desktop (`lg:`), torná-se horizontal com flexbox. Cada breakpoint é explícito e previsível.
 
 ## Customização: theme próprio
 

@@ -253,7 +253,7 @@ app.use(async (req, res, next) => {
 });
 ```
 
-Detalhe que costuma passar batido: o script Lua usa `redis.call("TIME")`, ou seja, o **relógio do Redis**, e não o da aplicação. E o que você quer aqui, se o relógio da sua máquina estivesse adiantado, ele contaria entradas que ainda não sairam da janela. Usar o tempo do servidor de dados também evita um segundo problema: quando você roda o Redis em varios nos com relogios diferentes, todos precisam concordar sobre "agora".
+Detalhe que costuma passar batido: o script Lua usa `redis.call("TIME")`, ou seja, o **relógio do Redis**, e não o da aplicação. E o que você quer aqui, se o relógio da sua máquina estivesse adiantado, ele contaria entradas que ainda não saíram da janela. Usar o tempo do servidor de dados também evita um segundo problema: quando você roda o Redis em vários nos com relogios diferentes, todos precisam concordar sobre "agora".
 
 No *lead-pipeline* eu adicionei esse limitador para impedir que a API de enriquecimento de leads fosse invadida por bots, mantendo a latência estável mesmo sob pico de tráfego.
 
@@ -366,7 +366,7 @@ Em *inventory-service* eu usei exatamente esse fluxo para que o frontend React f
 
 Em ambientes de produção, o Redis *standalone* pode se tornar um ponto único de falha. O modo **cluster** distribui slots de chave entre múltiplos nós, permitindo escalabilidade horizontal.
 
-Vale ser preciso sobre o que ele entrega, porque é fácil prometer demais aqui: **cluster por si só não dá tolerância a falhas.** O que dá é a distribuição de slots e a possibilidade de cresc horizontalmente. A tolerância a falhas vem de outro recurso, os *replicas*, e o exemplo abaixo usa `--cluster-replicas 0` justamente porque é o mais simples de montar localmente. Com zero réplicas, se um dos três nós morrer, os slots dele ficam indisponíveis, não há replicação para onde ir.
+Vale ser preciso sobre o que ele entrega, porque é fácil prometer demais aqui: **cluster por si só não dá tolerância a falhas.** O que dá é a distribuição de slots e a possibilidade de cresc horizontalmente. A tolerância a falhas vem de outro recurso, os *réplicas*, e o exemplo abaixo usa `--cluster-replicas 0` justamente porque é o mais simples de montar localmente. Com zero réplicas, se um dos três nós morrer, os slots dele ficam indisponíveis, não há replicação para onde ir.
 
 Quando quiser realmente sobreviver à queda de um nó, o caminho é:
 

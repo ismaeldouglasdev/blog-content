@@ -79,7 +79,7 @@ As três linhas que importam aqui:
 
 Esse label é o que amarra tudo. É por ele que o Service encontra os pods na próxima seção.
 
-**Uma ressalva honesta:** três réplicas **não** garantem alta disponibilidade. Não há probes para o cluster saber se o app está saudável, não há `resources.requests`/`limits` para o scheduler decidir onde colocar, e os três pods podem acabar no mesmo node. Chame isso de resiliência básica, que é o que é. O que falta para alta disponibilidade de verdade está em [Próximos passos](#proximos-passos).
+**Uma ressalva honesta:** três réplicas **não** garantem alta disponibilidade. Não há probes para o cluster saber se o app está saudável, não há `resources.requests`/`limits` para o scheduler decidir onde colocar, e os três pods podem acabar no mesmo node. Chame isso de resiliência básica, que é o que é. O que falta para alta disponibilidade de verdade está em [Próximos passos](#próximos-passos).
 
 ## Services
 

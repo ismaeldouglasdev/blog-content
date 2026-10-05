@@ -56,7 +56,7 @@ export default {
 };
 ```
 
-Quando você faz deploy desse código com `npx wrangler deploy`, ele se torna disponível em uma URL que a Cloudflare distribui globalmente através de sua rede de pontos de presença. Não há configuração de regiões, load balancers ou auto-scaling. O código simplesmente existe em todos os locais da rede simultaneamente.
+Quando você faz deploy desse código com `npx wrangler deploy`, ele se torná disponível em uma URL que a Cloudflare distribui globalmente através de sua rede de pontos de presença. Não há configuração de regiões, load balancers ou auto-scaling. O código simplesmente existe em todos os locais da rede simultaneamente.
 
 O sistema de routing do Workers permite definir padrões mais complexos diretamente no código. Para aplicações que precisam de múltiplos endpoints, você pode implementar um router simples ou utilizar uma biblioteca como Hono, que oferece uma API familiar para desenvolvedores que já trabalharam com frameworks como Express:
 
@@ -332,7 +332,7 @@ O sistema de ambientes do Wrangler também permite configuração específica po
 
 Nem toda aplicação se beneficia de execução no edge. O padrão brilha em cenários específicos: APIs que servem usuários globalmente com requisitos de baixa latência, processamento de requisições que podem ser completadas sem acesso a recursos centralizados, e cargas de trabalho que variam significativamente em volume.
 
-Aplicações com acesso frequente a bancos de dados transacionais pesados ainda se beneficiam mais de uma arquitetura híbrida, onde o edge trata autenticação, validação e cache agressivo enquanto requisições complexas vão para servidores centralizados. O Workers não substitui completamente servidores tradicionais, mas os torna menos necessários para uma categoria significativa de casos de uso.
+Aplicações com acesso frequente a bancos de dados transacionais pesados ainda se beneficiam mais de uma arquitetura híbrida, onde o edge trata autenticação, validação e cache agressivo enquanto requisições complexas vão para servidores centralizados. O Workers não substitui completamente servidores tradicionais, mas os torná menos necessários para uma categoria significativa de casos de uso.
 
 A economia também é um fator de decisão válido. Para aplicações de baixo a médio tráfego, a camada gratuita do Workers cobre uma quantidade substancial de requisições, e mesmo acima desse limite os custos permanecem competitivos com alternativas serverless tradicionais. A ausência de taxas de egress no R2 especificamente pode representar economias significativas para aplicações que servem grande volume de dados.
 
