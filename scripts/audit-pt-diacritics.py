@@ -205,10 +205,13 @@ def main() -> int:
                 if CODE_HINT.match(word) or low in NEVER_FLAG:
                     continue
                 base = strip_accents(low)
-                # `word == base` = a palavra foi escrita SEM acento.
+                # `low == base` = a palavra foi escrita SEM acento. A comparacao
+                # e com `low` e nao com `word`: `word` guarda a maiuscula, e
+                # `Configuracao != configuracao` fazia com que palavra no inicio
+                # de frase nunca fosse detectada.
                 # `base in vocab` = o corpus usa a variante acentuada em outro
                 # post. As duas juntas = diacritico perdido.
-                if word == base and base in vocab:
+                if low == base and base in vocab:
                     hits.append((lineno, word, sorted(vocab[base])))
         if hits:
             per_file[path] = hits
