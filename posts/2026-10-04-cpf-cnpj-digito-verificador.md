@@ -3,7 +3,7 @@ title: "CPF e CNPJ: o que o dígito verificador realmente garante"
 date: "2026-10-04"
 category: "tutorial"
 tags: ["cpf", "cnpj", "regra-de-negocio", "validacao"]
-excerpt: "Todo mundo já preencheu um CPF e digitou um dígito a mais. O dígito verificador existe para pegar exatamente isso — mas ele não prova que o documento existe. A diferença é onde quase todo mundo erra."
+excerpt: "Todo mundo já preencheu um CPF e digitou um dígito a mais. O dígito verificador existe para pegar exatamente isso, mas ele não prova que o documento existe. A diferença é onde quase todo mundo erra."
 share_hook: "Um dígito verificador válido não significa que o CPF existe. Significa apenas que ninguém errou a digitação."
 lang: "pt"
 ---
@@ -14,7 +14,7 @@ coisa:
 - "esse CPF é válido"
 - "esse CPF existe"
 
-A primeira é verificable com uma caneta e uma regra de três linhas. A segunda exige
+A primeira é verificável com uma caneta e uma regra de três linhas. A segunda exige
 consultar a Receita Federal. A confusão entre as duas é a origem de quase todo
 sistema que "validou" um documento inventado e só descobriu tarde demais.
 
@@ -28,7 +28,7 @@ acidentalmente técnica: detetar erros de digitação.
 
 Um CPF tem 11 dígitos. Os 9 primeiros são a base; os 2 últimos são calculados. Um
 CNPJ tem 14: os 12 primeiros são a base, os 2 últimos são calculados. O cálculo é
-o mesmo nos dois casos — módulo 11.
+o mesmo nos dois casos, módulo 11.
 
 Para o CPF, com os 9 dígitos base `d₁…d₉`:
 
@@ -40,7 +40,7 @@ d₁₀   = resto < 2 ? 0 : 11 − resto
 
 Repete-se com os 10 primeiros dígitos para obter `d₁₁`. Os pesos descem de 10 até
 2, e o CNPJ usa a mesma ideia com um conjunto diferente de pesos e um caso especial
-nos dois últimos dígitos, chamado *dígito verificador módulo 11 com pesos* — mas a
+nos dois últimos dígitos, chamado *dígito verificador módulo 11 com pesos*, mas a
 essência é a mesma: uma soma ponderada, um resto, e uma correção para o caso de o
 resto dar 0 ou 1.
 
@@ -57,12 +57,12 @@ O dígito verificador garante duas coisas específicas:
 
 O que ele **não** garante é que a pessoa exista, que o CNPJ esteja ativo, ou que
 os dados informados sejam verdadeiros. Um CPF com dígito verificador correto pode
-pertencer a alguém que não existe — basta os 9 primeiros dígitos serem plausíveis e
+pertencer a alguém que não existe, basta os 9 primeiros dígitos serem plausíveis e
 os 2 últimos serem calculados a partir deles. É trivial de fazer por escrever, e não
 é fraude: é exactamente o que um formulário de demonstração faz.
 
 Esta é a razão pela qual validar documentos só no frontend é frágil. O frontend
-pode dizer "formato válido" — e está certo. Mas se o backend aceitar o mesmo
+pode dizer "formato válido", e está certo. Mas se o backend aceitar o mesmo
 valor sem consultar uma fonte oficial, o sistema aceita documentos inventados com a
 mesma confiança com que aceita documentos reais.
 
@@ -72,7 +72,7 @@ Repare num detalhe do código: um CPF como `111.111.111-11` passa no cálculo do
 módulo 11, mas é rejeitado. Por quê?
 
 Porque ele passa pela regra errada. Um dígito repetido é quase sempre um sinal de
-preenchimento automático — o usuárioAAFPreenchimentocom um único número, ou um
+preenchimento automático, o usuário digitou um único número, ou um
 formulário devolveu o mesmo dígito em todos os campos. É um erro de formulário, não
 um documento. A regra existe para pegar isso.
 
@@ -91,7 +91,7 @@ válido**.
 
 Isso parece um buraco, mas é redundância matemática. Tome um CPF base gerado
 matematicamente: `00000000604`. Troque o primeiro dígito, de `0` para `1`:
-`10000000604`. Recalcule os dois dígitos verificadores — e eles batem.
+`10000000604`. Recalcule os dois dígitos verificadores, e eles batem.
 
 Não é falha. É o módulo 11 a admitir mais de uma sequência por resultado. Uma
 mutação de um único dígito tem uma probabilidade mensurável de cair noutra
@@ -109,17 +109,17 @@ A regra prática para um formulário de cadastro:
 
 - **No frontend:** forma e dígito verificador. Dá retorno imediato, sem ida ao
   servidor, e elimina a esmagadora maioria dos erros de digitação.
-- **No backend:** o mesmo dígito verificador, de novo. Nunca confie no cliente —
+- **No backend:** o mesmo dígito verificador, de novo. Nunca confie no cliente:
   o JavaScript do utilizador está sob o controlo dele.
 - **Só quando o dado for relevante:** uma consulta a uma fonte oficial. E
   isso é um fluxo assíncrono, com cache, com custo e com política de
-  retenção — não uma chamada no `blur` do campo.
+  retenção, não uma chamada no `blur` do campo.
 
 É tentador fazer a consulta oficial sempre, para "ter certeza". Mas cada chamada
 custa, e o CPF de uma pessoa não muda. Você valida a forma sempre; você consulta
 a existência quando o valor realmente importa, e guarda o resultado.
 
-Um validador que só faz a primeira parte não está errado — está honesto sobre o
+Um validador que só faz a primeira parte não está errado, está honesto sobre o
 que sabe. O problema aparece quando o sistema inteiro trata "formato válido" como
 "pessoa verificada", e essa é uma decisão de arquitectura, não de validação.
 
@@ -127,7 +127,7 @@ Se você chegou aqui querendo validar um documento num formulário, a parte
 honesta é esta: o que você consegue verificar em milissegundos diz respeito à
 forma, não à pessoa. Quando a forma é tudo o que precisa, não há por que pagar
 mais. Quando não é, o dígito verificador já lhe poupou o trabalho de filtrar o
-lixo — mas a decisão de quem consultar fica do outro lado.
+lixo, mas a decisão de quem consultar fica do outro lado.
 
 Quer testar se um CPF ou CNPJ fecha a conta? A ferramenta
 [Validador de CPF/CNPJ](/ferramentas/validar-cpf-cnpj) faz o cálculo e diz

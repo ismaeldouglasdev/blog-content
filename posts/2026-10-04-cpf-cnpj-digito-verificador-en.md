@@ -3,7 +3,7 @@ title: "CPF and CNPJ: What the Check Digit Actually Guarantees"
 date: "2026-10-04"
 category: "tutorial"
 tags: ["cpf", "cnpj", "business-logic", "validation"]
-excerpt: "Everyone has typed a CPF and entered one digit too many. The check digit exists to catch exactly that — but it does not prove the document exists. That gap is where almost everyone goes wrong."
+excerpt: "Everyone has typed a CPF and entered one digit too many. The check digit exists to catch exactly that, but it does not prove the document exists. That gap is where almost everyone goes wrong."
 share_hook: "A valid check digit does not mean the CPF exists. It only means nobody mistyped it."
 lang: "en"
 ---
@@ -29,7 +29,7 @@ accidentally technical: catching typing errors.
 
 A CPF has 11 digits. The first 9 are the base; the last 2 are computed. A CNPJ has
 14: the first 12 are the base, the last 2 are computed. The computation is the same
-in both cases — modulo 11.
+in both cases, modulo 11.
 
 For the CPF, with the 9 base digits `d₁…d₉`:
 
@@ -41,7 +41,7 @@ d₁₀  = rest < 2 ? 0 : 11 − rest
 
 You repeat it with the first 10 digits to get `d₁₁`. The weights descend from 10
 to 2, and the CNPJ uses the same idea with a different weight set and a special
-case on the last two digits — but the essence is identical: one weighted sum, one
+case on the last two digits, but the essence is identical: one weighted sum, one
 remainder, and a correction for the case where the remainder lands on 0 or 1.
 
 None of that queries the tax authority. None of it looks anyone up. It is pure
@@ -57,12 +57,12 @@ The check digit guarantees two specific things:
 
 What it does **not** guarantee is that the person exists, that the CNPJ is active,
 or that the information provided is true. A CPF with a correct check digit can
-belong to someone who does not exist — just make the first 9 digits plausible and
+belong to someone who does not exist, just make the first 9 digits plausible and
 compute the last 2 from them. That is trivial to do by hand, and it is not fraud:
 it is exactly what a demo form does.
 
 This is why validating documents only on the frontend is fragile. The frontend can
-say "format valid" — and be right. But if the backend accepts the same value
+say "format valid", and be right. But if the backend accepts the same value
 without consulting an official source, the system accepts invented documents with
 the same confidence it accepts real ones.
 
@@ -72,7 +72,7 @@ Notice a detail in the code: a CPF like `111.111.111-11` passes the modulo 11
 computation, but is rejected. Why?
 
 Because it passes for the wrong reason. A repeated digit is almost always a sign of
-auto-filled input — the user typed one digit into every field, or a form echoed
+auto-filled input, the user typed one digit into every field, or a form echoed
 the same value back. That is a form error, not a document. The rule exists to catch
 exactly that.
 
@@ -90,7 +90,7 @@ still be **valid**.
 
 That looks like a hole, but it is mathematical redundancy. Take a
 mathematically generated base CPF: `00000000604`. Change the first digit from `0`
-to `1`: `10000000604`. Recompute the two check digits — and they match.
+to `1`: `10000000604`. Recompute the two check digits, and they match.
 
 This is not a failure. It is modulo 11 admitting more than one sequence per result.
 A single-digit mutation has a measurable chance of landing on another valid
@@ -108,17 +108,17 @@ The practical rule for a signup form:
 
 - **On the frontend:** shape and check digit. Instant feedback, no round trip to a
   server, and it eliminates the overwhelming majority of typing errors.
-- **On the backend:** the same check digit, again. Never trust the client — the
+- **On the backend:** the same check digit, again. Never trust the client: the
   user's JavaScript is under their control.
 - **Only when the data is consequential:** a lookup against an official source. And
-  that is an asynchronous flow, with caching, with cost, with a retention policy —
+  that is an asynchronous flow, with caching, with cost, with a retention policy,
   not a call on the field's `blur` event.
 
 It is tempting to always run the official lookup to "be sure". But each call costs
 money, and a person's CPF does not change. You validate the shape every time; you
 look up existence when the value actually matters, and you cache the result.
 
-A validator that only does the first part is not wrong — it is honest about what it
+A validator that only does the first part is not wrong, it is honest about what it
 knows. The problem appears when the whole system treats "format valid" as "person
 verified", and that is an architecture decision, not a validation one.
 
@@ -135,7 +135,7 @@ verified", and that is an architecture decision, not a validation one.
 If you came here wanting to validate a document in a form, the honest part is
 this: what you can verify in milliseconds is about shape, not about the person. When
 shape is all you need, there is no reason to pay more. When it is not, the check
-digit has already done the work of filtering the junk for you — but the decision of
+digit has already done the work of filtering the junk for you, but the decision of
 whom to query stays on the other side.
 
 Want to test whether a CPF or CNPJ adds up? The
