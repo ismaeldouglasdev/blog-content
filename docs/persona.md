@@ -83,11 +83,30 @@ os dois é o **ângulo**, não a ideia em si.
 Repete 3 posts em sequência: mesmo skeleton, mesmos títulos de secção, mesma
 posição de código, mesma fecho. Ele apanha a padronização mesmo sem texto igual.
 
+**Medido no corpus.** A repetição não é de densidade: `h2` ficou em mediana 10 nos
+41 posts (desvio 2,4). É **perda de profundidade**: o `h3` praticamente desapareceu.
+
+| | posts | `h2` mediana | `h3` mediana | `h3` máximo | posts com `h3` |
+|---|---|---|---|---|---|
+| até 14/set | 23 | 9 | 1 | **17** | **14/23** |
+| desde 15/set | 18 | 10 | 0 | **1** | **6/18** |
+
+Os posts antigos aninhavam secções (um com 17 `h3`); os recentes são listas
+planas de `h2`. É a "padronização" que ele descreve, e é mensurável.
+
 - **Fazer:** cada post escolhe um formato diferente: causa-raiz, lista de decisões,
   tracing de bug, comparação com medição, refutação de um post anterior.
+- **Fazer:** aninhar quando o conteúdo tem subtópicos. `h3` é o sinal de que
+  se pensou a hierarquia em vez de despejar secções de topo.
 - **Não fazer:** o esqueleto "contexto → problema → solução → take-aways" em todos.
-- **Nota:** isto não é medido no corpus (0,3 %); é comportamento repetido. Inference,
-  marked as such.
+- **Medir, com este comando, antes de dar o post por pronto:**
+
+```bash
+grep -c '^### ' posts/<post>.md   # 0 = lista plana, provavelmente subaproveitado
+```
+
+- **Nota:** a tabela acima é medição directa em `posts/`, não inferência. Onde
+  calibrar a quantidade é decisão do dono: 0 `h3` é legítimo num post curto.
 
 ### 4. Afirmações verificáveis
 
