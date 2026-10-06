@@ -64,6 +64,21 @@ adjectivos, "é essencial"/"é crucial", resumo final, "vale a pena notar que".
 - **Não fazer:** frase de 40 palavras que diz 15; duas frases com a mesma função.
 - **Gate:** `scripts/verify-prose.py` (ERRO em travessão; WARN em tics).
 
+**Os WARN não são ordens de correcção.** Amostrei as três regras que disparam
+nos posts actuais e são quase todas falsos positivos:
+
+| regra | o que dispara | o que é, em contexto |
+|---|---|---|
+| `HEDGING` | `pode ser` ×6 (devtools) | 5 são uso correcto: "a memória **pode ser** o gargalo" |
+| `SUPERLATIVO` | `é fundamental` / `é crucial` ×4 | afirmações substantivas, não vazias |
+| `TIC_FORMULA` | `não é X, é Y` ×3 | uma-offs informativos, um por post |
+| `TIC_TRIPLA` | `A, B e C` ×9 | enumeração normal em português |
+
+**Não reescrever prosa em resposta a um WARN.** Um WARN é um sinal para olhar, não
+para mudar. Isto repete o erro que o projecto já cometeu: alargar o lexicon para
+parecer rigoroso e reprovar texto legítimo. O que o `--fix` partiu (15 acentos) foi
+do mesmo tipo de erro, do outro lado.
+
 ### 2. Antipadrão ≠ conteúdo genérico
 
 > "pode ser generico mas nao pode parecer AI slop"
