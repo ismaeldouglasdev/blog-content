@@ -29,7 +29,7 @@ from collections import defaultdict
 NEVER_FLAG = {
     "e", "a", "o", "as", "os", "um", "uma", "uns", "umas", "no", "na", "nos",
     "nas", "por", "para", "com", "sem", "de", "da", "do", "das", "dos",
-    "que", "se", "nao", "sim", "mais", "menos", "muito", "pouco", "quando",
+    "que", "se", "sim", "mais", "menos", "muito", "pouco", "quando",
     "onde", "porque", "porem", "entao", "ja", "ate", "apos", "sobre",
     "entre", "desde", "ate", "cada", "todo", "toda", "todos", "todas",
     "este", "esta", "estes", "estas", "esse", "essa", "aquele", "aquela",

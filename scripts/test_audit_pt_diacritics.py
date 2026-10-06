@@ -76,6 +76,17 @@ class ExitCodeTests(unittest.TestCase):
             c.add(2, "Isso torna mais fácil a migração.")
             self.assertEqual(c.run(), 0)
 
+    def test_unaccented_nao_is_caught(self):
+        """`nao` estuvo no NEVER_FLAG, que o comentario do proprio mecanismo
+        reserva para "tokens de codigo, siglas, marcas e nomes proprios" -- e
+        `nao` nao e nenhum dos quatro. O corpus tem 316 `não` acentuados, ou
+        seja ensinava o mapeamento; a entrada travava a deteccao de um acento
+        perdido na palavra mais comum do portugues, para sempre."""
+        with Corpus() as c:
+            c.add(1, "Isto não está certo.")
+            c.add(2, "Isto nao esta certo.")
+            self.assertEqual(c.run(), 1)
+
     def test_verb_homograph_of_adjective_is_not_judged(self):
         """Regressao: `válida` (adjectivo) e `valida` (verbo) so diferem no
         acento. O corpus ensinava o mapeamento e o --fix escrevia
