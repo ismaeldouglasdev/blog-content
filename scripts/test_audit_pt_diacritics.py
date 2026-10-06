@@ -85,6 +85,16 @@ class ExitCodeTests(unittest.TestCase):
             c.add(2, "Você valida a forma sempre.")
             self.assertEqual(c.run(), 0)
 
+    def test_non_breaking_hyphen_enclitic_is_also_excluded(self):
+        """Regressao: `aciona-la` do corpus esta escrito com U+2011, nao com
+        `-`. O ENCLITIC so casava `-` ASCII, e o verbo nao esta em NEVER_FLAG,
+        por isso a construcao poluia o vocabulario e o `aciona` solto passava a
+        ser julgado -- o --fix escrevia `acioná` onde o verbo nao leva acento."""
+        with Corpus() as c:
+            c.add(1, "A fun\u00e7\u00e3o acion\u00e1\u2011la no final do pedido.")
+            c.add(2, "Isso aciona um evento antes de responder.")
+            self.assertEqual(c.run(), 0)
+
 
 class ApplyFixTests(unittest.TestCase):
     def build(self, *bodies):

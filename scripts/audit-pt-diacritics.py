@@ -77,7 +77,7 @@ CODE_HINT = re.compile(r"^[A-Z]{2,}$")
 # silaba do verbo, e o acento passa a ser obrigatorio: "torna-se" escreve-se
 # "torná-se". Estas construcoes nao entram no vocabulario (ver build_vocabulary).
 ENCLITIC = re.compile(
-    r"[A-Za-zÀ-ÿ]+-(?:se|lo|la|los|las|nos|na|me|te|lhe|lhes|vos|os|as|num|uma)\b"
+    r"[A-Za-zÀ-ÿ]+[-\u2010-\u2015](?:se|lo|la|los|las|nos|na|me|te|lhe|lhes|vos|os|as|num|uma)\b"
 )
 
 
