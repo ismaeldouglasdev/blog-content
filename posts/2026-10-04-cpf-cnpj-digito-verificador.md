@@ -24,7 +24,7 @@ a garantia dele.
 ## O dígito verificador não é segurança, é detecção de erro
 
 O nome já avisa: *verificador*, não *autenticador*. A função é
-acidentalmente técnica: detetar erros de digitação.
+acidentalmente técnica: detectar erros de digitação.
 
 Um CPF tem 11 dígitos. Os 9 primeiros são a base; os 2 últimos são calculados. Um
 CNPJ tem 14: os 12 primeiros são a base, os 2 últimos são calculados. O cálculo é
