@@ -1,6 +1,147 @@
 {
   "posts": [
     {
+      "slug": "2026-10-06-inteligencia-artificial-para-desenvolvedores-llms-rag-e",
+      "title": "Inteligência Artificial para desenvolvedores: LLMs, RAG e agentes",
+      "title_en": "Artificial Intelligence for Developers: LLMs, RAG, and Agents",
+      "date": "2026-10-06",
+      "category": "article",
+      "tags": [
+        "ia",
+        "llm",
+        "rag",
+        "agentes",
+        "openai"
+      ],
+      "excerpt": "Inteligência Artificial para desenvolvedores: LLMs, RAG e agentes.",
+      "excerpt_en": "Artificial Intelligence for Developers: LLMs, RAG, and Agents.",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-06-inteligencia-artificial-para-desenvolvedores-llms-rag-e.jpg",
+      "cover_credit": null,
+      "cover_meta": {
+        "strategy": "fallback",
+        "source": "code",
+        "query": null,
+        "relevance_score": 0.0,
+        "review_status": "auto_fallback",
+        "fallback_reason": "no_candidate_passed",
+        "motif": "generic",
+        "brief": {
+          "subject": "Inteligência Artificial para desenvolvedores: LLMs, RAG e agentes",
+          "entities": [
+            "inteligencia",
+            "artificial",
+            "desenvolvedores",
+            "llms",
+            "rag",
+            "agentes",
+            "llm",
+            "openai"
+          ],
+          "category": "article",
+          "motif": "generic",
+          "visual_concept": "technical editorial diagram",
+          "queries": [
+            "technical editorial diagram",
+            "inteligencia artificial desenvolvedores",
+            "article technical editorial diagram"
+          ],
+          "search_terms": [
+            "inteligencia",
+            "artificial",
+            "para",
+            "desenvolvedores",
+            "llms",
+            "rag",
+            "agentes",
+            "llm",
+            "openai"
+          ],
+          "avoid": [
+            "logo",
+            "wordmark",
+            "icon",
+            "stock photo",
+            "unrelated"
+          ],
+          "language": "agnostic"
+        },
+        "review_candidates": []
+      },
+      "lang": "pt",
+      "translation_slug": "2026-10-06-inteligencia-artificial-para-desenvolvedores-llms-rag-e-en"
+    },
+    {
+      "slug": "2026-10-06-inteligencia-artificial-para-desenvolvedores-llms-rag-e-en",
+      "title": "Artificial Intelligence for Developers: LLMs, RAG, and Agents",
+      "title_en": "Artificial Intelligence for Developers: LLMs, RAG, and Agents",
+      "date": "2026-10-06",
+      "category": "article",
+      "tags": [
+        "ia",
+        "llm",
+        "rag",
+        "agentes",
+        "openai"
+      ],
+      "excerpt": "Artificial Intelligence for Developers: LLMs, RAG, and Agents.",
+      "excerpt_en": "Artificial Intelligence for Developers: LLMs, RAG, and Agents.",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-06-inteligencia-artificial-para-desenvolvedores-llms-rag-e.jpg",
+      "cover_credit": null,
+      "cover_meta": {
+        "strategy": "fallback",
+        "source": "code",
+        "query": null,
+        "relevance_score": 0.0,
+        "review_status": "auto_fallback",
+        "fallback_reason": "no_candidate_passed",
+        "motif": "generic",
+        "brief": {
+          "subject": "Inteligência Artificial para desenvolvedores: LLMs, RAG e agentes",
+          "entities": [
+            "inteligencia",
+            "artificial",
+            "desenvolvedores",
+            "llms",
+            "rag",
+            "agentes",
+            "llm",
+            "openai"
+          ],
+          "category": "article",
+          "motif": "generic",
+          "visual_concept": "technical editorial diagram",
+          "queries": [
+            "technical editorial diagram",
+            "inteligencia artificial desenvolvedores",
+            "article technical editorial diagram"
+          ],
+          "search_terms": [
+            "inteligencia",
+            "artificial",
+            "para",
+            "desenvolvedores",
+            "llms",
+            "rag",
+            "agentes",
+            "llm",
+            "openai"
+          ],
+          "avoid": [
+            "logo",
+            "wordmark",
+            "icon",
+            "stock photo",
+            "unrelated"
+          ],
+          "language": "agnostic"
+        },
+        "review_candidates": []
+      },
+      "lang": "en",
+      "translation_slug": "2026-10-06-inteligencia-artificial-para-desenvolvedores-llms-rag-e",
+      "translation_of": "2026-10-06-inteligencia-artificial-para-desenvolvedores-llms-rag-e"
+    },
+    {
       "slug": "2026-10-05-machine-learning-com-python-do-scikit-learn-ao-pytorch-em",
       "title": "Machine Learning com Python: do scikit-learn ao PyTorch em 2026",
       "title_en": "Machine Learning with Python: From scikit-learn to PyTorch in 2026",
