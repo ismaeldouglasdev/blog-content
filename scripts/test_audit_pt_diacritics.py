@@ -76,6 +76,15 @@ class ExitCodeTests(unittest.TestCase):
             c.add(2, "Isso torna mais fácil a migração.")
             self.assertEqual(c.run(), 0)
 
+    def test_verb_homograph_of_adjective_is_not_judged(self):
+        """Regressao: `válida` (adjectivo) e `valida` (verbo) so diferem no
+        acento. O corpus ensinava o mapeamento e o --fix escrevia
+        "voce válida a forma", que nao e portugues."""
+        with Corpus() as c:
+            c.add(1, "A sequência válida tem 121 combinações.")
+            c.add(2, "Você valida a forma sempre.")
+            self.assertEqual(c.run(), 0)
+
 
 class ApplyFixTests(unittest.TestCase):
     def build(self, *bodies):

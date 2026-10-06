@@ -62,6 +62,12 @@ NEVER_FLAG = {
     "funciona", "funcionam", "depende", "dependem", "acontece", "acontecem",
     "significa", "significam", "representa", "representam", "permite",
     "permitem", "oferece", "oferecem", "gera", "geram", "usa", "usa",
+    # Verbo x adjectivo com a mesma grafia: a forma acentuada existe no
+    # portugues, mas como outra categoria. "valida"(verbo, "voce valida") x
+    # "válida"(adjectivo, "sequência válida"). Sem estas, o corpus ensina o
+    # mapeamento e o --fix escreve "voce válida a forma".
+    "valida", "validam", "aplica", "aplicam", "torna", "tornam",
+    "coloca", "colocam", "registra", "registram", "grava", "gravam",
 }
 
 # Siglas e marcas aparecem em CAIXA ALTA; ignoramos token todo maiusculo.
@@ -128,7 +134,12 @@ def build_vocabulary(paths: list) -> dict:
             if CODE_HINT.match(word):
                 continue
             low = word.lower()
-            if low in NEVER_FLAG:
+            # NEVER_FLAG e consultado nas duas formas. As entradas da lista sao
+            # as nao acentuadas ("verifica", "torna") mas o token do corpus e o
+            # acentuado ("verificá", "torná"), e comparar so `low` deixava o
+            # mapeamento ser aprendido na mesma -- o filtro so funcionava na
+            # deteccao, nao no `--fix`. Sem isto o auditor escrevia "você válida".
+            if low in NEVER_FLAG or strip_accents(low) in NEVER_FLAG:
                 continue
             if strip_accents(low) != low:
                 vocab[strip_accents(low)].add(low)
