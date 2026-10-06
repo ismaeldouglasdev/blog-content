@@ -122,16 +122,6 @@ A validator that only does the first part is not wrong, it is honest about what 
 knows. The problem appears when the whole system treats "format valid" as "person
 verified", and that is an architecture decision, not a validation one.
 
-## Summary
-
-- The check digit is pure arithmetic: it catches typos, it does not verify
-  existence.
-- Modulo 11, with descending weights and a correction for remainder 0 or 1.
-- Repeated digits are rejected by a sanity rule, not by the arithmetic.
-- A single-digit mutation can stay valid; that is redundancy, not a flaw.
-- The frontend filters shape; the backend repeats the check; an official source
-  only when the data carries weight.
-
 If you came here wanting to validate a document in a form, the honest part is
 this: what you can verify in milliseconds is about shape, not about the person. When
 shape is all you need, there is no reason to pay more. When it is not, the check
