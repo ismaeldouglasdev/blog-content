@@ -30,27 +30,27 @@ NEVER_FLAG = {
     "e", "a", "o", "as", "os", "um", "uma", "uns", "umas", "no", "na", "nos",
     "nas", "por", "para", "com", "sem", "de", "da", "do", "das", "dos",
     "que", "se", "sim", "mais", "menos", "muito", "pouco", "quando",
-    "onde", "porque", "porem", "entao", "ja", "ate", "apos", "sobre",
-    "entre", "desde", "ate", "cada", "todo", "toda", "todos", "todas",
+    "onde", "porque", "sobre",
+    "entre", "desde", "cada", "todo", "toda", "todos", "todas",
     "este", "esta", "estes", "estas", "esse", "essa", "aquele", "aquela",
     "isso", "isto", "aquilo", "meu", "minha", "seu", "sua", "meus", "minhas",
-    "seus", "suas", "nos", "voce", "voces", "ele", "ela", "eles", "elas",
-    "eu", "tu", "nos", "vos", "lhe", "lhes", "la", "lo", "ai", "aqui",
-    "la", "ali", "entao", "logo", "entao", "bem", "mal", "quase", "sempre",
-    "nunca", "jamais", "agora", "hoje", "ontem", "amanha", "vez", "vezes",
+    "seus", "suas", "nos", "voces", "ele", "ela", "eles", "elas",
+    "eu", "tu", "nos", "vos", "lhe", "lhes", "la", "lo", "aqui",
+    "la", "ali", "logo", "bem", "mal", "quase", "sempre",
+    "nunca", "jamais", "agora", "hoje", "ontem", "vez", "vezes",
     "ano", "anos", "dia", "dias", "hora", "horas", "vez", "tempo", "parte",
     "partes", "resto", "meio", "terco", "lugar", "coisa", "caso", "casos",
     "modo", "forma", "formas", "maneira", "jeito", "fato", "fatos",
     "lei", "leis", "nome", "nomes", "vez", "passo", "passos", "erro", "erros",
     "problema", "problemas", "ideia", "ideias", "ponto", "pontos", "linha",
-    "linhas", "palavra", "palavras", "letra", "letras", "numero", "numeros",
+    "linhas", "palavra", "palavras", "letra", "letras", "numeros",
     "vez", "ordem", "tipo", "tipos", "forma", "grupo", "grupos", "sistema",
-    "sistemas", "projeto", "projetos", "versao", "versoes",
+    "sistemas", "projeto", "projetos",
     # Palavras que NAO levam acento em pt-BR (falso positivo se entrarem aqui
     # por engano, o corpus acusaria a si mesmo).
     "prazo", "escopo", "suporte", "acesso", "processo", "conceito", "categoria",
     "desempenho", "automaticamente", "necessariamente", "posicionamento",
-    "navegacao",  # so aparece em codigo; aqui para nao poluir o self-test
+
     # Formas verbais ambiguas: a variante acentuada existe no portugues para
     # outra funcao gramatical (plural, substantivo, gerundio), nao como erro.
     # "tem"(verbo) x "têm"(plural) | "usa" x "usá" | "continua" x "contínua" |

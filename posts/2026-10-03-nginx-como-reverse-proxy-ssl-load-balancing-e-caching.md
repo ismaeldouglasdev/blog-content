@@ -261,7 +261,7 @@ sudo nginx -t
 sudo systemctl reload nginx
 ```
 
-O comando `reload` instrui o processo mestre do Nginx a reler os arquivos de configuração, iniciar novos processos workers com as alterações e desligar os antigos somente apos eles terminarem de responder as requisições em andamento. Não há perda de pacotes e a troca ocorre de forma invisível para os usuários.
+O comando `reload` instrui o processo mestre do Nginx a reler os arquivos de configuração, iniciar novos processos workers com as alterações e desligar os antigos somente após eles terminarem de responder as requisições em andamento. Não há perda de pacotes e a troca ocorre de forma invisível para os usuários.
 
 ## Takeaways práticos
 
