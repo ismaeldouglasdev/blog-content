@@ -31,9 +31,9 @@ CREATE TABLE meus_dados (
     dados JSONB
 );
 
-INSERT INTO meus_dados (dados) VALUES ('{"nome": "JoÃ£o", "idade": 30}');
+INSERT INTO meus_dados (dados) VALUES ('{"nome": "João", "idade": 30}');
 
-SELECT * FROM meus_dados WHERE dados @> '{"nome": "JoÃ£o"}';
+SELECT * FROM meus_dados WHERE dados @> '{"nome": "João"}';
 ```
 
 ---
@@ -48,7 +48,7 @@ CREATE TABLE meus_dados (
     texto TEXT
 );
 
-INSERT INTO meus_dados (texto) VALUES ('Este Ã© um exemplo de texto');
+INSERT INTO meus_dados (texto) VALUES ('Este é um exemplo de texto');
 
 SELECT * FROM meus_dados WHERE texto % 'exemplo';
 ```

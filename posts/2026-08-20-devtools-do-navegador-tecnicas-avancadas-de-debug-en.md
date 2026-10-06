@@ -17,7 +17,7 @@ Have you ever spent hours trapped by a bug that disappears as soon as you try to
 <figure>
   <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug.jpg" alt="Blisk browser DevTools: panels opened for iPhone 12 and iPad Pro 11." loading="lazy" />
   <figcaption>
-    Blisk browser DevTools: panels opened for iPhone 12 and iPad Pro 11. — Image: <a href="https://commons.wikimedia.org/wiki/File%3AWikipedia-blisk-devtools-iphone-12-and-ipad-pro-11-2021.png">Wikipedia-blisk-devtools-iphone-12-and-ipad-pro-11-2021.png</a> by And85rew —
+    Blisk browser DevTools: panels opened for iPhone 12 and iPad Pro 11. Image: <a href="https://commons.wikimedia.org/wiki/File%3AWikipedia-blisk-devtools-iphone-12-and-ipad-pro-11-2021.png">Wikipedia-blisk-devtools-iphone-12-and-ipad-pro-11-2021.png</a> by And85rew  ·
     <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · via Wikimedia Commons
   </figcaption>
 </figure>
@@ -26,9 +26,9 @@ Have you ever spent hours trapped by a bug that disappears as soon as you try to
 
 The first thing that usually catches attention when the application starts to stutter is the response time. The **Performance** panel (or **Profiler** in browsers that still use the old name) allows you to record the execution of the page and analyze each frame, each function call, and each layout event. In practice, I usually follow three steps:
 
-1. **Record a real scenario** – no "random clicking". Reproduce the sequence that the end user would perform, such as opening a modal, scrolling the page, or submitting a form.
-2. **Identify "long tasks"** – Chrome highlights sections that exceed 50 ms. Click on them to see the call stack.
-3. **Isolate the culprit** – use the "Bottom-Up" tool to discover which function consumes the most total time.
+1. **Record a real scenario**: no "random clicking". Reproduce the sequence that the end user would perform, such as opening a modal, scrolling the page, or submitting a form.
+2. **Identify "long tasks"**: Chrome highlights sections that exceed 50 ms. Click on them to see the call stack.
+3. **Isolate the culprit**: use the "Bottom-Up" tool to discover which function consumes the most total time.
 
 A classic example is a rendering loop that tries to update 10,000 rows of a table every frame. The code below demonstrates how the simple addition of `requestAnimationFrame` can transform "freezing code" into something fluid:
 

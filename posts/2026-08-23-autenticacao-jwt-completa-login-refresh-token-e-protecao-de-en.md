@@ -81,7 +81,7 @@ In my experience, you should never expose the refresh token via JSON; an httpOnl
 
 ### Access Token
 
-The access token carries the information you need to authorize actions. I always include a minimal user identifier and a role (or function). Never put confidential information—like a password—inside the token, even if it is signed. The signature prevents tampering, but the payload is visible to anyone who decodes the token.
+The access token carries the information you need to authorize actions. I always include a minimal user identifier and a role (or function). Never put confidential information, like a password, inside the token, even if it is signed. The signature prevents tampering, but the payload is visible to anyone who decodes the token.
 
 ```js
 const accessToken = jwt.sign(
@@ -150,7 +150,7 @@ router.get('/dashboard', authenticateToken, (req, res) => {
 });
 ```
 
-The middleware can also be used to authorize specific roles—e.g., only administrators can access `/admin`. I add a role check after authentication:
+The middleware can also be used to authorize specific roles, e.g., only administrators can access `/admin`. I add a role check after authentication:
 
 ```js
 function requireRole(role) {
@@ -219,7 +219,7 @@ In my experience, many APIs simply renew the access token without rotating the r
 
 ## Blacklist and Invalidation
 
-Although refresh‑token rotation reduces the lifespan of compromised tokens, you may still need to revoke tokens prematurely—e.g., when a user logs out or changes their password. Two common approaches are: a database blacklist and an in‑memory blacklist based on Redis.
+Although refresh‑token rotation reduces the lifespan of compromised tokens, you may still need to revoke tokens prematurely, e.g., when a user logs out or changes their password. Two common approaches are: a database blacklist and an in‑memory blacklist based on Redis.
 
 ### Database Blacklist
 
@@ -314,7 +314,7 @@ Choose the approach that best fits your infrastructure. In my experience, Redis 
 <figure>
   <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de.jpg" alt="Cybersecurity vs. information security: complementary concepts." loading="lazy" />
   <figcaption>
-    Cybersecurity vs. information security: complementary concepts. — Image: <a href="https://commons.wikimedia.org/wiki/File%3ACybersecurity_vs_information_security.png">Cybersecurity vs information security.png</a> by Pcoronaf —
+    Cybersecurity vs. information security: complementary concepts. Image: <a href="https://commons.wikimedia.org/wiki/File%3ACybersecurity_vs_information_security.png">Cybersecurity vs information security.png</a> by Pcoronaf  ·
     <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · via Wikimedia Commons
   </figcaption>
 </figure>

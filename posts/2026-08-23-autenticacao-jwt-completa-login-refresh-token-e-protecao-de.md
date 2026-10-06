@@ -78,7 +78,7 @@ Na minha experiência, é importante nunca expor o refresh token via JSON; um co
 
 ### Access Token
 
-O access token carrega as informações que você precisa para autorizar ações. Eu sempre incluo um identificador de usuário mínimo e um papel (ou função). Nunca coloque informações confidenciais—como senhas—dentro do token, mesmo que ele seja assinado. A assinatura impede a adulteração, mas o payload é visível para qualquer pessoa que decodifique o token.
+O access token carrega as informações que você precisa para autorizar ações. Eu sempre incluo um identificador de usuário mínimo e um papel (ou função). Nunca coloque informações confidenciais, como senhas, dentro do token, mesmo que ele seja assinado. A assinatura impede a adulteração, mas o payload é visível para qualquer pessoa que decodifique o token.
 
 ```js
 const accessToken = jwt.sign(
@@ -147,7 +147,7 @@ router.get('/dashboard', authenticateToken, (req, res) => {
 });
 ```
 
-O middleware também pode ser usado para autorizar funções específicas—por exemplo, apenas administradores podem acessar `/admin`. Eu adiciono uma verificação de papel após a autenticação:
+O middleware também pode ser usado para autorizar funções específicas, por exemplo, apenas administradores podem acessar `/admin`. Eu adiciono uma verificação de papel após a autenticação:
 
 ```js
 function requireRole(role) {
@@ -216,7 +216,7 @@ Na minha experiência, muitas APIs simplesmente renovam o access token sem girar
 
 ## Blacklist e Invalidação
 
-Embora a rotação de refresh tokens reduza a vida útil dos tokens comprometidos, você ainda pode precisar revogar tokens prematuramente—por exemplo, quando um usuário faz logout ou altera a senha. Duas abordagens comuns são: blacklist no banco de dados e uso de um blacklist em memória baseado em Redis.
+Embora a rotação de refresh tokens reduza a vida útil dos tokens comprometidos, você ainda pode precisar revogar tokens prematuramente, por exemplo, quando um usuário faz logout ou altera a senha. Duas abordagens comuns são: blacklist no banco de dados e uso de um blacklist em memória baseado em Redis.
 
 ### Blacklist no Banco de Dados
 
@@ -309,7 +309,7 @@ Escolha a abordagem que melhor se adapta à sua infraestrutura. Na minha experi�
 <figure>
   <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-23-autenticacao-jwt-completa-login-refresh-token-e-protecao-de.jpg" alt="Cibersegurança vs. segurança da informação: conceitos complementares." loading="lazy" />
   <figcaption>
-    Cibersegurança vs. segurança da informação: conceitos complementares. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ACybersecurity_vs_information_security.png">Cybersecurity vs information security.png</a> por Pcoronaf —
+    Cibersegurança vs. segurança da informação: conceitos complementares. Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ACybersecurity_vs_information_security.png">Cybersecurity vs information security.png</a> por Pcoronaf  ·
     <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · via Wikimedia Commons
   </figcaption>
 </figure>

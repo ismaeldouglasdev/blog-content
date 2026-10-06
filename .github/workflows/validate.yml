@@ -243,6 +243,16 @@ jobs:
         run: |
           python3 scripts/audit-pt-diacritics.py
 
+      # Os testes do repo nao corriam em lado nenhum. `audit-pt-diacritics`
+      # ganhou suite com o exit code, e a correccao da comparacao capitalizada
+      # so se apanha com um teste de regressao.
+      - name: Run script tests
+        run: python3 -m unittest discover -s scripts -p "test_*.py"
+
+      # O passo "Check prose (no AI slop)" nao entra aqui: o
+      # `scripts/verify-prose.py` chega no #55. Com o passo presente e o script
+      # ausente, este PR sozinho falhava com exit 2.
+
       - name: Lint markdown
         uses: avto-dev/markdown-lint@v1
         with:

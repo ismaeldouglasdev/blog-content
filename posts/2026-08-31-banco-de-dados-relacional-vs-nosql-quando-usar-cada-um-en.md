@@ -58,7 +58,7 @@ On the other hand, NoSQL databases were designed with scalability in mind. They 
 <figure>
   <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-um.jpg" alt="Data center: the infrastructure behind scalability." loading="lazy" />
   <figcaption>
-    Data center: the infrastructure behind scalability. — Image: <a href="https://commons.wikimedia.org/wiki/File%3AData_Center_Fish_Eye_View_%28noirlab-racks-155%29.jpg">Data Center Fish Eye View (noirlab-racks-155).jpg</a> by International Gemini Observatory/NOIRLab/NSF/AURA/Manuel Paredes —
+    Data center: the infrastructure behind scalability. Image: <a href="https://commons.wikimedia.org/wiki/File%3AData_Center_Fish_Eye_View_%28noirlab-racks-155%29.jpg">Data Center Fish Eye View (noirlab-racks-155).jpg</a> by International Gemini Observatory/NOIRLab/NSF/AURA/Manuel Paredes  ·
     <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · via Wikimedia Commons
   </figcaption>
 </figure>
