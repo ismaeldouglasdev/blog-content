@@ -15,14 +15,14 @@
       ],
       "excerpt": "Inteligência Artificial para desenvolvedores: LLMs, RAG e agentes.",
       "excerpt_en": "Artificial Intelligence for Developers: LLMs, RAG, and Agents.",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-06-inteligencia-artificial-para-desenvolvedores-llms-rag-e.svg",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-06-inteligencia-artificial-para-desenvolvedores-llms-rag-e.jpg",
       "cover_credit": {
-        "license": "Unsplash License",
-        "license_version": null,
-        "title": "Inteligência Artificial para desenvolvedores: LLMs, RAG e agentes",
-        "creator": "Generated",
-        "source": "unsplash",
-        "source_url": ""
+        "file": "File:Artificial intelligence prompt completion by dalle mini.jpg",
+        "artist": "Prompt by JPxG, model by Boris Dayma, upscaler by Xintao Wang, Liangbin Xie et al.",
+        "license": "Public domain",
+        "license_url": "https://en.wikipedia.org/wiki/Public_domain",
+        "page": "https://commons.wikimedia.org/wiki/File:Artificial_intelligence_prompt_completion_by_dalle_mini.jpg",
+        "source": "wikimedia"
       },
       "cover_meta": {
         "strategy": "fallback",
@@ -92,14 +92,14 @@
       ],
       "excerpt": "Artificial Intelligence for Developers: LLMs, RAG, and Agents.",
       "excerpt_en": "Artificial Intelligence for Developers: LLMs, RAG, and Agents.",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-06-inteligencia-artificial-para-desenvolvedores-llms-rag-e-en.svg",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-06-inteligencia-artificial-para-desenvolvedores-llms-rag-e-en.jpg",
       "cover_credit": {
-        "license": "Unsplash License",
-        "license_version": null,
-        "title": "Artificial Intelligence for Developers: LLMs, RAG, and Agents",
-        "creator": "Generated",
-        "source": "unsplash",
-        "source_url": ""
+        "file": "File:Dall-e 3 (jan '24) artificial intelligence icon.png",
+        "artist": "JPxG",
+        "license": "Public domain",
+        "license_url": "https://en.wikipedia.org/wiki/Public_domain",
+        "page": "https://commons.wikimedia.org/wiki/File:Dall-e_3_(jan_'24)_artificial_intelligence_icon.png",
+        "source": "wikimedia"
       },
       "cover_meta": {
         "strategy": "fallback",
@@ -169,14 +169,14 @@
       ],
       "excerpt": "Machine Learning (ML) é uma área em constante expansão, e sua aplicação está se tornando cada vez mais comum em diversos setores.",
       "excerpt_en": "Machine Learning (ML) is a rapidly growing field, and its application is becoming more common across various sectors.",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-05-machine-learning-com-python-do-scikit-learn-ao-pytorch-em.svg",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-05-machine-learning-com-python-do-scikit-learn-ao-pytorch-em.jpg",
       "cover_credit": {
-        "license": "Unsplash License",
-        "license_version": null,
-        "title": "Machine Learning com Python: do scikit-learn ao PyTorch em 2026",
-        "creator": "Generated",
-        "source": "unsplash",
-        "source_url": ""
+        "file": "File:Artificial Intelligence Scale.png",
+        "artist": "Cyrilht",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "page": "https://commons.wikimedia.org/wiki/File:Artificial_Intelligence_Scale.png",
+        "source": "wikimedia"
       },
       "cover_meta": {
         "strategy": "fallback",
@@ -322,14 +322,14 @@
       ],
       "excerpt": "Machine Learning (ML) is a rapidly growing field, and its application is becoming more common across various sectors.",
       "excerpt_en": "Machine Learning (ML) is a rapidly growing field, and its application is becoming more common across various sectors.",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-05-machine-learning-com-python-do-scikit-learn-ao-pytorch-em-en.svg",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-05-machine-learning-com-python-do-scikit-learn-ao-pytorch-em-en.jpg",
       "cover_credit": {
-        "license": "Unsplash License",
-        "license_version": null,
-        "title": "Machine Learning with Python: From scikit-learn to PyTorch in 2026",
-        "creator": "Generated",
-        "source": "unsplash",
-        "source_url": ""
+        "file": "File:Artificial Intelligence relation to Generative Models subset, Venn diagram.png",
+        "artist": "The Original Benny C",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "page": "https://commons.wikimedia.org/wiki/File:Artificial_Intelligence_relation_to_Generative_Models_subset,_Venn_diagram.png",
+        "source": "wikimedia"
       },
       "cover_meta": {
         "strategy": "fallback",
@@ -475,14 +475,14 @@
       ],
       "excerpt": "Colocar uma aplicacao web em producao expondo diretamente a porta do Node.js, Python ou Go para a internet publica e pedir para ter dor de cabeca.",
       "excerpt_en": "Deploying a web app directly exposing the Node.js, Python, or Go port to the public internet is asking for trouble.",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-03-nginx-como-reverse-proxy-ssl-load-balancing-e-caching.svg",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-03-nginx-como-reverse-proxy-ssl-load-balancing-e-caching.jpg",
       "cover_credit": {
-        "license": "Unsplash License",
-        "license_version": null,
-        "title": "Nginx como reverse proxy: SSL, load balancing e caching",
-        "creator": "Generated",
-        "source": "unsplash",
-        "source_url": ""
+        "file": "File:Programming code.jpg",
+        "artist": "Martin Vorel",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "page": "https://commons.wikimedia.org/wiki/File:Programming_code.jpg",
+        "source": "wikimedia"
       },
       "cover_meta": {
         "strategy": "fallback",
@@ -588,14 +588,14 @@
       ],
       "excerpt": "Deploying a web app directly exposing the Node.js, Python, or Go port to the public internet is asking for trouble.",
       "excerpt_en": "Deploying a web app directly exposing the Node.js, Python, or Go port to the public internet is asking for trouble.",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-03-nginx-como-reverse-proxy-ssl-load-balancing-e-caching-en.svg",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-03-nginx-como-reverse-proxy-ssl-load-balancing-e-caching-en.jpg",
       "cover_credit": {
-        "license": "Unsplash License",
-        "license_version": null,
-        "title": "Nginx as a Reverse Proxy: SSL, Load Balancing, and Caching",
-        "creator": "Generated",
-        "source": "unsplash",
-        "source_url": ""
+        "file": "File:Programowanie ELWAT.jpg",
+        "artist": "",
+        "license": "Public domain",
+        "license_url": "https://en.wikipedia.org/wiki/Public_domain",
+        "page": "https://commons.wikimedia.org/wiki/File:Programowanie_ELWAT.jpg",
+        "source": "wikimedia"
       },
       "cover_meta": {
         "strategy": "fallback",
@@ -702,14 +702,14 @@
       ],
       "excerpt": "CI/CD do zero: GitHub Actions para projetos Node.js e React.",
       "excerpt_en": "CI/CD from scratch: GitHub Actions for Node.js and React projects.",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-02-ci-cd-do-zero-github-actions-pra-projetos-node-js-e-react.svg",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-02-ci-cd-do-zero-github-actions-pra-projetos-node-js-e-react.jpg",
       "cover_credit": {
-        "license": "Unsplash License",
-        "license_version": null,
-        "title": "CI/CD do zero: GitHub Actions pra projetos Node.js e React",
-        "creator": "Generated",
-        "source": "unsplash",
-        "source_url": ""
+        "file": "File:Computer programming class.jpg",
+        "artist": "Wikideas1",
+        "license": "CC0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "page": "https://commons.wikimedia.org/wiki/File:Computer_programming_class.jpg",
+        "source": "wikimedia"
       },
       "cover_meta": {
         "strategy": "fallback",
@@ -799,14 +799,14 @@
       ],
       "excerpt": "CI/CD from scratch: GitHub Actions for Node.js and React projects.",
       "excerpt_en": "CI/CD from scratch: GitHub Actions for Node.js and React projects.",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-02-ci-cd-do-zero-github-actions-pra-projetos-node-js-e-react-en.svg",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-02-ci-cd-do-zero-github-actions-pra-projetos-node-js-e-react-en.jpg",
       "cover_credit": {
-        "license": "Unsplash License",
-        "license_version": null,
-        "title": "CI/CD from Scratch: GitHub Actions for Node.js and React Projects",
-        "creator": "Generated",
-        "source": "unsplash",
-        "source_url": ""
+        "file": "File:InheritanceinObjectOrientedProgramming.png",
+        "artist": "Arabboy Ismoilov",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "page": "https://commons.wikimedia.org/wiki/File:InheritanceinObjectOrientedProgramming.png",
+        "source": "wikimedia"
       },
       "cover_meta": {
         "strategy": "fallback",
@@ -897,14 +897,14 @@
       ],
       "excerpt": "React Server Components: quando e como usar no Next.js.",
       "excerpt_en": "React Server Components: when and how to use in Next.js.",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-01-react-server-components-quando-e-como-usar-no-next-js.svg",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-01-react-server-components-quando-e-como-usar-no-next-js.jpg",
       "cover_credit": {
-        "license": "Unsplash License",
-        "license_version": null,
-        "title": "React Server Components: quando e como usar no Next.js",
-        "creator": "Generated",
-        "source": "unsplash",
-        "source_url": ""
+        "file": "File:Пример кода на Java.jpg",
+        "artist": "DeKostia",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "page": "https://commons.wikimedia.org/wiki/File:Пример_кода_на_Java.jpg",
+        "source": "wikimedia"
       },
       "cover_meta": {
         "strategy": "fallback",
@@ -970,14 +970,14 @@
       ],
       "excerpt": "React Server Components: when and how to use in Next.js.",
       "excerpt_en": "React Server Components: when and how to use in Next.js.",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-01-react-server-components-quando-e-como-usar-no-next-js-en.svg",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-01-react-server-components-quando-e-como-usar-no-next-js-en.jpg",
       "cover_credit": {
-        "license": "Unsplash License",
-        "license_version": null,
-        "title": "React Server Components: When and How to Use in Next.js",
-        "creator": "Generated",
-        "source": "unsplash",
-        "source_url": ""
+        "file": "File:C Hello World Program.png",
+        "artist": "Esquivalience",
+        "license": "CC0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "page": "https://commons.wikimedia.org/wiki/File:C_Hello_World_Program.png",
+        "source": "wikimedia"
       },
       "cover_meta": {
         "strategy": "fallback",
@@ -1044,14 +1044,14 @@
       ],
       "excerpt": "Arquitetura limpa em TypeScript: princípios SOLID aplicados.",
       "excerpt_en": "Clean Architecture in TypeScript: SOLID Principles Applied.",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-30-arquitetura-limpa-em-typescript-principios-solid-aplicados.svg",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-30-arquitetura-limpa-em-typescript-principios-solid-aplicados.jpg",
       "cover_credit": {
-        "license": "Unsplash License",
-        "license_version": null,
-        "title": "Arquitetura limpa em TypeScript: princípios SOLID aplicados",
-        "creator": "Generated",
-        "source": "unsplash",
-        "source_url": ""
+        "file": "File:Computer virus code, x86-specific, ASM.png",
+        "artist": "",
+        "license": "Public domain",
+        "license_url": "https://en.wikipedia.org/wiki/Public_domain",
+        "page": "https://commons.wikimedia.org/wiki/File:Computer_virus_code,_x86-specific,_ASM.png",
+        "source": "wikimedia"
       },
       "cover_meta": {
         "strategy": "fallback",
@@ -1115,14 +1115,14 @@
       ],
       "excerpt": "Clean Architecture in TypeScript: SOLID Principles Applied.",
       "excerpt_en": "Clean Architecture in TypeScript: SOLID Principles Applied.",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-30-arquitetura-limpa-em-typescript-principios-solid-aplicados-en.svg",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-30-arquitetura-limpa-em-typescript-principios-solid-aplicados-en.jpg",
       "cover_credit": {
-        "license": "Unsplash License",
-        "license_version": null,
-        "title": "Clean Architecture in TypeScript: Applying SOLID Principles",
-        "creator": "Generated",
-        "source": "unsplash",
-        "source_url": ""
+        "file": "File:Live-coding-rodrigo-ramirez-velasco-spoken-code-spoken-web.png",
+        "artist": "Ali Barilaro",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "page": "https://commons.wikimedia.org/wiki/File:Live-coding-rodrigo-ramirez-velasco-spoken-code-spoken-web.png",
+        "source": "wikimedia"
       },
       "cover_meta": {
         "strategy": "fallback",
@@ -1187,14 +1187,14 @@
       ],
       "excerpt": "Error handling em TypeScript: Result types e typed errors.",
       "excerpt_en": "Error handling in TypeScript: Result types and typed errors.",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-28-error-handling-em-typescript-result-types-e-typed-errors.svg",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-28-error-handling-em-typescript-result-types-e-typed-errors.jpg",
       "cover_credit": {
-        "license": "Unsplash License",
-        "license_version": null,
-        "title": "Error handling em TypeScript: Result types e typed errors",
-        "creator": "Generated",
-        "source": "unsplash",
-        "source_url": ""
+        "file": "File:Code on computer monitor (Unsplash).jpg",
+        "artist": "Markus Spiske markusspiske",
+        "license": "CC0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "page": "https://commons.wikimedia.org/wiki/File:Code_on_computer_monitor_(Unsplash).jpg",
+        "source": "wikimedia"
       },
       "cover_meta": {
         "strategy": "fallback",
@@ -1295,14 +1295,14 @@
       ],
       "excerpt": "Error handling in TypeScript: Result types and typed errors.",
       "excerpt_en": "Error handling in TypeScript: Result types and typed errors.",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-28-error-handling-em-typescript-result-types-e-typed-errors-en.svg",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-28-error-handling-em-typescript-result-types-e-typed-errors-en.jpg",
       "cover_credit": {
-        "license": "Unsplash License",
-        "license_version": null,
-        "title": "Error Handling in TypeScript: Result Types and Typed Errors",
-        "creator": "Generated",
-        "source": "unsplash",
-        "source_url": ""
+        "file": "File:Computer code with relocation.tiff",
+        "artist": "Peter_Flass (talk) (Uploads)",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0/",
+        "page": "https://commons.wikimedia.org/wiki/File:Computer_code_with_relocation.tiff",
+        "source": "wikimedia"
       },
       "cover_meta": {
         "strategy": "fallback",
