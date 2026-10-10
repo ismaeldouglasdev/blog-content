@@ -15,8 +15,15 @@
       ],
       "excerpt": "Inteligência Artificial para desenvolvedores: LLMs, RAG e agentes.",
       "excerpt_en": "Artificial Intelligence for Developers: LLMs, RAG, and Agents.",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-06-inteligencia-artificial-para-desenvolvedores-llms-rag-e.jpg",
-      "cover_credit": null,
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-06-inteligencia-artificial-para-desenvolvedores-llms-rag-e.svg",
+      "cover_credit": {
+        "license": "Unsplash License",
+        "license_version": null,
+        "title": "Inteligência Artificial para desenvolvedores: LLMs, RAG e agentes",
+        "creator": "Generated",
+        "source": "unsplash",
+        "source_url": ""
+      },
       "cover_meta": {
         "strategy": "fallback",
         "source": "code",
@@ -85,8 +92,15 @@
       ],
       "excerpt": "Artificial Intelligence for Developers: LLMs, RAG, and Agents.",
       "excerpt_en": "Artificial Intelligence for Developers: LLMs, RAG, and Agents.",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-06-inteligencia-artificial-para-desenvolvedores-llms-rag-e.jpg",
-      "cover_credit": null,
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-06-inteligencia-artificial-para-desenvolvedores-llms-rag-e-en.svg",
+      "cover_credit": {
+        "license": "Unsplash License",
+        "license_version": null,
+        "title": "Artificial Intelligence for Developers: LLMs, RAG, and Agents",
+        "creator": "Generated",
+        "source": "unsplash",
+        "source_url": ""
+      },
       "cover_meta": {
         "strategy": "fallback",
         "source": "code",
@@ -155,8 +169,15 @@
       ],
       "excerpt": "Machine Learning (ML) é uma área em constante expansão, e sua aplicação está se tornando cada vez mais comum em diversos setores.",
       "excerpt_en": "Machine Learning (ML) is a rapidly growing field, and its application is becoming more common across various sectors.",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-05-machine-learning-com-python-do-scikit-learn-ao-pytorch-em.jpg",
-      "cover_credit": null,
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-05-machine-learning-com-python-do-scikit-learn-ao-pytorch-em.svg",
+      "cover_credit": {
+        "license": "Unsplash License",
+        "license_version": null,
+        "title": "Machine Learning com Python: do scikit-learn ao PyTorch em 2026",
+        "creator": "Generated",
+        "source": "unsplash",
+        "source_url": ""
+      },
       "cover_meta": {
         "strategy": "fallback",
         "source": "code",
@@ -301,8 +322,15 @@
       ],
       "excerpt": "Machine Learning (ML) is a rapidly growing field, and its application is becoming more common across various sectors.",
       "excerpt_en": "Machine Learning (ML) is a rapidly growing field, and its application is becoming more common across various sectors.",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-05-machine-learning-com-python-do-scikit-learn-ao-pytorch-em.jpg",
-      "cover_credit": null,
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-05-machine-learning-com-python-do-scikit-learn-ao-pytorch-em-en.svg",
+      "cover_credit": {
+        "license": "Unsplash License",
+        "license_version": null,
+        "title": "Machine Learning with Python: From scikit-learn to PyTorch in 2026",
+        "creator": "Generated",
+        "source": "unsplash",
+        "source_url": ""
+      },
       "cover_meta": {
         "strategy": "fallback",
         "source": "code",
@@ -447,8 +475,15 @@
       ],
       "excerpt": "Colocar uma aplicacao web em producao expondo diretamente a porta do Node.js, Python ou Go para a internet publica e pedir para ter dor de cabeca.",
       "excerpt_en": "Deploying a web app directly exposing the Node.js, Python, or Go port to the public internet is asking for trouble.",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-03-nginx-como-reverse-proxy-ssl-load-balancing-e-caching.jpg",
-      "cover_credit": null,
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-03-nginx-como-reverse-proxy-ssl-load-balancing-e-caching.svg",
+      "cover_credit": {
+        "license": "Unsplash License",
+        "license_version": null,
+        "title": "Nginx como reverse proxy: SSL, load balancing e caching",
+        "creator": "Generated",
+        "source": "unsplash",
+        "source_url": ""
+      },
       "cover_meta": {
         "strategy": "fallback",
         "source": "code",
@@ -553,8 +588,15 @@
       ],
       "excerpt": "Deploying a web app directly exposing the Node.js, Python, or Go port to the public internet is asking for trouble.",
       "excerpt_en": "Deploying a web app directly exposing the Node.js, Python, or Go port to the public internet is asking for trouble.",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-03-nginx-como-reverse-proxy-ssl-load-balancing-e-caching.jpg",
-      "cover_credit": null,
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-03-nginx-como-reverse-proxy-ssl-load-balancing-e-caching-en.svg",
+      "cover_credit": {
+        "license": "Unsplash License",
+        "license_version": null,
+        "title": "Nginx as a Reverse Proxy: SSL, Load Balancing, and Caching",
+        "creator": "Generated",
+        "source": "unsplash",
+        "source_url": ""
+      },
       "cover_meta": {
         "strategy": "fallback",
         "source": "code",
@@ -660,8 +702,15 @@
       ],
       "excerpt": "CI/CD do zero: GitHub Actions para projetos Node.js e React.",
       "excerpt_en": "CI/CD from scratch: GitHub Actions for Node.js and React projects.",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-02-ci-cd-do-zero-github-actions-pra-projetos-node-js-e-react.jpg",
-      "cover_credit": null,
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-02-ci-cd-do-zero-github-actions-pra-projetos-node-js-e-react.svg",
+      "cover_credit": {
+        "license": "Unsplash License",
+        "license_version": null,
+        "title": "CI/CD do zero: GitHub Actions pra projetos Node.js e React",
+        "creator": "Generated",
+        "source": "unsplash",
+        "source_url": ""
+      },
       "cover_meta": {
         "strategy": "fallback",
         "source": "code",
@@ -750,8 +799,15 @@
       ],
       "excerpt": "CI/CD from scratch: GitHub Actions for Node.js and React projects.",
       "excerpt_en": "CI/CD from scratch: GitHub Actions for Node.js and React projects.",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-02-ci-cd-do-zero-github-actions-pra-projetos-node-js-e-react.jpg",
-      "cover_credit": null,
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-02-ci-cd-do-zero-github-actions-pra-projetos-node-js-e-react-en.svg",
+      "cover_credit": {
+        "license": "Unsplash License",
+        "license_version": null,
+        "title": "CI/CD from Scratch: GitHub Actions for Node.js and React Projects",
+        "creator": "Generated",
+        "source": "unsplash",
+        "source_url": ""
+      },
       "cover_meta": {
         "strategy": "fallback",
         "source": "code",
@@ -841,8 +897,15 @@
       ],
       "excerpt": "React Server Components: quando e como usar no Next.js.",
       "excerpt_en": "React Server Components: when and how to use in Next.js.",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-01-react-server-components-quando-e-como-usar-no-next-js.jpg",
-      "cover_credit": null,
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-01-react-server-components-quando-e-como-usar-no-next-js.svg",
+      "cover_credit": {
+        "license": "Unsplash License",
+        "license_version": null,
+        "title": "React Server Components: quando e como usar no Next.js",
+        "creator": "Generated",
+        "source": "unsplash",
+        "source_url": ""
+      },
       "cover_meta": {
         "strategy": "fallback",
         "source": "code",
@@ -907,8 +970,15 @@
       ],
       "excerpt": "React Server Components: when and how to use in Next.js.",
       "excerpt_en": "React Server Components: when and how to use in Next.js.",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-01-react-server-components-quando-e-como-usar-no-next-js.jpg",
-      "cover_credit": null,
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-01-react-server-components-quando-e-como-usar-no-next-js-en.svg",
+      "cover_credit": {
+        "license": "Unsplash License",
+        "license_version": null,
+        "title": "React Server Components: When and How to Use in Next.js",
+        "creator": "Generated",
+        "source": "unsplash",
+        "source_url": ""
+      },
       "cover_meta": {
         "strategy": "fallback",
         "source": "code",
@@ -974,8 +1044,15 @@
       ],
       "excerpt": "Arquitetura limpa em TypeScript: princípios SOLID aplicados.",
       "excerpt_en": "Clean Architecture in TypeScript: SOLID Principles Applied.",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-30-arquitetura-limpa-em-typescript-principios-solid-aplicados.jpg",
-      "cover_credit": null,
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-30-arquitetura-limpa-em-typescript-principios-solid-aplicados.svg",
+      "cover_credit": {
+        "license": "Unsplash License",
+        "license_version": null,
+        "title": "Arquitetura limpa em TypeScript: princípios SOLID aplicados",
+        "creator": "Generated",
+        "source": "unsplash",
+        "source_url": ""
+      },
       "cover_meta": {
         "strategy": "fallback",
         "source": "code",
@@ -1038,8 +1115,15 @@
       ],
       "excerpt": "Clean Architecture in TypeScript: SOLID Principles Applied.",
       "excerpt_en": "Clean Architecture in TypeScript: SOLID Principles Applied.",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-30-arquitetura-limpa-em-typescript-principios-solid-aplicados.jpg",
-      "cover_credit": null,
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-30-arquitetura-limpa-em-typescript-principios-solid-aplicados-en.svg",
+      "cover_credit": {
+        "license": "Unsplash License",
+        "license_version": null,
+        "title": "Clean Architecture in TypeScript: Applying SOLID Principles",
+        "creator": "Generated",
+        "source": "unsplash",
+        "source_url": ""
+      },
       "cover_meta": {
         "strategy": "fallback",
         "source": "code",
@@ -1103,8 +1187,15 @@
       ],
       "excerpt": "Error handling em TypeScript: Result types e typed errors.",
       "excerpt_en": "Error handling in TypeScript: Result types and typed errors.",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-28-error-handling-em-typescript-result-types-e-typed-errors.jpg",
-      "cover_credit": null,
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-28-error-handling-em-typescript-result-types-e-typed-errors.svg",
+      "cover_credit": {
+        "license": "Unsplash License",
+        "license_version": null,
+        "title": "Error handling em TypeScript: Result types e typed errors",
+        "creator": "Generated",
+        "source": "unsplash",
+        "source_url": ""
+      },
       "cover_meta": {
         "strategy": "fallback",
         "source": "code",
@@ -1204,8 +1295,15 @@
       ],
       "excerpt": "Error handling in TypeScript: Result types and typed errors.",
       "excerpt_en": "Error handling in TypeScript: Result types and typed errors.",
-      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-28-error-handling-em-typescript-result-types-e-typed-errors.jpg",
-      "cover_credit": null,
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-28-error-handling-em-typescript-result-types-e-typed-errors-en.svg",
+      "cover_credit": {
+        "license": "Unsplash License",
+        "license_version": null,
+        "title": "Error Handling in TypeScript: Result Types and Typed Errors",
+        "creator": "Generated",
+        "source": "unsplash",
+        "source_url": ""
+      },
       "cover_meta": {
         "strategy": "fallback",
         "source": "code",
