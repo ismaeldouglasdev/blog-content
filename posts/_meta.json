@@ -1,6 +1,56 @@
 {
   "posts": [
     {
+      "slug": "2026-10-12-fetch-api-moderno-alternativas-ao-axios-em-2026",
+      "title": "Fetch API moderno: alternativas ao axios em 2026",
+      "title_en": null,
+      "date": "2026-10-12",
+      "category": "article",
+      "tags": [
+        "javascript",
+        "fetch",
+        "api"
+      ],
+      "excerpt": "Fetch API moderno: alternativas ao axios em 2026",
+      "excerpt_en": null,
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-12-fetch-api-moderno-alternativas-ao-axios-em-2026.jpg",
+      "cover_credit": null,
+      "cover_meta": {
+        "strategy": "fallback",
+        "review_status": "auto_fallback",
+        "relevance_score": null,
+        "motif": "tech",
+        "review_candidates": []
+      },
+      "lang": "pt",
+      "translation_slug": "2026-10-12-fetch-api-moderno-alternativas-ao-axios-em-2026-en"
+    },
+    {
+      "slug": "2026-10-12-fetch-api-moderno-alternativas-ao-axios-em-2026-en",
+      "title": "Modern Fetch API: Alternatives to Axios in 2026",
+      "title_en": "Modern Fetch API: Alternatives to Axios in 2026",
+      "date": "2026-10-12",
+      "category": "article",
+      "tags": [
+        "javascript",
+        "fetch",
+        "api"
+      ],
+      "excerpt": "markdown Modern Fetch API: alternatives to axios in 2026",
+      "excerpt_en": "markdown Modern Fetch API: alternatives to axios in 2026",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-12-fetch-api-moderno-alternativas-ao-axios-em-2026.jpg",
+      "cover_credit": null,
+      "cover_meta": {
+        "strategy": "fallback",
+        "review_status": "auto_fallback",
+        "relevance_score": null,
+        "motif": "tech",
+        "review_candidates": []
+      },
+      "lang": "en",
+      "translation_of": "2026-10-12-fetch-api-moderno-alternativas-ao-axios-em-2026"
+    },
+    {
       "slug": "2026-10-06-inteligencia-artificial-para-desenvolvedores-llms-rag-e",
       "title": "Inteligência Artificial para desenvolvedores: LLMs, RAG e agentes",
       "title_en": "Artificial Intelligence for Developers: LLMs, RAG, and Agents",
