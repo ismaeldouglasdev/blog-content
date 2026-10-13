@@ -3,7 +3,7 @@ title: "Fetch API moderno: alternativas ao axios em 2026"
 date: "2026-10-12"
 category: "article"
 tags: ["javascript", "fetch", "api"]
-excerpt: "Fetch API moderno: alternativas ao axios em 2026"
+excerpt: "Fetch API moderno: alternativas ao axios em 2026."
 cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-12-fetch-api-moderno-alternativas-ao-axios-em-2026.jpg"
 lang: "pt"
 ---
