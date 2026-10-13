@@ -3,7 +3,7 @@ title: "Redis in Practice: Caching, Rate Limiting & Queues in Node.js"
 date: "2026-09-03"
 category: "tutorial"
 tags: ["redis", "cache", "backend"]
-excerpt: "Redis in practice: caching, rate limiting and queues in Node.js."
+excerpt: "Caching, sliding-window rate limiting, BullMQ queues and pub/sub — hands-on, with Node.js and Docker."
 share_hook: "Cache, sliding-window rate limiting, BullMQ queues and pub/sub in one Redis."
 lang: "en"
 translation_of: "2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js"
@@ -11,7 +11,7 @@ translation_of: "2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node
 
 ### Why you should care right now  
 
-Imagine your e‑commerce has just integrated OSPOS, the open‑source POS I customized for the Quase Tudo store, with Mercado Livre. With each sale, inventory must be updated within milliseconds, otherwise a customer ends up buying a product that’s already out of stock and the store’s reputation plummets. In the first test, the Mercado Livre API started responding with *429 Too Many Requests* errors, and at the same time the database became overloaded with repeated queries to the same product record. The solution turned out to be to place a Redis layer between the application and the database, using Redis not only as a cache but also as a rate limiter and as a queue broker.  
+Your e-commerce starts to grow and, all of a sudden, the external API answers with `429 Too Many Requests` while the database chokes on repeated queries to the same record. Selling becomes a race measured in milliseconds: if inventory isn't updated instantly, someone buys a product that's already gone. In this tutorial, you'll build three defenses with Redis — caching, rate limiting, and queues — using Node.js, Docker, and just a few lines of code.
 
 If you’ve already faced a similar situation – or haven’t yet, but know it could happen – this article shows, step by step, how to build these three essential functions with Node.js, Docker, and just a few lines of code.
 

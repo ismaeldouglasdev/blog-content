@@ -13,7 +13,7 @@ translation_of: "2026-08-17-css-grid-e-flexbox-quando-usar-cada-um"
 
 ## Introduction
 
-For decades, website layout relied on limited tools, such as the `float` property and absolute positioning. These techniques, although powerful, required complex hacks and often resulted in difficult-to-maintain code. With the advent of modern CSS, front-end development has become much more elegant. Two of the main highlights of this revolution are **CSS Flexbox** and **CSS Grid**.
+You open the CSS, write `display: flex`, and the navbar snaps into place. Try the same thing on a two-column dashboard and the layout falls apart. Flexbox and Grid solve different problems, and picking the wrong one is why so much `float` and magic `margin: auto` still haunt production. Here's how to choose between them without guessing.
 
 Many beginner developers — and even experienced ones — often wonder: "Which one should I use?" The short answer is: both are great, but they serve different purposes. To master responsive design, it's essential to understand the philosophy behind each.
 

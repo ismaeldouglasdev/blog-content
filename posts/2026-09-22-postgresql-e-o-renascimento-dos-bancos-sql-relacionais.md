@@ -10,7 +10,7 @@ lang: "pt"
 ---
 
 ## Introdução
-A escolha do banco de dados certo é crucial para qualquer projeto de desenvolvimento de software. Nos últimos anos, temos visto um aumento significativo no uso de bancos de dados NoSQL, que prometem maior flexibilidade e escalabilidade em comparação com os tradicionais bancos de dados relacionais. No entanto, com o passar do tempo, muitos desenvolvedores começaram a perceber as limitações dos bancos de dados NoSQL e a valorizar a robustez e a consistência dos bancos de dados relacionais, como o PostgreSQL. Aqui, vou mostrar o renascimento dos bancos de dados SQL relacionais, com foco no PostgreSQL e suas funcionalidades que o tornam uma escolha atraente para muitos projetos.
+Dizer que você usava SQL já soou antiquado diante de tanta promessa de NoSQL. Só que escalar sem consistência vira dor de cabeça: dados duplicados, relatórios que não fecham, `JOIN`s que o time teve de reimplementar na aplicação. O PostgreSQL voltou ao centro da conversa — e aqui você vê quais recursos o tornaram a escolha óbvia para tantos projetos.
 
 ## A Era NoSQL (2010-2018)
 No início dos anos 2010, os bancos de dados NoSQL começaram a ganhar popularidade devido à sua capacidade de lidar com grandes volumes de dados não estruturados e à sua escalabilidade horizontal. Muitos desenvolvedores e empresas adotaram bancos de dados NoSQL, como MongoDB, Cassandra e Redis, para seus projetos. No entanto, com o tempo, muitos começaram a perceber as limitações dos bancos de dados NoSQL, como a falta de suporte a transações ACID, a complexidade na modelagem de dados e a dificuldade em realizar consultas complexas.

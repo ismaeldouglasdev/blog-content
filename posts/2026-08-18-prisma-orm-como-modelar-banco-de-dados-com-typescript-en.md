@@ -11,9 +11,7 @@ translation_of: "2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescrip
 
 ## Introduction: ORM vs raw query
 
-> “If the only way you know how to talk to the database is to shout **SQL**, it’s time to learn its language.”  
-
-The sentence may sound cliché, but it captures the reality of modern application developers. While raw queries give you total control, they also bring **cognitive load**, risk of *SQL injection*, and painful maintenance. An **ORM** (Object‑Relational Mapping) abstracts the persistence layer, letting you work with typed objects, versioned migrations, and, best of all, **autocomplete** and **validation** in your editor.
+Raw queries give you total control — until the first `JOIN` nobody can read anymore. That's where an ORM comes in: instead of SQL strings scattered across the codebase, you work with typed objects, versioned migrations, and autocomplete in your editor. In this article, you'll walk through the full lifecycle of a data model with Prisma — from schema to query optimization — using a project-management SaaS as the example.
 
 **Prisma** has been gaining traction in the TypeScript ecosystem by combining the productivity of an ORM with the performance of optimized queries. In this article we’ll walk through the entire lifecycle of a data model – from schema definition to query optimization – using a **project‑management SaaS** example. If you already use Node.js/TypeScript, you’ll see that Prisma can be the “safety net” your stack was missing.
 

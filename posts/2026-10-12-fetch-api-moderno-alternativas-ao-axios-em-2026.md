@@ -10,7 +10,7 @@ lang: "pt"
 
 ## Fetch API moderno: alternativas ao axios em 2026
 
-Em um mundo onde APIs são fundamentais para a construção de aplicações web responsivas e dinâmicas, a eficiência nas requisições HTTP é um assunto cada vez mais relevante. O Axios, uma das bibliotecas mais populares para esse fim, foi um grande aliado para muitos desenvolvedores ao longo dos anos. No entanto, com o avanço do JavaScript e as melhorias no Fetch API, surgem novas alternativas e abordagens que podem tornar o desenvolvimento ainda mais ágil e eficiente.
+Você instala o Axios por hábito e nem lembra mais por quê — enquanto o `fetch` nativo, que já vem no navegador, resolve a maioria dos casos com menos dependências. Com `AbortController`, `Promise.all` e um wrapper minimalista, dá para esquecer o Axios sem perder nada. Aqui você compara as duas abordagens em código real de 2026.
 
 ### Fetch nativo: o que mudou
 

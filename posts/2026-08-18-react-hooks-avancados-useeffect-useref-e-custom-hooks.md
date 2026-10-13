@@ -10,7 +10,7 @@ lang: "pt"
 
 ## Introdução: Por que os Hooks mudaram o React? 
 
-Desde que chegaram ao React na versão 16.8, no início de 2019, os Hooks se tornaram o padrão de facto da comunidade — praticamente toda biblioteca e tutorial moderno parte deles hoje.
+Se você aprendeu React na era dos componentes de classe, provavelmente ainda escreve `componentDidMount` por reflexo. Os Hooks trocaram boa parte daquele ciclo de vida por `useEffect` — e quem não domina o array de dependências acaba criando um loop infinito que só aparece em produção. Aqui você aprende `useEffect`, `useRef` e como extrair custom hooks que realmente se reaproveitam.
 
 Se você começou a programar em React antes da versão 16.8, provavelmente ainda tem na memória a saga dos *class components*: `componentDidMount`, `componentWillUnmount`, `this.setState`, e a eterna luta contra o *binding* de métodos. Foi um período de produtividade limitada e, convenhamos, de código verboso.
 

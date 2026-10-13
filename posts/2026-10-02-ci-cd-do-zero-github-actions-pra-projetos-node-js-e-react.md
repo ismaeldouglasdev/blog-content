@@ -10,7 +10,7 @@ lang: "pt"
 
 ## CI/CD do zero: GitHub Actions para projetos Node.js e React
 
-Automatizar o processo de integração e entrega contínua (CI/CD) é uma prática essencial no desenvolvimento moderno de software. No entanto, para muitos, a configuração inicial de um pipeline pode parecer uma tarefa complicada. O que se pode fazer para simplificar essa jornada? Aqui, vou mostrar como configurar um workflow básico no GitHub Actions para projetos Node.js e React, garantindo que suas aplicações estejam sempre prontas para serem entregues de forma eficiente e confiável.
+Você acabou de mergear na `main` e, minutos depois, descobre que quebrou o build — por um detalhe que um único teste teria pegado. CI/CD existe para transformar esse susto em rotina chata: cada push roda lint, testes e deploy automático. Aqui você configura um workflow no GitHub Actions do zero, para projetos Node.js e React.
 
 ## Workflow básico
 

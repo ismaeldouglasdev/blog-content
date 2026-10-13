@@ -9,7 +9,7 @@ lang: "pt"
 ---
 
 
-Teclados mecânicos saíram do nicho de entusiastas e viraram item quase obrigatório de setup. Em 2026, a pergunta não é mais "por que comprar um", e sim "qual comprar". Depois de passar algum tempo acompanhando reviews, discussões em fóruns e o que a comunidade brasileira mais comenta, separei os três modelos que mais aparecem nas conversas e o que cada um entrega de verdade.
+Você digita o dia inteiro e, no fim da tarde, os pulsos reclamam — e o teclado de membrana baratinho tem boa parte da culpa. Em 2026, o teclado mecânico virou item quase obrigatório de setup, mas a pergunta mudou: não é mais 'por que comprar', e sim 'qual comprar'. Separei os três modelos mais comentados pela comunidade e o que cada um entrega de verdade.
 
 ## Por que o interesse cresceu tanto
 

@@ -11,7 +11,7 @@ translation_of: "2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-r
 
 ## Introduction
 
-Imagine a customer of your retail store, who uses OSPOS as a point of sale, requests an integration that synchronizes inventory with Mercado Livre in real time. You deliver the code over a weekend, but two months later the same customer asks you to add a sales report by category. What was a simple module is now full of conditionals, methods that do everything, and little room for change. This situation happens frequently when design rules are set aside.
+It works on your machine, the tests pass — and three months later nobody can touch it without breaking something else. Every legacy module started as something simple that gained 'just one more `if`' with each new request. The SOLID principles exist to stop exactly that, and here you'll see them in real TypeScript code, not animal-and-shape examples.
 
 Here I explain how the five SOLID principles can keep code from evolving into an uncontrollable monolith. Each principle comes with an example in one of the two languages I use daily: TypeScript in the synchronization service and Python in the channel engine. At the end I bring the two together in a real case, and I also write about **when it is not worth it** to apply any of this.
 

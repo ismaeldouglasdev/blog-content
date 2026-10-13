@@ -3,14 +3,14 @@ title: "Next.js App Router: Server Components in Action"
 date: "2026-09-15"
 category: "tutorial"
 tags: ["nextjs", "react", "server-components"]
-excerpt: "Choosing the right architecture and tools is crucial for scalable web applications."
+excerpt: "Server Components in the Next.js App Router, hands-on: how they work, when to use them, data-fetching patterns, streaming, and interop with Client Components."
 cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-15-next-js-app-router-server-components-na-pratica.jpg"
 lang: "en"
 translation_of: "2026-09-15-next-js-app-router-server-components-na-pratica"
 ---
 
 ## Introduction
-When it comes to developing scalable and performant web applications, choosing the right architecture and tools is crucial. One of the main decisions developers face is how to handle component rendering and data manipulation on the server and client. This is where the Next.js App Router comes into play, offering an innovative solution to these challenges using Server Components. Here, I will delve into how the Next.js App Router can be used to create more efficient web applications, starting with an overview of Server Components and their importance in modern application architecture.
+Ever catch yourself shipping too much JavaScript to the browser just to render a page that barely changes? The Next.js App Router flips that script: the server renders most of the HTML and sends the client only what needs interactivity. In this tutorial, you'll learn Server Components in practice — what runs on the server, what runs on the client, and how to choose between them.
 
 ---
 ## Server vs Client Components

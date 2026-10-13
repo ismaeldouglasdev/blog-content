@@ -3,14 +3,14 @@ title: "React performance: memo, useMemo, useCallback e React Compiler"
 date: "2026-10-13"
 category: "article"
 tags: ["react", "performance", "optimizacao"]
-excerpt: "Introdução: quando a otimização se torna necessária"
+excerpt: "Como saber quando otimizar, como React.memo, useMemo e useCallback evitam renderizações desnecessárias e o que muda com o React Compiler."
 cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-13-react-performance-memo-usememo-usecallback-e-react-compiler.jpg"
 lang: "pt"
 ---
 
 ## Introdução: quando a otimização se torna necessária
 
-Quando você lida com um catálogo de mais de 10 mil produtos e precisa mantê-lo sincronizado entre um sistema de PDV e um marketplace, cada renderização extra começa a doer. Esse foi o cenário que me levou a mergulhar na otimização de performance no React. O projeto *inventory‑service* que construí para um cliente usava OSPOS como base e expunha um endpoint JSON que alimentava tanto o front‑end da loja quanto a integração com o Mercado Livre. Nos primeiros dias, a página de catálogo atualizava a lista inteira a cada digitação, e o navegador travava em conexões mais lentas.
+Sua lista no React trava a cada tecla digitada e o culpado quase nunca é o volume de dados — são as renderizações que você não pediu. Otimizar performance não começa adicionando `useMemo` em cada componente, e sim entendendo por que um componente redesenha quando nada mudou.
 
 A dor era visível no Chrome DevTools: centenas de componentes renderizando em cascata, muitos deles recebendo novas props mesmo quando a consulta de fundo não havia retornado novos dados. A primeira tentativa de corrigir o problema foi envolver tudo com `React.memo`, mas isso apenas mascarou o sintoma — as renderizações desnecessárias continuaram ocorrendo no nível mais profundo.
 

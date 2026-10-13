@@ -3,7 +3,7 @@ title: "Artificial Intelligence for Developers: LLMs, RAG, and Agents"
 date: "2026-10-06"
 category: "article"
 tags: ["ia", "llm", "rag", "agentes", "openai"]
-excerpt: "Artificial Intelligence for Developers: LLMs, RAG, and Agents."
+excerpt: "LLMs, RAG and agents from the ground up: how they work, where they fit, and how to start using them in real projects."
 cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-06-inteligencia-artificial-para-desenvolvedores-llms-rag-e.jpg"
 lang: "en"
 translation_of: "2026-10-06-inteligencia-artificial-para-desenvolvedores-llms-rag-e"
@@ -11,7 +11,7 @@ translation_of: "2026-10-06-inteligencia-artificial-para-desenvolvedores-llms-ra
 
 ## Artificial Intelligence for Developers: LLMs, RAG, and Agents
 
-I remember when I updated the point-of-sale system for the store where I work. Migrating a database with about ten thousand products between two different systems was a manual, slow, and error-prone task. Today, a script with a few lines of Python solves it. But what if we could describe the task in Portuguese to an assistant, and it wrote the script, tested it, and even suggested improvements to the integration? This is no longer science fiction. Large Language Models (LLMs) are turning this possibility into a practical tool in the day-to-day work of development.
+What if you could describe a task in plain language — migrate ten thousand products between two systems — and an assistant wrote the script, tested it, and even suggested improvements? This is no longer science fiction. Large Language Models (LLMs) have turned that possibility into a practical, everyday tool for developers.
 
 This new paradigm is not just about a smarter chatbot. It's about a fundamental shift in how we interact with code, data, and systems. As a full-stack developer who has built everything from REST APIs in Python to a dashboard for an open-source AI memory system, I see these tools unfolding into three main layers: LLMs as the intelligent core, RAG to give them specific memory, and agents to transform intentions into actions.
 

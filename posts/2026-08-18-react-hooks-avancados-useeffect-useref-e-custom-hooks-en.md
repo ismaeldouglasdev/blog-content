@@ -13,9 +13,7 @@ translation_of: "2026-08-18-react-hooks-avancados-useeffect-useref-e-custom-hook
 
 ## Introduction: Why Hooks Changed React?
 
-> **“In 2018, 85 % of React projects had already adopted Hooks.”** – State of React Survey 2023  
-
-If you started coding in React before version 16.8, you probably still remember the saga of *class components*: `componentDidMount`, `componentWillUnmount`, `this.setState`, and the endless battle with method *binding*. It was a period of limited productivity and, let’s face it, verbose code.
+If you learned React in the age of class components, you probably still write `componentDidMount` out of muscle memory. Hooks replaced most of that lifecycle with `useEffect` — and without a solid grasp of the dependency array, it's easy to ship an infinite render loop that only shows up in production. Here you'll master `useEffect`, `useRef`, and how to extract custom hooks that actually get reused.
 
 Then, Hooks arrived as a silent revolution. They brought two core promises:
 

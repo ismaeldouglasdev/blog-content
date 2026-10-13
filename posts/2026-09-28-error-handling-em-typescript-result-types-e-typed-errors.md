@@ -10,7 +10,7 @@ lang: "pt"
 
 ## Error handling em TypeScript: Result types e typed errors
 
-Lidar com erros em aplicações é uma tarefa desafiadora e muitas vezes negligenciada por desenvolvedores. Em vez de apenas lançar exceções, é fundamental considerar como os erros são tratados e propagados através do código. Isso se torna ainda mais importante em projetos grandes, onde a clareza e a robustez do tratamento de erros podem fazer a diferença entre uma aplicação estável e uma cheia de bugs. Aqui, vou mostrar como os tipos de resultados (`Result<T, E>`) e erros tipados podem melhorar a forma como lidamos com falhas em TypeScript.
+O `try/catch` no topo da função parece resolver — até o erro sumir silenciosamente e um bug reaparecer três camadas depois com uma mensagem inútil. Tratar erro em TypeScript não é só capturar exceção: é decidir como a falha se propaga e quem é obrigado a lidar com ela. Aqui você vê `Result<T, E>` e erros tipados na prática.
 
 ## Throw vs Return
 

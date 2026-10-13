@@ -9,7 +9,7 @@ lang: "pt"
 ---
 
 ## Introdução
-A programação quântica é um campo que tem gerado grande interesse nos últimos anos, com muitos especialistas e empresas investindo tempo e recursos para desenvolver tecnologias quânticas. No entanto, a pergunta que muitos desenvolvedores se fazem é: a programação quântica é uma prática real ou ainda está na esfera da ciência? Aqui, vou mostrar o estado atual dos computadores quânticos, as principais empresas que estão trabalhando nessa área, as ferramentas e linguagens de programação disponíveis e os problemas reais que a programação quântica pode resolver.
+Dá para fatorar números que quebrariam a criptografia que protege suas senhas — em teoria. Na prática, você hoje reserva segundos de tempo em um computador quântico e torce para que a correção de erros dê conta. Então a programação quântica já é ferramenta de produção ou ainda é ciência de laboratório? Aqui você vê o estado real, quem está investindo e o que ela já resolve em 2026.
 
 ## O estado atual dos computadores quânticos
 Os computadores quânticos são dispositivos que utilizam os princípios da mecânica quântica para realizar cálculos. Eles têm o potencial de resolver problemas que são muito difíceis ou impossíveis de serem resolvidos pelos computadores clássicos. Atualmente, existem vários tipos de computadores quânticos, incluindo os computadores quânticos de gate, os computadores quânticos de topo e os computadores quânticos de óptica quântica.

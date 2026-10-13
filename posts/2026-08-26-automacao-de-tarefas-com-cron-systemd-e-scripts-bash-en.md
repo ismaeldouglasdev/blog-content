@@ -11,7 +11,7 @@ translation_of: "2026-08-26-automacao-de-tarefas-com-cron-systemd-e-scripts-bash
 
 
 ## Introduction
-When I migrated 10k products between systems at Loja Quase Tudo, I realized the importance of automating tasks to maintain efficiency and reduce human errors. Task automation is crucial for any system or application, allowing tasks to be executed regularly and consistently without the need for human intervention. In this context, tools like `cron`, `systemd`, and Bash scripts are essential for automating tasks and ensuring system stability and security.
+It's 3 a.m. and the backup that should have run at 2 never did — and nobody noticed, because nobody checks. Automating tasks with `cron`, `systemd`, and Bash scripts is what separates a server that takes care of itself from one that breaks at the worst possible moment. Here you'll set up each of them and learn when to reach for a systemd timer instead of a crontab.
 
 ---
 

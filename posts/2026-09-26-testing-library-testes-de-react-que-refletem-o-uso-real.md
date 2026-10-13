@@ -10,7 +10,7 @@ lang: "pt"
 
 ## A ilusão do controle em testes de interface
 
-A maioria dos testes de React falha não por erro técnico, mas por má interpretação do que está sendo testado. O problema raiz é a tentativa de simular a implementação em vez de validar o comportamento percebido pelo usuário. Quando um teste verifica se um componente chamou `setState` ou atualizou um estado interno, ele está acoplado à estrutura do código, não à funcionalidade entregue. Isso gera fragilidade: qualquer refatoração mínima que altere o nome de uma classe CSS ou a lógica interna de um hook quebra a suite de testes, mesmo que o produto final continue funcionando exatamente como esperado.
+Seu teste passa hoje e quebra amanhã — não porque o bug voltou, mas porque alguém renomeou uma classe CSS. É o preço de testar a implementação em vez do comportamento. A Testing Library existe para forçar o oposto: testes que só enxergam o que o usuário enxerga. Aqui você aprende queries, eventos reais e como testar código assíncrono sem `setTimeout`.
 
 Ismael Douglas, desenvolvedor full stack e contribuidor open source, construiu sua carreira técnica observando essa dinâmica de perto. Ao trabalhar com integrações de e-commerce e PDV, onde a precisão dos dados é crítica, percebeu que testar a "caixa preta" — o que entra e o que sai — é a única forma de garantir estabilidade em sistemas complexos. No ecossistema React, essa abordagem é institucionalizada pela Testing Library. A filosofia não é apenas uma convenção de código; é uma mudança de mentalidade que força o desenvolvedor a pensar como um usuário real, e não como um engenheiro de software manipulando variáveis de memória.
 
