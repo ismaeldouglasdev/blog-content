@@ -11,9 +11,8 @@ translation_of: "2026-10-05-machine-learning-com-python-do-scikit-learn-ao-pytor
 
 ## Introduction
 
-Machine Learning (ML) is an ever-expanding field, and its application is becoming increasingly common across various sectors. The ability to transform data into effective decisions is a valuable skill for developers and companies alike. Here, I will show you how to use Python and its popular libraries, such as scikit-learn and PyTorch, to build and implement machine learning models. For those just starting out, understanding how these tools work can be a game-changer when developing effective solutions.
+You have the spreadsheet, you have the history — and you still guess which product will sell best. Machine Learning is the bridge between that data and a better decision: here you'll train your first models in Python, from classic `scikit-learn` to `PyTorch` tensors, without skipping the intuition of how each one works.
 
-```markdown
 ## scikit-learn for Classification
 
 The scikit-learn library is one of the most widely used for machine learning in Python, especially for classification and regression tasks. Let's start with a simple classification example using the famous Iris dataset, which contains 150 samples of Iris flowers, each with four features.
@@ -46,9 +45,7 @@ print(f'Accuracy: {accuracy:.2f}')
 ```
 
 In this code, we use the `RandomForestClassifier` to classify the Iris flowers. The dataset is split into training and testing sets, and we evaluate the model's accuracy. The simplicity of scikit-learn allows you to focus on the logic of your model without worrying too much about implementing complex algorithms.
-```
 
-```markdown
 ## Feature Engineering
 
 A crucial part of machine learning is feature engineering, which involves the creation and selection of the features that will be used in your models. A good set of features can significantly improve your model's performance. Some common techniques include:
@@ -70,9 +67,7 @@ model.fit(X_scaled, y_train)
 ```
 
 Normalization helps improve the convergence of the algorithm and can be an essential step in data preparation.
-```
 
-```markdown
 ## Basic PyTorch: Tensors and Networks
 
 While scikit-learn is great for rapid prototyping and simple models, PyTorch shines in more complex scenarios, especially in deep learning. At its core, PyTorch uses tensors, which are structures similar to arrays but with additional capabilities.
@@ -117,9 +112,7 @@ print(f'Final loss: {loss.item():.4f}')
 ```
 
 This basic example demonstrates how to build a simple neural network in PyTorch. The model is trained using the cross-entropy loss function and the Adam optimizer. The use of tensors allows leveraging the power of the GPU, making training faster compared to CPUs.
-```
 
-```markdown
 ## Training and Evaluation
 
 After constructing the model, the next step is training and evaluation. Both processes are crucial to ensure that your model generalizes well to unseen data. Training involves feeding the model with data and adjusting the weights to minimize loss. Evaluation, on the other hand, is where we check if the model has truly learned.
@@ -139,9 +132,7 @@ print(f'Model accuracy: {accuracy:.2f}')
 ```
 
 Here, we use the `torch.max` function to obtain the predicted classes and calculate the accuracy with respect to the test set.
-```
 
-```markdown
 ## Deploy with FastAPI
 
 After training and evaluating your model, the next step is to put it into production. FastAPI is an excellent tool for building robust and high-performance APIs. Let's see how we can create a simple API for our classification model.
@@ -168,7 +159,6 @@ def predict(data: IrisData):
 ```
 
 In this example, we created an endpoint `/predict/` that accepts input data about an Iris flower and returns the predicted class. FastAPI simplifies the process of building RESTful APIs, allowing you to integrate your machine learning model into real applications.
-```
 
 ## When to Use Which Tool
 

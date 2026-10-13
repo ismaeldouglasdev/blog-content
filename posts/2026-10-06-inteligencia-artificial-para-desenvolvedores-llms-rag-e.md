@@ -3,14 +3,14 @@ title: "Inteligência Artificial para desenvolvedores: LLMs, RAG e agentes"
 date: "2026-10-06"
 category: "article"
 tags: ["ia", "llm", "rag", "agentes", "openai"]
-excerpt: "Inteligência Artificial para desenvolvedores: LLMs, RAG e agentes."
+excerpt: "LLMs, RAG e agentes explicados do zero: como funcionam, onde se encaixam e como começar a usá-los em projetos reais."
 cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-06-inteligencia-artificial-para-desenvolvedores-llms-rag-e.jpg"
 lang: "pt"
 ---
 
 ## Inteligência Artificial para desenvolvedores: LLMs, RAG e agentes
 
-Lembro de quando atualizei o PDV da loja onde trabalho. Migrar uma base de dados com cerca de dez mil produtos entre dois sistemas diferentes era uma tarefa manual, lenta e sujeita a erros. Hoje, um script com algumas linhas de Python resolve isso. Mas e se pudéssemos descrever a tarefa em português para um assistente, e ele escrevesse o script, testasse e até sugerisse melhorias na integração? Essa não é mais ficção científica. As Large Language Models (LLMs) estão transformando essa possibilidade em uma ferramenta prática no dia a dia do desenvolvimento.
+E se você pudesse descrever uma tarefa em português — 'migre esses dez mil produtos entre os dois sistemas' — e um assistente escrevesse o script, testasse e ainda sugerisse melhorias? Isso deixou de ser ficção científica. As Large Language Models (LLMs) transformaram essa possibilidade numa ferramenta prática do dia a dia de quem desenvolve.
 
 Este novo paradigma não se resume a um chatbot mais esperto. Trata-se de uma mudança fundamental em como interagimos com código, dados e sistemas. Como desenvolvedor full stack que construiu desde APIs REST em Python até uma dashboard para um sistema de memória de IA open source, vejo essas ferramentas se desdobrando em três camadas principais: as LLMs como núcleo inteligente, o RAG para dar a elas memória específica e os agentes para transformar intenções em ações.
 

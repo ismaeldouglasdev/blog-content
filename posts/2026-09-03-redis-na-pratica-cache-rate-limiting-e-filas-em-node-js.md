@@ -3,14 +3,14 @@ title: "Redis na prática: cache, rate limiting e filas em Node.js"
 date: "2026-09-03"
 category: "tutorial"
 tags: ["redis", "cache", "backend"]
-excerpt: "Redis na prática: cache, rate limiting e filas em Node.js."
+excerpt: "Cache, rate limiting com janela deslizante, filas com BullMQ e pub/sub — na prática, em Node.js e Docker."
 share_hook: "Cache, rate limiting com janela deslizante, filas com BullMQ e pub/sub — tudo num Redis que roda em Docker."
 lang: "pt"
 ---
 
 ### Por que você deve se preocupar agora  
 
-Imagine que o seu e‑commerce acabou de integrar o OSPOS, o PDV open source que eu customizei para a loja Quase Tudo, ao Mercado Livre. A cada venda o estoque tem que ser atualizado em milissegundos, senão o cliente compra um produto que já acabou e a reputação da loja despenca. No primeiro teste a API do Mercado Livre começou a responder com erros de *429 Too Many Requests* e, ao mesmo tempo, o banco de dados ficou sobrecarregado com consultas repetidas ao mesmo registro de produto. A solução acabou sendo colocar uma camada de Redis entre a aplicação e o banco, usando o Redis não só como cache, mas também como limitador de taxa e como broker de filas.  
+Seu e-commerce começa a crescer e, de repente, a API externa responde com `429 Too Many Requests` enquanto o banco de dados engasga com consultas repetidas ao mesmo registro. Vender virou uma corrida de milissegundos: se o estoque não atualiza na hora, alguém compra um produto que já acabou. Neste tutorial, você vai montar três defesas com Redis — cache, rate limiting e filas — usando Node.js, Docker e poucas linhas de código.
 
 Se você já passou por uma situação parecida – ou ainda não, mas sabe que pode acontecer – este artigo mostra, passo a passo, como montar essas três funções essenciais com Node.js, Docker e poucas linhas de código.
 

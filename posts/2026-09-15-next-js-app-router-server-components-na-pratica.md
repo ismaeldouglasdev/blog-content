@@ -9,7 +9,7 @@ lang: "pt"
 ---
 
 ## Introdução
-Quando se trata de desenvolver aplicações web escaláveis e performáticas, a escolha da arquitetura e das ferramentas certas é crucial. Uma das principais decisões que os desenvolvedores enfrentam é como lidar com a renderização de componentes e a manipulação de dados no servidor e no cliente. É aqui que o Next.js App Router entra em cena, oferecendo uma solução inovadora para esses desafios com o uso de Server Components. Aqui, vou mostrar em profundidade como o Next.js App Router pode ser utilizado para criar aplicações web mais eficientes, começando com uma visão geral dos Server Components e sua importância na arquitetura de aplicações modernas.
+Você já se pegou enviando JavaScript demais para o navegador só para renderizar uma página que quase não muda? O Next.js App Router existe justamente para virar esse jogo: o servidor monta a maior parte do HTML e envia ao cliente apenas o que precisa de interatividade. Neste tutorial, você vai entender Server Components na prática — o que roda no servidor, o que roda no cliente e como decidir entre os dois.
 
 ## Server vs Client Components
 Antes de mergulharmos nos detalhes do Next.js App Router, é fundamental entender a diferença entre Server Components e Client Components. Os Client Components são renderizados no lado do cliente, ou seja, no navegador do usuário. Eles são carregados uma vez e atualizados dinamicamente à medida que o usuário interage com a aplicação. Por outro lado, os Server Components são renderizados no servidor e enviados ao cliente como HTML estático. Essa abordagem oferece vantagens significativas em termos de SEO, segurança e performance, pois reduz a quantidade de trabalho que o cliente precisa fazer para renderizar a página.

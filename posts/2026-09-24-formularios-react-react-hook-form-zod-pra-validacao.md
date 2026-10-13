@@ -11,7 +11,7 @@ lang: "pt"
 
 ## Formulários React: React Hook Form + Zod para validação perfeita
 
-Criar formulários em aplicações web é uma das tarefas mais comuns e, ao mesmo tempo, desafiadoras para desenvolvedores. Um dos maiores desafios é garantir que as entradas dos usuários sejam válidas e tratadas corretamente. Aqui, vou mostrar como usar o React Hook Form em conjunto com o Zod para criar formulários robustos e com validação de dados eficaz.
+Formulários parecem simples até o primeiro campo condicional: o estado desincroniza, as mensagens de erro somem e cada tecla digitada re-renderiza a página inteira. Dá para resolver isso com muito menos código do que você imagina. Neste tutorial, você vai usar React Hook Form com Zod para validar dados de ponta a ponta — do setup ao formulário multi-step.
 
 ## Setup básico
 

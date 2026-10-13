@@ -11,8 +11,8 @@
         "performance",
         "optimizacao"
       ],
-      "excerpt": "Introdução: quando a otimização se torna necessária",
-      "excerpt_en": null,
+      "excerpt": "Como saber quando otimizar, como React.memo, useMemo e useCallback evitam renderizações desnecessárias e o que muda com o React Compiler.",
+      "excerpt_en": "When to optimize, how React.memo, useMemo and useCallback prevent unnecessary renders, and what changes with React Compiler.",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-13-react-performance-memo-usememo-usecallback-e-react-compiler.jpg",
       "cover_credit": {
         "license": "Pixabay Content License",
@@ -82,7 +82,7 @@
         "api"
       ],
       "excerpt": "Fetch API moderno: alternativas ao axios em 2026.",
-      "excerpt_en": null,
+      "excerpt_en": "Native fetch vs Axios in 2026: AbortController, Promise.all, and a minimal wrapper — fewer dependencies, same power.",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-12-fetch-api-moderno-alternativas-ao-axios-em-2026.jpg",
       "cover_credit": {
         "license": "Pixabay Content License",
@@ -153,8 +153,8 @@
         "agentes",
         "openai"
       ],
-      "excerpt": "Inteligência Artificial para desenvolvedores: LLMs, RAG e agentes.",
-      "excerpt_en": "Artificial Intelligence for Developers: LLMs, RAG, and Agents.",
+      "excerpt": "LLMs, RAG e agentes explicados do zero: como funcionam, onde se encaixam e como começar a usá-los em projetos reais.",
+      "excerpt_en": "LLMs, RAG and agents from the ground up: how they work, where they fit, and how to start using them in real projects.",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-06-inteligencia-artificial-para-desenvolvedores-llms-rag-e.jpg",
       "cover_credit": {
         "file": "File:Artificial intelligence prompt completion by dalle mini.jpg",
@@ -1708,7 +1708,7 @@
         "testes"
       ],
       "excerpt": "A maioria dos testes de React falha não por erro técnico, mas por má interpretação do que está sendo testado.",
-      "excerpt_en": "The Illusion of Control in Interface Testing.",
+      "excerpt_en": "Why most React tests break on refactors, and how Testing Library ties tests to user behavior instead of implementation details.",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-26-testing-library-testes-de-react-que-refletem-o-uso-real.jpg",
       "cover_credit": {
         "license": "Pexels License",
@@ -2618,7 +2618,7 @@
         "server-components"
       ],
       "excerpt": "Server Components no Next.js App Router na prática: como funcionam, quando usar, patterns de data fetching, streaming e interop com Client Components.",
-      "excerpt_en": "Choosing the right architecture and tools is crucial for scalable web applications.",
+      "excerpt_en": "Server Components in the Next.js App Router, hands-on: how they work, when to use them, data-fetching patterns, streaming, and interop with Client Components.",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-15-next-js-app-router-server-components-na-pratica.jpg",
       "cover_credit": {
         "file": "File:Basic-Mobile-app-server-interaction.png",
@@ -3420,8 +3420,8 @@
         "cache",
         "backend"
       ],
-      "excerpt": "Redis na prática: cache, rate limiting e filas em Node.js.",
-      "excerpt_en": "Redis in practice: caching, rate limiting and queues in Node.js.",
+      "excerpt": "Cache, rate limiting com janela deslizante, filas com BullMQ e pub/sub — na prática, em Node.js e Docker.",
+      "excerpt_en": "Caching, sliding-window rate limiting, BullMQ queues and pub/sub — hands-on, with Node.js and Docker.",
       "lang": "pt",
       "translation_slug": "2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js-en",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node-js.jpg",

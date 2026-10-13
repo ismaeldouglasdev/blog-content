@@ -11,7 +11,7 @@ translation_of: "2026-08-31-banco-de-dados-relacional-vs-nosql-quando-usar-cada-
 
 ## Relational vs. NoSQL databases: when to use each
 
-Choosing the right database for a project can be one of the most critical factors in its success. As modern applications grow more complex, understanding the differences between relational and NoSQL databases becomes essential. Here, I'll walk through when and why to use each of these database types, considering aspects such as data modeling, transactions, and scalability.
+You start with a simple Postgres and, as the app grows, someone suggests swapping it all for NoSQL because it scales better. Six months later the team is hand-rolling transactions and joins. Choosing between relational and NoSQL isn't about hype: it's about data modeling, transactions, and what each one charges you for its flexibility.
 
 ## SQL: PostgreSQL as the Standard
 

@@ -10,7 +10,7 @@ lang: "pt"
 ---
 
 ## Introdução
-Quando se trata de desenvolver software, a arquitetura limpa é fundamental para garantir que o código seja fácil de manter, escalar e entender. No entanto, muitos desenvolvedores enfrentam desafios para implementar essa abordagem em seus projetos. Recentemente, tive a oportunidade de trabalhar em um projeto que exigia uma arquitetura limpa e escalável, e percebi que os princípios SOLID são essenciais para alcançar esse objetivo. aqui, vou mostrar como aplicar esses princípios em TypeScript para criar uma arquitetura limpa e eficaz.
+Começa com um `if` aqui, uma regra de negócio no controller ali e, em poucos meses, ninguém sabe onde a lógica realmente mora. É o sintoma de um código que cresceu sem arquitetura. Os princípios SOLID e a Clean Architecture atacam justamente isso, e aqui você aplica os dois em TypeScript, do caso de uso à camada de infraestrutura.
 
 ## SRP com services
 O princípio da Responsabilidade Única (SRP) é o primeiro dos princípios SOLID e afirma que uma classe deve ter apenas uma razão para mudar. Em outras palavras, uma classe deve ter apenas uma responsabilidade. Para aplicar esse princípio em TypeScript, podemos criar serviços que encapsulam uma lógica de negócios específica. Por exemplo, em um projeto que eu desenvolvi recentemente, criei um serviço de autenticação que se encarregava de validar as credenciais dos usuários. Isso permitiu que o resto do código se concentrasse em outras responsabilidades, tornando-o mais fácil de manter e entender.

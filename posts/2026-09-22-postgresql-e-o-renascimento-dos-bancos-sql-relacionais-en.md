@@ -11,7 +11,7 @@ translation_of: "2026-09-22-postgresql-e-o-renascimento-dos-bancos-sql-relaciona
 ---
 
 ## Introduction
-Generally, the choice of the right database is crucial for any software development project. In recent years, we have seen a significant increase in the use of NoSQL databases, which promise greater flexibility and scalability compared to traditional relational databases. However, over time, many developers have begun to realize the limitations of NoSQL databases and appreciate the robustness and consistency of relational databases, such as PostgreSQL. Here, I will demonstrate the resurgence of relational SQL databases, with a focus on PostgreSQL and its functionalities that make it an attractive choice for many projects.
+Saying you used SQL once sounded old-fashioned next to all the NoSQL promises. But scaling without consistency becomes a headache: duplicated data, reports that don't reconcile, joins your team had to reimplement in the app. PostgreSQL is back at the center of the conversation — and here you'll see which features made it the obvious choice for so many projects.
 
 ---
 ## The NoSQL Era (2010-2018)

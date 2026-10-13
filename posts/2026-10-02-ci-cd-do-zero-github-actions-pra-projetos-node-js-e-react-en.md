@@ -11,7 +11,7 @@ translation_of: "2026-10-02-ci-cd-do-zero-github-actions-pra-projetos-node-js-e-
 
 ## CI/CD from scratch: GitHub Actions for Node.js and React projects
 
-Automating the continuous integration and continuous delivery (CI/CD) process is an essential practice in modern software development. However, for many, the initial setup of a pipeline can seem like a complicated task. What can you do to simplify this journey? Here, I will show how to configure a basic workflow in GitHub Actions for Node.js and React projects, ensuring that your applications are always ready to be delivered efficiently and reliably.
+You merge into `main` and, minutes later, discover you broke the build — over a detail a single test would have caught. CI/CD exists to turn that scare into boring routine: every push runs lint, tests, and an automatic deploy. Here you'll configure a GitHub Actions workflow from scratch for Node.js and React projects.
 
 ## Basic Workflow
 
@@ -150,7 +150,6 @@ After your code passes all tests, it is time to deploy. We can add a deployment 
 
 In this step, the `peaceiris/actions-gh-pages` action is used to deploy the contents of the `./build` folder (assuming you have configured your project to generate build files in this folder) to GitHub Pages.
 
-```markdown
 ## Secrets and Variables
 
 When working with CI/CD, it is common to need to handle sensitive information, such as credentials and tokens. GitHub provides the Secrets functionality to store this information securely. You can configure secrets in the repository through the GitHub settings.
@@ -163,7 +162,6 @@ To use a secret in your workflow, simply reference it using the syntax `${{ secr
 ```
 
 This ensures that your credentials are not exposed in the code.
-```
 
 ## Conclusion
 

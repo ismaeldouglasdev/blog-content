@@ -13,7 +13,7 @@ translation_of: "2026-08-22-a-historia-do-typescript-de-acidente-a-padrao-da-ind
 
 ## Introduction
 
-In October 2012, Microsoft made an announcement that would change the direction of JavaScript development: **TypeScript**. At the time, teams maintaining large JavaScript applications were facing an increasingly obvious problem — code that grew quickly and became impossible to maintain without static typing. TypeScript was created precisely to address that pain, promising to bring the safety and maintainability of static typing without abandoning the JavaScript ecosystem. More than a decade later, it has become the de‑facto industry standard. This is the story of how an internal experimental project became the foundation of virtually every modern framework.
+Every JavaScript project starts light and turns into a monster: a function that took two fields now takes ten, and you have no idea what shape the object passing between screens actually has. That chaos is exactly what Microsoft set out to tame when it created TypeScript — more than a decade later, it's the de facto standard in virtually every modern framework. This is the story of an internal experiment almost nobody bet on.
 
 
 <figure>

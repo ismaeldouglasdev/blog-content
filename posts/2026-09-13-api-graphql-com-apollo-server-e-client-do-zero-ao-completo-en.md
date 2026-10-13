@@ -11,7 +11,7 @@ translation_of: "2026-09-13-api-graphql-com-apollo-server-e-client-do-zero-ao-co
 ---
 
 
-REST APIs dominated web development for more than a decade, but carry limitations that became increasingly evident as applications grew in complexity. Over-fetching of data, multiple requests to load a single screen, and the rigidity of fixed endpoints created real bottlenecks in modern projects. GraphQL emerges as an alternative that puts the client in control, allowing you to fetch exactly the data needed in a single request.
+You open the app screen and fire seven REST calls just to assemble one profile — a few returning fields the screen never uses. That's classic over-fetching, and every request is another chance for latency. GraphQL flips the script: the client asks for exactly what it needs, in a single request. Here you'll build a GraphQL API from scratch with Apollo Server and Client.
 
 The Apollo ecosystem has established itself as the de facto standard for implementing GraphQL, offering both server and client with mature and well-documented tools. The combination of Apollo Server on the backend with Apollo Client in React creates a powerful stack that solves real performance and developer experience problems.
 

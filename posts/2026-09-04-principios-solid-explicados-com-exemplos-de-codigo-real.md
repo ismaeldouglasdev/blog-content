@@ -10,7 +10,7 @@ lang: "pt"
 
 ## Introdução
 
-Imagine que um cliente da sua loja de varejo, que usa OSPOS como ponto de venda, solicita uma integração que sincroniza estoque com o Mercado Livre em tempo real. Você entrega o código em um fim de semana, mas, dois meses depois, o mesmo cliente pede para acrescentar um relatório de vendas por categoria. O que era um módulo simples agora está cheio de condições, métodos que fazem tudo e pouca margem para mudanças. Essa situação acontece com frequência quando as regras de design são deixadas de lado.
+Funciona na sua máquina, passa no teste — e três meses depois ninguém consegue mexer sem quebrar outra coisa. Todo código legado começou como um módulo simples que foi ganhando 'só mais um `if`' a cada pedido novo. Os princípios SOLID existem justamente para impedir isso, e aqui você vai vê-los em código TypeScript real, não em exemplos de animal, fruta ou veículo.
 
 Aqui eu explico como os cinco princípios SOLID podem impedir que um código evolua para um monólito incontrolável. Cada princípio vem acompanhado de um exemplo em uma das duas linguagens que eu uso no dia a dia: TypeScript no serviço de sincronização e Python no motor de canais. No final eu junto os dois em um caso real, e também escrevo sobre **quando não vale a pena** aplicar nada disso.
 

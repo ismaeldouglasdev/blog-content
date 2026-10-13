@@ -3,14 +3,14 @@ title: "React performance: memo, useMemo, useCallback, and React Compiler"
 date: "2026-10-13"
 category: "article"
 tags: ["react", "performance", "optimizacao"]
-excerpt: "Introduction: when optimization becomes necessary"
+excerpt: "When to optimize, how React.memo, useMemo and useCallback prevent unnecessary renders, and what changes with React Compiler."
 cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-13-react-performance-memo-usememo-usecallback-e-react-compiler.jpg"
 lang: "en"
 translation_of: "2026-10-13-react-performance-memo-usememo-usecallback-e-react-compiler"
 ---
 ## Introduction: when optimization becomes necessary
 
-When you deal with a catalog of more than 10,000 products and need to keep it synchronized between a POS system and a marketplace, each extra rendering starts to hurt. That was the scenario that led me to dive into performance optimization in React. The *inventory-service* project I built for a client used OSPOS as a base and exposed a JSON endpoint that fed both the store’s front‑end and the integration with Mercado Livre. In the first days, the catalog page updated the entire list on every keystroke, and the browser would freeze on slower connections.
+Your React list freezes on every keystroke — and the data volume is almost never the real culprit. What hurts are the renders you never asked for. Performance work doesn't start by sprinkling `useMemo` on every component; it starts by understanding why a component re-renders when nothing changed.
 
 The pain was visible in Chrome DevTools: hundreds of components rendering in cascade, many of them receiving new props even when the background query had not returned new data. The first attempt to fix the problem was to wrap everything with `React.memo`, but that only masked the symptom — unnecessary renders kept happening at the deepest level.
 

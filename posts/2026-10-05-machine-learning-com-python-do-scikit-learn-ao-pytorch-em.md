@@ -10,7 +10,7 @@ lang: "pt"
 
 ## Introdução
 
-Machine Learning (ML) é uma área em constante expansão, e sua aplicação está se tornando cada vez mais comum em diversos setores. A capacidade de transformar dados em decisões eficazes é uma habilidade valiosa para desenvolvedores e empresas. Aqui, vou mostrar como utilizar Python e suas bibliotecas populares, como scikit-learn e PyTorch, para construir e implementar modelos de machine learning. Para quem está começando, entender como essas ferramentas funcionam pode ser um divisor de águas na hora de desenvolver soluções eficazes.
+Você tem a planilha, tem o histórico — e ainda assim decide no achismo qual produto vai vender mais. Machine Learning é a ponte entre esses dados e uma decisão melhor: aqui você treina seus primeiros modelos com Python, do `scikit-learn` clássico aos tensores do `PyTorch`, sem pular a intuição de como cada um funciona.
 
 ## scikit-learn para classificação
 

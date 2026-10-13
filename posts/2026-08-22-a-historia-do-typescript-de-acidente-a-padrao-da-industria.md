@@ -10,7 +10,7 @@ lang: "pt"
 
 ## Introdução
 
-Em outubro de 2012, a Microsoft fez um anúncio que mudaria o rumo do desenvolvimento JavaScript: o TypeScript. Na época, equipes que mantinham aplicações JavaScript grandes enfrentavam um problema cada vez mais evidente — código que crescia rápido e se tornava impossível de manter sem tipagem estática. O TypeScript surgiu exatamente para atacar essa dor, prometendo trazer a segurança e a manutenibilidade da tipagem estática sem abandonar o ecossistema JavaScript. Mais de uma década depois, ele se tornou o padrão de facto da indústria. Esta é a história de como um projeto experimental interno virou a base de praticamente todo framework moderno.
+Todo projeto JavaScript começa leve e vira um monstro: uma função que recebia dois campos agora recebe dez, e você não faz ideia do formato do objeto que trafega entre as telas. Foi para domar esse caos que a Microsoft criou o TypeScript — hoje, mais de uma década depois, ele é padrão em praticamente todo framework moderno. Esta é a história de um projeto experimental interno que quase ninguém apostava que daria certo.
 
 
 <figure>

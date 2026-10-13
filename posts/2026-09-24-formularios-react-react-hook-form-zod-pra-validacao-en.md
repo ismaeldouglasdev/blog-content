@@ -12,7 +12,7 @@ translation_of: "2026-09-24-formularios-react-react-hook-form-zod-pra-validacao"
 
 ## React Forms: React Hook Form + Zod for Seamless Validation
 
-Building forms in web applications is one of the most common and, at the same time, challenging tasks for developers. One of the biggest challenges is ensuring that user inputs are valid and handled correctly. Here, I will show you how to use React Hook Form alongside Zod to build robust forms with effective data validation.
+Forms look simple until the first conditional field: state drifts out of sync, error messages vanish, and every keystroke re-renders the whole page. You can fix this with far less code than you'd expect. In this tutorial, you'll use React Hook Form with Zod to validate data end to end — from setup to a multi-step form.
 
 ## Basic setup
 

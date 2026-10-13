@@ -3,15 +3,14 @@ title: "Modern Fetch API: Alternatives to Axios in 2026"
 date: "2026-10-12"
 category: "article"
 tags: ["javascript", "fetch", "api"]
-excerpt: "markdown Modern Fetch API: alternatives to axios in 2026"
+excerpt: "Native fetch vs Axios in 2026: AbortController, Promise.all, and a minimal wrapper — fewer dependencies, same power."
 cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-12-fetch-api-moderno-alternativas-ao-axios-em-2026.jpg"
 lang: "en"
 translation_of: "2026-10-12-fetch-api-moderno-alternativas-ao-axios-em-2026"
 ---
-```markdown
 ## Modern Fetch API: alternatives to axios in 2026
 
-In a world where APIs are essential for building responsive and dynamic web applications, the efficiency of HTTP requests is an increasingly relevant topic. Axios, one of the most popular libraries for this purpose, has been a great ally for many developers over the years. However, with the advancement of JavaScript and improvements in the Fetch API, new alternatives and approaches are emerging that can make development even faster and more efficient.
+You install Axios out of habit and can't even remember why — while native `fetch`, already in the browser, handles most cases with fewer dependencies. With `AbortController`, `Promise.all`, and a tiny wrapper, you can forget Axios without losing anything. Here you'll compare both approaches in real 2026 code.
 
 ### Native Fetch: what has changed
 
@@ -63,7 +62,6 @@ const fetchWithInterceptors = async (url, options = {}) => {
 fetchWithInterceptors('https://api.example.com/data')
   .then(data => console.log(data))
   .catch(error => console.error(error));
-```
 
 ### Retry with exponential backoff
 

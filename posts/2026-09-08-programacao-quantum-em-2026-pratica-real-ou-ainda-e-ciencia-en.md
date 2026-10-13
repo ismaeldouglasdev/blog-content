@@ -10,7 +10,7 @@ translation_of: "2026-09-08-programacao-quantum-em-2026-pratica-real-ou-ainda-e-
 ---
 
 ## Introduction
-Quantum programming is a field that has generated significant interest in recent years, with many experts and companies investing time and resources to develop quantum technologies. However, the question many developers ask themselves is: is quantum programming a real practice or is it still in the realm of science? Here, I will show the current state of quantum computers, the main companies working in this area, the available tools and programming languages, and the real problems that quantum programming can solve.
+It can factor the numbers that protect your passwords — in theory. In practice, you book seconds of time on a quantum computer and pray the error correction holds. So is quantum programming already a production tool, or still lab science? Here you'll see the real state of play, who's investing, and what it actually solves in 2026.
 
 ## The current state of quantum computers
 Quantum computers are devices that utilize the principles of quantum mechanics to perform calculations. They have the potential to solve problems that are very difficult or impossible for classical computers to solve. Currently, there are several types of quantum computers, including gate-based quantum computers, topological quantum computers, and photonic quantum computers.
