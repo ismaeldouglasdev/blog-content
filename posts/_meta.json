@@ -1,6 +1,56 @@
 {
   "posts": [
     {
+      "slug": "2026-10-13-react-performance-memo-usememo-usecallback-e-react-compiler",
+      "title": "React performance: memo, useMemo, useCallback e React Compiler",
+      "title_en": null,
+      "date": "2026-10-13",
+      "category": "article",
+      "tags": [
+        "react",
+        "performance",
+        "optimizacao"
+      ],
+      "excerpt": "Introdução: quando a otimização se torna necessária",
+      "excerpt_en": null,
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-13-react-performance-memo-usememo-usecallback-e-react-compiler.jpg",
+      "cover_credit": null,
+      "cover_meta": {
+        "strategy": "fallback",
+        "review_status": "auto_fallback",
+        "relevance_score": null,
+        "motif": "form",
+        "review_candidates": []
+      },
+      "lang": "pt",
+      "translation_slug": "2026-10-13-react-performance-memo-usememo-usecallback-e-react-compiler-en"
+    },
+    {
+      "slug": "2026-10-13-react-performance-memo-usememo-usecallback-e-react-compiler-en",
+      "title": "React performance: memo, useMemo, useCallback, and React Compiler",
+      "title_en": "React performance: memo, useMemo, useCallback, and React Compiler",
+      "date": "2026-10-13",
+      "category": "article",
+      "tags": [
+        "react",
+        "performance",
+        "optimizacao"
+      ],
+      "excerpt": "Introduction: when optimization becomes necessary",
+      "excerpt_en": "Introduction: when optimization becomes necessary",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-13-react-performance-memo-usememo-usecallback-e-react-compiler.jpg",
+      "cover_credit": null,
+      "cover_meta": {
+        "strategy": "fallback",
+        "review_status": "auto_fallback",
+        "relevance_score": null,
+        "motif": "form",
+        "review_candidates": []
+      },
+      "lang": "en",
+      "translation_of": "2026-10-13-react-performance-memo-usememo-usecallback-e-react-compiler"
+    },
+    {
       "slug": "2026-10-12-fetch-api-moderno-alternativas-ao-axios-em-2026",
       "title": "Fetch API moderno: alternativas ao axios em 2026",
       "title_en": null,
