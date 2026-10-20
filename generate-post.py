@@ -374,6 +374,13 @@ translation_of: "{post_data['slug']}"
             "translation_slug": post_data["slug"],
             "translation_of": post_data["slug"],
         }
+    # Va nas DUAS entradas como `faqs`: o slug e o mesmo nos dois idiomas e o
+    # portfolio resolve o titulo/desc pelo idioma do proprio post. products fica
+    # so na PT porque o texto do cartao (preco, marketplace) nao e traduzido.
+    if post_data.get("tools"):
+        pt_entry["tools"] = post_data["tools"]
+        if en_entry:
+            en_entry["tools"] = post_data["tools"]
     
     meta["posts"].append(pt_entry)
     if en_entry:
