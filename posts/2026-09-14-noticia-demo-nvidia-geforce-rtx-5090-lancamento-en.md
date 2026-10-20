@@ -10,7 +10,7 @@ translation_of: "2026-09-14-noticia-demo-nvidia-geforce-rtx-5090-lancamento"
 ---
 
 
-NVIDIA presented the GeForce RTX 5090 at CES 2026, bringing the Blackwell architecture to the consumer market. It is the generation promising the biggest jump in ray tracing and artificial intelligence since the move to tensor cores — but also the most expensive in the history of the xx90 lineup. The question on everyone's mind: is it worth the price?
+NVIDIA presented the GeForce RTX 5090 at CES 2026, bringing the Blackwell architecture to the consumer market. It is the generation promising the biggest jump in ray tracing and artificial intelligence since the move to tensor cores, but also the most expensive in the history of the xx90 lineup. The question on everyone's mind: is it worth the price?
 
 ## What changed in the Blackwell architecture
 

@@ -179,7 +179,7 @@ In this case, the `Notification` class depends on the abstraction `MessageServic
 ```markdown
 ## Complete Example
 
-Letâs now bring together everything weâve learned in a complete example that demonstrates a simple application using all the SOLID principles. Imagine that we are building a system to manage a product catalog and that we need to apply the principles discussed.
+Let’s now bring together everything we’ve learned in a complete example that demonstrates a simple application using all the SOLID principles. Imagine that we are building a system to manage a product catalog and that we need to apply the principles discussed.
 
 ```typescript
 // Interfaces

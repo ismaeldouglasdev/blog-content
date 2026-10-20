@@ -148,7 +148,7 @@ In the same *inventory-service* I needed to add a sales channel (Shopee). Every 
 
 ### Example in Python
 
-Before, the engine knew every channel by name — and each new channel required a new `if` inside it:
+Before, the engine knew every channel by name, and each new channel required a new `if` inside it:
 
 ```python
 from typing import List, Protocol
@@ -236,7 +236,7 @@ class SyncEngine:
             adapter.push(items)
 ```
 
-The `SyncEngine` class knows no details of any channel. When a new marketplace appears, it is enough to implement `ChannelAdapter` and register the instance in the list passed to the constructor — the iteration loop does not change.
+The `SyncEngine` class knows no details of any channel. When a new marketplace appears, it is enough to implement `ChannelAdapter` and register the instance in the list passed to the constructor, the iteration loop does not change.
 
 ---
 
@@ -258,7 +258,7 @@ class ShopeeAdapter(ChannelAdapter):
         # ...
 ```
 
-The `ChannelAdapter.push` contract accepts any list. `ShopeeAdapter` added a **stronger precondition**: a caller that was written against the contract and previously could pass 10 thousand items at once now gets an exception when it receives a `ShopeeAdapter`. The subclass is less substitutable than the superclass — exactly the opposite of what LSP asks for.
+The `ChannelAdapter.push` contract accepts any list. `ShopeeAdapter` added a **stronger precondition**: a caller that was written against the contract and previously could pass 10 thousand items at once now gets an exception when it receives a `ShopeeAdapter`. The subclass is less substitutable than the superclass, exactly the opposite of what LSP asks for.
 
 The fix is to move the responsibility inside the adapter, instead of dumping it on the caller:
 
@@ -421,7 +421,7 @@ export interface PostgresPool {
 }
 ```
 
-Then, the implementations — each one hiding its own driver:
+Then, the implementations, each one hiding its own driver:
 
 ```ts
 export class SqliteLeadRepository implements LeadRepository {
@@ -485,7 +485,7 @@ Swapping databases is one line in the composition layer. Not a single line of `L
 
 ### Final architecture
 
-There are two processes, and the separation is deliberate — ingest and the fan-out to channels have different failure cycles:
+There are two processes, and the separation is deliberate, ingest and the fan-out to channels have different failure cycles:
 
 ```
      ┌──────────────────────── ingest (TypeScript) ─────────────────────────┐
@@ -494,7 +494,7 @@ There are two processes, and the separation is deliberate — ingest and the fan
      │        │                  │                          │               │
      │        └──────────────────┴──────────────────────────┘               │
      │                           │                                          │
-     │  SlackNotifier — notifica o time, fora do caminho do fan-out         │
+     │  SlackNotifier: notifica o time, fora do caminho do fan-out         │
      │───────────────────────────┼──────────────────────────────────────────│
                                 │ publica snapshot
                                 ▼
@@ -530,11 +530,11 @@ There are two processes, and the separation is deliberate — ingest and the fan
 
 The role of each principle in this design:
 
-* **SRP** — fetching, normalizing, persisting, notifying, and publishing are five responsibilities, in five units. The `SyncEngine` iterates adapters; it does not know what a product is.
-* **OCP** — adding a channel is writing a new adapter and registering it in the list. `SyncEngine` and `SyncOrchestrator` are not touched.
-* **LSP** — all adapters honor the same contract: whoever calls `push` hands over a batch and does not know about Shopee's limit of 50 items. The restriction lives inside the adapter.
-* **ISP** — the `SyncOrchestrator` consumes `Notifier`, and nothing else. It is the same idea as the Python example above: each consumer declares the minimum it uses, and a notifier that only sends messages does not have to implement metrics.
-* **DIP** — the `SyncOrchestrator` depends on four *ports* (`ProductFetcher`, `ProductNormalizerPort`, `InventoryRepositoryPort`, `Notifier`); the `SyncEngine` depends on `ChannelAdapter`. Neither imports the concrete implementation on the other side.
+* **SRP**: fetching, normalizing, persisting, notifying, and publishing are five responsibilities, in five units. The `SyncEngine` iterates adapters; it does not know what a product is.
+* **OCP**: adding a channel is writing a new adapter and registering it in the list. `SyncEngine` and `SyncOrchestrator` are not touched.
+* **LSP**: all adapters honor the same contract: whoever calls `push` hands over a batch and does not know about Shopee's limit of 50 items. The restriction lives inside the adapter.
+* **ISP**: the `SyncOrchestrator` consumes `Notifier`, and nothing else. It is the same idea as the Python example above: each consumer declares the minimum it uses, and a notifier that only sends messages does not have to implement metrics.
+* **DIP**: the `SyncOrchestrator` depends on four *ports* (`ProductFetcher`, `ProductNormalizerPort`, `InventoryRepositoryPort`, `Notifier`); the `SyncEngine` depends on `ChannelAdapter`. Neither imports the concrete implementation on the other side.
 
 ### Composition code (TypeScript)
 
@@ -582,10 +582,10 @@ export class SyncOrchestrator {
 }
 ```
 
-And the layer that picks the implementations — the only place in the system that knows concrete classes:
+And the layer that picks the implementations, the only place in the system that knows concrete classes:
 
 ```ts
-// ospos-client.ts — o adapter que traduz HTTP em OsposClient.
+// ospos-client.ts: o adapter que traduz HTTP em OsposClient.
 import axios from "axios";
 import type { OsposClient, OsposProductRow } from "./fetcher";
 
@@ -638,7 +638,7 @@ orchestrator
   .catch((err) => console.error("Erro na sincronização", err));
 ```
 
-Four arguments, four parameters: the code compiles, and that is the part that matters most. An earlier version of this post passed five arguments to a four-parameter constructor — the DIP example was lying about its own architecture.
+Four arguments, four parameters: the code compiles, and that is the part that matters most. An earlier version of this post passed five arguments to a four-parameter constructor, the DIP example was lying about its own architecture.
 
 The sales report by category, which opened this post, came in after that separation. It did not widen `InventoryRepositoryPort` nor touch `SyncOrchestrator`: it got its own read port, because querying and writing are different responsibilities.
 
@@ -680,13 +680,13 @@ Signs that you are applying too much:
 * **The diagram has more arrows than the original problem.** If the team cannot explain the structure in one sentence, it is too big.
 * **No test requires the swap.** If you are never going to change the implementation, the abstraction did not pay for itself.
 
-For most small CRMs and catalogs, one function, one repository, and an `if` per channel go further. Reserve the full structure for when the pain shows up — the pain is the signal, not the feeling that you "should have" done it.
+For most small CRMs and catalogs, one function, one repository, and an `if` per channel go further. Reserve the full structure for when the pain shows up, the pain is the signal, not the feeling that you "should have" done it.
 
 ---
 
 ## Conclusion
 
-Applying SOLID is not about following abstract rules; it is about keeping the agility I need when serving retail clients who demand fast changes. In *inventory-service*, the category report, the third channel, and the database swap all landed without rewriting the core — and that is the only criterion by which I judge whether it was worth it.
+Applying SOLID is not about following abstract rules; it is about keeping the agility I need when serving retail clients who demand fast changes. In *inventory-service*, the category report, the third channel, and the database swap all landed without rewriting the core, and that is the only criterion by which I judge whether it was worth it.
 
 ### Practical takeaways
 
@@ -699,9 +699,9 @@ Applying SOLID is not about following abstract rules; it is about keeping the ag
 
 ## Sources
 
-- [SOLID Principles – Robert C. Martin](https://www.objectmentor.com/resources/articles/SOLID.pdf)
-- [TypeScript Handbook – Interfaces](https://www.typescriptlang.org/docs/handbook/interfaces.html)
-- [Python abc – Abstract Base Classes](https://docs.python.org/3/library/abc.html)
+- [SOLID Principles: Robert C. Martin](https://www.objectmentor.com/resources/articles/SOLID.pdf)
+- [TypeScript Handbook: Interfaces](https://www.typescriptlang.org/docs/handbook/interfaces.html)
+- [Python abc: Abstract Base Classes](https://docs.python.org/3/library/abc.html)
 - [OSPOS GitHub Repository](https://github.com/opensourcepos/opensourcepos)
 
 ## 📸 Cover image credit

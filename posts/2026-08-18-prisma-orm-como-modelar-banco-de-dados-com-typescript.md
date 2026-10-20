@@ -14,7 +14,7 @@ lang: "pt"
 
 Essa frase pode parecer clichê, mas captura bem a realidade de quem desenvolve aplicações modernas. Enquanto as consultas *raw* dão controle total, elas também trazem **carga cognitiva**, risco de *SQL injection* e manutenção dolorosa. Um **ORM** (Object‑Relational Mapping) abstrai a camada de persistência, permitindo que você trabalhe com objetos tipados, migrações versionadas e, o melhor de tudo, **autocompletar** e **validação** no seu editor.
 
-O **Prisma** tem ganhado destaque no ecossistema TypeScript por combinar a produtividade de um ORM com a performance de consultas otimizadas. Neste artigo vamos percorrer todo o ciclo de vida de um modelo de dados – da definição do schema até a otimização de queries – usando um exemplo de **SaaS de gerenciamento de projetos**. Se você já usa Node.js/TypeScript, vai perceber que o Prisma pode ser o “cabo de segurança” que faltava na sua stack.
+O **Prisma** tem ganhado destaque no ecossistema TypeScript por combinar a produtividade de um ORM com a performance de consultas otimizadas. Neste artigo vamos percorrer todo o ciclo de vida de um modelo de dados, da definição do schema até a otimização de queries, usando um exemplo de **SaaS de gerenciamento de projetos**. Se você já usa Node.js/TypeScript, vai perceber que o Prisma pode ser o “cabo de segurança” que faltava na sua stack.
 
 ---
 
@@ -34,7 +34,7 @@ Vamos começar definindo o que o nosso SaaS precisa:
 <figure>
   <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-18-prisma-orm-como-modelar-banco-de-dados-com-typescript.jpg" alt="Exemplo de schema de banco de dados (diagrama do MediaWiki 1.41.0)." loading="lazy" />
   <figcaption>
-    Exemplo de schema de banco de dados (diagrama do MediaWiki 1.41.0). — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AMediaWiki_1.41.0_database_schema.png">MediaWiki 1.41.0 database schema.png</a> por Nick Jenkins, Timo Tijhof —
+    Exemplo de schema de banco de dados (diagrama do MediaWiki 1.41.0). Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AMediaWiki_1.41.0_database_schema.png">MediaWiki 1.41.0 database schema.png</a> por Nick Jenkins, Timo Tijhof  ·
     <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · via Wikimedia Commons
   </figcaption>
 </figure>
@@ -153,15 +153,15 @@ enum TaskStatus {
 
 **Dicas práticas**
 
-* **UUID como PK** – evita colisões em ambientes distribuídos e simplifica a replicação.
-* **Enums** – trazem segurança de tipo para status e papéis, evitando *magic strings*.
-* **Indexes** – o Prisma permite declarar índices diretamente no schema (`@@index`). Eles são criados nas migrations, economizando tempo de tuning manual.
+* **UUID como PK**: evita colisões em ambientes distribuídos e simplifica a replicação.
+* **Enums**: trazem segurança de tipo para status e papéis, evitando *magic strings*.
+* **Indexes**: o Prisma permite declarar índices diretamente no schema (`@@index`). Eles são criados nas migrations, economizando tempo de tuning manual.
 
 ---
 
 ## Relacionamentos (1:1, 1:N, N:M)
 
-### 1:1 – Usuário ↔ Organização (owner)
+### 1:1 · Usuário ↔ Organização (owner)
 
 ```prisma
 model Organization {
@@ -172,7 +172,7 @@ model Organization {
 
 O `ownerId` é único por organização, garantindo que **apenas um** usuário seja dono. No Prisma, a relação 1:1 é declarada usando `@relation` e o campo de chave estrangeira.
 
-### 1:N – Organização → Usuários (membros)
+### 1:N · Organização → Usuários (membros)
 
 ```prisma
 model Organization {
@@ -191,7 +191,7 @@ model User {
 
 O campo opcional (`?`) permite que um usuário ainda não pertença a nenhuma organização (por exemplo, durante o onboarding).
 
-### N:M – Usuário ↔ Projeto (colaboradores)
+### N:M · Usuário ↔ Projeto (colaboradores)
 
 Embora o exemplo acima não precise de N:M direto, caso queira permitir que **vários usuários colaborem em vários projetos**, basta criar uma tabela de junção automática:
 
@@ -312,7 +312,7 @@ async function moveTaskToProject(taskId: string, newProjectId: string) {
 }
 ```
 
-Transações garantem **ACID** em múltiplas operações – essencial quando você precisa atualizar mais de uma tabela simultaneamente (ex.: mover uma tarefa e atualizar o timestamp do projeto).
+Transações garantem **ACID** em múltiplas operações, essencial quando você precisa atualizar mais de uma tabela simultaneamente (ex.: mover uma tarefa e atualizar o timestamp do projeto).
 
 ### 4. Upserts (insert ou update)
 
@@ -394,9 +394,9 @@ async function createUser(input: CreateUserInput) {
 
 ### 1. Use `@@index` e `@unique` estrategicamente
 
-* **Campos de busca frequente** – `email`, `domain`, `organizationId + name`.
-* **Filtros combinados** – `projectId + status` para listagem de tarefas.
-* **Ordenação** – índices que suportam `ORDER BY` evitam *filesort*.
+* **Campos de busca frequente**: `email`, `domain`, `organizationId + name`.
+* **Filtros combinados**: `projectId + status` para listagem de tarefas.
+* **Ordenação**: índices que suportam `ORDER BY` evitam *filesort*.
 
 ### 2. Evite o problema **N+1** com `include`
 
@@ -408,7 +408,7 @@ const projects = await prisma.project.findMany({
 });
 ```
 
-### 3. `select` vs `include` – quando usar?
+### 3. `select` vs `include`: quando usar?
 
 * **`select`**: quando você só precisa de alguns campos da relação (ex.: lista de nomes de usuários).
 * **`include`**: quando precisa da relação completa ou de filtros avançados dentro dela.
@@ -450,7 +450,7 @@ Logar a duração das queries ajuda a identificar gargalos antes que eles apare�
 
 O Prisma não é apenas um *wrapper* de SQL; ele é um **framework de modelagem de dados** que traz tipagem forte, migrations automáticas e uma API fluente para consultas avançadas. Quando usado corretamente, ele reduz o tempo de desenvolvimento, melhora a segurança e ainda entrega performance competitiva com consultas *raw* bem escritas.
 
-Ao modelar um SaaS, a clareza do schema – com enums, relações bem definidas e índices – paga dividendos ao longo do ciclo de vida da aplicação. Combine isso com boas práticas de validação (Zod), transações atômicas e monitoramento de queries, e você terá uma fundação robusta para escalar sem surpresas.
+Ao modelar um SaaS, a clareza do schema, com enums, relações bem definidas e índices, paga dividendos ao longo do ciclo de vida da aplicação. Combine isso com boas práticas de validação (Zod), transações atômicas e monitoramento de queries, e você terá uma fundação robusta para escalar sem surpresas.
 
 > **Prisma + TypeScript = menos bugs, mais produtividade e um código que realmente conversa com o banco.**  
 

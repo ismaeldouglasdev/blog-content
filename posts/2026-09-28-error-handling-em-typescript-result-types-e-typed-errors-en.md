@@ -20,7 +20,7 @@ The traditional approach to error handling in JavaScript and TypeScript is using
 ```typescript
 function dividir(a: number, b: number): number {
     if (b === 0) {
-        throw new Error("DivisÃ£o por zero");
+        throw new Error("Divisão por zero");
     }
     return a / b;
 }

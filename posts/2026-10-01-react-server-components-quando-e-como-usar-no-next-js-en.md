@@ -13,7 +13,7 @@ translation_of: "2026-10-01-react-server-components-quando-e-como-usar-no-next-j
 
 Next.js introduced React Server Components (RSC) in version 13, and since then the way we think about building React applications has changed radically. The question I get asked frequently is simple: "When exactly should I use server components?" The short answer is that it depends on what you are building, but the long answer requires understanding why this architecture exists and which problems it actually solves.
 
-If you, like me, came from a background where React meant pure Client-Side Rendering (CSR) â component renders in the browser, fetches data via useEffect, manages state with Redux or Context â the migration to server components requires a mindset shift that goes beyond syntax. It is not just about adding "use client" to some files; it is about rethinking the data flow of your entire application.
+If you, like me, came from a background where React meant pure Client-Side Rendering (CSR) ,  component renders in the browser, fetches data via useEffect, manages state with Redux or Context ,  the migration to server components requires a mindset shift that goes beyond syntax. It is not just about adding "use client" to some files; it is about rethinking the data flow of your entire application.
 
 The fundamental question to ask yourself is not "where do I put this component?" but "what does my application actually need?" This question changes everything because the answer will dictate not only the rendering strategy but also how you think about fetching, caching, state management, and even team collaboration.
 
@@ -49,7 +49,7 @@ The fundamental distinction between server and client components lies in the lif
 
 Client components are the React you know: they can use hooks (useState, useEffect, useContext), manage user interaction state, and run entirely in the browser. They are sent as part of the JavaScript bundle and React hydrates them to make them interactive. When you write a component that responds to click events, typing, or any other interaction, it needs to be a client component.
 
-Server components operate in a completely different way. They cannot use state hooks or effect hooks because they do not exist in the browser â they run on the server during rendering and produce HTML that is sent to the client. The practical implication is that you can import modules directly from the server (database connections, file system utilities) without exposing them to the browser. It is like having a function that runs on the backend but can be used in your UI as if it were any other component.
+Server components operate in a completely different way. They cannot use state hooks or effect hooks because they do not exist in the browser ,  they run on the server during rendering and produce HTML that is sent to the client. The practical implication is that you can import modules directly from the server (database connections, file system utilities) without exposing them to the browser. It is like having a function that runs on the backend but can be used in your UI as if it were any other component.
 
 ```tsx
 // Client component example
@@ -98,15 +98,15 @@ export async function UserProfile({ userId }: { userId: string }) {
 }
 ```
 
-The second example makes a direct query to the database within the component. In a traditional architecture, this would be unthinkable â you would need a REST or GraphQL API, a backend endpoint, and the component would request the data via useEffect. With server components, the query runs on the server and the HTML arrives ready in the browser.
+The second example makes a direct query to the database within the component. In a traditional architecture, this would be unthinkable ,  you would need a REST or GraphQL API, a backend endpoint, and the component would request the data via useEffect. With server components, the query runs on the server and the HTML arrives ready in the browser.
 
 ## When to Use Each Component Type
 
 The general rule I follow is simple: start with server components and add 'use client' only when you need interactivity. It seems obvious, but many people invert the logic.
 
-Server components are ideal for static content or content that rarely changes, components that only display data (lists, profiles, feeds), UI parts that do not depend on user events, and any logic that needs to access server resources. If you are building a landing page, a blog post, a product listing â all of these naturally tend to be server components.
+Server components are ideal for static content or content that rarely changes, components that only display data (lists, profiles, feeds), UI parts that do not depend on user events, and any logic that needs to access server resources. If you are building a landing page, a blog post, a product listing ,  all of these naturally tend to be server components.
 
-Client components are justified when you need useState, useEffect, or any React hook, when you have event handlers (onClick, onChange, onSubmit), when you use the Context API, or when a component needs to be interactive in some way. Buttons, forms, modals, carousels, accordions â these are client components.
+Client components are justified when you need useState, useEffect, or any React hook, when you have event handlers (onClick, onChange, onSubmit), when you use the Context API, or when a component needs to be interactive in some way. Buttons, forms, modals, carousels, accordions ,  these are client components.
 
 The point that causes the most confusion is the mix: you can have client components that render server components inside them. The usual structure is a parent server component that fetches data and renders client components that handle the interaction. The server component already delivers HTML with the data filled in, and the client component just needs to "come alive" to respond to clicks and states.
 
@@ -158,7 +158,7 @@ export function ProductList({ initialProducts }: { initialProducts: Product[] })
 }
 ```
 
-In this pattern, the page fetches data from the server and passes it as an initial prop to the client component. The HTML arrives with the products already rendered, and the sorting interactivity works immediately. The user doesn't see a loading spinner while the products load â they're already there.
+In this pattern, the page fetches data from the server and passes it as an initial prop to the client component. The HTML arrives with the products already rendered, and the sorting interactivity works immediately. The user doesn't see a loading spinner while the products load ,  they're already there.
 
 ## Server-Side Data Fetching: Patterns That Work
 
@@ -192,7 +192,7 @@ export default async function PostPage({ params }: { params: { slug: string } })
     <article>
       <header>
         <h1>{post.title}</h1>
-        <p className="meta">{post.author} Ã¢ÂÂ¢ {post.date}</p>
+        <p className="meta">{post.author} · {post.date}</p>
       </header>
       
       <div className="content">{post.content}</div>
@@ -261,7 +261,7 @@ export default function DashboardPage() {
 }
 ```
 
-Each Suspense defines a fallback that is shown while the corresponding component loads. Next.js determines the streaming order based on component tree depth and what becomes available faster. It is not magic â you still need to optimize your queries â but it completely changes the user experience.
+Each Suspense defines a fallback that is shown while the corresponding component loads. Next.js determines the streaming order based on component tree depth and what becomes available faster. It is not magic ,  you still need to optimize your queries ,  but it completely changes the user experience.
 
 Streaming is particularly effective when you have data from different sources with distinct latencies. A widget that depends on a slow external API does not need to block the entire page; it loads at its own pace while the rest of the UI is already interactive.
 
@@ -342,7 +342,7 @@ export function UserForm() {
 }
 ```
 
-The combination of server actions with server components is particularly productive. You can have a page that shows a form and also lists existing records â both server components â and the form action that creates new records redirects back to the same page, which is automatically revalidated.
+The combination of server actions with server components is particularly productive. You can have a page that shows a form and also lists existing records ,  both server components ,  and the form action that creates new records redirects back to the same page, which is automatically revalidated.
 
 ## Performance Considerations
 
@@ -352,7 +352,7 @@ The main benefit of server components is JavaScript bundle reduction. If you hav
 
 Client components hydrate and become interactive, but React needs to process the component tree. If you have too many nested components with useEffect and local state, hydration can become heavy. Server components completely avoid this for parts that don't need state.
 
-The bottleneck shifts: instead of worrying about JavaScript bundle size, you need to worry about server latency. Slow database queries, external APIs with high latency, heavy synchronous operations â all of this blocks server-side rendering and can leave the user waiting longer than they would with traditional CSR.
+The bottleneck shifts: instead of worrying about JavaScript bundle size, you need to worry about server latency. Slow database queries, external APIs with high latency, heavy synchronous operations ,  all of this blocks server-side rendering and can leave the user waiting longer than they would with traditional CSR.
 
 Cache is critical. Next.js caches builds by default, so static pages are served instantly. When you have data that changes frequently, you need revalidation strategies: Time-Based Revalidation (revalidate every N seconds), On-Demand Revalidation (revalidate after creating/updating data), or an API route that you call manually.
 
@@ -369,7 +369,7 @@ revalidatePath('/products/[id]', 'page');
 
 ## Conclusion
 
-React Server Components don't replace client components â they complement them. The ideal architecture is a mix where the server handles fetching data and rendering static UI, and the client adds interactivity where needed. This model works well for everything from landing pages to complex dashboards.
+React Server Components don't replace client components ,  they complement them. The ideal architecture is a mix where the server handles fetching data and rendering static UI, and the client adds interactivity where needed. This model works well for everything from landing pages to complex dashboards.
 
 Migrating an existing CSR application to server components requires planning. You don't need to migrate everything at once; you can start with new pages or specific components. The key is to identify what is content (server) and what is interaction (client) and architect accordingly.
 
@@ -387,4 +387,4 @@ Migrating an existing CSR application to server components requires planning. Yo
 - Use Suspense to create granular loading states and improve the perception of performance
 - Server Actions are ideal for forms that need to create or update data on the server
 - Implement strategic cache and revalidation for each route based on how frequently the data changes
-- Don't abandon client components â they are still necessary for interactivity, but server components should be the foundation of your UI
+- Don't abandon client components ,  they are still necessary for interactivity, but server components should be the foundation of your UI

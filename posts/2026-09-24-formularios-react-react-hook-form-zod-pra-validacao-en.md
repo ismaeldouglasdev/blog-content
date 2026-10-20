@@ -81,8 +81,8 @@ For example, let's add validation for a password field:
 
 ```javascript
 const schema = z.object({
-  nome: z.string().min(1, 'Nome Ã© obrigatÃ³rio.'),
-  email: z.string().email('Email invÃ¡lido.'),
+  nome: z.string().min(1, 'Nome é obrigatório.'),
+  email: z.string().email('Email inválido.'),
   senha: z.string().min(6, 'A senha deve ter pelo menos 6 caracteres.'),
 });
 ```

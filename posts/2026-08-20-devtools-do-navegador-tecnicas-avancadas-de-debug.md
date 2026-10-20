@@ -16,7 +16,7 @@ Já ficou horas encurralado por um bug que desaparece assim que você tenta insp
 <figure>
   <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug.jpg" alt="DevTools do navegador Blisk: painéis abertos para iPhone 12 e iPad Pro 11." loading="lazy" />
   <figcaption>
-    DevTools do navegador Blisk: painéis abertos para iPhone 12 e iPad Pro 11. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AWikipedia-blisk-devtools-iphone-12-and-ipad-pro-11-2021.png">Wikipedia-blisk-devtools-iphone-12-and-ipad-pro-11-2021.png</a> por And85rew —
+    DevTools do navegador Blisk: painéis abertos para iPhone 12 e iPad Pro 11. Imagem: <a href="https://commons.wikimedia.org/wiki/File%3AWikipedia-blisk-devtools-iphone-12-and-ipad-pro-11-2021.png">Wikipedia-blisk-devtools-iphone-12-and-ipad-pro-11-2021.png</a> por And85rew ·
     <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · via Wikimedia Commons
   </figcaption>
 </figure>
@@ -25,9 +25,9 @@ Já ficou horas encurralado por um bug que desaparece assim que você tenta insp
 
 A primeira coisa que costuma chamar atenção quando a aplicação começa a engasgar é o tempo de resposta. O painel **Performance** (ou **Profiler** nos navegadores que ainda mantêm o nome antigo) permite gravar a execução da página e analisar cada quadro, cada chamada de função e cada evento de layout. Na prática, eu costumo seguir três passos:
 
-1. **Gravar um cenário real** – nada de “clicar aleatoriamente”. Reproduza a sequência que o usuário final faria, como abrir um modal, rolar a página ou enviar um formulário.
-2. **Identificar “long tasks”** – o Chrome destaca trechos que ultrapassam 50 ms. Clique neles para ver a pilha de chamadas.
-3. **Isolar o culpado** – use a ferramenta de “Bottom-Up” para descobrir qual função consome mais tempo total.
+1. **Gravar um cenário real**: nada de “clicar aleatoriamente”. Reproduza a sequência que o usuário final faria, como abrir um modal, rolar a página ou enviar um formulário.
+2. **Identificar “long tasks”**: o Chrome destaca trechos que ultrapassam 50 ms. Clique neles para ver a pilha de chamadas.
+3. **Isolar o culpado**: use a ferramenta de “Bottom-Up” para descobrir qual função consome mais tempo total.
 
 Um exemplo clássico é um loop de renderização que tenta atualizar 10 000 linhas de uma tabela a cada frame. O código abaixo demonstra como a simples adição de `requestAnimationFrame` pode transformar um “código que trava” em algo fluido:
 
@@ -249,7 +249,7 @@ Outra ferramenta valiosa é o **Network throttling** em dispositivos remotos. No
 
 ## Conclusão
 
-Dominar as DevTools vai muito além de abrir o painel e mudar cores. Cada recurso – do profiler ao remote debugging – oferece uma lente diferente para enxergar o que realmente acontece por trás da interface. Na prática, eu percebi que a maioria dos problemas críticos se resumem a três categorias: **tempo de CPU**, **uso de memória** e **custo de rede**. Quando você tem uma visão clara de como esses três pilares se comportam, fica muito mais fácil priorizar otimizações e evitar refatorações desnecessárias.
+Dominar as DevTools vai muito além de abrir o painel e mudar cores. Cada recurso, do profiler ao remote debugging, oferece uma lente diferente para enxergar o que realmente acontece por trás da interface. Na prática, eu percebi que a maioria dos problemas críticos se resumem a três categorias: **tempo de CPU**, **uso de memória** e **custo de rede**. Quando você tem uma visão clara de como esses três pilares se comportam, fica muito mais fácil priorizar otimizações e evitar refatorações desnecessárias.
 
 A jornada de debug não termina quando o bug desaparece; ela continua com a implementação de guardas preventivas, como limites de alocação, testes de performance automatizados e monitoramento de rede em produção. As DevTools são a caixa de ferramentas que nos permite validar essas estratégias em tempo real.
 

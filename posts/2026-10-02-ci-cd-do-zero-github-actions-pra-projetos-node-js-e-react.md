@@ -164,7 +164,7 @@ Isso assegura que suas credenciais não fiquem expostas no código.
 
 ## Conclusão
 
-Implementar um pipeline de CI/CD com GitHub Actions para projetos Node.js e React pode parecer desafiador à primeira vista, mas seguindo os passos corretos, torna-se uma tarefa simples e eficiente. Com a configuração adequada, você garante que seu código esteja sempre pronto para ser entregue, testado e verificado, aumentando a qualidade e a confiança no seu trabalho.
+Implementar um pipeline de CI/CD com GitHub Actions para projetos Node.js e React pode parecer desafiador à primeira vista, mas seguindo os passos corretos, torná-se uma tarefa simples e eficiente. Com a configuração adequada, você garante que seu código esteja sempre pronto para ser entregue, testado e verificado, aumentando a qualidade e a confiança no seu trabalho.
 
 ### Takeaways práticos:
 - Crie workflows no GitHub Actions para automatizar testes e deployments.

@@ -28,7 +28,7 @@ Edge functions tackle precisely this limitation. Instead of just caching content
 
 Workers uses the Service Worker pattern as its programming model, which means every incoming request passes through a handler you define. The API is deliberately minimalist: you define a listener for fetch events, process the request, and return a response. This simplicity hides a system cleverly designed for instant startup and execution in isolated environments.
 
-To start developing, you need to install Wrangler, Cloudflare's official CLI for Workers. Wrangler isn't just a deployment tool—it's your complete development environment, allowing you to create new projects, test locally with Miniflare, and deploy with a single command.
+To start developing, you need to install Wrangler, Cloudflare's official CLI for Workers. Wrangler isn't just a deployment tool, it's your complete development environment, allowing you to create new projects, test locally with Miniflare, and deploy with a single command.
 
 ```bash
 npm install -g wrangler
