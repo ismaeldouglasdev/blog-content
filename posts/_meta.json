@@ -1,6 +1,78 @@
 {
   "posts": [
     {
+      "slug": "2026-10-21-php2shell-o-que-a-falha-de-rce-descoberta-por-ia-ensina",
+      "title": "PHP2Shell: o que a falha de RCE descoberta por IA ensina para devs full stack",
+      "title_en": null,
+      "date": "2026-10-21",
+      "category": "tendencia",
+      "tags": [
+        "php",
+        "segurança",
+        "ia",
+        "devops"
+      ],
+      "excerpt": "Uma vulnerabilidade de execução remota de código (RCE) em uma das linguagens mais antigas e difundidas da web já seria motivo de preocupação por si só. Mas quando essa falha",
+      "excerpt_en": null,
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-21-php2shell-o-que-a-falha-de-rce-descoberta-por-ia-ensina.jpg",
+      "cover_credit": {
+        "license": "Pixabay Content License",
+        "license_version": null,
+        "title": "cyber security",
+        "creator": "TheDigitalArtist",
+        "source": "Pixabay",
+        "source_url": "https://pixabay.com/photos/cyber-security-internet-security-2851201/",
+        "license_url": "https://pixabay.com/service/license-summary/"
+      },
+      "cover_meta": {
+        "strategy": "photo",
+        "review_status": "approved",
+        "relevance_score": 1.0,
+        "motif": "tech",
+        "source": "Pixabay",
+        "query": "cyber security",
+        "review_candidates": []
+      },
+      "lang": "pt",
+      "translation_slug": "2026-10-21-php2shell-o-que-a-falha-de-rce-descoberta-por-ia-ensina-en"
+    },
+    {
+      "slug": "2026-10-21-php2shell-o-que-a-falha-de-rce-descoberta-por-ia-ensina-en",
+      "title": "PHP2Shell: What an AI-Discovered RCE Vulnerability Teaches Full-Stack Developers",
+      "title_en": "PHP2Shell: What an AI-Discovered RCE Vulnerability Teaches Full-Stack Developers",
+      "date": "2026-10-21",
+      "category": "tendencia",
+      "tags": [
+        "php",
+        "segurança",
+        "ia",
+        "devops"
+      ],
+      "excerpt": "A remote code execution (RCE) vulnerability in one of the webs oldest and most widespread languages would be concerning enough on its own. But when this flaw is discovered",
+      "excerpt_en": "A remote code execution (RCE) vulnerability in one of the webs oldest and most widespread languages would be concerning enough on its own. But when this flaw is discovered",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-21-php2shell-o-que-a-falha-de-rce-descoberta-por-ia-ensina.jpg",
+      "cover_credit": {
+        "license": "Pixabay Content License",
+        "license_version": null,
+        "title": "cyber security",
+        "creator": "TheDigitalArtist",
+        "source": "Pixabay",
+        "source_url": "https://pixabay.com/photos/cyber-security-internet-security-2851201/",
+        "license_url": "https://pixabay.com/service/license-summary/"
+      },
+      "cover_meta": {
+        "strategy": "photo",
+        "review_status": "approved",
+        "relevance_score": 1.0,
+        "motif": "tech",
+        "source": "Pixabay",
+        "query": "cyber security",
+        "review_candidates": []
+      },
+      "lang": "en",
+      "translation_of": "2026-10-21-php2shell-o-que-a-falha-de-rce-descoberta-por-ia-ensina"
+    },
+    {
       "slug": "2026-10-13-react-performance-memo-usememo-usecallback-e-react-compiler",
       "title": "React performance: memo, useMemo, useCallback e React Compiler",
       "title_en": null,
