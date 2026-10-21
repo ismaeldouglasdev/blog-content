@@ -28,10 +28,6 @@ Protection against PHP2Shell involves straightforward steps that require attenti
 
 Besides changing the processing engine, server “hardening” is essential. This includes configuring the web server to reject requests that contain suspicious characters in the query string, such as quotes or newline characters that shouldn’t be there. Tools like WAFs (Web Application Firewalls) can be configured with rules to block attempts at argument injection into PHP files. Another measure is ensuring the PHP interpreter doesn’t have write permissions on areas of the filesystem beyond those strictly necessary, following the principle of least privilege.
 
-Here's the complete translated text:
-
----
-
 The deeper reflection that PHP2Shell brings, however, is about the role of Artificial Intelligence in security. As an open source contributor to the Engram project, I have direct contact with security and automation tools. At Engram, we work on security defenses such as the secrets and PII scanner in the memory engine, in addition to auditing tools and conflict verification. Seeing AI being used offensively to find vulnerabilities in an established language like PHP is a reminder that the digital arms race has entered a new phase.
 
 AI is not just writing code or helping to debug; it's becoming a relentless security auditor. While humans need to sleep, eat, and get distracted, AI agents can scan billions of lines of code in public and private repositories looking for patterns that humans would consider too obscure or complex. This means that vulnerabilities that have existed for years, hidden in complex code, can be discovered and exploited within days of an automated scanning tool being released.
@@ -41,10 +37,6 @@ For the development community, this imposes a new standard. Security through obs
 In my ongoing learning with Go and Rust, and in preparing for major cloud provider exams, I see that security is becoming increasingly integrated into the development lifecycle (DevSecOps). It's no longer something you do at the end of a project, but something that needs to be ensured from the first line of code and through infrastructure configuration. PHP's flaw is an old implementation error, but its modern discovery is a sign of the times.
 
 Maintaining security requires constant vigilance. If you manage servers, check right now whether you're running PHP in CGI mode. If you develop in PHP, ensure your production environment uses PHP-FPM or an equivalent. And above all, recognize that the tool you use to program may very well be the same tool someone else will use to try to bring down your application. The era of automated offensive security has arrived, and the only effective response is an equally automated and updated defense.
-
-Here's the complete translation with only the prose text translated, keeping all Markdown formatting, code blocks, and structure intact:
-
----
 
 ## Practical Takeaways
 
