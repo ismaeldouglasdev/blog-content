@@ -343,6 +343,14 @@
         "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mxrdcmb57l2f",
         "telegram": "70"
       }
+    },
+    "2026-10-21-php2shell-o-que-a-falha-de-rce-descoberta-por-ia-ensina": {
+      "url": "https://blog.ismaeltech.com/2026-10-21-php2shell-o-que-a-falha-de-rce-descoberta-por-ia-ensina",
+      "posted_at": "2026-10-21T15:10:38.212854+00:00",
+      "platforms": {
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3myfgmktq3u2l",
+        "telegram": "71"
+      }
     }
   }
 }
