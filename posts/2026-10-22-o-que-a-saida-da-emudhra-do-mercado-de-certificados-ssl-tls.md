@@ -22,7 +22,7 @@ Quando uma CA como a eMudhra deixa de operar no mercado público, o processo de 
 
 O anúncio não foi um bug, foi um feature removal planejado. E ele expõe uma fragilidade inerente do sistema: a dependência de terceiros que você, como desenvolvedor, nunca escolheu diretamente. Você pode cuidar perfeitamente do seu código, da sua infraestrutura e das suas renewals automáticas, mas se a entidade que assinou seu certificado desaparecer, todo o seu esforço vai por água abaixo.
 
-Na minha experiência mantendo sistemas para o varejo, como quando migrei milhares de produtos entre plataformas ou gerenciei a integração do PDV OSPOS com e-commerce, aprendi que a resiliência de um sistema não está apenas no uptime do servidor, mas na saúde de todas as suas dependências externas. Um certificado inválido é uma falha de rede que acontece no cliente do usuário, intratável pelo seu monitoramento interno, e com um poder de paralisação total.
+A resiliência de um sistema não está apenas no uptime do servidor, mas na saúde de todas as suas dependências externas. E um certificado inválido é uma falha de rede que acontece no cliente do usuário, intratável pelo seu monitoramento interno, e com um poder de paralisação total.
 
 ## Como verificar se você foi impactado
 
@@ -117,11 +117,11 @@ curl -I https://seu-dominio.com
 
 A situação da eMudhra serve como um alerta para um problema estrutural maior. A infraestrutura de confiança da internet está assentada sobre um número relativamente pequeno de entidades. Se poucas CAs dominam a emissão da grande maioria dos certificados, o que acontece se uma delas sofrer um comprometimento de segurança massivo? O comitê de root stores (Apple, Google, Microsoft, Mozilla) seria forçado a uma decisão catastrófica: revogar a confiança nessa CA, o que invalidaria instantaneamente milhões de sites, ou postergar a ação para evitar um apagão digital, porém mantendo os usuários em risco.
 
-É um dilema clássico entre segurança e estabilidade. Como desenvolvedores, nossa tendência é abstrair esse risco. Assinamos com `ACMEv2` no Certbot e esquecemos. Contribuindo para um projeto open source como o Engram, que lida com segurança de memória de agentes de IA, internalizei que os sistemas mais críticos são justamente aqueles em que confiamos cegamente sem entender seus pontos únicos de falha (SPOF).
+É um dilema clássico entre segurança e estabilidade. Como desenvolvedores, nossa tendência é abstrair esse risco: configuramos o `ACMEv2` no Certbot uma vez e esquecemos que existe. O problema é que os sistemas mais críticos costumam ser justamente aqueles em que confiamos cegamente, sem mapear seus pontos únicos de falha (SPOF). A CA emissora é um deles, e quase ninguém a monitora.
 
 Há movimentos na indústria tentando mitigar isso. A **ACME (Automated Certificate Management Environment)**, o protocolo por trás do Let's Encrypt, já é um grande passo para a democratização. A **Certificate Transparency (CT)** é outra, um sistema de logs públicos e auditáveis onde todas as emissões de certificados devem ser registradas, dificultando a emissão de certificados fraudulentos. Cabe a nós, que construímos a web, exigir e adotar essas práticas.
 
-Uma lição que levo do meu trabalho com integrações de PDV é que a robustez vem da redundância e da visibilidade. Em um cenário ideal, nossos sistemas deveriam ser capazes de trocar de CA automaticamente em caso de falha, assim como um gateway de IA com health checks que eu desenvolvi faz fallback entre providers. Ainda não estamos lá para certificados SSL, mas começar a tratar a CA como uma dependência monitorada, e não como magia, já é um avanço.
+A lição que fica para quem opera infraestrutura é que robustez vem da redundância e da visibilidade. O ideal seria que um sistema conseguisse trocar de CA automaticamente quando uma falha, exatamente como fazemos com servidores atrás de um load balancer: se a origem primária cai, o tráfego migra sem drama. Ainda não chegamos lá com certificados SSL, mas começar a tratar a CA como uma dependência monitorada, e não como magia, já é um avanço.
 
 ## Conclusão e próximos passos
 
