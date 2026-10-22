@@ -18,11 +18,11 @@ You may not have heard of eMudhra, but you’ve likely already encountered their
 
 Modern web infrastructure relies on a trust network called Public Key Infrastructure (PKI). In this system, root Certificate Authorities, such as ISRG (which operates Let's Encrypt) or DigiCert, act as global "digital notaries," recognized by operating systems and browsers. Other CAs, like eMudhra was, can be approved by these roots, delegating to them the power to issue certificates that will also be trusted.
 
-When a CA like eMudhra ceases to operate in the public market, the process of "distrust" begins. First, it stops issuing new certificates. Then, existing certificates continue to work until their expiration date—but there is a major catch. If the CA does not keep its validation servers (OCSP) and revocation lists (CRL) online, browsers attempting to verify a certificate's validity may fail this check. Depending on their configuration, they may treat this failure as a sign that the certificate is invalid or potentially compromised, blocking access.
+When a CA like eMudhra ceases to operate in the public market, the process of "distrust" begins. First, it stops issuing new certificates. Then, existing certificates continue to work until their expiration date, but there is a major catch. If the CA does not keep its validation servers (OCSP) and revocation lists (CRL) online, browsers attempting to verify a certificate's validity may fail this check. Depending on their configuration, they may treat this failure as a sign that the certificate is invalid or potentially compromised, blocking access.
 
 The announcement was not a bug; it was a planned feature removal. And it exposes an inherent fragility of the system: the dependency on third parties that you, as a developer, never directly chose. You can perfectly manage your code, your infrastructure, and your automatic renewals, but if the entity that signed your certificate disappears, all your effort goes down the drain.
 
-In my experience maintaining systems for retail—such as when I migrated thousands of products between platforms or managed the integration of the OSPOS POS system with e-commerce—I learned that a system's resilience isn't just about server uptime, but about the health of all its external dependencies. An invalid certificate is a network failure that happens on the user's client, untreatable by your internal monitoring, and with the power to bring everything to a complete halt.
+In my experience maintaining systems for retail, such as when I migrated thousands of products between platforms or managed the integration of the OSPOS POS system with e-commerce, I learned that a system's resilience isn't just about server uptime, but about the health of all its external dependencies. An invalid certificate is a network failure that happens on the user's client, untreatable by your internal monitoring, and with the power to bring everything to a complete halt.
 
 ## How to check if you're affected
 
@@ -120,7 +120,7 @@ The eMudhra situation serves as a warning for a larger structural problem. The i
 
 It's a classic dilemma between security and stability. As developers, our tendency is to abstract this risk away. We sign with `ACMEv2` on Certbot and forget about it. Working on an open-source project like Engram, which deals with AI agent memory security, I've internalized that the most critical systems are precisely those we blindly trust without understanding their single points of failure (SPOF).
 
-There are movements within the industry trying to mitigate this. **ACME (Automated Certificate Management Environment)**, the protocol behind Let's Encrypt, is already a major step toward democratization. **Certificate Transparency (CT)** is another—a system of public, auditable logs where all certificate issuances must be recorded, making fraudulent certificate issuance more difficult. It's up to us, who build the web, to demand and adopt these practices.
+There are movements within the industry trying to mitigate this. **ACME (Automated Certificate Management Environment)**, the protocol behind Let's Encrypt, is already a major step toward democratization. **Certificate Transparency (CT)** is another, a system of public, auditable logs where all certificate issuances must be recorded, making fraudulent certificate issuance more difficult. It's up to us, who build the web, to demand and adopt these practices.
 
 A lesson I take from my work with POS integrations is that robustness comes from redundancy and visibility. In an ideal scenario, our systems should be able to automatically switch CAs in case of failure, much like an AI gateway with health checks that I developed can fallback between providers. We're not there yet for SSL certificates, but starting to treat a CA as a monitored dependency, and not as magic, is already progress.
 
@@ -135,7 +135,7 @@ To summarize, your action plan should be:
 *   **Monitor the trust chain**: Add issuer and expiration date checks to your infrastructure monitoring. Tools like Nagios, Prometheus Blackbox Exporter, or custom scripts can do this.
 *   **Think about resilience**: Evaluate whether it makes sense for your project to use a CDN that abstracts SSL management or even consider acquiring long-duration certificates (where applicable) to reduce the frequency of single points of failure.
 
-The web is built on layers of delegated trust. It is up to us, as developers, to ensure that when one of these layers dissolves, our projects don't collapse with it, but have the robustness to transition smoothly to the next. After all, the only constant in technology is change—and our greatest skill is our ability to adapt to it.
+The web is built on layers of delegated trust. It is up to us, as developers, to ensure that when one of these layers dissolves, our projects don't collapse with it, but have the robustness to transition smoothly to the next. After all, the only constant in technology is change, and our greatest skill is our ability to adapt to it.
 
 ## Sources
 

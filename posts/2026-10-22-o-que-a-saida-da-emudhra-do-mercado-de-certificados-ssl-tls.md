@@ -18,11 +18,11 @@ Você pode não ter ouvido falar da eMudhra, mas é bem provável que já tenha 
 
 A infraestrutura da web moderna se apoia em uma rede de confiança chamada Public Key Infrastructure (PKI). Nesse sistema, Autoridades Certificadoras raiz, como a ISRG (que opera o Let's Encrypt) ou a DigiCert, atuam como "cartórios digitais" globais, reconhecidos pelos sistemas operacionais e navegadores. Outras CAs, como era o caso da eMudhra, podem ser aprovadas por essas raízes, delegando-lhes o poder de emitir certificados que também serão confiáveis.
 
-Quando uma CA como a eMudhra deixa de operar no mercado público, o processo de "desconfiança" começa. Primeiro, ela para de emitir novos certificados. Depois, os certificados existentes continuam funcionando até sua data de expiração — mas há um porém enorme. Se a CA não mantiver seus servidores de validação (OCSP) e listas de revogação (CRL) online, os navegadores, ao tentarem verificar a validade de um certificado, podem falhar nessa checagem. Dependendo de como estão configurados, podem tratar essa falha como um sinal de que o certificado é inválido ou potencialmente comprometido, bloqueando o acesso.
+Quando uma CA como a eMudhra deixa de operar no mercado público, o processo de "desconfiança" começa. Primeiro, ela para de emitir novos certificados. Depois, os certificados existentes continuam funcionando até sua data de expiração, mas há um porém enorme. Se a CA não mantiver seus servidores de validação (OCSP) e listas de revogação (CRL) online, os navegadores, ao tentarem verificar a validade de um certificado, podem falhar nessa checagem. Dependendo de como estão configurados, podem tratar essa falha como um sinal de que o certificado é inválido ou potencialmente comprometido, bloqueando o acesso.
 
 O anúncio não foi um bug, foi um feature removal planejado. E ele expõe uma fragilidade inerente do sistema: a dependência de terceiros que você, como desenvolvedor, nunca escolheu diretamente. Você pode cuidar perfeitamente do seu código, da sua infraestrutura e das suas renewals automáticas, mas se a entidade que assinou seu certificado desaparecer, todo o seu esforço vai por água abaixo.
 
-Na minha experiência mantendo sistemas para o varejo — como quando migrei milhares de produtos entre plataformas ou gerenciei a integração do PDV OSPOS com e-commerce —, aprendi que a resiliência de um sistema não está apenas no uptime do servidor, mas na saúde de todas as suas dependências externas. Um certificado inválido é uma falha de rede que acontece no cliente do usuário, intratável pelo seu monitoramento interno, e com um poder de paralisação total.
+Na minha experiência mantendo sistemas para o varejo, como quando migrei milhares de produtos entre plataformas ou gerenciei a integração do PDV OSPOS com e-commerce, aprendi que a resiliência de um sistema não está apenas no uptime do servidor, mas na saúde de todas as suas dependências externas. Um certificado inválido é uma falha de rede que acontece no cliente do usuário, intratável pelo seu monitoramento interno, e com um poder de paralisação total.
 
 ## Como verificar se você foi impactado
 
@@ -119,7 +119,7 @@ A situação da eMudhra serve como um alerta para um problema estrutural maior. 
 
 É um dilema clássico entre segurança e estabilidade. Como desenvolvedores, nossa tendência é abstrair esse risco. Assinamos com `ACMEv2` no Certbot e esquecemos. Contribuindo para um projeto open source como o Engram, que lida com segurança de memória de agentes de IA, internalizei que os sistemas mais críticos são justamente aqueles em que confiamos cegamente sem entender seus pontos únicos de falha (SPOF).
 
-Há movimentos na indústria tentando mitigar isso. A **ACME (Automated Certificate Management Environment)**, o protocolo por trás do Let's Encrypt, já é um grande passo para a democratização. A **Certificate Transparency (CT)** é outro — um sistema de logs públicos e auditáveis onde todas as emissões de certificados devem ser registradas, dificultando a emissão de certificados fraudulentos. Cabe a nós, que construímos a web, exigir e adotar essas práticas.
+Há movimentos na indústria tentando mitigar isso. A **ACME (Automated Certificate Management Environment)**, o protocolo por trás do Let's Encrypt, já é um grande passo para a democratização. A **Certificate Transparency (CT)** é outra, um sistema de logs públicos e auditáveis onde todas as emissões de certificados devem ser registradas, dificultando a emissão de certificados fraudulentos. Cabe a nós, que construímos a web, exigir e adotar essas práticas.
 
 Uma lição que levo do meu trabalho com integrações de PDV é que a robustez vem da redundância e da visibilidade. Em um cenário ideal, nossos sistemas deveriam ser capazes de trocar de CA automaticamente em caso de falha, assim como um gateway de IA com health checks que eu desenvolvi faz fallback entre providers. Ainda não estamos lá para certificados SSL, mas começar a tratar a CA como uma dependência monitorada, e não como magia, já é um avanço.
 
@@ -134,7 +134,7 @@ Para resumir, seu plano de ação deve ser:
 *   **Monitore a cadeia de confiança**: Adicione uma verificação de emissor e data de expiração ao seu monitoramento de infraestrutura. Ferramentas como Nagios, Prometheus Blackbox Exporter ou scripts customizados podem fazer isso.
 *   **Pense em resiliência**: Avalie se faz sentido para seu projeto usar uma CDN que abstraia o gerenciamento de SSL ou até mesmo considerar a aquisição de certificados de longa duração (onde aplicável) para reduzir a frequência de pontos de falha.
 
-A web é construída sobre camadas de confiança delegada. Cabe a nós, desenvolvedores, garantir que quando uma dessas camadas se desfaz, nossos projetos não desabem junto, mas tenham a robustez para transitar suavemente para a próxima. Afinal, a única constante na tecnologia é a mudança — e nossa maior habilidade é nos adaptarmos a ela.
+A web é construída sobre camadas de confiança delegada. Cabe a nós, desenvolvedores, garantir que quando uma dessas camadas se desfaz, nossos projetos não desabem junto, mas tenham a robustez para transitar suavemente para a próxima. Afinal, a única constante na tecnologia é a mudança, e nossa maior habilidade é nos adaptarmos a ela.
 
 ## Fontes
 
