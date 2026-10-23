@@ -8,7 +8,7 @@ cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/pos
 lang: "pt"
 ---
 
-Todo mundo roda uma aplicação na própria máquina e, na hora de colocar no ar, descobre que um `systemctl restart` não dá conta. Este post é o caminho mais curto que eu conheço para sair desse ponto: você vai subir um app no cluster, colocar um service na frente, expor por Ingress, guardar configuração fora da imagem e escalar — entendendo o que cada peça faz.
+Rodar uma aplicação localmente funciona bem. Colocá-la no ar em vários ambientes, com saúde, escalonamento e configuração separada, já é outro desafio. Este post mostra o caminho mais direto para subir um app no Kubernetes: você vai entender Pods, Deployments, Services, Ingress, ConfigMaps e Secrets, e como essas peças se conectam para rodar sua aplicação de forma mais resiliente.
 
 A progressão é Pod → Deployment → Service → Ingress → ConfigMap/Secret → escala. Cada etapa só faz sentido depois da anterior, e todas são copiáveis.
 

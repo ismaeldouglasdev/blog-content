@@ -9,7 +9,7 @@ lang: "pt"
 ---
 
 ## Introdução
-Quando migrei 10k produtos entre sistemas na Loja Quase Tudo, percebi a importância da automação de tarefas para manter a eficiência e reduzir erros humanos. A automação de tarefas é fundamental para qualquer sistema ou aplicação, permitindo que as tarefas sejam executadas de forma regular e consistente, sem a necessidade de intervenção humana. Neste contexto, ferramentas como `cron`, `systemd` e scripts Bash são essenciais para automatizar tarefas e garantir a estabilidade e segurança do sistema.
+Automatizar tarefas é uma das formas mais práticas de ganhar confiabilidade. Em vez de rodar comandos manualmente todos os dias, é possível agendá-los com `cron` ou `systemd`, criar scripts robustos com logs e tratamento de erros e garantir que rotinas críticas rodem na hora certa, sem intervenção humana.
 
 ## Cron: Sintaxe e Exemplos Reais
 O `cron` é uma ferramenta de agendamento de tarefas que permite executar comandos ou scripts em intervalos de tempo específicos. A sintaxe do `cron` é simples e consiste em cinco campos, separados por espaços, que especificam o minuto, hora, dia do mês, mês e dia da semana, respectivamente. Por exemplo, o seguinte comando agendará a execução de um script Bash todos os dias às 2h da manhã:
