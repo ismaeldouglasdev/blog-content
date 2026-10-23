@@ -16,7 +16,7 @@ Have you ever received a request from a client who needs to expose an endpoint t
 
 These situations are more common than we imagine, especially in retail environments where every penny counts. The promise of **serverless** — executing code only when an event occurs — allows you to turn those demands into lightweight functions, paid only for the actual execution time. In the AWS ecosystem, the service that materializes this idea is **AWS Lambda**.
 
-Below, I’ll show how to build functions, APIs, and triggers in a practical and cost‑effective way, using the resources I already master in my integration projects between OSPOS and marketplaces, and in the automation pipelines I’ve developed for clients.
+Below, I'll show how to build functions, APIs, and triggers in a practical and cost-effective way.
 
 
 <figure>
@@ -100,7 +100,7 @@ Resources:
             Method: get
 ```
 
-With `sam build && sam deploy --guided` the entire stack (Lambda + API) will be provisioned in a few minutes. In my **inventory‑service**, I used exactly this pattern to expose endpoints that synchronize inventory between OSPOS and Mercado Livre, keeping the integration layer extremely lightweight and cheap.
+With `sam build && sam deploy --guided` the entire stack (Lambda + API) will be provisioned in a few minutes. This pattern is commonly used to expose endpoints that synchronize inventory between a POS system and a marketplace, keeping the integration layer lightweight and cheap.
 
 ## 3. Event Triggers: S3, SQS, and DynamoDB  
 
@@ -169,7 +169,7 @@ The benefit is that Lambda only runs when there are messages, avoiding fixed cos
 
 ### 3.3 Change streams in DynamoDB  
 
-When inventory changes in OSPOS, I write the update to a DynamoDB table. A Lambda attached to a **DynamoDB Stream** propagates the change to the marketplace in real time.
+When inventory changes in a POS system, writing the update to a DynamoDB table and attaching a Lambda to a DynamoDB Stream propagates the change to the marketplace in real time.
 
 ```python
 def lambda_handler(event, context):
@@ -245,7 +245,7 @@ Resources:
 
 ### 6.2 AWS CDK (Cloud Development Kit)  
 
-When the project grows and involves multiple stacks (for example, integration between OSPOS, S3, DynamoDB, and Lambda), I prefer **CDK** because it lets you write the infrastructure in TypeScript or Python, reusing program logic.
+When a project grows and involves multiple stacks (for example, integration between a POS system, S3, DynamoDB, and Lambda), **CDK** is a good choice because it lets you write the infrastructure in TypeScript or Python, reusing program logic.
 
 ```typescript
 import * as cdk from 'aws-cdk-lib';
@@ -282,9 +282,7 @@ With `cdk deploy` the full stack is created, and future changes are handled as a
 
 ## 7. Practical Conclusion  
 
-Serverless on AWS isn’t just a fad; it’s a strategy that lets developers – even those coming from backgrounds like retail and POS – deliver cheap, scalable APIs and automations.  
-
-In my journey, the experience of migrating **10 k products** between store systems taught me that integration must be lightweight and resilient. The Lambdas I wrote to connect OSPOS to Mercado Livre proved that, with just a few megabytes of code, you can move thousands of orders without needing a dedicated server.  
+Serverless on AWS isn’t just a fad; it’s a strategy that lets developers deliver cheap, scalable APIs and automations. Integration between store systems and marketplaces must be lightweight and resilient. With small Lambda functions, it’s possible to move thousands of orders without needing a dedicated server.  
 
 If you still have doubts about feasibility, try creating a simple function, hook it up to API Gateway, and measure the cost in the AWS console. The price difference compared to a traditional EC2 is usually eye‑opening.
 

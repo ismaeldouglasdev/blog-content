@@ -48,9 +48,7 @@ volumes:
   redis-data:
 ```
 
-Run `docker compose up -d` and Redis is ready to accept connections on the default port. In my *inventory-service* project I used exactly this setup to synchronize catalog and inventory between OSPOS and Mercado Libre, ensuring that latency was predictable.
-
-> **Tip:** keep the same image version across all environments. The `redis:7-alpine` image is the smallest and already includes the *streams* and *Lua* modules that we will use later.
+Run `docker compose up -d` and Redis is ready to accept connections on the default port. > **Tip:** keep the same image version across all environments. The `redis:7-alpine` image is the smallest and already includes the *streams* and *Lua* modules that we will use later.
 
 ## 2. Cache Patterns in Node.js  
 
@@ -119,8 +117,6 @@ export async function getProduct(id) {
   return product;
 }
 ```
-
-In the *inventory-service* I used exactly this logic to avoid repeated queries to the same product record when the POS requested the price to display at checkout.
 
 ### 2.3. Simplified Write‑through
 
@@ -343,7 +339,7 @@ await subscriber.subscribe('stock:*', (message, channel) => {
 });
 ```
 
-In *inventory-service* I used exactly this flow so that the React frontend was updated instantly when stock was changed by a POS sale.
+This flow allows the frontend to be updated in real time when stock changes.
 
 ## 6. Production: clustered mode  
 
@@ -444,7 +440,7 @@ From that point on, all cache calls, rate limiting, and queues operate transpare
 
 ## 7. Conclusion  
 
-Implementing caching, rate limiting, and queues with Redis is not just “big‑company stuff”. In projects like *inventory-service* or *lead-pipeline* I was able to cut query latency by up to 70 %, avoid blocks due to API limits, and ensure that critical tasks were processed even when the primary server faced load spikes.  
+Implementing caching, rate limiting, and queues with Redis is not just “big‑company stuff”. These patterns can cut query latency significantly, avoid blocks due to API limits, and ensure that critical tasks are processed even under load spikes.  
 
 The combination of Docker, the official `redis` client, and libraries such as BullMQ provides a fast and reliable path.
 

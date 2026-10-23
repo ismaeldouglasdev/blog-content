@@ -237,7 +237,7 @@ Um agente é um sistema que junta tudo: LLM para raciocínio, RAG para memória 
 3.  **Observar (Observe):** Recebe a observação (resultado da ferramenta) e a adiciona ao contexto.
 4.  **Repetir:** Continua até chegar a uma conclusão final.
 
-No meu projeto **Plexo** (um gerenciador centralizado de tasks), um agente poderia ter a tarefa: "Priorize as tasks em backlog que estão relacionadas ao bug #123 e atribua ao time de frontend". O agente:
+O agente:
 *   *Pensa:* "Preciso buscar as tasks do backlog, filtrar por menção ao bug #123, e depois atualizar o campo `team`."
 *   *Ato:* Chama a ferramenta `get_tasks(filter="backlog")`.
 *   *Observa:* Recebe uma lista de 15 tasks.

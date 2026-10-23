@@ -15,7 +15,7 @@ Have you ever spent an entire afternoon debugging an update that didn't trigger 
 
 React is powerful, but it doesn't come with a ready-made solution for what happens when `useState` starts leaking across the entire app. Over time, you realize that state management isn't a *nice to have*: it's what separates maintainable code from a structure that collapses with the first new feature.
 
-I had to deal with this in a real project recently: `inventory-service`, which synchronizes catalog and inventory between OSPOS and marketplaces. At first, it seemed simple: a global state for the cart, another for inventory. But once you start handling concurrent updates, automatic request retries, and multiple endpoints, the state begins to take on a life of its own. That's when I decided to invest time understanding the options beyond Context.
+When state starts leaking across the entire app, managing it becomes critical for maintainability.
 
 I'll compare three approaches I've encountered in practice: React Context (the native one), Zustand (the minimalist), and Jotai (the atomic). No pure theory: just what works, what hurts, and in which scenarios each one behaves well.
 
@@ -36,7 +36,7 @@ Context is simple to understand, but its internal implementation (the provider a
 Zustand emerged as a response to this complexity. Its API is minimal: you essentially create a store with `create`, pass an initial state and mutations. No providers needed, no complex hooks, no manual memoization.
 
 ```ts
-// Real example from inventory-service: stock management
+// Example: stock management
 import { create } from 'zustand';
 
 interface StockState {
@@ -73,7 +73,7 @@ export const useStockStore = create<StockState>((set) => ({
 }));
 ```
 
-In `inventory-service`, I used Zustand because I needed global state that was easy to test and persist. Zustand has native middleware support, so I added a `persist` middleware that saves stock to localStorage: useful when sync with the market fails and you want to keep local state functional.
+Zustand is a good choice because I needed global state that was easy to test and persist. Zustand has native middleware support, so I added a `persist` middleware that saves stock to localStorage: useful when sync with the market fails and you want to keep local state functional.
 
 One thing that stood out to me: Zustand avoids the "wrapper hell" of Context. You use the hook directly in the component, without nesting providers or worrying about unnecessary re-renders. The selector from `useStore` lets you pick only what the component needs:
 
@@ -115,7 +115,6 @@ export const activeTasksCountAtom = atom((get) => {
 });
 ```
 
-In one of the projects in the local AI ecosystem (`provider-health-daemon`), I used Jotai for the dashboard. The panel needs to display health status for multiple providers, but each provider has independent configurations. With atoms, I can create `providerStatusAtom(providerId)`, `providerConfigAtom(providerId)`, without having to structure a massive object.
 
 The coolest part is composition: `filteredTasksAtom` is automatically recalculated whenever `tasksAtom` or `filterAtom` changes. No need for `useMemo`, `useSelector`, or extra logic. Jotai already knows which dependencies each atom has and only recalculates what's necessary.
 
@@ -137,7 +136,6 @@ function TaskList() {
 
 And if you need to mutate? Jotai has mutable atoms (with `write`), but it recommends preferring derived atoms whenever possible. This removes the temptation to put imperative logic directly into state.
 
-In `Plexo`, I used Jotai for UI state (open tabs, filters, current selection) and kept persistence logic separate with a custom middleware. The separation of concerns was clear: atoms for data, hooks/services for side effects.
 
 ## Comparing Performance
 
@@ -172,7 +170,6 @@ Context without memoization: slow. Context with `useMemo` on every provider and 
 - For components that need multiple independent values
 - When specific update performance is critical (e.g., large grids, lists with drag-and-drop)
 
-In `lead-pipeline`, for example, I used Zustand for the global pipeline state (steps, current status) and Jotai for the lead editor (a form with many fields and validations). The two complement each other well.
 
 ```markdown
 ## What to do if you're already using Context?

@@ -10,7 +10,7 @@ lang: "pt"
 
 ### Por que você deve se preocupar agora  
 
-Imagine que o seu e‑commerce acabou de integrar o OSPOS, o PDV open source que eu customizei para a loja Quase Tudo, ao Mercado Livre. A cada venda o estoque tem que ser atualizado em milissegundos, senão o cliente compra um produto que já acabou e a reputação da loja despenca. No primeiro teste a API do Mercado Livre começou a responder com erros de *429 Too Many Requests* e, ao mesmo tempo, o banco de dados ficou sobrecarregado com consultas repetidas ao mesmo registro de produto. A solução acabou sendo colocar uma camada de Redis entre a aplicação e o banco, usando o Redis não só como cache, mas também como limitador de taxa e como broker de filas.  
+Imagine que seu e-commerce precisa manter o estoque sincronizado com um marketplace. A cada venda o estoque tem que ser atualizado em milissegundos, senão o cliente compra um produto que já acabou e a reputação da loja despenca. Em um cenário assim, a API do marketplace pode começar a responder com erros de *429 Too Many Requests* e, ao mesmo tempo, o banco de dados fica sobrecarregado com consultas repetidas ao mesmo registro de produto. A solução acaba sendo colocar uma camada de Redis entre a aplicação e o banco, usando o Redis não só como cache, mas também como limitador de taxa e como broker de filas.  
 
 Se você já passou por uma situação parecida – ou ainda não, mas sabe que pode acontecer – este artigo mostra, passo a passo, como montar essas três funções essenciais com Node.js, Docker e poucas linhas de código.
 
@@ -50,7 +50,7 @@ volumes:
   redis-data:
 ```
 
-Execute `docker compose up -d` e o Redis já está pronto para aceitar conexões na porta padrão. No meu projeto *inventory-service* eu usei exatamente essa configuração para sincronizar catálogo e estoque entre OSPOS e Mercado Livre, garantindo que a latência fosse previsível.
+Execute `docker compose up -d` e o Redis já está pronto para aceitar conexões na porta padrão. Essa configuração simples funciona bem para sincronizar catálogo e estoque entre sistemas, garantindo que a latência seja previsível.
 
 > **Dica:** mantenha a mesma versão da imagem em todos os ambientes. O `redis:7-alpine` tem o menor tamanho e já inclui os módulos de *streams* e *Lua* que vamos usar mais adiante.
 
@@ -125,7 +125,7 @@ export async function getProduct(id) {
 }
 ```
 
-No *inventory-service* eu usei exatamente essa lógica para evitar consultas repetidas ao mesmo registro de produto quando o PDV requisitava o preço para exibir no checkout.
+Esse padrão evita consultas repetidas ao mesmo registro de produto quando o preço precisa ser consultado rapidamente em operações frequentes.
 
 ### 2.3. Write‑through simplificado
 
@@ -255,7 +255,7 @@ app.use(async (req, res, next) => {
 
 Detalhe que costuma passar batido: o script Lua usa `redis.call("TIME")`, ou seja, o **relógio do Redis**, e nao o da aplicacao. E o que voce quer aqui — se o relógio da sua máquina estivesse adiantado, ele contaria entradas que ainda nao sairam da janela. Usar o tempo do servidor de dados tambem evita um segundo problema: quando voce roda o Redis em varios nos com relogios diferentes, todos precisam concordar sobre "agora".
 
-No *lead-pipeline* eu adicionei esse limitador para impedir que a API de enriquecimento de leads fosse invadida por bots, mantendo a latência estável mesmo sob pico de tráfego.
+Esse limitador ajuda a impedir abusos em APIs públicas, mantendo a latência estável mesmo sob pico de tráfego.
 
 
 ---
@@ -268,7 +268,7 @@ No *lead-pipeline* eu adicionei esse limitador para impedir que a API de enrique
 - Envio de e‑mails em lote.  
 - Integrações que dependem de APIs de terceiros com limites de taxa.
 
-No projeto *provider-health-daemon* eu precisava orquestrar chamadas a múltiplos provedores de IA, respeitando cooldowns. BullMQ foi a escolha natural porque já funciona sobre Redis e oferece recursos avançados como retries e rate limiting por fila.
+Ao orquestrar chamadas a múltiplos provedores, respeitar cooldowns é fundamental. BullMQ foi a escolha natural porque já funciona sobre Redis e oferece recursos avançados como retries e rate limiting por fila.
 
 ### 4.2. Instalando BullMQ
 
@@ -326,7 +326,7 @@ events.on('completed', ({ jobId }) => {
 });
 ```
 
-Com BullMQ eu consegui desacoplar a geração de relatórios do *Plexo* (gerenciador de tarefas). Cada relatório é colocado na fila, processado em segundo plano e, ao final, o usuário recebe uma notificação via Slack.
+Com BullMQ é possível desacoplar a geração de relatórios pesados. Cada relatório é colocado na fila, processado em segundo plano e, ao final, o usuário pode ser notificado.
 
 
 ---
@@ -357,7 +357,7 @@ await subscriber.subscribe('stock:*', (message, channel) => {
 });
 ```
 
-Em *inventory-service* eu usei exatamente esse fluxo para que o frontend React fosse atualizado instantaneamente quando o estoque fosse alterado por uma venda no PDV.
+Esse fluxo permite atualizar a interface em tempo real quando o estoque é alterado por uma venda.
 
 
 ---
@@ -465,7 +465,7 @@ A partir daí, todas as chamadas de cache, rate limiting e filas funcionam de fo
 
 ## 7. Conclusão  
 
-Implementar cache, rate limiting e filas com Redis não é apenas “coisa de grande empresa”. Em projetos como o *inventory-service* ou o *lead-pipeline* eu consegui reduzir a latência de consultas em até 70 %, evitar bloqueios por limites de API e garantir que tarefas críticas fossem processadas mesmo quando o servidor principal enfrentava picos de carga.  
+Implementar cache, rate limiting e filas com Redis não é apenas “coisa de grande empresa”. Com esses padrões é possível reduzir a latência de consultas, evitar bloqueios por limites de API e garantir que tarefas críticas sejam processadas mesmo em picos de carga.  
 
 A combinação de Docker, o cliente oficial `redis` e bibliotecas como BullMQ oferece um caminho rápido e confiável.
 
