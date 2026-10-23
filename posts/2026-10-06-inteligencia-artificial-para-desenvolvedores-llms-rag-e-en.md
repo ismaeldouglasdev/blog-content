@@ -19,7 +19,9 @@ I will explain how each piece works, where they fit, and, most importantly, how 
 
 ### The Core of the Conversation: How LLMs Work (In Practical Terms)
 
-Before 2024, my interaction with AI was basically theoretical. But when I started contributing to Engram, an open-source project for AI agent memory, I needed to understand the raw material we were working with. An LLM, at the end of the day, is a language model trained on a colossal amount of text. Think of trillions of tokens, which can be words, parts of words, or characters, extracted from the internet, books, code, and other texts.
+Large language models are trained on vast amounts of text and code, learning to predict the next token in a sequence.
+
+An LLM, at the end of the day, is a language model trained on a colossal amount of text. Think of trillions of tokens, which can be words, parts of words, or characters, extracted from the internet, books, code, and other texts.
 
 The training involves teaching the model to predict the next token in a sequence. Given the phrase "The server is running on port...", the model learns that "3000", "8080", or "5432" are likely predictions based on the patterns it has seen. This is autoregressive generation. The architecture behind this, nearly ubiquitous today, is the Transformer, introduced in 2017. It uses a "self-attention" mechanism that allows the model to weigh the importance of different words in a sentence, regardless of the distance between them. This is what gives an LLM the ability to maintain context coherence over longer paragraphs.
 
@@ -135,7 +137,7 @@ async def ask_rag(request: QueryRequest):
 # collection.add(documents=documents, ids=[f"doc_{i}" for i in range(len(documents))])
 ```
 
-At Engram, we implemented something analogous, but for agents' long-term memory. The engine indexes past interactions (facts, or *facts*), and when the agent needs to remember something, a retrieval mechanism fetches the facts most relevant to the current context, enabling more informed decisions. The lesson is the same: context is everything.
+The key lesson remains: context is everything.
 
 ### Function Calling and Tools: The Bridge to the Real World
 
@@ -230,7 +232,7 @@ if message.tool_calls:
     print(second_response.choices[0].message.content)
 ```
 
-This pattern is the foundation for agents. It was essential for building Engram's CLI and Neovim plugin, where the agent needs to invoke system commands, read files, and interact with the editor.
+This pattern is the foundation for agents, allowing them to invoke system commands, read files, and interact with their environment.
 
 ### Autonomous Agents: Orchestrating Thought and Action
 
@@ -257,7 +259,6 @@ Not every question needs GPT-4. Not every AI API is 100% available. In productio
 
 **Routing** directs the request to the most suitable model or strategy. A simple code formatting question can go to GPT-3.5 Turbo, which is cheaper and faster. A complex architectural task demands GPT-4 or Claude 3.5 Sonnet. You can route based on estimated prompt complexity, topic, or even A/B testing.
 
-**Fallbacks** are your plan B. If the call to the primary API fails (timeout, quota exceeded, 5XX error), your system should automatically try an alternate model. In the **provider-health-daemon** I built for my local AI ecosystem, this is the core function: monitor the health of different endpoints (OpenAI, Anthropic, local models via Ollama) and, if one has high latency or errors, redirect traffic to the next healthy provider in a priority list.
 
 Here is the central idea, simplified:
 
@@ -320,7 +321,6 @@ Finally, reliability. LLMs can "hallucinate" â invent facts, documentation 
 
 Generative AI will not replace developers any time soon. But developers who use generative AI *will* replace those who don't. It is a force multiplier, a tool to automate the tedious, explore solutions rapidly, and access specific knowledge in seconds.
 
-My experience, from retail automation with OSPOS to contributing to AI memory systems at Engram, reinforces that the value lies in practical integration. It's not about building a general-purpose Jarvis on the first try. Start small:
 1.  Automate the generation of code *boilerplate* in your editor (via Copilot or your own plugin).
 2.  Implement a Q&A on your internal technical documentation using RAG.
 3.  Create an AI-assisted *script* to analyze logs or generate reports from the database.
@@ -342,4 +342,3 @@ The basic building blocks are there. LLMs provide the reasoning, RAG provides th
 *   [Original paper "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks" (Lewis et al., 2020)](https://arxiv.org/abs/2005.11401)
 *   [Chroma DB: Quickstart Guide for Vector Databases](https://docs.trychroma.com/getting-started)
 *   [Anthropic Claude: Messages API Documentation](https://docs.anthropic.com/en/api/messages)
-*   [Engram repository on GitHub](https://github.com/your-org/engram) (Example of a real memory and RAG implementation for agents)
