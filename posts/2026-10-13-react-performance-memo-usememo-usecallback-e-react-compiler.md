@@ -10,11 +10,11 @@ lang: "pt"
 
 ## Introdução: quando a otimização se torna necessária
 
-Quando você lida com um catálogo de mais de 10 mil produtos e precisa mantê-lo sincronizado entre um sistema de PDV e um marketplace, cada renderização extra começa a doer. Esse foi o cenário que me levou a mergulhar na otimização de performance no React. O projeto *inventory‑service* que construí para um cliente usava OSPOS como base e expunha um endpoint JSON que alimentava tanto o front‑end da loja quanto a integração com o Mercado Livre. Nos primeiros dias, a página de catálogo atualizava a lista inteira a cada digitação, e o navegador travava em conexões mais lentas.
+Quando uma lista cresce e a cada interação o navegador trava ou pisca, o problema raramente é "falta de poder de CPU". Na maioria dos casos, é renderização desnecessária no React. Entender quando memoizar, como o React Compiler ajuda e onde usar `useMemo` e `useCallback` faz a diferença entre uma interface fluida e uma frustrante.
 
 A dor era visível no Chrome DevTools: centenas de componentes renderizando em cascata, muitos deles recebendo novas props mesmo quando a consulta de fundo não havia retornado novos dados. A primeira tentativa de corrigir o problema foi envolver tudo com `React.memo`, mas isso apenas mascarou o sintoma — as renderizações desnecessárias continuaram ocorrendo no nível mais profundo.
 
-Esse padrão se repete em vários dos meus projetos pessoais. O *blog.ismaeltech.com* é um SPA React que gera artigos diariamente usando um pipeline automatizado de IA. Inicialmente, o guardador anti‑slop recriava todo o árbol de componentes a cada novo post, e só depois percebi que a maior parte do trabalho era apenas reavaliar expressões caras dentro dos componentes de layout. O mesmo raciocínio se aplica ao *Plexo*, um gerenciador de tarefas com uma API REST em Python e uma UI React/Vite — sempre que um novo item era adicionado, o front‑end executava um ciclo de renderização completo sem necessidade.
+Esse padrão aparece sempre que componentes recalculam expressões caras, criam novos objetos/funções ou passam props estáveis para filhos memoizados. O resultado é uma cascata de re-renderizações que pode ser evitada com as ferramentas certas.
 
 O que aprendi com essas experiências é que otimização não é um passo opcional “quando você tem tempo”. É uma resposta direta a um problema de negócio real: reduzir a latência percebida melhora a experiência do usuário e reduz custos com infraestrutura. A partir de agora, vamos explorar as ferramentas que ajudam a transformar uma interface reativa em uma interface responsiva, usando exemplos concretos dos meus próprios códigos.
 
