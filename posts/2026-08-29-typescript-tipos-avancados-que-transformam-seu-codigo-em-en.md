@@ -45,7 +45,7 @@ Repetitive code is the enemy of maintenance. When we work with APIs, DTOs (Data 
 TypeScript offers a number of Utility Types that allow us to manipulate existing types to create new ones with less typing and more clarity.
 
 *   **Partial**: Transforms all properties of a type into optional ones. It is extremely useful when dealing with data update forms, where the user can choose what to change. When I develop interfaces in React, this type saves hours of work by defining fields as `name?: string, email?: string`.
-*   **Pick**: Allows you to select a subset of properties from a type. In security systems, such as the SOC 2 compliance documentation I analyzed in the Engram project, we sometimes want to create a "Log Data" type that removes sensitive information (PII) from the original type, keeping only what is necessary for auditing.
+*   **Pick**: Allows you to select a subset of properties from a type. In security systems, such as SOC 2 compliance documentation, we sometimes want to create a "Log Data" type that removes sensitive information (PII) from the original type, keeping only what is necessary for auditing.
 *   **Omit**: The inverse of Pick. It removes specific properties. This is handy when creating API response DTOs, where you can omit internal server fields that should not be exposed to the client.
 
 These tools translate complex types into clean definitions, making the code easier to read for others and allowing changes in the data model to be automatically propagated throughout the system.
@@ -66,7 +66,7 @@ State-based conditional logic is a common pattern in systems (such as task manag
 
 TypeScript solves this perfectly with *Discriminated Unions*. The concept is simple: we have a union type where each variant shares a common field, called the "discriminator" (usually a `Literal Type`).
 
-For example, when building `Plexo`, my task manager, we have states like `Todo`, `Doing`, `Done`, and `Error`. Each has the optional property `error` or `progress` that only exists in specific states. When we declare a variable with this union type, TypeScript knows exactly which properties will be available at that point in the code. This allows TypeScript to perform automatic narrowing, eliminating the need for manual `type guards`.
+For example, in a task manager application, we have states like `Todo`, `Doing`, `Done`, and `Error`. Each has the optional property `error` or `progress` that only exists in specific states. When we declare a variable with this union type, TypeScript knows exactly which properties will be available at that point in the code. This allows TypeScript to perform automatic narrowing, eliminating the need for manual `type guards`.
 
 The use of discriminated unions creates a safe *state machine* at the language level. This means that the IDE and the compiler itself guarantee that you are handling the state correctly, preventing exceptions caused by accessing data that doesn't exist in the current state.
 

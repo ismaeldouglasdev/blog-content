@@ -14,7 +14,7 @@ Você já passou uma tarde inteira debugando uma atualização que não disparav
 
 O React é poderoso, mas ele não vem com uma solução pronta para o que acontece quando o `useState` começa a vazar pelo app inteiro. Com o tempo, você percebe que state management não é um *nice to have*: é o que separa um código sustentável de uma estrutura que desaba com a primeira feature nova.
 
-Tive que lidar com isso de verdade num projeto recente: o `inventory-service`, que sincroniza catálogo e estoque entre OSPOS e marketplaces. A princípio, parecia simples: um estado global para o carrinho, outro para o estoque. Mas quando você começa a lidar com atualizações concorrentes, retry automático de requisições e múltiplos endpoints, o estado começa a ter vida própria. Foi ali que decidi investir tempo em entender as opções além do Context.
+Sincronizar catálogo e estoque entre um sistema e marketplaces parece simples à primeira vista: um estado global para o carrinho e outro para o estoque. Mas quando entram atualizações concorrentes, retry automático e múltiplos endpoints, o estado complica. É aí que vale conhecer alternativas ao Context.
 
 Vou comparar três abordagens que encontrei na prática: React Context (a nativa), Zustand (a minimalista) e Jotai (a atômica). Nada de teoria pura: o que funciona, o que dói e em que cenário cada um se comporta bem.
 
@@ -35,7 +35,7 @@ O Context é simples de entender, mas sua implementação interna (o provider co
 Zustand surgiu como resposta a essa complexidade. Sua API é mínima: basicamente, você cria um store com `create`, passa um estado inicial e mutações. Não precisa de providers, não precisa de hooks complexos, nem memoização manual.
 
 ```ts
-// Exemplo real do inventory-service: gerenciamento de estoque
+// Exemplo prático: gerenciamento de estoque
 import { create } from 'zustand';
 
 interface StockState {
@@ -53,7 +53,7 @@ export const useStockStore = create<StockState>((set) => ({
   fetchStock: async () => {
     set({ loading: true, error: null });
     try {
-      // Simulação: no real, chama API do Mercado Livre/OSPOS
+      // Simulação: chamada à API externa
       const response = await fetch('/api/stock');
       const data = await response.json();
       set({ items: data, loading: false });
@@ -72,7 +72,7 @@ export const useStockStore = create<StockState>((set) => ({
 }));
 ```
 
-No `inventory-service`, usei Zustand porque precisava de state global que fosse fácil de testar e persistir. O Zustand tem suporte nativo a middleware, então adicionei um `persist` que salva o estoque em localStorage: útil quando o sync com o mercado falha e você quer manter o estado local funcional.
+O Zustand é prático quando é preciso de estado global fácil de testar e persistir. Com middleware como `persist`, é possível salvar o estado no localStorage — útil quando a sincronização com APIs externas falha.
 
 Uma coisa que me chamou atenção: o Zustand evita o "wrapper hell" do Context. Você usa o hook direto no componente, sem precisar aninhar providers ou se preocupar com renderizações desnecessárias. O seletor do `useStore` permite pegar só o que o componente precisa:
 
@@ -98,7 +98,7 @@ O `shallow` (do `zustand/shallow`) compara referências superficialmente: import
 Jotai segue outro princípio: estado atômico. Em vez de um único objeto grande, você divide o estado em pequenas unidades ("atoms") que podem ser combinadas livremente.
 
 ```ts
-// Exemplo do projeto Plexo: gerenciamento de tasks
+// Exemplo prático: gerenciamento de tarefas
 import { atom } from 'jotai';
 
 export const tasksAtom = atom<Task[]>([]);
@@ -114,7 +114,7 @@ export const activeTasksCountAtom = atom((get) => {
 });
 ```
 
-Num dos projetos do ecossistema de IA local (o `provider-health-daemon`), usei Jotai para o dashboard. O painel precisa mostrar health status de múltiplos providers, mas cada provider tem configurações independentes. Com atoms, posso criar `providerStatusAtom(providerId)`, `providerConfigAtom(providerId)`, sem precisar estruturar um objeto gigante.
+Em um dashboard com múltiplos provedores e configurações independentes, Jotai funciona bem. É possível criar átomos por provedor, como `providerStatusAtom(providerId)`, `providerConfigAtom(providerId)`, sem centralizar tudo em um objeto gigante.
 
 A parte mais legal é a composição: `filteredTasksAtom` é automaticamente recalculado sempre que `tasksAtom` ou `filterAtom` mudam. Não precisa de `useMemo`, `useSelector`, ou lógica extra. O Jotai já sabe quais dependências cada atom tem e recalcula apenas o necessário.
 
@@ -136,7 +136,7 @@ function TaskList() {
 
 E se você precisa mutar? O Jotai tem atoms mutáveis (com `write`), mas recomenda-se preferir atoms derivados sempre que possível. Isso tira a tentação de colocar lógica imperativa direto no estado.
 
-No `Plexo`, usei Jotai para o estado de UI (tabs abertas, filtros, seleção atual) e mantive a lógica de persistência separada com middleware customizado. A separação de responsabilidades ficou clara: atoms para dados, hooks/services para efeitos colaterais.
+O Jotai funciona bem para estado de UI (abas abertas, filtros, seleção). A lógica de persistência pode ficar separada em hooks ou serviços, mantendo responsabilidades bem definidas.
 
 ## Comparando performance
 
@@ -144,7 +144,7 @@ Performance não é só sobre quantos ms leva para atualizar: é sobre quantos c
 
 No contexto tradicional (sem memoização), cada atualização de contexto dispara re-renders em todos os componentes que consumem aquele contexto, mesmo que o valor específico usado por cada um não mude. O React não tem como saber disso, já que o objeto retornado pelo provider é novo a cada render.
 
-Zustand evita isso com o hook `useStore` que usa referência de estado interno (via `useSyncExternalStore`) e comparação seletiva. Só quem usa o estado modificado re-renderiza. Nos testes que fiz com listas de 100+ itens (como no dashboard do inventory-service), o Zustand manteve 60fps mesmo com atualizações frequentes.
+Zustand evita isso com o hook `useStore` que usa referência de estado interno (via `useSyncExternalStore`) e comparação seletiva. Só quem usa o estado modificado re-renderiza. Em testes com listas de 100+ itens, o Zustand manteve 60fps mesmo com atualizações frequentes.
 
 Jotai brilha quando você tem muitos átomos interdependentes. Cada atom sabe quais outros atoms ele lê, então só recalcula os derivados que precisam. Num cenário de filter + search + pagination (como num dos meus testes de protótipo), Jotai re-renderizou apenas o necessário: a lista, não os filtros.
 
@@ -171,7 +171,7 @@ Context sem memoização: lento. Context com `useMemo` em cada provider e `React
 - Para componentes que precisam de múltiplos valores independentes
 - Quando performance de atualização específica é crítica (ex: grids grandes, listas com drag-and-drop)
 
-No `lead-pipeline`, por exemplo, usei Zustand para o estado global do pipeline (passos, status atual) e Jotai para o editor de lead (formulário com muitos campos, validações). Os dois se complementam bem.
+É comum combinar Zustand para estado global do fluxo e Jotai para formulários com muitos campos e validações. Os dois se complementam bem.
 
 ## O que fazer se já usa Context?
 
@@ -185,7 +185,7 @@ Migração não precisa ser de um dia para o outro. Você pode fazer por camadas
 
 4. **Use middleware para migração:** Zustand tem `persist` que lê JSON antigo do localStorage, então você pode migrar valores antigos de Context para Zustand sem perder estado.
 
-No OSPOS (o PDV que customizei na loja), comecei com Context para o carrinho de compras. Quando a loja cresceu e a lista de produtos passou de 500 itens, os re-renders começaram a ser perceptíveis. Migrar para Zustand levou um final de semana: 300 linhas de código, menos linhas de boilerplate (não precisa mais do `CartContext.Provider` aninhado no `App`) e resposta mais rápida.
+Começar com Context funciona bem para carrinhos simples. Quando a lista de produtos cresce e passa de algumas centenas de itens, os re-renders ficam perceptíveis. Migrar para uma solução como Zustand traz ganhos de performance com menos boilerplate.
 
 A parte mais fácil de migrar foi a persistência: o Context já salva carrinho em localStorage. No Zustand, só adicionei `middleware: persist` e ajustei a chave. Pronto.
 

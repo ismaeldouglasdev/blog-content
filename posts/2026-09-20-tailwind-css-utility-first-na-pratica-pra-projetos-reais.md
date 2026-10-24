@@ -358,7 +358,7 @@ export default {
 
 ## Performance e developer experience
 
-Quando implementei sistemas de PDV com interfaces web, a velocidade de desenvolvimento era crítica. Mudanças de layout precisavam ser rápidas e previsíveis. Tailwind se destaca exatamente aqui.
+Em sistemas de vendas com interfaces web, a velocidade de desenvolvimento é crítica: mudanças de layout precisam ser rápidas e previsíveis. Tailwind se destaca exatamente aqui.
 
 Não há contexto switching entre HTML e CSS. Você vê uma margem de 16px e escreve `m-4` diretamente no JSX. Não precisa nomear, organizar ou lembrar onde definiu `.spacing-medium`.
 

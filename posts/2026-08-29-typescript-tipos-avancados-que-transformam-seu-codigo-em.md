@@ -42,7 +42,7 @@ O código repetitivo é o inimigo da manutenção. Quando trabalhamos com APIs, 
 O TypeScript oferece uma série de Utility Types que permitem manipular tipos existentes para criar novos com menos digitação e mais clareza.
 
 *   **Partial**: Transforma todas as propriedades de um tipo em opcionais. É extremamente útil ao lidar com formulários de atualização de dados, onde o usuário pode escolher o que alterar. Quando desenvolvo interfaces em React, esse type economiza horas de trabalho definindo campos como `name?: string, email?: string`.
-*   **Pick**: Permite selecionar um subconjunto de propriedades de um tipo. Em sistemas de segurança, como a documentação de compliance SOC 2 que analisei no projeto Engram, às vezes queremos criar um tipo de "Dados para Log" que retira informações sensíveis (PII) do tipo original, mantendo apenas o necessário para auditoria.
+*   **Pick**: Permite selecionar um subconjunto de propriedades de um tipo. Em sistemas de segurança, ao lidar com documentação de compliance como SOC 2, às vezes queremos criar um tipo de "Dados para Log" que retira informações sensíveis (PII) do tipo original, mantendo apenas o necessário para auditoria.
 *   **Omit**: O inverso do Pick. Remove propriedades específicas. Isso é prático ao criar DTOs de resposta de API, onde você pode omitir campos internos do servidor que não devem ser expostos ao cliente.
 
 Essas ferramentas traduzem tipos complexos em definições limpas, facilitando a leitura do código por outras pessoas e permitindo que mudanças no modelo de dados sejam propagadas automaticamente através do sistema.
@@ -63,7 +63,7 @@ A lógica condicional baseada em estados é um padrão comum em sistemas (como g
 
 O TypeScript soluciona isso perfeitamente com *Discriminated Unions*. O conceito é simples: temos um tipo de união onde cada variante compartilha um campo comum, chamado "discriminador" (geralmente um `Literal Type`).
 
-Por exemplo, ao construir o `Plexo`, meu gerenciador de tasks, temos estados como `Todo`, `Doing`, `Done` e `Error`. Cada um tem a propriedade opcional `error` ou `progress` que só existe em estados específicos. Quando declaramos uma variável com esse tipo de união, o TypeScript sabe exatamente quais propriedades estarão disponíveis naquele ponto do código. Isso permite que o TypeScript faça narrowing automático, eliminando a necessidade de `type guards` manuais.
+Por exemplo, em um gerenciador de tarefas, temos estados como `Todo`, `Doing`, `Done` e `Error`. Cada um tem a propriedade opcional `error` ou `progress` que só existe em estados específicos. Quando declaramos uma variável com esse tipo de união, o TypeScript sabe exatamente quais propriedades estarão disponíveis naquele ponto do código. Isso permite que o TypeScript faça narrowing automático, eliminando a necessidade de `type guards` manuais.
 
 O uso de discriminated unions cria um *state machine* seguro no nível da linguagem. Isso significa que o IDE e o próprio compilador garantem que você está lidando com o estado corretamente, prevenindo exceções causadas por acessar dados que não existem no estado atual.
 
@@ -75,7 +75,7 @@ Um cenário comum é uma chamada que retorna um usuário ou uma lista de usuári
 
 Pense numa função que busca usuários. Ela pode falhar (retorna um objeto de erro) ou ter sucesso (retorna um array). Ao tipar isso corretamente, o desenvolvedor que consome essa API sabe que, se a resposta não for um erro, ele poderá iterar sobre a lista sem verificar se é null ou undefined.
 
-Este padrão é fundamental para APIs robustas. Ele elimina a necessidade de blocos `try/catch` excessivos para validação de dados e garante que os dados vindos da rede estejam estruturados conforme o contrato. Em projetos comerciais, como o PDV e integrações que gerencio, essa precisão evita perdas financeiras ou falhas na interface.
+Este padrão é fundamental para APIs robustas. Ele elimina a necessidade de blocos `try/catch` excessivos para validação de dados e garante que os dados vindos da rede estejam estruturados conforme o contrato. Em sistemas comerciais, essa precisão evita perdas financeiras ou falhas na interface.
 ## 📸 Crédito da imagem de capa
 - **Imagem:** [Programming code.jpg](https://commons.wikimedia.org/wiki/File%3AProgramming_code.jpg)
 - **Autor(a):** Martin Vorel

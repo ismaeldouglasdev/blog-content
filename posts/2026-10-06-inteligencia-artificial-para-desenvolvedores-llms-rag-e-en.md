@@ -242,7 +242,7 @@ An agent is a system that brings it all together: an LLM for reasoning, RAG for 
 3.  **Observe:** Receives the observation (tool result) and adds it to the context.
 4.  **Repeat:** Continues until reaching a final conclusion.
 
-In my **Plexo** project (a centralized task manager), an agent could have the task: "Prioritize the backlog tasks related to bug #123 and assign them to the frontend team". The agent:
+In a task manager application, an agent could have the task: "Prioritize the backlog tasks related to bug #123 and assign them to the frontend team". The agent:
 *   *Thinks:* "I need to fetch the backlog tasks, filter by mention of bug #123, and then update the `team` field."
 *   *Acts:* Calls the tool `get_tasks(filter="backlog")`.
 *   *Observes:* Receives a list of 15 tasks.

@@ -11,7 +11,7 @@ translation_of: "2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node
 
 ### Why you should care right now  
 
-Imagine your e‑commerce has just integrated OSPOS, the open‑source POS I customized for the Quase Tudo store, with Mercado Livre. With each sale, inventory must be updated within milliseconds, otherwise a customer ends up buying a product that’s already out of stock and the store’s reputation plummets. In the first test, the Mercado Livre API started responding with *429 Too Many Requests* errors, and at the same time the database became overloaded with repeated queries to the same product record. The solution turned out to be to place a Redis layer between the application and the database, using Redis not only as a cache but also as a rate limiter and as a queue broker.  
+Imagine an e‑commerce integrating a POS with a marketplace. With each sale, inventory must be updated within milliseconds, otherwise a customer ends up buying a product that’s already out of stock. During testing, the marketplace API started returning *429 Too Many Requests* errors and the database became overloaded with repeated queries. The solution was to add a Redis layer between the application and the database, using it as a cache, a rate limiter, and a queue broker.  
 
 If you’ve already faced a similar situation – or haven’t yet, but know it could happen – this article shows, step by step, how to build these three essential functions with Node.js, Docker, and just a few lines of code.
 
@@ -243,7 +243,7 @@ app.use(async (req, res, next) => {
 });
 ```
 
-In the *lead-pipeline* I added this limiter to prevent the lead enrichment API from being hammered by bots, keeping latency stable even under traffic spikes.
+A rate limiter is useful to prevent enrichment APIs from being hammered by bots, keeping latency stable even under traffic spikes.
 
 ## 4. Queues with BullMQ  
 
@@ -253,7 +253,7 @@ In the *lead-pipeline* I added this limiter to prevent the lead enrichment API f
 - Batch email sending.  
 - Integrations that depend on third‑party APIs with rate limits.
 
-In the *provider-health-daemon* project I needed to orchestrate calls to multiple AI providers, respecting cooldowns. BullMQ was the natural choice because it already runs on Redis and offers advanced features like retries and rate limiting per queue.
+When orchestrating calls to multiple providers with cooldowns, BullMQ is a natural choice because it runs on Redis and offers retries and rate limiting per queue.
 
 ### 4.2. Installing BullMQ
 
@@ -311,7 +311,7 @@ events.on('completed', ({ jobId }) => {
 });
 ```
 
-With BullMQ I was able to decouple report generation from *Plexo* (task manager). Each report is placed on the queue, processed in the background, and, in the end, the user receives a Slack notification.
+With BullMQ it’s easy to decouple heavy report generation from the main application. Each report goes to a queue, is processed in the background, and the user receives a notification when ready.
 
 ## 5. Pub/Sub for real‑time events  
 

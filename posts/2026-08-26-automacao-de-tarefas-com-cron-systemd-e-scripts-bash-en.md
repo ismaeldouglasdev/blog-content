@@ -42,12 +42,12 @@ These examples illustrate the flexibility of `cron` in scheduling tasks for diff
 ---
 
 ## Robust Scripts
-To ensure the robustness of scripts, it is essential to implement error and exception handling mechanisms. This can be achieved using commands such as `try`-`catch` or `if`-`else` to handle unexpected situations. Additionally, it is crucial to test the scripts in different scenarios and environments to guarantee their stability and reliability. For example, in my `inventory-service` project, I used a Bash script to synchronize the product catalog with Mercado Livre, and implemented error handling mechanisms to deal with potential communication failures with the API.
+To ensure the robustness of scripts, it is essential to implement error and exception handling mechanisms. This can be achieved using commands such as `try`-`catch` or `if`-`else` to handle unexpected situations. Additionally, it is crucial to test the scripts in different scenarios and environments to guarantee their stability and reliability. For example, a script that synchronizes data with an external API must handle network failures, unexpected responses, and timeouts, logging each error for diagnosis.
 
 ---
 
 ## Logging and Notifications
-Logging and notifications are essential for monitoring task execution and identifying potential issues. This can be achieved using tools such as `logger` or `syslog` to record events and errors, and notification services like `mail` or `slack` to send alerts in case of failures. In my `lead-pipeline` project, I used a Bash script to send email notifications in case of errors during task execution.
+Logging and notifications are essential for monitoring task execution and identifying potential issues. This can be achieved using tools such as `logger` or `syslog` to record events and errors, and notification services like `mail` or `slack` to send alerts in case of failures. A script can send email notifications when a run fails, so problems surface before they go unnoticed.
 
 ---
 
@@ -56,7 +56,7 @@ Some real-world examples of task automation include:
 
 *   Scheduling a script to run a data backup every day at 11 PM;
 *   Using a `systemd` timer to run a software update service every Monday at 3 AM;
-*   Implementing a Bash script to synchronize the product catalog with Mercado Livre every day at 8 AM.
+*   Implementing a Bash script to synchronize the product catalog with a marketplace every day at 8 AM.
 
 ---
 
@@ -87,7 +87,7 @@ Practical takeaways:
 
 *   [Official Cron documentation](https://man7.org/linux/man-pages/man5/crontab.5.html)
 *   [Official Systemd documentation](https://www.freedesktop.org/wiki/Software/systemd/)
-*   [GitHub repository for the Engram project](https://github.com/engram/engram)
+*   [systemd.timer manual](https://www.freedesktop.org/software/systemd/man/systemd.timer.html)
 *   [Article on automating tasks in Linux](https://linuxconfig.org/linux-cron-jobs)
 *   [Official Bash documentation](https://www.gnu.org/software/bash/manual/bash.html)
 ## 📸 Cover image credit
