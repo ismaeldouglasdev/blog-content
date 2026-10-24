@@ -10,7 +10,7 @@ lang: "pt"
 
 Você já parou para pensar quantas vulnerabilidades existem no transporte de dados entre seu frontend e backend? Não estou falando só de criptografia quebrada ou token vazado. Estou falando da camada que você quase nunca toca, o protocolo HTTP/2. O que parecia uma evolução de performance trouxe um vetor de ataque silencioso: o `http2shell`. Basicamente, um atacante pode executar código remotamente no seu servidor se você estiver usando Node.js ou Python sem as devidas proteções, tudo por causa de como os servidores HTTP/2 lidam com streams contaminados.
 
-Eu trabalho com APIs há alguns anos, tanto em projetos próprios quanto no open source. Como desenvolvedor full stack, a segurança é uma responsabilidade que se divide entre frontend e backend, se algo falha no transporte, toda a aplicação pode cair. A experiência de lidar com integrações entre PDV e e-commerce me mostrou na prática como um vetor de ataque em uma camada baixa pode derrubar sistemas inteiros que pareciam isolados. O http2shell é um exemplo disso.
+A segurança no transporte é uma responsabilidade compartilhada entre frontend e backend. Se algo falha nessa camada, toda a aplicação fica exposta. O http2shell é um exemplo prático de como uma vulnerabilidade em uma camada baixa pode comprometer sistemas inteiros.
 
 Neste artigo, vamos entender o que é esse ataque, como ele funciona, seu impacto real em projetos Node.js e Python, e, o mais importante, como mitigá-lo na sua stack full stack.
 
@@ -21,8 +21,8 @@ HTTP/2 chegou em 2015 como uma reformulação completa do protocolo HTTP/1.1, qu
 Isso trouxe ganhos enormes de performance, especialmente para aplicações web modernas que fazem dezenas de chamadas para APIs, carregam assets e mantêm conexões abertas para WebSocket ou Server-Sent Events. Hoje, a maioria dos servidores web (Nginx, Apache, Caddy) e servidores de aplicação em Node.js (Express com `spdy`), Python (Hypercorn, Uvicorn com `httptools`) e Go suportam HTTP/2 nativamente ou via reverse proxy.
 
 <figure>
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/HTTP2_push_concept.svg/1280px-HTTP2_push_concept.svg.png" alt="Diagrama ilustrando multiplexação de streams no HTTP/2. Vários fluxos de dados independentes compartilham uma única conexão TCP." loading="lazy">
-<figcaption>Multiplexação no HTTP/2: múltiplos streams (requisições/respostas) compartilham uma única conexão TCP. Imagem: <a href="https://commons.wikimedia.org/wiki/File:HTTP2_push_concept.svg">Wikimedia Commons</a>, licença CC BY-SA 4.0.</figcaption>
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/1d/HTTP-1.1_vs._HTTP-2.svg" alt="Comparação entre HTTP/1.1 e HTTP/2 mostrando multiplexação de requisições." loading="lazy">
+<figcaption>Comparação entre HTTP/1.1 e HTTP/2. Imagem: <a href="https://commons.wikimedia.org/wiki/File:HTTP-1.1_vs._HTTP-2.svg">Wikimedia Commons</a>, licença CC BY 4.0.</figcaption>
 </figure>
 
 Porém, essa complexidade introduziu novos pontos de falha. Streams são independentes, mas compartilham o mesmo contexto de conexão. Se um stream for comprometido, ele pode interferir no processamento de outros streams ou, pior, injetar código no processador do protocolo no servidor. O http2shell explora justamente essa brecha.
@@ -71,8 +71,8 @@ print(f"Frames gerados: {frames}")
 Na prática, um exploit real manipula frames brutos em nível de socket e explora vulnerabilidades específicas de versões de bibliotecas. Um exemplo conhecido foi a vulnerabilidade **CVE-2024-27983** no Node.js, relacionada ao tratamento de trailers HTTP/2, que permitia DoS e potencial RCE.
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/http2shell-exploit-flow.png" alt="Diagrama de fluxo do ataque http2shell: atacante envia frames maliciosos, servidor processa com parser vulnerável, execução de shellcode." loading="lazy">
-<figcaption>Fluxo simplificado de um ataque http2shell. O parser HTTP/2 vulnerável no servidor interpreta frames maliciosos como código executável.</figcaption>
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Security_Monitoring_Dashboard.png" alt="Conceito de monitoramento de segurança em servidores web." loading="lazy">
+<figcaption>Monitoramento e detecção são fundamentais para mitigar ataques em servidores HTTP/2. Imagem: <a href="https://commons.wikimedia.org/wiki/File:Security_Monitoring_Dashboard.png">Wikimedia Commons</a>, licença CC BY-SA 4.0.</figcaption>
 </figure>
 
 ## Impacto real: Node.js, Python e outras linguagens
