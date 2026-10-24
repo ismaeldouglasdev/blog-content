@@ -254,7 +254,7 @@ Nem toda pergunta precisa do GPT-4. Nem toda API de IA está 100% disponível. E
 
 **Roteamento** é direcionar a solicitação para o modelo ou estratégia mais adequada. Uma pergunta simples de formatação de código pode ir para o GPT-3.5 Turbo, mais barato e rápido. Uma tarefa complexa de arquitetura exige o GPT-4 ou o Claude 3.5 Sonnet. Você pode rotear com base na complexidade estimada do prompt, no tópico ou até em testes A/B.
 
-**Fallbacks** são seu plano B. Se a chamada para a API principal falhar (timeout, quota excedida, erro 5XX), seu sistema deve automaticamente tentar um modelo alternativo. No **provider-health-daemon** que construí para meu ecossistema de IA local, essa é a função central: monitorar a saúde de diferentes endpoints (OpenAI, Anthropic, modelos locais via Ollama) e, caso um esteja com alta latência ou erro, redirecionar o tráfego para o próximo provedor saudável em uma lista prioritária.
+**Fallbacks** são seu plano B. Se a chamada para a API principal falhar (timeout, quota excedida, erro 5XX), seu sistema deve automaticamente tentar um modelo alternativo. Monitorar a saúde dos endpoints e redirecionar o tráfego para o próximo provedor saudável em caso de falhas é uma prática essencial.
 
 Aqui está a ideia central, simplificada:
 

@@ -184,7 +184,7 @@ Migration doesn't need to happen overnight. You can do it layer by layer.
 
 4. **Use middleware for migration:** Zustand has `persist` that reads the old JSON from localStorage, so you can migrate old Context values to Zustand without losing state.
 
-In OSPOS (the POS system I customized for the store), I started with Context for the shopping cart. When the store grew and the product list exceeded 500 items, re-renders became noticeable. Migrating to Zustand took a weekend: 300 lines of code, less boilerplate (no more nested `CartContext.Provider` inside `App`), and faster response.
+Context works well for simple carts. When the product list exceeds a few hundred items, re-renders become noticeable. Migrating to a solution like Zustand brings performance gains with less boilerplate.
 
 The easiest part to migrate was persistence: the Context already saved the cart to localStorage. With Zustand, I just added `middleware: persist` and adjusted the key. Done.
 ```

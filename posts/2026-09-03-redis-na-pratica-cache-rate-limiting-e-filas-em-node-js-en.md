@@ -11,7 +11,7 @@ translation_of: "2026-09-03-redis-na-pratica-cache-rate-limiting-e-filas-em-node
 
 ### Why you should care right now  
 
-Imagine your e‑commerce has just integrated OSPOS, the open‑source POS I customized for the Quase Tudo store, with Mercado Livre. With each sale, inventory must be updated within milliseconds, otherwise a customer ends up buying a product that’s already out of stock and the store’s reputation plummets. In the first test, the Mercado Livre API started responding with *429 Too Many Requests* errors, and at the same time the database became overloaded with repeated queries to the same product record. The solution turned out to be to place a Redis layer between the application and the database, using Redis not only as a cache but also as a rate limiter and as a queue broker.  
+Imagine an e‑commerce integrating a POS with a marketplace. With each sale, inventory must be updated within milliseconds, otherwise a customer ends up buying a product that’s already out of stock. During testing, the marketplace API started returning *429 Too Many Requests* errors and the database became overloaded with repeated queries. The solution was to add a Redis layer between the application and the database, using it as a cache, a rate limiter, and a queue broker.  
 
 If you’ve already faced a similar situation – or haven’t yet, but know it could happen – this article shows, step by step, how to build these three essential functions with Node.js, Docker, and just a few lines of code.
 

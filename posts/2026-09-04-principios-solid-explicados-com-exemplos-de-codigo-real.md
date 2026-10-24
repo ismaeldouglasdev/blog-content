@@ -10,7 +10,7 @@ lang: "pt"
 
 ## Introdução
 
-Imagine que um cliente da sua loja de varejo, que usa OSPOS como ponto de venda, solicita uma integração que sincroniza estoque com o Mercado Livre em tempo real. Você entrega o código em um fim de semana, mas, dois meses depois, o mesmo cliente pede para acrescentar um relatório de vendas por categoria. O que era um módulo simples agora está cheio de condições, métodos que fazem tudo e pouca margem para mudanças. Essa situação acontece com frequência quando as regras de design são deixadas de lado.
+Imagine que um cliente solicita uma integração que sincroniza estoque com um marketplace. Você entrega o código, mas depois precisa adicionar um relatório de vendas por categoria. O que era um módulo simples agora está cheio de condições, métodos que fazem tudo e pouca margem para mudanças.
 
 Aqui eu explico como os cinco princípios SOLID podem impedir que um código evolua para um monólito incontrolável. Cada princípio vem acompanhado de um exemplo em uma das duas linguagens que eu uso no dia a dia: TypeScript no serviço de sincronização e Python no motor de canais. No final eu junto os dois em um caso real, e também escrevo sobre **quando não vale a pena** aplicar nada disso.
 
@@ -24,7 +24,7 @@ Aqui eu explico como os cinco princípios SOLID podem impedir que um código evo
 
 ### Por que isso importa
 
-Quando uma única classe cuida de leitura de API externa, transformação de dados e envio de e-mail, qualquer alteração em um desses domínios gera risco de regressão nos outros. No *inventory-service*, a primeira versão da sincronização misturava as três coisas. Quando precisei mudar o formato do payload para o Mercado Livre, o código que enviava notificação quebrou por causa de um campo inesperado.
+Quando uma única classe cuida de leitura de API externa, transformação de dados e envio de e-mail, qualquer alteração em um desses domínios gera risco de regressão nos outros. Em uma primeira versão, todas essas responsabilidades ficavam misturadas. Mudar o formato do payload quebrava outras partes do código por causa de dependências cruzadas.
 
 ### Exemplo em TypeScript
 
@@ -143,7 +143,7 @@ Repare no que mudou: sobraram quatro unidades, e cada uma tem uma razão de exis
 
 ### Por que isso importa
 
-No mesmo *inventory-service* eu precisava acrescentar um canal de venda (Shopee). Cada vez que eu alterava o `SyncEngine` para incluir o novo cliente, o risco de quebrar a integração já funcionando com o Mercado Livre aumentava. Aplicar OCP significa que a estrutura existente permanece intacta e a nova funcionalidade chega como um módulo adicional.
+Quando é preciso acrescentar um novo canal de venda (Shopee). Cada vez que eu alterava o `SyncEngine` para incluir o novo cliente, o risco de quebrar a integração já funcionando com o Mercado Livre aumentava. Aplicar OCP significa que a estrutura existente permanece intacta e a nova funcionalidade chega como um módulo adicional.
 
 ### Exemplo em Python
 

@@ -11,7 +11,7 @@ translation_of: "2026-09-04-principios-solid-explicados-com-exemplos-de-codigo-r
 
 ## Introduction
 
-Imagine a customer of your retail store, who uses OSPOS as a point of sale, requests an integration that synchronizes inventory with Mercado Livre in real time. You deliver the code over a weekend, but two months later the same customer asks you to add a sales report by category. What was a simple module is now full of conditionals, methods that do everything, and little room for change. This situation happens frequently when design rules are set aside.
+Imagine a customer requests an integration that synchronizes inventory with a marketplace. You deliver the code, but later need to add a sales report by category. What was a simple module is now full of conditionals, methods that do everything, and little room for change.
 
 Here I explain how the five SOLID principles can keep code from evolving into an uncontrollable monolith. Each principle comes with an example in one of the two languages I use daily: TypeScript in the synchronization service and Python in the channel engine. At the end I bring the two together in a real case, and I also write about **when it is not worth it** to apply any of this.
 
@@ -25,7 +25,7 @@ Here I explain how the five SOLID principles can keep code from evolving into an
 
 ### Why it matters
 
-When a single class handles reading from an external API, transforming data, and sending email, any change in one of those domains carries a risk of regression in the others. In *inventory-service*, the first version of the synchronization mixed all three. When I had to change the payload format for Mercado Livre, the code that sent the notification broke because of an unexpected field.
+When a single class handles reading from an external API, transforming data, and sending email, any change in one of those domains carries a risk of regression in the others. In an early version, all these responsibilities were mixed together. Changing the payload format broke other parts of the code due to cross-dependencies.
 
 ### Example in TypeScript
 
@@ -144,7 +144,7 @@ Notice what changed: four units are left, and each one has a separate reason to 
 
 ### Why it matters
 
-In the same *inventory-service* I needed to add a sales channel (Shopee). Every time I changed the `SyncEngine` to include the new client, the risk of breaking the integration already working with Mercado Livre grew. Applying OCP means the existing structure stays intact and the new capability arrives as an additional module.
+When adding a new sales channel, changing the core class, the risk of breaking the integration already working with Mercado Livre grew. Applying OCP means the existing structure stays intact and the new capability arrives as an additional module.
 
 ### Example in Python
 
@@ -686,7 +686,7 @@ For most small CRMs and catalogs, one function, one repository, and an `if` per 
 
 ## Conclusion
 
-Applying SOLID is not about following abstract rules; it is about keeping the agility I need when serving retail clients who demand fast changes. In *inventory-service*, the category report, the third channel, and the database swap all landed without rewriting the core — and that is the only criterion by which I judge whether it was worth it.
+Applying SOLID is not about following abstract rules; it is about keeping agility to adapt to changing requirements without breaking existing code. A well-designed system lets you add new features or swap dependencies without rewriting the core.
 
 ### Practical takeaways
 

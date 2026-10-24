@@ -63,7 +63,7 @@ exports.handler = async (event) => {
 };
 ```
 
-Node.js is often chosen when we need high‑performance libraries for I/O, something I've used in **lead‑pipeline** projects where the latency of external API calls was critical.
+Node.js is often chosen when high‑performance libraries for I/O are needed, especially when external API latency is critical.
 
 ## 2. Turning the Lambda into a REST API with API Gateway  
 
@@ -195,7 +195,7 @@ A **cold start** occurs when Lambda has to spin up a new execution environment b
 
 ### 4.2 Practical mitigations  
 
-1. **Keep‑alive via CloudWatch Events** – scheduling invocations every 5 minutes keeps the function “warm”. In tests with the **lead‑pipeline**, this technique reduced the average response time from 800 ms to under 150 ms.  
+1. **Keep‑alive via CloudWatch Events** – scheduling invocations every 5 minutes keeps the function “warm”. In tests, this technique reduced the average response time from ~800 ms to under 150 ms.  
 2. **Layers for dependencies** – separating large libraries into a reusable layer prevents the function zip from growing.  
 3. **Provisioned Concurrency** – AWS allows you to reserve pre‑initialized instances. Although it adds extra cost, it can be justified for critical APIs.  
 4. **Runtime choice** – for simple validation or webhook tasks, prefer Python or Node.js. When the workload demands high CPU performance, consider Go, which I am studying intensively in 2026.
