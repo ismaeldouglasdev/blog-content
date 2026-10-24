@@ -13,7 +13,7 @@ Você já recebeu a demanda de um cliente que precisa expor um endpoint para val
 
 Essas situações são mais comuns do que imaginamos, principalmente em ambientes de varejo onde cada centavo conta. A proposta do **serverless** — executar código apenas quando um evento acontece — permite transformar essas demandas em funções leves, pagas apenas pelo tempo efetivo de execução. No ecossistema da AWS, o serviço que materializa essa ideia é o **AWS Lambda**.
 
-A seguir, mostro como montar funções, APIs e gatilhos de forma prática e econômica, usando os recursos que já domino nos meus projetos de integração entre OSPOS e marketplaces, e nos pipelines de automação que desenvolvi para clientes.
+A seguir, mostro como montar funções, APIs e gatilhos de forma prática e econômica, com exemplos que se aplicam a integrações entre sistemas, sincronização de dados e pipelines de automação.
 
 ---
 
@@ -62,7 +62,7 @@ exports.handler = async (event) => {
 };
 ```
 
-O Node.js costuma ser escolhido quando precisamos de bibliotecas de alta performance para I/O, algo que já usei em projetos de **lead‑pipeline** onde a latência de chamadas a APIs externas era crítica.
+O Node.js costuma ser escolhido quando precisamos de bibliotecas de alta performance para I/O, especialmente em pipelines onde a latência de chamadas a APIs externas é crítica.
 
 ---
 
@@ -101,7 +101,7 @@ Resources:
             Method: get
 ```
 
-Com `sam build && sam deploy --guided` a stack inteira (Lambda + API) será provisionada em poucos minutos. No meu **inventory‑service**, usei exatamente esse padrão para expor endpoints que sincronizam estoque entre OSPOS e Mercado Livre, mantendo a camada de integração extremamente leve e barata.
+Com `sam build && sam deploy --guided` a stack inteira (Lambda + API) é provisionada em poucos minutos. Esse padrão serve bem para expor endpoints que sincronizam estoque entre sistemas e marketplaces, mantendo a camada de integração leve e barata.
 
 ---
 
@@ -172,7 +172,7 @@ A vantagem é que a Lambda só roda quando houver mensagens, evitando custo fixo
 
 ### 3.3 Streams de alteração no DynamoDB  
 
-Quando o estoque muda no OSPOS, eu escrevo a atualização em uma tabela DynamoDB. Uma Lambda ligada ao **DynamoDB Stream** propaga a mudança para o marketplace em tempo real.
+Quando o estoque muda em um sistema de origem, a atualização é gravada em uma tabela DynamoDB. Uma Lambda ligada ao **DynamoDB Stream** propaga a mudança para o marketplace em tempo real.
 
 ```python
 def lambda_handler(event, context):
@@ -200,7 +200,7 @@ Um **cold start** acontece quando a Lambda precisa inicializar um novo ambiente 
 
 ### 4.2 Mitigações práticas  
 
-1. **Keep‑alive via CloudWatch Events** – agendar invocações a cada 5 minutos mantém a função “quente”. Em testes com o **lead‑pipeline**, essa técnica reduziu o tempo médio de resposta de 800 ms para menos de 150 ms.  
+1. **Keep‑alive via CloudWatch Events** – agendar invocações a cada 5 minutos mantém a função “quente”. Em testes, essa técnica reduz o tempo médio de resposta de ~800 ms para menos de 150 ms.  
 2. **Camadas (Layers) para dependências** – separar bibliotecas grandes em uma camada reutilizável evita que o zip da função cresça.  
 3. **Provisioned Concurrency** – a AWS permite reservar instâncias pré‑inicializadas. Embora tenha custo extra, pode ser justificável para APIs críticas.  
 4. **Escolha do runtime** – para tarefas simples de validação ou webhook, prefira Python ou Node.js. Quando a carga de trabalho exige alta performance de CPU, considere Go, que já estou estudando intensamente em 2026.
@@ -254,7 +254,7 @@ Resources:
 
 ### 6.2 AWS CDK (Cloud Development Kit)  
 
-Quando o projeto cresce e envolve múltiplas stacks (por exemplo, integração entre OSPOS, S3, DynamoDB e Lambda), prefiro o **CDK** porque permite escrever a infraestrutura em TypeScript ou Python, reaproveitando lógica de programação.
+Quando o projeto cresce e envolve múltiplos serviços (por exemplo, integração entre um banco relacional, S3, DynamoDB e Lambda), o **CDK** costuma valer a pena porque permite escrever a infraestrutura em TypeScript ou Python, reaproveitando lógica de programação.
 
 ```typescript
 import * as cdk from 'aws-cdk-lib';
@@ -293,9 +293,9 @@ Com `cdk deploy` a stack completa é criada, e alterações futuras são tratada
 
 ## 7. Conclusão prática  
 
-Serverless na AWS não é só um modismo; é uma estratégia que permite que desenvolvedores – mesmo aqueles que vêm de áreas como varejo e PDV – entreguem APIs e automações baratas e escaláveis.  
+Serverless na AWS não é só um modismo; é uma estratégia que permite entregar APIs e automações baratas e escaláveis, mesmo para equipes pequenas.  
 
-No meu trajeto, a experiência de migrar **10 k produtos** entre sistemas de loja me ensinou que a integração deve ser leve e resiliente. As Lambdas que escrevi para conectar OSPOS ao Mercado Livre provaram que, com poucos megabytes de código, dá para movimentar milhares de pedidos sem precisar de um servidor dedicado.  
+Na prática, integrar sistemas exige que a camada de integração seja leve e resiliente. Com poucos megabytes de código, dá para movimentar milhares de pedidos sem precisar de um servidor dedicado.  
 
 Se você ainda tem dúvidas sobre a viabilidade, experimente criar uma função simples, conectar ao API Gateway e medir o custo no console da AWS. A diferença de preço frente a um EC2 tradicional costuma ser reveladora.
 

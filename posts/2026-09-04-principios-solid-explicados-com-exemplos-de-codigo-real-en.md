@@ -63,7 +63,7 @@ export class SyncService {
 Four reasons to change in one class. The split looks like this, with each piece responsible for one thing:
 
 ```ts
-// A linha crua do OSPOS, exatamente como a API responde.
+// Linha bruta retornada pela API
 export interface OsposProductRow {
   sku: string;
   qty: string | number;
@@ -295,7 +295,7 @@ That is the point that usually goes unnoticed: **what must not break is the beha
 
 ### Why it matters
 
-In *provider-health-daemon* I defined a `HealthCheck` interface that included metrics, alerts, and logging. Providers that only needed to answer "is it alive?" were forced to implement empty metric methods. The interface grew, the code bloated, and nobody gained anything.
+When an interface requires many methods, classes that only need part of them end up implementing empty methods. The interface grows, the code bloats, and nobody gains anything.
 
 ### Example in Python
 
@@ -373,7 +373,7 @@ Nobody implements what it does not use: `LocalOllamaProvider` has neither `get_l
 
 ### Why it matters
 
-In *lead-pipeline* I wired the AI enrichment script directly to SQLite. When the client asked to migrate to PostgreSQL, all the business code was stuck to the driver: every `sqlite3.connect` spread across the service became a landmine. DIP exists so you can swap the database without touching the business rule.
+Wiring business logic directly to a specific driver creates tight coupling. When you need to swap the database, all business code gets stuck to that driver. DIP exists to invert that dependency so the implementation can be swapped without touching business rules.
 
 ### Example in TypeScript
 
@@ -481,7 +481,7 @@ Swapping databases is one line in the composition layer. Not a single line of `L
 
 ### Context
 
-*inventory-service* was born from the migration of about 10 thousand products from a legacy system to OSPOS, at the Quase Tudo store, where I handled the commercial side. The technical problem was concrete: synchronize catalog and inventory with two marketplaces without every channel change becoming a rewrite.
+A common case is synchronizing catalog and inventory with multiple marketplaces without each new channel requiring a full rewrite of the system.
 
 ### Final architecture
 
@@ -619,7 +619,7 @@ const SINCE = new Date(Date.now() - 24 * 60 * 60 * 1000);
 
 const orchestrator = new SyncOrchestrator(
   new OspOSFetcher(
-    createOsposClient(process.env.OSPOS_BASE_URL!, process.env.OSPOS_TOKEN!),
+    
     SINCE,
   ),
   new ProductNormalizer(),
@@ -702,7 +702,7 @@ Applying SOLID is not about following abstract rules; it is about keeping the ag
 - [SOLID Principles – Robert C. Martin](https://www.objectmentor.com/resources/articles/SOLID.pdf)
 - [TypeScript Handbook – Interfaces](https://www.typescriptlang.org/docs/handbook/interfaces.html)
 - [Python abc – Abstract Base Classes](https://docs.python.org/3/library/abc.html)
-- [OSPOS GitHub Repository](https://github.com/opensourcepos/opensourcepos)
+
 
 ## 📸 Cover image credit
 - **Image:** [Laptop coding programs (Unsplash).jpg](https://commons.wikimedia.org/wiki/File%3ALaptop_coding_programs_%28Unsplash%29.jpg)

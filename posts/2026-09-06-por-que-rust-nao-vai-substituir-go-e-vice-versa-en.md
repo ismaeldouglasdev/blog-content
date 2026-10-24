@@ -36,7 +36,7 @@ Go and Rust have different strengths and are suited for different types of proje
 ## Real-World Projects: When to Use Which
 In practice, the choice between Go and Rust depends on the type of project and the specific needs of the developer. For example, if you're developing a web application that requires high performance and concurrency, Go may be a better choice. On the other hand, if you're developing an operating system software or a device driver, Rust may be more suitable.
 
-In my own projects, such as the development of a centralized task manager called Plexo, I chose to use Python for its ease of use and large community, but for parts that require high performance and security, such as the implementation of an AI gateway, Rust or Go could be more suitable choices.
+The choice between Python, Rust, and Go depends on what each part of the system requires. Python is convenient for its ease of use and large community, while parts that demand high performance and security, such as an AI gateway, favor Rust or Go.
 
 ## The Reality: Coexistence
 The reality is that Go and Rust coexist in the software development ecosystem and each has its own niche. Instead of competing with each other, they complement each other, offering different options for developers with specific needs. The choice between Go and Rust depends on the project, the team, and the developer's needs.

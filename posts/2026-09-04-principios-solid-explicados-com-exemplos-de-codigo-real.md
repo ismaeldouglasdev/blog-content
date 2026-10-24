@@ -62,7 +62,7 @@ export class SyncService {
 Quatro motivos para mudar numa classe só. A divisão fica assim, com cada pieza responsável por uma coisa:
 
 ```ts
-// A linha crua do OSPOS, exatamente como a API responde.
+// Linha bruta retornada pela API
 export interface OsposProductRow {
   sku: string;
   qty: string | number;
@@ -294,7 +294,7 @@ Esse é o ponto que costuma passar batido: **o que não pode quebrar é o compor
 
 ### Por que isso importa
 
-No *provider-health-daemon* eu defini uma interface `HealthCheck` que incluía métricas, alertas e logging. Provedores que só precisavam responder "está vivo?" eram obrigados a implementar métodos vazios de métrica. A interface cresceu, o código inchou e ninguém ganhou nada.
+Quando uma interface define muitos métodos obrigatórios, classes que só precisam de parte deles acabam implementando métodos vazios. Isso infla a interface e o código sem agregar valor.
 
 ### Exemplo em Python
 
@@ -372,7 +372,7 @@ Ninguém implementa o que não usa: `LocalOllamaProvider` não tem `get_latency`
 
 ### Por que isso importa
 
-No *lead-pipeline* eu conectei o script de enriquecimento por IA direto ao SQLite. Quando o cliente pediu migração para PostgreSQL, todo o código de negócio ficou preso ao driver: cada `sqlite3.connect` espalhado pelo serviço virou uma mina. DIP existe para trocar o banco sem tocar na regra de negócio.
+Conectar o código de negócio diretamente a um driver específico cria um acoplamento forte. Quando é preciso trocar o banco, toda a lógica de negócio fica presa ao driver. DIP existe para inverter essa dependência e permitir trocar a implementação sem tocar nas regras de negócio.
 
 ### Exemplo em TypeScript
 
@@ -480,7 +480,7 @@ Trocar de banco é uma linha na camada de composição. Nenhuma linha de `LeadEn
 
 ### Contexto
 
-O *inventory-service* nasceu da migração de cerca de 10 mil produtos de um sistema legado para OSPOS, na loja Quase Tudo, onde eu cuidava da parte comercial. O problema técnico era concreto: sincronizar catálogo e estoque com dois marketplaces sem que cada mudança de canal virar uma reescrita.
+Um caso comum é sincronizar catálogo e estoque com múltiplos marketplaces sem que cada novo canal vire uma reescrita completa do sistema.
 
 ### Arquitetura final
 
@@ -618,7 +618,7 @@ const SINCE = new Date(Date.now() - 24 * 60 * 60 * 1000);
 
 const orchestrator = new SyncOrchestrator(
   new OspOSFetcher(
-    createOsposClient(process.env.OSPOS_BASE_URL!, process.env.OSPOS_TOKEN!),
+    
     SINCE,
   ),
   new ProductNormalizer(),
@@ -685,7 +685,7 @@ Para a maioria dos CRMs e catálogos pequenos, uma função, um repositório e u
 
 ## Conclusão
 
-Aplicar SOLID não é seguir regras abstratas; é manter a agilidade que eu preciso ao atender clientes de varejo que exigem mudanças rápidas. No *inventory-service*, o relatório por categoria, o terceiro canal e a troca de banco entraram sem reescrever o núcleo — e esse é o único critério pelo que eu avalio se valeu a pena.
+Aplicar SOLID não é seguir regras abstratas; é manter a agilidade para adicionar funcionalidades sem quebrar o que já funciona. Um bom design permite adicionar um novo canal, um novo relatório ou trocar uma dependência sem reescrever o núcleo.
 
 ### Takeaways práticos
 
@@ -701,7 +701,7 @@ Aplicar SOLID não é seguir regras abstratas; é manter a agilidade que eu prec
 - [SOLID Principles – Robert C. Martin](https://www.objectmentor.com/resources/articles/SOLID.pdf)
 - [TypeScript Handbook – Interfaces](https://www.typescriptlang.org/docs/handbook/interfaces.html)
 - [Python abc – Abstract Base Classes](https://docs.python.org/3/library/abc.html)
-- [OSPOS GitHub Repository](https://github.com/opensourcepos/opensourcepos)
+
 
 ## 📸 Crédito da imagem de capa
 - **Imagem:** [Laptop coding programs (Unsplash).jpg](https://commons.wikimedia.org/wiki/File%3ALaptop_coding_programs_%28Unsplash%29.jpg)

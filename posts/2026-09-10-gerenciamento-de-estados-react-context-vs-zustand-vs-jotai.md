@@ -35,7 +35,7 @@ O Context é simples de entender, mas sua implementação interna (o provider co
 Zustand surgiu como resposta a essa complexidade. Sua API é mínima: basicamente, você cria um store com `create`, passa um estado inicial e mutações. Não precisa de providers, não precisa de hooks complexos, nem memoização manual.
 
 ```ts
-// Exemplo real do inventory-service: gerenciamento de estoque
+// Exemplo prático: gerenciamento de estoque
 import { create } from 'zustand';
 
 interface StockState {
@@ -53,7 +53,7 @@ export const useStockStore = create<StockState>((set) => ({
   fetchStock: async () => {
     set({ loading: true, error: null });
     try {
-      // Simulação: no real, chama API do Mercado Livre/OSPOS
+      // Simulação: chamada à API externa
       const response = await fetch('/api/stock');
       const data = await response.json();
       set({ items: data, loading: false });
@@ -72,7 +72,7 @@ export const useStockStore = create<StockState>((set) => ({
 }));
 ```
 
-No `inventory-service`, usei Zustand porque precisava de state global que fosse fácil de testar e persistir. O Zustand tem suporte nativo a middleware, então adicionei um `persist` que salva o estoque em localStorage: útil quando o sync com o mercado falha e você quer manter o estado local funcional.
+O Zustand é prático quando é preciso de estado global fácil de testar e persistir. Com middleware como `persist`, é possível salvar o estado no localStorage — útil quando a sincronização com APIs externas falha.
 
 Uma coisa que me chamou atenção: o Zustand evita o "wrapper hell" do Context. Você usa o hook direto no componente, sem precisar aninhar providers ou se preocupar com renderizações desnecessárias. O seletor do `useStore` permite pegar só o que o componente precisa:
 
@@ -98,7 +98,7 @@ O `shallow` (do `zustand/shallow`) compara referências superficialmente: import
 Jotai segue outro princípio: estado atômico. Em vez de um único objeto grande, você divide o estado em pequenas unidades ("atoms") que podem ser combinadas livremente.
 
 ```ts
-// Exemplo do projeto Plexo: gerenciamento de tasks
+// Exemplo prático: gerenciamento de tarefas
 import { atom } from 'jotai';
 
 export const tasksAtom = atom<Task[]>([]);
@@ -136,7 +136,7 @@ function TaskList() {
 
 E se você precisa mutar? O Jotai tem atoms mutáveis (com `write`), mas recomenda-se preferir atoms derivados sempre que possível. Isso tira a tentação de colocar lógica imperativa direto no estado.
 
-No `Plexo`, usei Jotai para o estado de UI (tabs abertas, filtros, seleção atual) e mantive a lógica de persistência separada com middleware customizado. A separação de responsabilidades ficou clara: atoms para dados, hooks/services para efeitos colaterais.
+O Jotai funciona bem para estado de UI (abas abertas, filtros, seleção). A lógica de persistência pode ficar separada em hooks ou serviços, mantendo responsabilidades bem definidas.
 
 ## Comparando performance
 
@@ -144,7 +144,7 @@ Performance não é só sobre quantos ms leva para atualizar: é sobre quantos c
 
 No contexto tradicional (sem memoização), cada atualização de contexto dispara re-renders em todos os componentes que consumem aquele contexto, mesmo que o valor específico usado por cada um não mude. O React não tem como saber disso, já que o objeto retornado pelo provider é novo a cada render.
 
-Zustand evita isso com o hook `useStore` que usa referência de estado interno (via `useSyncExternalStore`) e comparação seletiva. Só quem usa o estado modificado re-renderiza. Nos testes que fiz com listas de 100+ itens (como no dashboard do inventory-service), o Zustand manteve 60fps mesmo com atualizações frequentes.
+Zustand evita isso com o hook `useStore` que usa referência de estado interno (via `useSyncExternalStore`) e comparação seletiva. Só quem usa o estado modificado re-renderiza. Em testes com listas de 100+ itens, o Zustand manteve 60fps mesmo com atualizações frequentes.
 
 Jotai brilha quando você tem muitos átomos interdependentes. Cada atom sabe quais outros atoms ele lê, então só recalcula os derivados que precisam. Num cenário de filter + search + pagination (como num dos meus testes de protótipo), Jotai re-renderizou apenas o necessário: a lista, não os filtros.
 
@@ -171,7 +171,7 @@ Context sem memoização: lento. Context com `useMemo` em cada provider e `React
 - Para componentes que precisam de múltiplos valores independentes
 - Quando performance de atualização específica é crítica (ex: grids grandes, listas com drag-and-drop)
 
-No `lead-pipeline`, por exemplo, usei Zustand para o estado global do pipeline (passos, status atual) e Jotai para o editor de lead (formulário com muitos campos, validações). Os dois se complementam bem.
+É comum combinar Zustand para estado global do fluxo e Jotai para formulários com muitos campos e validações. Os dois se complementam bem.
 
 ## O que fazer se já usa Context?
 

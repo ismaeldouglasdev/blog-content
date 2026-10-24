@@ -54,7 +54,7 @@ export const useStockStore = create<StockState>((set) => ({
   fetchStock: async () => {
     set({ loading: true, error: null });
     try {
-      // Simulação: no real, chama API do Mercado Livre/OSPOS
+      // Simulação: chamada à API externa
       const response = await fetch('/api/stock');
       const data = await response.json();
       set({ items: data, loading: false });
@@ -99,7 +99,7 @@ The `shallow` (from `zustand/shallow`) performs shallow reference comparison: im
 Jotai follows a different principle: atomic state. Instead of a single large object, you divide state into small units ("atoms") that can be combined freely.
 
 ```ts
-// Example from the Plexo project: task management
+// Practical example: task management
 import { atom } from 'jotai';
 
 export const tasksAtom = atom<Task[]>([]);
@@ -143,7 +143,7 @@ Performance isn't just about how many milliseconds it takes to update: it's abou
 
 In the traditional context (without memoization), every context update triggers re-renders in all components that consume that context, even if the specific value used by each one doesn't change. React has no way of knowing this, since the object returned by the provider is new on every render.
 
-Zustand avoids this with the `useStore` hook, which uses internal state references (via `useSyncExternalStore`) and selective comparison. Only components using the changed state re-render. In the tests I ran with lists of 100+ items (like in the inventory-service dashboard), Zustand maintained 60fps even with frequent updates.
+Zustand avoids this with the `useStore` hook, which uses internal state references (via `useSyncExternalStore`) and selective comparison. Only components using the changed state re-render. In tests with lists of 100+ items, Zustand maintained 60fps even with frequent updates.
 
 Jotai shines when you have many interdependent atoms. Each atom knows which other atoms it reads, so it only recalculates the derived values that need it. In a scenario with filter + search + pagination (as in one of my prototype tests), Jotai re-rendered only what was necessary: the list, not the filters.
 

@@ -243,7 +243,7 @@ app.use(async (req, res, next) => {
 });
 ```
 
-In the *lead-pipeline* I added this limiter to prevent the lead enrichment API from being hammered by bots, keeping latency stable even under traffic spikes.
+A rate limiter is useful to prevent enrichment APIs from being hammered by bots, keeping latency stable even under traffic spikes.
 
 ## 4. Queues with BullMQ  
 
@@ -253,7 +253,7 @@ In the *lead-pipeline* I added this limiter to prevent the lead enrichment API f
 - Batch email sending.  
 - Integrations that depend on third‑party APIs with rate limits.
 
-In the *provider-health-daemon* project I needed to orchestrate calls to multiple AI providers, respecting cooldowns. BullMQ was the natural choice because it already runs on Redis and offers advanced features like retries and rate limiting per queue.
+When orchestrating calls to multiple providers with cooldowns, BullMQ is a natural choice because it runs on Redis and offers retries and rate limiting per queue.
 
 ### 4.2. Installing BullMQ
 
@@ -311,7 +311,7 @@ events.on('completed', ({ jobId }) => {
 });
 ```
 
-With BullMQ I was able to decouple report generation from *Plexo* (task manager). Each report is placed on the queue, processed in the background, and, in the end, the user receives a Slack notification.
+With BullMQ it’s easy to decouple heavy report generation from the main application. Each report goes to a queue, is processed in the background, and the user receives a notification when ready.
 
 ## 5. Pub/Sub for real‑time events  
 
