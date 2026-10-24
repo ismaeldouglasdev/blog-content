@@ -1,6 +1,64 @@
 {
   "posts": [
     {
+      "slug": "2026-10-24-o-que-os-devs-full-stack-precisam-saber-sobre-o-http2shell",
+      "title": "O que os devs full stack precisam saber sobre o http2shell: RCE em Node.js e Python",
+      "title_en": null,
+      "date": "2026-10-24",
+      "category": "tutorial",
+      "tags": [
+        "seguranca",
+        "http2",
+        "rce",
+        "nodejs",
+        "python"
+      ],
+      "excerpt": "Você já parou para pensar quantas vulnerabilidades existem no transporte de dados entre seu frontend e backend? Não estou falando só de criptografia quebrada ou token vazado",
+      "excerpt_en": null,
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-24-o-que-os-devs-full-stack-precisam-saber-sobre-o-http2shell.jpg",
+      "cover_credit": null,
+      "cover_meta": {
+        "strategy": "fallback",
+        "review_status": "auto_fallback",
+        "relevance_score": null,
+        "motif": "tech",
+        "source": null,
+        "query": "cyber security",
+        "review_candidates": []
+      },
+      "lang": "pt",
+      "translation_slug": "2026-10-24-o-que-os-devs-full-stack-precisam-saber-sobre-o-http2shell-en"
+    },
+    {
+      "slug": "2026-10-24-o-que-os-devs-full-stack-precisam-saber-sobre-o-http2shell-en",
+      "title": "What Full-Stack Developers Need to Know About http2shell: RCE in Node.js and Python",
+      "title_en": "What Full-Stack Developers Need to Know About http2shell: RCE in Node.js and Python",
+      "date": "2026-10-24",
+      "category": "tutorial",
+      "tags": [
+        "seguranca",
+        "http2",
+        "rce",
+        "nodejs",
+        "python"
+      ],
+      "excerpt": "Have you ever stopped to think about how many vulnerabilities exist in data transport between your frontend and backend? Im not just talking about broken encryption or leaked",
+      "excerpt_en": "Have you ever stopped to think about how many vulnerabilities exist in data transport between your frontend and backend? Im not just talking about broken encryption or leaked",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-24-o-que-os-devs-full-stack-precisam-saber-sobre-o-http2shell.jpg",
+      "cover_credit": null,
+      "cover_meta": {
+        "strategy": "fallback",
+        "review_status": "auto_fallback",
+        "relevance_score": null,
+        "motif": "tech",
+        "source": null,
+        "query": "cyber security",
+        "review_candidates": []
+      },
+      "lang": "en",
+      "translation_of": "2026-10-24-o-que-os-devs-full-stack-precisam-saber-sobre-o-http2shell"
+    },
+    {
       "slug": "2026-10-22-o-que-a-saida-da-emudhra-do-mercado-de-certificados-ssl-tls",
       "title": "O que a saída da eMudhra do mercado de certificados SSL/TLS significa para você, desenvolvedor",
       "title_en": null,
