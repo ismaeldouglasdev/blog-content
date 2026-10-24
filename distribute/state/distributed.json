@@ -359,6 +359,14 @@
         "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3myimp4ecrj2h",
         "telegram": "74"
       }
+    },
+    "2026-10-24-o-que-os-devs-full-stack-precisam-saber-sobre-o-http2shell": {
+      "url": "https://blog.ismaeltech.com/2026-10-24-o-que-os-devs-full-stack-precisam-saber-sobre-o-http2shell",
+      "posted_at": "2026-10-24T03:23:22.066456+00:00",
+      "platforms": {
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mylqinjb3x2b",
+        "telegram": "75"
+      }
     }
   }
 }
