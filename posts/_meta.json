@@ -1,6 +1,80 @@
 {
   "posts": [
     {
+      "slug": "2026-10-26-paperpilot-construindo-um-engine-pdf-zero-cloud-em-rust-com",
+      "title": "PaperPilot: Construindo um Engine PDF Zero-Cloud em Rust com WASM e MCP",
+      "title_en": null,
+      "date": "2026-10-26",
+      "category": "tutorial",
+      "tags": [
+        "rust",
+        "wasm",
+        "pdf",
+        "mcp",
+        "open-source"
+      ],
+      "excerpt": "Quantas vezes você já precisou extrair texto de um PDF dentro de uma aplicação web e se viu refém de uma API externa? Você envia o arquivo, espera pela resposta e torce para",
+      "excerpt_en": null,
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-26-paperpilot-construindo-um-engine-pdf-zero-cloud-em-rust-com.jpg",
+      "cover_credit": {
+        "license": "Pixabay Content License",
+        "license_version": null,
+        "title": "code",
+        "creator": "jamesmarkosborne",
+        "source": "Pixabay",
+        "source_url": "https://pixabay.com/photos/code-html-digital-coding-web-1076536/",
+        "license_url": "https://pixabay.com/service/license-summary/"
+      },
+      "cover_meta": {
+        "strategy": "photo",
+        "review_status": "approved",
+        "relevance_score": 1.0,
+        "motif": "tech",
+        "source": "Pixabay",
+        "query": "programming code",
+        "review_candidates": []
+      },
+      "lang": "pt",
+      "translation_slug": "2026-10-26-paperpilot-construindo-um-engine-pdf-zero-cloud-em-rust-com-en"
+    },
+    {
+      "slug": "2026-10-26-paperpilot-construindo-um-engine-pdf-zero-cloud-em-rust-com-en",
+      "title": "PaperPilot: Building a Zero‑Cloud PDF Engine in Rust with WASM and MCP",
+      "title_en": "PaperPilot: Building a Zero‑Cloud PDF Engine in Rust with WASM and MCP",
+      "date": "2026-10-26",
+      "category": "tutorial",
+      "tags": [
+        "rust",
+        "wasm",
+        "pdf",
+        "mcp",
+        "open-source"
+      ],
+      "excerpt": "How many times have you needed to extract text from a PDF within a web application and found yourself beholden to an external API? You upload the file, wait for the response",
+      "excerpt_en": "How many times have you needed to extract text from a PDF within a web application and found yourself beholden to an external API? You upload the file, wait for the response",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-26-paperpilot-construindo-um-engine-pdf-zero-cloud-em-rust-com.jpg",
+      "cover_credit": {
+        "license": "Pixabay Content License",
+        "license_version": null,
+        "title": "code",
+        "creator": "jamesmarkosborne",
+        "source": "Pixabay",
+        "source_url": "https://pixabay.com/photos/code-html-digital-coding-web-1076536/",
+        "license_url": "https://pixabay.com/service/license-summary/"
+      },
+      "cover_meta": {
+        "strategy": "photo",
+        "review_status": "approved",
+        "relevance_score": 1.0,
+        "motif": "tech",
+        "source": "Pixabay",
+        "query": "programming code",
+        "review_candidates": []
+      },
+      "lang": "en",
+      "translation_of": "2026-10-26-paperpilot-construindo-um-engine-pdf-zero-cloud-em-rust-com"
+    },
+    {
       "slug": "2026-10-25-como-reimplementar-um-motor-de-jogo-classico-licoes-do",
       "title": "Como reimplementar um motor de jogo clássico: lições do projeto fheroes2",
       "title_en": null,
