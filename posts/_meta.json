@@ -4975,6 +4975,36 @@
         "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-17-css-grid-e-flexbox-quando-usar-cada-um.jpg",
         "note": "Existing asset preserved; regenerate through review workflow before approval."
       }
+    },
+    {
+      "slug": "2026-10-03-uuid-v4-por-que-o-id-aleatorio-ainda-e-a-escolha-certa",
+      "title": "UUID v4: por que o ID aleatório ainda é a escolha certa",
+      "date": "2026-10-03",
+      "category": "tutorial",
+      "tags": [
+        "uuid",
+        "javascript",
+        "banco-de-dados"
+      ],
+      "excerpt": "Identificador universalmente único parece ganho de tempo até você precisar de um índice no Postgres e o tamanho do ID começa a doer. Um olhar honesto sobre quando usar UUID e quando não usar.",
+      "cover": "/covers/uuid-v4.svg",
+      "lang": "pt",
+      "share_hook": "UUID é o padrão da indústria por um motivo razoável, e também por um motivo que pouca gente admite: ele tira o trabalho de coordinating inserts."
+    },
+    {
+      "slug": "2026-10-03-uuid-v4-por-que-o-id-aleatorio-ainda-e-a-escolha-certa-en",
+      "title": "UUID v4: Why Random IDs Are Still the Right Choice",
+      "date": "2026-10-03",
+      "category": "tutorial",
+      "tags": [
+        "uuid",
+        "javascript",
+        "database"
+      ],
+      "excerpt": "A universally unique identifier seems like a time-saver until you need an index on Postgres and the ID size starts to hurt. An honest look at when to use UUIDs and when not to.",
+      "cover": "/covers/uuid-v4.svg",
+      "lang": "en",
+      "share_hook": "UUIDs are the industry standard for a good reason, and also for a reason few admit: they remove the need for coordinated inserts."
     }
   ]
 }
