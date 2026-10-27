@@ -121,7 +121,7 @@ async def extract_pdf(file: UploadFile = File(...)):
 A beleza dessa abordagem é a eliminação de um *single point of failure*. Seu serviço não cai porque um provedor de PDF terceirizado mudou seu plano de preços ou teve uma indisponibilidade.
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/wasm-pack-logo.png" alt="Logotipo do wasm-pack, a ferramenta para empacotar código Rust em WASM" loading="lazy" width="400">
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/wasm-pack-logo.png" alt="Logotipo do wasm-pack, a ferramenta para empacotar código Rust em WASM" loading="lazy" width="400" style="max-width: 200px; height: auto;">
 <figcaption>wasm-pack é a ferramenta fundamental da cadeia de ferramentas Rust/WASM. Fonte: <a href="https://github.com/rustwasm/wasm-pack">Repositório Oficial</a> (Licença MIT/Apache 2.0).</figcaption>
 </figure>
 

@@ -123,7 +123,7 @@ async def extract_pdf(file: UploadFile = File(...)):
 The beauty of this approach is the elimination of a *single point of failure*. Your service won't go down because a third-party PDF provider changed their pricing plan or experienced an outage.
 
 <figure>
-<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/wasm-pack-logo.png" alt="wasm-pack logo, the tool for packaging Rust code into WASM" loading="lazy" width="400">
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/wasm-pack-logo.png" alt="wasm-pack logo, the tool for packaging Rust code into WASM" loading="lazy" width="400" style="max-width: 200px; height: auto;">
 <figcaption>wasm-pack is the fundamental tool in the Rust/WASM toolchain. Source: <a href="https://github.com/rustwasm/wasm-pack">Official Repository</a> (MIT/Apache 2.0 License).</figcaption>
 </figure>
 
