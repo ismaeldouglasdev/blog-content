@@ -13,7 +13,7 @@
         "mcp",
         "open-source"
       ],
-      "excerpt": "Quantas vezes você já precisou extrair texto de um PDF dentro de uma aplicação web e se viu refém de uma API externa? Você envia o arquivo, espera pela resposta e torce para",
+      "excerpt": "Quantas vezes você já precisou extrair texto de um PDF dentro de uma aplicação web e se viu refém de uma API externa? Você envia o arquivo, espera pela resposta e torce para.",
       "excerpt_en": null,
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-26-paperpilot-construindo-um-engine-pdf-zero-cloud-em-rust-com.jpg",
       "cover_credit": {
@@ -50,7 +50,7 @@
         "mcp",
         "open-source"
       ],
-      "excerpt": "How many times have you needed to extract text from a PDF within a web application and found yourself beholden to an external API? You upload the file, wait for the response",
+      "excerpt": "How many times have you needed to extract text from a PDF within a web application and found yourself beholden to an external API? You upload the file, wait for the response.",
       "excerpt_en": "How many times have you needed to extract text from a PDF within a web application and found yourself beholden to an external API? You upload the file, wait for the response",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-26-paperpilot-construindo-um-engine-pdf-zero-cloud-em-rust-com.jpg",
       "cover_credit": {
@@ -161,7 +161,7 @@
         "nodejs",
         "python"
       ],
-      "excerpt": "Você já parou para pensar quantas vulnerabilidades existem no transporte de dados entre seu frontend e backend? Não estou falando só de criptografia quebrada ou token vazado",
+      "excerpt": "Você já parou para pensar quantas vulnerabilidades existem no transporte de dados entre seu frontend e backend? Não estou falando só de criptografia quebrada ou token vazado.",
       "excerpt_en": null,
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-24-o-que-os-devs-full-stack-precisam-saber-sobre-o-http2shell.jpg",
       "cover_credit": null,
@@ -190,7 +190,7 @@
         "nodejs",
         "python"
       ],
-      "excerpt": "Have you ever stopped to think about how many vulnerabilities exist in data transport between your frontend and backend? Im not just talking about broken encryption or leaked",
+      "excerpt": "Have you ever stopped to think about how many vulnerabilities exist in data transport between your frontend and backend? Im not just talking about broken encryption or leaked.",
       "excerpt_en": "Have you ever stopped to think about how many vulnerabilities exist in data transport between your frontend and backend? Im not just talking about broken encryption or leaked",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-24-o-que-os-devs-full-stack-precisam-saber-sobre-o-http2shell.jpg",
       "cover_credit": null,
@@ -218,7 +218,7 @@
         "containers",
         "desenvolvimento"
       ],
-      "excerpt": "Se você já precisou orquestrar um ambiente de desenvolvimento com Docker — seja para um app full stack, uma API Python, ou uma base de dados — provavelmente sentiu aquela",
+      "excerpt": "Se você já precisou orquestrar um ambiente de desenvolvimento com Docker — seja para um app full stack, uma API Python, ou uma base de dados — provavelmente sentiu aquela.",
       "excerpt_en": null,
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-24-docker-e-estranho-e-por-que-isso-importa-para-a-sua-stack.jpg",
       "cover_credit": {
@@ -254,7 +254,7 @@
         "containers",
         "desenvolvimento"
       ],
-      "excerpt": "If youve ever needed to orchestrate a development environment with Docker, whether for a full stack app, a Python API, or a database, youve probably felt that strange",
+      "excerpt": "If youve ever needed to orchestrate a development environment with Docker, whether for a full stack app, a Python API, or a database, youve probably felt that strange.",
       "excerpt_en": "If youve ever needed to orchestrate a development environment with Docker, whether for a full stack app, a Python API, or a database, youve probably felt that strange",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-24-docker-e-estranho-e-por-que-isso-importa-para-a-sua-stack.jpg",
       "cover_credit": {

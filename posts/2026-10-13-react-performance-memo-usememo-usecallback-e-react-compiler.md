@@ -3,7 +3,7 @@ title: "React performance: memo, useMemo, useCallback e React Compiler"
 date: "2026-10-13"
 category: "article"
 tags: ["react", "performance", "otimizacao"]
-excerpt: "Quando memoizar, como o React Compiler muda o jogo e como medir o impacto real com o Profiler."
+excerpt: "quando a otimização se torna necessária."
 cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-13-react-performance-memo-usememo-usecallback-e-react-compiler.jpg"
 lang: "pt"
 ---

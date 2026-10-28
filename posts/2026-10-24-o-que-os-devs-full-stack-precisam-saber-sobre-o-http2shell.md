@@ -3,7 +3,7 @@ title: "O que os devs full stack precisam saber sobre o http2shell: RCE em Node.
 date: "2026-10-24"
 category: "tutorial"
 tags: ["seguranca", "http2", "rce", "nodejs", "python"]
-excerpt: "Você já parou para pensar quantas vulnerabilidades existem no transporte de dados entre seu frontend e backend? Não estou falando só de criptografia quebrada ou token vazado"
+excerpt: "Você já parou para pensar quantas vulnerabilidades existem no transporte de dados entre seu frontend e backend? Não estou falando só de criptografia quebrada ou token vazado."
 cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-24-o-que-os-devs-full-stack-precisam-saber-sobre-o-http2shell.jpg"
 lang: "pt"
 ---
