@@ -1,6 +1,78 @@
 {
   "posts": [
     {
+      "slug": "2026-10-29-por-que-sua-aplicacao-node-js-precisa-se-defender-contra",
+      "title": "Por que sua aplicação Node.js precisa se defender contra ataques DDoS agora mesmo",
+      "title_en": null,
+      "date": "2026-10-29",
+      "category": "tutorial",
+      "tags": [
+        "seguranca",
+        "nodejs",
+        "infraestrutura",
+        "devops"
+      ],
+      "excerpt": "Você já acordou no meio da noite com o celular vibrando sem parar na mesa de cabeceira? Não são mensagens de amigos ou notificações de redes sociais. São alertas do seu",
+      "excerpt_en": null,
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-29-por-que-sua-aplicacao-node-js-precisa-se-defender-contra.jpg",
+      "cover_credit": {
+        "license": "Pixabay Content License",
+        "license_version": null,
+        "title": "computer",
+        "creator": "TheDigitalWay",
+        "source": "Pixabay",
+        "source_url": "https://pixabay.com/photos/computer-security-padlock-hacker-1591018/",
+        "license_url": "https://pixabay.com/service/license-summary/"
+      },
+      "cover_meta": {
+        "strategy": "photo",
+        "review_status": "approved",
+        "relevance_score": 1.0,
+        "motif": "tech",
+        "source": "Pixabay",
+        "query": "cyber security",
+        "review_candidates": []
+      },
+      "lang": "pt",
+      "translation_slug": "2026-10-29-por-que-sua-aplicacao-node-js-precisa-se-defender-contra-en"
+    },
+    {
+      "slug": "2026-10-29-por-que-sua-aplicacao-node-js-precisa-se-defender-contra-en",
+      "title": "Why your Node.js application needs DDoS protection right now",
+      "title_en": "Why your Node.js application needs DDoS protection right now",
+      "date": "2026-10-29",
+      "category": "tutorial",
+      "tags": [
+        "seguranca",
+        "nodejs",
+        "infraestrutura",
+        "devops"
+      ],
+      "excerpt": "Have you ever woken up in the middle of the night with your phone buzzing nonstop on the nightstand? Its not messages from friends or social media notifications. Its your",
+      "excerpt_en": "Have you ever woken up in the middle of the night with your phone buzzing nonstop on the nightstand? Its not messages from friends or social media notifications. Its your",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-29-por-que-sua-aplicacao-node-js-precisa-se-defender-contra.jpg",
+      "cover_credit": {
+        "license": "Pixabay Content License",
+        "license_version": null,
+        "title": "computer",
+        "creator": "TheDigitalWay",
+        "source": "Pixabay",
+        "source_url": "https://pixabay.com/photos/computer-security-padlock-hacker-1591018/",
+        "license_url": "https://pixabay.com/service/license-summary/"
+      },
+      "cover_meta": {
+        "strategy": "photo",
+        "review_status": "approved",
+        "relevance_score": 1.0,
+        "motif": "tech",
+        "source": "Pixabay",
+        "query": "cyber security",
+        "review_candidates": []
+      },
+      "lang": "en",
+      "translation_of": "2026-10-29-por-que-sua-aplicacao-node-js-precisa-se-defender-contra"
+    },
+    {
       "slug": "2026-10-26-paperpilot-construindo-um-engine-pdf-zero-cloud-em-rust-com",
       "title": "PaperPilot: Construindo um Engine PDF Zero-Cloud em Rust com WASM e MCP",
       "title_en": null,
@@ -1250,6 +1322,36 @@
       "lang": "en",
       "translation_slug": "2026-10-03-nginx-como-reverse-proxy-ssl-load-balancing-e-caching",
       "translation_of": "2026-10-03-nginx-como-reverse-proxy-ssl-load-balancing-e-caching"
+    },
+    {
+      "slug": "2026-10-03-uuid-v4-por-que-o-id-aleatorio-ainda-e-a-escolha-certa",
+      "title": "UUID v4: por que o ID aleatório ainda é a escolha certa",
+      "date": "2026-10-03",
+      "category": "tutorial",
+      "tags": [
+        "uuid",
+        "javascript",
+        "banco-de-dados"
+      ],
+      "excerpt": "Identificador universalmente único parece ganho de tempo até você precisar de um índice no Postgres e o tamanho do ID começa a doer. Um olhar honesto sobre quando usar UUID e quando não usar.",
+      "cover": "/covers/uuid-v4.svg",
+      "lang": "pt",
+      "share_hook": "UUID é o padrão da indústria por um motivo razoável, e também por um motivo que pouca gente admite: ele tira o trabalho de coordinating inserts."
+    },
+    {
+      "slug": "2026-10-03-uuid-v4-por-que-o-id-aleatorio-ainda-e-a-escolha-certa-en",
+      "title": "UUID v4: Why Random IDs Are Still the Right Choice",
+      "date": "2026-10-03",
+      "category": "tutorial",
+      "tags": [
+        "uuid",
+        "javascript",
+        "database"
+      ],
+      "excerpt": "A universally unique identifier seems like a time-saver until you need an index on Postgres and the ID size starts to hurt. An honest look at when to use UUIDs and when not to.",
+      "cover": "/covers/uuid-v4.svg",
+      "lang": "en",
+      "share_hook": "UUIDs are the industry standard for a good reason, and also for a reason few admit: they remove the need for coordinated inserts."
     },
     {
       "slug": "2026-10-02-ci-cd-do-zero-github-actions-pra-projetos-node-js-e-react",
@@ -5049,36 +5151,6 @@
         "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-17-css-grid-e-flexbox-quando-usar-cada-um.jpg",
         "note": "Existing asset preserved; regenerate through review workflow before approval."
       }
-    },
-    {
-      "slug": "2026-10-03-uuid-v4-por-que-o-id-aleatorio-ainda-e-a-escolha-certa",
-      "title": "UUID v4: por que o ID aleatório ainda é a escolha certa",
-      "date": "2026-10-03",
-      "category": "tutorial",
-      "tags": [
-        "uuid",
-        "javascript",
-        "banco-de-dados"
-      ],
-      "excerpt": "Identificador universalmente único parece ganho de tempo até você precisar de um índice no Postgres e o tamanho do ID começa a doer. Um olhar honesto sobre quando usar UUID e quando não usar.",
-      "cover": "/covers/uuid-v4.svg",
-      "lang": "pt",
-      "share_hook": "UUID é o padrão da indústria por um motivo razoável, e também por um motivo que pouca gente admite: ele tira o trabalho de coordinating inserts."
-    },
-    {
-      "slug": "2026-10-03-uuid-v4-por-que-o-id-aleatorio-ainda-e-a-escolha-certa-en",
-      "title": "UUID v4: Why Random IDs Are Still the Right Choice",
-      "date": "2026-10-03",
-      "category": "tutorial",
-      "tags": [
-        "uuid",
-        "javascript",
-        "database"
-      ],
-      "excerpt": "A universally unique identifier seems like a time-saver until you need an index on Postgres and the ID size starts to hurt. An honest look at when to use UUIDs and when not to.",
-      "cover": "/covers/uuid-v4.svg",
-      "lang": "en",
-      "share_hook": "UUIDs are the industry standard for a good reason, and also for a reason few admit: they remove the need for coordinated inserts."
     }
   ]
 }
