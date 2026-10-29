@@ -3,7 +3,7 @@ title: "Por que sua aplicação Node.js precisa se defender contra ataques DDoS 
 date: "2026-10-29"
 category: "tutorial"
 tags: ["seguranca", "nodejs", "infraestrutura", "devops"]
-excerpt: "Você já acordou no meio da noite com o celular vibrando sem parar na mesa de cabeceira? Não são mensagens de amigos ou notificações de redes sociais. São alertas do seu"
+excerpt: "Você já acordou no meio da noite com o celular vibrando sem parar na mesa de cabeceira? Não são mensagens de amigos ou notificações de redes sociais. São alertas do seu."
 cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-29-por-que-sua-aplicacao-node-js-precisa-se-defender-contra.jpg"
 lang: "pt"
 ---
