@@ -13,8 +13,8 @@ Have you ever woken up in the middle of the night with your phone buzzing nonsto
 Many developers, especially when we're focused on functionality, deadlines, and *features*, treat security as a layer we "add later." But the distributed and asynchronous nature of Node.js, built on the single-threaded *Event Loop*, means that a well-orchestrated attack doesn't need to take down the server hardware, it just needs to suffocate the event loop to bring everything to a halt. If you think your small or medium-sized project isn't important enough to be a target, think again. Many attacks aren't personal; they're bots sweeping the internet for open doors, or dirty competitors trying to take you offline during a Black Friday or a major product launch.
 
 <figure>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/DDoS_attack_by_botnet.svg/1200px-DDoS_attack_by_botnet.svg.png" alt="Diagram illustrating a DDoS attack where multiple attacking computers (botnet) send traffic to a victim, overwhelming it." loading="lazy">
-    <figcaption>Figure 1: Schematic representation of a DDoS attack. A distributed Botnet overloads the victim's bandwidth and resources, making the service unavailable to legitimate users. (Source: Wikimedia Commons, CC BY-SA 3.0).</figcaption>
+    <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/ddos-botnet-en.png" alt="Diagram of a DDoS attack: multiple attackers send simultaneous traffic to a single victim." loading="lazy">
+    <figcaption>Figure 1: Schematic representation of a DDoS attack. Multiple attackers overload the victim's bandwidth and resources, making the service unavailable to legitimate users. (Source: Wikimedia Commons, CC BY-SA 4.0, author: Nasanbuyn).</figcaption>
 </figure>
 
 ## The Anatomy of Suffocation: How Attacks Work in Node.js
@@ -39,11 +39,6 @@ A WAF sits between the internet and your server. It analyzes HTTP traffic for kn
 
 ### 3. Network Protection and CDN (Cloudflare)
 The outermost layer is network infrastructure. Using a reverse proxy or a CDN (Content Delivery Network) like Cloudflare is essential these days. They have massive bandwidth to absorb volumetric attacks that would instantly bring down any cheap VPS. They act like a giant sponge: absorbing the dirty attack and delivering only clean traffic to your server. Additionally, they can enable "Under Attack Mode," which challenges all traffic with a browser-based JavaScript verification before granting access to your Node.js application, filtering out most bots.
-
-<figure>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Cloudflare_DDoS_Protection.svg/1200px-Cloudflare_DDoS_Protection.svg.png" alt="Diagram showing traffic passing through the Cloudflare network, where attacks are filtered before reaching the origin server." loading="lazy">
-    <figcaption>Figure 2: Protection architecture using CDN/WAF. Malicious traffic is intercepted at the network edge, protecting the origin server (your Node.js) from being overloaded. (Source: Cloudflare/Wikimedia Commons, CC BY-SA 4.0).</figcaption>
-</figure>
 
 ## Hands-On: Implementing Rate Limiting in Express.js
 

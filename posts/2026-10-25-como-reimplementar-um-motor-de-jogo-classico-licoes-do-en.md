@@ -48,11 +48,6 @@ void test_creature_damage() {
 
 This "black box testing" method is fundamental. Without the source code, there's no way to know *why* the damage is 3. They only know that it *must be* 3 for the player's experience to be identical. Any discrepancy is a bug in the new engine.
 
-<figure>
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Reverse_engineering_process_diagram.svg/800px-Reverse_engineering_process_diagram.svg.png" alt="Diagrama de fluxo do processo de engenharia reversa: Análise, Extração de Informação, Modelagem e Reconstrução" loading="lazy">
-<figcaption>Simplified diagram of the reverse engineering cycle. The fheroes2 project follows a similar flow: analyze the binary, extract game rules, model the logic, and rebuild the engine. (Source: Wikimedia Commons, adapted, CC BY-SA 3.0 license)</figcaption>
-</figure>
-
 ## Architecture and main technical challenges
 
 The fheroes2 architecture is a lesson in separation of concerns. The game engine (*core*) is kept as pure as possible, free of UI or system dependencies. It exposes an internal API that models the game state: the map, players, towns, heroes, and battles.

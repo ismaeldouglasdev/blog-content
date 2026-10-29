@@ -13,8 +13,8 @@ Você já acordou no meio da noite com o celular vibrando sem parar na mesa de c
 Muitos desenvolvedores, especialmente quando estamos focados em funcionalidades, deadlines e *features*, tratam a segurança como uma camada que "adicionamos depois". Mas a natureza distribuída e assíncrona do Node.js, baseada no *Event Loop* de thread única, significa que um ataque bem orquestrado não precisa derrubar o servidor hardware; ele apenas precisa sufocar o loop de eventos para travar tudo. Se você acha que seu projeto pequeno ou médio não é importante o suficiente para ser alvo, pense duas vezes. Muitos ataques não são pessoais; são bots varrendo a internet em busca de portas abertas, ou ataques de concorrentes sujos tentando tirar você do ar durante uma Black Friday ou um lançamento importante.
 
 <figure>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/DDoS_attack_by_botnet.svg/1200px-DDoS_attack_by_botnet.svg.png" alt="Diagrama ilustrando um ataque DDoS onde múltiplos computadores atacantes (botnet) enviam tráfego para uma vítima, sobrecarregando-a." loading="lazy">
-    <figcaption>Figura 1: Representação esquemática de um ataque DDoS. Uma Botnet distribuída sobrecarrega a largura de banda e os recursos da vítima, tornando o serviço indisponível para usuários legítimos. (Fonte: Wikimedia Commons, CC BY-SA 3.0).</figcaption>
+    <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/ddos-botnet-pt.png" alt="Diagrama de um ataque DDoS: múltiplos atacantes enviam tráfego simultâneo para uma única vítima." loading="lazy">
+    <figcaption>Figura 1: Representação esquemática de um ataque DDoS. Múltiplos atacantes sobrecarregam a largura de banda e os recursos da vítima, tornando o serviço indisponível para usuários legítimos. (Fonte: Wikimedia Commons, CC BY-SA 4.0, autor: Adamsamenezes).</figcaption>
 </figure>
 
 ## A anatomia do sufocamento: como ataques funcionam no Node.js
@@ -39,11 +39,6 @@ Um WAF fica entre a internet e seu servidor. Ele analisa o tráfego HTTP em busc
 
 ### 3. Proteção de Rede e CDN (Cloudflare)
 A camada mais externa é a infraestrutura de rede. Usar um proxy reverso ou uma CDN (Content Delivery Network) como a Cloudflare é essencial hoje em dia. Eles têm largura de banda massiva para absorver ataques volumétricos que derrubariam qualquer servidor VPS barato instantaneamente. Eles agem como uma esponja gigante: absorvem o ataque sujo e entregam apenas o tráfego limpo para o seu servidor. Além disso, eles podem ativar o "Under Attack Mode", que desafia todo o tráfego com um JavaScript de verificação no navegador antes de liberar o acesso à sua aplicação Node.js, filtrando a maioria dos bots.
-
-<figure>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Cloudflare_DDoS_Protection.svg/1200px-Cloudflare_DDoS_Protection.svg.png" alt="Diagrama mostrando o tráfego passando pela rede Cloudflare, onde ataques são filtrados antes de reaching the origin server." loading="lazy">
-    <figcaption>Figura 2: Arquitetura de proteção usando CDN/WAF. O tráfego malicioso é interceptado na borda da rede, protegendo o servidor de origem (seu Node.js) de ser sobrecarregado. (Fonte: Cloudflare/Wikimedia Commons, CC BY-SA 4.0).</figcaption>
-</figure>
 
 ## Mãos na massa: Implementando Rate Limiting no Express.js
 
