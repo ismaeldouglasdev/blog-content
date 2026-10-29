@@ -20,7 +20,10 @@ HTTP/2 chegou em 2015 como uma reformulação completa do protocolo HTTP/1.1, qu
 
 Isso trouxe ganhos enormes de performance, especialmente para aplicações web modernas que fazem dezenas de chamadas para APIs, carregam assets e mantêm conexões abertas para WebSocket ou Server-Sent Events. Hoje, a maioria dos servidores web (Nginx, Apache, Caddy) e servidores de aplicação em Node.js (Express com `spdy`), Python (Hypercorn, Uvicorn com `httptools`) e Go suportam HTTP/2 nativamente ou via reverse proxy.
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/1/1d/HTTP-1.1_vs._HTTP-2.svg" alt="Comparação entre HTTP/1.1 e HTTP/2 mostrando multiplexação de requisições." loading="lazy">
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/http1-http2-http3-stack.png" alt="Comparação das pilhas de protocolo HTTP/1.1, HTTP/2 e HTTP/3 sobre TCP/TLS e UDP." loading="lazy">
+<figcaption>Comparação das pilhas de protocolo HTTP/1.1, HTTP/2 e HTTP/3. Fonte: Wikimedia Commons, CC BY-SA 4.0 (autor: Sedrubal).</figcaption>
+</figure>
 
 Porém, essa complexidade introduziu novos pontos de falha. Streams são independentes, mas compartilham o mesmo contexto de conexão. Se um stream for comprometido, ele pode interferir no processamento de outros streams ou, pior, injetar código no processador do protocolo no servidor. O http2shell explora justamente essa brecha.
 
@@ -66,8 +69,6 @@ print(f"Frames gerados: {frames}")
 ```
 
 Na prática, um exploit real manipula frames brutos em nível de socket e explora vulnerabilidades específicas de versões de bibliotecas. Um exemplo conhecido foi a vulnerabilidade **CVE-2024-27983** no Node.js, relacionada ao tratamento de trailers HTTP/2, que permitia DoS e potencial RCE.
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Security_Monitoring_Dashboard.png" alt="Conceito de monitoramento de segurança em servidores web." loading="lazy">
 
 ## Impacto real: Node.js, Python e outras linguagens
 
