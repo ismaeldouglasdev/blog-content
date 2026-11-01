@@ -1,6 +1,80 @@
 {
   "posts": [
     {
+      "slug": "2026-11-01-o-github-no-seu-terminal-explorando-memdoor-e-a-equipe-de",
+      "title": "O GitHub no seu terminal: explorando memdoor e a equipe de LLMs que resolve desafios de programação",
+      "title_en": null,
+      "date": "2026-11-01",
+      "category": "tutorial",
+      "tags": [
+        "llm",
+        "github",
+        "claude-code",
+        "automação",
+        "cli"
+      ],
+      "excerpt": "O GitHub no seu terminal: explorando memdoor e a equipe de LLMs que resolve desafios de programação",
+      "excerpt_en": null,
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-11-01-o-github-no-seu-terminal-explorando-memdoor-e-a-equipe-de.jpg",
+      "cover_credit": {
+        "license": "Pixabay Content License",
+        "license_version": null,
+        "title": "technology",
+        "creator": "flutie8211",
+        "source": "Pixabay",
+        "source_url": "https://pixabay.com/photos/technology-circuit-board-head-7772914/",
+        "license_url": "https://pixabay.com/service/license-summary/"
+      },
+      "cover_meta": {
+        "strategy": "photo",
+        "review_status": "approved",
+        "relevance_score": 1.0,
+        "motif": "tech",
+        "source": "Pixabay",
+        "query": "artificial intelligence",
+        "review_candidates": []
+      },
+      "lang": "pt",
+      "translation_slug": "2026-11-01-o-github-no-seu-terminal-explorando-memdoor-e-a-equipe-de-en"
+    },
+    {
+      "slug": "2026-11-01-o-github-no-seu-terminal-explorando-memdoor-e-a-equipe-de-en",
+      "title": "GitHub in your terminal: exploring memdoor and the LLM team that solves programming challenges",
+      "title_en": "GitHub in your terminal: exploring memdoor and the LLM team that solves programming challenges",
+      "date": "2026-11-01",
+      "category": "tutorial",
+      "tags": [
+        "llm",
+        "github",
+        "claude-code",
+        "automação",
+        "cli"
+      ],
+      "excerpt": "GitHub in Your Terminal: Exploring memdoor and the LLM Team That Solves Programming Challenges",
+      "excerpt_en": "GitHub in Your Terminal: Exploring memdoor and the LLM Team That Solves Programming Challenges",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-11-01-o-github-no-seu-terminal-explorando-memdoor-e-a-equipe-de.jpg",
+      "cover_credit": {
+        "license": "Pixabay Content License",
+        "license_version": null,
+        "title": "technology",
+        "creator": "flutie8211",
+        "source": "Pixabay",
+        "source_url": "https://pixabay.com/photos/technology-circuit-board-head-7772914/",
+        "license_url": "https://pixabay.com/service/license-summary/"
+      },
+      "cover_meta": {
+        "strategy": "photo",
+        "review_status": "approved",
+        "relevance_score": 1.0,
+        "motif": "tech",
+        "source": "Pixabay",
+        "query": "artificial intelligence",
+        "review_candidates": []
+      },
+      "lang": "en",
+      "translation_of": "2026-11-01-o-github-no-seu-terminal-explorando-memdoor-e-a-equipe-de"
+    },
+    {
       "slug": "2026-10-29-por-que-sua-aplicacao-node-js-precisa-se-defender-contra",
       "title": "Por que sua aplicação Node.js precisa se defender contra ataques DDoS agora mesmo",
       "title_en": null,
