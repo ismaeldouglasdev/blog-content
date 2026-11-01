@@ -1,177 +1,201 @@
 ---
-title: "GitHub in your terminal: exploring memdoor and the LLM team that solves programming challenges"
+title: "Memdoor: the coding agent in one binary — and the 5-Qwen3.8-27B team that beat Fable 5"
 date: "2026-11-01"
 category: "tutorial"
-tags: ["llm", "github", "claude-code", "automa\u00e7\u00e3o", "cli"]
-excerpt: "GitHub in Your Terminal: Exploring memdoor and the LLM Team That Solves Programming Challenges"
+tags: ["llm", "ai-agents", "go", "cli", "github-actions"]
+excerpt: "A Go binary that reads your files, runs tests and reviews PRs from your terminal — and the five-Qwen3.8-27B workflow that beat Fable 5 on LiveCodeBench Hard."
 cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-11-01-o-github-no-seu-terminal-explorando-memdoor-e-a-equipe-de.jpg"
 lang: "en"
 translation_of: "2026-11-01-o-github-no-seu-terminal-explorando-memdoor-e-a-equipe-de"
 ---
-# GitHub in Your Terminal: Exploring memdoor and the LLM Team That Solves Programming Challenges
 
-You've just received a GitHub notification at 11 PM on a Friday: "PR ready for review." The diff is 847 lines, 6 changed files, and you have exactly 20 minutes before the happy hour you've been looking forward to all week. You open it, try to understand what changed, feel the anxiety rising, and simply close the tab. You'll look at it tomorrow. Probably.
+Picture the scene: it is 11 PM on a Friday, your phone buzzes with a GitHub notification — "PR ready for review". The diff has 847 lines across 6 files, and you have exactly 20 minutes before the happy hour you have been waiting for all week. You open the tab, try to make sense of the change, feel the anxiety rising, and close everything. Tomorrow. Probably.
 
-This scenario is more common than we imagine. The amount of code we need to review, debug, and maintain grows exponentially, but our attention span and time don't keep up with that pace. And that's exactly where tools like memdoor come into play: not to replace the developer, but to be that night-shift colleague who's always awake and willing to puzzle over code you don't want to look at at 11 PM.
+That gap between receiving a diff and understanding enough to decide whether it can land is exactly where coding-agent tools try to work. Memdoor is one of them. What makes it interesting is not the "team of LLMs" label that put it on Hacker News, but the design: a single binary, a decision model in front of the chat model, and workflows versioned in the repository itself.
 
-Memdoor is an open-source tool that combines the power of multiple large language models with a "specialized team" approach to solve problems directly in your terminal. Unlike generic chatbots that try to do everything, memdoor divides the work among five distinct agents, each with a specific role: Analyst, Software Engineer, Security Specialist, QA, and Reviewer. The architecture behind this division isn't arbitrary, it reflects how real development teams function, where each role brings a different perspective to the same problem.
+## What memdoor is, without the hype
 
-## The invisible threat: AI extensions with backdoors
+Memdoor is an open-source project from October 2026, written in Go and released under Apache 2.0. The official description is blunt: a coding and automation agent in a single CLI binary that runs locally or over SSH on another machine, with no Docker and no Python. Three platforms (macOS, Linux and Windows), one static binary installed into `~/.local/bin`, no sudo, and an installer that checks the SHA-256 of what it downloads.
 
-Before diving into memdoor, it's important to understand the context that motivated its creation. In 2024 and 2025, AI assistants for IDEs became mainstream. Official extensions from major companies promised to integrate Copilot, Claude, and other models directly into your editor, making life easier for millions of developers. What few knew was that some of these extensions collected data more aggressively than expected, storing browsing history, access tokens, and even unsaved commits on external servers.
+The central idea is that the same run can be opened through different doors. In the terminal, a TUI. In the editor, over the Agent Client Protocol (ACP): Zed and JetBrains host it natively, and VS Code uses an ACP client extension. On your phone, with `/remote`, which produces a link and a QR code to follow the conversation (end-to-end encrypted) and, if you want, type into it. In scripts, CI and cron, through the headless mode. The run lives on a gateway on your machine, so closing the laptop does not stop the work: the next terminal, editor or phone opens the same conversation.
 
-The discovery of these "backdoors", undocumented functionality that exfiltrates data, generated a wave of distrust in the community. Developers began to question: to what extent can I trust tools that ask for access to my code? The honest answer is that, for sensitive projects, the answer should be "with great caution." This scenario opened space for tools that prioritize privacy and total control over data.
+That gateway also answers to peers. `memdoor peers add box http://box:18789 --dir ~/app` names another machine, and `@box:coder …` in any conversation runs the turn there, on that machine's model, and brings the answer back. It is the difference between "install an agent on every box" and "have one agent that reaches the boxes you already have".
 
-Memdoor was born in this context of distrust. It runs locally, doesn't require your code to leave your machine, and gives you transparency about what each agent is doing. It's not a magic solution, but it's a concrete alternative for those who want to use AI without accepting obscure terms of service.
-
-## Memdoor: a five-model team in your terminal
-
-The name "memdoor" is a reference to the Engram memory project, one of my personal AI infrastructure projects. The tool uses five instances of Alibaba's Qwen model, each with a well-defined role, working together to analyze and solve problems in GitHub repositories or local code.
-
-Specialized agent architecture isn't new in the AI world, GPT‑4 with complex system prompts does something similar. But memdoor brings this idea into a concrete, reproducible workflow, where each agent passes its results to the next, creating a processing chain that mimics a professional code review.
+You bring your own model (BYOK). The provider list includes OpenRouter, Anthropic, OpenAI, Gemini, DeepSeek, Baseten, Groq, xAI, any OpenAI-compatible endpoint and your company's AI gateway. You can also run with no key at all: `/connect local` finds a model on the machine itself (Ollama, llama.cpp or janis, the same author's open-model server), and `/connect chatgpt` signs in with a ChatGPT Plus or Pro plan. A Claude subscription cannot be used this way under Anthropic's terms; that case needs an API key.
 
 <figure>
-    <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/memdoor-architecture.png" alt="Diagram of memdoor's five‑agent architecture" loading="lazy">
-    <figcaption>Memdoor architecture: five specialized agents working in pipeline</figcaption>
+    <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/memdoor-logo.png" alt="The memdoor logo" loading="lazy">
+    <figcaption>The memdoor logo. Official image from the guregodevo/memdoor repository, released under Apache 2.0.</figcaption>
 </figure>
 
-The Analyst acts first. It receives the task, whether it's finding a bug, reviewing a PR, or explaining a feature, and breaks the problem into smaller pieces, identifying critical files and potential risk areas. It's like that senior developer who, looking at a huge diff, quickly points out: "The problem is here, in this function that alters global state."
+## A decision model before the chat model
 
-Next comes the Software Engineer. With the diagnosis in hand, it proposes concrete solutions, generates code, or suggests refactors. The Security Specialist acts as a guardian, analyzing the changes through a vulnerability lens: injections, sensitive data exposure, authentication issues. The QA runs mental tests, simulating edge cases and scenarios that could break the application. Finally, the Reviewer pulls everything together into a coherent conclusion, synthesizing the findings into a readable report.
+Most agents send everything to the chat model and let it decide what matters. Memdoor adds a step first: Jev, a decision model from TypeSafe, answers typed questions — "is this passage relevant to the task?" — with a calibrated probability in under half a second. The harness acts on that answer: search, file and log reads return only what counts; only the tools the turn needs are sent; and a turn that stops making progress ends instead of looping to a cap.
 
-## Setting up memdoor from scratch
+The number the project publishes is measured, not estimated: over 44 paired runs, with decisions off and on, 22 of 22 passed each way. A question about the codebase went from 54,661 to 14,367 input tokens (−74%). In an edit with a test and in ten one-file fixes, both modes read the same files, within ±11%. The decisions documentation (`docs/features/DECIDE.md`) has the detail.
 
-memdoor installation is straightforward. You'll need Git, Go (to run some support scripts), and access to Qwen models via a compatible API. The tool is available on GitHub and can be cloned directly:
+It is worth being clear about what this is not: Jev is not a "fifth agent" with an opinion on the code. It is a filter that decides what enters the context. The part that solves the problem is still the chat model you connected.
 
-```
-git clone https://github.com/memdoor/memdoor-cli.git
-cd memdoor-cli
-cargo build --release
-```
+## Workflows are files in the repository
 
-The resulting binary is your entry point for all operations. The first setup step you need to take is to define the endpoints for the Qwen models. memdoor expects five different URLs, one for each agent. If you use a local server like Ollama or LM Studio, you can configure it like this:
+The second idea is to treat multi-step work as a file, not a conversation. You describe the steps, and the agent itself writes each one as a YAML file in `.memdoor/workflows/<name>/`, run as a graph by mario (the same author's task engine). Independent steps run in parallel. A step is done when its check passes — never because the model said so. A gate waits for your approval with the diff in front of you. And a failed run resumes at the failed step.
 
-```
-export MEMDOOR_MODEL_ANALYST="http://localhost:11434/api/generate"
-export MEMDOOR_MODEL_ENGINEER="http://localhost:11434/api/generate"
-export MEMDOOR_MODEL_SECURITY="http://localhost:11434/api/generate"
-export MEMDOOR_MODEL_QA="http://localhost:11434/api/generate"
-export MEMDOOR_MODEL_REVIEWER="http://localhost:11434/api/generate"
+Because the files live in the repository, the workflow is versioned, shared and runnable again, by hand or on a local cron. There are ready-made examples in `examples/workflows/` and a written argument for preferring workflows over "skills" on the author's blog.
+
+A real graph, from `team-solve`:
+
+```text
+plan ──┬── ideate-a ──┬── solve ── test ── review ── repair ── verify
+       └── ideate-b ──┘
 ```
 
-Alternatively, you can create a JSON configuration file specifying all endpoints:
+Each node is one YAML file. The two ideators run in parallel and write independent proposals; `test` never fails the run by itself, and `verify` has the final word. Success is decided by a script comparing output against the samples, not by a model saying "done".
 
-```
-{
-  "models": {
-    "analyst": "http://localhost:11434/api/generate",
-    "engineer": "http://localhost:11434/api/generate",
-    "security": "http://localhost:11434/api/generate",
-    "qa": "http://localhost:11434/api/generate",
-    "reviewer": "http://localhost:11434/api/generate"
-  },
-  "timeout": 120,
-  "temperature": 0.7
-}
-```
+## One step in GitHub Actions, nine ready workflows
 
-For those using commercial APIs, memdoor also accepts endpoints from Together AI or other providers compatible with the OpenAI API format.
-
-## Automatically reviewing PRs
-
-The most common use case for memdoor is automated pull request reviews. Imagine you receive a link to a PR and want a quick summary before diving into the code. Memdoor can analyze the diff and generate a structured report in just a few seconds:
-
-```
-memdoor pr analyze https://github.com/usuario/repositorio/pull/123
-```
-
-The output is divided into clear sections: impact of the change, identified risks, improvement suggestions, and an overall quality assessment. You can configure the level of detail you want in the output, from an executive summary to a line-by-line analysis.
-
-<figure>
-    <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/memdoor-pr-analysis.png" alt="Example of PR analysis by memdoor in the terminal" loading="lazy">
-    <figcaption>Typical PR analysis output: five sections corresponding to the five agents</figcaption>
-</figure>
-
-For those working with multiple repositories, memdoor supports per-project configuration. You can create a `.memdoor.json` file in the repository root with specific preferences: different models for each agent, custom prompts for the project context, and filters to ignore certain types of files or folders.
-
-## Hunting bugs in local code
-
-Besides analyzing PRs, memdoor can work directly with code in your filesystem. The `memdoor search` command is useful when you suspect there's a bug somewhere but don't know where to look:
-
-```
-memdoor search --query "possible null pointer dereference in user authentication flow"
-```
-
-The Analyst will scan the repository, identify the relevant files for that query, and the Engineer will propose candidate fixes. The Security Specialist verifies whether the fix introduces any new attack vectors.
-
-Another powerful command is `memdoor verify`, which you can use to confirm whether a proposed solution actually works:
-
-```
-memdoor verify --file src/auth.go --function ValidateToken --test-case "expired token"
-```
-
-The flow is always the same: analysis first, then action, then review. This cadence prevents the tool from skipping steps and offering hasty solutions.
-
-## When AI Encounters Its Own Projects
-
-Memdoor is particularly useful when you want a second opinion on code you wrote weeks ago. In my workflow, I regularly use it to review PRs in my personal projects, like the inventory-service, which integrates OSPOS with Mercado Livre, or the provider-health-daemon, which manages fallbacks between AI providers.
-
-In these projects, memdoor has already identified problems that would have taken me hours to find: a race condition in inventory sync, SQL injection in a poorly constructed query, and an edge case where expired tokens weren't being handled correctly. It's not that the code is bad, it's that after weeks away from a file, you lose the perspective of someone reading it for the first time.
-
-What differentiates memdoor from a common chatbot is specialization. When I ask Claude "it's throwing an error here," it tries to be helpful, but does everything at once. Memdoor forces a separation of concerns: the Analyst doesn't propose code, the Engineer doesn't do security analysis, each one stays in its lane. This reduces noise and increases the precision of responses.
-
-## The Developer's Role in an AI-Powered Ecosystem
-
-The use of tools like memdoor raises an important philosophical question: what's left for the developer to do? If AI can analyze code, find bugs, and propose fixes, what is our value-added?
-
-The answer, I believe, lies in three areas that AI still doesn't master well. The first is business context: why a feature exists, who requested it, which user problem it solves. memdoor can analyze code, but it doesn't know that the reason you can't delete inactive users is a compliance audit that happened in 2023.
-
-The second area is architectural judgment. When trade-offs are involved, simplicity versus performance, flexibility versus maintainability, AI can present options, but the human with knowledge of the larger system context makes the decision.
-
-The third area is ultimate responsibility. AI-reviewed code is still code reviewed by you. If something breaks in production, it's your name on the blame line, not the tool's. That means you can't simply accept suggestions without understanding what they do.
-
-memdoor, correctly, does not try to eliminate the developer from the workflow. It positions itself as an assistant that accelerates the mechanical parts of the work, reading extensive diffs, finding known patterns, checking for common vulnerabilities, freeing the human for the decisions that truly matter.
-
-## Advanced settings and integrations
-
-For those who want to customize memdoor's behavior, there are several interesting options. You can set different system prompts for each agent, fundamentally changing how they work. A more aggressive Security Specialist will report even potential false positives. A more meticulous QA agent will test more edge cases.
-
-Memdoor can also be integrated into CI/CD pipelines. A common workflow is to run memdoor before accepting a merge, failing the build if the overall Score falls below a configurable threshold. This adds an automated review layer that complements, but does not replace, human review.
-
-For those using GitHub Actions, there is an official action that encapsulates memdoor:
+For running memdoor inside GitHub, the integration is an action: `guregodevo/memdoor-action@v1`. It runs on your key and asks for nothing added to the repository beyond the step in the workflow.
 
 ```yaml
-- name: Run memdoor analysis
-  uses: memdoor/action@v1
-  with:
-    github-token: ${{ secrets.GITHUB_TOKEN }}
-    min-score: 70
-    fail-on-critical: true
+on: pull_request
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: guregodevo/memdoor-action@v1
+        with:
+          workflow: pr-review
+          openrouter-api-key: ${{ secrets.OPEN_ROUTER_API_KEY }}
 ```
 
-This allows teams to adopt automated AI-powered code analysis without needing to manually configure anything in each project.
+With no key, the `local-model: Qwen3-8B-4bit` input swaps the key for a model inside the runner (through janis, with the model cached), in a single call. The README is honest about the result: it is a free first pass, not a reviewer — on a free runner it caught an obvious and a subtle bug in about a minute each, and it can also file the fix for a correct change as a blocker.
 
-## Limitations and considerations
+Nine workflows ship built in:
 
-To be honest, memdoor isn't a solution for everything. For complex problems that require reasoning about multiple parts of the system simultaneously, the linear approach of specialized agents can miss important connections. If the bug is at the intersection between authentication and cache, for example, you'll still need to look at the code yourself.
+- `pr-triage` sorts a pull request for a maintainer: ready for review, needs work, or likely slop, from checks run in the job (the tests, claimed tests that are not there, functions nothing calls).
+- `pr-review` reviews the pull request, verifies each finding by running the code, and fails the job only on a blocker.
+- `security-review` does the same for security only: secrets, injection, path traversal, missing authorization.
+- `write-tests` writes tests for what the change touches and fails the job when one shows the change is wrong.
+- `pr-description` writes the description: title, What, Why, How to test, Risk.
+- `explain-failure` reads a failed run's logs and the diff: the cause, file:line, and the fix.
+- `issue-triage` suggests labels, the kind, a summary and duplicates for a new issue.
+- `fix-tests` finds the test command, fixes the code until the tests pass, and leaves the fix in the working tree.
+- `release-notes` turns the commits since the last tag into Added / Changed / Fixed.
 
-Furthermore, Qwen models, while competent, aren't as powerful as larger models like Claude 3.5 or GPT-4 for tasks that require deep reasoning. Choosing Qwen is a choice for cost-effectiveness and controllability, not for maximum performance.
+For your own, `workflow: <name>` points at `.memdoor/workflows/<name>/` in the repository.
 
-Another point to consider is the cost of running five models locally. If you're using an API, the cost is multiplied by five. For intensive use, setting up a local server with a dedicated GPU pays off quickly, but requires maintenance that not everyone wants to handle.
+One security detail worth repeating: trigger on `pull_request`, never `pull_request_target`. GitHub gives a fork's pull request no secrets, so a stranger's code never runs beside your key. The job ends with the run's outcome in the exit code: 0 done, 2 failed, 1 stopped, 3 stopped at an approval gate. The job summary shows the review, the fix or the notes.
+
+## The five-Qwen3.8-27B team and the LiveCodeBench Hard test
+
+The thread that introduced the project to Hacker News had a loud title: "Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard". At the time of writing it had 295 points and 138 comments. The title is true, but it describes one specific example, not the product architecture — which is where a lot of people get confused.
+
+The example is the `team-solve` workflow. Five small models solve a programming problem together: a planner, two ideators, a solver and a manager, plus a repair worker. Each starts from a fresh context and talks only through files on disk. A script that runs the samples decides success, not a model. It is the method of GVS5H (Lee, 2026), written as a memdoor workflow: eight YAML files, no code and no model named.
+
+The published result, on the first ten problems of the paper's LiveCodeBench Hard list, five passes each, graded on every hidden test:
+
+| pass | this workflow | authors' harness | Fable 5, one call |
+|---|---|---|---|
+| 1 | **10** / 10 | 9 | 7 |
+| 2 | **10** / 10 | 10 | 8 |
+| 3 | **10** / 10 | 10 | 10 |
+| 4 | **10** / 10 | 9 | 8 |
+| 5 | **9** / 10 | 10 | 7 |
+| mean | **9.8** | 9.6 | 8.0 |
+
+What the result does and does not show — the repository lists the caveats itself. It is ten problems and five passes, not the paper's 100; on a sample that small, 9.8 and 9.6 are the same number, and the claim is parity with the authors' harness, not a gain on it. The contests date from spring 2025, and training contamination cannot be ruled out for any column. The Fable 5 column comes from the authors' files and was not run in this harness. The model ran on OpenRouter, not on a local machine. The loop sees only the public samples; the score is the hidden tests.
+
+The cost details are published too: a run took a median of 40 minutes and $0.39; the 50 runs cost $35.79. And the single lost problem has an instructive cause: the manager invented a wrong counterexample and the team rewrote a correct program. Twice elsewhere a correct program was overwritten and then recovered. Both gaps are the authors' loop, kept as is.
+
+## Installing and actually running it
+
+The install is that of any single binary:
+
+```bash
+curl -fsSL https://memdoor.ai/install.sh | bash
+export OPENROUTER_API_KEY=sk-or-...
+cd your-project && memdoor
+```
+
+The first `memdoor` in a project directory sets the machine up. With no key, `memdoor connect local` looks for a model running on the machine; with Ollama, remember that the default context window is 4K and the README asks for 32K for this use.
+
+To build from source you need Go 1.25 and `make`:
+
+```bash
+git clone https://github.com/guregodevo/memdoor && cd memdoor
+make build
+cp memdoor ~/.local/bin/
+```
+
+Beyond the TUI, the headless mode is what matters for scripts:
+
+```bash
+memdoor run "fix the failing test"
+git diff | memdoor run "review this diff; one line per finding"
+memdoor run --json "fix the failing test" | jq 'select(.event=="done")'
+memdoor workflow run release --wait
+memdoor resume --last
+```
+
+The exit code is the turn's receipt: 0 checked, 2 unverified or a failing check, 3 a question nobody answered (`--yes` answers it), 1 an error, 130 interrupted.
+
+To run it on another box with nothing installed there:
+
+```bash
+memdoor --gateway ssh://you@box
+memdoor --gateway ssh://you@box connect openrouter
+memdoor --gateway ssh://you@box run "fix the failing test"
+```
+
+And to use it in your editor:
+
+```json
+"acp.agents": { "Memdoor": { "command": "memdoor", "args": ["acp"] } }
+```
+
+Inside the window, the commands you will use most: `/model` picks the model (the agent's ladder, cheapest first, or a pinned model with list prices), `/connect` adds a provider, `/workflow` lists and opens runs, `/usage` shows the month on your key and what the decision model kept off the bill, `/remote` and `/remote view` open the conversation on your phone (the second is watch-only, up to 200 people), `/share` produces a read-only link with secrets removed, `/files` and `/graph` show files and the turn as a graph, `/mcp` connects MCP servers.
+
+<figure>
+    <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/memdoor-window.png" alt="The memdoor window showing a typed task, files read and patched, the tests running and the receipt line at the end" loading="lazy">
+    <figcaption>The memdoor window: the task typed, the files read and patched, the tests run, and the receipt line at the end. Screenshot from the official repository, under Apache 2.0.</figcaption>
+</figure>
+
+## Where your data goes
+
+What leaves the machine is easy to summarize: files, sessions and commands stay put; what the model reads goes to the provider you connected. On OpenRouter, every request carries `data_collection: deny`, and hosts that train on paid inputs are kept out of the model ladders. The exception is a `:free` model — one you pinned or one an account with no credit uses — whose hosts train on what they are sent; the request says so and memdoor tells you when you connect. Use it for a trial, not for private code.
+
+On a vendor key or a company gateway, nothing beyond the listed hosts is contacted: `docs/SECURITY.md` lists every host the binary can name, and a test fails the build if a new one appears. There is also no account, and telemetry is off unless you turn it on. For machines with a stricter policy, `MEMDOOR_APPROVE=changes` asks before every command and write.
+
+## What it is not
+
+After all that, it is worth being explicit about the limits. Memdoor is not a magic five-agent pipeline: it is one agent with a decision model and declarative workflows. It is not local by default: without `connect local`, the code the model reads goes to the provider. It does not replace human review: checks and gates help, but the merge decision is still yours. And the `team-solve` benchmark is not a general quality seal — ten problems, five passes, with the caveats the project itself publishes.
+
+There is also cost and maintenance. Running five agents through an API multiplies calls; running locally needs a model that fits your GPU (janis runs Qwen3-Coder-30B-A3B on a Google L4 at $0.71 an hour). The free local mode is great for experimenting and for code that cannot leave, but it is not the same as a frontier model.
+
+The most interesting part of memdoor may be the framing: instead of selling "AI that programs by itself", it sells a receipt. The turn ends with what was checked, how many files changed and whether the tests passed. In a market full of demos, an exit code is a much more honest way to say what happened.
 
 ## Practical takeaways
 
-- Memdoor is an open-source alternative to AI IDE extensions, running locally and offering full transparency over processing.
-- The architecture of five specialized agents (Analyst, Engineer, Security, QA, Reviewer) mimics a professional review team.
-- Use Memdoor for quick PR reviews, bug hunting in local code, and as a second opinion on changes you made a while ago.
-- The tool does not replace the developer, it accelerates the mechanical parts, freeing up time for business and architectural decisions.
-- For sensitive projects, running models locally eliminates data exfiltration risks that exist in some official AI extensions.
+- Memdoor is a coding agent in one Go binary, Apache 2.0, with a TUI, headless mode, ACP for editors and phone access.
+- A decision model (Jev) filters context before the chat model; the project measures −74% tokens on a codebase question.
+- Workflows are YAML files versioned in the repository, with checks, gates and resume from the failed step.
+- In GitHub Actions, the action ships nine ready workflows and runs on a key or a local model inside the runner.
+- The five-Qwen3.8-27B team is an example workflow: parity with the GVS5H harness on LiveCodeBench Hard, on a small sample with published caveats.
+- Nothing replaces human review: the value is in cutting the mechanical work and leaving a verifiable receipt.
 
 ## Sources
 
-- [Official memdoor repository on GitHub](https://github.com/memdoor/memdoor-cli)
-- [Qwen Model Series - Alibaba documentation](https://github.com/QwenLM/Qwen)
-- [Ollama - Run LLMs locally](https://github.com/ollama/ollama)
-- [Engram - Memory project for LLMs (related concept)](https://github.com/memdoor/engram)
-- [GitHub Actions - Official documentation](https://docs.github.com/en/actions)
-- [Architectural Patterns for Multi-Agent LLM Systems](https://www.anthropic.com/research/claude-system-prompts)
+- [Official memdoor repository](https://github.com/guregodevo/memdoor)
+- [Getting started documentation](https://memdoor.ai/docs/getting-started)
+- [team-solve: the LiveCodeBench Hard result](https://memdoor.ai/docs/team-solve)
+- [team-solve workflow in the repository](https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve)
+- [Hacker News thread](https://news.ycombinator.com/item?id=50320995)
+- [memdoor-action on GitHub](https://github.com/guregodevo/memdoor-action)
+- [mario, the workflow engine](https://github.com/guregodevo/mario)
+- [janis, the open-model server](https://github.com/guregodevo/janis)
+- [GVS5H, the method behind team-solve](https://github.com/slee-persis/GVS5H)
+- [How to run on an open-weight model, no key](https://memdoor.ai/docs/open-weight)
+- [Headless mode and exit codes](https://memdoor.ai/docs/headless)
+- [Editor via Agent Client Protocol](https://memdoor.ai/docs/editor)
+- [Security policy and host list](https://github.com/guregodevo/memdoor/blob/main/docs/SECURITY.md)
+- [Workflows, not skills](https://guregodevo.github.io/2026/10/06/workflows-not-skills/)
