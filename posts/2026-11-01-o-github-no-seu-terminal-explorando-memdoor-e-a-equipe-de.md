@@ -3,7 +3,7 @@ title: "O GitHub no seu terminal: explorando memdoor e a equipe de LLMs que reso
 date: "2026-11-01"
 category: "tutorial"
 tags: ["llm", "github", "claude-code", "automa\u00e7\u00e3o", "cli"]
-excerpt: "O GitHub no seu terminal: explorando memdoor e a equipe de LLMs que resolve desafios de programação"
+excerpt: "O GitHub no seu terminal: explorando memdoor e a equipe de LLMs que resolve desafios de programação."
 cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-11-01-o-github-no-seu-terminal-explorando-memdoor-e-a-equipe-de.jpg"
 lang: "pt"
 ---
