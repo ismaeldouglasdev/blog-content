@@ -12,7 +12,7 @@ lang: "pt"
 
 # O GitHub no seu terminal: explorando memdoor e a equipe de LLMs que resolve desafios de programação
 
-Voce ja recebeu uma notification do GitHub às 23h de sexta-feira: "PR ready for review". O diff tem 847 linhas, 6 arquivos alterados, e você temexactly 20 minutos antes do happy hour que tanto esperou a semana toda. Você abre, tenta entender o que mudou, sente a ansiedad subindo, e simplemente fecha a aba. Amanhã você olha. Provavelmente.
+Voce ja recebeu uma notification do GitHub às 23h de sexta-feira: "PR ready for review". O diff tem 847 linhas, 6 arquivos alterados, e você tem exatamente 20 minutos antes do happy hour que tanto esperou a semana toda. Você abre, tenta entender o que mudou, sente a ansiedade subindo, e simplemente fecha a aba. Amanhã você olha, Provavelmente.
 
 Esse cenário é mais comum do que imaginamos. A quantidade de código que precisamos revisar, debugar e manter cresce exponencialmente, mas nossa capacidade de atenção e tempo não acompanha esse ritmo. E é exatamente aí que ferramentas como o memdoor entram em cena: não para substituir o desenvolvedor, mas para ser aquele colega noturno que sempre está acordado e disposto a quebrar a cabeça com código que você não quer olhar às 23h.
 
@@ -20,7 +20,7 @@ O memdoor é uma ferramenta open-source que combina o poder de múltiplos modelo
 
 ## A ameaça invisível: extensões de IA com backdoors
 
-Antes de mergulhar no memdoor, é importante entender o contexto que motivou sua criação. Em 2024 e 2025, assistentes de IA para IDEs se tornaram mainstream. Extensions oficiais de grandes empresas prometiam integrar Copilot, Claude e outros modelos diretamente no seu editor, facilitando a vida de milhões de desenvolvedores. O que poucos sabiam era que algumas dessas extensões coletavam dados de forma mais agressiva do que o esperado, armazenando histórico de navegação, tokens de acesso e até mesmo commits não salvos em servidores externos.
+Antes de mergulhar no memdoor, é importante entender o contexto que motivou sua criação. Em 2024 e 2025, assistentes de IA para IDEs se tornaram mainstream. Extensões oficiais de grandes empresas prometiam integrar Copilot, Claude e outros modelos diretamente no seu editor, facilitando a vida de milhões de desenvolvedores. O que poucos sabiam era que algumas dessas extensões coletavam dados de forma mais agressiva do que o esperado, armazenando histórico de navegação, tokens de acesso e até mesmo commits não salvos em servidores externos.
 
 A descoberta dessas "backdoors", funcionalidade não documentada que exfiltra dados, gerou uma onda de desconfiança na comunidade. Desenvolvedores começaram a questionar: até que ponto posso confiar em ferramentas que pedem acesso ao meu código? A resposta honesta é que, para projetos sensíveis, a resposta deveria ser "com muita cautela". Esse cenário abriu espaço para ferramentas que priorizam privacidade e controle total sobre os dados.
 
