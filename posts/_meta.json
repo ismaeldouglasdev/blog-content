@@ -2,19 +2,19 @@
   "posts": [
     {
       "slug": "2026-11-01-o-github-no-seu-terminal-explorando-memdoor-e-a-equipe-de",
-      "title": "O GitHub no seu terminal: explorando memdoor e a equipe de LLMs que resolve desafios de programação",
-      "title_en": null,
+      "title": "Memdoor: o agente de código em um binário — e a equipe de 5 Qwen3.8-27B que bateu o Fable 5",
+      "title_en": "Memdoor: the coding agent in one binary — and the 5-Qwen3.8-27B team that beat Fable 5",
       "date": "2026-11-01",
       "category": "tutorial",
       "tags": [
         "llm",
-        "github",
-        "claude-code",
-        "automação",
-        "cli"
+        "agentes-de-ia",
+        "go",
+        "cli",
+        "github-actions"
       ],
-      "excerpt": "O GitHub no seu terminal: explorando memdoor e a equipe de LLMs que resolve desafios de programação.",
-      "excerpt_en": null,
+      "excerpt": "Um binário Go que lê seus arquivos, roda testes e revisa PRs no terminal — e o workflow de cinco Qwen3.8-27B que bateu o Fable 5 no LiveCodeBench Hard.",
+      "excerpt_en": "A Go binary that reads your files, runs tests and reviews PRs from your terminal — and the five-Qwen3.8-27B workflow that beat Fable 5 on LiveCodeBench Hard.",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-11-01-o-github-no-seu-terminal-explorando-memdoor-e-a-equipe-de.jpg",
       "cover_credit": {
         "license": "Pixabay Content License",
@@ -39,19 +39,19 @@
     },
     {
       "slug": "2026-11-01-o-github-no-seu-terminal-explorando-memdoor-e-a-equipe-de-en",
-      "title": "GitHub in your terminal: exploring memdoor and the LLM team that solves programming challenges",
-      "title_en": "GitHub in your terminal: exploring memdoor and the LLM team that solves programming challenges",
+      "title": "Memdoor: the coding agent in one binary — and the 5-Qwen3.8-27B team that beat Fable 5",
+      "title_en": "Memdoor: the coding agent in one binary — and the 5-Qwen3.8-27B team that beat Fable 5",
       "date": "2026-11-01",
       "category": "tutorial",
       "tags": [
         "llm",
-        "github",
-        "claude-code",
-        "automação",
-        "cli"
+        "ai-agents",
+        "go",
+        "cli",
+        "github-actions"
       ],
-      "excerpt": "GitHub in Your Terminal: Exploring memdoor and the LLM Team That Solves Programming Challenges.",
-      "excerpt_en": "GitHub in Your Terminal: Exploring memdoor and the LLM Team That Solves Programming Challenges",
+      "excerpt": "A Go binary that reads your files, runs tests and reviews PRs from your terminal — and the five-Qwen3.8-27B workflow that beat Fable 5 on LiveCodeBench Hard.",
+      "excerpt_en": "A Go binary that reads your files, runs tests and reviews PRs from your terminal — and the five-Qwen3.8-27B workflow that beat Fable 5 on LiveCodeBench Hard.",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-11-01-o-github-no-seu-terminal-explorando-memdoor-e-a-equipe-de.jpg",
       "cover_credit": {
         "license": "Pixabay Content License",
