@@ -1,6 +1,78 @@
 {
   "posts": [
     {
+      "slug": "2026-11-03-revolut-muda-para-glm-auto-hospedado-por-que-mais-empresas",
+      "title": "Revolut muda para GLM auto-hospedado: por que mais empresas podem seguir esse caminho?",
+      "title_en": null,
+      "date": "2026-11-03",
+      "category": "tendencia",
+      "tags": [
+        "infraestrutura",
+        "fintech",
+        "open-source",
+        "autonomia"
+      ],
+      "excerpt": "Revolut muda para GLM auto-hospedado: por que mais empresas podem seguir esse caminho?",
+      "excerpt_en": null,
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-11-03-revolut-muda-para-glm-auto-hospedado-por-que-mais-empresas.jpg",
+      "cover_credit": {
+        "license": "Pixabay Content License",
+        "license_version": null,
+        "title": "cryptocurrency",
+        "creator": "Openclay",
+        "source": "Pixabay",
+        "source_url": "https://pixabay.com/photos/cryptocurrency-blockchain-bitcoin-3123849/",
+        "license_url": "https://pixabay.com/service/license-summary/"
+      },
+      "cover_meta": {
+        "strategy": "photo",
+        "review_status": "approved",
+        "relevance_score": 0.6667,
+        "motif": "tech",
+        "source": "Pixabay",
+        "query": "infraestrutura fintech",
+        "review_candidates": []
+      },
+      "lang": "pt",
+      "translation_slug": "2026-11-03-revolut-muda-para-glm-auto-hospedado-por-que-mais-empresas-en"
+    },
+    {
+      "slug": "2026-11-03-revolut-muda-para-glm-auto-hospedado-por-que-mais-empresas-en",
+      "title": "Revolut moves to self-hosted GLM: why more companies may follow",
+      "title_en": "Revolut moves to self-hosted GLM: why more companies may follow",
+      "date": "2026-11-03",
+      "category": "tendencia",
+      "tags": [
+        "infraestrutura",
+        "fintech",
+        "open-source",
+        "autonomia"
+      ],
+      "excerpt": "Revolut Moves to Self-Hosted GLM: Why More Companies Could Follow This Path?",
+      "excerpt_en": "Revolut Moves to Self-Hosted GLM: Why More Companies Could Follow This Path?",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-11-03-revolut-muda-para-glm-auto-hospedado-por-que-mais-empresas.jpg",
+      "cover_credit": {
+        "license": "Pixabay Content License",
+        "license_version": null,
+        "title": "cryptocurrency",
+        "creator": "Openclay",
+        "source": "Pixabay",
+        "source_url": "https://pixabay.com/photos/cryptocurrency-blockchain-bitcoin-3123849/",
+        "license_url": "https://pixabay.com/service/license-summary/"
+      },
+      "cover_meta": {
+        "strategy": "photo",
+        "review_status": "approved",
+        "relevance_score": 0.6667,
+        "motif": "tech",
+        "source": "Pixabay",
+        "query": "infraestrutura fintech",
+        "review_candidates": []
+      },
+      "lang": "en",
+      "translation_of": "2026-11-03-revolut-muda-para-glm-auto-hospedado-por-que-mais-empresas"
+    },
+    {
       "slug": "2026-11-01-o-github-no-seu-terminal-explorando-memdoor-e-a-equipe-de",
       "title": "O GitHub no seu terminal: explorando memdoor e a equipe de LLMs que resolve desafios de programação",
       "title_en": null,
