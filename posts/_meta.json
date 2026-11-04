@@ -1,6 +1,80 @@
 {
   "posts": [
     {
+      "slug": "2026-11-04-jailbreaking-o-sistema-de-navegacao-do-carro-so-pra-ajustar",
+      "title": "Jailbreaking o sistema de navegação do carro só pra ajustar o relógio: um tutorial técnico sobre hacking de hardware em veículos",
+      "title_en": null,
+      "date": "2026-11-04",
+      "category": "tutorial",
+      "tags": [
+        "hardware",
+        "hacking",
+        "automotivo",
+        "linux",
+        "reverse-engineering"
+      ],
+      "excerpt": "Você liga o carro, o rádio acende e a tela mostra um horário que você não vê desde os dias em que a Internet ainda precisava de linha discada. O ajuste automático via GPS",
+      "excerpt_en": null,
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-11-04-jailbreaking-o-sistema-de-navegacao-do-carro-so-pra-ajustar.jpg",
+      "cover_credit": {
+        "license": "Pixabay Content License",
+        "license_version": null,
+        "title": "data center",
+        "creator": "MightyFineBros",
+        "source": "Pixabay",
+        "source_url": "https://pixabay.com/photos/data-center-technology-server-7388620/",
+        "license_url": "https://pixabay.com/service/license-summary/"
+      },
+      "cover_meta": {
+        "strategy": "photo",
+        "review_status": "approved",
+        "relevance_score": 1.0,
+        "motif": "tech",
+        "source": "Pixabay",
+        "query": "data center",
+        "review_candidates": []
+      },
+      "lang": "pt",
+      "translation_slug": "2026-11-04-jailbreaking-o-sistema-de-navegacao-do-carro-so-pra-ajustar-en"
+    },
+    {
+      "slug": "2026-11-04-jailbreaking-o-sistema-de-navegacao-do-carro-so-pra-ajustar-en",
+      "title": "Adjusting Your Car's Dashboard Clock: A Hardware Hacking Tutorial",
+      "title_en": "Adjusting Your Car's Dashboard Clock: A Hardware Hacking Tutorial",
+      "date": "2026-11-04",
+      "category": "tutorial",
+      "tags": [
+        "hardware",
+        "hacking",
+        "automotivo",
+        "linux",
+        "reverse-engineering"
+      ],
+      "excerpt": "You turn on the car, the radio lights up, and the screen shows a time you havent seen since the days when the internet still needed a dial-up line. The automatic GPS",
+      "excerpt_en": "You turn on the car, the radio lights up, and the screen shows a time you havent seen since the days when the internet still needed a dial-up line. The automatic GPS",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-11-04-jailbreaking-o-sistema-de-navegacao-do-carro-so-pra-ajustar.jpg",
+      "cover_credit": {
+        "license": "Pixabay Content License",
+        "license_version": null,
+        "title": "data center",
+        "creator": "MightyFineBros",
+        "source": "Pixabay",
+        "source_url": "https://pixabay.com/photos/data-center-technology-server-7388620/",
+        "license_url": "https://pixabay.com/service/license-summary/"
+      },
+      "cover_meta": {
+        "strategy": "photo",
+        "review_status": "approved",
+        "relevance_score": 1.0,
+        "motif": "tech",
+        "source": "Pixabay",
+        "query": "data center",
+        "review_candidates": []
+      },
+      "lang": "en",
+      "translation_of": "2026-11-04-jailbreaking-o-sistema-de-navegacao-do-carro-so-pra-ajustar"
+    },
+    {
       "slug": "2026-11-03-revolut-muda-para-glm-auto-hospedado-por-que-mais-empresas",
       "title": "Revolut muda para GLM auto-hospedado: por que mais empresas podem seguir esse caminho?",
       "title_en": null,
