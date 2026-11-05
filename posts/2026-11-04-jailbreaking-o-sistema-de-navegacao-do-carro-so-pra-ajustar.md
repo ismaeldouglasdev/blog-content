@@ -3,7 +3,7 @@ title: "Jailbreaking o sistema de navegação do carro só pra ajustar o relógi
 date: "2026-11-04"
 category: "tutorial"
 tags: ["hardware", "hacking", "automotivo", "linux", "reverse-engineering"]
-excerpt: "Você liga o carro, o rádio acende e a tela mostra um horário que você não vê desde os dias em que a Internet ainda precisava de linha discada. O ajuste automático via GPS"
+excerpt: "Você liga o carro, o rádio acende e a tela mostra um horário que você não vê desde os dias em que a Internet ainda precisava de linha discada. O ajuste automático via GPS."
 cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-11-04-jailbreaking-o-sistema-de-navegacao-do-carro-so-pra-ajustar.jpg"
 lang: "pt"
 ---
