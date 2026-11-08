@@ -14,6 +14,12 @@ translation_of: "2026-09-23-vitest-como-testar-react-com-testes-que-realmente-aj
 
 Tests are not optional. They are essential for ensuring software quality and confidence in the functionalities we are implementing. Especially in React applications, where user interactions and dynamic behavior are constant. Here, I will share how to set up and use Vitest to efficiently test your React applications, ensuring that your tests genuinely help improve the quality of your code.
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam.jpg" alt="Vitest: How to Test React with Truly Helpful Tests" loading="lazy">
+<figcaption>Article cover image</figcaption>
+</figure>
+
 ```markdown
 ## Setup with Vite
 
@@ -78,6 +84,7 @@ test('renders button with correct label', () => {
   expect(buttonElement).toBeInTheDocument();
 });
 
+
 test('calls onClick when clicked', () => {
   const handleClick = jest.fn();
   render(<Button label="Click here" onClick={handleClick} />);
@@ -118,6 +125,11 @@ test('fetchData calls the API and returns data', async () => {
     })
   );
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-23-vitest-como-testar-react-com-testes-que-realmente-ajudam-1.jpg" alt="Vitest: How to Test React with Truly Helpful Tests" loading="lazy">
+<figcaption>Sequential Software Testing Life Cycle. — Image: <a href="https://commons.wikimedia.org/wiki/File%3ASoftware_Testing_Life_Cycle.jpg">Software Testing Life Cycle.jpg</a> by Perfect Happiness — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
+</figure>
   const data = await fetchData();
   expect(data).toEqual(mockData);
   expect(global.fetch).toHaveBeenCalledTimes(1);

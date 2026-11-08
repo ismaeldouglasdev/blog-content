@@ -31,6 +31,12 @@ However, this complexity introduced new failure points. Streams are independent 
 
 http2shell is a Remote Code Execution (RCE) exploit that targets misconfigured HTTP/2 servers or servers with vulnerable HTTP/2 frame parsing libraries. The core idea is to contaminate an HTTP/2 stream with malformed data that, when interpreted by the server, leads to arbitrary code execution.
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-10-24-o-que-os-devs-full-stack-precisam-saber-sobre-o-http2shell-1.jpg" alt="What Full-Stack Developers Need to Know About http2shell: RCE in Node.js and Python" loading="lazy">
+<figcaption>See this page at
+https://packages.gentoo.org/packages/media-video/ffmpeg. — Image: <a href="https://commons.wikimedia.org/wiki/File%3APackages_gentoo_org--use-flags-for-ffmpeg.png">Packages gentoo org--use-flags-for-ffmpeg.png</a> by Vitaly Zdanevich — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
+</figure>
 Let's break down the attack into steps:
 
 1.  **Reconnaissance**: The attacker identifies a server that accepts HTTP/2 (usually on port 443 with ALPN or via a web server's response). Tools like `nmap` or `h2scan` can detect this.

@@ -70,6 +70,12 @@ import { io } from 'socket.io-client';
 
 const ChatContext = createContext();
 
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-09-websocket-do-zero-chat-em-tempo-real-com-node-js-e-react-1.jpg" alt="WebSocket from scratch: real-time chat with Node.js and React" loading="lazy">
+<figcaption>Resolved. — Image: <a href="https://commons.wikimedia.org/wiki/File%3AEncrypted_Websocket_Issue.png">Encrypted Websocket Issue.png</a> by VaYshaleee — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
+</figure>
+
 export const ChatProvider = ({ children }) => {
     const [messages, setMessages] = useState([]);
     const socket = io('http://localhost:3000');
@@ -142,6 +148,7 @@ npm install mongoose
 ```
 
 Then, configure the MongoDB connection and the message model:
+
 
 ```javascript
 const mongoose = require('mongoose');
@@ -221,6 +228,11 @@ Creating a real-time chat with WebSockets using Node.js and React is quite an ac
 - [MongoDB documentation](https://www.mongodb.com/docs/)
 - [Socket.IO Redis Adapter](https://socket.io/docs/v4/adapter/#redis-adapter)
 ## 📸 Cover image credit
+
+<figure>
+<img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-09-09-websocket-do-zero-chat-em-tempo-real-com-node-js-e-react.jpg" alt="WebSocket from scratch: real-time chat with Node.js and React" loading="lazy">
+<figcaption>Article cover image</figcaption>
+</figure>
 - **Image:** [Apollo Guidance Computer (AGC).jpg](https://commons.wikimedia.org/wiki/File%3AApollo_Guidance_Computer_%28AGC%29.jpg)
 - **Author:** Steve Jurvetson
 - **License:** [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) · via Wikimedia Commons

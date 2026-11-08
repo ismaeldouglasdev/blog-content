@@ -5,6 +5,7 @@ category: "article"
 tags: ["devtools", "debug", "browser"]
 excerpt: "Advanced browser debugging techniques: breakpoints, memory snapshots, network inspection, and console tricks for elusive bugs."
 share_hook: "Performance Profiler, Memory Snapshots, Network Waterfall - root cause, not guesswork."
+cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug.jpg"
 lang: "en"
 translation_of: "2026-08-20-devtools-do-navegador-tecnicas-avancadas-de-debug"
 ---
