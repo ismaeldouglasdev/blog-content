@@ -383,6 +383,22 @@
         "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3n2bdx7nr442s",
         "telegram": "77"
       }
+    },
+    "2026-11-14-rate-limiting-em-apis-token-bucket-e-janela-deslizante": {
+      "url": "https://blog.ismaeltech.com/2026-11-14-rate-limiting-em-apis-token-bucket-e-janela-deslizante",
+      "posted_at": "2026-11-14T11:25:53.355400+00:00",
+      "platforms": {
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3n2bfascxqm2s",
+        "telegram": "78"
+      }
+    },
+    "2026-11-14-rate-limiting-em-apis-token-bucket-e-janela-deslizante-en": {
+      "url": "https://blog.ismaeltech.com/2026-11-14-rate-limiting-em-apis-token-bucket-e-janela-deslizante-en",
+      "posted_at": "2026-11-14T11:27:19.677969+00:00",
+      "platforms": {
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3n2bfdekiq52s",
+        "telegram": "79"
+      }
     }
   }
 }
