@@ -1,6 +1,64 @@
 {
   "posts": [
     {
+      "slug": "2026-11-13-como-projetar-apis-rest-resilientes-com-idempotencia-e-retries",
+      "title": "Como projetar APIs REST resilientes com idempotência e retries",
+      "title_en": null,
+      "date": "2026-11-13",
+      "category": "tutorial",
+      "tags": [
+        "api",
+        "rest",
+        "resiliência",
+        "backend",
+        "boas-práticas"
+      ],
+      "excerpt": "Falhas de rede e timeouts fazem parte da vida de qualquer API. Veja como combinar idempotência, retries com backoff e limites claros para evitar duplicidades e manter o sistema estável.",
+      "excerpt_en": null,
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-11-13-como-projetar-apis-rest-resilientes-com-idempotencia-e-retries.jpg",
+      "cover_credit": null,
+      "cover_meta": {
+        "strategy": "fallback",
+        "review_status": "auto_fallback",
+        "relevance_score": null,
+        "motif": "tech",
+        "source": null,
+        "query": "api rest resiliencia idempotencia retries",
+        "review_candidates": []
+      },
+      "lang": "pt",
+      "translation_slug": "2026-11-13-como-projetar-apis-rest-resilientes-com-idempotencia-e-retries-en"
+    },
+    {
+      "slug": "2026-11-13-como-projetar-apis-rest-resilientes-com-idempotencia-e-retries-en",
+      "title": "How to Design Resilient REST APIs with Idempotency and Retries",
+      "title_en": "How to Design Resilient REST APIs with Idempotency and Retries",
+      "date": "2026-11-13",
+      "category": "tutorial",
+      "tags": [
+        "api",
+        "rest",
+        "resiliência",
+        "backend",
+        "boas-práticas"
+      ],
+      "excerpt": "Network failures and timeouts are part of any API's life. Learn how to combine idempotency, retries with backoff, and clear limits to avoid duplicates and keep systems stable.",
+      "excerpt_en": "Network failures and timeouts are part of any API's life. Learn how to combine idempotency, retries with backoff, and clear limits to avoid duplicates and keep systems stable.",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-11-13-como-projetar-apis-rest-resilientes-com-idempotencia-e-retries.jpg",
+      "cover_credit": null,
+      "cover_meta": {
+        "strategy": "fallback",
+        "review_status": "auto_fallback",
+        "relevance_score": null,
+        "motif": "tech",
+        "source": null,
+        "query": "api rest resiliencia idempotencia retries",
+        "review_candidates": []
+      },
+      "lang": "en",
+      "translation_of": "2026-11-13-como-projetar-apis-rest-resilientes-com-idempotencia-e-retries"
+    },
+    {
       "slug": "2026-11-04-jailbreaking-o-sistema-de-navegacao-do-carro-so-pra-ajustar",
       "title": "Jailbreaking o sistema de navegação do carro só pra ajustar o relógio: um tutorial técnico sobre hacking de hardware em veículos",
       "title_en": null,
