@@ -5445,6 +5445,78 @@
         "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-08-17-css-grid-e-flexbox-quando-usar-cada-um.jpg",
         "note": "Existing asset preserved; regenerate through review workflow before approval."
       }
+    },
+    {
+      "slug": "2026-11-14-rate-limiting-em-apis-token-bucket-e-janela-deslizante",
+      "title": "Rate limiting em APIs: token bucket, janela deslizante e onde aplicar o limite",
+      "date": "2026-11-14",
+      "category": "tutorial",
+      "tags": [
+        "api",
+        "rate-limiting",
+        "backend",
+        "resiliência",
+        "boas-práticas"
+      ],
+      "excerpt": "Um pico de tráfego não precisa derrubar seu serviço. Veja como escolher entre token bucket e janela deslizante, onde aplicar o limite e como responder com 429 e Retry-After.",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-11-14-rate-limiting-em-apis-token-bucket-e-janela-deslizante.jpg",
+      "cover_credit": {
+        "license": "CC0 1.0 Universal",
+        "license_version": "1.0",
+        "title": "Highway light trains at night",
+        "creator": "Jamie Street",
+        "source": "Wikimedia Commons (Unsplash)",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Highway_light_trains_at_night_(Unsplash).jpg",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "cover_meta": {
+        "strategy": "photo",
+        "review_status": "approved",
+        "relevance_score": 0.82,
+        "motif": "tech",
+        "source": "Wikimedia Commons",
+        "query": "rate limiting api trafego",
+        "review_candidates": []
+      },
+      "lang": "pt",
+      "translation_slug": "2026-11-14-rate-limiting-em-apis-token-bucket-e-janela-deslizante-en"
+    },
+    {
+      "slug": "2026-11-14-rate-limiting-em-apis-token-bucket-e-janela-deslizante-en",
+      "title": "Rate limiting em APIs: token bucket, janela deslizante e onde aplicar o limite",
+      "date": "2026-11-14",
+      "category": "tutorial",
+      "tags": [
+        "api",
+        "rate-limiting",
+        "backend",
+        "resiliência",
+        "boas-práticas"
+      ],
+      "excerpt": "Um pico de tráfego não precisa derrubar seu serviço. Veja como escolher entre token bucket e janela deslizante, onde aplicar o limite e como responder com 429 e Retry-After.",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-11-14-rate-limiting-em-apis-token-bucket-e-janela-deslizante.jpg",
+      "cover_credit": {
+        "license": "CC0 1.0 Universal",
+        "license_version": "1.0",
+        "title": "Highway light trains at night",
+        "creator": "Jamie Street",
+        "source": "Wikimedia Commons (Unsplash)",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Highway_light_trains_at_night_(Unsplash).jpg",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "cover_meta": {
+        "strategy": "photo",
+        "review_status": "approved",
+        "relevance_score": 0.82,
+        "motif": "tech",
+        "source": "Wikimedia Commons",
+        "query": "rate limiting api trafego",
+        "review_candidates": []
+      },
+      "lang": "pt",
+      "translation_slug": "2026-11-14-rate-limiting-em-apis-token-bucket-e-janela-deslizante-en",
+      "title_en": "API rate limiting: token bucket, sliding window, and where to apply the limit",
+      "excerpt_en": "A traffic spike doesn't have to take your service down. Learn how to choose between token bucket and sliding window, where to apply the limit, and how to answer with 429 and Retry-After."
     }
   ]
 }
