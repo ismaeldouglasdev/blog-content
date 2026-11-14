@@ -367,6 +367,22 @@
         "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3mylqinjb3x2b",
         "telegram": "75"
       }
+    },
+    "2026-11-13-como-projetar-apis-rest-resilientes-com-idempotencia-e-retries": {
+      "url": "https://blog.ismaeltech.com/2026-11-13-como-projetar-apis-rest-resilientes-com-idempotencia-e-retries",
+      "posted_at": "2026-11-14T11:01:11.620210+00:00",
+      "platforms": {
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3n2bdumr3rv2r",
+        "telegram": "76"
+      }
+    },
+    "2026-11-04-jailbreaking-o-sistema-de-navegacao-do-carro-so-pra-ajustar": {
+      "url": "https://blog.ismaeltech.com/2026-11-04-jailbreaking-o-sistema-de-navegacao-do-carro-so-pra-ajustar",
+      "posted_at": "2026-11-14T11:02:38.238961+00:00",
+      "platforms": {
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3n2bdx7nr442s",
+        "telegram": "77"
+      }
     }
   }
 }
