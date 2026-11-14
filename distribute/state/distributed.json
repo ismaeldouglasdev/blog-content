@@ -415,6 +415,22 @@
         "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3n2c3jkie7i2d",
         "telegram": "81"
       }
+    },
+    "2026-10-29-por-que-sua-aplicacao-node-js-precisa-se-defender-contra": {
+      "url": "https://blog.ismaeltech.com/2026-10-29-por-que-sua-aplicacao-node-js-precisa-se-defender-contra",
+      "posted_at": "2026-11-14T22:25:24.989489+00:00",
+      "platforms": {
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3n2ck44sum22s",
+        "telegram": "82"
+      }
+    },
+    "2026-10-26-paperpilot-construindo-um-engine-pdf-zero-cloud-em-rust-com": {
+      "url": "https://blog.ismaeltech.com/2026-10-26-paperpilot-construindo-um-engine-pdf-zero-cloud-em-rust-com",
+      "posted_at": "2026-11-14T22:26:51.378693+00:00",
+      "platforms": {
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3n2ck6pae4o2a",
+        "telegram": "83"
+      }
     }
   }
 }
