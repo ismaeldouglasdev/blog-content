@@ -16,13 +16,21 @@
       "excerpt": "Falhas de rede e timeouts fazem parte da vida de qualquer API. Veja como combinar idempotência, retries com backoff e limites claros para evitar duplicidades e manter o sistema estável.",
       "excerpt_en": null,
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-11-13-como-projetar-apis-rest-resilientes-com-idempotencia-e-retries.jpg",
-      "cover_credit": null,
+      "cover_credit": {
+        "license": "Unsplash License",
+        "license_version": null,
+        "title": "cable network servers",
+        "creator": "Taylor Vick",
+        "source": "Unsplash",
+        "source_url": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31",
+        "license_url": "https://unsplash.com/license"
+      },
       "cover_meta": {
-        "strategy": "fallback",
-        "review_status": "auto_fallback",
-        "relevance_score": null,
+        "strategy": "photo",
+        "review_status": "approved",
+        "relevance_score": 0.85,
         "motif": "tech",
-        "source": null,
+        "source": "Unsplash",
         "query": "api rest resiliencia idempotencia retries",
         "review_candidates": []
       },
@@ -45,13 +53,21 @@
       "excerpt": "Network failures and timeouts are part of any API's life. Learn how to combine idempotency, retries with backoff, and clear limits to avoid duplicates and keep systems stable.",
       "excerpt_en": "Network failures and timeouts are part of any API's life. Learn how to combine idempotency, retries with backoff, and clear limits to avoid duplicates and keep systems stable.",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-11-13-como-projetar-apis-rest-resilientes-com-idempotencia-e-retries.jpg",
-      "cover_credit": null,
+      "cover_credit": {
+        "license": "Unsplash License",
+        "license_version": null,
+        "title": "cable network servers",
+        "creator": "Taylor Vick",
+        "source": "Unsplash",
+        "source_url": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31",
+        "license_url": "https://unsplash.com/license"
+      },
       "cover_meta": {
-        "strategy": "fallback",
-        "review_status": "auto_fallback",
-        "relevance_score": null,
+        "strategy": "photo",
+        "review_status": "approved",
+        "relevance_score": 0.85,
         "motif": "tech",
-        "source": null,
+        "source": "Unsplash",
         "query": "api rest resiliencia idempotencia retries",
         "review_candidates": []
       },
