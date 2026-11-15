@@ -431,6 +431,22 @@
         "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3n2ck6pae4o2a",
         "telegram": "83"
       }
+    },
+    "2026-10-25-como-reimplementar-um-motor-de-jogo-classico-licoes-do": {
+      "url": "https://blog.ismaeltech.com/2026-10-25-como-reimplementar-um-motor-de-jogo-classico-licoes-do",
+      "posted_at": "2026-11-15T06:34:33.484158+00:00",
+      "platforms": {
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3n2dfgrioko2p",
+        "telegram": "84"
+      }
+    },
+    "2026-10-24-docker-e-estranho-e-por-que-isso-importa-para-a-sua-stack": {
+      "url": "https://blog.ismaeltech.com/2026-10-24-docker-e-estranho-e-por-que-isso-importa-para-a-sua-stack",
+      "posted_at": "2026-11-15T06:35:59.802619+00:00",
+      "platforms": {
+        "bsky": "at://did:plc:74ivfslnrt6us3aahhfx6n4g/app.bsky.feed.post/3n2dfjdt7652w",
+        "telegram": "85"
+      }
     }
   }
 }
