@@ -3,7 +3,7 @@ title: "Frameworks JavaScript que morreram e o que aprendemos com eles"
 date: "2026-11-15"
 category: "curiosidade"
 tags: ["javascript", "historia", "frameworks"]
-excerpt: "Você já sentiu aquele frio na barriga ao escolher uma tecnologia para um projeto novo, com medo de ela se tornar obsoleta antes mesmo de você lançar a primeira versão? O"
+excerpt: "Você já sentiu aquele frio na barriga ao escolher uma tecnologia para um projeto novo, com medo de ela se tornar obsoleta antes mesmo de você lançar a primeira versão? O."
 cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-11-15-frameworks-javascript-que-morreram-e-o-que-aprendemos-com.jpg"
 lang: "pt"
 ---
