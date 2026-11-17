@@ -73,7 +73,7 @@ const ChatContext = createContext();
 
 <figure>
 <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-09-websocket-do-zero-chat-em-tempo-real-com-node-js-e-react-1.jpg" alt="WebSocket from scratch: real-time chat with Node.js and React" loading="lazy">
-<figcaption>Resolved. — Image: <a href="https://commons.wikimedia.org/wiki/File%3AEncrypted_Websocket_Issue.png">Encrypted Websocket Issue.png</a> by VaYshaleee — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
+<figcaption>Resolved. - Image: <a href="https://commons.wikimedia.org/wiki/File%3AEncrypted_Websocket_Issue.png">Encrypted Websocket Issue.png</a> by VaYshaleee - <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
 </figure>
 
 export const ChatProvider = ({ children }) => {

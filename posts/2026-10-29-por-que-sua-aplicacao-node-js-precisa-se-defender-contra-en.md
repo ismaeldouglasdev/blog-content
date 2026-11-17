@@ -34,7 +34,7 @@ There is no silver bullet. Effective security is like an onion: it consists of m
 
 <figure>
 <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-10-29-por-que-sua-aplicacao-node-js-precisa-se-defender-contra-1.jpg" alt="Why your Node.js application needs DDoS protection right now" loading="lazy">
-<figcaption>A screenshot of the Files app, showcasing the details pane feature. — Image: <a href="https://commons.wikimedia.org/wiki/File%3AFiles_%28software%29_screenshot_%28showcasing_details_pane%29.png">Files (software) screenshot (showcasing details pane).png</a> by Lamparter — <a href="http://opensource.org/licenses/mit-license.php">MIT</a> · via Wikimedia Commons</figcaption>
+<figcaption>A screenshot of the Files app, showcasing the details pane feature. - Image: <a href="https://commons.wikimedia.org/wiki/File%3AFiles_%28software%29_screenshot_%28showcasing_details_pane%29.png">Files (software) screenshot (showcasing details pane).png</a> by Lamparter - <a href="http://opensource.org/licenses/mit-license.php">MIT</a> · via Wikimedia Commons</figcaption>
 </figure>
 ### 1. Rate Limiting
 The first line of defense within your application is Rate Limiting. The concept is simple: define how many requests a user (identified by IP or token) can make within a specific time window. If they attempt to make 100 requests in a minute, but your limit is 20, you block the excess with a 429 (Too Many Requests) status. This prevents a single agent from exhausting the server's resources.

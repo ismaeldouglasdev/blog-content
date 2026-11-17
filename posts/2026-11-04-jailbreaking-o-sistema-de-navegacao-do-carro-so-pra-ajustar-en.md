@@ -29,7 +29,7 @@ With the unit out of the dashboard, a process that requires plastic tools to unl
 
 <figure>
 <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-11-04-jailbreaking-o-sistema-de-navegacao-do-carro-so-pra-ajustar-1.jpg" alt="Adjusting Your Car&#x27;s Dashboard Clock: A Hardware Hacking Tutorial" loading="lazy">
-<figcaption>"Linux system can be regarded as a kind of pyramid, as illustrated in Fig. 10-1. At the bottom is the hardware, consisting of the CPU, memory, disks, a monitor. — Image: <a href="https://commons.wikimedia.org/wiki/File%3ALayers_of_a_Linux_system.png">Layers of a Linux system.png</a> by Andrew S. Tanenbaum, Herbert Bos — <a href="https://creativecommons.org/licenses/">Public domain</a> · via Wikimedia Commons</figcaption>
+<figcaption>"Linux system can be regarded as a kind of pyramid, as illustrated in Fig. 10-1. At the bottom is the hardware, consisting of the CPU, memory, disks, a monitor. - Image: <a href="https://commons.wikimedia.org/wiki/File%3ALayers_of_a_Linux_system.png">Layers of a Linux system.png</a> by Andrew S. Tanenbaum, Herbert Bos - <a href="https://creativecommons.org/licenses/">Public domain</a> · via Wikimedia Commons</figcaption>
 </figure>
 
 These headers, often labeled as J1, J2, or simply with acronyms like TX, RX, GND, are the UART (Universal Asynchronous Receiver/Transmitter) ports. They are left by manufacturers for debugging during development and are often not removed in production. They are our serial console.
@@ -66,7 +66,7 @@ A squashfs filesystem is mounted as read-only. This is an obstacle, but not a to
 
 <figure>
 <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-11-04-jailbreaking-o-sistema-de-navegacao-do-carro-so-pra-ajustar-2.jpg" alt="Adjusting Your Car&#x27;s Dashboard Clock: A Hardware Hacking Tutorial" loading="lazy">
-<figcaption>Linux's footsteps to Linux Days meeting. — Image: <a href="https://commons.wikimedia.org/wiki/File%3ALinux%27s_footsteps_to_Linux_Days_meeting.jpg">Linux&#x27;s footsteps to Linux Days meeting.jpg</a> by Muselsom — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
+<figcaption>Linux's footsteps to Linux Days meeting. - Image: <a href="https://commons.wikimedia.org/wiki/File%3ALinux%27s_footsteps_to_Linux_Days_meeting.jpg">Linux&#x27;s footsteps to Linux Days meeting.jpg</a> by Muselsom - <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
 </figure>
 
 Typically, on embedded devices, a serial terminal provides a login prompt after boot. Attempts with default credentials like `root`/`root`, `admin`/`admin`, or even no password, are the next step. In the case at hand, the `root` login did not require a password, a common and insecure practice on consumer devices, but an opening for us.

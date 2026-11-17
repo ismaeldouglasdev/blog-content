@@ -35,7 +35,7 @@ O http2shell é um exploit de Remote Code Execution (RCE) que atinge servidores 
 <figure>
 <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-10-24-o-que-os-devs-full-stack-precisam-saber-sobre-o-http2shell-1.jpg" alt="O que os devs full stack precisam saber sobre o http2shell: RCE em Node.js e Python" loading="lazy">
 <figcaption>See this page at
-https://packages.gentoo.org/packages/media-video/ffmpeg. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3APackages_gentoo_org--use-flags-for-ffmpeg.png">Packages gentoo org--use-flags-for-ffmpeg.png</a> por Vitaly Zdanevich — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
+https://packages.gentoo.org/packages/media-video/ffmpeg. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3APackages_gentoo_org--use-flags-for-ffmpeg.png">Packages gentoo org--use-flags-for-ffmpeg.png</a> por Vitaly Zdanevich - <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
 </figure>
 Vamos decompor o ataque em etapas:
 

@@ -29,7 +29,7 @@ Com a unidade fora do painel, um processo que exige ferramentas de plástico par
 
 <figure>
 <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-11-04-jailbreaking-o-sistema-de-navegacao-do-carro-so-pra-ajustar-1.jpg" alt="Jailbreaking o sistema de navegação do carro só pra ajustar o relógio: um tutorial técnico" loading="lazy">
-<figcaption>"Linux system can be regarded as a kind of pyramid, as illustrated in Fig. 10-1. At the bottom is the hardware, consisting of the CPU, memory, disks, a monitor. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ALayers_of_a_Linux_system.png">Layers of a Linux system.png</a> por Andrew S. Tanenbaum, Herbert Bos — <a href="https://creativecommons.org/licenses/">Public domain</a> · via Wikimedia Commons</figcaption>
+<figcaption>"Linux system can be regarded as a kind of pyramid, as illustrated in Fig. 10-1. At the bottom is the hardware, consisting of the CPU, memory, disks, a monitor. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ALayers_of_a_Linux_system.png">Layers of a Linux system.png</a> por Andrew S. Tanenbaum, Herbert Bos - <a href="https://creativecommons.org/licenses/">Public domain</a> · via Wikimedia Commons</figcaption>
 </figure>
 
 Esses conjuntos, frequentemente rotulados como J1, J2, ou simplesmente com siglas como TX, RX, GND, são as portas UART (Universal Asynchronous Receiver/Transmitter). Elas são deixadas pelos fabricantes para debug durante o desenvolvimento e, muitas vezes, não são removidas na produção. São nosso serial console.
@@ -66,7 +66,7 @@ Um sistema de arquivos squashfs é montado como somente leitura. Isso é um obst
 
 <figure>
 <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-11-04-jailbreaking-o-sistema-de-navegacao-do-carro-so-pra-ajustar-2.jpg" alt="Jailbreaking o sistema de navegação do carro só pra ajustar o relógio: um tutorial técnico" loading="lazy">
-<figcaption>Linux's footsteps to Linux Days meeting. — Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ALinux%27s_footsteps_to_Linux_Days_meeting.jpg">Linux&#x27;s footsteps to Linux Days meeting.jpg</a> por Muselsom — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
+<figcaption>Linux's footsteps to Linux Days meeting. - Imagem: <a href="https://commons.wikimedia.org/wiki/File%3ALinux%27s_footsteps_to_Linux_Days_meeting.jpg">Linux&#x27;s footsteps to Linux Days meeting.jpg</a> por Muselsom - <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
 </figure>
 
 Geralmente, em dispositivos embarcados, um terminal serial oferece um prompt de login após o boot. Tentativas com credenciais padrão como `root`/`root`, `admin`/`admin`, ou mesmo sem senha, são o próximo passo. No caso em questão, o login `root` não exigia senha, uma prática comum e insegura em dispositivos de consumo, mas uma brecha para nós.

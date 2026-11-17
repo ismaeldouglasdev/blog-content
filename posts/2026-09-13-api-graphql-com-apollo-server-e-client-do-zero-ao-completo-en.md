@@ -43,7 +43,7 @@ The schema defines what's possible to do with your API. This is where you model 
 
 <figure>
 <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-13-api-graphql-com-apollo-server-e-client-do-zero-ao-completo-1.jpg" alt="GraphQL API with Apollo Server and Client: Complete Guide" loading="lazy">
-<figcaption>GraphQL is an open-source query language and runtime for APIs that enables clients to request specific data from a server in a single request, rather than makin. — Image: <a href="https://commons.wikimedia.org/wiki/File%3AGraphQL_%2853046906070%29.jpg">GraphQL (53046906070).jpg</a> by Exey Panteleev — <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a> · via Wikimedia Commons</figcaption>
+<figcaption>GraphQL is an open-source query language and runtime for APIs that enables clients to request specific data from a server in a single request, rather than makin. - Image: <a href="https://commons.wikimedia.org/wiki/File%3AGraphQL_%2853046906070%29.jpg">GraphQL (53046906070).jpg</a> by Exey Panteleev - <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a> · via Wikimedia Commons</figcaption>
 </figure>
 
 ```graphql
@@ -160,7 +160,7 @@ Apollo Server dramatically simplifies creating a GraphQL server. With just a few
 
 <figure>
 <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/2026-09-13-api-graphql-com-apollo-server-e-client-do-zero-ao-completo-2.jpg" alt="GraphQL API with Apollo Server and Client: Complete Guide" loading="lazy">
-<figcaption>Bob van Luijt presenting Weaviate's GraphQL APi. — Image: <a href="https://commons.wikimedia.org/wiki/File%3ABob_van_Luijt_presenting_Weaviate%27s_GraphQL_APi.jpg">Bob van Luijt presenting Weaviate&#x27;s GraphQL APi.jpg</a> by Bvl85 — <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
+<figcaption>Bob van Luijt presenting Weaviate's GraphQL APi. - Image: <a href="https://commons.wikimedia.org/wiki/File%3ABob_van_Luijt_presenting_Weaviate%27s_GraphQL_APi.jpg">Bob van Luijt presenting Weaviate&#x27;s GraphQL APi.jpg</a> by Bvl85 - <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> · via Wikimedia Commons</figcaption>
 </figure>
 ```javascript
 const { ApolloServer } = require('@apollo/server');
