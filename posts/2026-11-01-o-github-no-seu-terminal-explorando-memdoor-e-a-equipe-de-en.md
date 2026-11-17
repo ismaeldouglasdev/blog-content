@@ -28,10 +28,10 @@ Memdoor was born in this context of distrust. It runs locally, doesn't require y
 
 The name "memdoor" is a reference to the Engram memory project, one of my personal AI infrastructure projects. The tool uses five instances of Alibaba's Qwen model, each with a well-defined role, working together to analyze and solve problems in GitHub repositories or local code.
 
-Specialized agent architecture isn't new in the AI world, GPT‑4 with complex system prompts does something similar. But memdoor brings this idea into a concrete, reproducible workflow, where each agent passes its results to the next, creating a processing chain that mimics a professional code review.
+Specialized agent architecture isn't new in the AI world, GPT-4 with complex system prompts does something similar. But memdoor brings this idea into a concrete, reproducible workflow, where each agent passes its results to the next, creating a processing chain that mimics a professional code review.
 
 <figure>
-    <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/memdoor-architecture.png" alt="Diagram of memdoor's five‑agent architecture" loading="lazy">
+    <img src="https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/media/memdoor-architecture.png" alt="Diagram of memdoor's five-agent architecture" loading="lazy">
     <figcaption>Memdoor architecture: five specialized agents working in pipeline</figcaption>
 </figure>
 

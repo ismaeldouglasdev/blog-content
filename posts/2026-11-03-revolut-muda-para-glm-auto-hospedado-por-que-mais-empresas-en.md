@@ -58,15 +58,15 @@ Anyone who has operated systems in production knows that theory is different fro
 
 ## The middle path: pragmatic alternatives
 
-The binary decision between an external API and building your own infrastructure isn’t the only option available. There are middle‑ground paths that can make sense depending on the context.
+The binary decision between an external API and building your own infrastructure isn't the only option available. There are middle-ground paths that can make sense depending on the context.
 
-Open‑source models like Llama, Mistral, or Falcon can be downloaded and run locally. They don’t match the capability of the most advanced models from OpenAI or Anthropic, but they are surprisingly competent for many tasks. Meta has released Llama under a permissive license, and the community has created optimized versions that run on modest hardware. For specific, well‑defined use cases, this can be an efficient solution.
+Open-source models like Llama, Mistral, or Falcon can be downloaded and run locally. They don't match the capability of the most advanced models from OpenAI or Anthropic, but they are surprisingly competent for many tasks. Meta has released Llama under a permissive license, and the community has created optimized versions that run on modest hardware. For specific, well-defined use cases, this can be an efficient solution.
 
-Another alternative is fine‑tuning smaller models. Instead of running a 70‑billion‑parameter model, you can take a 7‑billion‑parameter model and adapt it to your specific domain. The result is smaller, faster, and potentially more accurate for the tasks you’ve defined, provided you have quality training data.
+Another alternative is fine-tuning smaller models. Instead of running a 70-billion-parameter model, you can take a 7-billion-parameter model and adapt it to your specific domain. The result is smaller, faster, and potentially more accurate for the tasks you've defined, provided you have quality training data.
 
-Model proxies and gateways also deserve consideration. Tools such as LiteLLM or models sold as Anthropic’s Claude or OpenAI’s API through specialized providers let you swap the backend without changing your application code. This doesn’t solve the problem of external‑vendor dependence, but at least it reduces vendor lock‑in at the application level.
+Model proxies and gateways also deserve consideration. Tools such as LiteLLM or models sold as Anthropic's Claude or OpenAI's API through specialized providers let you swap the backend without changing your application code. This doesn't solve the problem of external-vendor dependence, but at least it reduces vendor lock-in at the application level.
 
-For those just starting out, the pragmatic recommendation is clear: begin with established providers’ APIs, validate that the product solves a real problem, and only migrate to your own infrastructure when the math justifies it. Building an ML Ops team before achieving product‑market fit is a common mistake for startups.
+For those just starting out, the pragmatic recommendation is clear: begin with established providers' APIs, validate that the product solves a real problem, and only migrate to your own infrastructure when the math justifies it. Building an ML Ops team before achieving product-market fit is a common mistake for startups.
 
 ## What This Trend Means for Developers
 

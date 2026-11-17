@@ -114,11 +114,11 @@ Proteger sua aplicação não é apenas sobre tecnologia, é sobre garantir a op
 
 ## Takeaways Práticos
 
-*   **Nunca confie cegamente na capacidade de escala do seu servidor:** Todo hardware tem limites. Assuma que você será atacado e projeta sua defesa para o pior cenário.
-*   **Implemente Rate Limiting hoje:** Não deixe para depois. Use `express-rate-limit` (ou equivalente em outros frameworks) em todas as suas APIs, com limites mais rígidos em rotas sensíveis (login, cadastro, upload).
-*   **Use uma camada de proteção externa:** Soluções como Cloudflare ou AWS Shield são baratas (ou têm tiers gratuitos) e absorvem a maioria do tráfego lixo antes que ele chegue ao seu código.
-*   **Monitore o Event Loop:** Ferramentas como o clinic.js ou o New Relic podem ajudar a identificar quando seu servidor está sofrendo com CPU-bound operations, o que pode indicar um ataque em andamento.
-*   **Pense como um operador de negócio:** A segurança não é um "recurso técnico", é o que garante que sua empresa não perca dinheiro e reputação quando a tempestade chegar.
+* **Nunca confie cegamente na capacidade de escala do seu servidor:** Todo hardware tem limites. Assuma que você será atacado e projeta sua defesa para o pior cenário.
+* **Implemente Rate Limiting hoje:** Não deixe para depois. Use `express-rate-limit` (ou equivalente em outros frameworks) em todas as suas APIs, com limites mais rígidos em rotas sensíveis (login, cadastro, upload).
+* **Use uma camada de proteção externa:** Soluções como Cloudflare ou AWS Shield são baratas (ou têm tiers gratuitos) e absorvem a maioria do tráfego lixo antes que ele chegue ao seu código.
+* **Monitore o Event Loop:** Ferramentas como o clinic.js ou o New Relic podem ajudar a identificar quando seu servidor está sofrendo com CPU-bound operations, o que pode indicar um ataque em andamento.
+* **Pense como um operador de negócio:** A segurança não é um "recurso técnico", é o que garante que sua empresa não perca dinheiro e reputação quando a tempestade chegar.
 
 ## Fontes
 

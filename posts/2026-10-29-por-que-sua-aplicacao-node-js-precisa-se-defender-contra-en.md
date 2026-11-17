@@ -114,11 +114,11 @@ Protecting your application isn't just about technology; it's about ensuring bus
 
 ## Practical Takeaways
 
-*   **Never blindly trust your server's scalability:** All hardware has limits. Assume you will be attacked and design your defenses for the worst-case scenario.
-*   **Implement Rate Limiting today:** Don't put it off. Use `express-rate-limit` (or equivalent in other frameworks) on all your APIs, with stricter limits on sensitive routes (login, sign-up, upload).
-*   **Use an external protection layer:** Solutions like Cloudflare or AWS Shield are inexpensive (or have free tiers) and absorb most junk traffic before it reaches your code.
-*   **Monitor the Event Loop:** Tools like clinic.js or New Relic can help identify when your server is struggling with CPU-bound operations, which may indicate an ongoing attack.
-*   **Think like a business operator:** Security is not a "technical feature"; it is what ensures your company doesn't lose money and reputation when the storm hits.
+* **Never blindly trust your server's scalability:** All hardware has limits. Assume you will be attacked and design your defenses for the worst-case scenario.
+* **Implement Rate Limiting today:** Don't put it off. Use `express-rate-limit` (or equivalent in other frameworks) on all your APIs, with stricter limits on sensitive routes (login, sign-up, upload).
+* **Use an external protection layer:** Solutions like Cloudflare or AWS Shield are inexpensive (or have free tiers) and absorb most junk traffic before it reaches your code.
+* **Monitor the Event Loop:** Tools like clinic.js or New Relic can help identify when your server is struggling with CPU-bound operations, which may indicate an ongoing attack.
+* **Think like a business operator:** Security is not a "technical feature"; it is what ensures your company doesn't lose money and reputation when the storm hits.
 
 ## Sources
 

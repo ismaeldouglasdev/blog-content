@@ -600,8 +600,8 @@
     },
     {
       "slug": "2026-10-26-paperpilot-construindo-um-engine-pdf-zero-cloud-em-rust-com-en",
-      "title": "PaperPilot: Building a Zero‑Cloud PDF Engine in Rust with WASM and MCP",
-      "title_en": "PaperPilot: Building a Zero‑Cloud PDF Engine in Rust with WASM and MCP",
+      "title": "PaperPilot: Building a Zero-Cloud PDF Engine in Rust with WASM and MCP",
+      "title_en": "PaperPilot: Building a Zero-Cloud PDF Engine in Rust with WASM and MCP",
       "date": "2026-10-26",
       "category": "tutorial",
       "tags": [
@@ -685,8 +685,8 @@
         "engenharia-de-software",
         "open-source"
       ],
-      "excerpt": "How do you rebuild a classic game without the original source code, preserving pixel‑by‑pixel nostalgia, without getting stuck in MS‑DOS mode?",
-      "excerpt_en": "How do you rebuild a classic game without the original source code, preserving pixel‑by‑pixel nostalgia, without getting stuck in MS‑DOS mode?",
+      "excerpt": "How do you rebuild a classic game without the original source code, preserving pixel-by-pixel nostalgia, without getting stuck in MS-DOS mode?",
+      "excerpt_en": "How do you rebuild a classic game without the original source code, preserving pixel-by-pixel nostalgia, without getting stuck in MS-DOS mode?",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-25-como-reimplementar-um-motor-de-jogo-classico-licoes-do.jpg",
       "cover_credit": {
         "license": "Pixabay Content License",
