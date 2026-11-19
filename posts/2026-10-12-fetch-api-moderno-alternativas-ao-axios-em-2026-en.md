@@ -3,7 +3,7 @@ title: "Modern Fetch API: Alternatives to Axios in 2026"
 date: "2026-10-12"
 category: "article"
 tags: ["javascript", "fetch", "api"]
-excerpt: "Axios is still popular, but the modern Fetch API and newer client libraries cover most use cases. See what changed in native fetch, interceptors, retries and timeouts."
+excerpt: "markdown Modern Fetch API: alternatives to axios in 2026"
 cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-10-12-fetch-api-moderno-alternativas-ao-axios-em-2026.jpg"
 lang: "en"
 translation_of: "2026-10-12-fetch-api-moderno-alternativas-ao-axios-em-2026"
