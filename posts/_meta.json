@@ -1,6 +1,76 @@
 {
   "posts": [
     {
+      "slug": "2026-11-24-monorepo-com-turborepo-gerenciar-multiplos-pacotes",
+      "title": "Monorepo com Turborepo: gerenciar multiplos pacotes",
+      "title_en": null,
+      "date": "2026-11-24",
+      "category": "tutorial",
+      "tags": [
+        "turborepo",
+        "monorepo",
+        "arquitetura"
+      ],
+      "excerpt": "Você já sentiu aquela dor de cabeça de atualizar uma biblioteca compartilhada em cinco repositórios diferentes e esquecer de um? Ou pior, o CI falhar porque a versão do",
+      "excerpt_en": null,
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-11-24-monorepo-com-turborepo-gerenciar-multiplos-pacotes.jpg",
+      "cover_credit": {
+        "license": "Pixabay Content License",
+        "license_version": null,
+        "title": "software developer",
+        "creator": "Innovalabs",
+        "source": "Pixabay",
+        "source_url": "https://pixabay.com/photos/software-developer-web-developer-6521720/",
+        "license_url": "https://pixabay.com/service/license-summary/"
+      },
+      "cover_meta": {
+        "strategy": "photo",
+        "review_status": "approved",
+        "relevance_score": 1.0,
+        "motif": "tech",
+        "source": "Pixabay",
+        "query": "software developer",
+        "review_candidates": []
+      },
+      "lang": "pt",
+      "translation_slug": "2026-11-24-monorepo-com-turborepo-gerenciar-multiplos-pacotes-en"
+    },
+    {
+      "slug": "2026-11-24-monorepo-com-turborepo-gerenciar-multiplos-pacotes-en",
+      "title": "Managing Multiple Packages with Turborepo",
+      "title_en": "Managing Multiple Packages with Turborepo",
+      "date": "2026-11-24",
+      "category": "tutorial",
+      "tags": [
+        "turborepo",
+        "monorepo",
+        "arquitetura"
+      ],
+      "excerpt": "Have you ever experienced the headache of updating a shared library across five different repositories only to forget one? Or worse, having the CI fail because the TypeScript",
+      "excerpt_en": "Have you ever experienced the headache of updating a shared library across five different repositories only to forget one? Or worse, having the CI fail because the TypeScript",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-11-24-monorepo-com-turborepo-gerenciar-multiplos-pacotes.jpg",
+      "cover_credit": {
+        "license": "Pixabay Content License",
+        "license_version": null,
+        "title": "software developer",
+        "creator": "Innovalabs",
+        "source": "Pixabay",
+        "source_url": "https://pixabay.com/photos/software-developer-web-developer-6521720/",
+        "license_url": "https://pixabay.com/service/license-summary/"
+      },
+      "cover_meta": {
+        "strategy": "photo",
+        "review_status": "approved",
+        "relevance_score": 1.0,
+        "motif": "tech",
+        "source": "Pixabay",
+        "query": "software developer",
+        "review_candidates": []
+      },
+      "lang": "en",
+      "translation_of": "2026-11-24-monorepo-com-turborepo-gerenciar-multiplos-pacotes"
+    },
+    {
       "slug": "2026-11-16-por-que-telemetria-em-ferramentas-de-ia-e-editores-e-um",
       "title": "Por que telemetria em ferramentas de IA e editores é um risco real para o seu código",
       "date": "2026-11-16",
