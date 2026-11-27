@@ -3,7 +3,7 @@ title: "Monorepo com Turborepo: gerenciar multiplos pacotes"
 date: "2026-11-24"
 category: "tutorial"
 tags: ["turborepo", "monorepo", "arquitetura"]
-excerpt: "Você já sentiu aquela dor de cabeça de atualizar uma biblioteca compartilhada em cinco repositórios diferentes e esquecer de um? Ou pior, o CI falhar porque a versão do"
+excerpt: "Você já sentiu aquela dor de cabeça de atualizar uma biblioteca compartilhada em cinco repositórios diferentes e esquecer de um? Ou pior, o CI falhar porque a versão do."
 cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-11-24-monorepo-com-turborepo-gerenciar-multiplos-pacotes.jpg"
 lang: "pt"
 translationKey: "2026-11-24-monorepo-com-turborepo-gerenciar-multiplos-pacotes"

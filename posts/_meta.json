@@ -11,7 +11,7 @@
         "monorepo",
         "arquitetura"
       ],
-      "excerpt": "Você já sentiu aquela dor de cabeça de atualizar uma biblioteca compartilhada em cinco repositórios diferentes e esquecer de um? Ou pior, o CI falhar porque a versão do",
+      "excerpt": "Você já sentiu aquela dor de cabeça de atualizar uma biblioteca compartilhada em cinco repositórios diferentes e esquecer de um? Ou pior, o CI falhar porque a versão do.",
       "excerpt_en": null,
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-11-24-monorepo-com-turborepo-gerenciar-multiplos-pacotes.jpg",
       "cover_credit": {
@@ -46,7 +46,7 @@
         "monorepo",
         "arquitetura"
       ],
-      "excerpt": "Have you ever experienced the headache of updating a shared library across five different repositories only to forget one? Or worse, having the CI fail because the TypeScript",
+      "excerpt": "Have you ever experienced the headache of updating a shared library across five different repositories only to forget one? Or worse, having the CI fail because the TypeScript.",
       "excerpt_en": "Have you ever experienced the headache of updating a shared library across five different repositories only to forget one? Or worse, having the CI fail because the TypeScript",
       "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-11-24-monorepo-com-turborepo-gerenciar-multiplos-pacotes.jpg",
       "cover_credit": {
