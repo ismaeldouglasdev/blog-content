@@ -3,7 +3,7 @@ title: "Multiagentes de IA: vale a pena ou é hype?"
 date: "2026-11-27"
 category: "article"
 tags: ["IA", "agentes de IA", "multiagentes", "arquitetura de software", "hype tecnológico"]
-excerpt: "Dois agentes trocando mensagens parece automação pronta. Não é. Multiagente vale a pena quando o trabalho é independente, o contrato entre as partes é explícito e há ganho"
+excerpt: "Dois agentes trocando mensagens parece automação pronta. Não é. Multiagente vale a pena quando o trabalho é independente, o contrato entre as partes é explícito e há ganho."
 cover: "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-11-27-multiagentes-de-ia-vale-a-pena-ou-e-hype.jpg"
 description: "Dois agentes de IA que conversam parecem prometer automação total. Veja prós, contras e quando a arquitetura multiagente resolve de verdade."
 keywords: ["IA", "agentes de IA", "multiagentes", "arquitetura de software", "hype tecnológico", "got two agents talking then found out they weren hearing each other"]
