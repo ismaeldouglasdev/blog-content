@@ -1,6 +1,95 @@
 {
   "posts": [
     {
+      "slug": "2026-11-27-multiagentes-de-ia-vale-a-pena-ou-e-hype",
+      "title": "Multiagentes de IA: vale a pena ou é hype?",
+      "title_en": null,
+      "date": "2026-11-27",
+      "category": "article",
+      "tags": [
+        "IA",
+        "agentes de IA",
+        "multiagentes",
+        "arquitetura de software",
+        "hype tecnológico"
+      ],
+      "excerpt": "Dois agentes trocando mensagens parece automação pronta. Não é. Multiagente vale a pena quando o trabalho é independente, o contrato entre as partes é explícito e há ganho",
+      "excerpt_en": null,
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-11-27-multiagentes-de-ia-vale-a-pena-ou-e-hype.jpg",
+      "cover_credit": {
+        "license": "Pixabay Content License",
+        "license_version": null,
+        "title": "artificial intelligence",
+        "creator": "geralt",
+        "source": "Pixabay",
+        "source_url": "https://pixabay.com/photos/artificial-intelligence-robot-ai-2167835/",
+        "license_url": "https://pixabay.com/service/license-summary/"
+      },
+      "cover_meta": {
+        "strategy": "photo",
+        "review_status": "approved",
+        "relevance_score": 1.0,
+        "motif": "tech",
+        "source": "Pixabay",
+        "query": "artificial intelligence",
+        "review_candidates": []
+      },
+      "description": "Dois agentes de IA que conversam parecem prometer automação total. Veja prós, contras e quando a arquitetura multiagente resolve de verdade.",
+      "keywords": [
+        "IA",
+        "agentes de IA",
+        "multiagentes",
+        "arquitetura de software",
+        "hype tecnológico",
+        "got two agents talking then found out they weren hearing each other"
+      ],
+      "target_keyword": "got two agents talking then found out they weren hearing each other",
+      "search_intent": "commercial-investigation",
+      "seo_focus": "comparativo explicito, pros e contras, pergunta respondida no primeiro paragrafo",
+      "weekly_slot": "tech-em-alta",
+      "source_url": "https://dev.to/kenielzep97/i-got-two-ai-agents-talking-then-i-found-out-they-werent-hearing-each-other-1fn6",
+      "origin": "trend",
+      "lang": "pt",
+      "translation_slug": "2026-11-27-multiagentes-de-ia-vale-a-pena-ou-e-hype-en"
+    },
+    {
+      "slug": "2026-11-27-multiagentes-de-ia-vale-a-pena-ou-e-hype-en",
+      "title": "Multi-Agent AI: Worth It or Just Hype?",
+      "title_en": "Multi-Agent AI: Worth It or Just Hype?",
+      "date": "2026-11-27",
+      "category": "article",
+      "tags": [
+        "IA",
+        "agentes de IA",
+        "multiagentes",
+        "arquitetura de software",
+        "hype tecnológico"
+      ],
+      "excerpt": "Two agents exchanging messages looks like ready-made automation. It isnt. Multi-agent is worth it when the work is independent, the contract between the parties is explicit",
+      "excerpt_en": "Two agents exchanging messages looks like ready-made automation. It isnt. Multi-agent is worth it when the work is independent, the contract between the parties is explicit",
+      "cover": "https://raw.githubusercontent.com/ismaeldouglasdev/blog-content/main/posts/covers/2026-11-27-multiagentes-de-ia-vale-a-pena-ou-e-hype.jpg",
+      "cover_credit": {
+        "license": "Pixabay Content License",
+        "license_version": null,
+        "title": "artificial intelligence",
+        "creator": "geralt",
+        "source": "Pixabay",
+        "source_url": "https://pixabay.com/photos/artificial-intelligence-robot-ai-2167835/",
+        "license_url": "https://pixabay.com/service/license-summary/"
+      },
+      "cover_meta": {
+        "strategy": "photo",
+        "review_status": "approved",
+        "relevance_score": 1.0,
+        "motif": "tech",
+        "source": "Pixabay",
+        "query": "artificial intelligence",
+        "review_candidates": []
+      },
+      "lang": "en",
+      "translation_of": "2026-11-27-multiagentes-de-ia-vale-a-pena-ou-e-hype"
+    },
+    {
       "slug": "2026-11-24-monorepo-com-turborepo-gerenciar-multiplos-pacotes",
       "title": "Monorepo com Turborepo: gerenciar multiplos pacotes",
       "title_en": null,
